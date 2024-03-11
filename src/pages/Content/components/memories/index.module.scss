@@ -1,0 +1,19 @@
+.container{
+    height: calc(100vh - 92px);
+    padding: 10px;
+    overflow-y: auto;
+
+    :global{
+        .paragraph{
+            margin-bottom: 20px;
+        }
+
+        .source{
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85em;
+            color: #c6c6c6;
+        }
+
+    }
+}

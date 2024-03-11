@@ -1,0 +1,38 @@
+.container {
+  background-color: var(--color-background);
+  border: 1px solid var(--border-black);
+  width: 400px;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: var(--box-shadow);
+
+  :global {
+    .title {
+      margin-bottom: 8px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .copy-link {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      .ant-input {
+        margin-right: 10px;
+        border-radius: 8px;
+      }
+      .ant-btn {
+        border-radius: 8px;
+        background: #cacaca;
+        color: var(--color-text);
+        font-weight: 500;
+        transition: all .3s;
+        &:hover {
+          border: 1px solid var(--border-black);
+        }
+        &:focus {
+          border: 1px solid var(--border-black);
+        }
+      }
+    }
+  }
+}

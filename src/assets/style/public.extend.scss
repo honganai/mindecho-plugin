@@ -1,0 +1,56 @@
+// 滚动条样式
+%pointread-extend-scrollbar {
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(0 0 0 / 20%);
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: rgb(0 0 0 / 0%);
+  }
+}
+
+// block 标题样式
+%pointread-extend-title {
+  padding: 9px 26px 9px 11px;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--color-primary);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+// block 激活状态的标题样式
+%pointread-extend-title-active {
+  color: var(--card-title-color);
+  background-color: var(--card-title-background);
+  border: 1px solid var(--card-title-background);
+}
+
+// block 段落样式
+%pointread-extend-p {
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--color-text);
+  white-space: pre-wrap;
+  background-color: var(--color-background);
+}
+
+// block 段落外框样式、骨架屏样式
+%pointread-extend-p-border, %pointread-extend-loading-skeleton {
+  padding: 9px 11px;
+  border: 1px solid var(--border-color);
+  border-top: none;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+// 溢出省略
+%pointread-extend-ellipsis {
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 隐藏溢出部分 */
+  text-overflow: ellipsis; /* 显示省略号 */
+}

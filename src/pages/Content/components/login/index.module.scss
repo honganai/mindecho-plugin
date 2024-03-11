@@ -1,0 +1,20 @@
+.container{
+    padding: 20px;
+
+    .btn-login{
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40%;
+        background-color: var(--color-primary);
+    }
+
+    :global{
+        .google-icon{
+            width: 20px;
+            height: 20px;
+            filter: none;
+        }
+    }
+}

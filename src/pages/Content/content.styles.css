@@ -1,0 +1,74 @@
+#pointread-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2147483647;
+  width: 450px;
+  height: 100vh;
+  background-color: #F5F5F5;
+  border-left: 1px solid #ededed;
+  animation: show-content 0.4s ease-in forwards;
+}
+
+#pointread-sidebar-document {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2147483647;
+}
+
+
+#pointread-sidebar-flat {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2147483646;
+}
+
+#pointread-sidebar,
+#pointread-sidebar-flat,
+#pointread-sidebar-document {
+  --font-family: -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, 'Helvetica Neue', arial, 'Noto Sans', sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --color-text: #101010;
+  --color-text-white: #fff;
+  --color-text-second: #4d4d4d;
+  --color-text-light: #c0c0c0;
+  --color-primary: #0a85d1;
+  --color-primary-second: #d5cce5;
+  --color-background: #FEFEFE;
+  --color-background-dark: #4d4d4d;
+  --color-background-black: #292929;
+  --box-shadow: 0 2px 6px 0 rgb(0 0 0 / 40%);
+  --box-shadow-0: 0 2px 6px 0 rgb(0 0 0 / 0%);
+  --border-color: #bbb;
+  --border-black: #101010;
+  --border-color-light: #dad8d8;
+  --font-size: 15px;
+  --line-height: 22px;
+  --font-size-lg: 17px;
+  --font-size-sm: 12px;
+  --font-size-xs: 10px;
+  --card-title-background: #D5E6F3;
+  --card-title-color: #354d5f;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-style: normal;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes show-content {
+  from {
+    transform: translateX(500px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

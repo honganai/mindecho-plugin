@@ -1,0 +1,132 @@
+@import '@/assets/style/thinking.extend';
+@import '@/assets/style/public.extend';
+
+.container {
+  :global {
+    .rc-virtual-list-holder {
+      padding: 0 10px 20px;
+      margin: 0 -10px;
+    }
+
+    .search-keyword-highlight {
+      font-weight: bold;
+      color: var(--color-primary);
+    }
+
+    .thinking-no-data-wrapper {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 137px);
+    }
+
+    .rc-virtual-list-holder {
+      overflow-y: scroll !important;
+    }
+  }
+
+  .content-wrapper {
+    margin-top: 8px;
+    border-radius: 3px;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: var(--box-shadow);
+    }
+
+    .title-wrapper {
+      position: relative;
+
+      @extend %extend-title-warpper;
+
+      .title {
+        @extend %extend-title;
+      }
+
+      .copy-icon {
+        position: absolute;
+        visibility: hidden;
+      }
+    }
+
+    
+    .title-wrapper-active {
+      position: relative;
+
+      @extend %extend-title-warpper-active;
+      
+      .title {
+        @extend %extend-title-active;
+      }
+
+      .copy-icon {
+        position: absolute;
+        font-size: var(--font-size-sm);
+        color: var(--card-title-color);
+        visibility: hidden;
+      }
+
+      &:hover {
+        .copy-icon {
+          position: absolute;
+          top: 13px;
+          right: 10px;
+          visibility: visible;
+        }
+      }
+    }
+
+    .article-item {
+      .summary {
+        @extend %extend-item-summary;
+
+        border-top: 0;
+      }
+
+      .item-title-wrapper {
+        @extend %extend-item-title;
+
+        %part-extend-item {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+        }
+        
+        .item-wrapper {
+          @extend %part-extend-item;
+
+          .link-icon {
+            width: 19px;
+            height: 19px;
+            margin-left: 9px;
+          }
+  
+          .item-title-text {
+            max-width: 320px;
+            font-size: 12px;
+            color: var(--color-text);
+            text-align: left;
+          }
+
+          .date {
+            padding-right: 10px;
+            font-size: 12px;
+          }
+        }
+      }
+
+      /** 当为最后一项时，底部边框圆角 */
+      &:last-child {
+        .item-title-wrapper {
+          border-bottom-right-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+      }
+    }
+
+    .loading-skeleton {
+      @extend %pointread-extend-loading-skeleton;
+    }
+  }
+}

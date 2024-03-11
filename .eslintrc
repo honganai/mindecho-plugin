@@ -1,0 +1,19 @@
+{
+  "plugins": ["react"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "no-alert": "error",
+    "@typescript-eslint/no-explicit-any": ["off"],
+    "react/prop-types": "off",
+    "@typescript-eslint/no-non-null-assertion": "off"
+  }
+}

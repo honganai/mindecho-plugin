@@ -1,0 +1,52 @@
+@import '@/assets/style/public.extend';
+.container {
+  font-size: 14px;
+  // line-height: var(--line-height);
+  min-width: 200px;
+
+  :global {
+    .user-info {
+      display: flex;
+      flex-flow: row nowrap;
+      margin-bottom: 12px;
+  
+      .name {
+        display: inline-block;
+        font-weight: bold;
+        @extend %pointread-extend-ellipsis;
+      }
+      .vip {
+        padding-left: 5px;
+      }
+    }
+
+    .subscribe-info {
+      height: 100px;
+      span {
+        display: block;
+        padding-bottom: 5px;
+      }
+      .upgrade {
+        font-size: 14px;
+        border-radius: 8px;
+      }
+    }
+  
+  
+    .link {
+      display: flex;
+      gap: 7px;
+      align-items: center;
+      color: var(--color-text-second);
+  
+       +.link {
+        margin-top: 10px;
+       }
+    }
+  
+    .operate {
+      padding-top: 10px;
+    }
+  }
+
+}
