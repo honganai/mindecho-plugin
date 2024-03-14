@@ -6,8 +6,8 @@
  */
 
 import $ from 'jquery';
-export const HIGHLIGHT_CLASS = 'linnk-plugin--highlighted';
-export const DELETED_CLASS = 'linnk-plugin--deleted';
+export const HIGHLIGHT_CLASS = 'pointread-plugin--highlighted';
+export const DELETED_CLASS = 'pointread-plugin--deleted';
 
 // import { initializeHighlightEventListeners } from '../../hoverTools/index.js';
 

@@ -1,8 +1,7 @@
-@import '@/assets/style/thinking.extend.scss';
-@import '@/assets/style/public.extend.scss';
+@import '@/assets/style/thinking.extend';
+@import '@/assets/style/public.extend';
 
 .container {
-
   .unsorted-title {
     @extend %extend-title-warpper;
 
@@ -31,12 +30,13 @@
 
       %part-extend-item {
         display: flex;
-        justify-content: flex-start;
         align-items: center;
+        justify-content: flex-start;
       }
 
       .unsorted-content-item-wrapper {
         @extend %part-extend-item;
+
         .unsorted-content-title-prefix-icon {
           width: 19px;
           height: 19px;
@@ -45,28 +45,30 @@
   
         .unsorted-content-title-text {
           max-width: 320px;
-          color: var(--color-text);
           font-size: 12px;
+          color: var(--color-text);
           text-align: left;
         }
       }
 
       .unsorted-content-item-wrapper {
         @extend %part-extend-item;
+
         .unsorted-content-title-suffix-icon {
-          font-size: 14px;
           width: 19px;
           height: 19px;
+          font-size: 14px;
         }
+
         .unsorted-content-title-time {
-          font-size: 12px;
           padding-right: 10px;
+          font-size: 12px;
         }
       }
     }
   }
 
   .rc-virtual-list-scrllbar-style {
-    @extend %linnk-extend-scrollbar;
+    @extend %pointread-extend-scrollbar;
   }
 }

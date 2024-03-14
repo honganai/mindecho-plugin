@@ -1,102 +1,109 @@
-@import '@/assets/style/thinking.extend.scss';
-@import '@/assets/style/public.extend.scss';
+@import '@/assets/style/thinking.extend';
+@import '@/assets/style/public.extend';
 
 .container {
   margin-top: 8px;
 
   :global {
-
-    .linnk-content-wrapper {
-      .linnk-goal-title-wrapper {
+    .pointread-content-wrapper {
+      .pointread-goal-title-wrapper {
         position: relative;
+
         @extend %extend-title-warpper;
   
-        .linnk-goal-title {
+        .pointread-goal-title {
           @extend %extend-title;
         }
-        .linnk-goal-copy-icon {
-          visibility: hidden;
+
+        .pointread-goal-copy-icon {
           position: absolute;
+          visibility: hidden;
         }
       }
 
       
-      .linnk-goal-title-wrapper-active {
+      .pointread-goal-title-wrapper-active {
         position: relative;
+
         @extend %extend-title-warpper-active;
         
-        .linnk-goal-title {
+        .pointread-goal-title {
           @extend %extend-title-active;
         }
-        .linnk-goal-copy-icon {
-          visibility: hidden;
+
+        .pointread-goal-copy-icon {
           position: absolute;
+          visibility: hidden;
         }
+
         &:hover {
-          .linnk-goal-copy-icon {
-            color: var(--color-text-white);
-            visibility: visible;
+          .pointread-goal-copy-icon {
             position: absolute;
             top: 15px;
             right: 10px;
             font-size: var(--font-size-sm);
+            color: var(--color-text-white);
+            visibility: visible;
           }
         }
       }
   
-      .linnk-goal-article-item {
+      .pointread-goal-article-item {
         /** 当为最后一项时，底部边框圆角 */
         &:last-child {
-          .linnk-goal-article-item-title-wrapper {
-            border-bottom-left-radius: 3px;
+          .pointread-goal-article-item-title-wrapper {
             border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
           }
         }
 
-        .linnk-goal-article-item-summary {
+        .pointread-goal-article-item-summary {
           @extend %extend-item-summary;
-          border-top: 0px;
+
+          border-top: 0;
         }
   
-        .linnk-goal-article-item-title-wrapper {
+        .pointread-goal-article-item-title-wrapper {
           @extend %extend-item-title;
 
           %part-extend-item {
             display: flex;
-            justify-content: flex-start;
             align-items: center;
+            justify-content: flex-start;
           }
           
-          .linnk-goal-article-item-wrapper {
+          .pointread-goal-article-item-wrapper {
             @extend %part-extend-item;
-            .linnk-goal-article-item-title-prefix-icon {
+
+            .pointread-goal-article-item-title-prefix-icon {
               width: 19px;
               height: 19px;
               margin-left: 9px;
             }
     
-            .linnk-goal-article-item-title-text {
-              font-size: 12px;
+            .pointread-goal-article-item-title-text {
               max-width: 320px;
+              font-size: 12px;
               color: var(--color-text);
               text-align: left;
             }
           }
 
 
-          .linnk-goal-article-item-wrapper {
+          .pointread-goal-article-item-wrapper {
             @extend %part-extend-item;
-            .linnk-goal-article-item-date {
-              font-size: 12px;
+
+            .pointread-goal-article-item-date {
               padding-right: 10px;
+              font-size: 12px;
             }
           }
   
         }
       }
 
-      .linnk-goal-loading-skeleton {
-        @extend %linnk-extend-loading-skeleton;
+      .pointread-goal-loading-skeleton {
+        @extend %pointread-extend-loading-skeleton;
       }
     }
   }

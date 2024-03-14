@@ -1,19 +1,14 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDebounceEffect } from 'ahooks';
-import cs from 'classnames';
 import styles from './index.module.scss';
 import LeftMessage from './components/left-message/LeftMessage';
 import RightMessage from './components/right-message/RightMessage';
 import { SendOutlined, LoadingOutlined, CopyFilled } from '@ant-design/icons';
-import { Card, Input, message as Message, Skeleton, Switch, Tooltip } from 'antd';
+import { Card, Input, message as Message, Skeleton } from 'antd';
 import _ from 'lodash';
-import { chromeDetectLanguage, getDocument } from '@/utils/common.util';
-import GlobalContext, { ActionType as GlobalActionType, enumSubscribeModalType } from '@/reducer/global';
-import markdownit from 'markdown-it';
-import { SubType } from '../user/User';
+import { chromeDetectLanguage } from '@/utils/common.util';
 
 const { TextArea } = Input;
-const md = markdownit();
 
 interface Props {
   message: any;
@@ -41,7 +36,6 @@ interface ResonseMessage {
 }
 
 const History: React.FC<Props> = ({ conversationid, message, userinfo, contentRef }: Props) => {
-  const { state: globalState, dispatch: globalDispatch } = useContext(GlobalContext);
   const [historyComplete, setHistoryComplete] = useState(false);
   const copiedI18N = chrome.i18n.getMessage('copied');
   const [messageEnd, setMessageEnd] = useState(true);
@@ -51,10 +45,6 @@ const History: React.FC<Props> = ({ conversationid, message, userinfo, contentRe
   const [list, setList] = useState<MessageStruct[]>([
     // { id: '', role: 'system', message: 'You can ask me some knowledge about your field of interest.', link: '' },
   ]);
-
-  const [useAdvance, setUseAdvance] = useState(false);
-  const [useCollection, setUseCollection] = useState(false);
-  const { content } = globalState.cleanArticle;
 
   useEffect(() => {
     console.log('chat msg', message);
@@ -115,8 +105,6 @@ const History: React.FC<Props> = ({ conversationid, message, userinfo, contentRe
   useEffect(() => {
     if (conversationid && list.length === 0) {
       getChatHistory();
-    } else {
-      setHistoryComplete(true);
     }
   }, [conversationid]);
 
@@ -173,9 +161,6 @@ const History: React.FC<Props> = ({ conversationid, message, userinfo, contentRe
    * 发送消息
    */
   const onSend = async (msg?: any) => {
-    if (!sendValue && !msg) {
-      return false;
-    }
     // 一次只能发送一个问题
     if (!messageEnd) {
       Message.info(chrome.i18n.getMessage('chartWaitComplete'));
@@ -206,9 +191,6 @@ const History: React.FC<Props> = ({ conversationid, message, userinfo, contentRe
           article_id: articleId,
           url: window.location.href,
           detected_lang: detectedText,
-          mode_name: useAdvance ? 'gpt4' : 'gpt3',
-          dataset_name: useCollection ? 'collections' : '',
-          article_content: content,
         },
       },
       (res) => {
@@ -238,14 +220,14 @@ const History: React.FC<Props> = ({ conversationid, message, userinfo, contentRe
   return (
     <div className={styles['chat-container']}>
       {list && list.length !== 0 && (
-        <div className={styles['chat-list']}>
+        <div className="chat-list">
           {list.map((item, index) =>
             item.role === 'system' ? (
               // <LeftMessage message={item.message} key={index} link={item.link} />
               <div
                 className={styles['my-message']}
                 key={index}
-                dangerouslySetInnerHTML={{ __html: md.render(item.message) }}></div>
+                dangerouslySetInnerHTML={{ __html: item.message }}></div>
             ) : (
               // <RightMessage message={item.message} key={index} />
               <div className={styles['system-message']} key={index}>
@@ -274,56 +256,7 @@ const History: React.FC<Props> = ({ conversationid, message, userinfo, contentRe
         </div>
       )}
 
-      <div className={styles['input-message']}>
-        <div
-          className={styles['switch-container']}
-          ref={(dom) => {
-            if (dom) {
-              globalState.guideRefs.current['chatSwitch'] = dom;
-            }
-          }}>
-          <Tooltip
-            title={chrome.i18n.getMessage('advancedModelsTips')}
-            getPopupContainer={() => getDocument().getElementById('linnk-sidebar') || document.body}>
-            <div className={cs(styles['switch-item'], styles['primary'])}>
-              <Switch
-                size="small"
-                checked={useAdvance}
-                onChange={(checked) => {
-                  if (checked) {
-                    if (
-                      userinfo?.subscription?.mem_type !== SubType.Elite &&
-                      userinfo?.subscription?.gpt4_used_count >= userinfo?.subscription?.gpt4_quota
-                    ) {
-                      globalDispatch({
-                        type: GlobalActionType.SetShowSubscribeModal,
-                        payload: {
-                          show: true,
-                          closable: true,
-                          subscribeModalType:
-                            userinfo?.subscription?.mem_type === SubType.Free
-                              ? enumSubscribeModalType.Premium
-                              : enumSubscribeModalType.Elite,
-                        },
-                      });
-                      return false;
-                    }
-                  }
-                  setUseAdvance(checked);
-                }}
-              />
-              <span>{chrome.i18n.getMessage('advancedModels')}</span>
-            </div>
-          </Tooltip>
-          <Tooltip
-            title={chrome.i18n.getMessage('askYourCollectionsTips')}
-            getPopupContainer={() => getDocument().getElementById('linnk-sidebar') || document.body}>
-            <div className={cs(styles['switch-item'], styles['primary'])}>
-              <Switch size="small" checked={useCollection} onChange={(checked) => setUseCollection(checked)} />
-              <span>{chrome.i18n.getMessage('askYourCollections')}</span>
-            </div>
-          </Tooltip>
-        </div>
+      <div className="input-message">
         <TextArea
           style={{ paddingRight: '20px' }}
           rows={2}
@@ -332,7 +265,7 @@ const History: React.FC<Props> = ({ conversationid, message, userinfo, contentRe
           onChange={onInputChange}
           onKeyDown={handleKeyDown}
         />
-        <SendOutlined onClick={() => onSend()} className={styles['icon-send']} />
+        <SendOutlined onClick={onSend} className="icon-send" />
       </div>
     </div>
   );

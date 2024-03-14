@@ -49,10 +49,10 @@ function generChromeExtensionManifest() {
         // css: ['content.styles.css', 'contentFlatScript.css', 'contentScript.css', 'newtab.css', 'options.css', 'panel.css', 'popup.css', 'sidepanel.css'],
         js: ['contentFlatScript.bundle.js'],
       },
-      {
-        matches: ['*://www.linnk.ai/*'],
-        js: ['guide.bundle.js'],
-      },
+      // {
+      //   matches: ['*://www.linnk.ai/*'],
+      //   js: ['guide.bundle.js'],
+      // },
     ],
     devtools_page: 'devtools.html',
     web_accessible_resources: [

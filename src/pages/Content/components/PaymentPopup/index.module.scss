@@ -1,0 +1,31 @@
+.container {
+  :global {
+    .payment-popup-container {
+      width: 340px;
+      position: relative;
+      top: 150px;
+      border-radius: 5px;
+      padding: 40px 15px;
+      background-color: var(--color-background);
+      box-shadow: var(--box-shadow);
+      border: 1px solid var(--border-black);
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+
+      .pay-complete {
+        border-radius: 10px;
+      }
+
+      .not-now {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 14px;
+        color: var(--color-text-light);
+        cursor: pointer;
+        text-decoration: underline;
+        line-height: var(--font-size-sm);
+      }
+    }
+  }
+}

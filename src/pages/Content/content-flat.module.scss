@@ -1,6 +1,6 @@
 .wrapper {
   position: fixed;
-  top: 38.2%;
+  top: 28.2%;
   right: 0;
   z-index: 99999999999;
   border-radius: 6px 0 0 6px;
@@ -21,14 +21,14 @@
       display: flex;
       gap: 3px;
       align-items: center;
-      padding: 7px 4px 7px 7px;
+      padding: 7px;
       cursor: pointer;
       user-select: none;
       background: #fff;
       border: 1px solid var(--border-color);
-      border-right: none;
-      border-radius: 6px 0 0 6px;
-      box-shadow: var(--box-shadow);
+      border-radius: 50%;
+      box-shadow: var(--box-shadow-0);
+      transition: all .3s;
 
       &.highlight-animate {
         animation: background ease-in-out 2s 2s;
@@ -52,6 +52,7 @@
         width: 30px;
         height: 30px;
         filter: none;
+        transition: all .3s;
       }
 
       .span {
@@ -67,7 +68,7 @@
 
     .icon {
       position: absolute;
-      right: 5px;
+      right: 2px;
       z-index: 1;
       font-size: 18px;
       color: var( --color-text-second);
@@ -77,7 +78,7 @@
 
       &.close-icon {
         top: 0;
-        padding-bottom: 5px;
+        padding-bottom: 0;
       }
 
       &.setting-icon {
@@ -92,9 +93,17 @@
     }
 
     &.hover {
-      .summarize
-      .span {
-        max-width: 200px;
+      .summarize {
+        box-shadow: var(--box-shadow);
+
+        .img-logo {
+          width: 36px;
+          height: 36px;
+        }
+
+        .span {
+          max-width: 200px;
+        }
       }
 
       .icon {

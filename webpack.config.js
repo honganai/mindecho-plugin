@@ -124,7 +124,7 @@ var options = {
               lessOptions: {
                 sourceMap: true,
                 modifyVars: {
-                  'primary-color': '#722ED1',
+                  'primary-color': '#0a85d1',
                   'font-size-base': '15px'
                 },
                 javascriptEnabled: true,

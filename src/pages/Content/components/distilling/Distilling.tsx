@@ -9,6 +9,7 @@ import Guide from './Guide';
 import FurtherQuestions from '../FurtherQuestions';
 import CaptureContent from '../CaptureContent';
 import GoalCard from '../GoalCard';
+import MarkdownContent from '../MarkdownContent';
 import GlobalContext, { ActionType } from '@/reducer/global';
 import reqShowSummary from '@/utils/showSummary';
 import { getDocument } from '@/utils/common.util';
@@ -32,7 +33,7 @@ const Distilling: React.FC<Props> = ({ userinfo, checkPay }: Props) => {
 
   const { articleId, conversationId, articleDistillId } = globalState;
 
-  const { reciveEnd, furtherQuestions, captureContent, intentNote, restData } = useDistillBlock();
+  const { reciveEnd, furtherQuestions, captureContent, intentNote, restData, markdownStream } = useDistillBlock();
 
   /**
    * 选择段落同步到chat界面
@@ -113,10 +114,11 @@ const Distilling: React.FC<Props> = ({ userinfo, checkPay }: Props) => {
   }, []);
   return (
     <ConfigProvider>
-      <div className={styles.container} ref={contentRef} id="linnk-plugin-distill">
+      <div className={styles.container} ref={contentRef} id="pointread-plugin-distill">
         <div className={styles.wrap}>
+          <MarkdownContent markdownStream={markdownStream} reciveEnd={reciveEnd}></MarkdownContent>
           {/* Goal */}
-          <div
+          {/* <div
             className={styles.paragraph}
             ref={(dom) => {
               if (dom) {
@@ -125,9 +127,9 @@ const Distilling: React.FC<Props> = ({ userinfo, checkPay }: Props) => {
             }}>
             <div className={styles['paragraph-title']}>{guessOnYourMind}</div>
             <GoalCard reciveEnd={reciveEnd} intentNote={intentNote} />
-          </div>
+          </div> */}
           {/* Capture Content */}
-          <div
+          {/* <div
             className={styles.paragraph}
             ref={(dom) => {
               if (dom) {
@@ -136,9 +138,9 @@ const Distilling: React.FC<Props> = ({ userinfo, checkPay }: Props) => {
             }}>
             <div className={styles['paragraph-title']}>{capturContentAndDistill}</div>
             <CaptureContent reciveEnd={reciveEnd} captureContent={captureContent} />
-          </div>
+          </div> */}
           {/* Further Questions */}
-          <div
+          {/* <div
             className={styles.paragraph}
             ref={(dom) => {
               if (dom) {
@@ -151,9 +153,9 @@ const Distilling: React.FC<Props> = ({ userinfo, checkPay }: Props) => {
               furtherQuestions={furtherQuestions}
               onSelectParagraph={onSelectParagraph}
             />
-          </div>
+          </div> */}
         </div>
-        {reciveEnd && (
+        {/* {reciveEnd && (
           <div ref={chatRef}>
             <Chat
               conversationid={conversationId}
@@ -161,30 +163,35 @@ const Distilling: React.FC<Props> = ({ userinfo, checkPay }: Props) => {
               userinfo={userinfo}
               message={chatMessage}></Chat>
           </div>
-        )}
+        )} */}
 
         <Modal
           width={340}
           style={{
-            top: 20,
+            top: 60,
           }}
           closable={false}
           wrapClassName={styles['subscribe-modal-wrapper']}
           open={globalState.showSubscribeModal}
           mask={false}
-          getContainer={() => getDocument().getElementById('linnk-plugin-distill') || document.body}
+          getContainer={() => getDocument().getElementById('pointread-plugin-distill') || document.body}
           footer={null}>
           <SubscribeModalContent
             userinfo={userinfo}
+            onCancle={() => {
+              const linkEl = getDocument().getElementById('pointread-sidebar');
+              if (linkEl) linkEl.style.display = 'none';
+              chrome.runtime.sendMessage({ type: 'close' }, (res) => {
+                console.log('关闭完成', res);
+              });
+            }}
             onComplete={checkPay}
             onStart={() => {
               restData();
               reqShowSummary(globalState.cleanArticle.content);
               globalDispatch({
                 type: ActionType.SetShowSubscribeModal,
-                payload: {
-                  show: false,
-                },
+                payload: false,
               });
             }}
           />

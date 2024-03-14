@@ -6,6 +6,7 @@ import { message, Skeleton } from 'antd';
 import GlobalContext from '@/reducer/global';
 import GoalContent, { IHighLight } from '../GoalCard/GoalContent';
 import { HEIGHTLIGHT_COLORS as COLORS } from '@/constants';
+import CopyIcon from '@/assets/icons/copy.svg';
 
 interface IProps {
   captureContent?: Record<string, string>[];
@@ -118,14 +119,14 @@ const CaptureContent: React.FC<IProps> = ({ captureContent = [], reciveEnd }) =>
               }
             }}>
             <div className={styles.title}>{i18nTitle}</div>
-            <div className={styles.copy}>
-              <CopyOutlined
-                onClick={() => {
-                  navigator.clipboard.writeText([i18nTitle, ele[key]].join('\r\n')).then(() => {
-                    message.success(copiedI18N);
-                  });
-                }}
-              />
+            <div
+              className={styles.copy}
+              onClick={() => {
+                navigator.clipboard.writeText([i18nTitle, ele[key]].join('\r\n')).then(() => {
+                  message.success(copiedI18N);
+                });
+              }}>
+              <CopyIcon />
             </div>
             <div className={styles['text-p']}>
               {['key_logics', 'data_sheet', 'quotes'].indexOf(key) > -1 ? (

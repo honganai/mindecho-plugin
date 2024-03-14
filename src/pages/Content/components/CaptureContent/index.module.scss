@@ -1,16 +1,21 @@
-@import '@/assets/style/public.extend';
-
 .content {
   position: relative;
-  padding: 9px 11px;
-  margin-bottom: 9px;
-  font-size: var(--font-size);
-  line-height: var(--line-height);
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 24px;
   white-space: pre-wrap;
   background-color: var(--color-background);
-  border: 1px solid var(--border-color);
-  border-radius: 3px;
+  border-radius: 5px;
   transition: box-shadow 0.3s;
+  
+  .copy {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    visibility: hidden;
+  }
 
   &:hover {
     box-shadow: 0 2px 6px 0 rgb(0 0 0 / 40%);
@@ -22,7 +27,7 @@
 
   .title {
     margin-bottom: 6px;
-    font-size: var(--font-size);
+    font-size: 18px;
     font-weight: bold;
   }
 
@@ -31,8 +36,8 @@
   }
 
   .text-p {
-    font-size: var(--font-size);
-    line-height: var(--line-height);
+    font-size: 18px;
+    line-height: 24px;
     color: var(--color-text);
     white-space: pre-wrap;
     background-color: var(--color-background);
@@ -40,12 +45,5 @@
 
   .gray {
     color: var(--color-text-second);
-  }
-
-  .copy {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    visibility: hidden;
   }
 }

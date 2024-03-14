@@ -1,6 +1,6 @@
 @import './public.extend';
 %extend-title-public {
-  @extend %linnk-extend-title;
+  @extend %pointread-extend-title;
 
   cursor: pointer;
   user-select: none;
@@ -46,8 +46,8 @@
 }
 
 %extend-item-summary {
-  @extend %linnk-extend-p;
-  @extend %linnk-extend-p-border;
+  @extend %pointread-extend-p;
+  @extend %pointread-extend-p-border;
 
   border-radius: 0 !important;
 }

@@ -1,11 +1,11 @@
 {
-  "name": "__MSG_pluginName__",
-  "version": "0.2.9",
+  "name": "PointRead",
+  "version": "0.1.19",
   "description": "__MSG_pluginDescription__",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:honganai/linnk-plugin.git"
+    "url": "git@github.com:honganai/pointread-plugin.git"
   },
   "scripts": {
     "build": "rm -rf build && node utils/build.js",
@@ -14,10 +14,12 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.8.1",
+    "@icon-park/react": "^1.4.2",
     "@react-native-async-storage/async-storage": "^1.21.0",
     "@types/markdown-it": "^13.0.7",
     "ahooks": "^3.7.8",
     "antd": "^4.24.15",
+    "html-react-parser": "^5.1.1",
     "jquery": "^3.7.1",
     "lodash": "^4.17.21",
     "markdown-it": "^14.0.0",

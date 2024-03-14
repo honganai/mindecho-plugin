@@ -5,13 +5,13 @@ import Content from './Content';
 import { getDocument } from '../../utils/common.util';
 
 console.log('window.contentLoaded content:', window.linkContentLoaded);
-window.linnkListener = false;
+window.readpointListener = false;
 // 如果content已加载，不再重复加载
 if (!window.linkContentLoaded) {
   window.linkContentLoaded = true;
   init();
 } else {
-  getDocument().querySelector('#linnk-sidebar').style.display = 'block'
+  getDocument().querySelector('#pointread-sidebar').style.display = 'block'
 }
 
 function init() {
@@ -19,13 +19,13 @@ function init() {
     chrome.sidePanel.setPanelBehavior({openPanelOnActionClick: true}).catch((error) => console.error(error));
   }
 
-  let extensionRoot = document.getElementById('linnk-extension-shadow');
+  let extensionRoot = document.getElementById('pointread-extension-shadow');
   if (extensionRoot) {
     const shadowRoot = extensionRoot.shadowRoot;
-    let div = shadowRoot.getElementById('linnk-sidebar');
+    let div = shadowRoot.getElementById('pointread-sidebar');
     if (!div) {
       div = document.createElement('div');
-      div.setAttribute('id', 'linnk-sidebar');
+      div.setAttribute('id', 'pointread-sidebar');
       shadowRoot.appendChild(div);
     }
     const root = createRoot(div);

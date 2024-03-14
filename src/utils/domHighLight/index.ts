@@ -11,12 +11,15 @@ export function domHighLight(
   selection: Selection | null,
 ) {
   if (!selection) {
-    return;
+    return [];
+  }
+  if (selection.type === 'None') {
+    return [];
   }
   let container = selection.getRangeAt(0).commonAncestorContainer;
   // 排除插件内的元素
-  if (document.getElementById('linnk-plugin-content')?.contains(container)) {
-    return;
+  if (document.getElementById('pointread-plugin-content')?.contains(container)) {
+    return [];
   }
 
   // Sometimes the element will only be text. Get the parent in that case
@@ -25,6 +28,7 @@ export function domHighLight(
   }
 
   const selectionString = selection.toString();
+  console.log('🚀 ~ container:', container, selectionString, selection);
 
   const highlightNodes = highlight(
     selectionString,

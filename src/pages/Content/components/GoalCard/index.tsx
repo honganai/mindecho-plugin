@@ -71,9 +71,7 @@ const GoalCard: React.FC<IProps> = ({ intentNote, reciveEnd }) => {
   //   }
   // }, [articleId, goal]);
 
-  const coremsg = intentNote.coremsg || intentNote.intent;
-
-  return coremsg || intentNote.note ? (
+  return intentNote.intent || intentNote.note ? (
     <div className={styles.goal}>
       <div
         className={styles.title}
@@ -82,7 +80,7 @@ const GoalCard: React.FC<IProps> = ({ intentNote, reciveEnd }) => {
           color: COLORS[index].head.text,
           borderColor: COLORS[index].head.back,
         }}>
-        {coremsg}
+        {intentNote.intent}
       </div>
       <div
         className={styles.content}
@@ -108,7 +106,7 @@ const GoalCard: React.FC<IProps> = ({ intentNote, reciveEnd }) => {
         <div className={styles.copy}>
           <CopyFilled
             onClick={() => {
-              const copyText = `${coremsg}\r\n${intentNote.note}`;
+              const copyText = `${intentNote.intent}\r\n${intentNote.note}`;
               navigator.clipboard.writeText(copyText).then(() => {
                 message.success(copiedI18N);
               });

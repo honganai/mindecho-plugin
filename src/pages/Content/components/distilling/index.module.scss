@@ -1,5 +1,5 @@
 .container {
-  height: calc(100vh - 92px);
+  height: calc(100vh - 80px);
   overflow-y: auto;
   font-family: var(--font-family);
   transition: height 500ms ease;
@@ -35,7 +35,9 @@
 
     :global {
       .ant-modal-body {
-        padding: 14px 18px;
+        padding: 40px 15px;
+        border: 1px solid var(--border-black);
+        border-radius: 5px;
       }
     }
   }

@@ -29,12 +29,12 @@
   }
 
   .title {
-    @extend %linnk-extend-title;
-    @extend %linnk-extend-title-active;
+    @extend %pointread-extend-title;
+    @extend %pointread-extend-title-active;
   }
   
   .content {
-    @extend %linnk-extend-p;
-    @extend %linnk-extend-p-border;
+    @extend %pointread-extend-p;
+    @extend %pointread-extend-p-border;
   }
 }

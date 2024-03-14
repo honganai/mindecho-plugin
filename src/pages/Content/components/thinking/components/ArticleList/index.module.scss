@@ -7,17 +7,20 @@
       padding: 0 10px 20px;
       margin: 0 -10px;
     }
+
     .search-keyword-highlight {
       font-weight: bold;
       color: var(--color-primary);
     }
+
     .thinking-no-data-wrapper {
-      height: calc(100vh - 137px);
       display: flex;
       flex-flow: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      height: calc(100vh - 137px);
     }
+
     .rc-virtual-list-holder {
       overflow-y: scroll !important;
     }
@@ -123,7 +126,7 @@
     }
 
     .loading-skeleton {
-      @extend %linnk-extend-loading-skeleton;
+      @extend %pointread-extend-loading-skeleton;
     }
   }
 }

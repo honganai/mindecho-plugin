@@ -62,7 +62,7 @@ export default {
     return request(getUrl(url, params), {
       method: 'PUT',
       params,
-      body,
+      body: JSON.stringify(body),
       headers,
     })
   },

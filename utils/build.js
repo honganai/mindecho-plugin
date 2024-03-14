@@ -2,11 +2,9 @@
 process.env.BABEL_ENV = 'production';
 process.env.NODE_ENV = 'production';
 process.env.ASSET_PATH = '/';
-// process.env.API_URL = 'https://linnk.distil.la'
-// process.env.API_URL = 'https://linnk.hongan.live'
 // !!!!!!!!!!!!    build.js 中为生产使用 谨慎修改    !!!!!!!!!!!!!!!!!!!
-process.env.API_URL = 'https://app.linnk.ai'
-process.env.POSTHOG_KEY = 'phc_opatROyYsdsv93fTRhj6l6vChu8PG21NsMRZoMsAoaJ';
+process.env.API_URL = 'https://api.pointread.app'
+process.env.POSTHOG_KEY = 'phc_PSM3JZG2Ti7DlJmhIuHMHWFsLtdZmWUOb2SEhCXnnPc';
 
 var webpack = require('webpack'),
   path = require('path'),

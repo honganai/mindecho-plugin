@@ -1,30 +1,35 @@
-import React, {useEffect} from 'react';
-import dayjs from 'dayjs';
-import { Button, List } from 'antd';
-import { LogoutOutlined, QuestionCircleOutlined } from '@ant-design/icons';
-import { CONTACT_URL, SUBSCRIBE_URL } from '@/constants';
-import cs from 'classnames';
-import SubscribeIcon from '../../../../assets/icons/subscribe.svg';
-import DiamondIcon from '../../../../assets/icons/diamond.svg';
+import React, { useState, useMemo, useContext } from 'react';
+import { Button, message } from 'antd';
+import { Logout, Mail, Diamond } from '@icon-park/react';
+import { CONTACT_URL } from '@/constants';
 import { PAY_URL } from '@/constants';
+import PaymentPopup from '../PaymentPopup';
+import { UserInfo } from '@/types';
+import GlobalContext from '@/reducer/global';
+import reqShowSummary from '@/utils/showSummary';
 
 import styles from './index.module.scss';
-import _ from "lodash";
-import posthog from "posthog-js";
 
 export enum SubType {
   Free = 'free',
   Premium = 'premium',
-  Elite = 'elite',
 }
 interface Props {
-  userinfo?: any;
+  userinfo?: UserInfo;
+  onOpen?: () => void;
+  checkPay: ([key]: any) => void;
 }
 
-const History: React.FC<Props> = ({ userinfo = {} }: Props) => {
-  const logoutText = chrome.i18n.getMessage('logout');
-  const userName = userinfo.username || '-';
-  const { subscription = {} } = userinfo;
+const History: React.FC<Props> = ({ userinfo, onOpen, checkPay }: Props) => {
+  const [uInfo, setUInfo] = useState(userinfo as UserInfo);
+  const { state: globalState } = useContext(GlobalContext);
+  const { userName, subscription, isPremium } = useMemo(() => {
+    return {
+      userName: uInfo.username || '-',
+      subscription: uInfo.subscription || {},
+      isPremium: uInfo?.subscription && uInfo?.subscription.mem_type === SubType.Premium,
+    };
+  }, [uInfo]);
   console.log('🚀 ~ file: User.tsx:21 ~ subscription:', subscription);
 
   const logout = () => {
@@ -33,110 +38,63 @@ const History: React.FC<Props> = ({ userinfo = {} }: Props) => {
     });
   };
 
-  useEffect(() => {
-    //发送用户身份信息
-    const event_name="plugin_show_profile"
-    console.log('posthog event_name', event_name);
-    posthog.capture(event_name, {email: userinfo.email, name: userinfo.username })
-  }, [userinfo?.id]);
-
+  const onPaymentComplete = () => {
+    checkPay((userinfo: UserInfo) => {
+      if (
+        userinfo?.subscription?.mem_type === SubType.Free &&
+        userinfo?.subscription?.quota_used_count >= userinfo?.subscription?.total_monthly_quota
+      ) {
+        // 未完成充值
+        message.warn(chrome.i18n.getMessage('payFail'));
+      } else {
+        // 直接刷新，不需要再点击start
+        setUInfo(userinfo);
+        reqShowSummary(globalState.cleanArticle.content);
+      }
+    });
+  };
   return (
     <div className={styles.container}>
-      <div className={styles['user-info']}>
-        <span className={styles['name']}>{userName}</span>
+      <div className="user-info">
+        <span className="name">{`${chrome.i18n.getMessage('hello')}, ${userName}`}</span>
+        {isPremium && <Diamond className="vip" theme="outline" size="15" fill="#333" strokeWidth={2} />}
       </div>
-      <div className={styles['subscribe-info']}>
-        <div className={cs(styles['subscribe-type'], subscription.mem_type !== SubType.Free && styles['premium'])}>
-          <SubscribeIcon />
-          <span>
-            {subscription.mem_type === SubType.Free
-              ? 'Free'
-              : subscription.mem_type === SubType.Premium
-              ? 'Premium'
-              : 'Elite'}
-          </span>
-        </div>
-        <div className={styles['subscribe-detail']}>
-          {subscription.mem_type === SubType.Free && (
-            <div className={styles['detail-item']}>
-              {chrome.i18n.getMessage('freeQuotaEveryMonth', [subscription.total_monthly_quota])}
-            </div>
-          )}
-          <div className={styles['detail-item']}>
-            <span className={styles['label']}>{chrome.i18n.getMessage('usage')}</span>
-            <span className={styles['value']}>
-              {subscription.mem_type === SubType.Elite ? (
-                'Unlimited'
-              ) : (
-                <>
-                  {subscription.quota_used_count}&nbsp;/&nbsp;
-                  <span className={cs([styles.bold, subscription.mem_type !== SubType.Free && styles.highlight])}>
-                    {subscription.total_monthly_quota}
-                  </span>
-                </>
-              )}
-            </span>
-          </div>
-
-          {subscription.mem_type !== SubType.Free && (
-            <div className={styles['detail-item']}>
-              <span className={styles['label']}>GPT-4</span>
-              <span className={styles['value']}>
-                {subscription.mem_type === SubType.Elite ? (
-                  'Unlimited'
-                ) : (
-                  <>
-                    {subscription.gpt4_used_count}&nbsp;/&nbsp;
-                    <span className={cs([styles.bold, subscription.mem_type !== SubType.Free && styles.highlight])}>
-                      {subscription.gpt4_quota}
-                    </span>
-                  </>
-                )}
-              </span>
-            </div>
-          )}
-          <div className={styles['detail-item']}>
-            <span className={styles['label']}>{chrome.i18n.getMessage('resetsOn')}</span>
-            <span className={styles['value']}>{dayjs(subscription.quota_reset_time).format('MM/DD/YYYY')}</span>
-          </div>
-          {subscription.mem_type !== SubType.Free && (
-            <div className={styles['detail-item']}>
-              <span className={styles['label']}>{chrome.i18n.getMessage('expiresOn')}</span>
-              <span className={styles['value']}>{dayjs(subscription.mem_ship_date).format('MM/DD/YYYY')}</span>
-            </div>
-          )}
-          {subscription.mem_type === SubType.Free && (
-            <div className={styles['detail-item']}>
-              {chrome.i18n.getMessage('notEnough')}{' '}
-              <a
-                onClick={() => {
-                  window.open(PAY_URL);
-                }}>
-                {chrome.i18n.getMessage('getMore')}
-              </a>
-            </div>
-          )}
-        </div>
-        {subscription.mem_type !== SubType.Free && (
-          <a className={styles['link']} target="_blank" rel="noreferrer" href={SUBSCRIBE_URL}>
-            <DiamondIcon />
-            <span>{chrome.i18n.getMessage('manageSubscription')}</span>
-          </a>
+      <div className="subscribe-info">
+        <span>{chrome.i18n.getMessage('enjoyYourReading')}</span>
+        <span>
+          {!isPremium ? chrome.i18n.getMessage('currentFreeUsage') : chrome.i18n.getMessage('currentUsage')}:
+          {` ${subscription.quota_used_count}/${subscription.total_monthly_quota}`}
+        </span>
+        {!isPremium && (
+          <Button
+            type="primary"
+            className="upgrade"
+            onClick={() => {
+              onOpen?.();
+              if (!globalState.showSubscribeModal) {
+                PaymentPopup({
+                  onComplete: onPaymentComplete,
+                });
+              }
+              window.open(PAY_URL);
+            }}>
+            {chrome.i18n.getMessage('userPayBtn')}
+          </Button>
         )}
       </div>
-      <div className={styles['operate']}>
-        <a className={styles['link']} target="_blank" rel="noreferrer" href={CONTACT_URL}>
-          <QuestionCircleOutlined />
+      <div className="operate">
+        <a className="link" target="_blank" rel="noreferrer" href={CONTACT_URL}>
+          <Mail theme="outline" size="20" fill="#333" strokeWidth={2} />
           <span>{chrome.i18n.getMessage('contactUs')}</span>
         </a>
         <a
-          className={styles['link']}
+          className="link"
           onClick={(e) => {
             e.preventDefault();
             logout();
           }}>
-          <LogoutOutlined />
-          <span>{logoutText}</span>
+          <Logout theme="outline" size="20" fill="#333" strokeWidth={2} />
+          <span>{chrome.i18n.getMessage('logout')}</span>
         </a>
       </div>
     </div>

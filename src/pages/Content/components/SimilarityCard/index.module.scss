@@ -1,4 +1,4 @@
-@import '@/assets/style/public.extend.scss';
+@import '@/assets/style/public.extend';
 
 .similarity-card {
   padding: 8px 10px;
@@ -8,7 +8,8 @@
 
   .similarity-card-article {
     .similarity-card-article-title {
-      @extend %linnk-extend-p;
+      @extend %pointread-extend-p;
+
       font-size: var(--font-size);
       color: var(--color-text);
     }

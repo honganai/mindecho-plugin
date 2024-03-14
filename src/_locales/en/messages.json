@@ -84,11 +84,11 @@
         "description": ""
     },
     "pluginName": {
-        "message": "Linnk AI: Grasp The Essence Quick",
+        "message": "PointRead: Pointed Reading with AI",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Capturing the true essence of any content (news, articles, blogs, videos, and essays) for you to learn fast and stay informed.",
+        "message": "Summarize essence of long articles and point you to the right section. Read more with less time spent.",
         "description": ""
     },
     "summary": {
@@ -206,10 +206,6 @@
             }
         }
     },
-    "currentUsage": {
-        "message": "Your current usage",
-        "description": ""
-    },
     "needMore": {
         "message": "Need More?",
         "description": ""
@@ -264,7 +260,7 @@
         "description": ""
     },
     "distillIconName": {
-        "message": "Insights",
+        "message": "PointRead",
         "description": ""
     },
     "freeSubType": {
@@ -352,77 +348,64 @@
         "message": "And discuss with Linnk as your thinking partner",
         "description": ""
     },
-    "advancedModels": {
-        "message": "Use Advanced AI Models",
+    "hello": {
+        "message": "Hello",
         "description": ""
     },
-    "askYourCollections": {
-        "message": "Ask Your Collections",
+    "enjoyYourReading": {
+        "message": "Enjoy your reading!",
         "description": ""
     },
-    "advancedModelsTips": {
-        "message": "Employ advanced AI models like GPT-4 and further for more accurate and sophisticated responses",
+    "currentUsage": {
+        "message": "Current Usage",
         "description": ""
     },
-    "askYourCollectionsTips": {
-        "message": "Using reference from what you’ve already read and collected with Linnk",
+    "currentFreeUsage": {
+        "message": "Current Free Usage",
         "description": ""
     },
-    "notNow": {
-        "message": "Not Now",
+    "upgradeTo300": {
+        "message": "Upgrade to 300 Reads and More",
         "description": ""
     },
-    "premiumQuotaResetDays": {
-        "message": "Usage quota resets in $day$ days",
-        "description": "",
-        "placeholders": {
-            "day": {
-                "content": "$1"
-            }
-        }
-    },
-    "premiumMember": {
-        "message": "Premium Member",
+    "paymentIsCompleted": {
+        "message": "Start Efficient Reading",
         "description": ""
     },
-    "pageQueries": {
-        "message": "Page Queries",
+    "paymentIsCancle": {
+        "message": "No, Thanks. See you tomorrow",
         "description": ""
     },
-    "goElite": {
-        "message": "Upgrade to Elite",
+    "paymentTitle": {
+        "message": "Out of Free Reads Today",
         "description": ""
     },
-    "goUnlimited": {
-        "message": "Go Unlimited",
+    "userPayBtn": {
+        "message": "Upgrade to 300 Reads",
         "description": ""
     },
-    "unlimitedQueries": {
-        "message": "Unlimited Queries",
+    "titleSummary": {
+        "message": "Summary",
         "description": ""
     },
-    "chatWithPageAdvancedModels": {
-        "message": "Chat with page using advanced models",
+    "titleHighlights": {
+        "message": "Highlights",
         "description": ""
     },
-    "chatWithPersonalCollections": {
-        "message": "Chat with Personal Collections using advanced models",
+    "titleConclusion": {
+        "message": "Conclusion",
         "description": ""
     },
-    "unlimitedChatswithAdvancedModels": {
-        "message": "Unlimited Chats with advanced models(GPT-4-Turbo,Claude 2)",
+    "shareBtn": {
+        "message": "Share",
         "description": ""
     },
-    "queriesChatsPermonth": {
-        "message": "300 Queries or Chats per month",
-        "description": ""
+    "shareThisRead": {
+        "message": "Share This Read",
+        "description": "分享框的标题"
     },
-    "chatWithAdvancedModels": {
-        "message": "30 Chats with advanced models(GPT-4 Turbo and further)",
-        "description": ""
-    },
-    "tryAdvancedModels": {
-        "message": "Try Advanced Models?",
-        "description": ""
+    "shareCopyLink": {
+        "message": "Copy Link",
+        "description": "复制分享链接的按钮"
     }
 }

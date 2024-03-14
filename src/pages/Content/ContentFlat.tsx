@@ -44,8 +44,8 @@ const Options: React.FC<IProps> = ({ showAnimate }) => {
 
   const onClose = () => {
     console.log('close');
-    const linnk = getDocument().getElementById('linnk-sidebar-flat') as HTMLElement;
-    if (linnk?.parentNode) linnk.parentNode.removeChild(linnk);
+    const pointread = getDocument().getElementById('pointread-sidebar-flat') as HTMLElement;
+    if (pointread?.parentNode) pointread.parentNode.removeChild(pointread);
   };
 
   const onShowContent = () => {
@@ -122,12 +122,12 @@ const Options: React.FC<IProps> = ({ showAnimate }) => {
                   className={cs(styles.summarize, showAnimate && styles['highlight-animate'])}
                   onClick={onShowContent}>
                   <img draggable={false} className={styles['img-logo']} src={img} />
-                  <span className={styles['span']}>{distillIconName}</span>
+                  {/* <span className={styles['span']}>{distillIconName}</span> */}
                 </div>
                 <div className={cs(styles.icon, styles['close-icon'])}>
                   <CloseCircleOutlined onClick={onClose} />
                 </div>
-                <div className={cs(styles.icon, styles['setting-icon'])}>
+                {/* <div className={cs(styles.icon, styles['setting-icon'])}>
                   <Dropdown
                     open={openSetting}
                     onOpenChange={(open) => {
@@ -204,7 +204,7 @@ const Options: React.FC<IProps> = ({ showAnimate }) => {
                       <SettingOutlined />
                     </span>
                   </Dropdown>
-                </div>
+                </div> */}
               </div>
             </Draggable>
           </div>
@@ -222,7 +222,7 @@ const Options: React.FC<IProps> = ({ showAnimate }) => {
             </div>
           </div>
         }
-        getPopupContainer={() => getDocument().getElementById('linnk-sidebar-document') || document.body}
+        getPopupContainer={() => getDocument().getElementById('pointread-sidebar-document') || document.body}
         overlayClassName={styles['close-tips-tooltip']}
         open={closeTipsShow}
         arrowPointAtCenter={true}

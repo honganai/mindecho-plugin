@@ -1,6 +1,6 @@
 import React, { useEffect, useReducer, useRef, useState } from 'react';
 import { Layout, Tabs, ConfigProvider, Popover, message, Spin, notification, Select } from 'antd';
-import { CloseOutlined, UserOutlined, GlobalOutlined } from '@ant-design/icons';
+import { Me, CloseOne } from '@icon-park/react';
 import type { TabsProps, MenuProps } from 'antd';
 import { Dropdown } from 'antd';
 import _ from 'lodash';
@@ -12,16 +12,13 @@ import Memories from './components/memories/Memories';
 import Thinking from './components/thinking/Thinking';
 import User, { SubType } from './components/user/User';
 import Login from './components/login/Login';
+import Share from './components/share';
 
 import styles from './content.module.scss';
 import getCleanArticle from './distillConfig';
 import { UserInfo, UserType } from '@/types';
 import { LANGUAGE_COLLECTIONS, PLACEHOLDER, POSTHOG_KEY } from '@/constants';
-import GlobalContext, {
-  reducer as GlobalReducer,
-  ActionType as GlobalActionType,
-  enumSubscribeModalType,
-} from '../../reducer/global';
+import GlobalContext, { reducer as GlobalReducer, ActionType as GlobalActionType } from '../../reducer/global';
 import posthog from 'posthog-js';
 const { Header } = Layout;
 interface Props {
@@ -34,10 +31,10 @@ interface MessageData {
 
 // message全局配置
 notification.config({
-  getContainer: () => getDocument().getElementById('linnk-sidebar') as HTMLElement,
+  getContainer: () => getDocument().getElementById('pointread-sidebar') as HTMLElement,
 });
 message.config({
-  getContainer: () => getDocument().getElementById('linnk-sidebar') as HTMLElement,
+  getContainer: () => getDocument().getElementById('pointread-sidebar') as HTMLElement,
 });
 
 const Options: React.FC<Props> = ({ title }: Props) => {
@@ -112,10 +109,6 @@ const Options: React.FC<Props> = ({ title }: Props) => {
   const toLogin = () => {
     chrome.runtime.sendMessage({ type: 'login', data: {} }, (res) => {
       console.log('login res:', res);
-      //发送用户身份信息
-      const event_name="plugin_click_login"
-      console.log('posthog event_name', event_name);
-      posthog.capture(event_name )
       if (!res || res.error) {
         console.log('登陆错误');
       }
@@ -194,18 +187,14 @@ const Options: React.FC<Props> = ({ title }: Props) => {
   }, [userinfo?.id]);
 
   useEffect(() => {
-    if (userinfo?.subscription?.quota_used_count >= userinfo?.subscription?.total_monthly_quota) {
+    if (
+      userinfo?.subscription?.mem_type === SubType.Free &&
+      userinfo?.subscription?.quota_used_count >= userinfo?.subscription?.total_monthly_quota
+    ) {
       // 超过套餐次数弹出充值
       globalDispatch({
         type: GlobalActionType.SetShowSubscribeModal,
-        payload: {
-          show: true,
-          closable: false,
-          subscribeModalType:
-            userinfo?.subscription?.mem_type === SubType.Free
-              ? enumSubscribeModalType.Premium
-              : enumSubscribeModalType.Elite,
-        },
+        payload: true,
       });
     }
   }, [userinfo]);
@@ -238,7 +227,7 @@ const Options: React.FC<Props> = ({ title }: Props) => {
   };
   const onClose = () => {
     console.log('close');
-    const linkEl = getDocument().getElementById('linnk-sidebar');
+    const linkEl = getDocument().getElementById('pointread-sidebar');
     if (linkEl) linkEl.style.display = 'none';
     chrome.runtime.sendMessage({ type: 'close' }, (res) => {
       console.log('关闭完成', res);
@@ -248,7 +237,7 @@ const Options: React.FC<Props> = ({ title }: Props) => {
     if (triggerNode && triggerNode.parentNode) {
       return triggerNode.parentNode;
     }
-    return getDocument().getElementById('linnk-sidebar');
+    return getDocument().getElementById('pointread-sidebar');
   };
 
   const dropItems = LANGUAGE_COLLECTIONS.map((lc) => {
@@ -297,15 +286,15 @@ const Options: React.FC<Props> = ({ title }: Props) => {
         state: gloablState,
         dispatch: globalDispatch,
       }}>
-      <div id="linnk-plugin-content" className={styles.container}>
+      <div id="pointread-plugin-content" className={styles.container}>
         <ConfigProvider>
           <Header className={styles.header}>
             <div className={styles['header-logo']}>
               <img className={styles.logo} src={img} />
-              <span className={styles.name}></span>
+              <span className={styles.name}>PointRead</span>
             </div>
             <div className={styles['header-user']}>
-              {!isLogin && (
+              {/*{!isLogin && (
                 <Dropdown
                   overlayClassName={styles['header-language']}
                   trigger={['click']}
@@ -323,7 +312,7 @@ const Options: React.FC<Props> = ({ title }: Props) => {
                           defaultValue={gloablState.language || 'auto'}
                           options={dropItems}
                           getPopupContainer={() =>
-                            getDocument().getElementById('linnk-plugin-content') || document.body
+                            getDocument().getElementById('pointread-plugin-content') || document.body
                           }></Select>
                       </div>
                     );
@@ -333,7 +322,7 @@ const Options: React.FC<Props> = ({ title }: Props) => {
                     <GlobalOutlined style={{ color: '#000' }} />
                   </span>
                 </Dropdown>
-              )}
+              )}*/}
               {!isLogin && (
                 <Dropdown
                   open={openUserInfo}
@@ -341,16 +330,24 @@ const Options: React.FC<Props> = ({ title }: Props) => {
                     setOpenUserInfo(open);
                   }}
                   overlayClassName={styles['header-userinfo']}
-                  dropdownRender={() => <User userinfo={userinfo} />}
+                  dropdownRender={() => (
+                    <User
+                      onOpen={() => {
+                        setOpenUserInfo(false);
+                      }}
+                      userinfo={userinfo}
+                      checkPay={checkPay}
+                    />
+                  )}
                   placement="bottomRight"
                   getPopupContainer={getPopupContainer}
                   trigger={['click']}>
                   <span className={styles['header-user-icon']}>
-                    <UserOutlined style={{ color: '#000' }} />
+                    <Me theme="outline" size="20" fill="#333" />
                   </span>
                 </Dropdown>
               )}
-              <CloseOutlined onClick={onClose} style={{ color: '#000' }} />
+              <CloseOne theme="outline" size="20" fill="#333" onClick={onClose} style={{ cursor: 'pointer' }} />
             </div>
           </Header>
           <Spin spinning={loading}>
@@ -359,13 +356,17 @@ const Options: React.FC<Props> = ({ title }: Props) => {
                 <Login onLogin={toLogin} />
               </>
             ) : (
-              <Tabs
-                className={styles.tabs}
-                defaultActiveKey="1"
-                activeKey={activeKey}
-                items={items}
-                onChange={onChange}
-              />
+              <>
+                {gloablState?.articleDistillId && <Share />}
+                {items[0].children}
+              </>
+              // <Tabs
+              //   className={styles.tabs}
+              //   defaultActiveKey="1"
+              //   activeKey={activeKey}
+              //   items={items}
+              //   onChange={onChange}
+              // />
             )}
           </Spin>
         </ConfigProvider>

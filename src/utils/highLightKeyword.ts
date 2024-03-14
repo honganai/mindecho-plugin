@@ -9,7 +9,7 @@ export interface IKeywordOption {
   // 忽略大小写
   caseSensitive?: boolean;
   // 自定义渲染高亮html
-  renderHighlightKeyword?: (content: string) => any;
+  renderHighlightKeyword?: (content: React.ReactNode) => any;
 }
 
 export type IKeyword = string | IKeywordOption;

@@ -156,22 +156,22 @@ const GoalView: React.FC = () => {
         itemLayout="horizontal"
         loadMore={loadMore}
         renderItem={(goalOfThinking: GoalOfThinking) => (
-          <div key={goalOfThinking.goal_id + ''} className="linnk-content-wrapper">
+          <div key={goalOfThinking.goal_id + ''} className="pointread-content-wrapper">
             <div
               className={
                 activeGoalIds.indexOf(goalOfThinking.goal_id) > -1
-                  ? 'linnk-goal-title-wrapper-active'
-                  : 'linnk-goal-title-wrapper'
+                  ? 'pointread-goal-title-wrapper-active'
+                  : 'pointread-goal-title-wrapper'
               }
               onClick={() => {
                 onSelectedGoalChange(goalOfThinking);
               }}>
-              <div className="linnk-goal-title">{goalOfThinking.goal}</div>
-              {/* <Typography.Text className="linnk-goal-title" ellipsis={false}>
+              <div className="pointread-goal-title">{goalOfThinking.goal}</div>
+              {/* <Typography.Text className="pointread-goal-title" ellipsis={false}>
                 {goalOfThinking.goal}
               </Typography.Text> */}
               <CopyFilled
-                className="linnk-goal-copy-icon"
+                className="pointread-goal-copy-icon"
                 onClick={(e) => {
                   e.stopPropagation();
                   formatCopy(goalOfThinking);
@@ -180,30 +180,30 @@ const GoalView: React.FC = () => {
             </div>
             {activeGoalIds.indexOf(goalOfThinking.goal_id) > -1 && (
               <Skeleton
-                className="linnk-goal-loading-skeleton"
+                className="pointread-goal-loading-skeleton"
                 loading={activeIdList.some((ail) => ail === goalOfThinking.goal_id)}
                 title={false}
                 active>
                 <List
                   dataSource={goalOfThinking.goal_articles}
                   renderItem={(goalArticle: GoalArticle) => (
-                    <div key={goalArticle.article.id} className="linnk-goal-article-item">
+                    <div key={goalArticle.article.id} className="pointread-goal-article-item">
                       {contextHolder}
-                      <div className="linnk-goal-article-item-summary">{goalArticle.summary_by_goal}</div>
+                      <div className="pointread-goal-article-item-summary">{goalArticle.summary_by_goal}</div>
                       <div
-                        className="linnk-goal-article-item-title-wrapper"
+                        className="pointread-goal-article-item-title-wrapper"
                         onClick={() => {
                           openUrlInNewTab(goalArticle.article.url);
                         }}>
-                        <div className="linnk-goal-article-item-wrapper">
+                        <div className="pointread-goal-article-item-wrapper">
                           <LinkOutlined
-                            className="linnk-goal-article-item-title-prefix-icon"
+                            className="pointread-goal-article-item-title-prefix-icon"
                             onClick={() => {
                               openUrlInNewTab(goalArticle.article.url);
                             }}
                           />
                           <Typography.Text
-                            className="linnk-goal-article-item-title-text"
+                            className="pointread-goal-article-item-title-text"
                             ellipsis={{
                               tooltip: {
                                 title: goalArticle.article.title,
@@ -213,8 +213,8 @@ const GoalView: React.FC = () => {
                             {goalArticle.article.title}
                           </Typography.Text>
                         </div>
-                        <div className="linnk-goal-article-item-wrapper">
-                          <div className="linnk-goal-article-item-date">
+                        <div className="pointread-goal-article-item-wrapper">
+                          <div className="pointread-goal-article-item-date">
                             {formatDateMMDD(goalArticle.article_distill?.changed_on)}
                           </div>
                         </div>

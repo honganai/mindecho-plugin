@@ -7,7 +7,7 @@
   font-size: var(--font-size);
   color: var(--color-text);
 
-  @extend %linnk-extend-scrollbar;
+  @extend %pointread-extend-scrollbar;
 
   .header-userinfo {
     padding: 12px;
@@ -15,6 +15,7 @@
     background-color: #fff;
     border-radius: 3px;
     box-shadow: var(--box-shadow);
+    border: 1px solid var(--border-black)
   }
 
   .header-language {
@@ -51,10 +52,10 @@
     align-items: center;
     justify-content: space-between;
     height: 56px;
-    padding: 0 8px;
+    padding: 15px 12px;
     color: #fff;
     text-align: center;
-    background-color: #fff;
+    background-color: #F5F5F5;
 
     .header-logo {
       display: flex;
@@ -62,14 +63,16 @@
     }
 
     .logo {
-      width: 70px;
-      height: auto;
+      height: 30px;
+      width: auto;
       margin-right: 4px;
       filter: none;
     }
 
     .name {
+      font-size: 24px;
       font-weight: 600;
+      line-height: 24px;
       color: #000;
     }
 
@@ -115,6 +118,11 @@
 
     .anticon-user {
       margin-right: 0 !important;
+    }
+
+    .i-icon {
+      display: flex;
+      align-items: center;
     }
   }
 }

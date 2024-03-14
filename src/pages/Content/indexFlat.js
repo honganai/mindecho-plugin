@@ -13,13 +13,13 @@ let showAnimate = false; // 显示icon的入场动画
 // 如果content已加载，不再重复加载
 if (!window.contentLoaded) {
   window.contentLoaded = true;
-  console.log('[linnk-sidebar-flat] init');
+  console.log('[pointread-sidebar-flat] init');
   isDisable().then((show) => {
     if (show) {
 
       const pCount = document.querySelectorAll('p').length;
       if (pCount > 5) {
-        showAnimate = true;
+        // showAnimate = true;
       }
       init();
     }
@@ -31,7 +31,7 @@ function addNewStyle(newStyle) {
   if (!styleElement) {
       styleElement = document.createElement('style');
       styleElement.type = 'text/css';
-      styleElement.id = 'linnk-extension-styles';
+      styleElement.id = 'pointread-extension-styles';
       document.getElementsByTagName('head')[0].appendChild(styleElement);
   }
 
@@ -41,19 +41,19 @@ function addNewStyle(newStyle) {
 addNewStyle('body * {user-select: auto !important;}');
 
 function init() {
-  let extensionRoot = document.getElementById('linnk-extension-shadow');
+  let extensionRoot = document.getElementById('pointread-extension-shadow');
   if (extensionRoot) {
     const shadowRoot = extensionRoot.shadowRoot;
-    let div = shadowRoot.getElementById('linnk-sidebar-flat');
+    let div = shadowRoot.getElementById('pointread-sidebar-flat');
     if (!div) {
       div = document.createElement('div');
-      div.setAttribute('id', 'linnk-sidebar-flat');
+      div.setAttribute('id', 'pointread-sidebar-flat');
       shadowRoot.appendChild(div);
     }
-    let doc = shadowRoot.getElementById('linnk-sidebar-document'); // 用于显示移除了flat之后还需要显示的浮层信息
+    let doc = shadowRoot.getElementById('pointread-sidebar-document'); // 用于显示移除了flat之后还需要显示的浮层信息
     if (!doc) {
       doc = document.createElement('div');
-      doc.setAttribute('id', 'linnk-sidebar-document');
+      doc.setAttribute('id', 'pointread-sidebar-document');
       shadowRoot.appendChild(doc);
     }
 

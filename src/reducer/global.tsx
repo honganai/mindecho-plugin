@@ -1,10 +1,5 @@
 import React from 'react';
 
-/** 弹窗类型 */
-export enum enumSubscribeModalType {
-  Premium,
-  Elite,
-}
 export interface IState {
   /** 当前语言 */
   language: string;
@@ -22,9 +17,6 @@ export interface IState {
   articleDistillId?: string;
   /** 订阅弹窗 */
   showSubscribeModal?: boolean;
-  /** 订阅弹窗可关闭 */
-  subscribeModalClosable?: boolean;
-  subscribeModalType?: enumSubscribeModalType;
   /** 引导相关的dom */
   guideRefs: React.MutableRefObject<Record<string, HTMLElement>>;
   showGuide: boolean;
@@ -37,7 +29,6 @@ export enum ActionType {
   SetArticleId = 'SET_ARTICLE_ID',
   SetArticleDistillId = 'SET_ARTICLE_DISTILL_ID',
   SetShowSubscribeModal = 'SET_SHOW_SUBSCRIBE_MODAL',
-  SetSubscribeModalClosable = 'SET_SUBSCRIBE_MODAL_CLOSABLE',
   SetShowGuide = 'SET_SHOW_GUIDE',
 }
 
@@ -47,7 +38,6 @@ export type IAction =
   | ISetArticleIdAction
   | ISetArticleDistillIdAction
   | ISetShowSubscribeModal
-  | ISetSubscribeModalClosable
   | ISetShowGuide;
 
 export interface ISetShowGuide {
@@ -56,14 +46,6 @@ export interface ISetShowGuide {
 }
 export interface ISetShowSubscribeModal {
   type: ActionType.SetShowSubscribeModal;
-  payload: {
-    show: boolean;
-    closable?: boolean;
-    subscribeModalType?: enumSubscribeModalType;
-  };
-}
-export interface ISetSubscribeModalClosable {
-  type: ActionType.SetSubscribeModalClosable;
   payload: boolean;
 }
 export interface ISetLanguageAction {
@@ -115,9 +97,7 @@ export function reducer(state: IState, action: IAction): IState {
     case ActionType.SetShowSubscribeModal:
       return {
         ...state,
-        showSubscribeModal: action.payload.show,
-        subscribeModalClosable: action.payload.closable || false,
-        subscribeModalType: action.payload.subscribeModalType || state.subscribeModalType,
+        showSubscribeModal: action.payload,
       };
 
     case ActionType.SetShowGuide:

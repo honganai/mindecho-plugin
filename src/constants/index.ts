@@ -1,5 +1,6 @@
 import { version } from '../../package.json';
-
+/** 高亮显示下一段文本字符数量 */
+export const HIGHLIGHT_NEXT_LENGTH = 300;
 /** 禁用的url，示例：['https://www.linnk.ai/'] */
 export const DISABLE_PAGES_KEY = 'linnk-disabled-pages';
 /** 禁用的域名，示例：['www.linnk.ai'] */
@@ -105,7 +106,7 @@ export const PLACEHOLDER = '[PLACEHOLDER]';
 /** base url */
 export const HOME_URL = 'https://www.linnk.ai';
 
-export const CONTACT_URL = 'https://www.linnk.ai/contact';
+export const CONTACT_URL = 'mailto:pointread@linnk.ai';
 
 export const PAY_URL = `${process.env.API_URL}/payment`;
 export const POSTHOG_KEY = `${process.env.POSTHOG_KEY}`;
@@ -215,3 +216,7 @@ export const HEIGHTLIGHT_COLORS = [
 export const HOME_QUERY = {
   LINNK_EXTENSION: 'linnk_extension',
 };
+
+/** 分享地址的域名 */
+export const SHARE_ORIGIN =
+  process.env.NODE_ENV === 'production' ? 'https://pointread.app' : 'https://pr-share.hongan.live';

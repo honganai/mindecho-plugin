@@ -3,10 +3,10 @@ import React, { useCallback, useContext, useEffect, useMemo, useRef, useState } 
 import _ from 'lodash';
 import { notification } from 'antd';
 import reqShowSummary from '@/utils/showSummary';
-import GlobalContext, { ActionType, enumSubscribeModalType } from '@/reducer/global';
+import GlobalContext, { ActionType } from '@/reducer/global';
 import { SyncOutlined } from '@ant-design/icons';
 
-const order = ['coremsg', 'intent', 'note', 'content_type', 'key_logics', 'data_sheet', 'quotes', 'further_questions'];
+const order = ['intent', 'note', 'content_type', 'key_logics', 'data_sheet', 'quotes', 'further_questions'];
 
 /**
  * 将流式返回的字符串转化为json数据
@@ -31,11 +31,13 @@ const useDistillBlock = () => {
   const [reciveEnd, setReciveEnd] = useState(false);
   const streamResponse = useRef(''); // 流式返回的字符串
   const [parseStream, setParseStream] = useState<Record<string, string>[]>([]); // 流式返回的字符串转为json数据
+  const [markdownStream, setMarkdownStream] = useState('');
 
   const restData = () => {
     streamResponse.current = '';
     setReciveEnd(false);
-    setParseStream([]);
+    // setParseStream([]);
+    setMarkdownStream('');
   };
 
   // 排序之后的数据
@@ -50,7 +52,6 @@ const useDistillBlock = () => {
       ['content_type', 'key_logics', 'data_sheet', 'quotes'].includes(Object.keys(data)[0]),
     );
     const intentNote = {
-      ...sortedList?.filter((data) => Object.keys(data)[0] == 'coremsg')?.[0],
       ...sortedList?.filter((data) => Object.keys(data)[0] == 'intent')?.[0],
       ...sortedList?.filter((data) => Object.keys(data)[0] == 'note')?.[0],
     };
@@ -72,35 +73,36 @@ const useDistillBlock = () => {
       };
       chrome.runtime.sendMessage(
         {
-          type: 'ws_distill_block_request',
+          type: 'ws_distill_pointread_request',
           data: {
             ...message,
           },
         },
         (res) => {
-          console.log('ws_distill_block_request send :', res);
+          console.log('ws_distill_pointread_request send :', res);
         },
       );
-    } else if (request.type === 'ws_distill_block_request' && request.data && !_.isEmpty(request.data)) {
+    } else if (request.type === 'ws_distill_pointread_request' && request.data && !_.isEmpty(request.data)) {
       if (request.data.event === 'message') {
         setReciveEnd(false);
         // 给双引号加上反斜杠
-        streamResponse.current = (streamResponse.current + request.data.answer)
-          .replace(/(?<=:)\s/, '')
-          .replace(/(?<=[^{}:\\])"(?=[^{}:])/g, '');
+        streamResponse.current = streamResponse.current + request.data.answer;
+        // .replace(/(?<=:)\s/, '')
+        // .replace(/(?<=[^{}:\\])"(?=[^{}:])/g, '');
         console.log(
           '🚀 ~ file: useDistillBlock.tsx:87 ~ onBackendMessage ~ streamResponse.current:',
           streamResponse.current,
         );
-        try {
-          const newJson = formatJsonString(streamResponse.current);
-          if (newJson) {
-            console.log('🚀 ~ file: useDistillBlock.tsx:92 ~ onBackendMessage ~ setParseStream:', newJson);
-            setParseStream(newJson);
-          }
-        } catch {
-          //
-        }
+        setMarkdownStream(streamResponse.current);
+        // try {
+        //   const newJson = formatJsonString(streamResponse.current);
+        //   if (newJson) {
+        //     console.log('🚀 ~ file: useDistillBlock.tsx:92 ~ onBackendMessage ~ setParseStream:', newJson);
+        //     setParseStream(newJson);
+        //   }
+        // } catch {
+        //   //
+        // }
       } else if (request.data.event === 'message_end') {
         // setReciveEnd(true);
       } else if (request.data.event === 'message_format') {
@@ -111,21 +113,7 @@ const useDistillBlock = () => {
             // 超过套餐次数弹出充值
             globalDispatch({
               type: ActionType.SetShowSubscribeModal,
-              payload: {
-                show: true,
-                closable: false,
-                subscribeModalType: enumSubscribeModalType.Premium,
-              },
-            });
-          } else if (error === 'PREMIUM_SUBSCRIPTION_QUOTA_REACHED') {
-            // 超过套餐次数弹出充值
-            globalDispatch({
-              type: ActionType.SetShowSubscribeModal,
-              payload: {
-                show: true,
-                closable: false,
-                subscribeModalType: enumSubscribeModalType.Elite,
-              },
+              payload: true,
             });
           } else {
             // 报错弹出提示，可以点击重试
@@ -150,7 +138,8 @@ const useDistillBlock = () => {
             });
           }
         } else {
-          setParseStream(request.data.data || []);
+          setMarkdownStream(request.data.data);
+          // setParseStream(request.data.data || []);
           globalDispatch({
             type: ActionType.SetArticleId,
             payload: request.data.article_id,
@@ -181,6 +170,7 @@ const useDistillBlock = () => {
     captureContent,
     intentNote,
     restData,
+    markdownStream,
   };
 };
 

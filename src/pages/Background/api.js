@@ -89,8 +89,14 @@ const Api = {
   // thinking 列表
   getArticleGroup: ({body, headers={}}) => http.post('/api/v1/analyst/article_group', body, headers),
 
+  // 获取分享链接
+  getShareUrl: ({body, headers={}}) => http.post('/api/v1/generate_link', body, headers),
+
   // 获取订阅计划列表
   getProduct: ({ headers = {}, params = {} }) => http.get('/api/v1/product/', params, headers),
+
+  // 原文高亮文本
+  putHighlightText: ({ body, headers = {} }) => http.put('/api/v1/highlight_text', body, headers),
 };
 
 export default Api;

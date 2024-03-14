@@ -135,7 +135,7 @@ const ArticleList: React.FC<IProps> = ({ listHeight }) => {
                       tooltip: {
                         title: item.article_title,
                         zIndex: 21474836471,
-                        getPopupContainer: () => getDocument().getElementById('linnk-sidebar') as HTMLElement,
+                        getPopupContainer: () => getDocument().getElementById('pointread-sidebar') as HTMLElement,
                       },
                     }}>
                     <div dangerouslySetInnerHTML={{ __html: item.html_article_title || item.article_title }} />
