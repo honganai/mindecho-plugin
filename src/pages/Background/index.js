@@ -15,7 +15,11 @@ function handleMessages(message, sender, sendResponse) {
   const { type } = message;
   if (type === 'login') {
     onLoginAction(message, sendResponse);
-  } 
+  } else if (type === 'request') {
+    onRequest(message, sendResponse);
+  } else if (type === 'getCookie') {
+    getCookie(message, sender, sendResponse);
+  }
   return true;
 }
 
@@ -94,6 +98,78 @@ async function onLoginAction(message, sendResponse) {
       );
     });
   });
+}
+
+// 缓存登录state
+function setLogin(value, activeTab) {
+  chrome.storage.local.set({
+    isLogin: value,
+  });
+  if (activeTab) {
+    chrome.tabs.sendMessage(activeTab.id, { isLogin: value, type: 'setLogin' }, function (res) {
+      console.log('set login ok');
+    });
+    return;
+  } else {
+    chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
+      // 在回调函数中处理返回的标签页信息
+      var activeTab = tabs[0];
+      console.log('activeTab', activeTab);
+      chrome.tabs.sendMessage(activeTab.id, { isLogin: value, type: 'setLogin' }, function (res) {
+        console.log('set login ok');
+      });
+    });
+  }
+}
+
+async function onRequest(message, sendResponse) {
+  const { api } = message;
+  console.log(api, Api, message);
+  if (Api[api]) {
+    console.log(api, message);
+    return Api[api](message)
+      .then((res) => {
+        if (res.status === 401) {
+          // onLoginAction(message, sendResponse);
+          setLogin(true);
+          return;
+        }
+        return res.json();
+      })
+      .then((body) => {
+        console.log('request api:', api, body);
+        sendResponse(body);
+        return;
+      })
+      .catch((error) => {
+        console.log('request error:', api, error);
+        sendResponse(error);
+      });
+  }
+  sendResponse({
+    cmd: api,
+    error: 'method is not exist',
+    data: {},
+  });
+  return;
+}
+
+function getCookie(message, sender, sendResponse) {
+  let { key, domain } = message;
+
+  chrome.cookies.getAll(
+    {
+      url: domain || baseUrl,
+    },
+    (cookies) => {
+      console.log('cookies::', cookies);
+      let cookie = cookies.find((item) => item.name === key);
+      sendResponse({
+        cmd: 'getCookie',
+        data: cookie,
+      });
+    },
+  );
 }
 
 /**

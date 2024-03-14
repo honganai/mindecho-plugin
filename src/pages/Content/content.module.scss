@@ -7,8 +7,6 @@
   font-size: var(--font-size);
   color: var(--color-text);
 
-  @extend %pointread-extend-scrollbar;
-
   .header-userinfo {
     padding: 12px;
     text-align: left;

@@ -1,4 +1,5 @@
-import { version } from '../../package.json';
+import packageInfo from '../../package.json';
+const version = packageInfo.version;
 /** 高亮显示下一段文本字符数量 */
 export const HIGHLIGHT_NEXT_LENGTH = 300;
 /** 禁用的url，示例：['https://www.linnk.ai/'] */
