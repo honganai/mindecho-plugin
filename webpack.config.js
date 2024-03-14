@@ -39,17 +39,22 @@ const styleLoaderOption = {
   loader: 'style-loader',
   options: {
     insert: function (element) {
-      const extensionHostID = 'linnk-extension-shadow';
-      let extensionHost = document.getElementById(extensionHostID);
+      /** options等页面不需要shadow，同时需要在HtmlWebpackPlugin配置里加上prepend chunk */
+      if (window.linnkPluginNoShadowDom) {
+        document.head.appendChild(element);
+      } else {
+        const extensionHostID = 'linnk-extension-shadow';
+        let extensionHost = document.getElementById(extensionHostID);
 
-      if (!extensionHost) {
-        extensionHost = document.createElement('div');
-        extensionHost.setAttribute('id', extensionHostID);
-        document.body.append(extensionHost);
-        extensionHost.attachShadow({mode: 'open'});
-      }
-      if (extensionHost.shadowRoot) {
-        extensionHost.shadowRoot.appendChild(element);
+        if (!extensionHost) {
+          extensionHost = document.createElement('div');
+          extensionHost.setAttribute('id', extensionHostID);
+          document.body.append(extensionHost);
+          extensionHost.attachShadow({mode: 'open'});
+        }
+        if (extensionHost.shadowRoot) {
+          extensionHost.shadowRoot.appendChild(element);
+        }
       }
     },
   },
@@ -58,6 +63,7 @@ const styleLoaderOption = {
 var options = {
   mode: process.env.NODE_ENV || 'development',
   entry: {
+    prepend: path.join(__dirname, 'src', 'pages', 'Options', 'prepend.js'),
     newtab: path.join(__dirname, 'src', 'pages', 'Newtab', 'index.jsx'),
     options: path.join(__dirname, 'src', 'pages', 'Options', 'index.jsx'),
     popup: path.join(__dirname, 'src', 'pages', 'Popup', 'index.jsx'),
