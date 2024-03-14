@@ -3,8 +3,9 @@ process.env.BABEL_ENV = 'development';
 process.env.NODE_ENV = 'development';
 process.env.ASSET_PATH = '/';
 // process.env.API_URL = 'https://localhost:8000';
-process.env.API_URL = 'https://linnk.hongan.live';
-process.env.POSTHOG_KEY = 'phc_KLFLvBjboQYyyHSpDZKWcHRQaenXH1Ror67Vv5sD5Mo';
+// process.env.API_URL = 'https://api.pointread.app'
+process.env.API_URL = 'https://pr.hongan.live';
+process.env.POSTHOG_KEY = 'phc_hUcXh8vBONcqDx2Z2SyLpa76IpVhnFnpUOhXBfdPaeP';
 
 const fs = require('fs');
 
@@ -27,6 +28,7 @@ for (var entryName in config.entry) {
 }
 
 delete config.chromeExtensionBoilerplate;
+
 var compiler = webpack(config);
 
 var server = new WebpackDevServer(
