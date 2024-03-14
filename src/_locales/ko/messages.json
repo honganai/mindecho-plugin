@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "통찰력",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "컬렉션",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "원천",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Google에 가입",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "로그 아웃",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "지원 센터",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "무료 플랜",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "콘텐츠 통찰력",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "필수 추출물",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "추가 생각",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "더 로드하기",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "관련성이 있을 수 있음",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "유사한 콘텐츠 읽기",
+        "description": ""
+    },
+    "copied": {
+        "message": "클립보드에 복사됨",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "시스템 오류",
+        "description": ""
+    },
+    "error500": {
+        "message": "시스템 오류",
+        "description": ""
+    },
+    "error400": {
+        "message": "시스템 오류",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "이전 메시지에 대한 응답이 완료될 때까지 기다려 주십시오.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "콘텐츠 저장소로 이동",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "컬렉션",
+        "description": ""
+    },
+    "retry": {
+        "message": "다시 시도하려면 클릭하세요.",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Linkk AI: 본질을 빠르게 파악하세요",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "빠르게 학습하고 최신 정보를 얻을 수 있도록 모든 콘텐츠(뉴스, 기사, 블로그, 비디오, 에세이)의 진정한 본질을 포착합니다.",
+        "description": ""
+    },
+    "summary": {
+        "message": "요약",
+        "description": ""
+    },
+    "contentType": {
+        "message": "컨텐츠 타입",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "핵심 논리",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "관점 및 결론",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "데이터 시트",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "인용 부호",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "추가 질문",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "묻지 않은 질문",
+        "description": ""
+    },
+    "plots": {
+        "message": "플롯",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "자동적 인",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "출력 언어가 다음으로 설정됨",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "응답 언어",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "내용 읽기가 완료되지 않은 것 같습니다.",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "당신은 원하십니까?",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "다시 시도하십시오",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "$day$일 후에 무료 할당량이 재설정됩니다.",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "매달 $count$ 무료 읽기",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "용법",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "재설정 날짜",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "만료 날짜",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "문의하기",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "구독 관리",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "부족한?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "더 많이 얻으세요!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "우리는 모든 사용자에게 매달 $count$의 무료 읽기를 제공합니다.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "현재 사용량",
+        "description": ""
+    },
+    "needMore": {
+        "message": "더 필요하신가요?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "효율성과 명확성을 위해 프리미엄으로 전환하세요",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "달마다",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "매년 청구됨",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "매월 청구됨",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "시작하다",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "결제 완료",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ 월별 읽기",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "무제한 개인 저장",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "우선 이메일 지원",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "구독해주셔서 감사합니다",
+        "description": ""
+    },
+    "crush": {
+        "message": "시작하자!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "통찰력",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "무료 사용자",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "프리미엄 회원",
+        "description": ""
+    },
+    "payFail": {
+        "message": "결제가 완료되지 않았습니다.",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "<b>모든 페이지</b> 에서 비활성화",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "<b>이 페이지</b> 에서 비활성화",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "<b>이 사이트</b> 에서 비활성화",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "확장 모음에서 실행하는 방법",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "<b>모든 페이지</b> 에서 플로팅 버튼이 비활성화되었습니다.",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "<b>이 페이지</b> 에서는 플로팅 버튼이 비활성화되어 있습니다.",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "<b>$site$</b> 에서는 플로팅 버튼이 비활성화되었습니다.",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "도구 모음 위의 Linkk 아이콘을 클릭하면 언제든지 통찰력 패널을 열 수 있습니다.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "다음",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "시작하다!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "기본 논리 우선",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "한눈에 딥다이빙할지 아니면 건너뛸지 결정할 수 있는 곳",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "테이크아웃 메모 수집",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "주요 내용을 빠르게 확인하세요.나중에 클릭해 보세요!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "더 알아보기",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "그리고 당신의 사고 파트너인 Linkk와 함께 토론해보세요.",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "결과가 없습니다",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "고급 AI 모델 사용",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "컬렉션에 물어보세요",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "더욱 정확하고 정교한 대응을 위해 GPT-4와 같은 고급 AI 모델을 사용합니다.",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "Linkk로 이미 읽고 수집한 내용을 참조하여 활용하세요.",
+        "description": ""
+    },
+    "notNow": {
+        "message": "지금은 아님",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "프리미엄 회원",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "페이지 쿼리",
+        "description": ""
+    },
+    "goElite": {
+        "message": "엘리트로 업그레이드",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "무제한 이용",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "무제한 쿼리",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "고급 모델을 사용하여 페이지와 채팅",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "고급 모델을 사용하여 개인 컬렉션과 채팅",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "고급 모델(GPT-4-Turbo,Claude 2)과의 무제한 채팅",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "월별 쿼리 또는 채팅 300개",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "고급 모델(GPT-4 Turbo 이상)과의 채팅 30개",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "고급 모델을 사용해 보시겠습니까?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "$day$일 후에 사용 할당량이 재설정됩니다.",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

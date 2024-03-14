@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "Insights",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "Gyűjtemények",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "Forrás",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Regisztráljon a Google-lal",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Kijelentkezés",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "Segítség Központ",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "Ingyenes terv",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "Tartalom Insights",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "Esszenciális kivonatok",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "További gondolatok",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "Load More",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "Releváns lehet",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "Hasonló tartalom olvasása",
+        "description": ""
+    },
+    "copied": {
+        "message": "Vágólapra másolva",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Rendszer hiba",
+        "description": ""
+    },
+    "error500": {
+        "message": "Rendszer hiba",
+        "description": ""
+    },
+    "error400": {
+        "message": "Rendszer hiba",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "Kérjük, várja meg, amíg az előző üzenetre adott válasz befejeződik.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "Lépjen a Tartalomtárba",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "Gyűjtemények",
+        "description": ""
+    },
+    "retry": {
+        "message": "Kattintson az újrapróbálkozáshoz",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Linkk AI: Grasp The Essence Quick",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Bármilyen tartalom (hírek, cikkek, blogok, videók és esszék) valódi lényegének megörökítése, hogy gyorsan tanulhasson és tájékozott maradhasson.",
+        "description": ""
+    },
+    "summary": {
+        "message": "Összegzés",
+        "description": ""
+    },
+    "contentType": {
+        "message": "Tartalom típus",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "Kulcslogikák",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "Perspektívák és következtetések",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "Adatlap",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "Idézetek",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "További kérdések",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "Fel nem tett kérdések",
+        "description": ""
+    },
+    "plots": {
+        "message": "Telek",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "Automatikus",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "Kimeneti nyelv beállítása",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "Válasznyelv",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "Úgy tűnik, a tartalom felolvasása nem fejeződött be",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "Szeretnél",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "próbáld újra",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "Az ingyenes kvóta $day$ napon belül visszaáll",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "$count$ ingyenes olvasmányok minden hónapban",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "Használat",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "Visszaállítja",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "Lejárat dátuma",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "Lépjen kapcsolatba velünk",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "Előfizetés kezelése",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "Nem elég?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "Szerezz többet!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "Minden felhasználó számára $count$ ingyenes olvasmányokat biztosítunk minden hónapban.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "Jelenlegi használat",
+        "description": ""
+    },
+    "needMore": {
+        "message": "Több kell?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "Válassza a Premiumot a hatékonyság és a tisztaság érdekében",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "havonta",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "évente számlázva",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "havonta számlázva",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "Fogj neki",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "Befizetés kész",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ Olvasás havonta",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "Korlátlan személyes mentés",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "Elsőbbségi e-mail támogatás",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "Köszönjük hogy feliratkozott",
+        "description": ""
+    },
+    "crush": {
+        "message": "Kezdjük el!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "Insights",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "Ingyenes felhasználó",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "Prémium tag",
+        "description": ""
+    },
+    "payFail": {
+        "message": "A fizetés nem fejeződött be",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "Letiltás <b>minden oldalon</b>",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "Letiltás <b>ezen az oldalon</b>",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "Letiltása <b>ezen az oldalon</b>",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "Indítás az Extensions Bar-ból",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "A lebegő gomb <b>minden oldalon</b> le van tiltva.",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "A lebegő gomb le van tiltva <b>ezen az oldalon</b> .",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "A lebegő gomb le van tiltva <b>a $site$</b> webhelyen.",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "A betekintési panelt bármikor megnyithatja, ha a fenti link ikonra kattint az eszköztáron.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "Következő",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "Fogj neki!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "A mögöttes logikák először",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "Ahol egy pillantással eldöntheti, hogy mélyre merül, vagy kihagyja",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "Elvihető jegyzet összegyűjtve",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "A kulcstartalom gyors megtekintése. Próbáljon meg rájuk kattintani később!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "Fedezzen fel többet",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "És beszéljen Linkkel, mint gondolkodó partnerével",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "Nem található eredmény",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "Használjon fejlett AI-modelleket",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "Kérdezze meg gyűjteményeit",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "A pontosabb és kifinomultabb válaszok érdekében használjon fejlett mesterséges intelligencia-modelleket, például a GPT-4-et és továbbiakat",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "Hivatkozások felhasználása abból, amit már olvasott és összegyűjtött a Linkkel",
+        "description": ""
+    },
+    "notNow": {
+        "message": "Nem most",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "Prémium tag",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "Oldallekérdezések",
+        "description": ""
+    },
+    "goElite": {
+        "message": "Frissítsen Elite-re",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "Go Unlimited",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "Korlátlan lekérdezések",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "Csevegés az oldallal fejlett modellek használatával",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "Csevegés a személyes gyűjteményekkel a speciális modellek segítségével",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "Korlátlan csevegés fejlett modellekkel (GPT-4-Turbo, Claude 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "300 lekérdezés vagy csevegés havonta",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "30 csevegés fejlett modellekkel (GPT-4 Turbo és továbbiak)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "Próbálja ki a haladó modelleket?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "A használati kvóta $day$ napon belül visszaáll",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

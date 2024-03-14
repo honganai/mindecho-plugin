@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "ข้อมูลเชิงลึก",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "คอลเลกชัน",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "แหล่งที่มา",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "ลงทะเบียนกับ Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "ออกจากระบบ",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "ศูนย์ช่วยเหลือ",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "แผนฟรี",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "ข้อมูลเชิงลึกของเนื้อหา",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "สารสกัดสำคัญ",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "ความคิดเพิ่มเติม",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "โหลดเพิ่มเติม",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "อาจจะมีความเกี่ยวข้อง",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "เนื้อหาที่คล้ายกันอ่าน",
+        "description": ""
+    },
+    "copied": {
+        "message": "คัดลอกไปยังคลิปบอร์ดแล้ว",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "ระบบผิดพลาด",
+        "description": ""
+    },
+    "error500": {
+        "message": "ระบบผิดพลาด",
+        "description": ""
+    },
+    "error400": {
+        "message": "ระบบผิดพลาด",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "โปรดรอการตอบกลับข้อความก่อนหน้าให้เสร็จสิ้น",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "ไปที่พื้นที่เก็บข้อมูลเนื้อหา",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "คอลเลกชัน",
+        "description": ""
+    },
+    "retry": {
+        "message": "คลิกเพื่อลองอีกครั้ง",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Linnk AI: คว้าแก่นแท้อย่างรวดเร็ว",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "รวบรวมสาระสำคัญที่แท้จริงของเนื้อหาใดๆ (ข่าวสาร บทความ บล็อก วิดีโอ และเรียงความ) เพื่อให้คุณเรียนรู้ได้อย่างรวดเร็วและทันข่าวสาร",
+        "description": ""
+    },
+    "summary": {
+        "message": "สรุป",
+        "description": ""
+    },
+    "contentType": {
+        "message": "ชนิดของเนื้อหา",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "ลอจิกที่สำคัญ",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "มุมมองและข้อสรุป",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "แผ่นข้อมูล",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "คำคม",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "คำถามเพิ่มเติม",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "คำถามที่ยังไม่ได้ถาม",
+        "description": ""
+    },
+    "plots": {
+        "message": "แปลง",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "อัตโนมัติ",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "ภาษาเอาท์พุตตั้งค่าเป็น",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "ภาษาตอบกลับ",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "ดูเหมือนอ่านเนื้อหาไม่จบ",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "คุณต้องการที่จะ",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "ลองอีกครั้ง",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "โควต้าฟรีจะรีเซ็ตใน $day$ วัน",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "อ่านฟรี $count$ ทุกเดือน",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "การใช้งาน",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "รีเซ็ตเป็น",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "หมดอายุวันที่",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "ติดต่อเรา",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "จัดการการสมัครสมาชิก",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "ไม่พอ?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "ได้รับเพิ่มเติม!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "เราให้บริการอ่านฟรี $count$ ทุกเดือนสำหรับผู้ใช้ทุกคน",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "การใช้งานปัจจุบันของคุณ",
+        "description": ""
+    },
+    "needMore": {
+        "message": "ต้องการมาก?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "Go Premium เพื่อประสิทธิภาพและความชัดเจน",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "ต่อเดือน",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "เรียกเก็บเงินเป็นรายปี",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "เรียกเก็บเงินเป็นรายเดือน",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "เริ่ม",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "ชำระเงินเรียบร้อยแล้ว",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ อ่านต่อเดือน",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "บันทึกส่วนตัวได้ไม่จำกัด",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "การสนับสนุนทางอีเมลลำดับความสำคัญ",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "ขอบคุณสำหรับการสมัครสมาชิก",
+        "description": ""
+    },
+    "crush": {
+        "message": "มาเริ่มกันเลย!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "ข้อมูลเชิงลึก",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "ผู้ใช้ฟรี",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "สมาชิกพรีเมี่ยม",
+        "description": ""
+    },
+    "payFail": {
+        "message": "การชำระเงินไม่เสร็จสิ้น",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "ปิดการใช้งานใน <b>ทุกหน้า</b>",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "ปิดการใช้งานใน <b>หน้านี้</b>",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "ปิดการใช้งานบน <b>เว็บไซต์นี้</b>",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "วิธีเปิดใช้งานจากแถบส่วนขยาย",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "ปุ่มลอยถูกปิดใช้งานใน <b>ทุกหน้า</b>",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "ปุ่มลอยถูกปิดใช้งานใน <b>หน้านี้</b>",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "ปุ่มลอยถูกปิดใช้งานบน <b>$site$</b>",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "คุณสามารถเปิดแผงข้อมูลเชิงลึกได้ตลอดเวลาโดยคลิกไอคอน Linnk ด้านบนบนแถบเครื่องมือ",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "ต่อไป",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "เริ่ม!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "ตรรกะพื้นฐานก่อน",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "ที่ซึ่งคุณสามารถเลือกว่าจะดำน้ำลึกหรือข้ามไปในพริบตา",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "รวบรวมหมายเหตุ Takeaway แล้ว",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "ดูเนื้อหาหลักได้อย่างรวดเร็ว ลองคลิกดูในภายหลัง!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "สำรวจเพิ่มเติม",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "และพูดคุยกับ Linnk ในฐานะคู่คิดของคุณ",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "ไม่พบผลลัพธ์",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "ใช้โมเดล AI ขั้นสูง",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "ถามคอลเลกชันของคุณ",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "ใช้โมเดล AI ขั้นสูง เช่น GPT-4 และอื่นๆ เพื่อการตอบสนองที่แม่นยำและซับซ้อนยิ่งขึ้น",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "ใช้การอ้างอิงจากสิ่งที่คุณได้อ่านและรวบรวมกับ Linnk แล้ว",
+        "description": ""
+    },
+    "notNow": {
+        "message": "ไม่ใช่ตอนนี้",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "สมาชิกพรีเมี่ยม",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "แบบสอบถามหน้า",
+        "description": ""
+    },
+    "goElite": {
+        "message": "อัพเกรดเป็นอีลิท",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "ไปไม่ จำกัด",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "แบบสอบถามไม่จำกัด",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "แชทกับเพจโดยใช้โมเดลขั้นสูง",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "สนทนากับคอลเลกชันส่วนตัวโดยใช้โมเดลขั้นสูง",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "แชทไม่จำกัดด้วยรุ่นขั้นสูง (GPT-4-Turbo, Claude 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "300 ข้อความค้นหาหรือการแชทต่อเดือน",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "30 แชทด้วยรุ่นขั้นสูง (GPT-4 Turbo และเพิ่มเติม)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "ลองใช้โมเดลขั้นสูงดูไหม",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "โควต้าการใช้งานจะรีเซ็ตใน $day$ วัน",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

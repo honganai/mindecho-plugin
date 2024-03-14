@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "Инсигхтс",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "Збирке",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "Извор",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Региструјте се на Гоогле",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Одјавити се",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "Центар за помоћ",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "Бесплатни план",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "Цонтент Инсигхтс",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "Есенцијални екстракти",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "Даља размишљања",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "Учитај више",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "Могло би бити релевантно",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "Сличан садржај Реад",
+        "description": ""
+    },
+    "copied": {
+        "message": "Копирано у међуспремник",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Грешка у систему",
+        "description": ""
+    },
+    "error500": {
+        "message": "Грешка у систему",
+        "description": ""
+    },
+    "error400": {
+        "message": "Грешка у систему",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "Сачекајте да се одговор на претходну поруку заврши.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "Идите у Репозиторијум садржаја",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "Збирке",
+        "description": ""
+    },
+    "retry": {
+        "message": "Кликните да покушате поново",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Линкк АИ: Брзо схватите суштину",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Снимање праве суштине било ког садржаја (вести, чланци, блогови, видео снимци и есеји) да бисте брзо научили и остали информисани.",
+        "description": ""
+    },
+    "summary": {
+        "message": "Резиме",
+        "description": ""
+    },
+    "contentType": {
+        "message": "Тип садржаја",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "Кеи Логицс",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "Перспективе и закључци",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "Лист са подацима",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "Цитати",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "Даља питања",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "Унаскед Куестионс",
+        "description": ""
+    },
+    "plots": {
+        "message": "Плотс",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "Аутоматски",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "Језик излаза је подешен на",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "Језик одговора",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "Чини се да читање садржаја није завршено",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "Да ли би желео да",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "Покушајте поново",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "Бесплатна квота се ресетује за $даи$ дана",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "$цоунт$ бесплатно читање сваког месеца",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "Употреба",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "Ресетује се",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "Истиче",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "Контактирајте нас",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "Управљајте претплатом",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "Недовољно?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "Узми још!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "Обезбеђујемо $цоунт$ бесплатно читање сваког месеца за све кориснике.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "Ваша тренутна употреба",
+        "description": ""
+    },
+    "needMore": {
+        "message": "Потребно више?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "Иди Премиум за ефикасност и јасноћу",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "месечно",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "обрачунава се годишње",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "наплаћује се месечно",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "Почети",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "Плаћање је завршено",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$цоунт$ Читања месечно",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "Неограничене личне уштеде",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "Приоритетна подршка путем е-поште",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "Хвала што сте се претплатили",
+        "description": ""
+    },
+    "crush": {
+        "message": "Хајде да почнемо!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "Инсигхтс",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "Фрее Усер",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "Премиум члан",
+        "description": ""
+    },
+    "payFail": {
+        "message": "Плаћање није завршено",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "Онемогући на <b>свим страницама</b>",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "Онемогући на <b>овој страници</b>",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "Онемогући на <b>овом сајту</b>",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "Како покренути са траке екстензија",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "Плутајуће дугме је онемогућено на <b>свим страницама</b> .",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "Плутајуће дугме је онемогућено на <b>овој страници</b> .",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "Плутајуће дугме је онемогућено на <b>$сите$</b> .",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "Увек можете да отворите таблу са увидом тако што ћете кликнути на икону Линк изнад на траци са алаткама.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "Следећи",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "Почети!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "Основна логика Прво",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "Где можете одлучити да дубоко зароните или да га прескочите једним погледом",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "Прикупљена белешка за понети",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "Брзи приказ кључног садржаја. Покушајте да кликнете на њих касније!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "Истражите више",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "И разговарајте са Линком као вашим размишљајућим партнером",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "Није пронађен ниједан резултат",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "Користите напредне АИ моделе",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "Питајте своје колекције",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "Користите напредне АИ моделе као што је ГПТ-4 и даље за прецизније и софистицираније одговоре",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "Користећи референце из онога што сте већ прочитали и прикупили са Линкком",
+        "description": ""
+    },
+    "notNow": {
+        "message": "Не сада",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "Премиум члан",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "Паге Куериес",
+        "description": ""
+    },
+    "goElite": {
+        "message": "Надоградите на Елите",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "Го Унлимитед",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "Унлимитед Куериес",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "Разговарајте са страницом користећи напредне моделе",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "Разговарајте са личним колекцијама користећи напредне моделе",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "Неограничено ћаскање са напредним моделима (ГПТ-4-Турбо, Цлауде 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "300 упита или ћаскања месечно",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "30 ћаскања са напредним моделима (ГПТ-4 Турбо и даље)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "Испробати напредне моделе?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "Квота коришћења се ресетује за $day$ дана",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

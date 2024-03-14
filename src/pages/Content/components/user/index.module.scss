@@ -1,0 +1,70 @@
+.container {
+  width: 220px;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+
+  .user-info {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+
+    .name {
+      font-weight: 500;
+    }
+  }
+
+  .subscribe-info {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+
+    .subscribe-type {
+      display: flex;
+      gap: 7px;
+      align-items: center;
+      font-weight: 500;
+      color: var(--color-text-second);
+
+      &.premium {
+        color: var(--color-primary);
+      }
+    }
+
+    .subscribe-detail {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 22px;
+
+      .detail-item {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+
+        +.detail-item {
+          margin-top: 4px;
+        }
+
+        .label, .bold {
+          font-weight: 500;
+        }
+
+        .highlight {
+          color: var(--color-primary);
+        }
+      }
+    }
+  }
+
+  .link {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    color: var(--color-text-second);
+
+     +.link {
+      margin-top: 10px;
+     }
+  }
+
+  .operate {
+    padding-top: 10px;
+  }
+}

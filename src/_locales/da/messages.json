@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "Indsigt",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "Samlinger",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "Kilde",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Tilmeld dig med Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Log ud",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "Hjælpecenter",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "Gratis plan",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "Indholdsindsigt",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "Essentielle ekstrakter",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "Yderligere tanker",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "Indlæs mere",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "Kunne være relevant",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "Lignende indhold læst",
+        "description": ""
+    },
+    "copied": {
+        "message": "Kopieret til udklipsholder",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Systemfejl",
+        "description": ""
+    },
+    "error500": {
+        "message": "Systemfejl",
+        "description": ""
+    },
+    "error400": {
+        "message": "Systemfejl",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "Vent venligst på, at svaret på den forrige besked er fuldført.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "Gå til Content Repository",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "Samlinger",
+        "description": ""
+    },
+    "retry": {
+        "message": "Klik for at prøve igen",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Linnk AI: Grib The Essence Quick",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Indfanger den sande essens af ethvert indhold (nyheder, artikler, blogs, videoer og essays), så du kan lære hurtigt og holde dig informeret.",
+        "description": ""
+    },
+    "summary": {
+        "message": "Resumé",
+        "description": ""
+    },
+    "contentType": {
+        "message": "Indholdstype",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "Nøglelogikker",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "Perspektiver og konklusioner",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "Datablad",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "Citater",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "Yderligere spørgsmål",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "Ustillede spørgsmål",
+        "description": ""
+    },
+    "plots": {
+        "message": "Grunde",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "Automatisk",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "Outputsprog indstillet til",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "Svarsprog",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "Det ser ud til, at indholdslæsningen ikke blev afsluttet",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "Har du lyst til",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "Prøv igen",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "Gratis kvote nulstilles på $day$ dage",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "$count$ gratis læsninger hver måned",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "Brug",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "Nulstiller til",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "Udløber på",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "Kontakt os",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "Administrer abonnement",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "Ikke nok?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "Få mere!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "Vi giver $count$ gratis læsninger hver måned for alle brugere.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "Dit nuværende forbrug",
+        "description": ""
+    },
+    "needMore": {
+        "message": "Brug for mere?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "Gå Premium for effektivitet og klarhed",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "om måneden",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "faktureres årligt",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "faktureres månedligt",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "Kom igang",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "Betaling gennemført",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ Læser pr. måned",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "Ubegrænsede personlige gemmer",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "Priority Email support",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "Tak fordi du abonnerer",
+        "description": ""
+    },
+    "crush": {
+        "message": "Lad os komme igang!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "Indsigt",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "Gratis bruger",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "Premium medlem",
+        "description": ""
+    },
+    "payFail": {
+        "message": "Betaling ikke gennemført",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "Deaktiver på <b>alle sider</b>",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "Deaktiver på <b>denne side</b>",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "Deaktiver på <b>denne side</b>",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "Sådan starter du fra Extensions Bar",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "Den flydende knap er deaktiveret på <b>alle sider</b> .",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "Den flydende knap er deaktiveret på <b>denne side</b> .",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "Den flydende knap er deaktiveret på <b>$site$</b> .",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "Du kan altid åbne indsigtspanelet ved at klikke på Linnk-ikonet ovenfor på værktøjslinjen.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "Næste",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "Kom igang!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "Underliggende logik først",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "Hvor du kan beslutte dig for at dykke i dybden eller eller springe det over med et blik",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "Takeaway note indsamlet",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "Hurtig visning af nøgleindholdet. Prøv at klikke på dem senere!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "Udforsk mere",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "Og diskuter med Linnk som din tænkepartner",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "Intet resultat fundet",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "Brug avancerede AI-modeller",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "Spørg dine samlinger",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "Brug avancerede AI-modeller som GPT-4 og flere for mere præcise og sofistikerede svar",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "Brug reference fra det, du allerede har læst og indsamlet med Linnk",
+        "description": ""
+    },
+    "notNow": {
+        "message": "Ikke nu",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "Premium medlem",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "Sideforespørgsler",
+        "description": ""
+    },
+    "goElite": {
+        "message": "Opgrader til Elite",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "Gå ubegrænset",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "Ubegrænsede forespørgsler",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "Chat med siden ved hjælp af avancerede modeller",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "Chat med personlige samlinger ved hjælp af avancerede modeller",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "Ubegrænsede chats med avancerede modeller (GPT-4-Turbo, Claude 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "300 forespørgsler eller chats om måneden",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "30 chats med avancerede modeller (GPT-4 Turbo og mere)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "Prøv avancerede modeller?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "Brugskvoten nulstilles om $day$ dage",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

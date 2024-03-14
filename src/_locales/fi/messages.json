@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "Näkemyksiä",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "Kokoelmat",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "Lähde",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Rekisteröidy Googlella",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Kirjautua ulos",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "Ohjekeskus",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "Ilmainen suunnitelma",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "Sisältötilastot",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "Välttämättömät uutteet",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "Lisää Ajatuksia",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "Lataa lisää",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "Voisi olla relevanttia",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "Samankaltaisen sisällön lukeminen",
+        "description": ""
+    },
+    "copied": {
+        "message": "Kopioitu leikepöydälle",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Järjestelmävirhe",
+        "description": ""
+    },
+    "error500": {
+        "message": "Järjestelmävirhe",
+        "description": ""
+    },
+    "error400": {
+        "message": "Järjestelmävirhe",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "Odota, että vastaus edelliseen viestiin on valmis.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "Siirry Sisältövarastoon",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "Kokoelmat",
+        "description": ""
+    },
+    "retry": {
+        "message": "Yritä uudelleen napsauttamalla",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Linkk AI: Tartu Essence Quickiin",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Tallenna minkä tahansa sisällön (uutiset, artikkelit, blogit, videot ja esseet) todellinen olemus, jotta voit oppia nopeasti ja pysyä ajan tasalla.",
+        "description": ""
+    },
+    "summary": {
+        "message": "Yhteenveto",
+        "description": ""
+    },
+    "contentType": {
+        "message": "Sisältötyyppi",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "Avainlogiikka",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "Näkökulmat ja johtopäätökset",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "Data Sheet",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "Lainausmerkit",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "Seuraavat kysymykset",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "Kysymättömät kysymykset",
+        "description": ""
+    },
+    "plots": {
+        "message": "Tontteja",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "Automaattinen",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "Tulostuskieli asetettu",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "Vastauskieli",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "Näyttää siltä, että sisällön lukeminen ei ole päättynyt",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "Haluaisitko",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "yritä uudelleen",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "Ilmainen kiintiö nollataan $day$ päivässä",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "$count$ ilmaista lukemista joka kuukausi",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "Käyttö",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "Palautuu päälle",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "Vanhenee",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "Ota meihin yhteyttä",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "Hallinnoi tilausta",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "Ei tarpeeksi?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "Saada lisää!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "Tarjoamme $count$ ilmaisia lukuja joka kuukausi kaikille käyttäjille.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "Nykyinen käyttösi",
+        "description": ""
+    },
+    "needMore": {
+        "message": "Tarvita lisää?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "Valitse Premium tehokkuuden ja selkeyden vuoksi",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "kuukaudessa",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "laskutetaan vuosittain",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "laskutetaan kuukausittain",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "Aloittaa",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "Maksu suoritettu",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ Lukemat kuukaudessa",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "Rajoittamaton henkilökohtainen tallennus",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "Prioriteettisähköpostituki",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "Kiitos tilaamisesta",
+        "description": ""
+    },
+    "crush": {
+        "message": "Aloitetaan!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "Näkemyksiä",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "Vapaa käyttäjä",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "Premium-jäsen",
+        "description": ""
+    },
+    "payFail": {
+        "message": "Maksua ei suoritettu",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "Poista käytöstä <b>kaikilla sivuilla</b>",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "Poista käytöstä <b>tällä sivulla</b>",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "Poista käytöstä <b>tällä sivustolla</b>",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "Kuinka käynnistää laajennuspalkista",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "Kelluva painike ei ole käytössä <b>kaikilla sivuilla</b> .",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "Kelluva painike ei ole käytössä <b>tällä sivulla</b> .",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "Kelluva painike on poistettu käytöstä sivustolla <b>$site$</b> .",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "Voit aina avata tilastopaneelin napsauttamalla työkalupalkin yllä olevaa Linkki-kuvaketta.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "Seuraava",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "Aloittaa!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "Peruslogiikka ensin",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "Missä voit päättää sukeltaa syvälle tai ohittaa sen yhdellä silmäyksellä",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "Takeaway Note kerätty",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "Avainsisällön nopea näkymä.Kokeile napsauttaa niitä myöhemmin!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "Tutustu lisää",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "Ja keskustele Linkin kanssa ajattelukumppanisi kanssa",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "Tulosta ei löytynyt",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "Käytä edistyneitä AI-malleja",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "Kysy kokoelmistasi",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "Käytä edistyneitä tekoälymalleja, kuten GPT-4 ja muita, saadaksesi tarkempia ja kehittyneempiä vastauksia",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "Käyttämällä viitteitä siitä, mitä olet jo lukenut ja kerännyt Linkillä",
+        "description": ""
+    },
+    "notNow": {
+        "message": "Ei nyt",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "Premium-jäsen",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "Sivukyselyt",
+        "description": ""
+    },
+    "goElite": {
+        "message": "Päivitä Eliteen",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "Go Unlimited",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "Rajoittamaton kysely",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "Keskustele sivun kanssa edistyneillä malleilla",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "Keskustele henkilökohtaisten kokoelmien kanssa käyttämällä edistyneitä malleja",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "Rajoittamattomat keskustelut edistyneillä malleilla (GPT-4-Turbo, Claude 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "300 kyselyä tai keskustelua kuukaudessa",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "30 chattia edistyneillä malleilla (GPT-4 Turbo ja muut)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "Kokeile edistyneitä malleja?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "Käyttökiintiö nollataan $day$ päivässä",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

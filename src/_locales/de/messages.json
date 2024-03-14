@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "Einblicke",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "Sammlungen",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "Quelle",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Mit Google anmelden",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Abmelden",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "Hilfezentrum",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "Kostenloser Tarif",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "Inhaltsübersichten",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "Wesentliche Extrakte",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "Weiteres Nachdenken",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "Mehr laden",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "Könnte relevant sein",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "Ähnlicher Inhalt gelesen",
+        "description": ""
+    },
+    "copied": {
+        "message": "In Zwischenablage kopiert",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Systemfehler",
+        "description": ""
+    },
+    "error500": {
+        "message": "Systemfehler",
+        "description": ""
+    },
+    "error400": {
+        "message": "Systemfehler",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "Bitte warten Sie, bis die Antwort auf die vorherige Nachricht abgeschlossen ist.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "Zum Inhaltsverzeichnis gehen",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "Sammlungen",
+        "description": ""
+    },
+    "retry": {
+        "message": "Klicken Sie, um es erneut zu versuchen",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Linnk AI: Erfasse das Wesentliche schnell",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Erfasst das wahre Wesen jeglichen Inhalts (Nachrichten, Artikel, Blogs, Videos und Essays), damit du schnell lernst und informiert bleibst.",
+        "description": ""
+    },
+    "summary": {
+        "message": "Zusammenfassung",
+        "description": ""
+    },
+    "contentType": {
+        "message": "Inhaltstyp",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "Schlüssellogiken",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "Perspektiven & Schlussfolgerungen",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "Datenblatt",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "Zitate",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "Weitere Fragen",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "Ungefragte Fragen",
+        "description": ""
+    },
+    "plots": {
+        "message": "Handlungen",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "Automatisch",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "Ausgabesprache eingestellt auf",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "Antwortsprache",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "Scheint, dass das Lesen des Inhalts nicht abgeschlossen wurde",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "Möchten Sie",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "noch einmal versuchen",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "Kostenloses Kontingent wird in $day$ Tagen zurückgesetzt",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "$count$ kostenlose Lesevorgänge jeden Monat",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "Nutzung",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "Wird zurückgesetzt am",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "Läuft ab am",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "Kontaktieren Sie uns",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "Abonnement verwalten",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "Nicht genug?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "Mehr erhalten!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "Wir bieten allen Nutzern jeden Monat $count$ kostenlose Lesevorgänge.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "Ihr aktueller Verbrauch",
+        "description": ""
+    },
+    "needMore": {
+        "message": "Brauchen Sie mehr?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "Werden Sie Premium für gesteigerte Effizienz",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "pro Monat",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "jährlich abgerechnet",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "monatlich abgerechnet",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "Loslegen",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "Zahlung abgeschlossen",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ Lesevorgänge pro Monat",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "Unbegrenztes persönliches Speichern",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "Vorrangiger E-Mail-Support",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "Vielen Dank für Ihr Abonnement",
+        "description": ""
+    },
+    "crush": {
+        "message": "Lassen Sie uns beginnen!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "Einblicke",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "Kostenloser Nutzer",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "Premium-Mitglied",
+        "description": ""
+    },
+    "payFail": {
+        "message": "Zahlung nicht abgeschlossen",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "Deaktivieren auf <b>allen Seiten</b>",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "Deaktivieren auf <b>dieser Seite</b>",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "Deaktivieren auf <b>dieser Website</b>",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "Wie man vom Erweiterungsleiste startet",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "Die schwebende Schaltfläche ist auf <b>allen Seiten</b> deaktiviert.",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "Die schwebende Schaltfläche ist auf <b>dieser Seite</b> deaktiviert.",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "Die schwebende Schaltfläche ist auf <b>$site$</b> deaktiviert.",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "Sie können das Insight-Panel jederzeit öffnen, indem Sie oben in der Werkzeugleiste auf das Linnk-Symbol klicken.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "Nächste",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "Loslegen!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "Die zugrunde liegende Logik zuerst",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "Wo Sie auf einen Blick entscheiden können, ob Sie tiefer eintauchen oder es überspringen möchten",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "Notiz zum Mitnehmen gesammelt",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "Schneller Blick auf die wichtigsten Inhalte. Versuchen Sie später, darauf zu klicken!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "Erkunde mehr",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "Und diskutieren Sie mit Linnk als Ihrem Denkpartner",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "Keine Einträge gefunden",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "Verwende fortgeschrittene KI-Modelle",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "Frage deine Sammlungen",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "Nutze fortgeschrittene KI-Modelle wie GPT-4 und darüber hinaus für genauere und ausgefeiltere Antworten",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "Verwende Referenzen aus dem, was du bereits mit Linnk gelesen und gesammelt hast",
+        "description": ""
+    },
+    "notNow": {
+        "message": "Nicht jetzt",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "Premiummitglied",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "Seitenabfragen",
+        "description": ""
+    },
+    "goElite": {
+        "message": "Upgrade auf Elite",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "Gehen Sie unbegrenzt",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "Unbegrenzte Abfragen",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "Chatten Sie mit der Seite mithilfe erweiterter Modelle",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "Chatten Sie mit persönlichen Sammlungen mithilfe erweiterter Modelle",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "Unbegrenzte Chats mit fortgeschrittenen Modellen (GPT-4-Turbo,Claude 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "300 Anfragen oder Chats pro Monat",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "30 Chats mit fortgeschrittenen Modellen (GPT-4 Turbo und höher)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "Erweiterte Modelle ausprobieren?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "Das Nutzungskontingent wird in $day$ Tagen zurückgesetzt",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

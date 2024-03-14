@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "インサイト",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "コレクション",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "ソース",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Googleでサインアップ",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "ログアウト",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "ヘルプセンター",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "無料プラン",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "コンテンツインサイト",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "エッセンシャル抽出",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "さらなる思考",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "もっと読み込む",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "関連性があるかも",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "類似コンテンツ閲覧",
+        "description": ""
+    },
+    "copied": {
+        "message": "クリップボードにコピーされました",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "システムエラー",
+        "description": ""
+    },
+    "error500": {
+        "message": "システムエラー",
+        "description": ""
+    },
+    "error400": {
+        "message": "システムエラー",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "前のメッセージへの応答が完了するまでお待ちください。",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "コンテンツリポジトリに移動",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "コレクション",
+        "description": ""
+    },
+    "retry": {
+        "message": "再試行をクリック",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Linnk AI: 本質を素早く把握",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "あらゆるコンテンツ（ニュース、記事、ブログ、動画、エッセイ）の真の本質を捉え、迅速に学習し、情報を得るためのものです。",
+        "description": ""
+    },
+    "summary": {
+        "message": "要約",
+        "description": ""
+    },
+    "contentType": {
+        "message": "コンテンツタイプ",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "主要ロジック",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "視点と結論",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "データシート",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "引用",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "さらなる質問",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "未解決の質問",
+        "description": ""
+    },
+    "plots": {
+        "message": "プロット",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "自動",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "出力言語を設定しました",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "応答言語",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "コンテンツの読解が完了していないようです",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "試しますか",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "再試行",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "無料クオータは$day$日でリセットされます",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "毎月$count$回の無料読取",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "使用状況",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "リセット日",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "有効期限",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "お問い合わせ",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "サブスクリプション管理",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "不足していますか？",
+        "description": ""
+    },
+    "getMore": {
+        "message": "さらに入手する",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "私たちは全ユーザーに毎月$count$回の無料読取を提供しています。",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "現在の使用状況",
+        "description": ""
+    },
+    "needMore": {
+        "message": "もっと必要ですか？",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "プレミアムにして効率アップ",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "毎月",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "年間請求",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "月間請求",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "始める",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "支払い完了",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "月に$count$回の読取",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "無制限の個人保存",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "優先メールサポート",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "サブスクライブありがとうございます",
+        "description": ""
+    },
+    "crush": {
+        "message": "始めましょう！",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "インサイト",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "無料ユーザー",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "プレミアムメンバー",
+        "description": ""
+    },
+    "payFail": {
+        "message": "支払いが完了しませんでした",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "<b>すべてのページ</b>で無効にする",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "<b>このページ</b>で無効にする",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "<b>このサイト</b>で無効にする",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "拡張バーからの起動方法",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "フローティング ボタンは<b>すべてのページ</b>で無効になります。",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "<b>このページ</b>ではフローティング ボタンが無効になっています。",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "<b>$site$</b>ではフローティング ボタンが無効になっています。",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "ツールバーの上にある [Linnk] アイコンをクリックすると、いつでもインサイト パネルを開くことができます。",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "次",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "始めましょう!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "基礎となるロジックを最初に",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "一目で詳しく調べるかスキップするかを決定できる場所",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "持ち帰りメモを集めました",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "重要なコンテンツを素早く表示します。後でクリックしてみてください。",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "もっと詳しく見る",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "思考パートナーとして Link と話し合ってください",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "結果が見つかりません",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "高度なAIモデルを使用する",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "あなたのコレクションに尋ねる",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "GPT-4などの高度なAIモデルを使用して、より正確で洗練された回答を得る",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "Linnkで既に読んだり集めたりしたものを参照して使用する",
+        "description": ""
+    },
+    "notNow": {
+        "message": "今じゃない",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "プレミアム会員",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "ページクエリ",
+        "description": ""
+    },
+    "goElite": {
+        "message": "エリートにアップグレード",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "無制限に行く",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "無制限のクエリ",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "高度なモデルを使用したページとのチャット",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "高度なモデルを使用して個人コレクションとチャットする",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "高度なモデルとの無制限のチャット (GPT-4-Turbo、Claude 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "1 か月あたり 300 件のクエリまたはチャット",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "30 高度なモデル (GPT-4 Turbo 以降) とのチャット",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "上級モデルを試してみませんか?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "使用量割り当ては $day$ 日後にリセットされます",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

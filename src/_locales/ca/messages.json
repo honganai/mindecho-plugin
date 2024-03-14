@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "Insights",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "Col·leccions",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "Font",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Registra&#39;t amb Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Tancar sessió",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "Centre d&#39;ajuda",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "Pla Gratuït",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "Estadístiques de contingut",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "Extractes essencials",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "Reflexions posteriors",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "Carrega més",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "Podria ser rellevant",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "Llegir contingut similar",
+        "description": ""
+    },
+    "copied": {
+        "message": "S&#39;ha copiat al porta-retalls",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Error del sistema",
+        "description": ""
+    },
+    "error500": {
+        "message": "Error del sistema",
+        "description": ""
+    },
+    "error400": {
+        "message": "Error del sistema",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "Si us plau, espereu que es completi la resposta al missatge anterior.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "Aneu al Repositori de contingut",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "Col·leccions",
+        "description": ""
+    },
+    "retry": {
+        "message": "Feu clic per tornar-ho a provar",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Link AI: agafeu l&#39;essència ràpidament",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Captura la veritable essència de qualsevol contingut (notícies, articles, blocs, vídeos i assaigs) perquè aprenguis ràpidament i estiguis informat.",
+        "description": ""
+    },
+    "summary": {
+        "message": "Resum",
+        "description": ""
+    },
+    "contentType": {
+        "message": "Tipus de contingut",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "Lògica clau",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "Perspectives i conclusions",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "Fitxa de dades",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "Cites",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "Més preguntes",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "Preguntes sense fer",
+        "description": ""
+    },
+    "plots": {
+        "message": "Parcel·les",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "Automàtic",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "L&#39;idioma de sortida s&#39;ha definit com a",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "Llenguatge de resposta",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "Sembla que la lectura del contingut no s&#39;ha completat",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "T&#39;agradaria",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "torna-ho a provar",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "La quota gratuïta es restableix en $day$ dies",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "$count$ lectures gratuïtes cada mes",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "Ús",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "Es reinicia",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "Caduca el",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "Contacta amb nosaltres",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "Gestiona la subscripció",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "No és suficient?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "Obtenir més!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "Oferim $count$ lectures gratuïtes cada mes per a tots els usuaris.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "El vostre ús actual",
+        "description": ""
+    },
+    "needMore": {
+        "message": "Necessitar més?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "Go Premium per a l&#39;eficiència i la claredat",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "per mes",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "facturat anualment",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "facturat mensualment",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "Començar",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "Pagament completat",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ Lectures al mes",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "Desacions personals il·limitades",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "Suport per correu electrònic prioritari",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "Gràcies per subscriure&#39;t",
+        "description": ""
+    },
+    "crush": {
+        "message": "Comencem!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "Insights",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "Usuari gratuït",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "Membre Premium",
+        "description": ""
+    },
+    "payFail": {
+        "message": "El pagament no s&#39;ha completat",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "Desactiva a <b>totes les pàgines</b>",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "Desactiva en <b>aquesta pàgina</b>",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "Desactiva en <b>aquest lloc</b>",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "Com iniciar-se des de la barra d&#39;extensions",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "El botó flotant està desactivat a <b>totes les pàgines</b> .",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "El botó flotant està desactivat en <b>aquesta pàgina</b> .",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "El botó flotant està desactivat a <b>$site$</b> .",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "Sempre podeu obrir el tauler d&#39;informació fent clic a la icona d&#39;enllaç de dalt a la barra d&#39;eines.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "Pròxim",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "Començar!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "La lògica subjacent primer",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "On podeu decidir submergir-vos en profunditat o saltar-lo d&#39;un cop d&#39;ull",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "Nota per emportar recollida",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "Visualització ràpida del contingut clau. Proveu de fer-hi clic més tard!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "Exploreu més",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "I discutiu amb Linknk com a soci de pensament",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "No s&#39;ha trobat cap resultat",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "Utilitzeu models avançats d&#39;IA",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "Pregunta a les teves col·leccions",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "Utilitzeu models d&#39;IA avançats com GPT-4 i més per obtenir respostes més precises i sofisticades",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "Utilitzant referències del que ja has llegit i recollit amb Linknk",
+        "description": ""
+    },
+    "notNow": {
+        "message": "Ara no",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "Membre Premium",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "Consultes de pàgines",
+        "description": ""
+    },
+    "goElite": {
+        "message": "Actualitza a Elite",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "Anar il·limitat",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "Consultes il·limitades",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "Xateja amb la pàgina utilitzant models avançats",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "Xateja amb col·leccions personals mitjançant models avançats",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "Xats il·limitats amb models avançats (GPT-4-Turbo, Claude 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "300 consultes o xats al mes",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "30 xats amb models avançats (GPT-4 Turbo i més)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "Proveu els models avançats?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "La quota d&#39;ús es restableix en $day$ dies",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

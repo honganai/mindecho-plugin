@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "תובנות",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "אוספים",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "מקור",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "הירשם עם גוגל",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "התנתק",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "מרכז עזרה",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "תוכנית חינם",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "תובנות תוכן",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "תמציות חיוניות",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "מחשבות נוספות",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "טען עוד",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "עשוי להיות רלוונטי",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "קריאה בתוכן דומה",
+        "description": ""
+    },
+    "copied": {
+        "message": "הועתק ללוח",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "שגיאת מערכת",
+        "description": ""
+    },
+    "error500": {
+        "message": "שגיאת מערכת",
+        "description": ""
+    },
+    "error400": {
+        "message": "שגיאת מערכת",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "אנא המתן להשלמת התגובה להודעה הקודמת.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "עבור למאגר תוכן",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "אוספים",
+        "description": ""
+    },
+    "retry": {
+        "message": "לחץ לניסיון חוזר",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Linnk AI: תפוס את המהות מהר",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "תפיסת המהות האמיתית של כל תוכן (חדשות, מאמרים, בלוגים, סרטונים, ומסות) עבורך ללמוד מהר ולהישאר מעודכן.",
+        "description": ""
+    },
+    "summary": {
+        "message": "סיכום",
+        "description": ""
+    },
+    "contentType": {
+        "message": "סוג תוכן",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "לוגיקות מרכזיות",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "פרספקטיבות ומסקנות",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "גיליון נתונים",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "ציטוטים",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "שאלות נוספות",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "שאלות שלא נשאלו",
+        "description": ""
+    },
+    "plots": {
+        "message": "עלילות",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "אוטומטי",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "שפת התגובה נקבעה ל",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "שפת תגובה",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "נראה שהקריאה בתוכן לא הושלמה",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "האם תרצה ל",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "נסה שוב",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "מכסה חינם מתאפסת בעוד $day$ ימים",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "$count$ קריאות חינם בכל חודש",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "שימוש",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "מתאפס ב",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "פג תוקף ב",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "צור קשר",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "נהל מנוי",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "לא מספיק?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "קבל עוד!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "אנו מספקים $count$ קריאות חינם בכל חודש לכל המשתמשים.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "השימוש הנוכחי שלך",
+        "description": ""
+    },
+    "needMore": {
+        "message": "צריך עוד?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "עבור לפרימיום ליעילות מוגברת",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "לחודש",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "חשבון שנתי",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "חשבון חודשי",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "התחל",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "התשלום הושלם",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ קריאות לחודש",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "שמירות אישיות ללא הגבלה",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "תמיכת דוא\"ל בעדיפות גבוהה",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "תודה על הרשמתך",
+        "description": ""
+    },
+    "crush": {
+        "message": "בואו נתחיל!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "תובנות",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "משתמש חינם",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "חבר פרימיום",
+        "description": ""
+    },
+    "payFail": {
+        "message": "התשלום לא הושלם",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "ביטול ב<b>כל הדפים</b>",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "ביטול ב<b>דף זה</b>",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "ביטול ב<b>אתר זה</b>",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "איך להתחיל מסרגל התוספים",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "הלחצן הצף מושבת <b>בכל הדפים</b> .",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "הלחצן הצף מושבת בדף <b>זה</b> .",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "הלחצן הצף מושבת ב- <b>$site$</b> .",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "אתה תמיד יכול לפתוח את חלונית התובנות על ידי לחיצה על סמל Linnk למעלה בסרגל הכלים.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "הַבָּא",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "להתחיל!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "תחילה הלוגיקות הבסיסיות",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "אפשרות להתעמק או לדלג במבט חטוף",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "הערות לקחת נאספו",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "צפייה מהירה בתוכן המרכזי. נסה ללחוץ עליהן מאוחר יותר!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "חקור עוד",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "ודון עם לינק כשותף המחשבה שלך",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "לא נמצאו תוצאות",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "השתמש בדגמי AI מתקדמים",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "שאל את האוספים שלך",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "העסקת דגמי AI מתקדמים כמו GPT-4 ואילך לתגובות מדויקות ומתוחכמות יותר",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "שימוש בהתייחסות ממה שכבר קראת ואספת עם Linnk",
+        "description": ""
+    },
+    "notNow": {
+        "message": "לא עכשיו",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "חבר פרימיום",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "שאילתות דף",
+        "description": ""
+    },
+    "goElite": {
+        "message": "שדרג לעלית",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "עבור ללא הגבלה",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "שאילתות ללא הגבלה",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "צ&#39;אט עם הדף באמצעות מודלים מתקדמים",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "צ&#39;אט עם אוספים אישיים באמצעות מודלים מתקדמים",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "צ&#39;אטים ללא הגבלה עם דגמים מתקדמים (GPT-4-Turbo,Claude 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "300 שאילתות או צ&#39;אטים בחודש",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "30 צ&#39;אטים עם דגמים מתקדמים (GPT-4 Turbo ועוד)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "לנסות דגמים מתקדמים?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "מכסת השימוש מתאפסת בעוד $day$ ימים",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

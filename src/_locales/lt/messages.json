@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "Įžvalgos",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "Kolekcijos",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "Šaltinis",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Prisiregistruokite naudodami „Google“.",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Atsijungti",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "Pagalbos centras",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "Nemokamas planas",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "Turinio įžvalgos",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "Esminiai ekstraktai",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "Tolesni pamąstymai",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "Įkelti daugiau",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "Gali būti aktualu",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "Panašaus turinio skaitymas",
+        "description": ""
+    },
+    "copied": {
+        "message": "Nukopijuota į mainų sritį",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Sistemos klaida",
+        "description": ""
+    },
+    "error500": {
+        "message": "Sistemos klaida",
+        "description": ""
+    },
+    "error400": {
+        "message": "Sistemos klaida",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "Palaukite, kol bus baigtas atsakymas į ankstesnį pranešimą.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "Eikite į turinio saugyklą",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "Kolekcijos",
+        "description": ""
+    },
+    "retry": {
+        "message": "Spustelėkite, kad bandytumėte dar kartą",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Linkk AI: Greitai suprask esmę",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Užfiksuokite tikrąją bet kokio turinio (naujienų, straipsnių, tinklaraščių, vaizdo įrašų ir esė) esmę, kad galėtumėte greitai mokytis ir būti informuoti.",
+        "description": ""
+    },
+    "summary": {
+        "message": "Santrauka",
+        "description": ""
+    },
+    "contentType": {
+        "message": "Turinio tipas",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "Pagrindinės logikos",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "Perspektyvos ir išvados",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "Duomenų lapas",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "Citatos",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "Tolimesni klausimai",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "Neužduoti klausimai",
+        "description": ""
+    },
+    "plots": {
+        "message": "Sklypai",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "Automatinis",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "Išvesties kalba nustatyta į",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "Atsakymo kalba",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "Atrodo, kad turinio skaitymas nebuvo baigtas",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "Ar norėtum",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "Bandyk iš naujo",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "Nemokama kvota nustatoma iš naujo po $day$ dienų",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "$count$ nemokami skaitymai kiekvieną mėnesį",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "Naudojimas",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "Įsijungia iš naujo",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "Baigia galioti",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "Susisiekite su mumis",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "Tvarkyti prenumeratą",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "Nepakankamai?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "Gauti daugiau!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "Kiekvieną mėnesį visiems vartotojams teikiame $count$ nemokamus skaitymus.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "Jūsų dabartinis naudojimas",
+        "description": ""
+    },
+    "needMore": {
+        "message": "Reikia daugiau?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "Jei norite efektyvumo ir aiškumo, eikite į „Premium“.",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "per mėnesį",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "atsiskaitoma kasmet",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "atsiskaitoma kas mėnesį",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "Pradėti",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "Mokėjimas baigtas",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ Skaitymai per mėnesį",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "Neribotas asmeninis taupymas",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "Prioritetinis el. pašto palaikymas",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "Dėkojame, kad užsiprenumeravote",
+        "description": ""
+    },
+    "crush": {
+        "message": "Pradėkime!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "Įžvalgos",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "Nemokamas vartotojas",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "Premium narys",
+        "description": ""
+    },
+    "payFail": {
+        "message": "Mokėjimas nebaigtas",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "Išjungti <b>visuose puslapiuose</b>",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "Išjungti <b>šiame puslapyje</b>",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "Išjungti <b>šioje svetainėje</b>",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "Kaip paleisti iš plėtinių juostos",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "Slankusis mygtukas išjungtas <b>visuose puslapiuose</b> .",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "Slankusis mygtukas <b>šiame puslapyje</b> išjungtas.",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "<b>$site$</b> slankusis mygtukas išjungtas.",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "Visada galite atidaryti įžvalgų skydelį įrankių juostoje spustelėję aukščiau esančią nuorodos piktogramą.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "Kitas",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "Pradėti!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "Pirmiausia pagrindinė logika",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "Kur galite apsispręsti giliai pasinerti arba praleisti",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "Surinktas užrašas išsinešimui",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "Greitas pagrindinio turinio peržiūra. Pabandykite juos spustelėti vėliau!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "Tyrinėkite daugiau",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "Ir aptarkite su Link, kaip savo mąstymo partneriu",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "Rezultatas nerastas",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "Naudokite pažangius AI modelius",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "Klauskite savo kolekcijų",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "Norėdami gauti tikslesnius ir sudėtingesnius atsakymus, naudokite pažangius AI modelius, pvz., GPT-4 ir kitus",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "Naudojant nuorodas iš to, ką jau perskaitėte ir surinkote naudodami „Link“.",
+        "description": ""
+    },
+    "notNow": {
+        "message": "Ne dabar",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "Premium narys",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "Puslapio užklausos",
+        "description": ""
+    },
+    "goElite": {
+        "message": "Atnaujinkite į Elite",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "Eikite neribotai",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "Neribotas užklausų skaičius",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "Kalbėkitės su puslapiu naudodami pažangius modelius",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "Kalbėkitės su asmeninėmis kolekcijomis naudodami pažangius modelius",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "Neribotas pokalbių skaičius su pažangiais modeliais (GPT-4-Turbo, Claude 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "300 užklausų arba pokalbių per mėnesį",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "30 pokalbių su pažangiais modeliais (GPT-4 Turbo ir kiti)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "Išbandyti pažangius modelius?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "Naudojimo kvota nustatoma iš naujo po $day$ dienų",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

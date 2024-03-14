@@ -1,0 +1,17 @@
+.container{
+    :global{
+        .ellipsis{
+            text-align: center;
+        }
+
+        .paragraph-text{
+            margin-bottom: 0;
+            color: #666;
+        }
+
+        .title{
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    }
+}

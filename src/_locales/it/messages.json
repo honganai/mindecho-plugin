@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "Approfondimenti",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "Collezioni",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "Fonte",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Iscriviti con Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Disconnettersi",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "Centro assistenza",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "Piano gratuito",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "Approfondimenti sui contenuti",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "Estratti essenziali",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "Ulteriori riflessioni",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "Carica altro",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "Potrebbe essere rilevante",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "Contenuti simili letti",
+        "description": ""
+    },
+    "copied": {
+        "message": "Copiato negli Appunti",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Errore di sistema",
+        "description": ""
+    },
+    "error500": {
+        "message": "Errore di sistema",
+        "description": ""
+    },
+    "error400": {
+        "message": "Errore di sistema",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "Attendi il completamento della risposta al messaggio precedente.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "Vai al repository di contenuti",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "Collezioni",
+        "description": ""
+    },
+    "retry": {
+        "message": "Fare clic per riprovare",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Linnk AI: Afferra L'Essenza Velocemente",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Catturare la vera essenza di qualsiasi contenuto (notizie, articoli, blog, video e saggi) per imparare velocemente e rimanere informati.",
+        "description": ""
+    },
+    "summary": {
+        "message": "Riepilogo",
+        "description": ""
+    },
+    "contentType": {
+        "message": "Tipo di contenuto",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "Logiche chiave",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "Prospettive e conclusioni",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "Scheda dati",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "Citazioni",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "Ulteriori domande",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "Domande non poste",
+        "description": ""
+    },
+    "plots": {
+        "message": "Trame",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "Automatico",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "Lingua di output impostata su",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "Linguaggio di risposta",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "Sembra che la lettura del contenuto non sia stata completata",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "Vorresti",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "riprova",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "La quota gratuita viene reimpostata tra $day$ giorni",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "$count$ letture gratuite ogni mese",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "Utilizzo",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "Si ripristina",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "Scade il",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "Contattaci",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "Gestisci abbonamento",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "Non abbastanza?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "Prendi di più!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "Forniamo $count$ letture gratuite ogni mese per tutti gli utenti.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "Il tuo utilizzo attuale",
+        "description": ""
+    },
+    "needMore": {
+        "message": "Bisogno di piu?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "Scegli Premium per efficienza e chiarezza",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "al mese",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "fatturati ogni anno",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "fatturato mensilmente",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "Iniziare",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "Pagamento completato",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ Letture al mese",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "Salvataggi personali illimitati",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "Supporto e-mail prioritario",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "Grazie per esserti iscritto",
+        "description": ""
+    },
+    "crush": {
+        "message": "Iniziamo!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "Approfondimenti",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "Utente libero",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "Membro Premium",
+        "description": ""
+    },
+    "payFail": {
+        "message": "Pagamento non completato",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "Disabilita su <b>tutte le pagine</b>",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "Disabilita in <b>questa pagina</b>",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "Disabilita su <b>questo sito</b>",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "Come avviare dalla barra delle estensioni",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "Il pulsante mobile è disabilitato su <b>tutte le pagine</b> .",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "Il pulsante mobile è disabilitato in <b>questa pagina</b> .",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "Il pulsante mobile è disabilitato su <b>$site$</b> .",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "Puoi sempre aprire il pannello informativo facendo clic sull&#39;icona Linnk in alto sulla barra degli strumenti.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "Prossimo",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "Iniziare!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "Innanzitutto le logiche sottostanti",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "Dove puoi decidere di approfondire o tralasciare in un colpo d&#39;occhio",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "Nota da asporto raccolta",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "Visualizzazione rapida dei contenuti principali. Prova a fare clic su di essi più tardi!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "Esplora di più",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "E discuti con Linnk come tuo partner pensante",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "nessun risultato trovato",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "Usa Modelli AI Avanzati",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "Consulta Le Tue Collezioni",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "Impiega modelli AI avanzati come GPT-4 e oltre per risposte più accurate e sofisticate",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "Utilizzando riferimenti da ciò che hai già letto e raccolto con Linnk",
+        "description": ""
+    },
+    "notNow": {
+        "message": "Non adesso",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "Membro Premium",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "Query sulla pagina",
+        "description": ""
+    },
+    "goElite": {
+        "message": "Passa all&#39;élite",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "Vai illimitato",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "Domande illimitate",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "Chatta con la pagina utilizzando modelli avanzati",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "Chatta con raccolte personali utilizzando modelli avanzati",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "Chat illimitate con modelli avanzati (GPT-4-Turbo, Claude 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "300 query o chat al mese",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "30 chat con modelli avanzati (GPT-4 Turbo e oltre)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "Provare i modelli avanzati?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "La quota di utilizzo viene reimpostata tra $day$ giorni",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "洞察",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "收藏",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "來源",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "用 Google 註冊",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "登出",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "幫助中心",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "免費方案",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "內容洞察",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "基本摘要",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "深入思考",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "載入更多",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "可能相關",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "類似內容閱讀",
+        "description": ""
+    },
+    "copied": {
+        "message": "已複製到剪貼板",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "系統錯誤",
+        "description": ""
+    },
+    "error500": {
+        "message": "系統錯誤",
+        "description": ""
+    },
+    "error400": {
+        "message": "系統錯誤",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "請等待上一條信息的回應完成。",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "前往內容庫",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "收藏",
+        "description": ""
+    },
+    "retry": {
+        "message": "點擊重試",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Linnk AI：專注內容精髓",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "針對任何內容（新聞、文章、部落格、影片及論文）捕捉其真正精髓，協助您迅速學習並保持資訊即時更新",
+        "description": ""
+    },
+    "summary": {
+        "message": "摘要",
+        "description": ""
+    },
+    "contentType": {
+        "message": "內容類型",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "關鍵邏輯",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "觀點與結論",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "資料表",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "引言",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "進一步的問題",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "未提出的問題",
+        "description": ""
+    },
+    "plots": {
+        "message": "情節",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "自動",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "輸出語言設為",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "回應語言",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "似乎內容閱讀未完成",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "您是否想要",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "再試一次",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "免費配額於 $day$ 天后重置",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "每月 $count$ 次免費閱讀",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "使用情況",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "重置於",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "到期於",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "聯繫我們",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "管理訂閱",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "還不夠？",
+        "description": ""
+    },
+    "getMore": {
+        "message": "獲取更多！",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "我們每月為所有用戶提供 $count$ 次免費閱讀。",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "您當前的使用情況",
+        "description": ""
+    },
+    "needMore": {
+        "message": "需要更多？",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "升級為高級版，提高效率",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "每月",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "按年計費",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "按月計費",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "開始使用",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "付款完成",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "每月 $count$ 次閱讀",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "無限個人保存",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "優先郵件支持",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "感謝您的訂閱",
+        "description": ""
+    },
+    "crush": {
+        "message": "讓我們開始吧！",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "洞察",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "免費用戶",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "高級會員",
+        "description": ""
+    },
+    "payFail": {
+        "message": "付款未完成",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "在 <b>所有頁面</b> 禁用",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "在 <b>此頁面</b> 禁用",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "在 <b>此站點</b> 禁用",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "如何從擴展欄啟動",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "浮動按鈕在<b>所有頁面</b>上均已停用。",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "<b>此頁面</b>上的浮動按鈕已停用。",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "<b>$site$</b>上的浮動按鈕已停用。",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "您始終可以透過點擊工具列上方的 Linnk 圖示來開啟洞察面板。",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "下一個",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "開始吧！",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "先從基本邏輯開始",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "您可以快速決定是深入研究還是一瞥即過",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "收集要點筆記",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "快速查看關鍵內容。稍後嘗試點擊它們！",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "探索更多",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "並將Linnk作為您的思考夥伴進行討論",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "沒有找到結果",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "使用高級AI模型",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "查詢您的收藏",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "採用GPT-4等先進的人工智慧模型來獲得更準確和複雜的回應",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "用您已經閱讀和收集的內容作為參考",
+        "description": ""
+    },
+    "notNow": {
+        "message": "現在不要",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "高級會員",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "頁面查詢",
+        "description": ""
+    },
+    "goElite": {
+        "message": "升級至精英",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "無限暢遊",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "無限查詢",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "使用進階模型與頁面聊天",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "使用高級模型與個人收藏聊天",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "與高級模型無限聊天（GPT-4-Turbo、Claude 2）",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "每月 300 次查詢或聊天",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "30 次與進階模型的聊天（GPT-4 Turbo 及更多）",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "嘗試高級模型？",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "使用配額將在 $day$ 天後重置",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

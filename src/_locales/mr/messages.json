@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "अंतर्दृष्टी",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "संग्रह",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "स्त्रोत",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Google सह साइन अप करा",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "बाहेर पडणे",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "मदत केंद्र",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "मोफत योजना",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "सामग्री अंतर्दृष्टी",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "आवश्यक अर्क",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "पुढील विचार",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "लादणे",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "संबंधित असू शकते",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "तत्सम सामग्री वाचा",
+        "description": ""
+    },
+    "copied": {
+        "message": "क्लिपबोर्डवर कॉपी केले",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "सिस्टम एरर",
+        "description": ""
+    },
+    "error500": {
+        "message": "सिस्टम एरर",
+        "description": ""
+    },
+    "error400": {
+        "message": "सिस्टम एरर",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "कृपया मागील मेसेजला प्रतिसाद पूर्ण होण्याची प्रतीक्षा करा.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "सामग्री भांडारावर जा",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "संग्रह",
+        "description": ""
+    },
+    "retry": {
+        "message": "पुन्हा प्रयत्न करण्यासाठी क्लिक करा",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "लिंक एआय: द्रुत सार समजून घ्या",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "तुम्हाला जलद शिकण्यासाठी आणि माहिती मिळवण्यासाठी कोणत्याही सामग्रीचे खरे सार कॅप्चर करणे (बातम्या, लेख, ब्लॉग, व्हिडिओ आणि निबंध).",
+        "description": ""
+    },
+    "summary": {
+        "message": "सारांश",
+        "description": ""
+    },
+    "contentType": {
+        "message": "सामग्री प्रकार",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "मुख्य तर्कशास्त्र",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "दृष्टीकोन आणि निष्कर्ष",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "माहिती पत्रक",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "कोट",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "पुढील प्रश्न",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "न विचारलेले प्रश्न",
+        "description": ""
+    },
+    "plots": {
+        "message": "भूखंड",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "स्वयंचलित",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "आउटपुट भाषा वर सेट केली आहे",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "प्रतिसाद भाषा",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "सामग्री वाचन पूर्ण झाले नाही असे दिसते",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "तुम्हाला आवडेल का",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "पुन्हा प्रयत्न करा",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "विनामूल्य कोटा $day$ दिवसांमध्ये रीसेट होईल",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "दरमहा $count$ मोफत वाचन",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "वापर",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "वर रीसेट करतो",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "रोजी कालबाह्य",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "आमच्याशी संपर्क साधा",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "सदस्यता व्यवस्थापित करा",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "पुरेसे नाही?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "अधिक मिळवा!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "आम्ही सर्व वापरकर्त्यांसाठी दरमहा $count$ विनामूल्य वाचन प्रदान करतो.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "तुमचा सध्याचा वापर",
+        "description": ""
+    },
+    "needMore": {
+        "message": "आणखी गरज आहे?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "कार्यक्षमता आणि स्पष्टतेसाठी प्रीमियम वर जा",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "दर महिन्याला",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "दरवर्षी बिल केले जाते",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "मासिक बिल केले जाते",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "सुरु करूया",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "पेमेंट पूर्ण झाले",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ दरमहा वाचन",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "अमर्यादित वैयक्तिक बचत",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "प्राधान्य ईमेल समर्थन",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "सदस्यता घेतल्याबद्दल धन्यवाद",
+        "description": ""
+    },
+    "crush": {
+        "message": "चला सुरू करुया!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "अंतर्दृष्टी",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "मोफत वापरकर्ता",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "प्रीमियम सदस्य",
+        "description": ""
+    },
+    "payFail": {
+        "message": "पेमेंट पूर्ण झाले नाही",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "<b>सर्व पृष्ठांवर</b> अक्षम करा",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "<b>या पृष्ठावर</b> अक्षम करा",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "<b>या साइटवर</b> अक्षम करा",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "विस्तार बार वरून कसे लाँच करावे",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "<b>सर्व पृष्ठांवर</b> फ्लोटिंग बटण अक्षम केले आहे.",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "<b>या पृष्ठावर</b> फ्लोटिंग बटण अक्षम केले आहे.",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "<b>$site$</b> वर फ्लोटिंग बटण अक्षम केले आहे.",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "टूल बारवरील वरील लिंक आयकॉनवर क्लिक करून तुम्ही नेहमी इनसाइट पॅनल उघडू शकता.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "पुढे",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "सुरु करूया!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "अंतर्निहित तर्कशास्त्र प्रथम",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "जिथे तुम्ही खोल बुडी मारण्याचा निर्णय घेऊ शकता किंवा एका दृष्टीक्षेपात ते वगळू शकता",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "टेकअवे नोट गोळा केली",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "मुख्य सामग्रीचे जलद दृश्य. नंतर त्यावर क्लिक करण्याचा प्रयत्न करा!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "अधिक एक्सप्लोर करा",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "आणि तुमचा विचार भागीदार म्हणून लिंकशी चर्चा करा",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "कोणताही परिणाम आढळला नाही",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "प्रगत AI मॉडेल वापरा",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "तुमचे संग्रह विचारा",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "अधिक अचूक आणि अत्याधुनिक प्रतिसादांसाठी GPT-4 सारख्या प्रगत AI मॉडेल्सचा वापर करा",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "लिंक वापरून तुम्ही आधीच काय वाचले आहे आणि गोळा केले आहे",
+        "description": ""
+    },
+    "notNow": {
+        "message": "आता नाही",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "प्रीमियम सदस्य",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "पृष्ठ प्रश्न",
+        "description": ""
+    },
+    "goElite": {
+        "message": "एलिट वर श्रेणीसुधारित करा",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "अमर्यादित जा",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "अमर्यादित प्रश्न",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "प्रगत मॉडेल वापरून पृष्ठासह चॅट करा",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "प्रगत मॉडेल वापरून वैयक्तिक संग्रहांसह गप्पा मारा",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "प्रगत मॉडेल्ससह अमर्यादित गप्पा (GPT-4-Turbo, Claude 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "दरमहा 300 प्रश्न किंवा गप्पा",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "प्रगत मॉडेलसह 30 गप्पा (GPT-4 टर्बो आणि पुढे)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "प्रगत मॉडेल वापरून पहा?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "वापर कोटा $day$ दिवसांमध्ये रीसेट होईल",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

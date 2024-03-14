@@ -1,0 +1,355 @@
+{
+    "tab1": {
+        "message": "أفكار",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "المجموعات",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "مصدر",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "قم بالتسجيل مع جوجل",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "تسجيل خروج",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "مركز المساعدة",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "خطة مجانية",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "رؤى المحتوى",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "مقتطفات أساسية",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "مزيد من الأفكار",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "تحميل المزيد",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "يمكن أن تكون ذات صلة",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "قراءة محتوى مماثل",
+        "description": ""
+    },
+    "copied": {
+        "message": "نسخ إلى الحافظة",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "خطأ في النظام",
+        "description": ""
+    },
+    "error500": {
+        "message": "خطأ في النظام",
+        "description": ""
+    },
+    "error400": {
+        "message": "خطأ في النظام",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "الرجاء الانتظار حتى يكتمل الرد على الرسالة السابقة.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "انتقل إلى مستودع المحتوى",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "المجموعات",
+        "description": ""
+    },
+    "retry": {
+        "message": "انقر لإعادة المحاولة",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Linnk AI: متصفح القراءة الفورية",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "تلخيص الأفكار وتنظيمها واستخراجها على الفور من محتوى الويب متعدد اللغات، المدعوم بالذكاء الاصطناعي",
+        "description": ""
+    },
+    "summary": {
+        "message": "ملخص",
+        "description": ""
+    },
+    "contentType": {
+        "message": "نوع المحتوى",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "المنطق الرئيسي",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "وجهات النظر والاستنتاجات",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "ورقة البيانات",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "يقتبس",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "مزيد من الأسئلة",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "الأسئلة غير المطروحة",
+        "description": ""
+    },
+    "plots": {
+        "message": "المؤامرات",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "تلقائي",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "تم ضبط لغة الإخراج على",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "لغة الاستجابة",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "يبدو أن قراءة المحتوى لم تكتمل",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "هل تريد أن",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "حاول ثانية",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "تتم إعادة تعيين الحصص مجانًا خلال $day$ من الأيام",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "$count$ قراءات مجانية كل شهر",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "الاستخدام",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "تم تفعيل إعادة الضبط",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "تنتهي صلاحيته في",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "اتصل بنا",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "إدارة الاشتراك",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "ليس كافي؟",
+        "description": ""
+    },
+    "getMore": {
+        "message": "خذ المزيد!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "نحن نقدم قراءات مجانية بقيمة $count$ كل شهر لجميع المستخدمين.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "استخدامك الحالي",
+        "description": ""
+    },
+    "needMore": {
+        "message": "أحتاج المزيد؟",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "انتقل إلى Premium للحصول على الكفاءة والوضوح",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "كل شهر",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "دفع سنوى",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "فاتورة شهرية",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "البدء",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "تم التسديد",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ يقرأ شهريا",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "عمليات حفظ شخصية غير محدودة",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "دعم البريد الإلكتروني الأولوية",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "شكرا لك على الاشتراك",
+        "description": ""
+    },
+    "crush": {
+        "message": "هيا بنا نبدأ!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "أفكار",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "مستخدم حر",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "قسط الأعضاء",
+        "description": ""
+    },
+    "payFail": {
+        "message": "لم يكتمل الدفع",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "تعطيل على <b>كافة الصفحات</b>",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "تعطيل في <b>هذه الصفحة</b>",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "تعطيل على <b>هذا الموقع</b>",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "كيفية التشغيل من شريط الامتدادات",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "تم تعطيل الزر العائم في <b>كافة الصفحات</b> .",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "تم تعطيل الزر العائم في <b>هذه الصفحة</b> .",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "تم تعطيل الزر العائم على <b>$site$</b> .",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "يمكنك دائمًا فتح لوحة المعلومات من خلال النقر على أيقونة Linnk أعلاه على شريط الأدوات.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "التالي",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "البدء!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "المنطق الأساسي أولا",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "حيث يمكنك أن تقرر الغوص العميق أو تخطيه في لمحة",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "تم جمع مذكرة الوجبات الجاهزة",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "عرض سريع للمحتوى الرئيسي. حاول النقر عليها لاحقًا!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "استكشاف المزيد",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "وناقش مع Linnk باعتباره شريكك في التفكير",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "لم يتم العثور على نتائج",
+        "description": ""
+    }
+}

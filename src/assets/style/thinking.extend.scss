@@ -1,0 +1,69 @@
+@import './public.extend';
+%extend-title-public {
+  @extend %linnk-extend-title;
+
+  cursor: pointer;
+  user-select: none;
+  border-radius: 3px;
+
+  /** 不使用 all 的原因，在实际效果中，目前两种颜色的快速过渡效果有些刺眼 */
+  // transition: all .4s;
+  transition: box-shadow .3s;
+}
+
+%extend-title-warpper {
+  @extend %extend-title-public;
+
+  background-color: var(--color-background);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--box-shadow-0);
+      
+  &:hover {
+    background-color: var(--color-primary-second);
+    box-shadow: var(--box-shadow);
+  }
+}
+
+%extend-title {
+  display: inline-block;
+  font-size: var(--font-size);
+  text-align: left;
+}
+
+%extend-title-warpper-active {
+  @extend %extend-title-public;
+
+  background-color: var(--card-title-background);
+  border: 1px solid var(--card-title-background);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+%extend-title-active {
+  font-size: var(--font-size);
+  color: var(--card-title-color);
+  text-align: left;
+}
+
+%extend-item-summary {
+  @extend %linnk-extend-p;
+  @extend %linnk-extend-p-border;
+
+  border-radius: 0 !important;
+}
+
+%extend-item-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 31px;
+  font-size: var(--font-size-sm);
+  line-height: 31px;
+  color: var(--color-text);
+  text-align: left;
+
+  // cursor: pointer;
+  background-color: var(--color-background);
+  border: 1px solid var(--border-color);
+  border-top: none;
+}

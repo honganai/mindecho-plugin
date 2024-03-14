@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    column-gap: 4px;
+    align-items: self-start;
+
+    &::after{
+        display: block;
+        clear: both;
+        content: '';
+    }
+
+    :global{
+        .content{
+            display: flex;
+            flex-direction: column;
+            row-gap: 6px;
+
+            .message{
+                padding: 4px;
+                background-color: #d9e9ff;
+                border-radius: 4px;
+                
+            }
+
+            .link{
+                padding:2px 4px;
+                border: 1px solid #ededed;
+                border-radius: 2px;
+            }
+        }
+
+
+   
+    }
+}

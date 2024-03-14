@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "అంతర్దృష్టులు",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "సేకరణలు",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "మూలం",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Googleతో సైన్ అప్ చేయండి",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "లాగ్ అవుట్ చేయండి",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "సహాయ కేంద్రం",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "ఉచిత ప్రణాళిక",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "కంటెంట్ అంతర్దృష్టులు",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "ఎసెన్షియల్ ఎక్స్‌ట్రాక్ట్స్",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "తదుపరి ఆలోచనలు",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "మరింత లోడ్ చేయండి",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "సంబంధితంగా ఉండవచ్చు",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "ఇలాంటి కంటెంట్ రీడ్",
+        "description": ""
+    },
+    "copied": {
+        "message": "క్లిప్‌బోర్డ్‌కి కాపీ చేయబడింది",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "సిస్టమ్ లోపం",
+        "description": ""
+    },
+    "error500": {
+        "message": "సిస్టమ్ లోపం",
+        "description": ""
+    },
+    "error400": {
+        "message": "సిస్టమ్ లోపం",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "దయచేసి మునుపటి సందేశానికి ప్రతిస్పందన పూర్తయ్యే వరకు వేచి ఉండండి.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "కంటెంట్ రిపోజిటరీకి వెళ్లండి",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "సేకరణలు",
+        "description": ""
+    },
+    "retry": {
+        "message": "మళ్లీ ప్రయత్నించడానికి క్లిక్ చేయండి",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "లింక్ AI: సారాంశాన్ని త్వరగా గ్రహించండి",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "మీరు వేగంగా నేర్చుకునేందుకు మరియు సమాచారంతో ఉండటానికి ఏదైనా కంటెంట్ (వార్తలు, కథనాలు, బ్లాగులు, వీడియోలు మరియు వ్యాసాలు) యొక్క నిజమైన సారాంశాన్ని సంగ్రహించడం.",
+        "description": ""
+    },
+    "summary": {
+        "message": "సారాంశం",
+        "description": ""
+    },
+    "contentType": {
+        "message": "కంటెంట్ రకం",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "కీ లాజిక్స్",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "దృక్కోణాలు &amp; ముగింపులు",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "సమాచార పట్టిక",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "కోట్స్",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "మరిన్ని ప్రశ్నలు",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "అడగని ప్రశ్నలు",
+        "description": ""
+    },
+    "plots": {
+        "message": "ప్లాట్లు",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "ఆటోమేటిక్",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "అవుట్‌పుట్ భాష సెట్ చేయబడింది",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "ప్రతిస్పందన భాష",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "కంటెంట్ రీడింగ్ పూర్తి కాలేదు",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "మీరు చేయడానికి ఇష్టపడుతారా",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "మళ్ళీ ప్రయత్నించండి",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "$day$ రోజుల్లో ఉచిత కోటా రీసెట్ చేయబడుతుంది",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "ప్రతి నెల $count$ ఉచిత రీడ్‌లు",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "వాడుక",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "రీసెట్ ఆన్ చేయబడింది",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "గడువు ముగుస్తుంది",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "మమ్మల్ని సంప్రదించండి",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "సభ్యత్వాన్ని నిర్వహించండి",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "సరి పోదు?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "ఇంకా తీసుకురా!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "మేము వినియోగదారులందరికీ ప్రతి నెలా $count$ ఉచిత రీడ్‌లను అందిస్తాము.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "మీ ప్రస్తుత వినియోగం",
+        "description": ""
+    },
+    "needMore": {
+        "message": "ఇంకా కావాలి?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "సమర్థత &amp; స్పష్టత కోసం ప్రీమియంకు వెళ్లండి",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "ఒక నెలకి",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "ఏటా బిల్ చేస్తారు",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "నెలవారీ బిల్",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "ప్రారంభించడానికి",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "చెల్లింపు పూర్తయింది",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "నెలకు $count$ రీడ్‌లు",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "అపరిమిత వ్యక్తిగత పొదుపులు",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "ప్రాధాన్యత ఇమెయిల్ మద్దతు",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "చందా చేసినందుకు ధన్యవాదాలు",
+        "description": ""
+    },
+    "crush": {
+        "message": "ప్రారంభిద్దాం!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "అంతర్దృష్టులు",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "ఉచిత వినియోగదారు",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "ప్రీమియం సభ్యుడు",
+        "description": ""
+    },
+    "payFail": {
+        "message": "చెల్లింపు పూర్తి కాలేదు",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "<b>అన్ని పేజీలలో</b> నిలిపివేయండి",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "<b>ఈ పేజీలో</b> నిలిపివేయండి",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "<b>ఈ సైట్‌లో</b> నిలిపివేయండి",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "పొడిగింపుల బార్ నుండి ఎలా ప్రారంభించాలి",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "<b>అన్ని పేజీలలో</b> ఫ్లోటింగ్ బటన్ నిలిపివేయబడింది.",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "<b>ఈ పేజీలో</b> ఫ్లోటింగ్ బటన్ నిలిపివేయబడింది.",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "<b>$site$</b> లో ఫ్లోటింగ్ బటన్ డిజేబుల్ చేయబడింది.",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "మీరు ఎల్లప్పుడూ టూల్స్ బార్‌లో పైన ఉన్న లింక్ చిహ్నాన్ని క్లిక్ చేయడం ద్వారా అంతర్దృష్టి ప్యానెల్‌ను తెరవవచ్చు.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "తరువాత",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "ప్రారంభించడానికి!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "ముందుగా అంతర్లీన లాజిక్స్",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "మీరు లోతుగా డైవ్ చేయాలని నిర్ణయించుకోవచ్చు లేదా ఒక చూపులో దాన్ని దాటవేయవచ్చు",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "టేకావే నోట్ సేకరించబడింది",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "కీలకమైన కంటెంట్ యొక్క వేగవంతమైన వీక్షణ. వాటిపై తర్వాత క్లిక్ చేసి ప్రయత్నించండి!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "మరింత అన్వేషించండి",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "మరియు మీ ఆలోచనా భాగస్వామిగా లింక్‌తో చర్చించండి",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "ఫలితం కనుగొనబడలేదు",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "అధునాతన AI మోడల్‌లను ఉపయోగించండి",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "మీ సేకరణలను అడగండి",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "మరింత ఖచ్చితమైన మరియు అధునాతన ప్రతిస్పందనల కోసం GPT-4 మరియు మరిన్నింటి వంటి అధునాతన AI మోడల్‌లను ఉపయోగించండి",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "లింక్‌తో మీరు ఇప్పటికే చదివిన మరియు సేకరించిన వాటి నుండి సూచనను ఉపయోగించడం",
+        "description": ""
+    },
+    "notNow": {
+        "message": "ఇప్పుడు కాదు",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "ప్రీమియం సభ్యుడు",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "పేజీ ప్రశ్నలు",
+        "description": ""
+    },
+    "goElite": {
+        "message": "ఎలైట్‌కి అప్‌గ్రేడ్ చేయండి",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "అన్‌లిమిటెడ్‌గా వెళ్లండి",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "అపరిమిత ప్రశ్నలు",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "అధునాతన మోడల్‌లను ఉపయోగించి పేజీతో చాట్ చేయండి",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "అధునాతన మోడల్‌లను ఉపయోగించి వ్యక్తిగత సేకరణలతో చాట్ చేయండి",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "అధునాతన మోడల్‌లతో అపరిమిత చాట్‌లు(GPT-4-టర్బో, క్లాడ్ 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "నెలకు 300 ప్రశ్నలు లేదా చాట్‌లు",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "అధునాతన మోడల్‌లతో 30 చాట్‌లు (GPT-4 టర్బో మరియు మరిన్ని)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "అధునాతన మోడల్‌లను ప్రయత్నించాలా?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "వినియోగ కోటా $day$ రోజుల్లో రీసెట్ చేయబడుతుంది",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

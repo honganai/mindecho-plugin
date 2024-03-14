@@ -1,0 +1,26 @@
+.container {
+  padding: 10px 4px 5px 0;
+
+  :global {
+    .search-wrapper {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+
+      .search-input {
+        flex: 1;
+        .ant-input-affix-wrapper {
+          background-color: var(--color-background-black);
+          .ant-input {
+            background-color: var(--color-background-black);
+            color: var(--color-text-white);
+          }
+        }
+      }
+
+      .search-date {
+        padding-left: 10px;
+      }
+    }
+  }
+}

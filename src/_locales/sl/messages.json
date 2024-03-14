@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "Vpogledi",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "Zbirke",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "Vir",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Prijavite se z Googlom",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Odjava",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "Center pomoči",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "Brezplačni načrt",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "Vpogled v vsebino",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "Esencialni izvlečki",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "Nadaljnja razmišljanja",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "Naloži več",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "Lahko bi bilo relevantno",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "Preberite podobno vsebino",
+        "description": ""
+    },
+    "copied": {
+        "message": "Kopirano v odložišče",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Sistemska napaka",
+        "description": ""
+    },
+    "error500": {
+        "message": "Sistemska napaka",
+        "description": ""
+    },
+    "error400": {
+        "message": "Sistemska napaka",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "Počakajte, da se konča odgovor na prejšnje sporočilo.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "Pojdite v Repozitorij vsebine",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "Zbirke",
+        "description": ""
+    },
+    "retry": {
+        "message": "Kliknite za ponovni poskus",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Linkk AI: Grasp The Essence Quick",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Zajemanje pravega bistva katere koli vsebine (novic, člankov, spletnih dnevnikov, videoposnetkov in esejev), da se hitro učite in ostanete obveščeni.",
+        "description": ""
+    },
+    "summary": {
+        "message": "Povzetek",
+        "description": ""
+    },
+    "contentType": {
+        "message": "Vrsta vsebine",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "Ključne logike",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "Perspektive in zaključki",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "Podatkovni list",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "Citati",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "Nadaljnja vprašanja",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "Nepostavljena vprašanja",
+        "description": ""
+    },
+    "plots": {
+        "message": "Parcele",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "Samodejno",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "Izhodni jezik je nastavljen na",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "Jezik odziva",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "Zdi se, da branje vsebine ni bilo dokončano",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "Ali želite",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "poskusi ponovno",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "Brezplačne ponastavitve kvote čez $day$ dni",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "$count$ brezplačnih branj vsak mesec",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "Uporaba",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "Ponastavitve vklopljene",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "Poteče",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "Kontaktiraj nas",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "Upravljanje naročnine",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "Ne dovolj?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "Dobili več!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "Vsak mesec vsem uporabnikom nudimo $count$ brezplačnih branj.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "Vaša trenutna poraba",
+        "description": ""
+    },
+    "needMore": {
+        "message": "Potrebujemo več?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "Izberite Premium za učinkovitost in jasnost",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "na mesec",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "zaračunana letno",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "zaračunavajo mesečno",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "Začeti",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "Plačilo opravljeno",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ Prebranih na mesec",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "Neomejeno osebno shranjevanje",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "Prednostna podpora po e-pošti",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "Hvala, ker ste se naročili",
+        "description": ""
+    },
+    "crush": {
+        "message": "Začnimo!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "Vpogledi",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "Brezplačni uporabnik",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "Premium član",
+        "description": ""
+    },
+    "payFail": {
+        "message": "Plačilo ni zaključeno",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "Onemogoči na <b>vseh straneh</b>",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "Onemogoči na <b>tej strani</b>",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "Onemogoči na <b>tem mestu</b>",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "Kako zagnati iz vrstice razširitev",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "Plavajoči gumb je onemogočen na <b>vseh straneh</b> .",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "Plavajoči gumb je na <b>tej strani</b> onemogočen.",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "Plavajoči gumb je onemogočen na <b>$site$</b> .",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "Ploščo z vpogledi lahko kadar koli odprete s klikom na ikono Linknk zgoraj v orodni vrstici.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "Naslednji",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "Začeti!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "Najprej osnovna logika",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "Kjer se lahko odločite za globok potop ali pa ga na hitro preskočite",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "Beležka za s seboj je zbrana",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "Hiter ogled ključne vsebine. Poskusite jih klikniti pozneje!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "Raziščite več",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "In razpravljajte z Linnkom kot vašim razmišljajočim partnerjem",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "Ni rezultatov",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "Uporabite napredne modele AI",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "Vprašajte svoje zbirke",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "Uporabite napredne modele umetne inteligence, kot je GPT-4 in druge, za natančnejše in sofisticirane odzive",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "Uporaba reference iz tega, kar ste že prebrali in zbrali z Linknkom",
+        "description": ""
+    },
+    "notNow": {
+        "message": "Ne zdaj",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "Premium član",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "Poizvedbe strani",
+        "description": ""
+    },
+    "goElite": {
+        "message": "Nadgradite na Elite",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "Go Unlimited",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "Neomejeno število poizvedb",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "Klepetajte s stranjo z uporabo naprednih modelov",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "Klepetajte z osebnimi zbirkami z uporabo naprednih modelov",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "Neomejeni klepeti z naprednimi modeli (GPT-4-Turbo, Claude 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "300 poizvedb ali klepetov na mesec",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "30 klepetov z naprednimi modeli (GPT-4 Turbo in več)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "Ali želite preizkusiti napredne modele?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "Kvota uporabe se ponastavi čez $day$ dni",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

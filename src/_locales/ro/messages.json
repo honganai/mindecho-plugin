@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "Perspective",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "Colecții",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "Sursă",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Înscrieți-vă cu Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Deconectați-vă",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "Centru de ajutor",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "Plan gratuit",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "Informații despre conținut",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "Extracte esențiale",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "Gândiri ulterioare",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "Incarca mai mult",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "Ar putea fi relevant",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "Conținut similar Citiți",
+        "description": ""
+    },
+    "copied": {
+        "message": "Copiat în Clipboard",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Eroare de sistem",
+        "description": ""
+    },
+    "error500": {
+        "message": "Eroare de sistem",
+        "description": ""
+    },
+    "error400": {
+        "message": "Eroare de sistem",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "Vă rugăm să așteptați să se finalizeze răspunsul la mesajul anterior.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "Accesați Arhiva de conținut",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "Colecții",
+        "description": ""
+    },
+    "retry": {
+        "message": "Faceți clic pentru a reîncerca",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Link AI: Prinde rapid Esența",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Captând adevărata esență a oricărui conținut (știri, articole, bloguri, videoclipuri și eseuri) pentru ca tu să înveți rapid și să fii informat.",
+        "description": ""
+    },
+    "summary": {
+        "message": "rezumat",
+        "description": ""
+    },
+    "contentType": {
+        "message": "Tipul de conținut",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "Logica cheie",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "Perspective și concluzii",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "Fișa cu date",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "Citate",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "Întrebări suplimentare",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "Întrebări nepuse",
+        "description": ""
+    },
+    "plots": {
+        "message": "Loturi",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "Automat",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "Limba de ieșire setată la",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "Limbajul răspunsului",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "Se pare că citirea conținutului nu a fost finalizată",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "Aţi dori să",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "încearcă din nou",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "Se resetează gratuit cota în $day$ zile",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "$count$ citiri gratuite în fiecare lună",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "Utilizare",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "Se resetează",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "Expira la",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "Contactaţi-ne",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "Gestionați abonamentul",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "Insuficient?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "A lua mai mult!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "Oferim $count$ citiri gratuite în fiecare lună pentru toți utilizatorii.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "Utilizarea dvs. curentă",
+        "description": ""
+    },
+    "needMore": {
+        "message": "Nevoie de mai mult?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "Accesați Premium pentru eficiență și claritate",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "pe luna",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "facturat anual",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "facturat lunar",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "Incepe",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "Plata finalizată",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ Citiri pe lună",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "Salvări personale nelimitate",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "Asistență prin e-mail prioritară",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "Multumesc pentru abonare",
+        "description": ""
+    },
+    "crush": {
+        "message": "Să începem!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "Perspective",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "Utilizator gratuit",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "Membru Premium",
+        "description": ""
+    },
+    "payFail": {
+        "message": "Plata nu a fost finalizată",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "Dezactivați pe <b>toate paginile</b>",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "Dezactivați pe <b>această pagină</b>",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "Dezactivați pe <b>acest site</b>",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "Cum se lansează din Bara de extensii",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "Butonul flotant este dezactivat pe <b>toate paginile</b> .",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "Butonul flotant este dezactivat pe <b>această pagină</b> .",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "Butonul flotant este dezactivat pe <b>$site$</b> .",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "Puteți deschide oricând panoul de informații făcând clic pe pictograma Link de mai sus din bara de instrumente.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "Următorul",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "Incepe!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "Logica de bază În primul rând",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "Unde puteți decide să vă scufundați în adâncime sau să o săriți peste o privire",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "S-a colectat notă la pachet",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "Vizualizare rapidă a conținutului cheie. Încercați să dați clic pe ele mai târziu!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "Explorează mai mult",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "Și discutați cu Linkk ca partener de gândire",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "niciun rezultat găsit",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "Utilizați modele avansate AI",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "Întrebați-vă colecțiile",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "Folosiți modele AI avansate, cum ar fi GPT-4 și altele, pentru răspunsuri mai precise și mai sofisticate",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "Folosind referințe din ceea ce ați citit și adunat deja cu Linknk",
+        "description": ""
+    },
+    "notNow": {
+        "message": "Nu acum",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "Membru Premium",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "Interogări de pagină",
+        "description": ""
+    },
+    "goElite": {
+        "message": "Faceți upgrade la Elite",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "Du-te nelimitat",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "Interogări nelimitate",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "Chat cu pagina folosind modele avansate",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "Conversați cu colecții personale folosind modele avansate",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "Chat-uri nelimitate cu modele avansate (GPT-4-Turbo, Claude 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "300 de interogări sau chat-uri pe lună",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "30 de discuții cu modele avansate (GPT-4 Turbo și mai departe)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "Încercați modele avansate?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "Cota de utilizare se resetează în $day$ zile",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

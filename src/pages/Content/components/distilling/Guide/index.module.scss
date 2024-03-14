@@ -1,0 +1,47 @@
+.container {
+  position: fixed;
+  inset: 0;
+  z-index: 999999999;
+
+  .step {
+    animation: fade-in .3s;
+  }
+}
+
+
+.step-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 240px;
+  padding: 8px 12px;
+  color: #fff;
+  background-color: var(--color-text);
+  box-shadow: var(--box-shadow);
+  animation: fade-in .3s;
+
+  .title {
+    margin-bottom: 10px;
+    font-size: var(--font-size-lg);
+  }
+
+  .desc {
+    font-size: var(--font-size);
+  }
+
+  .next {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

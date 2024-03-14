@@ -1,0 +1,53 @@
+@import '@/assets/style/public.extend.scss';
+
+.similarity-card {
+  padding: 8px 10px;
+  text-align: left;
+  background-color: #fff;
+  border-top: 1px solid var(--border-color);
+
+  .similarity-card-article {
+    .similarity-card-article-title {
+      @extend %linnk-extend-p;
+      font-size: var(--font-size);
+      color: var(--color-text);
+    }
+
+    &-content {
+      display: flex;
+      gap: 24px;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-top: 8px;
+      line-height: 1;
+    }
+
+    &-link {
+      display: inline-flex;
+      gap: 6px;
+      overflow: hidden;
+      font-size: var(--font-size-sm);
+      font-weight: bold;
+      color: var(--color-text);
+
+      .title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    &-time {
+      flex-shrink: 0;
+      font-size: var(--font-size-xs);
+      line-height: 12px;
+      color: var(--color-text);
+    }
+  }
+}
+
+.similarity-time {
+  margin-top: 4px;
+  font-weight: bold;
+  color: var(--color-text-second);
+}

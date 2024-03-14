@@ -1,0 +1,40 @@
+@import '@/assets/style/public.extend';
+
+.goal {
+  position: relative;
+  border-radius: 3px;
+  box-shadow: var(--box-shadow-0);
+  transition: box-shadow .4s;
+
+  + .goal {
+    margin-top: 9px;
+  }
+
+  .copy {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: var(--font-size-sm);
+    color: #fff;
+    visibility: hidden;
+  }
+
+  // 鼠标悬浮时，出现 copy 图标
+  &:hover {
+    box-shadow: var(--box-shadow);
+
+    .copy {
+      visibility: visible;
+    }
+  }
+
+  .title {
+    @extend %linnk-extend-title;
+    @extend %linnk-extend-title-active;
+  }
+  
+  .content {
+    @extend %linnk-extend-p;
+    @extend %linnk-extend-p-border;
+  }
+}

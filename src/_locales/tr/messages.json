@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "Analizler",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "Koleksiyonlar",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "Kaynak",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Google&#39;a kaydolun",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Çıkış Yap",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "Yardım Merkezi",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "Ücretsiz Plan",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "İçerik Analizleri",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "Temel Ekstraktlar",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "Daha Fazla Düşünceler",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "Daha fazla yükle",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "İlgili olabilir",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "Benzer İçerik Okuma",
+        "description": ""
+    },
+    "copied": {
+        "message": "Panoya kopyalandı",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Sistem hatası",
+        "description": ""
+    },
+    "error500": {
+        "message": "Sistem hatası",
+        "description": ""
+    },
+    "error400": {
+        "message": "Sistem hatası",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "Lütfen önceki mesaja verilen yanıtın tamamlanmasını bekleyin.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "İçerik Havuzuna Git",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "Koleksiyonlar",
+        "description": ""
+    },
+    "retry": {
+        "message": "Yeniden denemek için tıklayın",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Linnk AI: Özü Hızla Anlayın",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Hızlı öğrenmeniz ve bilgi sahibi olmanız için her türlü içeriğin (haberler, makaleler, bloglar, videolar ve denemeler) gerçek özünü yakalıyoruz.",
+        "description": ""
+    },
+    "summary": {
+        "message": "Özet",
+        "description": ""
+    },
+    "contentType": {
+        "message": "İçerik türü",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "Anahtar Mantıklar",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "Perspektifler ve Sonuçlar",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "Veri Sayfası",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "Alıntılar",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "Uzak sorular",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "Sorulmamış Sorular",
+        "description": ""
+    },
+    "plots": {
+        "message": "Arsalar",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "Otomatik",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "Çıkış dili şu şekilde ayarlandı:",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "Yanıt Dili",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "İçerik okumanın tamamlanmadığı görülüyor",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "Arzu eder misiniz",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "tekrar deneyin",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "Ücretsiz kota $day$ gün içinde sıfırlanır",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "Her ay $count$ ücretsiz okuma",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "Kullanım",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "Sıfırlama tarihi",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "Tarihinde sona eriyor",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "Bize Ulaşın",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "Aboneliği Yönet",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "Yeterli değil?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "Daha fazla al!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "Tüm kullanıcılara her ay $count$ ücretsiz okuma olanağı sağlıyoruz.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "Mevcut kullanımınız",
+        "description": ""
+    },
+    "needMore": {
+        "message": "Daha fazlasına ihtiyaç var?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "Verimlilik ve netlik için Premium&#39;a geçin",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "her ay",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "yıllık olarak faturalandırılır",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "aylık faturalandırılır",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "Başlamak",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "Ödeme tamamlandı",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ Aylık okuma sayısı",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "Sınırsız kişisel kaydetme",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "Öncelikli E-posta desteği",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "Abone olduğunuz için teşekkür ederiz",
+        "description": ""
+    },
+    "crush": {
+        "message": "Başlayalım!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "Analizler",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "Ücretsiz Kullanıcı",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "Ayrıcalıklı üye",
+        "description": ""
+    },
+    "payFail": {
+        "message": "Ödeme tamamlanmadı",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "<b>Tüm sayfalarda</b> devre dışı bırak",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "<b>Bu sayfada</b> devre dışı bırak",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "<b>Bu sitede</b> devre dışı bırak",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "Uzantılar Çubuğundan Nasıl Başlatılır",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "Kayan düğme <b>tüm sayfalarda</b> devre dışıdır.",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "<b>Bu sayfada</b> kayan düğme devre dışı bırakıldı.",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "<b>$site$</b> üzerinde kayan düğme devre dışı bırakıldı.",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "Araç çubuğundaki yukarıdaki Linnk simgesini tıklayarak içgörü panelini istediğiniz zaman açabilirsiniz.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "Sonraki",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "Başlamak!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "Önce Temel Mantık",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "Bir bakışta derinlemesine dalmaya veya atlamaya karar verebileceğiniz yer",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "Paket Servis Notu Toplandı",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "Anahtar İçeriğin Hızlı Görüntülenmesi.Daha sonra üzerlerine tıklamayı deneyin!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "Daha fazlasını keşfedin",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "Ve düşünce ortağınız olarak Linnk ile tartışın",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "sonuç bulunamadı",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "Gelişmiş Yapay Zeka Modellerini Kullanın",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "Koleksiyonlarınıza Sorun",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "Daha doğru ve gelişmiş yanıtlar için GPT-4 gibi gelişmiş yapay zeka modellerini ve daha fazlasını kullanın",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "Linnk&#39;te daha önce okuduğunuz ve topladığınız şeylerden referans kullanmak",
+        "description": ""
+    },
+    "notNow": {
+        "message": "Şimdi değil",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "Ayrıcalıklı üye",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "Sayfa Sorguları",
+        "description": ""
+    },
+    "goElite": {
+        "message": "Elite&#39;e yükseltme",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "Sınırsız Olun",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "Sınırsız Sorgu",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "Gelişmiş modelleri kullanarak sayfayla sohbet edin",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "Gelişmiş Modelleri Kullanarak Kişisel Koleksiyonlarla Sohbet Edin",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "Gelişmiş modellerle Sınırsız Sohbet (GPT-4-Turbo,Claude 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "Ayda 300 Sorgu veya Sohbet",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "Gelişmiş modellerle 30 Sohbet (GPT-4 Turbo ve daha fazlası)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "Gelişmiş Modelleri denemek ister misiniz?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "Kullanım kotası $day$ gün içinde sıfırlanacak",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

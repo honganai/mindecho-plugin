@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "Pandangan",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "Koleksi",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "Sumber",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Daftar dengan Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Log keluar",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "Pusat Bantuan",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "Pelan Percuma",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "Cerapan Kandungan",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "Ekstrak Penting",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "Pemikiran Selanjutnya",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "Tambah lagi",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "Boleh jadi relevan",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "Bacaan Kandungan Serupa",
+        "description": ""
+    },
+    "copied": {
+        "message": "Disalin ke Papan Klip",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Ralat Sistem",
+        "description": ""
+    },
+    "error500": {
+        "message": "Ralat Sistem",
+        "description": ""
+    },
+    "error400": {
+        "message": "Ralat Sistem",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "Sila tunggu sehingga balasan kepada mesej sebelumnya selesai.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "Pergi ke Repositori Kandungan",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "Koleksi",
+        "description": ""
+    },
+    "retry": {
+        "message": "Klik untuk mencuba semula",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Linnk AI: Grasp The Essence Pantas",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Menangkap intipati sebenar mana-mana kandungan (berita, artikel, blog, video dan esei) untuk anda pelajari dengan pantas dan sentiasa mendapat maklumat.",
+        "description": ""
+    },
+    "summary": {
+        "message": "Ringkasan",
+        "description": ""
+    },
+    "contentType": {
+        "message": "Jenis kandungan",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "Logik Utama",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "Perspektif &amp; Kesimpulan",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "Lembaran data",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "Petikan",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "Soalan selanjutnya",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "Soalan Tidak Ditanya",
+        "description": ""
+    },
+    "plots": {
+        "message": "Plot",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "Automatik",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "Bahasa output ditetapkan kepada",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "Bahasa Respons",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "Nampaknya bacaan kandungan tidak selesai",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "Adakah anda mahu",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "cuba lagi",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "Kuota percuma ditetapkan semula dalam $day$ hari",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "$count$ bacaan percuma setiap bulan",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "Penggunaan",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "Dihidupkan semula",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "Luput pada",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "Hubungi Kami",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "Urus Langganan",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "Tidak cukup?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "Mendapatkan lebih banyak!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "Kami menyediakan $count$ bacaan percuma setiap bulan untuk semua pengguna.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "Penggunaan semasa anda",
+        "description": ""
+    },
+    "needMore": {
+        "message": "Perlukan lebih?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "Pergi Premium untuk kecekapan &amp; kejelasan",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "sebulan",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "dibilkan setiap tahun",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "dibilkan setiap bulan",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "Mulakan",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "Pembayaran Selesai",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ Bacaan setiap bulan",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "Simpanan peribadi tanpa had",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "Sokongan E-mel Keutamaan",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "Terima kasih kerana melanggan",
+        "description": ""
+    },
+    "crush": {
+        "message": "Mari kita mulakan!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "Pandangan",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "Pengguna Percuma",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "Ahli Premium",
+        "description": ""
+    },
+    "payFail": {
+        "message": "Pembayaran tidak selesai",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "Lumpuhkan pada <b>semua halaman</b>",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "Lumpuhkan pada <b>halaman ini</b>",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "Lumpuhkan pada <b>tapak ini</b>",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "Cara Melancarkan daripada Bar Sambungan",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "Butang terapung dilumpuhkan pada <b>semua halaman</b> .",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "Butang terapung dilumpuhkan pada <b>halaman ini</b> .",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "Butang terapung dilumpuhkan pada <b>$site$</b> .",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "Anda sentiasa boleh membuka panel cerapan dengan mengklik ikon Linknk di atas pada bar alat.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "Seterusnya",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "Mulakan!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "Logik Dasar Pertama",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "Di mana anda boleh membuat keputusan untuk menyelam dalam-dalam atau atau melangkaunya sepintas lalu",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "Nota Bawa Pulang Dikumpul",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "Pandangan Cepat Kandungan Utama. Cuba klik padanya kemudian!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "Terokai lebih banyak lagi",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "Dan berbincang dengan Linnk sebagai rakan berfikir anda",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "Tiada hasil ditemui",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "Gunakan Model AI Lanjutan",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "Tanya Koleksi Anda",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "Gunakan model AI lanjutan seperti GPT-4 dan seterusnya untuk respons yang lebih tepat dan canggih",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "Menggunakan rujukan daripada perkara yang telah anda baca dan kumpulkan dengan Linnk",
+        "description": ""
+    },
+    "notNow": {
+        "message": "Bukan sekarang",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "Ahli Premium",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "Pertanyaan Halaman",
+        "description": ""
+    },
+    "goElite": {
+        "message": "Naik taraf kepada Elite",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "Pergi Tanpa Had",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "Pertanyaan tanpa had",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "Berbual dengan halaman menggunakan model lanjutan",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "Sembang dengan Koleksi Peribadi menggunakan Model Terperinci",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "Sembang tanpa had dengan model lanjutan(GPT-4-Turbo,Claude 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "300 Pertanyaan atau Sembang setiap bulan",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "30 Sembang dengan model lanjutan (GPT-4 Turbo dan seterusnya)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "Cuba Model Lanjutan?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "Kuota penggunaan ditetapkan semula dalam $day$ hari",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

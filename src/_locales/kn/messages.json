@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "ಒಳನೋಟಗಳು",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "ಸಂಗ್ರಹಣೆಗಳು",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "ಮೂಲ",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Google ನೊಂದಿಗೆ ಸೈನ್ ಅಪ್ ಮಾಡಿ",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "ಲಾಗ್ ಔಟ್",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "ಸಹಾಯ ಕೇಂದ್ರ",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "ಉಚಿತ ಯೋಜನೆ",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "ವಿಷಯ ಒಳನೋಟಗಳು",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "ಅಗತ್ಯ ಸಾರಗಳು",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "ಮತ್ತಷ್ಟು ಆಲೋಚನೆಗಳು",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "ಇನ್ನಷ್ಟು ಲೋಡ್ ಮಾಡಿ",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "ಸಂಬಂಧಿತವಾಗಿರಬಹುದು",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "ಇದೇ ವಿಷಯ ಓದು",
+        "description": ""
+    },
+    "copied": {
+        "message": "ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "ಸಿಸ್ಟಮ್ ದೋಷ",
+        "description": ""
+    },
+    "error500": {
+        "message": "ಸಿಸ್ಟಮ್ ದೋಷ",
+        "description": ""
+    },
+    "error400": {
+        "message": "ಸಿಸ್ಟಮ್ ದೋಷ",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "ದಯವಿಟ್ಟು ಹಿಂದಿನ ಸಂದೇಶಕ್ಕೆ ಪ್ರತಿಕ್ರಿಯೆ ಪೂರ್ಣಗೊಳ್ಳಲು ನಿರೀಕ್ಷಿಸಿ.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "ವಿಷಯ ಭಂಡಾರಕ್ಕೆ ಹೋಗಿ",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "ಸಂಗ್ರಹಣೆಗಳು",
+        "description": ""
+    },
+    "retry": {
+        "message": "ಮರುಪ್ರಯತ್ನಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "ಲಿಂಕ್ ಎಐ: ಎಸೆನ್ಸ್ ಕ್ವಿಕ್ ಅನ್ನು ಗ್ರಹಿಸಿ",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "ಯಾವುದೇ ವಿಷಯದ (ಸುದ್ದಿ, ಲೇಖನಗಳು, ಬ್ಲಾಗ್‌ಗಳು, ವೀಡಿಯೊಗಳು ಮತ್ತು ಪ್ರಬಂಧಗಳು) ನಿಜವಾದ ಸಾರವನ್ನು ಸೆರೆಹಿಡಿಯುವುದು ನಿಮಗೆ ವೇಗವಾಗಿ ಕಲಿಯಲು ಮತ್ತು ಮಾಹಿತಿಯಲ್ಲಿ ಉಳಿಯಲು.",
+        "description": ""
+    },
+    "summary": {
+        "message": "ಸಾರಾಂಶ",
+        "description": ""
+    },
+    "contentType": {
+        "message": "ವಿಷಯದ ಪ್ರಕಾರ",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "ಪ್ರಮುಖ ತರ್ಕಗಳು",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "ದೃಷ್ಟಿಕೋನಗಳು ಮತ್ತು ತೀರ್ಮಾನಗಳು",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "ಮಾಹಿತಿಯ ಕಾಗದ",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "ಉಲ್ಲೇಖಗಳು",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "ಮತ್ತಷ್ಟು ಪ್ರಶ್ನೆಗಳು",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "ಕೇಳದ ಪ್ರಶ್ನೆಗಳು",
+        "description": ""
+    },
+    "plots": {
+        "message": "ಪ್ಲಾಟ್ಗಳು",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "ಸ್ವಯಂಚಾಲಿತ",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "ಔಟ್‌ಪುಟ್ ಭಾಷೆಯನ್ನು ಹೊಂದಿಸಲಾಗಿದೆ",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "ಪ್ರತಿಕ್ರಿಯೆ ಭಾಷೆ",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "ವಿಷಯ ಓದುವಿಕೆ ಪೂರ್ಣಗೊಂಡಿಲ್ಲ ಎಂದು ತೋರುತ್ತಿದೆ",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "ನೀನು ಇಷ್ಟಪಡುತ್ತಿಯ",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "$day$ ದಿನಗಳಲ್ಲಿ ಉಚಿತ ಕೋಟಾ ಮರುಹೊಂದಿಸುತ್ತದೆ",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "ಪ್ರತಿ ತಿಂಗಳು $count$ ಉಚಿತ ಓದುತ್ತದೆ",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "ಬಳಕೆ",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "ಮರುಹೊಂದಿಸುತ್ತದೆ",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "ರಂದು ಅವಧಿ ಮುಗಿಯುತ್ತದೆ",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "ಚಂದಾದಾರಿಕೆಯನ್ನು ನಿರ್ವಹಿಸಿ",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "ಸಾಕಾಗುವುದಿಲ್ಲ?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "ಹೆಚ್ಚು ಪಡೆಯಿರಿ!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "ನಾವು ಎಲ್ಲಾ ಬಳಕೆದಾರರಿಗೆ ಪ್ರತಿ ತಿಂಗಳು $count$ ಉಚಿತ ಓದುವಿಕೆಯನ್ನು ಒದಗಿಸುತ್ತೇವೆ.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಬಳಕೆ",
+        "description": ""
+    },
+    "needMore": {
+        "message": "ಇನ್ನೂ ಬೇಕು?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "ದಕ್ಷತೆ ಮತ್ತು ಸ್ಪಷ್ಟತೆಗಾಗಿ ಪ್ರೀಮಿಯಂಗೆ ಹೋಗಿ",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "ಪ್ರತಿ ತಿಂಗಳು",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "ವಾರ್ಷಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "ಮಾಸಿಕ ಬಿಲ್",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "ಪ್ರಾರಂಭಿಸಿ",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "ಪಾವತಿ ಪೂರ್ಣಗೊಂಡಿದೆ",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ ತಿಂಗಳಿಗೆ ಓದುತ್ತದೆ",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "ಅನಿಯಮಿತ ವೈಯಕ್ತಿಕ ಉಳಿತಾಯ",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "ಆದ್ಯತೆಯ ಇಮೇಲ್ ಬೆಂಬಲ",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "ಚಂದಾದಾರಿಕೆಗಾಗಿ ಧನ್ಯವಾದಗಳು",
+        "description": ""
+    },
+    "crush": {
+        "message": "ನಾವೀಗ ಆರಂಭಿಸೋಣ!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "ಒಳನೋಟಗಳು",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "ಉಚಿತ ಬಳಕೆದಾರ",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "ಪ್ರೀಮಿಯಂ ಸದಸ್ಯ",
+        "description": ""
+    },
+    "payFail": {
+        "message": "ಪಾವತಿ ಪೂರ್ಣಗೊಂಡಿಲ್ಲ",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "<b>ಎಲ್ಲಾ ಪುಟಗಳಲ್ಲಿ</b> ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "<b>ಈ ಪುಟದಲ್ಲಿ</b> ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "<b>ಈ ಸೈಟ್‌ನಲ್ಲಿ</b> ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "ವಿಸ್ತರಣೆಗಳ ಪಟ್ಟಿಯಿಂದ ಪ್ರಾರಂಭಿಸುವುದು ಹೇಗೆ",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "<b>ಎಲ್ಲಾ ಪುಟಗಳಲ್ಲಿ</b> ಫ್ಲೋಟಿಂಗ್ ಬಟನ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "<b>ಈ ಪುಟದಲ್ಲಿ</b> ಫ್ಲೋಟಿಂಗ್ ಬಟನ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "<b>$site$</b> ನಲ್ಲಿ ಫ್ಲೋಟಿಂಗ್ ಬಟನ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "ಪರಿಕರಗಳ ಬಾರ್‌ನಲ್ಲಿ ಮೇಲಿನ ಲಿಂಕ್ ಐಕಾನ್ ಅನ್ನು ಕ್ಲಿಕ್ ಮಾಡುವ ಮೂಲಕ ನೀವು ಯಾವಾಗಲೂ ಒಳನೋಟ ಫಲಕವನ್ನು ತೆರೆಯಬಹುದು.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "ಮುಂದೆ",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "ಪ್ರಾರಂಭಿಸಿ!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "ಅಂಡರ್ಲೈಯಿಂಗ್ ಲಾಜಿಕ್ಸ್ ಫಸ್ಟ್",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "ಅಲ್ಲಿ ನೀವು ಡೀಪ್ ಡೈವ್ ಮಾಡಲು ನಿರ್ಧರಿಸಬಹುದು ಅಥವಾ ಅದನ್ನು ಒಂದು ನೋಟದಲ್ಲಿ ಬಿಟ್ಟುಬಿಡಬಹುದು",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "ಟೇಕ್‌ಅವೇ ಟಿಪ್ಪಣಿಯನ್ನು ಸಂಗ್ರಹಿಸಲಾಗಿದೆ",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "ಪ್ರಮುಖ ವಿಷಯದ ತ್ವರಿತ ನೋಟ. ನಂತರ ಅವುಗಳ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿ!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "ಇನ್ನಷ್ಟು ಅನ್ವೇಷಿಸಿ",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "ಮತ್ತು ನಿಮ್ಮ ಆಲೋಚನಾ ಪಾಲುದಾರರಾಗಿ ಲಿಂಕ್‌ನೊಂದಿಗೆ ಚರ್ಚಿಸಿ",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "ಯಾವುದೇ ಫಲಿತಾಂಶ ಕಂಡುಬಂದಿಲ್ಲ",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "ಸುಧಾರಿತ AI ಮಾದರಿಗಳನ್ನು ಬಳಸಿ",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "ನಿಮ್ಮ ಸಂಗ್ರಹಣೆಗಳನ್ನು ಕೇಳಿ",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "ಹೆಚ್ಚು ನಿಖರವಾದ ಮತ್ತು ಅತ್ಯಾಧುನಿಕ ಪ್ರತಿಕ್ರಿಯೆಗಳಿಗಾಗಿ GPT-4 ಮತ್ತು ಹೆಚ್ಚಿನ ಸುಧಾರಿತ AI ಮಾದರಿಗಳನ್ನು ಬಳಸಿಕೊಳ್ಳಿ",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "ನೀವು ಈಗಾಗಲೇ ಓದಿದ ಮತ್ತು ಲಿಂಕ್‌ನೊಂದಿಗೆ ಸಂಗ್ರಹಿಸಿದ ಉಲ್ಲೇಖವನ್ನು ಬಳಸುವುದು",
+        "description": ""
+    },
+    "notNow": {
+        "message": "ಈಗ ಸಾಧ್ಯವಿಲ್ಲ",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "ಪ್ರೀಮಿಯಂ ಸದಸ್ಯ",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "ಪುಟ ಪ್ರಶ್ನೆಗಳು",
+        "description": ""
+    },
+    "goElite": {
+        "message": "ಎಲೈಟ್‌ಗೆ ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಿ",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "ಅನಿಯಮಿತವಾಗಿ ಹೋಗಿ",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "ಅನಿಯಮಿತ ಪ್ರಶ್ನೆಗಳು",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "ಸುಧಾರಿತ ಮಾದರಿಗಳನ್ನು ಬಳಸಿಕೊಂಡು ಪುಟದೊಂದಿಗೆ ಚಾಟ್ ಮಾಡಿ",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "ಸುಧಾರಿತ ಮಾದರಿಗಳನ್ನು ಬಳಸಿಕೊಂಡು ವೈಯಕ್ತಿಕ ಸಂಗ್ರಹಣೆಗಳೊಂದಿಗೆ ಚಾಟ್ ಮಾಡಿ",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "ಸುಧಾರಿತ ಮಾದರಿಗಳೊಂದಿಗೆ ಅನಿಯಮಿತ ಚಾಟ್‌ಗಳು (GPT-4-ಟರ್ಬೊ, ಕ್ಲೌಡ್ 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "ತಿಂಗಳಿಗೆ 300 ಪ್ರಶ್ನೆಗಳು ಅಥವಾ ಚಾಟ್‌ಗಳು",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "ಸುಧಾರಿತ ಮಾದರಿಗಳೊಂದಿಗೆ 30 ಚಾಟ್‌ಗಳು (GPT-4 ಟರ್ಬೊ ಮತ್ತು ಇನ್ನಷ್ಟು)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "ಸುಧಾರಿತ ಮಾದರಿಗಳನ್ನು ಪ್ರಯತ್ನಿಸುವುದೇ?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "ಬಳಕೆಯ ಕೋಟಾವನ್ನು $day$ ದಿನಗಳಲ್ಲಿ ಮರುಹೊಂದಿಸಲಾಗುತ್ತದೆ",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

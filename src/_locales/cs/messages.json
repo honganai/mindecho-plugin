@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "Postřehy",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "Sbírky",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "Zdroj",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Zaregistrujte se u Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Odhlásit se",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "Centrum nápovědy",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "Plán zdarma",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "Statistiky obsahu",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "Esenciální extrakty",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "Další zamyšlení",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "Načíst další",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "Může být relevantní",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "Podobný obsah Číst",
+        "description": ""
+    },
+    "copied": {
+        "message": "Zkopírováno do schránky",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Chyba systému",
+        "description": ""
+    },
+    "error500": {
+        "message": "Chyba systému",
+        "description": ""
+    },
+    "error400": {
+        "message": "Chyba systému",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "Počkejte prosím na dokončení odpovědi na předchozí zprávu.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "Přejděte do úložiště obsahu",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "Sbírky",
+        "description": ""
+    },
+    "retry": {
+        "message": "Kliknutím to zkuste znovu",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Linnk AI: Uchopte Essence rychle",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Zachycení skutečné podstaty jakéhokoli obsahu (zprávy, články, blogy, videa a eseje), abyste se mohli rychle učit a zůstat informováni.",
+        "description": ""
+    },
+    "summary": {
+        "message": "souhrn",
+        "description": ""
+    },
+    "contentType": {
+        "message": "Typ obsahu",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "Klíčová logika",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "Perspektivy a závěry",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "Datový list",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "Citáty",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "Další otázky",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "Nepoložené otázky",
+        "description": ""
+    },
+    "plots": {
+        "message": "Pozemky",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "Automatický",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "Výstupní jazyk nastaven na",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "Jazyk odezvy",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "Zdá se, že čtení obsahu nebylo dokončeno",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "Chtěl bys",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "Zkus to znovu",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "Bezplatná kvóta se resetuje za $day$ dní",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "$count$ čtení zdarma každý měsíc",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "Používání",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "Resetuje se",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "Vyprší dne",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "Kontaktujte nás",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "Spravovat předplatné",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "Nedostatek?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "Získat více!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "Poskytujeme $count$ bezplatné čtení každý měsíc pro všechny uživatele.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "Vaše aktuální využití",
+        "description": ""
+    },
+    "needMore": {
+        "message": "Potřebovat více?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "Přejděte na Premium pro efektivitu a přehlednost",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "za měsíc",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "účtováno ročně",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "účtováno měsíčně",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "Začít",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "Platba dokončena",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ Přečtení za měsíc",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "Neomezené osobní úspory",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "Prioritní e-mailová podpora",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "Děkujeme, že jste se přihlásili k odběru",
+        "description": ""
+    },
+    "crush": {
+        "message": "Začněme!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "Postřehy",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "Volný uživatel",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "Prémiový člen",
+        "description": ""
+    },
+    "payFail": {
+        "message": "Platba nebyla dokončena",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "Zakázat na <b>všech stránkách</b>",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "Zakázat na <b>této stránce</b>",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "Zakázat na <b>tomto webu</b>",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "Jak spustit z lišty rozšíření",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "Plovoucí tlačítko je na <b>všech stránkách</b> zakázáno.",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "Plovoucí tlačítko je na <b>této stránce</b> zakázáno.",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "Plovoucí tlačítko je na <b>$site$</b> zakázáno.",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "Panel přehledů můžete kdykoli otevřít kliknutím na ikonu Odkaz výše na panelu nástrojů.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "další",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "Začít!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "Základní logika první",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "Kde se můžete rozhodnout pro hloubkový ponor nebo jej přeskočit",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "Shromážděna poznámka s sebou",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "Rychlé zobrazení klíčového obsahu. Zkuste na ně kliknout později!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "Prozkoumejte více",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "A diskutujte s Linnkem jako svým přemýšlejícím partnerem",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "Nebyl nalezen žádný výsledek",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "Používejte pokročilé modely umělé inteligence",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "Zeptejte se svých sbírek",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "Používejte pokročilé modely umělé inteligence jako GPT-4 a další pro přesnější a sofistikovanější reakce",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "Použití reference z toho, co jste si již přečetli a shromáždili s Linnk",
+        "description": ""
+    },
+    "notNow": {
+        "message": "Teď ne",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "Prémiový člen",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "Dotazy na stránku",
+        "description": ""
+    },
+    "goElite": {
+        "message": "Upgradujte na Elite",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "Go Unlimited",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "Neomezené dotazy",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "Chatujte se stránkou pomocí pokročilých modelů",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "Chatujte s osobními sbírkami pomocí pokročilých modelů",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "Neomezené chaty s pokročilými modely (GPT-4-Turbo, Claude 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "300 dotazů nebo chatů za měsíc",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "30 chatů s pokročilými modely (GPT-4 Turbo a další)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "Zkusit pokročilé modely?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "Kvóta využití se resetuje za $day$ dní",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

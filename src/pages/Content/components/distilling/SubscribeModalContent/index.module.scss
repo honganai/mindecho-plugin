@@ -1,0 +1,125 @@
+.container {
+  padding-bottom: 20px;
+
+  .highlight {
+    color: var(--color-primary);
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .detail {
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 25px;
+    background-color: var(--color-background);
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+
+    .detail-item {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+
+      +.detail-item {
+        margin-top: 4px;
+      }
+
+      .label, .bold {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .subscribe {
+    .sub-title {
+      font-weight: 500;
+
+      h1 {
+        margin-bottom: 0;
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      h2 {
+        margin-bottom: 0;
+        font-size: 18px;
+      }
+    }
+
+    .price {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+
+      .value {
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 50px;
+      }
+
+      .desc {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+
+    .old-price {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-size: 12px;
+    }
+
+    .plan-detail {
+      margin-top: 20px;
+      font-weight: 500;
+      color: #5a5a5a;
+
+      .plan-item {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+
+        .icon {
+          margin-top: 3px;
+          font-size: 18px;
+        }
+
+        +.plan-item  {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .subscribe-success {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .subscribe-type {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 20px;
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
+
+.not-now {
+  margin-top: 12px;
+  text-align: center;
+
+  a {
+    color: #919191;
+    text-decoration: underline;
+  }
+}

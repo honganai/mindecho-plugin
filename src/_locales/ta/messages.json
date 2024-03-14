@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "நுண்ணறிவு",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "தொகுப்புகள்",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "ஆதாரம்",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "Google உடன் பதிவு செய்யவும்",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "வெளியேறு",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "உதவி மையம்",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "இலவச திட்டம்",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "உள்ளடக்க நுண்ணறிவு",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "அத்தியாவசிய சாறுகள்",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "மேலும் சிந்தனைகள்",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "அதிகமாக ஏற்று",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "தொடர்புடையதாக இருக்கலாம்",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "இதே போன்ற உள்ளடக்கத்தைப் படிக்கவும்",
+        "description": ""
+    },
+    "copied": {
+        "message": "கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "கணினி பிழை",
+        "description": ""
+    },
+    "error500": {
+        "message": "கணினி பிழை",
+        "description": ""
+    },
+    "error400": {
+        "message": "கணினி பிழை",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "முந்தைய செய்திக்கான பதில் முடிவடையும் வரை காத்திருக்கவும்.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "உள்ளடக்கக் களஞ்சியத்திற்குச் செல்லவும்",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "தொகுப்புகள்",
+        "description": ""
+    },
+    "retry": {
+        "message": "மீண்டும் முயற்சிக்க கிளிக் செய்யவும்",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "லிங்க் ஏஐ: எசென்ஸ் விரைவு பற்றிக் கொள்ளுங்கள்",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "எந்த உள்ளடக்கத்தின் உண்மையான சாரத்தையும் (செய்திகள், கட்டுரைகள், வலைப்பதிவுகள், வீடியோக்கள் மற்றும் கட்டுரைகள்) நீங்கள் விரைவாகக் கற்றுக்கொள்வதற்காகவும், தகவலுடன் இருக்கவும்.",
+        "description": ""
+    },
+    "summary": {
+        "message": "சுருக்கம்",
+        "description": ""
+    },
+    "contentType": {
+        "message": "உள்ளடக்க வகை",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "முக்கிய தர்க்கங்கள்",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "முன்னோக்குகள் மற்றும் முடிவுகள்",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "தரவுத்தாள்",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "மேற்கோள்கள்",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "மேலும் கேள்விகள்",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "கேட்கப்படாத கேள்விகள்",
+        "description": ""
+    },
+    "plots": {
+        "message": "அடுக்குகள்",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "தானியங்கி",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "வெளியீட்டு மொழி அமைக்கப்பட்டுள்ளது",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "பதில் மொழி",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "உள்ளடக்க வாசிப்பு முடிக்கப்படவில்லை என்று தெரிகிறது",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "நீங்கள் விரும்புகிறீர்களா",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "மீண்டும் முயற்சி செய்",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "$day$ நாட்களில் இலவச ஒதுக்கீடு மீட்டமைக்கப்படும்",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "ஒவ்வொரு மாதமும் $count$ இலவச வாசிப்புகள்",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "பயன்பாடு",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "மீண்டும் அமைக்கிறது",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "அன்று காலாவதியாகிறது",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "எங்களை தொடர்பு கொள்ள",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "சந்தாவை நிர்வகிக்கவும்",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "போதாது?",
+        "description": ""
+    },
+    "getMore": {
+        "message": "மேலும் பெறுக!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "எல்லா பயனர்களுக்கும் ஒவ்வொரு மாதமும் $count$ இலவச வாசிப்புகளை வழங்குகிறோம்.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "உங்கள் தற்போதைய பயன்பாடு",
+        "description": ""
+    },
+    "needMore": {
+        "message": "இன்னும் வேண்டும்?",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "செயல்திறன் மற்றும் தெளிவுக்காக பிரீமியத்திற்குச் செல்லவும்",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "மாதத்திற்கு",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "ஆண்டுதோறும் கட்டணம்",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "மாதாந்திர கட்டணம்",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "தொடங்குங்கள்",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "கட்டணம் செலுத்தப்பட்டது",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ மாதத்திற்கு படிக்கிறது",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "வரம்பற்ற தனிப்பட்ட சேமிப்புகள்",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "முன்னுரிமை மின்னஞ்சல் ஆதரவு",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "சந்தா செலுத்தியதற்கு நன்றி",
+        "description": ""
+    },
+    "crush": {
+        "message": "தொடங்குவோம்!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "நுண்ணறிவு",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "இலவச பயனர்",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "பிரீமியம் உறுப்பினர்",
+        "description": ""
+    },
+    "payFail": {
+        "message": "கட்டணம் செலுத்த முடியவில்லை",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "<b>எல்லா பக்கங்களிலும்</b> முடக்கு",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "<b>இந்தப் பக்கத்தில்</b> முடக்கு",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "<b>இந்த தளத்தில்</b> முடக்கு",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "நீட்டிப்புகள் பட்டியில் இருந்து எவ்வாறு தொடங்குவது",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "<b>எல்லா பக்கங்களிலும்</b> மிதக்கும் பொத்தான் முடக்கப்பட்டுள்ளது.",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "<b>இந்தப் பக்கத்தில்</b> மிதக்கும் பொத்தான் முடக்கப்பட்டுள்ளது.",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "<b>$site$</b> இல் மிதக்கும் பொத்தான் முடக்கப்பட்டுள்ளது.",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "டூல்ஸ் பாரில் மேலே உள்ள லின்க் ஐகானைக் கிளிக் செய்வதன் மூலம் நீங்கள் எப்போதும் இன்சைட் பேனலைத் திறக்கலாம்.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "அடுத்தது",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "தொடங்குங்கள்!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "முதலில் அடிப்படை தர்க்கங்கள்",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "ஆழமாக டைவ் செய்ய அல்லது ஒரு பார்வையில் அதைத் தவிர்க்க நீங்கள் எங்கே முடிவு செய்யலாம்",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "எடுக்கப்பட்ட குறிப்பு சேகரிக்கப்பட்டது",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "முக்கிய உள்ளடக்கத்தின் விரைவான பார்வை. பின்னர் அவற்றைக் கிளிக் செய்து முயற்சிக்கவும்!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "மேலும் ஆராயவும்",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "உங்கள் சிந்தனைப் பங்காளியாக லின்க் உடன் விவாதிக்கவும்",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "எந்த முடிவும் கிடைக்கவில்லை",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "மேம்பட்ட AI மாதிரிகளைப் பயன்படுத்தவும்",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "உங்கள் சேகரிப்புகளைக் கேளுங்கள்",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "மேலும் துல்லியமான மற்றும் அதிநவீன பதில்களுக்கு GPT-4 போன்ற மேம்பட்ட AI மாடல்களைப் பயன்படுத்தவும்",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "லிங்க் மூலம் நீங்கள் ஏற்கனவே படித்து சேகரித்தவற்றிலிருந்து குறிப்பைப் பயன்படுத்துதல்",
+        "description": ""
+    },
+    "notNow": {
+        "message": "இப்போது இல்லை",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "பிரீமியம் உறுப்பினர்",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "பக்க கேள்விகள்",
+        "description": ""
+    },
+    "goElite": {
+        "message": "எலைட்டுக்கு மேம்படுத்தவும்",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "அன்லிமிடெட் செல்லுங்கள்",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "வரம்பற்ற கேள்விகள்",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "மேம்பட்ட மாதிரிகளைப் பயன்படுத்தி பக்கத்துடன் அரட்டையடிக்கவும்",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "மேம்பட்ட மாதிரிகளைப் பயன்படுத்தி தனிப்பட்ட சேகரிப்புகளுடன் அரட்டையடிக்கவும்",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "மேம்பட்ட மாடல்களுடன் வரம்பற்ற அரட்டைகள் (GPT-4-Turbo,Claude 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "மாதத்திற்கு 300 கேள்விகள் அல்லது அரட்டைகள்",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "மேம்பட்ட மாடல்களுடன் 30 அரட்டைகள் (GPT-4 டர்போ மற்றும் மேலும்)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "மேம்பட்ட மாதிரிகளை முயற்சிக்கவா?",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "$day$ நாட்களில் பயன்பாட்டு ஒதுக்கீடு மீட்டமைக்கப்படும்",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}

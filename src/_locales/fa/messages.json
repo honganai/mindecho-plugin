@@ -1,0 +1,428 @@
+{
+    "tab1": {
+        "message": "بینش‌ها",
+        "description": "首页主菜单tab1"
+    },
+    "thinking": {
+        "message": "مجموعه‌ها",
+        "description": "首页主菜单tab4"
+    },
+    "source": {
+        "message": "منبع",
+        "description": "memorie页面来源"
+    },
+    "signUpWithGoogle": {
+        "message": "ثبت نام با گوگل",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "خروج",
+        "description": ""
+    },
+    "helpCenter": {
+        "message": "مرکز راهنما",
+        "description": ""
+    },
+    "freePlan": {
+        "message": "طرح رایگان",
+        "description": ""
+    },
+    "capturContentAndDistill": {
+        "message": "بینش محتوا",
+        "description": ""
+    },
+    "guessOnYourMind": {
+        "message": "استخراج‌های اساسی",
+        "description": ""
+    },
+    "askFurtherQuestion": {
+        "message": "تفکرات بیشتر",
+        "description": ""
+    },
+    "loadMore": {
+        "message": "بارگذاری بیشتر",
+        "description": ""
+    },
+    "couldBeRelevant": {
+        "message": "ممکن است مرتبط باشد",
+        "description": ""
+    },
+    "similarContentRead": {
+        "message": "مطالعه محتوای مشابه",
+        "description": ""
+    },
+    "copied": {
+        "message": "در کلیپ‌بورد کپی شد",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "خطای سیستم",
+        "description": ""
+    },
+    "error500": {
+        "message": "خطای سیستم",
+        "description": ""
+    },
+    "error400": {
+        "message": "خطای سیستم",
+        "description": ""
+    },
+    "chartWaitComplete": {
+        "message": "لطفاً منتظر پاسخ کامل به پیام قبلی باشید.",
+        "description": ""
+    },
+    "gotoThinking": {
+        "message": "برو به مخزن محتوا",
+        "description": ""
+    },
+    "thinkingPlaceholder": {
+        "message": "مجموعه‌ها",
+        "description": ""
+    },
+    "retry": {
+        "message": "برای تلاش مجدد کلیک کنید",
+        "description": ""
+    },
+    "pluginName": {
+        "message": "Linnk AI: Grasp The Essence Quick",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "گرفتن ماهیت واقعی هر محتوا (اخبار، مقاله، وبلاگ، ویدئو، و مقاله) برای یادگیری سریع و مطلع ماندن.",
+        "description": ""
+    },
+    "summary": {
+        "message": "خلاصه",
+        "description": ""
+    },
+    "contentType": {
+        "message": "نوع محتوا",
+        "description": ""
+    },
+    "keyLogics": {
+        "message": "منطق‌های کلیدی",
+        "description": ""
+    },
+    "perspectivesConclusions": {
+        "message": "دیدگاه‌ها و نتیجه‌گیری‌ها",
+        "description": ""
+    },
+    "dataSheet": {
+        "message": "برگه داده",
+        "description": ""
+    },
+    "Quotes": {
+        "message": "نقل قول‌ها",
+        "description": ""
+    },
+    "furtherQuestions": {
+        "message": "سوالات بیشتر",
+        "description": ""
+    },
+    "unaskedQuestions": {
+        "message": "سوالات پرسیده نشده",
+        "description": ""
+    },
+    "plots": {
+        "message": "داستان‌ها",
+        "description": ""
+    },
+    "languageAuto": {
+        "message": "خودکار",
+        "description": ""
+    },
+    "selectedLanguageMessage": {
+        "message": "زبان خروجی تنظیم شده است به",
+        "description": ""
+    },
+    "selectLang": {
+        "message": "زبان پاسخ",
+        "description": ""
+    },
+    "errorDistill": {
+        "message": "به نظر می‌رسد که خواندن محتوا به طور کامل انجام نشده است",
+        "description": ""
+    },
+    "errorDistillDesc": {
+        "message": "آیا می‌خواهید",
+        "description": ""
+    },
+    "tryAgain": {
+        "message": "دوباره امتحان کنید",
+        "description": ""
+    },
+    "quotaResetDays": {
+        "message": "سهمیه رایگان در $day$ روز دوباره تنظیم می‌شود",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    },
+    "freeQuotaEveryMonth": {
+        "message": "$count$ خواندن رایگان هر ماه",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "usage": {
+        "message": "استفاده",
+        "description": ""
+    },
+    "resetsOn": {
+        "message": "تنظیم مجدد در",
+        "description": ""
+    },
+    "expiresOn": {
+        "message": "انقضا در",
+        "description": ""
+    },
+    "contactUs": {
+        "message": "تماس با ما",
+        "description": ""
+    },
+    "manageSubscription": {
+        "message": "مدیریت اشتراک",
+        "description": ""
+    },
+    "notEnough": {
+        "message": "کافی نیست؟",
+        "description": ""
+    },
+    "getMore": {
+        "message": "بیشتر بگیرید!",
+        "description": ""
+    },
+    "freeQuotaEveryMonthDetail": {
+        "message": "ما $count$ خواندن رایگان هر ماه برای همه کاربران فراهم می‌کنیم.",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "currentUsage": {
+        "message": "استفاده فعلی شما",
+        "description": ""
+    },
+    "needMore": {
+        "message": "بیشتر نیاز دارید؟",
+        "description": ""
+    },
+    "goPremium": {
+        "message": "برای افزایش کارایی به پرمیوم بروید",
+        "description": ""
+    },
+    "perMonth": {
+        "message": "در ماه",
+        "description": ""
+    },
+    "billedAnnually": {
+        "message": "صورت‌حساب سالانه",
+        "description": ""
+    },
+    "billedMonthly": {
+        "message": "صورت‌حساب ماهانه",
+        "description": ""
+    },
+    "getStarted": {
+        "message": "شروع کنید",
+        "description": ""
+    },
+    "paymentComplete": {
+        "message": "پرداخت کامل شد",
+        "description": ""
+    },
+    "readsPerMonth": {
+        "message": "$count$ خواندن در ماه",
+        "description": "",
+        "placeholders": {
+            "count": {
+                "content": "$1"
+            }
+        }
+    },
+    "unlimitedPersonalSaves": {
+        "message": "ذخیره‌سازی شخصی نامحدود",
+        "description": ""
+    },
+    "priorityEmailsupport": {
+        "message": "پشتیبانی ایمیل با اولویت",
+        "description": ""
+    },
+    "subscribeSuccess": {
+        "message": "از اشتراک شما متشکریم",
+        "description": ""
+    },
+    "crush": {
+        "message": "بیایید شروع کنیم!",
+        "description": ""
+    },
+    "distillIconName": {
+        "message": "بینش‌ها",
+        "description": ""
+    },
+    "freeSubType": {
+        "message": "کاربر رایگان",
+        "description": ""
+    },
+    "premiumSubType": {
+        "message": "عضو پرمیوم",
+        "description": ""
+    },
+    "payFail": {
+        "message": "پرداخت کامل نشد",
+        "description": ""
+    },
+    "disableAllPages": {
+        "message": "غیرفعال‌سازی در <b>تمام صفحات</b>",
+        "description": ""
+    },
+    "disableThisPage": {
+        "message": "غیرفعال‌سازی در <b>این صفحه</b>",
+        "description": ""
+    },
+    "disableThisSite": {
+        "message": "غیرفعال‌سازی در <b>این سایت</b>",
+        "description": ""
+    },
+    "howToLaunch": {
+        "message": "چگونه از نوار افزونه‌ها اجرا کنیم",
+        "description": ""
+    },
+    "disableAllPagesTips": {
+        "message": "دکمه شناور در <b>همه صفحات</b> غیرفعال است.",
+        "description": ""
+    },
+    "disableThisPageTips": {
+        "message": "دکمه شناور در <b>این صفحه</b> غیرفعال است.",
+        "description": ""
+    },
+    "disableThisSiteTips": {
+        "message": "دکمه شناور در <b>$site$</b> غیرفعال است.",
+        "description": "",
+        "placeholders": {
+            "site": {
+                "content": "$1"
+            }
+        }
+    },
+    "disableThisPageTipsDesc": {
+        "message": "همیشه می‌توانید با کلیک کردن روی نماد پیوند بالا در نوار ابزار، پانل بینش را باز کنید.",
+        "description": ""
+    },
+    "guideNext": {
+        "message": "بعد",
+        "description": ""
+    },
+    "guideComplete": {
+        "message": "شروع کنید!",
+        "description": ""
+    },
+    "keylogicGuideTitle": {
+        "message": "ابتدا منطق های زیربنایی",
+        "description": ""
+    },
+    "keylogicGuideDesc": {
+        "message": "جایی که می توانید تصمیم بگیرید که در یک نگاه به غواصی عمیق بروید یا از آن بگذرید",
+        "description": ""
+    },
+    "noteGuideTitle": {
+        "message": "یادداشت آماده جمع آوری شد",
+        "description": ""
+    },
+    "noteGuideDesc": {
+        "message": "مشاهده سریع محتوای کلیدی. بعداً روی آنها کلیک کنید!",
+        "description": ""
+    },
+    "questionGuideTitle": {
+        "message": "بیشتر کاوش کنید",
+        "description": ""
+    },
+    "questionGuideDesc": {
+        "message": "و با لینک به عنوان شریک فکری خود بحث کنید",
+        "description": ""
+    },
+    "noResultFound": {
+        "message": "هیچ نتیجه ای یافت نشد",
+        "description": ""
+    },
+    "advancedModels": {
+        "message": "از مدل های پیشرفته هوش مصنوعی استفاده کنید",
+        "description": ""
+    },
+    "askYourCollections": {
+        "message": "از مجموعه های خود بپرسید",
+        "description": ""
+    },
+    "advancedModelsTips": {
+        "message": "برای پاسخ‌های دقیق‌تر و پیچیده‌تر، از مدل‌های هوش مصنوعی پیشرفته مانند GPT-4 و موارد دیگر استفاده کنید",
+        "description": ""
+    },
+    "askYourCollectionsTips": {
+        "message": "استفاده از مرجع از مطالبی که قبلاً با لینک خوانده و جمع آوری کرده اید",
+        "description": ""
+    },
+    "notNow": {
+        "message": "الان نه",
+        "description": ""
+    },
+    "premiumMember": {
+        "message": "عضو حق بیمه",
+        "description": ""
+    },
+    "pageQueries": {
+        "message": "پرس و جوهای صفحه",
+        "description": ""
+    },
+    "goElite": {
+        "message": "به Elite ارتقا دهید",
+        "description": ""
+    },
+    "goUnlimited": {
+        "message": "برو نامحدود",
+        "description": ""
+    },
+    "unlimitedQueries": {
+        "message": "پرس و جوهای نامحدود",
+        "description": ""
+    },
+    "chatWithPageAdvancedModels": {
+        "message": "با استفاده از مدل های پیشرفته با صفحه چت کنید",
+        "description": ""
+    },
+    "chatWithPersonalCollections": {
+        "message": "با استفاده از مدل های پیشرفته با مجموعه های شخصی گپ بزنید",
+        "description": ""
+    },
+    "unlimitedChatswithAdvancedModels": {
+        "message": "چت نامحدود با مدل های پیشرفته (GPT-4-Turbo، Claude 2)",
+        "description": ""
+    },
+    "queriesChatsPermonth": {
+        "message": "300 پرس و جو یا چت در ماه",
+        "description": ""
+    },
+    "chatWithAdvancedModels": {
+        "message": "30 چت با مدل های پیشرفته (GPT-4 Turbo و بیشتر)",
+        "description": ""
+    },
+    "tryAdvancedModels": {
+        "message": "مدل های پیشرفته را امتحان کنید؟",
+        "description": ""
+    },
+    "premiumQuotaResetDays": {
+        "message": "سهمیه استفاده در $day$ روز بازنشانی می‌شود",
+        "description": "",
+        "placeholders": {
+            "day": {
+                "content": "$1"
+            }
+        }
+    }
+}
