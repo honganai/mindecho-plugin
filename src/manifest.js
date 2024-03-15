@@ -20,7 +20,6 @@ function generChromeExtensionManifest() {
       default_path: "sidepanel.html"
     },
     permissions: ['tabs', 'storage',  'scripting', 'cookies', 'sidePanel', "bookmarks","unlimitedStorage","contextMenus", "webRequest"],
-    // permissions: ['tabs', 'storage', 'proxy', 'activeTab', 'scripting', 'cookies', 'sidePanel', "bookmarks"],
     host_permissions: ['<all_urls>'],
     action: {
       default_icon: {
@@ -43,7 +42,7 @@ function generChromeExtensionManifest() {
     content_scripts: [
       {
         matches: ['<all_urls>'],
-        exclude_matches: ['*://www.baidu.com/*'],
+        //exclude_matches: ['*://www.baidu.com/*'],
         // all_frames: true,
         // css: ['content.styles.css', 'contentFlatScript.css', 'contentScript.css'],
         // css: ['content.styles.css', 'contentFlatScript.css', 'contentScript.css', 'newtab.css', 'options.css', 'panel.css', 'popup.css', 'sidepanel.css'],

@@ -75,8 +75,8 @@ const Options: React.FC<Props> = ({ title }: Props) => {
     setLoading(true);
     chrome.runtime.sendMessage({ type: 'request', api: 'userinfo' }, (res) => {
       setLoading(false);
-
       console.log('userinfo res:', res);
+
       handleLogin();
       if (!res || res.error) {
         console.log('用户未登陆');

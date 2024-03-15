@@ -184,12 +184,12 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
     contexts:["selection"]
   });
   chrome.runtime.openOptionsPage();
-  if (reason === 'install') {
-    chrome.tabs.create({
-      active: true,
-      url: welcomeUrl
-    })
-  }
+  // if (reason === 'install') {
+  //   chrome.tabs.create({
+  //     active: true,
+  //     url: welcomeUrl
+  //   })
+  // }
   if (reason === 'update') {
     setExtensionUpdated();
   }

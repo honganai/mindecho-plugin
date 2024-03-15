@@ -1,11 +1,11 @@
 {
-  "name": "PointRead",
-  "version": "0.1.19",
+  "name": "MindEcho",
+  "version": "0.0.1",
   "description": "__MSG_pluginDescription__",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:honganai/pointread-plugin.git"
+    "url": "git@github.com:honganai/mindecho-plugin.git"
   },
   "scripts": {
     "build": "rm -rf build && node utils/build.js",
