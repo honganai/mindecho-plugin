@@ -1,6 +1,10 @@
 .modal {
   max-width: 700px;
 
+  .title {
+    color: #fff;
+  }
+
   :global {
     .ant-modal-body {
       padding: 0;

@@ -115,7 +115,7 @@ const AnswerModal: React.FC = () => {
         }
       }
       getContainer={() => getDocument().getElementById('mindecho-sidebar-flat') || document.body}>
-      <h1>{globalState.question}</h1>
+      <h1 className={styles.title}>{globalState.question}</h1>
       {isRequesting && !requestEnd ? (
         <div className={styles.card}>
           <Skeleton title={false} active />
