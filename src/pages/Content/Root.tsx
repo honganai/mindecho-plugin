@@ -1,0 +1,25 @@
+import React, { useReducer } from 'react';
+import GlobalContext, { reducer as GlobalReducer } from '../../reducer/global';
+import App from './App';
+
+const Root: React.FC = () => {
+  const [globalState, globalDispatch] = useReducer(GlobalReducer, {
+    showAskModal: false,
+    language: '',
+    showAnswerModal: false,
+    isRequesting: false,
+    requestEnd: false,
+  });
+
+  return (
+    <GlobalContext.Provider
+      value={{
+        state: globalState,
+        dispatch: globalDispatch,
+      }}>
+      <App />
+    </GlobalContext.Provider>
+  );
+};
+
+export default Root;

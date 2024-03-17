@@ -2,18 +2,18 @@ import packageInfo from '../../package.json';
 const version = packageInfo.version;
 /** 高亮显示下一段文本字符数量 */
 export const HIGHLIGHT_NEXT_LENGTH = 300;
-/** 禁用的url，示例：['https://www.linnk.ai/'] */
-export const DISABLE_PAGES_KEY = 'linnk-disabled-pages';
-/** 禁用的域名，示例：['www.linnk.ai'] */
-export const DISABLE_SITES_KEY = 'linnk-disabled-sites';
+/** 禁用的url，示例：['https://www.mindecho.ai/'] */
+export const DISABLE_PAGES_KEY = 'mindecho-disabled-pages';
+/** 禁用的域名，示例：['www.mindecho.ai'] */
+export const DISABLE_SITES_KEY = 'mindecho-disabled-sites';
 /** 禁用所有页面，示例：true */
-export const DISABLE_ALL_KEY = 'linnk-disabled-all';
+export const DISABLE_ALL_KEY = 'mindecho-disabled-all';
 /** 拖拽位置 */
-export const DRAG_POSITION_KEY = 'linnk-drag-position';
+export const DRAG_POSITION_KEY = 'mindecho-drag-position';
 /** 是否完成了新版本指引 */
-export const GUIDE_COMPLETE_KEY = `linnk-complete-guide-${version}`;
+export const GUIDE_COMPLETE_KEY = `mindecho-complete-guide-${version}`;
 /** 是否更新了插件 */
-export const EXTENSION_UPDATED = 'linnk-extension-updated';
+export const EXTENSION_UPDATED = 'mindecho-extension-updated';
 
 export const getExtensionUpdated = () => {
   return chrome.storage.local.get(EXTENSION_UPDATED).then((res) => {
@@ -105,9 +105,9 @@ export const isDisable = async () => {
 export const PLACEHOLDER = '[PLACEHOLDER]';
 
 /** base url */
-export const HOME_URL = 'https://www.linnk.ai';
+export const HOME_URL = 'https://www.mindecho.ai';
 
-export const CONTACT_URL = 'mailto:pointread@linnk.ai';
+export const CONTACT_URL = 'mailto:mindecho@mindecho.ai';
 
 export const PAY_URL = `${process.env.API_URL}/payment`;
 export const POSTHOG_KEY = `${process.env.POSTHOG_KEY}`;
@@ -115,7 +115,7 @@ export const POSTHOG_KEY = `${process.env.POSTHOG_KEY}`;
 export const SUBSCRIBE_URL = 'https://billing.stripe.com/p/login/00g18a5851lU7WE288';
 
 /** Thinking url */
-export const THINKING_URL = 'https://www.linnk.ai/thinking';
+export const THINKING_URL = 'https://www.mindecho.ai/thinking';
 
 /** 语言集合 */
 export const LANGUAGE_COLLECTIONS = [
@@ -220,4 +220,4 @@ export const HOME_QUERY = {
 
 /** 分享地址的域名 */
 export const SHARE_ORIGIN =
-  process.env.NODE_ENV === 'production' ? 'https://pointread.app' : 'https://pr-share.hongan.live';
+  process.env.NODE_ENV === 'production' ? 'https://mindecho.app' : 'https://pr-share.hongan.live';

@@ -43,7 +43,7 @@ const styleLoaderOption = {
       if (window.linnkPluginNoShadowDom) {
         document.head.appendChild(element);
       } else {
-        const extensionHostID = 'linnk-extension-shadow';
+        const extensionHostID = 'mindecho-extension-shadow';
         let extensionHost = document.getElementById(extensionHostID);
 
         if (!extensionHost) {
@@ -68,15 +68,12 @@ var options = {
     options: path.join(__dirname, 'src', 'pages', 'Options', 'index.jsx'),
     popup: path.join(__dirname, 'src', 'pages', 'Popup', 'index.jsx'),
     background: path.join(__dirname, 'src', 'pages', 'Background', 'index.js'),
-    contentScript: path.join(__dirname, 'src', 'pages', 'Content', 'index.js'),
     contentFlatScript: path.join(__dirname, 'src', 'pages', 'Content', 'indexFlat.js'),
     devtools: path.join(__dirname, 'src', 'pages', 'Devtools', 'index.js'),
     panel: path.join(__dirname, 'src', 'pages', 'Panel', 'index.jsx'),
-    sidepanel: path.join(__dirname, 'src', 'pages', 'Content', 'index.jsx'),
-    guide: path.join(__dirname, 'src', 'pages', 'Content', 'guide.js'),
   },
   chromeExtensionBoilerplate: {
-    notHotReload: ['background', 'contentScript', 'devtools', 'contentFlatScript', 'guide'],
+    notHotReload: ['background', 'devtools', 'guide'],
   },
   output: {
     filename: '[name].bundle.js',

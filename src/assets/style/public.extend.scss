@@ -5,8 +5,8 @@
 
 %flex-center {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 // 滚动条样式
@@ -16,16 +16,16 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0 0 0);
   }
 
   ::-webkit-scrollbar-track {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0 0 0);
   }
 }
 
 // block 标题样式
-%pointread-extend-title {
+%mindecho-extend-title {
   padding: 9px 26px 9px 11px;
   font-size: var(--font-size);
   line-height: var(--line-height);
@@ -35,14 +35,14 @@
 }
 
 // block 激活状态的标题样式
-%pointread-extend-title-active {
+%mindecho-extend-title-active {
   color: var(--card-title-color);
   background-color: var(--card-title-background);
   border: 1px solid var(--card-title-background);
 }
 
 // block 段落样式
-%pointread-extend-p {
+%mindecho-extend-p {
   font-size: var(--font-size);
   line-height: var(--line-height);
   color: var(--color-text);
@@ -51,7 +51,7 @@
 }
 
 // block 段落外框样式、骨架屏样式
-%pointread-extend-p-border, %pointread-extend-loading-skeleton {
+%mindecho-extend-p-border, %mindecho-extend-loading-skeleton {
   padding: 9px 11px;
   border: 1px solid var(--border-color);
   border-top: none;
@@ -60,8 +60,8 @@
 }
 
 // 溢出省略
-%pointread-extend-ellipsis {
-  white-space: nowrap; /* 不换行 */
+%mindecho-extend-ellipsis {
   overflow: hidden; /* 隐藏溢出部分 */
   text-overflow: ellipsis; /* 显示省略号 */
+  white-space: nowrap; /* 不换行 */
 }

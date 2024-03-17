@@ -43,6 +43,9 @@ async function connect() {
                 session: session
               },
               extraHeaders: {
+              },
+              query: {
+                user_id: 1
               }
           });
           socket.connect();

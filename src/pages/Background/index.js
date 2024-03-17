@@ -19,6 +19,8 @@ function handleMessages(message, sender, sendResponse) {
     onRequest(message, sendResponse);
   } else if (type === 'getCookie') {
     getCookie(message, sender, sendResponse);
+  } else if (_.startsWith(type, 'ws_')) {
+    sendsocketMessage(type, message, sender, sendResponse);
   }
   return true;
 }
@@ -28,7 +30,13 @@ function handleMessages(message, sender, sendResponse) {
  * @param {} tab
  */
 async function handleActiveClick(tab) {
-  chrome.runtime.openOptionsPage();
+  chrome.readingList.query({}).then((res) => {
+    console.log('🚀 ~ chrome.readingList.query ~ res:', res);
+  });
+  
+  chrome.tabs.sendMessage(tab.id, { type: 'showAskModal' }, function (res) {
+    console.log('send showAskModal', res);
+  });
 }
 
 async function onLoginAction(message, sendResponse) {

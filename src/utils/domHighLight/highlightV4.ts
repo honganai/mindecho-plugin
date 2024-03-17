@@ -6,8 +6,8 @@
  */
 
 import $ from 'jquery';
-export const HIGHLIGHT_CLASS = 'pointread-plugin--highlighted';
-export const DELETED_CLASS = 'pointread-plugin--deleted';
+export const HIGHLIGHT_CLASS = 'mindecho-plugin--highlighted';
+export const DELETED_CLASS = 'mindecho-plugin--deleted';
 
 // import { initializeHighlightEventListeners } from '../../hoverTools/index.js';
 

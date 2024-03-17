@@ -1,0 +1,31 @@
+.modal {
+  :global {
+    .ant-modal-body {
+      padding: 0;
+    }
+
+    .ant-modal-content {
+      border-radius: 8px;
+    }
+  }
+}
+
+.container {
+  position: relative;
+
+  textarea {
+    padding: 12px;
+    resize: none;
+    border-radius: 8px;
+  }
+
+  .enter {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    display: flex;
+    width: 48px;
+    height: auto;
+    pointer-events: none;
+  }
+}

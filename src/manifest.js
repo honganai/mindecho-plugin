@@ -16,10 +16,10 @@ function generChromeExtensionManifest() {
       service_worker: 'background.bundle.js',
       type: 'module',
     },
-    side_panel: {
-      default_path: "sidepanel.html"
-    },
-    permissions: ['tabs', 'storage',  'scripting', 'cookies', 'sidePanel', "bookmarks","unlimitedStorage","contextMenus", "webRequest"],
+    // side_panel: {
+    //   default_path: "sidepanel.html"
+    // },
+    permissions: ['tabs', 'storage',  'scripting', 'cookies', 'sidePanel', "bookmarks","unlimitedStorage","contextMenus", "webRequest", "readingList"],
     host_permissions: ['<all_urls>'],
     action: {
       default_icon: {
@@ -28,6 +28,23 @@ function generChromeExtensionManifest() {
         48: 'icon48.png',
         128: 'icon128.png',
       },
+    },
+    "commands": {
+      // 自定义快捷键，最多4个
+      // "run-foo": {
+      //   "suggested_key": {
+      //     "default": "Ctrl+Shift+Y",
+      //     "mac": "Command+Shift+Y"
+      //   },
+      //   "description": "Run \"foo\" on the current page."
+      // },
+      // 激活插件快捷键，效果和点击插件按钮一样
+      "_execute_action": {
+        "suggested_key": {
+          "default": "Ctrl+E",
+          "mac": "Command+E",
+        }
+      }
     },
     chrome_url_overrides: {
       // 我们暂时不需要new tab页面功能

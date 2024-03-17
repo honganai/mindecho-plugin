@@ -5,125 +5,117 @@ export enum enumSubscribeModalType {
   Premium,
   Elite,
 }
+
 export interface IState {
+  /** 显示问题弹窗 */
+  showAskModal: boolean;
   /** 当前语言 */
   language: string;
-  /** 网页内容 */
-  cleanArticle: {
-    title: string;
-    content: string;
-    timestrip: string;
-  };
-  /** 对话id */
-  conversationId?: string;
-  /** 文章id */
-  articleId?: number;
-  /** 用于记录用户重点关注的问题 */
-  articleDistillId?: string;
-  /** 订阅弹窗 */
-  showSubscribeModal?: boolean;
-  /** 订阅弹窗可关闭 */
-  subscribeModalClosable?: boolean;
-  subscribeModalType?: enumSubscribeModalType;
-  /** 引导相关的dom */
-  guideRefs: React.MutableRefObject<Record<string, HTMLElement>>;
-  showGuide: boolean;
+  /** 显示回答弹窗 */
+  showAnswerModal: boolean;
+  /** 问题 */
+  question?: string;
+  /** 正在请求答案 */
+  isRequesting: boolean;
+  /** 请求答案完毕 */
+  requestEnd: boolean;
+  /** 回答 */
+  markdownStream?: string;
 }
 
 export enum ActionType {
-  /** 设置当前语言 */
+  SetShowAskModal = 'SetShowAskModal',
   SetLanguage = 'SET_LANGUAGE',
-  SetConversationId = 'SET_CONVERSATIOM_ID',
-  SetArticleId = 'SET_ARTICLE_ID',
-  SetArticleDistillId = 'SET_ARTICLE_DISTILL_ID',
-  SetShowSubscribeModal = 'SET_SHOW_SUBSCRIBE_MODAL',
-  SetSubscribeModalClosable = 'SET_SUBSCRIBE_MODAL_CLOSABLE',
-  SetShowGuide = 'SET_SHOW_GUIDE',
+  SetShowAnswerModal = 'SetShowAnswerModal',
+  SetQuestion = 'SetQuestion',
+  SetIsRequesting = 'SetIsRequesting',
+  SetRequestEnd = 'SetRequestEnd',
+  SetMarkdownStream = 'SetMarkdownStream',
 }
 
 export type IAction =
+  | ISetShowAskModal
   | ISetLanguageAction
-  | ISetConversationIdAction
-  | ISetArticleIdAction
-  | ISetArticleDistillIdAction
-  | ISetShowSubscribeModal
-  | ISetSubscribeModalClosable
-  | ISetShowGuide;
+  | ISetShowAnswerModal
+  | ISetQuestion
+  | ISetIsRequesting
+  | ISetRequestEnd
+  | ISetMarkdownStream;
 
-export interface ISetShowGuide {
-  type: ActionType.SetShowGuide;
+export interface ISetMarkdownStream {
+  type: ActionType.SetMarkdownStream;
+  payload: string;
+}
+export interface ISetIsRequesting {
+  type: ActionType.SetIsRequesting;
   payload: boolean;
 }
-export interface ISetShowSubscribeModal {
-  type: ActionType.SetShowSubscribeModal;
-  payload: {
-    show: boolean;
-    closable?: boolean;
-    subscribeModalType?: enumSubscribeModalType;
-  };
-}
-export interface ISetSubscribeModalClosable {
-  type: ActionType.SetSubscribeModalClosable;
+export interface ISetRequestEnd {
+  type: ActionType.SetRequestEnd;
   payload: boolean;
 }
+export interface ISetShowAskModal {
+  type: ActionType.SetShowAskModal;
+  payload: boolean;
+}
+
+export interface ISetShowAnswerModal {
+  type: ActionType.SetShowAnswerModal;
+  payload: boolean;
+}
+
 export interface ISetLanguageAction {
   type: ActionType.SetLanguage;
   payload: string;
 }
 
-export interface ISetConversationIdAction {
-  type: ActionType.SetConversationId;
-  payload: string;
-}
-
-export interface ISetArticleIdAction {
-  type: ActionType.SetArticleId;
-  payload: string;
-}
-
-export interface ISetArticleDistillIdAction {
-  type: ActionType.SetArticleDistillId;
+export interface ISetQuestion {
+  type: ActionType.SetQuestion;
   payload: string;
 }
 
 export function reducer(state: IState, action: IAction): IState {
   switch (action.type) {
+    case ActionType.SetMarkdownStream:
+      return {
+        ...state,
+        markdownStream: action.payload,
+      };
+
+    case ActionType.SetShowAskModal:
+      return {
+        ...state,
+        showAskModal: action.payload,
+      };
+
+    case ActionType.SetShowAnswerModal:
+      return {
+        ...state,
+        showAnswerModal: action.payload,
+      };
+
     case ActionType.SetLanguage:
       return {
         ...state,
         language: action.payload,
       };
 
-    case ActionType.SetArticleId:
+    case ActionType.SetQuestion:
       return {
         ...state,
-        articleId: action.payload,
+        question: action.payload,
       };
 
-    case ActionType.SetConversationId:
+    case ActionType.SetIsRequesting:
       return {
         ...state,
-        conversationId: action.payload,
+        isRequesting: action.payload,
       };
 
-    case ActionType.SetArticleDistillId:
+    case ActionType.SetRequestEnd:
       return {
         ...state,
-        articleDistillId: action.payload,
-      };
-
-    case ActionType.SetShowSubscribeModal:
-      return {
-        ...state,
-        showSubscribeModal: action.payload.show,
-        subscribeModalClosable: action.payload.closable || false,
-        subscribeModalType: action.payload.subscribeModalType || state.subscribeModalType,
-      };
-
-    case ActionType.SetShowGuide:
-      return {
-        ...state,
-        showGuide: action.payload,
+        requestEnd: action.payload,
       };
 
     default:

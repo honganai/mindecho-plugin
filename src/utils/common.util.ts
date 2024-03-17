@@ -40,7 +40,7 @@ export const chromeDetectLanguage = async (text: string) => {
  * 获取shadowRoot，之前对插件的所有document操作都要换成这个
  */
 export const getDocument = () => {
-  return document.getElementById('pointread-extension-shadow')?.shadowRoot || document;
+  return document.getElementById('mindecho-extension-shadow')?.shadowRoot || document;
 };
 
 /**
