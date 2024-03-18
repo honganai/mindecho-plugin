@@ -13,7 +13,7 @@ interface IUpateData {
 const Building: React.FC = () => {
   const signUpWithGoogle = chrome.i18n.getMessage('signUpWithGoogle');
   const [precent, setPrecent] = useState(0);
-  const [done, setDone] = useState(true);
+  const [done, setDone] = useState(false);
   const [monitor, setMonitor] = useState(false);
   const [waitTime, setWaitTime] = useState(0);
   const TIMEOUT = 60;
@@ -80,7 +80,7 @@ const Building: React.FC = () => {
   return (
     <div className={styles.container}>
       <img className={`${styles['logo']} ${styles['logo-icon']}`} src={Logo} />
-      <p className={styles['title']}>{done ? 'Building Your MindEcho' : 'Done!'}</p>
+      <p className={styles['title']}>{done ? 'Done!' : 'Building Your MindEcho'}</p>
       <p className={styles['tip']} style={{ display: done ? 'none' : 'block' }}>It may take up to 10 minutes</p>
       <Progress type="circle" percent={precent} style={{ marginTop: '30px' }} />
       {
