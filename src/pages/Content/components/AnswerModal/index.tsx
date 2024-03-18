@@ -52,6 +52,7 @@ const AnswerModal: React.FC = () => {
 
   const sendQuestion = () => {
     if (question?.trim()) {
+      globalState.question = question?.trim();
       chrome.runtime.sendMessage(
         {
           type: 'ws_chat_request',
@@ -64,6 +65,8 @@ const AnswerModal: React.FC = () => {
           console.log('ws_chat_request res: ', res);
         },
       );
+
+
       globalDispatch({
         type: GlobalActionType.SetShowAskModal,
         payload: false,
