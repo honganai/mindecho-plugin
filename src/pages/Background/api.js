@@ -39,9 +39,14 @@ const Api = {
         });
       return res;
     }),
-  //点击时保存question
-  upload_user_url: ({ body, headers = {} }) =>
-    http.post('/api/v1/user_url', body, headers),
+  //上传用户资源
+  upload_user_url: ({ body, headers = {} }) => http.post('/api/v1/user_url', body, headers),
+  //获取用户资源
+  get_user_url: ({ body, headers = {} }) => http.get(`/api/v1/user_url`, body, headers),
+  //更新用户资源
+  update_user_url: ({ body, headers = {} }) => http.put('/api/v1/user_url', body, headers),
+  //获取用户上传进度
+  user_url_status: ({ headers = {} }) => http.get(`/api/v1/user_url_status`, headers),
   test: () => http.get(`/api/v1/status/`),
   ...createRestApi('product'),
   ...createRestApi('usertag'),

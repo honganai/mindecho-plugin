@@ -1,0 +1,75 @@
+@import '../../../../assets/style/public.extend';
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  line-height: var(--line-height);
+
+  .userInfo {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    @extend %flex-center;
+
+    font-size: var(--font-size);
+    color: var(--font-color);
+
+    .logo {
+      width: 100px;
+      margin-right: 20px;
+    }
+  }
+
+  .content {
+    max-width: 850px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px 0 40px;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .back {
+        font-size: var(--icon-font-size);
+      }
+
+      p {
+        font-size: var(--font-size);
+        font-weight: 700;
+        color: var(--font-color);
+      }
+
+      .import-btn {
+        width: 236px;
+        height: 49px;
+      }
+    }
+
+    .control-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .search {
+        width: 250px;
+        height: 37;
+      }
+
+      .select {
+
+      }
+    }
+
+    .list-box {
+      padding: 10px 30px;
+      margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 15px;
+    }
+  }
+}

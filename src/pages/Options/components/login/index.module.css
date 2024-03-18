@@ -9,8 +9,13 @@
 
 .container, .container .btn-login {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+.container .logo-list .logo-icon {
+  width: 100px;
+  height: 96px;
 }
 
 .container {
@@ -28,11 +33,6 @@
 
 .container .logo-list .logo {
   margin: 0 10px;
-}
-
-.container .logo-list .logo-icon {
-  width: 100px;
-  height: 96px;
 }
 
 .container .logo-list .logo-text {

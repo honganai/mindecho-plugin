@@ -18,8 +18,7 @@
         }
 
         .logo-icon {
-            width: 100px;
-            height: 96px;
+            @extend %logo;
         }
 
         .logo-text {

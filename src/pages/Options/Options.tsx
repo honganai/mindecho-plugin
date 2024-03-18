@@ -3,6 +3,8 @@ import './Options.css';
 import { Layout, ConfigProvider, Popover, message, Spin, notification, Select } from 'antd';
 import User, { SubType } from './components/user/User';
 import Login from './components/login/Login';
+import DataList from './components/datalist/datalist';
+import Building from './components/building/building';
 import { UserInfo, UserType } from '@/types';
 import getCleanArticle from './distillConfig';
 import GlobalContext, {
@@ -12,13 +14,11 @@ import GlobalContext, {
 } from '../../reducer/global';
 import _ from 'lodash';
 import styles from './Options.module.scss';
+import { BrowserRouter } from 'react-router-dom';
 
-interface Props {
-  title: string;
-}
-
-const Options: React.FC<Props> = ({ title }: Props) => {
+const Options: React.FC = () => {
   const [loading, setLoading] = useState(true);
+  const [goBuilding, setGoBuilding] = useState(false);
   const [userinfo, setUserinfo] = useState<UserInfo>();
   const [isLogin, setIsLogin] = useState<boolean>(true);
   const guideRefs = useRef({});
@@ -49,6 +49,13 @@ const Options: React.FC<Props> = ({ title }: Props) => {
       }
     });
   };
+
+  const onToList = () => {
+  }
+
+  const onToBuild = () => {
+    setGoBuilding(true);
+  }
 
   const onLoginBack = (request: any, sender: any, sendResponse: any) => {
     if (request === 'http-error') {
@@ -154,7 +161,8 @@ const Options: React.FC<Props> = ({ title }: Props) => {
                 <Login onLogin={toLogin} />
               </>
             ) : (
-              <User userinfo={userinfo} />
+              goBuilding ? <Building /> :
+                <User userinfo={userinfo} onLink={onToBuild} />
             )}
           </Spin>
         </ConfigProvider>

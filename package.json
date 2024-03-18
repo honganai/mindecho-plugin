@@ -29,6 +29,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-draggable": "^4.4.6",
+    "react-router-dom": "6",
     "react-shadow-root": "^6.2.0",
     "socket.io-client": "^4.7.2",
     "stylelint": "^15.10.3",

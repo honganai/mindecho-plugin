@@ -1,4 +1,4 @@
-#pointread-sidebar {
+#mindecho-sidebar {
   position: fixed;
   top: 0;
   right: 0;
@@ -10,7 +10,7 @@
   animation: show-content 0.4s ease-in forwards;
 }
 
-#pointread-sidebar-document {
+#mindecho-sidebar-document {
   position: fixed;
   top: 0;
   right: 0;
@@ -18,16 +18,16 @@
 }
 
 
-#pointread-sidebar-flat {
+#mindecho-sidebar-flat {
   position: fixed;
   top: 0;
   right: 0;
   z-index: 2147483646;
 }
 
-#pointread-sidebar,
-#pointread-sidebar-flat,
-#pointread-sidebar-document {
+#mindecho-sidebar,
+#mindecho-sidebar-flat,
+#mindecho-sidebar-document {
   --font-family: -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, 'Helvetica Neue', arial, 'Noto Sans', sans-serif,
   'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --color-text: #101010;

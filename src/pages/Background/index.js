@@ -6,6 +6,9 @@ import { baseUrl, welcomeUrl } from './config';
 import ReadingTime from './readingTime';
 import { EXCLUDE_URLS, setExtensionUpdated } from '@/constants';
 
+chrome.commands.onCommand.addListener((command) => {
+  console.log(`Command "${command}" triggered`);
+});
 
 chrome.runtime.onMessage.addListener(handleMessages);
 chrome.action.onClicked.addListener(handleActiveClick);
@@ -19,6 +22,8 @@ function handleMessages(message, sender, sendResponse) {
     onRequest(message, sendResponse);
   } else if (type === 'getCookie') {
     getCookie(message, sender, sendResponse);
+  } else if (_.startsWith(type, 'ws_')) {
+    sendsocketMessage(type, message, sender, sendResponse);
   }
   return true;
 }
@@ -28,7 +33,13 @@ function handleMessages(message, sender, sendResponse) {
  * @param {} tab
  */
 async function handleActiveClick(tab) {
-  chrome.runtime.openOptionsPage();
+  chrome.readingList.query({}).then((res) => {
+    console.log('🚀 ~ chrome.readingList.query ~ res:', res);
+  });
+  
+  chrome.tabs.sendMessage(tab.id, { type: 'showAskModal' }, function (res) {
+    console.log('send showAskModal', res);
+  });
 }
 
 async function onLoginAction(message, sendResponse) {

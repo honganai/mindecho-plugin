@@ -1,6 +1,7 @@
 import React, { useEffect, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import dayjs from 'dayjs';
-import { Button, List } from 'antd';
+import { Button, Spin } from 'antd';
 import { LogoutOutlined, PlusOutlined } from '@ant-design/icons';
 import { CONTACT_URL, SUBSCRIBE_URL } from '@/constants';
 import cs from 'classnames';
@@ -30,13 +31,17 @@ interface IMergeData {
 }
 interface Props {
   userinfo?: any;
+  onLink: Function;
 }
 
-const User: React.FC<Props> = ({ userinfo = {} }: Props) => {
+const User: React.FC<Props> = ({ userinfo = {}, onLink }: Props) => {
+  const [spinning, setSpinning] = React.useState<boolean>(true);
+
   const logoutText = chrome.i18n.getMessage('logout');
   const userName = userinfo.username || '-';
   const { subscription = {} } = userinfo;
   const { state: { history, bookmarks, readinglist }, dispatch: globalDispatch } = useContext(GlobalContext);
+  //const navigate = useNavigate();
   console.log('🚀 ~ file: User.tsx:21 ~ subscription:', subscription);
 
   useEffect(() => {
@@ -57,10 +62,6 @@ const User: React.FC<Props> = ({ userinfo = {} }: Props) => {
       mergeData()
     }
   }, [history, bookmarks, readinglist]);
-
-  const onToList = () => {
-
-  }
 
   const mergeData = () => {
     const data = [] as Array<IMergeData>;
@@ -121,7 +122,7 @@ const User: React.FC<Props> = ({ userinfo = {} }: Props) => {
   }
 
   const getHistory = () => {
-    let microsecondsPerWeek = 1000 * 60 * 60 * 24 * 7;
+    let microsecondsPerWeek = 1000 * 60 * 60 * 24 * 3;
     let oneWeekAgo = new Date().getTime() - microsecondsPerWeek;
     chrome.history.search(
       { text: '', startTime: oneWeekAgo },
@@ -179,24 +180,35 @@ const User: React.FC<Props> = ({ userinfo = {} }: Props) => {
 
   const uploadUserUrl = (data: Array<IMergeData>) => {
     chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_url', body: data }, (res) => {
-      console.log('userinfo res:', res);
+      console.log('uploadUserUrl res:', res);
+      setSpinning(false);
     });
   }
 
+  // const getUserUrl = () => {
+  //   chrome.runtime.sendMessage({ type: 'request', api: 'get_user_url', body: { page: 1, page_size: 999, title: '' } }, (res) => {
+  //     console.log('getUserUrl res:', res);
+
+  //   });
+  // }
+
   return (
     <div className={styles.container}>
-      <div className={styles['userInfo']}>
-        <img className={styles['logo']} src={logo} alt="logo" />
-        <span>Hello, {userName}</span>
-      </div>
-      <div className={styles['control']}>
-        <Button className={cs(styles['btn'], styles['btn-browser'])} size="middle" type="primary" block onClick={() => onToList()} icon={<PlusOutlined />}>
-          <span>Import Browser Data</span>
-        </Button>
-        <Button className={cs(styles['btn'], styles['btn-other'])} size="middle" block onClick={() => onToList()} icon={<PlusOutlined />}>
-          <span>Connect Other Sources</span>
-        </Button>
-      </div>
+      <Spin spinning={spinning} tip="initializing..." fullscreen="true">
+        <div className={styles['userInfo']}>
+          <img className={styles['logo']} src={logo} alt="logo" />
+          <span>Hello, {userName}</span>
+        </div>
+        <div className={styles['control']}>
+          <Button className={cs(styles['btn'], styles['btn-browser'])} size="middle" type="primary" block onClick={() => onLink()} icon={<PlusOutlined />}>
+            <span>Import Browser Data</span>
+          </Button>
+          <Button className={cs(styles['btn'], styles['btn-other'])} size="middle" block disabled icon={<PlusOutlined />}>
+            <span>Connect Other Sources</span>
+          </Button>
+
+        </div>
+      </Spin>
     </div>
   );
 };

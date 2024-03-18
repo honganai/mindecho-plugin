@@ -15,16 +15,18 @@ const sendError = () => {
 const TIMEOUT = 180000; // 设置超时时间为120秒
 
 const request = (url, config) => {
+  let TIMEITME = null;
   return Promise.race([
     fetch(url, config)
       .then((res) => {
         if (!res.ok && res.status !== 401) {
           sendError();
         }
+        clearTimeout(TIMEITME);
         return res;
       }),
     new Promise((_, reject) =>
-      setTimeout(() => reject(new Error('Request timed out')), TIMEOUT)
+      TIMEITME = setTimeout(() => reject(new Error('Request timed out')), TIMEOUT)
     )
   ]).catch((error) => {
     sendError();

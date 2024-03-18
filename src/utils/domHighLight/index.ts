@@ -18,7 +18,7 @@ export function domHighLight(
   }
   let container = selection.getRangeAt(0).commonAncestorContainer;
   // 排除插件内的元素
-  if (document.getElementById('pointread-plugin-content')?.contains(container)) {
+  if (document.getElementById('mindecho-plugin-content')?.contains(container)) {
     return [];
   }
 
