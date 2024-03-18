@@ -1,6 +1,6 @@
 import React, { useEffect, useReducer, useRef, useState } from 'react';
 import './Options.css';
-import { Layout, Tabs, ConfigProvider, Popover, message, Spin, notification, Select } from 'antd';
+import { Layout, ConfigProvider, Popover, message, Spin, notification, Select } from 'antd';
 import User, { SubType } from './components/user/User';
 import Login from './components/login/Login';
 import { UserInfo, UserType } from '@/types';
@@ -11,6 +11,7 @@ import GlobalContext, {
   enumSubscribeModalType,
 } from '../../reducer/global';
 import _ from 'lodash';
+import styles from './Options.module.scss';
 
 interface Props {
   title: string;
@@ -40,7 +41,7 @@ const Options: React.FC<Props> = ({ title }: Props) => {
     chrome.runtime.sendMessage({ type: 'login', data: {} }, (res) => {
       console.log('login res:', res);
       //发送用户身份信息
-      const event_name="plugin_click_login"
+      const event_name = "plugin_click_login"
       console.log('posthog event_name', event_name);
       //posthog.capture(event_name )
       if (!res || res.error) {
@@ -116,8 +117,8 @@ const Options: React.FC<Props> = ({ title }: Props) => {
         const distinct_id = _.get(cookie, 'data.value', '');
         console.log('distinct_id', distinct_id);
         //userinfo?.id &&
-          //distinct_id != '' &&
-          //posthog.identify(distinct_id, { email: userinfo.email, name: userinfo.username }, { first_visited_url: '' });
+        //distinct_id != '' &&
+        //posthog.identify(distinct_id, { email: userinfo.email, name: userinfo.username }, { first_visited_url: '' });
       },
     );
   }, [userinfo?.id]);
@@ -140,9 +141,25 @@ const Options: React.FC<Props> = ({ title }: Props) => {
   }, [userinfo]);
 
   return (
-    <>
-      <Login onLogin={toLogin} />
-    </>
+    <GlobalContext.Provider
+      value={{
+        state: gloablState,
+        dispatch: globalDispatch,
+      }}>
+      <div className={styles['options-container']}>
+        <ConfigProvider>
+          <Spin spinning={loading}>
+            {loading ? null : isLogin ? (
+              <>
+                <Login onLogin={toLogin} />
+              </>
+            ) : (
+              <User userinfo={userinfo} />
+            )}
+          </Spin>
+        </ConfigProvider>
+      </div>
+    </GlobalContext.Provider>
   )
 };
 

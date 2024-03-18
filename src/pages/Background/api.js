@@ -39,6 +39,9 @@ const Api = {
         });
       return res;
     }),
+  //点击时保存question
+  upload_user_url: ({ body, headers = {} }) =>
+    http.post('/api/v1/user_url', body, headers),
   test: () => http.get(`/api/v1/status/`),
   ...createRestApi('product'),
   ...createRestApi('usertag'),
@@ -84,13 +87,13 @@ const Api = {
   highlightText: ({ body, headers = {} }) => http.post('/api/v1/highlight_text', body, headers),
 
   /** 记录用户页面停留时间 */
-  recordReadingTime: ({body, headers={}}) => http.post('/api/v1/user_read_article', body, headers),
+  recordReadingTime: ({ body, headers = {} }) => http.post('/api/v1/user_read_article', body, headers),
 
   // thinking 列表
-  getArticleGroup: ({body, headers={}}) => http.post('/api/v1/analyst/article_group', body, headers),
+  getArticleGroup: ({ body, headers = {} }) => http.post('/api/v1/analyst/article_group', body, headers),
 
   // 获取分享链接
-  getShareUrl: ({body, headers={}}) => http.post('/api/v1/generate_link', body, headers),
+  getShareUrl: ({ body, headers = {} }) => http.post('/api/v1/generate_link', body, headers),
 
   // 获取订阅计划列表
   getProduct: ({ headers = {}, params = {} }) => http.get('/api/v1/product/', params, headers),

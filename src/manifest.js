@@ -19,7 +19,7 @@ function generChromeExtensionManifest() {
     side_panel: {
       default_path: "sidepanel.html"
     },
-    permissions: ['tabs', 'storage',  'scripting', 'cookies', 'sidePanel', "bookmarks","unlimitedStorage","contextMenus", "webRequest"],
+    permissions: ['readingList', 'history', 'tabs', 'storage',  'scripting', 'cookies', 'sidePanel', "bookmarks","unlimitedStorage","contextMenus", "webRequest"],
     host_permissions: ['<all_urls>'],
     action: {
       default_icon: {

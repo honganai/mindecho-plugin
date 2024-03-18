@@ -6,9 +6,9 @@ import { baseUrl, welcomeUrl } from './config';
 import ReadingTime from './readingTime';
 import { EXCLUDE_URLS, setExtensionUpdated } from '@/constants';
 
+
 chrome.runtime.onMessage.addListener(handleMessages);
 chrome.action.onClicked.addListener(handleActiveClick);
-
 
 function handleMessages(message, sender, sendResponse) {
   console.log('message:', message, 'sender:', sender);

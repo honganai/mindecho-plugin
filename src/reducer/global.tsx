@@ -5,7 +5,39 @@ export enum enumSubscribeModalType {
   Premium,
   Elite,
 }
+export interface IHistory {
+  id: string;
+  lastVisitTime: number;
+  title: string;
+  typedCount: number;
+  url: string;
+  visitCount: number;
+}
+export interface IBookmarks {
+  id: string;
+  title: string;
+  dateAdded: number;
+  url?: string;
+  dateGroupModified?: number;
+  paretId?: string;
+  index?: number;
+  children?: Array<IBookmarks>;
+}
+export interface IReadingList {
+  creationTime: number;
+  lastUpdateTime: number;
+  title: string;
+  hasBeenRead: boolean;
+  url: string;
+}
 export interface IState {
+  /** 历史记录 */
+  history?: Array<IHistory>;
+  /** 标签列表 */
+  bookmarks?: IBookmarks;
+  /** 阅读书签 */
+  readinglist?: Array<IReadingList>;
+
   /** 当前语言 */
   language: string;
   /** 网页内容 */
@@ -31,6 +63,13 @@ export interface IState {
 }
 
 export enum ActionType {
+  /** 设置history */
+  SetHistory = 'SET_HISTORY',
+  /** 设置bookmarks */
+  SetBookMarks = 'SET_BOOKMARKS',
+  /** 设置readinglist */
+  SetReadingList = 'SET_READINGLIST',
+
   /** 设置当前语言 */
   SetLanguage = 'SET_LANGUAGE',
   SetConversationId = 'SET_CONVERSATIOM_ID',
@@ -42,6 +81,10 @@ export enum ActionType {
 }
 
 export type IAction =
+  | ISetHistory
+  | ISetBookMarks
+  | ISetReadingList
+
   | ISetLanguageAction
   | ISetConversationIdAction
   | ISetArticleIdAction
@@ -50,6 +93,18 @@ export type IAction =
   | ISetSubscribeModalClosable
   | ISetShowGuide;
 
+export interface ISetHistory {
+  type: ActionType.SetHistory;
+  payload: Array<IHistory>;
+}
+export interface ISetBookMarks {
+  type: ActionType.SetBookMarks;
+  payload: IBookmarks;
+}
+export interface ISetReadingList {
+  type: ActionType.SetReadingList;
+  payload: Array<IReadingList>;
+}
 export interface ISetShowGuide {
   type: ActionType.SetShowGuide;
   payload: boolean;
@@ -88,6 +143,24 @@ export interface ISetArticleDistillIdAction {
 
 export function reducer(state: IState, action: IAction): IState {
   switch (action.type) {
+    case ActionType.SetHistory:
+      return {
+        ...state,
+        history: action.payload,
+      };
+
+    case ActionType.SetBookMarks:
+      return {
+        ...state,
+        bookmarks: action.payload,
+      };
+
+    case ActionType.SetReadingList:
+      return {
+        ...state,
+        readinglist: action.payload,
+      };
+
     case ActionType.SetLanguage:
       return {
         ...state,

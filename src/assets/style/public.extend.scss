@@ -1,6 +1,11 @@
 // 按钮样式
 %btn {
   border-radius: 15px;
+  box-sizing: border-box;
+  color: var(--btn-text-color);
+  font-size: var(--btn-font-size);
+  font-weight: 500;
+  letter-spacing: var(--letter-spacing-1);
 }
 
 %flex-center {
@@ -51,7 +56,8 @@
 }
 
 // block 段落外框样式、骨架屏样式
-%pointread-extend-p-border, %pointread-extend-loading-skeleton {
+%pointread-extend-p-border,
+%pointread-extend-loading-skeleton {
   padding: 9px 11px;
   border: 1px solid var(--border-color);
   border-top: none;
@@ -61,7 +67,10 @@
 
 // 溢出省略
 %pointread-extend-ellipsis {
-  white-space: nowrap; /* 不换行 */
-  overflow: hidden; /* 隐藏溢出部分 */
-  text-overflow: ellipsis; /* 显示省略号 */
+  white-space: nowrap;
+  /* 不换行 */
+  overflow: hidden;
+  /* 隐藏溢出部分 */
+  text-overflow: ellipsis;
+  /* 显示省略号 */
 }
