@@ -30,10 +30,11 @@ function handleMessages(message, sender, sendResponse) {
  * @param {} tab
  */
 async function handleActiveClick(tab) {
-  chrome.readingList.query({}).then((res) => {
-    console.log('🚀 ~ chrome.readingList.query ~ res:', res);
-  });
-  
+  // readigList获取示例 @王中港
+  // chrome.readingList.query({}).then((res) => {
+  //   console.log('🚀 ~ chrome.readingList.query ~ res:', res);
+  // });
+
   chrome.tabs.sendMessage(tab.id, { type: 'showAskModal' }, function (res) {
     console.log('send showAskModal', res);
   });
