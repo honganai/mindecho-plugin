@@ -5,9 +5,13 @@ import AskModal from './components/AskModal';
 import AnswerModal from './components/AnswerModal';
 import GlobalContext, { ActionType as GlobalActionType, IState } from '../../reducer/global';
 
-const App: React.FC = () => {
+interface IProps {
+  type?: 'options' | 'webPage'
+}
+
+const App: React.FC<IProps> = ({ type = 'webPage' }) => {
   const { state: globalState, dispatch: globalDispatch } = useContext(GlobalContext);
-  const flatRoot = getDocument().getElementById('mindecho-sidebar-flat');
+  const flatRoot = type === 'options' ? document.body : getDocument().getElementById('mindecho-sidebar-flat');
 
   const setShowAskModal = (value: boolean) => {
     globalDispatch({

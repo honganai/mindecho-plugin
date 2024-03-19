@@ -14,7 +14,9 @@ import GlobalContext, {
 } from '../../reducer/global';
 import _ from 'lodash';
 import styles from './Options.module.scss';
-import { BrowserRouter } from 'react-router-dom';
+// import { BrowserRouter } from 'react-router-dom';
+
+import ModalContent from '../Content/App';
 
 const Options: React.FC = () => {
   const [loading, setLoading] = useState(true);
@@ -23,11 +25,11 @@ const Options: React.FC = () => {
   const [isLogin, setIsLogin] = useState<boolean>(true);
   const guideRefs = useRef({});
   const [gloablState, globalDispatch] = useReducer(GlobalReducer, {
-    showSubscribeModal: false,
+    showAskModal: false,
     language: '',
-    cleanArticle: getCleanArticle(),
-    guideRefs,
-    showGuide: false,
+    showAnswerModal: false,
+    isRequesting: false,
+    requestEnd: false,
   });
 
   const handleLogin = () => {
@@ -51,6 +53,7 @@ const Options: React.FC = () => {
   };
 
   const onToList = () => {
+    // 
   }
 
   const onToBuild = () => {
@@ -130,23 +133,6 @@ const Options: React.FC = () => {
     );
   }, [userinfo?.id]);
 
-  useEffect(() => {
-    if (userinfo?.subscription?.quota_used_count >= userinfo?.subscription?.total_monthly_quota) {
-      // 超过套餐次数弹出充值
-      globalDispatch({
-        type: GlobalActionType.SetShowSubscribeModal,
-        payload: {
-          show: true,
-          closable: false,
-          subscribeModalType:
-            userinfo?.subscription?.mem_type === SubType.Free
-              ? enumSubscribeModalType.Premium
-              : enumSubscribeModalType.Elite,
-        },
-      });
-    }
-  }, [userinfo]);
-
   return (
     <GlobalContext.Provider
       value={{
@@ -161,8 +147,14 @@ const Options: React.FC = () => {
                 <Login onLogin={toLogin} />
               </>
             ) : (
-              goBuilding ? <Building /> :
-                <User userinfo={userinfo} onLink={onToBuild} />
+              <>
+                {
+                  goBuilding ? <Building /> :
+                    <User userinfo={userinfo} onLink={onToBuild} />
+                }
+                {/* 直接引入问答弹窗，组件内部包含所有逻辑 */}
+                <ModalContent type="options" />
+              </>
             )}
           </Spin>
         </ConfigProvider>
