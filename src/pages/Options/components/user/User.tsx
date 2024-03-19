@@ -114,7 +114,8 @@ const User: React.FC<Props> = ({ userinfo = {}, onLink }: Props) => {
   }
 
   const getHistory = () => {
-    let microsecondsPerWeek = 1000 * 60 * 60 * 24 * 3;
+    // 获取最近4小时的记录
+    let microsecondsPerWeek = 1000 * 60 * 60 * 4;
     let oneWeekAgo = new Date().getTime() - microsecondsPerWeek;
     chrome.history.search(
       { text: '', startTime: oneWeekAgo },

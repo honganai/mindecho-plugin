@@ -13,7 +13,7 @@ const Building: React.FC = () => {
   const [done, setDone] = useState(false);
   const [monitor, setMonitor] = useState(false);
   const [waitTime, setWaitTime] = useState(0);
-  const TIMEOUT = 60;
+  const TIMEOUT = 300;
 
   useEffect(() => {
     upateUserUrl();

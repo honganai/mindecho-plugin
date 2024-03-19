@@ -14,7 +14,9 @@ import GlobalContext, {
 } from '../../reducer/global';
 import _ from 'lodash';
 import styles from './Options.module.scss';
-import { BrowserRouter } from 'react-router-dom';
+// import { BrowserRouter } from 'react-router-dom';
+
+import ModalContent from '../Content/App';
 
 const Options: React.FC = () => {
   const [loading, setLoading] = useState(true);
@@ -50,6 +52,7 @@ const Options: React.FC = () => {
   };
 
   const onToList = () => {
+    // 
   }
 
   const onLoginBack = (request: any, sender: any, sendResponse: any) => {
@@ -118,11 +121,6 @@ const Options: React.FC = () => {
     );
   }, [userinfo?.id]);
 
-  useEffect(() => {
-    if (userinfo?.subscription?.quota_used_count >= userinfo?.subscription?.total_monthly_quota) {
-    }
-  }, [userinfo]);
-
   return (
     <GlobalContext.Provider
       value={{
@@ -137,9 +135,12 @@ const Options: React.FC = () => {
                 <Login onLogin={toLogin} />
               </>
             ) : (
-              stepPage === 1 ? <User userinfo={userinfo} onLink={() => { setStepPage(2) }} /> :
-                stepPage === 2 ? <DataList onLink={() => { setStepPage(3) }} /> :
-                  stepPage === 3 ? <Building /> : null
+              <>
+                {stepPage === 1 ? <User userinfo={userinfo} onLink={() => { setStepPage(2) }} /> :
+                  stepPage === 2 ? <DataList onLink={() => { setStepPage(3) }} /> :
+                    stepPage === 3 ? <Building /> : null}
+                <ModalContent type="options" />
+              </>
             )}
           </Spin>
         </ConfigProvider>
