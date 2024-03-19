@@ -18,16 +18,15 @@ import { BrowserRouter } from 'react-router-dom';
 
 const Options: React.FC = () => {
   const [loading, setLoading] = useState(true);
-  const [goBuilding, setGoBuilding] = useState(false);
+  const [stepPage, setStepPage] = useState(1);
   const [userinfo, setUserinfo] = useState<UserInfo>();
   const [isLogin, setIsLogin] = useState<boolean>(true);
-  const guideRefs = useRef({});
   const [gloablState, globalDispatch] = useReducer(GlobalReducer, {
-    showSubscribeModal: false,
+    showAskModal: false,
     language: '',
-    cleanArticle: getCleanArticle(),
-    guideRefs,
-    showGuide: false,
+    showAnswerModal: false,
+    isRequesting: false,
+    requestEnd: false,
   });
 
   const handleLogin = () => {
@@ -53,10 +52,6 @@ const Options: React.FC = () => {
   const onToList = () => {
   }
 
-  const onToBuild = () => {
-    setGoBuilding(true);
-  }
-
   const onLoginBack = (request: any, sender: any, sendResponse: any) => {
     if (request === 'http-error') {
       message.error(chrome.i18n.getMessage('errorDefault'));
@@ -80,6 +75,12 @@ const Options: React.FC = () => {
   };
 
   useEffect(() => {
+    //测试
+    // setLoading(false);
+    // setIsLogin(false);
+    // setStepPage(2)
+    // return () => { };
+
     setLoading(true);
     chrome.runtime.sendMessage({ type: 'request', api: 'userinfo' }, (res) => {
       setLoading(false);
@@ -88,16 +89,6 @@ const Options: React.FC = () => {
       handleLogin();
       if (!res || res.error) {
         console.log('用户未登陆');
-        // chrome.runtime.sendMessage({ type: 'login', data: {} }, (res) => {
-        //   console.log('login res:', res.result);
-        //   if (res.error) {
-        //     handleLogin(true)
-        //     console.log('登陆错误');
-        //   } else {
-        //     handleLogin(false)
-        //     setUserinfo(res.result);
-        //   }
-        // });
       } else if (res.result) {
         console.log('content user:', res.result);
         setUserinfo(res.result);
@@ -123,27 +114,12 @@ const Options: React.FC = () => {
       (cookie: object) => {
         const distinct_id = _.get(cookie, 'data.value', '');
         console.log('distinct_id', distinct_id);
-        //userinfo?.id &&
-        //distinct_id != '' &&
-        //posthog.identify(distinct_id, { email: userinfo.email, name: userinfo.username }, { first_visited_url: '' });
       },
     );
   }, [userinfo?.id]);
 
   useEffect(() => {
     if (userinfo?.subscription?.quota_used_count >= userinfo?.subscription?.total_monthly_quota) {
-      // 超过套餐次数弹出充值
-      globalDispatch({
-        type: GlobalActionType.SetShowSubscribeModal,
-        payload: {
-          show: true,
-          closable: false,
-          subscribeModalType:
-            userinfo?.subscription?.mem_type === SubType.Free
-              ? enumSubscribeModalType.Premium
-              : enumSubscribeModalType.Elite,
-        },
-      });
     }
   }, [userinfo]);
 
@@ -161,8 +137,9 @@ const Options: React.FC = () => {
                 <Login onLogin={toLogin} />
               </>
             ) : (
-              goBuilding ? <Building /> :
-                <User userinfo={userinfo} onLink={onToBuild} />
+              stepPage === 1 ? <User userinfo={userinfo} onLink={() => { setStepPage(2) }} /> :
+                stepPage === 2 ? <DataList onLink={() => { setStepPage(3) }} /> :
+                  stepPage === 3 ? <Building /> : null
             )}
           </Spin>
         </ConfigProvider>

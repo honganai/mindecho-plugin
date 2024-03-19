@@ -41,7 +41,6 @@ const User: React.FC<Props> = ({ userinfo = {}, onLink }: Props) => {
   const userName = userinfo.username || '-';
   const { subscription = {} } = userinfo;
   const { state: { history, bookmarks, readinglist }, dispatch: globalDispatch } = useContext(GlobalContext);
-  //const navigate = useNavigate();
   console.log('🚀 ~ file: User.tsx:21 ~ subscription:', subscription);
 
   useEffect(() => {
@@ -49,13 +48,6 @@ const User: React.FC<Props> = ({ userinfo = {}, onLink }: Props) => {
     getBookmarks();
     getReadingList();
   }, []);
-
-  useEffect(() => {
-    //发送用户身份信息
-    // const event_name="plugin_show_profile"
-    // console.log('posthog event_name', event_name);
-    // posthog.capture(event_name, {email: userinfo.email, name: userinfo.username })
-  }, [userinfo?.id]);
 
   useEffect(() => {
     if (history && bookmarks && readinglist) {
@@ -107,7 +99,7 @@ const User: React.FC<Props> = ({ userinfo = {}, onLink }: Props) => {
           user_used_time: dayjs(item.dateAdded).format('YYYY-MM-DD HH:mm:ss'),
           node_id: item.id,
           node_index: item.index?.toString() || '',
-          parentId: item.paretId || '',
+          parentId: item.parentId || '',
           origin_info: item,
         });
       }
@@ -184,13 +176,6 @@ const User: React.FC<Props> = ({ userinfo = {}, onLink }: Props) => {
       setSpinning(false);
     });
   }
-
-  // const getUserUrl = () => {
-  //   chrome.runtime.sendMessage({ type: 'request', api: 'get_user_url', body: { page: 1, page_size: 999, title: '' } }, (res) => {
-  //     console.log('getUserUrl res:', res);
-
-  //   });
-  // }
 
   return (
     <div className={styles.container}>

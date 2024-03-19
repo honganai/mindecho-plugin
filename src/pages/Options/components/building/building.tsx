@@ -1,17 +1,14 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useContext } from 'react';
 import { Progress } from 'antd';
 import styles from './index.module.scss';
 import Logo from '@/assets/icons/logo.png';
 import LogoText from '@/assets/icons/logo-font.png';
 import './index.module.css';
-
-interface IUpateData {
-  url: string;
-  status: 1 | 0;
-}
+import GlobalContext, { IUpateData } from '@/reducer/global';
 
 const Building: React.FC = () => {
   const signUpWithGoogle = chrome.i18n.getMessage('signUpWithGoogle');
+  const { state: { upateData }, dispatch: globalDispatch } = useContext(GlobalContext);
   const [precent, setPrecent] = useState(0);
   const [done, setDone] = useState(false);
   const [monitor, setMonitor] = useState(false);
@@ -19,30 +16,11 @@ const Building: React.FC = () => {
   const TIMEOUT = 60;
 
   useEffect(() => {
-    getUserUrl();
+    upateUserUrl();
   }, []);
 
-  const getUserUrl = () => {
-    chrome.runtime.sendMessage({ type: 'request', api: 'get_user_url', body: { page: 1, page_size: 999, title: '' } }, (res) => {
-      console.log('getUserUrl res:', res);
-      upateUserUrl(res?.result);
-    });
-  }
-
-  const upateUserUrl = (data: Array<any>) => {
-    const updateData: Array<IUpateData> = data.map((item, index) => {
-      if (item.status === 1) {
-        return {
-          url: item.url,
-          status: 0,
-        }
-      }
-      return {
-        url: item.url,
-        status: 1,
-      }
-    });
-    chrome.runtime.sendMessage({ type: 'request', api: 'update_user_url', body: updateData }, (res) => {
+  const upateUserUrl = () => {
+    chrome.runtime.sendMessage({ type: 'request', api: 'update_user_url', body: upateData }, (res) => {
       console.log('upateUserUrl res:', res);
       setMonitor(true)
     });

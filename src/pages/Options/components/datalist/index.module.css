@@ -45,7 +45,7 @@
 .container .content .header p {
   font-size: var(--font-size);
   font-weight: 700;
-  color: var(--font-color);
+  color: #1B6593;
 }
 
 .container .content .header .import-btn {
@@ -66,8 +66,10 @@
 }
 
 .container .content .list-box {
+  height: 80vh;
   padding: 10px 30px;
   margin-bottom: 20px;
   background-color: #fff;
   border-radius: 15px;
+  overflow: scroll;
 }

@@ -5,6 +5,10 @@ export enum enumSubscribeModalType {
   Premium,
   Elite,
 }
+export interface IUpateData {
+  url: string;
+  status: 1 | 0;
+}
 export interface IHistory {
   id: string;
   lastVisitTime: number;
@@ -19,7 +23,7 @@ export interface IBookmarks {
   dateAdded: number;
   url?: string;
   dateGroupModified?: number;
-  paretId?: string;
+  parentId?: string;
   index?: number;
   children?: Array<IBookmarks>;
 }
@@ -31,6 +35,8 @@ export interface IReadingList {
   url: string;
 }
 export interface IState {
+  /** 等待更新的数据 */
+  upateData?: Array<IUpateData>;
   /** 历史记录 */
   history?: Array<IHistory>;
   /** 标签列表 */
@@ -54,6 +60,8 @@ export interface IState {
 }
 
 export enum ActionType {
+  /** 设置upateData */
+  SetUpateData = 'SET_UPATEDATA',
   /** 设置history */
   SetHistory = 'SET_HISTORY',
   /** 设置bookmarks */
@@ -73,6 +81,7 @@ export enum ActionType {
 }
 
 export type IAction =
+  ISetUpateData
   | ISetHistory
   | ISetBookMarks
   | ISetReadingList
@@ -86,6 +95,10 @@ export type IAction =
   | ISetRequestEnd
   | ISetMarkdownStream;
 
+export interface ISetUpateData {
+  type: ActionType.SetUpateData;
+  payload: Array<IUpateData>;
+}
 export interface ISetHistory {
   type: ActionType.SetHistory;
   payload: Array<IHistory>;
@@ -132,6 +145,12 @@ export interface ISetQuestion {
 
 export function reducer(state: IState, action: IAction): IState {
   switch (action.type) {
+    case ActionType.SetUpateData:
+      return {
+        ...state,
+        upateData: action.payload,
+      };
+
     case ActionType.SetHistory:
       return {
         ...state,
