@@ -40,6 +40,7 @@
 
 .container .content .header .back {
   font-size: var(--icon-font-size);
+  cursor: pointer;
 }
 
 .container .content .header p {
@@ -63,6 +64,10 @@
 .container .content .control-box .search {
   width: 250px;
   height: 37;
+}
+
+.container .content .control-box .select {
+  display: none;
 }
 
 .container .content .list-box {
