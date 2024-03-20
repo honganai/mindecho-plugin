@@ -33,7 +33,6 @@ const Building: React.FC = () => {
   const getProgress = () => {
     setWaitTime(waitTime + 5);
     chrome.runtime.sendMessage({ type: 'request', api: 'user_url_status' }, (res) => {
-      console.log('getProgress res:', res);
       let count = 0;
       let pending = 0;
       res.forEach((item: any) => {

@@ -79,12 +79,6 @@ const Options: React.FC = () => {
   };
 
   useEffect(() => {
-    //测试
-    // setLoading(false);
-    // setIsLogin(false);
-    // setStepPage(2)
-    // return () => { };
-
     setLoading(true);
     chrome.runtime.sendMessage({ type: 'request', api: 'userinfo' }, (res) => {
       setLoading(false);
@@ -138,7 +132,7 @@ const Options: React.FC = () => {
             ) : (
               <>
                 {stepPage === 1 ? <User userinfo={userinfo} onLink={() => { setStepPage(2) }} /> :
-                  stepPage === 2 ? <DataList onLink={() => { setStepPage(3) }} /> :
+                  stepPage === 2 ? <DataList onLink={(page: number) => { setStepPage(page) }} /> :
                     stepPage === 3 ? <Building /> : null}
                 <ModalContent type="options" />
               </>

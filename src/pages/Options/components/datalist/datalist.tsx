@@ -1,6 +1,6 @@
 import React, { useEffect, useContext, useState } from 'react';
 import dayjs from 'dayjs';
-import { Button, Input, Checkbox, Tree } from 'antd';
+import { Button, Input, Checkbox, Tree, Spin, message } from 'antd';
 import type { TreeDataNode } from 'antd';
 import { ArrowLeftOutlined, SearchOutlined } from '@ant-design/icons';
 import cs from 'classnames';
@@ -37,14 +37,17 @@ interface Props {
 
 const User: React.FC<Props> = ({ onLink }) => {
   const logoutText = chrome.i18n.getMessage('logout');
-  const { state: { upateData }, dispatch: globalDispatch } = useContext(GlobalContext);
+  const { state: { upateData, bookmarks: bookmarksData }, dispatch: globalDispatch } = useContext(GlobalContext);
   const [userUrl, setUserUrl] = useState<IMergeData[]>([]);
   const [treeData, setTreeData] = useState<TreeDataNode[]>([]);
   const [expandedKeys, setExpandedKeys] = useState<React.Key[]>([]);
-  const [checkedKeys, setCheckedKeys] = useState<React.Key[]>(['bookmarks', 'readinglist', 'history']);
+  const [keyList, setKeyList] = useState<string[]>(['bookmarks', 'readinglist', 'history']);
+  const [checkedKeys, setCheckedKeys] = useState<React.Key[]>([`parent-${keyList[0]}`, `parent-${keyList[1]}`, `parent-${keyList[2]}`]);
   //const [selectedKeys, setSelectedKeys] = useState<React.Key[]>(['bookmarks']);
   const [autoExpandParent, setAutoExpandParent] = useState<boolean>(true);
   const [checkedCount, setCheckedCount] = useState<number>(0);
+  const [searchWord, setSearchWord] = useState<string>('');
+  const [loading, setLoading] = useState<boolean>(true);
 
   const onExpand = (expandedKeysValue: React.Key[]) => {
     // if not set autoExpandParent to false, if children expanded, parent can not collapse.
@@ -54,8 +57,7 @@ const User: React.FC<Props> = ({ onLink }) => {
   };
 
   const onCheck = (checkedKeysValue: React.Key[], event: any) => {
-    console.log('onCheck', checkedKeysValue, event);
-    const { checked, node } = event;
+    //console.log('onCheck', checkedKeysValue, event);
     setCheckedKeys(checkedKeysValue);
     setCheckedCount(checkedKeysValue.length)
   };
@@ -67,36 +69,48 @@ const User: React.FC<Props> = ({ onLink }) => {
 
   useEffect(() => {
     getUserUrl()
-  }, []);
+  }, [searchWord]);
 
   const getUserUrl = () => {
-    chrome.runtime.sendMessage({ type: 'request', api: 'get_user_url', body: { page: 1, page_size: 999, title: '' } }, (res) => {
-      console.log('getUserUrl res:', res);
-      parsingData(res?.result)
+    setLoading(true);
+    chrome.runtime.sendMessage({ type: 'request', api: 'get_user_url', body: { page: 1, page_size: 999, title: searchWord } }, (res) => {
+      //console.log('getUserUrl res:', res);
+      if (res?.result?.length > 0) {
+        parsingData(res?.result)
+      } else {
+        message.error('No data found');
+        setLoading(false);
+      }
     });
   }
 
   const parsingData = (data: any) => {
     const reusltData = [
-      { title: 'Bookmarks', key: 'bookmarks', children: [] as any[] },
-      { title: 'Reading List', key: 'readinglist', children: [] as any[] },
-      { title: 'History', key: 'history', children: [] as any[] },
+      { title: 'Bookmarks', key: `parent-${keyList[0]}`, children: [] as any[] },
+      { title: 'Reading List', key: `parent-${keyList[1]}`, children: [] as any[] },
+      { title: 'History', key: `parent-${keyList[2]}`, children: [] as any[] },
     ];
+    const bookmarksMap = new Map<string, Array<any>>();
     data.forEach((item: any) => {
       item.status = 1;
       switch (item.type) {
         case 'bookmark':
-          reusltData[0].children.push({
-            title: item.title,
-            key: reusltData[0].key + '-' + item.id,
-            url: item.url
-          });
+          if (!bookmarksMap.has(item.parentId)) {
+            bookmarksMap.set(item.parentId, []);
+          }
+          bookmarksMap.get(item.parentId)?.push(
+            {
+              title: item.title,
+              key: keyList[0] + '-' + item.id,
+              url: item.url
+            }
+          );
           break;
 
         case 'readinglist':
           reusltData[1].children?.push({
             title: item.title,
-            key: reusltData[1].key + '-' + item.id,
+            key: keyList[1] + '-' + item.id,
             url: item.url
           });
           break;
@@ -104,23 +118,38 @@ const User: React.FC<Props> = ({ onLink }) => {
         case 'history':
           reusltData[2].children?.push({
             title: item.title,
-            key: reusltData[1].key + '-' + item.id,
+            key: keyList[2] + '-' + item.id,
             url: item.url
           });
           break;
       }
     });
+    const bookmarks = parsingBookMarks(bookmarksData, bookmarksMap)
+    reusltData[0].children?.push(...bookmarks.children || []);
     setUserUrl(data)
     setCheckedCount(data.length)
     setTreeData(reusltData)
-    onExpand(['bookmarks', 'readinglist'])
+    setLoading(false);
+    onExpand([`parent-${keyList[0]}`, `parent-${keyList[1]}`])
+  }
+
+  const parsingBookMarks = (data: any, map: Map<string, any>): TreeDataNode => {
+    const result: TreeDataNode = { title: data.title, key: 'parent-' + data.id, children: [] }
+    for (const item of data.children || []) {
+      if (item.children?.length > 0) {
+        result?.children?.push(parsingBookMarks(item, map))
+      }
+    }
+    if (map.has(data.id)) {
+      result?.children?.push(...map.get(data.id))
+    }
+    return result;
   }
 
   const onChange = () => { }
 
   const onImport = () => {
-    console.log(checkedKeys)
-    const data = userUrl.map((item, index) => {
+    const data = userUrl.map((item) => {
       return {
         url: item.url,
         status: checkedKeys.some(checkedItem => checkedItem.split('-')[1] == item.id) ? 1 : 0,
@@ -130,7 +159,14 @@ const User: React.FC<Props> = ({ onLink }) => {
       type: ActionType.SetUpateData,
       payload: data as Array<IUpateData> || [],
     });
-    onLink()
+    onLink(3)
+  }
+
+  const searchKeyWord = (e: any) => {
+    const searchText = e.target.value;
+    if (searchText.trim() !== searchWord) {
+      setSearchWord(e.target.value)
+    }
   }
 
   return (
@@ -140,7 +176,7 @@ const User: React.FC<Props> = ({ onLink }) => {
       </div>
       <div className={styles['content']}>
         <div className={styles['header']}>
-          <div className={styles['back']}>
+          <div className={styles['back']} onClick={() => onLink(1)}>
             <ArrowLeftOutlined />
           </div>
           <p>BookMarks & Reading Lists</p>
@@ -149,22 +185,25 @@ const User: React.FC<Props> = ({ onLink }) => {
           </Button>
         </div>
         <div className={styles['control-box']}>
-          <Input className={styles['search']} placeholder="default size" prefix={<SearchOutlined />} />
+          <Input className={styles['search']} placeholder="Find items by keywords" prefix={<SearchOutlined />} onPressEnter={searchKeyWord} />
           <Checkbox className={styles['select']} onChange={onChange}>Select/Deselect All Shown</Checkbox>
         </div>
-        <div className={styles['list-box']}>
-          <Tree
-            checkable
-            onExpand={onExpand}
-            expandedKeys={expandedKeys}
-            autoExpandParent={autoExpandParent}
-            onCheck={onCheck}
-            checkedKeys={checkedKeys}
-            //onSelect={onSelect}
-            //selectedKeys={selectedKeys}
-            treeData={treeData}
-          />
-        </div>
+        <Spin spinning={loading} tip='Loading...'>
+          <div className={styles['list-box']}>
+            <Tree
+              checkable
+              onExpand={onExpand}
+              expandedKeys={expandedKeys}
+              autoExpandParent={autoExpandParent}
+              onCheck={onCheck}
+              checkedKeys={checkedKeys}
+              //onSelect={onSelect}
+              //selectedKeys={selectedKeys}
+              treeData={treeData}
+            />
+          </div>
+        </Spin>
+
         <p>* Data on the current page is local only. No URLs will be synchronized unless selected and submitted in further steps.</p>
       </div>
     </div>
