@@ -31,7 +31,6 @@ const AskModal: React.FC = () => {
       destroyOnClose={true}
       forceRender={true}
       footer={null}
-      closable={false}
       maskStyle={
         {
           // backgroundColor: 'rgba(255, 255, 255, 0.6)',

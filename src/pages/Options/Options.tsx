@@ -29,6 +29,7 @@ const Options: React.FC = () => {
     showAnswerModal: false,
     isRequesting: false,
     requestEnd: false,
+    isLogin: true,
   });
 
   const handleLogin = () => {

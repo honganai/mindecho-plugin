@@ -1,3 +1,4 @@
+import { UserInfo } from '@/types';
 import React from 'react';
 
 /** 弹窗类型 */
@@ -57,6 +58,10 @@ export interface IState {
   requestEnd: boolean;
   /** 回答 */
   markdownStream?: string;
+  /** 是否需要登录 */
+  isLogin: boolean;
+  /** 用户信息 */
+  userInfo?: UserInfo | null;
 }
 
 export enum ActionType {
@@ -78,6 +83,8 @@ export enum ActionType {
   SetIsRequesting = 'SetIsRequesting',
   SetRequestEnd = 'SetRequestEnd',
   SetMarkdownStream = 'SetMarkdownStream',
+  SetIsLogin = 'SetIsLogin',
+  SetUserInfo = 'SetUserInfo',
 }
 
 export type IAction =
@@ -93,7 +100,19 @@ export type IAction =
   | ISetQuestion
   | ISetIsRequesting
   | ISetRequestEnd
-  | ISetMarkdownStream;
+  | ISetMarkdownStream
+  | ISetIsLogin
+  | ISetUserInfo;
+
+export interface ISetUserInfo {
+  type: ActionType.SetUserInfo;
+  payload: UserInfo | null;
+}
+
+export interface ISetIsLogin {
+  type: ActionType.SetIsLogin;
+  payload: boolean;
+}
 
 export interface ISetUpateData {
   type: ActionType.SetUpateData;
@@ -145,6 +164,18 @@ export interface ISetQuestion {
 
 export function reducer(state: IState, action: IAction): IState {
   switch (action.type) {
+
+    case ActionType.SetUserInfo:
+      return {
+        ...state,
+        userInfo: action.payload,
+      };
+    case ActionType.SetIsLogin:
+      return {
+        ...state,
+        isLogin: action.payload,
+      };
+
     case ActionType.SetUpateData:
       return {
         ...state,

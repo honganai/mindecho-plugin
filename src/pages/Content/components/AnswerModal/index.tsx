@@ -110,7 +110,6 @@ const AnswerModal: React.FC = () => {
         closeModal();
       }}
       footer={null}
-      closable={false}
       width={'90%'}
       maskStyle={
         {
