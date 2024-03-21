@@ -9,6 +9,7 @@ const Root: React.FC = () => {
     showAnswerModal: false,
     isRequesting: false,
     requestEnd: false,
+    isLogin: true,
   });
 
   return (

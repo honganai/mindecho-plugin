@@ -30,13 +30,15 @@ const Api = {
   userinfo: () =>
     http.get(`/api/v1/user/info`).then((res) => {
       // 额外保存用户信息
-      chrome.storage.local
+      res.json().then(res => {
+        chrome.storage.local
         .set({
-          userinfo: res.result,
+          userInfo: res.result || null,
         })
         .then((result) => {
-          console.log('set userinfo is ' + result);
+          console.log('set userInfo is ' + result);
         });
+      })
       return res;
     }),
   //上传用户资源

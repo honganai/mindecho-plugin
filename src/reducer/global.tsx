@@ -36,7 +36,6 @@ export interface IReadingList {
   url: string;
 }
 export interface IState {
-  userInfo: UserInfo;
   /** 等待更新的数据 */
   upateData?: Array<IUpateData>;
   /** 历史记录 */
@@ -59,10 +58,13 @@ export interface IState {
   requestEnd: boolean;
   /** 回答 */
   markdownStream?: string;
+  /** 是否需要登录 */
+  isLogin: boolean;
+  /** 用户信息 */
+  userInfo?: UserInfo | null;
 }
 
 export enum ActionType {
-  SetUserInfo = 'SET_USERINFO',
   /** 设置upateData */
   SetUpateData = 'SET_UPATEDATA',
   /** 设置history */
@@ -81,11 +83,12 @@ export enum ActionType {
   SetIsRequesting = 'SetIsRequesting',
   SetRequestEnd = 'SetRequestEnd',
   SetMarkdownStream = 'SetMarkdownStream',
+  SetIsLogin = 'SetIsLogin',
+  SetUserInfo = 'SetUserInfo',
 }
 
 export type IAction =
   ISetUpateData
-  | ISetUserInfo
   | ISetHistory
   | ISetBookMarks
   | ISetReadingList
@@ -97,15 +100,23 @@ export type IAction =
   | ISetQuestion
   | ISetIsRequesting
   | ISetRequestEnd
-  | ISetMarkdownStream;
+  | ISetMarkdownStream
+  | ISetIsLogin
+  | ISetUserInfo;
+
+export interface ISetUserInfo {
+  type: ActionType.SetUserInfo;
+  payload: UserInfo | null;
+}
+
+export interface ISetIsLogin {
+  type: ActionType.SetIsLogin;
+  payload: boolean;
+}
 
 export interface ISetUpateData {
   type: ActionType.SetUpateData;
   payload: Array<IUpateData>;
-}
-export interface ISetUserInfo {
-  type: ActionType.SetUserInfo;
-  payload: UserInfo;
 }
 export interface ISetHistory {
   type: ActionType.SetHistory;
@@ -157,6 +168,12 @@ export function reducer(state: IState, action: IAction): IState {
       return {
         ...state,
         userInfo: action.payload,
+      };
+
+    case ActionType.SetIsLogin:
+      return {
+        ...state,
+        isLogin: action.payload,
       };
 
     case ActionType.SetUpateData:

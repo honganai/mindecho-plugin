@@ -8,7 +8,23 @@ interface IProps {
   markdownStream?: string;
 }
 
-const md = markdownit();
+const md = markdownit({
+  breaks: true // \n换行
+});
+
+// a标签打开新tab
+// Remember the old renderer if overridden, or proxy to the default renderer.
+const defaultRender = md.renderer.rules.link_open || function (tokens, idx, options, env, self) {
+  return self.renderToken(tokens, idx, options);
+};
+
+md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
+  // Add a new `target` attribute, or replace the value of the existing one.
+  tokens[idx].attrSet('target', '_blank');
+
+  // Pass the token to the default renderer.
+  return defaultRender(tokens, idx, options, env, self);
+};
 
 interface IContent {
   title: string;
@@ -47,11 +63,7 @@ const MarkdownContent: React.FC<IProps> = ({ markdownStream = '' }) => {
         };
         contents.push(tempData);
       } else {
-        if (node.nodeName === 'UL') {
-          tempData.content += node.textContent?.trimEnd();
-        } else {
-          tempData.content += node.textContent;
-        }
+        tempData.content += node.textContent;
       }
 
       if ((node as Element).outerHTML) {

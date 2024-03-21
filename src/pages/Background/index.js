@@ -24,8 +24,21 @@ function handleMessages(message, sender, sendResponse) {
     getCookie(message, sender, sendResponse);
   } else if (_.startsWith(type, 'ws_')) {
     sendsocketMessage(type, message, sender, sendResponse);
+  } else if (type === 'openSettings') {
+    openSettings();
   }
   return true;
+}
+
+/**
+ * 打开设置页
+ */
+export function openSettings() {
+  if (chrome.runtime.openOptionsPage) {
+    chrome.runtime.openOptionsPage();
+  } else {
+    window.open(chrome.runtime.getURL('options.html'));
+  }
 }
 
 /**
