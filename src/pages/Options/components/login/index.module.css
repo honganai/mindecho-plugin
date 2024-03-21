@@ -28,7 +28,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .container .logo-list .logo {
@@ -40,9 +39,20 @@
   height: 47px;
 }
 
+.container .title-text {
+  color: #409ffb;
+  font-size: var(--font-size-big);
+}
+
+.container .tip-text {
+  color: #3c3c3c;
+  font-size: var(--font-size);
+}
+
 .container .btn-login {
   width: 482px;
   height: 102px;
+  margin-top: 40px;
   background-color: var(--color-black);
 }
 

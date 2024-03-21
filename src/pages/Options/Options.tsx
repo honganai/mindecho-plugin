@@ -24,6 +24,7 @@ const Options: React.FC = () => {
   const [userinfo, setUserinfo] = useState<UserInfo>();
   const [isLogin, setIsLogin] = useState<boolean>(true);
   const [gloablState, globalDispatch] = useReducer(GlobalReducer, {
+    userInfo: {} as UserInfo,
     showAskModal: false,
     language: '',
     showAnswerModal: false,
@@ -64,7 +65,11 @@ const Options: React.FC = () => {
       if (request.isLogin === false) {
         chrome.runtime.sendMessage({ type: 'request', api: 'userinfo' }, (res) => {
           if (res) {
-            setUserinfo(res.result);
+            //setUserinfo(res.result);
+            globalDispatch({
+              type: GlobalActionType.SetUserInfo,
+              payload: res.result,
+            });
             globalDispatch({
               type: GlobalActionType.SetLanguage,
               payload: res.result.lang_type,
@@ -81,14 +86,18 @@ const Options: React.FC = () => {
     setLoading(true);
     chrome.runtime.sendMessage({ type: 'request', api: 'userinfo' }, (res) => {
       setLoading(false);
-      console.log('userinfo res:', res);
+      console.log('userInfo res:', res);
 
       handleLogin();
       if (!res || res.error) {
         console.log('用户未登陆');
       } else if (res.result) {
         console.log('content user:', res.result);
-        setUserinfo(res.result);
+        //setUserinfo(res.result);
+        globalDispatch({
+          type: GlobalActionType.SetUserInfo,
+          payload: res.result,
+        });
         globalDispatch({
           type: GlobalActionType.SetLanguage,
           payload: res.result.lang_type,
@@ -130,7 +139,7 @@ const Options: React.FC = () => {
               </>
             ) : (
               <>
-                {stepPage === 1 ? <User userinfo={userinfo} onLink={() => { setStepPage(2) }} /> :
+                {stepPage === 1 ? <User onLink={() => { setStepPage(2) }} /> :
                   stepPage === 2 ? <DataList onLink={(page: number) => { setStepPage(page) }} /> :
                     stepPage === 3 ? <Building /> : null}
                 <ModalContent type="options" />

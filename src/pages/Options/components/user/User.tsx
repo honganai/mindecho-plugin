@@ -10,6 +10,7 @@ import _ from "lodash";
 import posthog from "posthog-js";
 import logo from '@/assets/icons/logo.png';
 import GlobalContext, { ActionType, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
+import Header from '../header/header';
 
 
 export enum SubType {
@@ -182,10 +183,7 @@ const User: React.FC<Props> = ({ userinfo = {}, onLink }: Props) => {
   return (
     <div className={styles.container}>
       <Spin spinning={spinning} tip="initializing..." fullscreen="true">
-        <div className={styles['userInfo']}>
-          <img className={styles['logo']} src={logo} alt="logo" />
-          <span>Hello, {userName}</span>
-        </div>
+        <Header tip={'How about we begin by choosing the treasure trove of information you’d like to explore again?'} />
         <div className={styles['control']}>
           <Button className={cs(styles['btn'], styles['btn-browser'])} size="middle" type="primary" block onClick={() => onLink()} icon={<PlusOutlined />}>
             <span>Import Browser Data</span>

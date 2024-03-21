@@ -10,24 +10,30 @@
     position: absolute;
     top: 30px;
     left: 50px;
-    @extend %flex-center;
-
     font-size: var(--font-size);
     color: var(--font-color);
 
     .logo {
+      float: left;
       width: 100px;
       margin-right: 20px;
     }
 
-    .name {
-      font-weight: 500;
+    .userName{
+      float: left;
+      .name {
+        font-weight: 500;
+      }
+      .recommend {
+        font-size: 18px;
+        color: rgb(61, 61, 61);
+      }
     }
   }
 
   .control {
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 126px);
     flex-direction: column;
 
     @extend %flex-center;
@@ -40,6 +46,7 @@
 
       @extend %flex-center;
       @extend %btn;
+      color: var(--color-white);
     }
 
     .btn-browser {

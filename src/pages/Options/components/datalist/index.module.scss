@@ -6,21 +6,6 @@
   position: relative;
   line-height: var(--line-height);
 
-  .userInfo {
-    position: absolute;
-    top: 30px;
-    left: 50px;
-    @extend %flex-center;
-
-    font-size: var(--font-size);
-    color: var(--font-color);
-
-    .logo {
-      width: 100px;
-      margin-right: 20px;
-    }
-  }
-
   .content {
     max-width: 850px;
     height: 100vh;
@@ -67,7 +52,7 @@
     }
 
     .list-box {
-      height: 80vh;
+      height: calc(100vh - 200px);
       padding: 10px 30px;
       margin-bottom: 20px;
       background-color: #fff;

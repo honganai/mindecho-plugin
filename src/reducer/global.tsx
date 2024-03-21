@@ -1,4 +1,5 @@
 import React from 'react';
+import { UserInfo } from '@/types';
 
 /** 弹窗类型 */
 export enum enumSubscribeModalType {
@@ -35,6 +36,7 @@ export interface IReadingList {
   url: string;
 }
 export interface IState {
+  userInfo: UserInfo;
   /** 等待更新的数据 */
   upateData?: Array<IUpateData>;
   /** 历史记录 */
@@ -60,6 +62,7 @@ export interface IState {
 }
 
 export enum ActionType {
+  SetUserInfo = 'SET_USERINFO',
   /** 设置upateData */
   SetUpateData = 'SET_UPATEDATA',
   /** 设置history */
@@ -82,6 +85,7 @@ export enum ActionType {
 
 export type IAction =
   ISetUpateData
+  | ISetUserInfo
   | ISetHistory
   | ISetBookMarks
   | ISetReadingList
@@ -98,6 +102,10 @@ export type IAction =
 export interface ISetUpateData {
   type: ActionType.SetUpateData;
   payload: Array<IUpateData>;
+}
+export interface ISetUserInfo {
+  type: ActionType.SetUserInfo;
+  payload: UserInfo;
 }
 export interface ISetHistory {
   type: ActionType.SetHistory;
@@ -145,6 +153,12 @@ export interface ISetQuestion {
 
 export function reducer(state: IState, action: IAction): IState {
   switch (action.type) {
+    case ActionType.SetUserInfo:
+      return {
+        ...state,
+        userInfo: action.payload,
+      };
+
     case ActionType.SetUpateData:
       return {
         ...state,

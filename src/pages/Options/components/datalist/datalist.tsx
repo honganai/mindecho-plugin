@@ -7,8 +7,8 @@ import cs from 'classnames';
 import styles from './index.module.scss';
 import _ from "lodash";
 import posthog from "posthog-js";
-import logo from '@/assets/icons/logo.png';
 import GlobalContext, { ActionType, IUpateData, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
+import Header from '../header/header';
 
 
 export enum SubType {
@@ -29,6 +29,7 @@ interface IMergeData {
   user_used_time: string;
   origin_info: IBookmarks | IHistory | IReadingList;
   status?: 1 | 0;
+  selected?: boolean;
 }
 interface Props {
   userinfo?: any;
@@ -38,12 +39,17 @@ interface Props {
 const User: React.FC<Props> = ({ onLink }) => {
   const logoutText = chrome.i18n.getMessage('logout');
   const { state: { upateData, bookmarks: bookmarksData }, dispatch: globalDispatch } = useContext(GlobalContext);
+
+  //选中的所有key集合、和初始数据集合
+  const [initial, setInitial] = useState<boolean>(true);
+  const [allCheckedKeys, setAllCheckedKeys] = useState<string[]>([]);
+  const [allUserUrl, setAllUserUrl] = useState<IMergeData[]>([]);
+  //列表展示数据
   const [userUrl, setUserUrl] = useState<IMergeData[]>([]);
   const [treeData, setTreeData] = useState<TreeDataNode[]>([]);
   const [expandedKeys, setExpandedKeys] = useState<React.Key[]>([]);
   const [keyList, setKeyList] = useState<string[]>(['bookmarks', 'readinglist', 'history']);
   const [checkedKeys, setCheckedKeys] = useState<React.Key[]>([`parent-${keyList[0]}`, `parent-${keyList[1]}`, `parent-${keyList[2]}`]);
-  //const [selectedKeys, setSelectedKeys] = useState<React.Key[]>(['bookmarks']);
   const [autoExpandParent, setAutoExpandParent] = useState<boolean>(true);
   const [checkedCount, setCheckedCount] = useState<number>(0);
   const [searchWord, setSearchWord] = useState<string>('');
@@ -57,15 +63,20 @@ const User: React.FC<Props> = ({ onLink }) => {
   };
 
   const onCheck = (checkedKeysValue: React.Key[], event: any) => {
-    //console.log('onCheck', checkedKeysValue, event);
+    console.log('onCheck', checkedKeysValue, event);
     setCheckedKeys(checkedKeysValue);
-    setCheckedCount(checkedKeysValue.length)
+    selectChange(checkedKeysValue);
   };
 
-  // const onSelect = (selectedKeysValue: React.Key[], info: any) => {
-  //   console.log('onSelect', info);
-  //   setSelectedKeys(selectedKeysValue);
-  // };
+  const selectChange = (checkedKeysValue: React.Key[]) => {
+    const allSelect = allUserUrl;
+    userUrl.forEach((item) => {
+      const ischecked = checkedKeysValue.some(itemKeys => itemKeys.split('-')[1] == item.id)
+      allSelect[allSelect.findIndex(allSelectItem => allSelectItem.id === item.id)].selected = ischecked ? true : false;
+    });
+    setAllUserUrl(allSelect);
+    setCheckedCount(allSelect.filter(item => item.selected).length)
+  }
 
   useEffect(() => {
     getUserUrl()
@@ -86,15 +97,17 @@ const User: React.FC<Props> = ({ onLink }) => {
 
   const parsingData = (data: any) => {
     const reusltData = [
-      { title: 'Bookmarks', key: `parent-${keyList[0]}`, children: [] as any[] },
-      { title: 'Reading List', key: `parent-${keyList[1]}`, children: [] as any[] },
-      { title: 'History', key: `parent-${keyList[2]}`, children: [] as any[] },
+      { title: 'Bookmarks', key: `parent-${keyList[0]}`, children: [] as any[], disableCheckbox: true },
+      { title: 'Reading List', key: `parent-${keyList[1]}`, children: [] as any[], disableCheckbox: true },
+      { title: 'History', key: `parent-${keyList[2]}`, children: [] as any[], disableCheckbox: true },
     ];
+    const currentCheckeds: string[] = [];
     const bookmarksMap = new Map<string, Array<any>>();
     data.forEach((item: any) => {
-      item.status = 1;
+      item.selected = false;
       switch (item.type) {
         case 'bookmark':
+          reusltData[0].disableCheckbox = false;
           if (!bookmarksMap.has(item.parentId)) {
             bookmarksMap.set(item.parentId, []);
           }
@@ -108,6 +121,7 @@ const User: React.FC<Props> = ({ onLink }) => {
           break;
 
         case 'readinglist':
+          reusltData[1].disableCheckbox = false;
           reusltData[1].children?.push({
             title: item.title,
             key: keyList[1] + '-' + item.id,
@@ -116,6 +130,7 @@ const User: React.FC<Props> = ({ onLink }) => {
           break;
 
         case 'history':
+          reusltData[2].disableCheckbox = false;
           reusltData[2].children?.push({
             title: item.title,
             key: keyList[2] + '-' + item.id,
@@ -123,21 +138,34 @@ const User: React.FC<Props> = ({ onLink }) => {
           });
           break;
       }
+      if ((initial && item.status > 1) || (!initial && isChecked(item.id))) {
+        item.selected = true;
+        currentCheckeds.push(item.type === 'bookmark' ? keyList[0] + '-' + item.id : item.type === 'readinglist' ? keyList[1] + '-' + item.id : keyList[2] + '-' + item.id)
+      }
     });
-    const bookmarks = parsingBookMarks(bookmarksData, bookmarksMap)
+    const bookmarks: TreeDataNode = parsingBookMarks(bookmarksData, bookmarksMap)
     reusltData[0].children?.push(...bookmarks.children || []);
-    setUserUrl(data)
-    setCheckedCount(data.length)
     setTreeData(reusltData)
-    setLoading(false);
     onExpand([`parent-${keyList[0]}`, `parent-${keyList[1]}`])
+
+    if (initial) {
+      setAllUserUrl(data);
+      setAllCheckedKeys(currentCheckeds);
+      setCheckedCount(currentCheckeds.length);
+      setInitial(false);
+    }
+    setUserUrl(data);
+    setCheckedKeys(currentCheckeds);
+
+    setLoading(false);
   }
 
   const parsingBookMarks = (data: any, map: Map<string, any>): TreeDataNode => {
     const result: TreeDataNode = { title: data.title, key: 'parent-' + data.id, children: [] }
     for (const item of data.children || []) {
       if (item.children?.length > 0) {
-        result?.children?.push(parsingBookMarks(item, map))
+        const res = parsingBookMarks(item, map) as any;
+        res.children.length > 0 && result?.children?.push(res)
       }
     }
     if (map.has(data.id)) {
@@ -149,10 +177,10 @@ const User: React.FC<Props> = ({ onLink }) => {
   const onChange = () => { }
 
   const onImport = () => {
-    const data = userUrl.map((item) => {
+    const data = allUserUrl.map((item) => {
       return {
         url: item.url,
-        status: checkedKeys.some(checkedItem => checkedItem.split('-')[1] == item.id) ? 1 : 0,
+        status: item.selected ? 1 : 0,
       }
     })
     globalDispatch({
@@ -160,6 +188,12 @@ const User: React.FC<Props> = ({ onLink }) => {
       payload: data as Array<IUpateData> || [],
     });
     onLink(3)
+  }
+
+  const isChecked = (key: string | number) => {
+
+    const result = allUserUrl.filter(item => item.id === key);
+    return result[0]?.selected || false;
   }
 
   const searchKeyWord = (e: any) => {
@@ -171,9 +205,10 @@ const User: React.FC<Props> = ({ onLink }) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles['userInfo']}>
+      {/* <div className={styles['userInfo']}>
         <img className={styles['logo']} src={logo} alt="logo" />
-      </div>
+      </div> */}
+      <Header tip={'Now it’s time to pick the gems for your very own discovery vault! Echo is all geared up to gather the goodies for you. We suggest skipping over the shortcuts and personal nooks, focusing instead on those content-rich spots you’ll love to revisit.'} />
       <div className={styles['content']}>
         <div className={styles['header']}>
           <div className={styles['back']} onClick={() => onLink(1)}>

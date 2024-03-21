@@ -7,10 +7,10 @@
   letter-spacing: var(--letter-spacing-1);
 }
 
-.container .userInfo, .container .control, .container .control .btn {
+.container .control, .container .control .btn {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .container {
@@ -29,17 +29,27 @@
 }
 
 .container .userInfo .logo {
+  float: left;
   width: 100px;
   margin-right: 20px;
 }
 
-.container .userInfo .name {
+.container .userInfo .userName {
+  float: left;
+}
+
+.container .userInfo .userName .name {
   font-weight: 500;
+}
+
+.container .userInfo .userName .recommend {
+  font-size: 18px;
+  color: #3d3d3d;
 }
 
 .container .control {
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 126px);
   flex-direction: column;
 }
 
@@ -48,6 +58,7 @@
   height: 97px;
   margin: 20px 0;
   font-size: var(--btn-font-size);
+  color: var(--color-white);
 }
 
 .container .control .btn-browser {

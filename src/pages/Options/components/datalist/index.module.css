@@ -1,27 +1,8 @@
-.container .userInfo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .container {
   width: 100vw;
   min-height: 100vh;
   position: relative;
   line-height: var(--line-height);
-}
-
-.container .userInfo {
-  position: absolute;
-  top: 30px;
-  left: 50px;
-  font-size: var(--font-size);
-  color: var(--font-color);
-}
-
-.container .userInfo .logo {
-  width: 100px;
-  margin-right: 20px;
 }
 
 .container .content {
@@ -71,7 +52,7 @@
 }
 
 .container .content .list-box {
-  height: 80vh;
+  height: calc(100vh - 200px);
   padding: 10px 30px;
   margin-bottom: 20px;
   background-color: #fff;

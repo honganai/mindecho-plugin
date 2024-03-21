@@ -11,7 +11,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 20px;
 
         .logo {
             margin: 0 10px;
@@ -27,9 +26,20 @@
         }
     }
 
+    .title-text {
+        color: rgb(64, 159, 251);
+        font-size: var(--font-size-big);
+    }
+
+    .tip-text {
+        color: rgb(60, 60, 60);
+        font-size: var(--font-size);
+    }
+
     .btn-login {
         width: 482px;
         height: 102px;
+        margin-top: 40px;
         background-color: var(--color-black);
 
         @extend %btn;
