@@ -18,6 +18,7 @@ interface Props {
 const Header: React.FC<Props> = ({ tip }: Props) => {
   const logoutText = chrome.i18n.getMessage('logout');
   const { state: { userInfo }, dispatch: globalDispatch } = useContext(GlobalContext);
+  console.log(1111, userInfo)
 
   return (
     <div className={styles['userInfo']}>

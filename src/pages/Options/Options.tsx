@@ -66,7 +66,7 @@ const Options: React.FC = () => {
       if (request.isLogin === false) {
         chrome.runtime.sendMessage({ type: 'request', api: 'userinfo' }, (res) => {
           if (res) {
-            //setUserinfo(res.result);
+            setUserinfo(res.result);
             globalDispatch({
               type: GlobalActionType.SetUserInfo,
               payload: res.result,
@@ -94,7 +94,7 @@ const Options: React.FC = () => {
         console.log('用户未登陆');
       } else if (res.result) {
         console.log('content user:', res.result);
-        //setUserinfo(res.result);
+        setUserinfo(res.result);
         globalDispatch({
           type: GlobalActionType.SetUserInfo,
           payload: res.result,
