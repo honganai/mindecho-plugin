@@ -53,12 +53,13 @@
       padding: 20px 0 40px;
 
       .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 10px;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        // margin-bottom: 10px;
 
         p {
+          text-align: center;
           font-size: var(--font-size);
           font-weight: 700;
           color: #1B6593;

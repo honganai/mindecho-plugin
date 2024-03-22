@@ -6,9 +6,9 @@ import { baseUrl, welcomeUrl } from './config';
 import ReadingTime from './readingTime';
 import { EXCLUDE_URLS, setExtensionUpdated } from '@/constants';
 
-chrome.commands.onCommand.addListener((command) => {
-  console.log(`Command "${command}" triggered`);
-});
+// chrome.commands.onCommand.addListener((command) => {
+//   console.log(`Command "${command}" triggered`);
+// });
 
 chrome.runtime.onMessage.addListener(handleMessages);
 chrome.action.onClicked.addListener(handleActiveClick);
