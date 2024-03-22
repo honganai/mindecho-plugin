@@ -7,57 +7,88 @@
   line-height: var(--line-height);
 
   .content {
-    max-width: 850px;
+    width: 100%;
     height: 100vh;
-    margin: 0 auto;
-    padding: 20px 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
+    .left {
+      flex: 1;
+      @extend %flex-center;
 
       .back {
         font-size: var(--icon-font-size);
         cursor: pointer;
       }
+    }
 
-      p {
-        font-size: var(--font-size);
-        font-weight: 700;
-        color: #1B6593;
-      }
+    .right {
+      flex: 1;
+      @extend %flex-center;
+      flex-direction: column;
 
       .import-btn {
         width: 236px;
         height: 49px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+      }
+
+      .auto-add {
+        color: rgb(109, 109, 109);
+        @extend %flex-center;
+        
+        span {
+          margin-left: 5px;
+        }
       }
     }
 
-    .control-box {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
+    .center {
+      width: 850px;
+      height: 100vh;
+      padding: 20px 0 40px;
 
-      .search {
-        width: 250px;
-        height: 37;
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        p {
+          font-size: var(--font-size);
+          font-weight: 700;
+          color: #1B6593;
+        }
       }
 
-      .select {
-        display: none
-      }
-    }
+      .control-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
 
-    .list-box {
-      height: calc(100vh - 200px);
-      padding: 10px 30px;
-      margin-bottom: 20px;
-      background-color: #fff;
-      border-radius: 15px;
-      overflow: scroll;
+        .search {
+          width: 250px;
+          height: 37;
+        }
+
+        .select {
+          display: none
+        }
+      }
+
+      .list-box {
+        height: calc(100vh - 200px);
+        padding: 10px 30px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        border-radius: 15px;
+        overflow: scroll;
+      }
     }
   }
 }

@@ -30,7 +30,7 @@ const Api = {
   userinfo: () =>
     http.get(`/api/v1/user/info`).then((res) => {
       // 额外保存用户信息
-      res.json().then(res => {
+      res.clone().json().then(res => {
         chrome.storage.local
         .set({
           userInfo: res.result || null,

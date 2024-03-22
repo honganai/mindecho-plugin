@@ -1,6 +1,6 @@
 import React, { useEffect, useContext, useState } from 'react';
 import dayjs from 'dayjs';
-import { Button, Input, Checkbox, Tree, Spin, message } from 'antd';
+import { Button, Input, Checkbox, Tree, Spin, message, Switch } from 'antd';
 import type { TreeDataNode } from 'antd';
 import { ArrowLeftOutlined, SearchOutlined } from '@ant-design/icons';
 import cs from 'classnames';
@@ -102,6 +102,7 @@ const User: React.FC<Props> = ({ onLink }) => {
       { title: 'History', key: `parent-${keyList[2]}`, children: [] as any[], disableCheckbox: true },
     ];
     const currentCheckeds: string[] = [];
+    const hasSelected = data.some((item: any) => item.status > 1);
     const bookmarksMap = new Map<string, Array<any>>();
     data.forEach((item: any) => {
       item.selected = false;
@@ -138,7 +139,7 @@ const User: React.FC<Props> = ({ onLink }) => {
           });
           break;
       }
-      if ((initial && item.status > 1) || (!initial && isChecked(item.id))) {
+      if ((initial && !hasSelected) || (initial && item.status > 1) || (!initial && isChecked(item.id))) {
         item.selected = true;
         currentCheckeds.push(item.type === 'bookmark' ? keyList[0] + '-' + item.id : item.type === 'readinglist' ? keyList[1] + '-' + item.id : keyList[2] + '-' + item.id)
       }
@@ -210,36 +211,46 @@ const User: React.FC<Props> = ({ onLink }) => {
       </div> */}
       <Header tip={'Now it’s time to pick the gems for your very own discovery vault! Echo is all geared up to gather the goodies for you. We suggest skipping over the shortcuts and personal nooks, focusing instead on those content-rich spots you’ll love to revisit.'} />
       <div className={styles['content']}>
-        <div className={styles['header']}>
+        <div className={styles['left']}>
           <div className={styles['back']} onClick={() => onLink(1)}>
             <ArrowLeftOutlined />
           </div>
-          <p>BookMarks & Reading Lists</p>
+        </div>
+        <div className={styles['center']}>
+          <div className={styles['header']}>
+            <p>BookMarks & Reading Lists</p>
+          </div>
+          <div className={styles['control-box']}>
+            <Input className={styles['search']} placeholder="Find items by keywords" prefix={<SearchOutlined />} onPressEnter={searchKeyWord} />
+            <Checkbox className={styles['select']} onChange={onChange}>Select/Deselect All Shown</Checkbox>
+          </div>
+          <Spin spinning={loading} tip='Loading...'>
+            <div className={styles['list-box']}>
+              <Tree
+                checkable
+                onExpand={onExpand}
+                expandedKeys={expandedKeys}
+                autoExpandParent={autoExpandParent}
+                onCheck={onCheck}
+                checkedKeys={checkedKeys}
+                //onSelect={onSelect}
+                //selectedKeys={selectedKeys}
+                treeData={treeData}
+              />
+            </div>
+          </Spin>
+
+          <p>* Data on the current page is local only. No URLs will be synchronized unless selected and submitted in further steps.</p>
+        </div>
+        <div className={styles['right']}>
           <Button className={styles['import-btn']} size="middle" type="primary" block onClick={onImport}>
             <span>Import {checkedCount} Items</span>
           </Button>
+          <p className={styles['auto-add']}>
+            <Switch defaultChecked onChange={onChange} />
+            <span>Auto-add New Items</span>
+          </p>
         </div>
-        <div className={styles['control-box']}>
-          <Input className={styles['search']} placeholder="Find items by keywords" prefix={<SearchOutlined />} onPressEnter={searchKeyWord} />
-          <Checkbox className={styles['select']} onChange={onChange}>Select/Deselect All Shown</Checkbox>
-        </div>
-        <Spin spinning={loading} tip='Loading...'>
-          <div className={styles['list-box']}>
-            <Tree
-              checkable
-              onExpand={onExpand}
-              expandedKeys={expandedKeys}
-              autoExpandParent={autoExpandParent}
-              onCheck={onCheck}
-              checkedKeys={checkedKeys}
-              //onSelect={onSelect}
-              //selectedKeys={selectedKeys}
-              treeData={treeData}
-            />
-          </div>
-        </Spin>
-
-        <p>* Data on the current page is local only. No URLs will be synchronized unless selected and submitted in further steps.</p>
       </div>
     </div>
   );

@@ -18,13 +18,12 @@ interface Props {
 const Header: React.FC<Props> = ({ tip }: Props) => {
   const logoutText = chrome.i18n.getMessage('logout');
   const { state: { userInfo }, dispatch: globalDispatch } = useContext(GlobalContext);
-  console.log(1111, userInfo)
 
   return (
     <div className={styles['userInfo']}>
       <img className={styles['logo']} src={logo} alt="logo" />
       <div className={styles['userName']}>
-        <p className={styles['name']}>Hello, {userInfo.username || '-'}</p>
+        <p className={styles['name']}>Hello, {userInfo?.username || '-'}</p>
         <p className={styles['recommend']}>{tip || ''}</p>
       </div>
     </div>

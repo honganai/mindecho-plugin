@@ -84,6 +84,11 @@ const Options: React.FC = () => {
   };
 
   useEffect(() => {
+    //测试
+    // setLoading(false);
+    // setStepPage(3);
+    // setIsLogin(false);
+    // return () => { };
     setLoading(true);
     chrome.runtime.sendMessage({ type: 'request', api: 'userinfo' }, (res) => {
       setLoading(false);

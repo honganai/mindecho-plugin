@@ -31,18 +31,14 @@ interface IMergeData {
   origin_info: IBookmarks | IHistory | IReadingList;
 }
 interface Props {
-  userinfo?: any;
   onLink: Function;
 }
 
-const User: React.FC<Props> = ({ userinfo = {}, onLink }: Props) => {
+const User: React.FC<Props> = ({ onLink }: Props) => {
   const [spinning, setSpinning] = React.useState<boolean>(true);
 
   const logoutText = chrome.i18n.getMessage('logout');
-  const userName = userinfo.username || '-';
-  const { subscription = {} } = userinfo;
   const { state: { history, bookmarks, readinglist }, dispatch: globalDispatch } = useContext(GlobalContext);
-  console.log('🚀 ~ file: User.tsx:21 ~ subscription:', subscription);
 
   useEffect(() => {
     getHistory();
