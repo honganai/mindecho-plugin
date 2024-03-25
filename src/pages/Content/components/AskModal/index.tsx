@@ -4,7 +4,7 @@ import { MoreOutlined, CheckCircleOutlined, CloseOutlined } from '@ant-design/ic
 import { getDocument } from '@/utils/common.util';
 import GlobalContext, { ActionType as GlobalActionType } from '@/reducer/global';
 import { SetInterval } from '@/utils/common.util';
-import _ from 'lodash';
+import _, { set } from 'lodash';
 import EnterImage from '@/assets/img/enter.svg';
 import styles from './index.module.scss';
 import { render } from 'react-dom';
@@ -19,33 +19,31 @@ interface IProgressData {
   count: number;
   pended: number;
 }
-interface IProps {
-  type?: 'options' | 'webPage'
-}
 
-const AskModal: React.FC<IProps> = ({ type = 'webPage' }) => {
+const AskModal: React.FC = () => {
   const { state: globalState, dispatch: globalDispatch } = useContext(GlobalContext);
   const { showAskModal, showAnswerModal, progress } = globalState;
   const [example, setExample] = useState<IExample>({ title: '', url: '' });
   const [progressData, setProgressData] = useState<Array<IProgressData>>([])
-  const [showSettings, setShowSettings] = useState(true);
+  const [showSettings, setShowSettings] = useState(false);
   const [autoAdd, setAutoAdd] = useState(true);
+  const [timer, setTimer] = useState<NodeJS.Timeout>();
 
   useEffect(() => {
     if (showAskModal) {
       setTimeout(() => {
         getDocument().getElementById('mindecho-ask-input')?.focus();
       }, 500);
+      const intervalId = setInterval(() => {
+        getProgress();
+      }, 5000);
+      setTimer(intervalId);
+    } else {
+      clearInterval(timer);
     }
   }, [showAskModal]);
 
-  SetInterval(() => {
-    type === 'webPage' && getProgress();
-  }, 5000)
-
   const getProgress = () => {
-    console.log(111111, type)
-
     chrome.runtime.sendMessage({ type: 'request', api: 'user_url_status' }, (res) => {
       globalDispatch({
         type: GlobalActionType.SetProgress,
@@ -66,8 +64,7 @@ const AskModal: React.FC<IProps> = ({ type = 'webPage' }) => {
         url,
       })
     });
-    type === 'webPage' && getProgress()
-
+    getProgress();
     chrome.storage.local.get(['mindecho-auto-add']).then((result: any) => {
       setAutoAdd(result['mindecho-auto-add'])
     });
@@ -80,11 +77,6 @@ const AskModal: React.FC<IProps> = ({ type = 'webPage' }) => {
 
   useEffect(() => {
     if (_.isArray(progress?.data)) {
-      // let resData = {
-      //   bookmark: { count: 0, pended: 0 },
-      //   readinglist: { count: 0, pended: 0 },
-      //   history: { count: 0, pended: 0 },
-      // }
       let resData = [
         { title: 'Bookmarks', count: 0, pended: 0 },
         { title: 'Reading List', count: 0, pended: 0 },

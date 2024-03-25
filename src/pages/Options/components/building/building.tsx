@@ -16,26 +16,33 @@ const Building: React.FC = () => {
   const { state: { upateData, progress }, dispatch: globalDispatch } = useContext(GlobalContext);
   const [precent, setPrecent] = useState(0);
   const [done, setDone] = useState(false);
-  const [monitor, setMonitor] = useState(false);
   const [waitTime, setWaitTime] = useState(0);
   const TIMEOUT = 300;
+  const [timer, setTimer] = useState<NodeJS.Timeout>();
+
+  // useEffect(() => {
+  //   //测试
+  //   //setDone(true)
+  //   upateUserUrl();
+  // }, []);
 
   useEffect(() => {
-    //测试
-    //setDone(true)
     upateUserUrl();
-  }, []);
+
+    const intervalId = setInterval(() => {
+      getProgress();
+    }, 5000);
+
+    setTimer(intervalId)
+
+    return () => clearInterval(intervalId); // Ensure the interval is cleared when the component unmounts
+  }, [upateData, waitTime]);
 
   const upateUserUrl = () => {
     chrome.runtime.sendMessage({ type: 'request', api: 'update_user_url', body: upateData }, (res) => {
       console.log('upateUserUrl res:', res);
-      setMonitor(true)
     });
   }
-
-  SetInterval(() => {
-    monitor && getProgress();
-  }, 5000)
 
   const getProgress = () => {
     setWaitTime(waitTime + 5);
@@ -64,6 +71,7 @@ const Building: React.FC = () => {
       if (waitTime < TIMEOUT && pending) {
         setPrecent(Math.ceil((count - pending) / count * 100))
       } else {
+        clearInterval(timer)
         setPrecent(100)
         setTimeout(() => { setDone(true) }, 1000)
       }

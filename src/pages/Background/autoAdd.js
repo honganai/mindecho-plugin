@@ -2,24 +2,24 @@
 import dayjs from 'dayjs';
 
 const startAutoAdd = async () => {
-    const history = await getHistory();
+    //const history = await getHistory();
     const bookmarks = await getBookmarks();
     const readinglist = await getReadingList();
     const data = [];
 
-    history?.forEach((item) => {
-        data.push({
-            title: item.title,
-            url: item.url,
-            type: 'history',
-            user_create_time: dayjs(item.lastVisitTime).format('YYYY-MM-DD HH:mm:ss'),
-            user_used_time: dayjs(item.lastVisitTime).format('YYYY-MM-DD HH:mm:ss'),
-            node_id: item.id,
-            node_index: '',
-            parentId: '',
-            origin_info: item,
-        });
-    });
+    // history?.forEach((item) => {
+    //     data.push({
+    //         title: item.title,
+    //         url: item.url,
+    //         type: 'history',
+    //         user_create_time: dayjs(item.lastVisitTime).format('YYYY-MM-DD HH:mm:ss'),
+    //         user_used_time: dayjs(item.lastVisitTime).format('YYYY-MM-DD HH:mm:ss'),
+    //         node_id: item.id,
+    //         node_index: '',
+    //         parentId: '',
+    //         origin_info: item,
+    //     });
+    // });
     readinglist?.forEach((item) => {
         data.push({
             title: item.title,
