@@ -5,7 +5,7 @@ process.env.ASSET_PATH = '/';
 // process.env.API_URL = 'https://localhost:8000';
 // process.env.API_URL = 'https://api.mindecho.app'
 //process.env.API_URL = 'https://pr.hongan.live';
-process.env.API_URL = 'https://api-test.mindecho.app';
+process.env.API_URL = 'https://me.hongan.live';
 process.env.POSTHOG_KEY = 'phc_hUcXh8vBONcqDx2Z2SyLpa76IpVhnFnpUOhXBfdPaeP';
 
 const fs = require('fs');

@@ -62,11 +62,15 @@ const Building: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles['top']}>
-        <img className={styles['gif']} src={Gif} alt="gif" />
-        <p className={styles['direction']}>From the Extension Bar Above</p>
-        <img className={styles['git-arrow']} src={GifArrow} alt="" />
-      </div>
+      {
+        done && (
+          <div className={styles['top']}>
+            <img className={styles['gif']} src={Gif} alt="gif" />
+            <p className={styles['direction']}>From the Extension Bar Above</p>
+            <img className={styles['git-arrow']} src={GifArrow} alt="" />
+          </div>
+        )
+      }
       <div className={styles['content']}>
         <img className={`${styles['logo']} ${styles['logo-icon']}`} src={Logo} />
         {
@@ -88,17 +92,20 @@ const Building: React.FC = () => {
           )
         }
       </div>
-      <div className={styles['bottom']}>
-        <img src={QuestArrow} alt="" />
-        <span className={styles['direction']}>Keyboard Stroke ShortCuts</span>
-        <p className={styles['doneTip']}>
-          Press <strong>Command + E</strong> on Mac
-        </p>
-        <p className={styles['doneTip']}>
-          Press <strong>Ctrl + E</strong> on PC
-        </p>
-      </div>
-
+      {
+        done && (
+          <div className={styles['bottom']}>
+            <img src={QuestArrow} alt="" />
+            <span className={styles['direction']}>Keyboard Stroke ShortCuts</span>
+            <p className={styles['doneTip']}>
+              Press <strong>Command + E</strong> on Mac
+            </p>
+            <p className={styles['doneTip']}>
+              Press <strong>Ctrl + E</strong> on PC
+            </p>
+          </div>
+        )
+      }
     </div>
 
   );
