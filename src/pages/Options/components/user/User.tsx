@@ -47,26 +47,29 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
   }, []);
 
   useEffect(() => {
-    if (history && bookmarks && readinglist) {
+    // @koman 暂时隐藏history
+    //if (history && bookmarks && readinglist) {
+    if ( bookmarks && readinglist) {
       mergeData()
     }
   }, [history, bookmarks, readinglist]);
 
   const mergeData = () => {
     const data = [] as Array<IMergeData>;
-    history?.forEach((item) => {
-      data.push({
-        title: item.title,
-        url: item.url,
-        type: 'history',
-        user_create_time: dayjs(item.lastVisitTime).format('YYYY-MM-DD HH:mm:ss'),
-        user_used_time: dayjs(item.lastVisitTime).format('YYYY-MM-DD HH:mm:ss'),
-        node_id: item.id,
-        node_index: '',
-        parentId: '',
-        origin_info: item,
-      });
-    });
+    //@koman 暂时隐藏history
+    // history?.forEach((item) => {
+    //   data.push({
+    //     title: item.title,
+    //     url: item.url,
+    //     type: 'history',
+    //     user_create_time: dayjs(item.lastVisitTime).format('YYYY-MM-DD HH:mm:ss'),
+    //     user_used_time: dayjs(item.lastVisitTime).format('YYYY-MM-DD HH:mm:ss'),
+    //     node_id: item.id,
+    //     node_index: '',
+    //     parentId: '',
+    //     origin_info: item,
+    //   });
+    // });
     readinglist?.forEach((item) => {
       data.push({
         title: item.title,
@@ -112,17 +115,18 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
 
   const getHistory = () => {
     // 获取最近4小时的记录
-    let microsecondsPerWeek = 1000 * 60 * 60 * 4;
+    let microsecondsPerWeek = 1000 * 60 * 60 * 1;
     let oneWeekAgo = new Date().getTime() - microsecondsPerWeek;
     chrome.history.search(
       { text: '', startTime: oneWeekAgo },
       (res) => {
         console.log('history res:', res);
-        res = res || [];
-        globalDispatch({
-          type: ActionType.SetHistory,
-          payload: res as Array<IHistory> || [],
-        });
+        // @koman 暂时隐藏history
+        // res = res || [];
+        // globalDispatch({
+        //   type: ActionType.SetHistory,
+        //   payload: res as Array<IHistory> || [],
+        // });
       }
     )
   }
