@@ -104,7 +104,7 @@ const User: React.FC<Props> = ({ onLink }) => {
     const reusltData = [
       { title: 'Bookmarks', key: `parent-${keyList[0]}`, children: [] as any[], disableCheckbox: true },
       { title: 'Reading List', key: `parent-${keyList[1]}`, children: [] as any[], disableCheckbox: true },
-      { title: 'History', key: `parent-${keyList[2]}`, children: [] as any[], disableCheckbox: true },
+      // { title: 'History', key: `parent-${keyList[2]}`, children: [] as any[], disableCheckbox: true },
     ];
     const currentCheckeds: string[] = [];
     const hasSelected = data.some((item: any) => item.status > 1);
@@ -134,15 +134,15 @@ const User: React.FC<Props> = ({ onLink }) => {
             url: item.url
           });
           break;
-
-        case 'history':
-          reusltData[2].disableCheckbox = false;
-          reusltData[2].children?.push({
-            title: item.title,
-            key: keyList[2] + '-' + item.id,
-            url: item.url
-          });
-          break;
+        //@koman 暂时隐藏掉history
+        // case '  history':
+        //   reusltData[2].disableCheckbox = false;
+        //   reusltData[2].children?.push({
+        //     title: item.title,
+        //     key: keyList[2] + '-' + item.id,
+        //     url: item.urlyarn
+        //   });
+        //   break;
       }
       if ((initial && !hasSelected) || (initial && item.status > 1) || (!initial && isChecked(item.id))) {
         item.selected = true;
