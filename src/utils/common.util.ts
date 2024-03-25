@@ -1,6 +1,7 @@
 import dayjs from 'dayjs';
 import { message } from 'antd';
 import { ThinkingCopyObject } from '@/types';
+import {useEffect, useRef} from 'react';
 
 /**
  * @description: 格式化时间为 MM/DD
@@ -54,3 +55,20 @@ export const splitTextRow = (text?: string) => {
       .filter((t: string) => !!t) || []
   );
 };
+
+
+export const SetInterval = (callback: Function, delay: number = 1000) => {
+  const Ref = useRef<any>();
+
+  Ref.current = () => {
+    return callback();
+  }
+  useEffect(() => {
+    const timer = setInterval(() => {
+      Ref.current();
+    }, delay);
+    return () => {
+      clearInterval(timer);
+    }
+  }, [delay]);
+}

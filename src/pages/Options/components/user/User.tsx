@@ -135,29 +135,7 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
         type: ActionType.SetBookMarks,
         payload: tree[0] as IBookmarks || {},
       });
-
-      // const bookmarkList = document.getElementById('bookmarkList');
-      // displayBookmarks(tree[0].children, bookmarkList);
     });
-
-  }
-
-  function displayBookmarks(nodes: any, parentNode: any) {
-    for (const node of nodes) {
-      // If the node is a bookmark, create a list item and append it to the parent node
-      if (node.url) {
-        const listItem = document.createElement('li');
-        listItem.textContent = node.title;
-        parentNode.appendChild(listItem);
-      }
-
-      // If the node has children, recursively display them
-      if (node.children) {
-        const sublist = document.createElement('ul');
-        parentNode.appendChild(sublist);
-        displayBookmarks(node.children, sublist);
-      }
-    }
   }
 
   const getReadingList = async () => {

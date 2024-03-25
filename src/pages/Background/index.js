@@ -4,7 +4,8 @@ import Api from './api';
 import { sendsocketMessage, connect, disconnect } from './ws';
 import { baseUrl, welcomeUrl } from './config';
 import ReadingTime from './readingTime';
-import { EXCLUDE_URLS, setExtensionUpdated } from '@/constants';
+import { EXCLUDE_URLS, setExtensionUpdated, setAutoAdd } from '@/constants';
+import './autoAdd';
 
 // chrome.commands.onCommand.addListener((command) => {
 //   console.log(`Command "${command}" triggered`);
@@ -26,6 +27,8 @@ function handleMessages(message, sender, sendResponse) {
     sendsocketMessage(type, message, sender, sendResponse);
   } else if (type === 'openSettings') {
     openSettings();
+  } else if (type === 'setAutoAddStatus') {
+    setAutoAdd(message.status);
   }
   return true;
 }

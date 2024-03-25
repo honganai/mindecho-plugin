@@ -79,7 +79,7 @@ const App: React.FC<IProps> = ({ type = 'webPage' }) => {
     <>
       {flatRoot && (
         <>
-          {createPortal(<AskModal />, flatRoot)}
+          {createPortal(<AskModal type={type} />, flatRoot)}
           {createPortal(<AnswerModal />, flatRoot)}
         </>
       )}

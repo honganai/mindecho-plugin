@@ -35,6 +35,14 @@ export interface IReadingList {
   hasBeenRead: boolean;
   url: string;
 }
+export interface IProgressItem {
+  count: number;
+  status: 0 | 1 | 2 | 3 | 4 | 5;
+}
+export interface IProgress {
+  data: Array<IProgressItem>;
+  getIng: boolean;
+}
 export interface IState {
   /** 等待更新的数据 */
   upateData?: Array<IUpateData>;
@@ -62,6 +70,8 @@ export interface IState {
   isLogin: boolean;
   /** 用户信息 */
   userInfo?: UserInfo | null;
+  /** 上传进度 */
+  progress?: IProgress | null;
 }
 
 export enum ActionType {
@@ -85,6 +95,7 @@ export enum ActionType {
   SetMarkdownStream = 'SetMarkdownStream',
   SetIsLogin = 'SetIsLogin',
   SetUserInfo = 'SetUserInfo',
+  SetProgress = 'SetProgress',
 }
 
 export type IAction =
@@ -102,8 +113,14 @@ export type IAction =
   | ISetRequestEnd
   | ISetMarkdownStream
   | ISetIsLogin
+  | ISetProgress
   | ISetUserInfo;
 
+
+export interface ISetProgress {
+  type: ActionType.SetProgress;
+  payload: IProgress | null;
+}
 export interface ISetUserInfo {
   type: ActionType.SetUserInfo;
   payload: UserInfo | null;
@@ -164,6 +181,12 @@ export interface ISetQuestion {
 
 export function reducer(state: IState, action: IAction): IState {
   switch (action.type) {
+    case ActionType.SetProgress:
+      return {
+        ...state,
+        progress: action.payload,
+      };
+
     case ActionType.SetUserInfo:
       return {
         ...state,

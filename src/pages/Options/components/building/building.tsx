@@ -7,11 +7,13 @@ import Gif from '@/assets/icons/control.gif';
 import QuestArrow from '@/assets/icons/quest_arrow.png';
 import LogoText from '@/assets/icons/logo-font.png';
 import './index.module.css';
-import GlobalContext, { IUpateData } from '@/reducer/global';
+import GlobalContext, { ActionType } from '@/reducer/global';
+import { SetInterval } from '@/utils/common.util';
+import _ from 'lodash';
 
 const Building: React.FC = () => {
   const signUpWithGoogle = chrome.i18n.getMessage('signUpWithGoogle');
-  const { state: { upateData }, dispatch: globalDispatch } = useContext(GlobalContext);
+  const { state: { upateData, progress }, dispatch: globalDispatch } = useContext(GlobalContext);
   const [precent, setPrecent] = useState(0);
   const [done, setDone] = useState(false);
   const [monitor, setMonitor] = useState(false);
@@ -38,9 +40,22 @@ const Building: React.FC = () => {
   const getProgress = () => {
     setWaitTime(waitTime + 5);
     chrome.runtime.sendMessage({ type: 'request', api: 'user_url_status' }, (res) => {
+      console.log('user_url_status res:', res);
+      globalDispatch({
+        type: ActionType.SetProgress,
+        payload: {
+          data: res || null,
+          getIng: true,
+        },
+      })
+    });
+  }
+
+  useEffect(() => {
+    if (_.isArray(progress?.data)) {
       let count = 0;
       let pending = 0;
-      res.forEach((item: any) => {
+      progress?.data?.forEach((item: any) => {
         count += item.count;
         if (item.status === 1) {
           pending += item.count;
@@ -48,17 +63,14 @@ const Building: React.FC = () => {
       })
       if (waitTime < TIMEOUT && pending) {
         setPrecent(Math.ceil((count - pending) / count * 100))
-        return false;
       } else {
         setPrecent(100)
-        //setDone(true)
         setTimeout(() => { setDone(true) }, 1000)
-        return true;
       }
-    });
-  }
+    }
 
-
+    return () => { }
+  }, [progress])
 
   return (
     <div className={styles.container}>
@@ -110,21 +122,5 @@ const Building: React.FC = () => {
 
   );
 };
-
-const SetInterval = (callback: Function, delay: number = 1000) => {
-  const Ref = useRef<any>();
-
-  Ref.current = () => {
-    return callback();
-  }
-  useEffect(() => {
-    const timer = setInterval(() => {
-      Ref.current() && clearInterval(timer);
-    }, delay);
-    return () => {
-      clearInterval(timer);
-    }
-  }, [delay]);
-}
 
 export default Building;

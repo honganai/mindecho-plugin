@@ -54,6 +54,7 @@ const User: React.FC<Props> = ({ onLink }) => {
   const [checkedCount, setCheckedCount] = useState<number>(0);
   const [searchWord, setSearchWord] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(true);
+  const [autoAdd, setAutoAdd] = useState<boolean>(true);
 
   const onExpand = (expandedKeysValue: React.Key[]) => {
     // if not set autoExpandParent to false, if children expanded, parent can not collapse.
@@ -77,6 +78,10 @@ const User: React.FC<Props> = ({ onLink }) => {
     setAllUserUrl(allSelect);
     setCheckedCount(allSelect.filter(item => item.selected).length)
   }
+
+  useEffect(() => {
+    chrome.runtime.sendMessage({ type: 'setAutoAddStatus', status: autoAdd })
+  }, [])
 
   useEffect(() => {
     getUserUrl()
@@ -175,7 +180,10 @@ const User: React.FC<Props> = ({ onLink }) => {
     return result;
   }
 
-  const onChange = () => { }
+  const onChange = () => {
+    setAutoAdd(!autoAdd);
+    chrome.runtime.sendMessage({ type: 'setAutoAddStatus', status: !autoAdd })
+  }
 
   const onImport = () => {
     const data = allUserUrl.map((item) => {
@@ -247,7 +255,7 @@ const User: React.FC<Props> = ({ onLink }) => {
             <span>Import {checkedCount} Items</span>
           </Button>
           <p className={styles['auto-add']}>
-            <Switch defaultChecked onChange={onChange} />
+            <Switch checked={autoAdd} onChange={onChange} />
             <span>Auto-add New Items</span>
           </p>
         </div>

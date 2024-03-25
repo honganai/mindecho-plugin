@@ -49,6 +49,8 @@ const Api = {
   update_user_url: ({ body, headers = {} }) => http.put('/api/v1/user_url', body, headers),
   //获取用户上传进度
   user_url_status: ({ headers = {} }) => http.get(`/api/v1/user_url_status`, headers),
+  //获取用户资源
+  get_user_recent: ({ body, headers = {} }) => http.get(`/api/v1/user_recent_url`, body, headers),
   test: () => http.get(`/api/v1/status/`),
   ...createRestApi('product'),
   ...createRestApi('usertag'),

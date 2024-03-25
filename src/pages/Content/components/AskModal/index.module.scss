@@ -1,24 +1,56 @@
+@import '@/assets/style/public.extend';
+
+p {
+  margin: 0;
+}
+
 .modal {
   text-align: left;
   
   :global {
     .ant-modal-body {
+      position: relative;
+      min-width: 539px;
       padding: 0;
     }
 
     .ant-modal-content {
       border-radius: 8px;
+      background-color: transparent;
     }
   }
 }
 
 .container {
   position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+
 
   textarea {
     padding: 12px 60px 12px 12px;
     resize: none;
     border-radius: 8px;
+    border: none;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    &::placeholder {
+      color: rgb(132, 126, 126);
+    }
+  }
+
+  .example {
+    margin-bottom: 0;
+    padding: 12px 60px 12px 12px;
+    color: rgb(132, 126, 126);
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .enter {
@@ -29,5 +61,85 @@
     width: 48px;
     height: auto;
     pointer-events: none;
+  }
+}
+
+.source-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #fff;
+  border-radius: 8px;
+
+  .title {
+    color: #2388FF;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .items {
+    padding: 2px 5px;
+    background-color: #f6f7f9;
+    border-radius: 6px;
+    @extend %flex-center;
+
+    .source-title {
+      color: #5c6380;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .success-icon {
+      margin: 0 5px;
+      color: #3378fa;
+    }
+  
+    .source-stauts {
+      margin: 0;
+      color: #837e7e;
+      font-size: 14px;
+  
+      .success {
+        color: #3378fa;
+      }
+    }
+  }
+}
+
+.setting {
+  position: absolute;
+  right: 0;
+  width: 236px;
+  height: 73px;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #fff;
+  border-radius: 8px;
+
+  .title {
+    font-weight: bold;
+    font-size: 14px;
+    color: #717171;
+  }
+
+  .text {
+    margin-top: 10px;
+    color: #727272;
+    font-size: 12px;
+    
+    .switch {
+      margin-right: 8px;
+      //background-color: #4a755a;
+    }
+  }
+
+  .close-setting-btn {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: #D9D9D9;
+    cursor: pointer;
   }
 }

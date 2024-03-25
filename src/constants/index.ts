@@ -14,6 +14,8 @@ export const DRAG_POSITION_KEY = 'mindecho-drag-position';
 export const GUIDE_COMPLETE_KEY = `mindecho-complete-guide-${version}`;
 /** 是否更新了插件 */
 export const EXTENSION_UPDATED = 'mindecho-extension-updated';
+/** 是否勾选了自动更新 */
+export const AUTO_ADD = 'mindecho-auto-add';
 
 export const getExtensionUpdated = () => {
   return chrome.storage.local.get(EXTENSION_UPDATED).then((res) => {
@@ -23,6 +25,10 @@ export const getExtensionUpdated = () => {
 
 export const setExtensionUpdated = () => {
   chrome.storage.local.set({ [EXTENSION_UPDATED]: true });
+};
+
+export const setAutoAdd = (status: boolean = true) => {
+  chrome.storage.local.set({ [AUTO_ADD]: status });
 };
 
 export const removeExtensionUpdated = () => {
