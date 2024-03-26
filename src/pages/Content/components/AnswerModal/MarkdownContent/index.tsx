@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import markdownit from 'markdown-it';
 import styles from './index.module.scss';
-import parse from 'html-react-parser';
+import parse, { HTMLReactParserOptions, domToReact } from 'html-react-parser';
 
 interface IProps {
   markdownStream?: string;
@@ -76,6 +76,15 @@ const MarkdownContent: React.FC<IProps> = ({ markdownStream = '' }) => {
   useEffect(() => {
     setData(parseMd(markdownStream));
   }, [markdownStream]);
+
+  // const parsePptions: HTMLReactParserOptions = {
+  //   replace(domNode: any) {
+  //     if (domNode.name === 'p' && domNode.children.length === 1 && domNode.children[0].data === 'Bookmarks') {
+  //       console.log(11111, domNode)
+  //       return <p className={styles.quote}>{domToReact(domNode.children, parsePptions)}</p>
+  //     }
+  //   }
+  // };
 
   return (
     <div>

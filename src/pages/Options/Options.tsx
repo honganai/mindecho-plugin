@@ -79,36 +79,31 @@ const Options: React.FC = () => {
         });
       }
       handleLogin();
+      sendResponse('ok');
     }
-    sendResponse('ok');
   };
 
   useEffect(() => {
-    //测试
-    // setLoading(false);
-    // setStepPage(3);
-    // setIsLogin(false);
-    // return () => { };
     setLoading(true);
     chrome.runtime.sendMessage({ type: 'request', api: 'userinfo' }, (res) => {
       setLoading(false);
-      console.log('userInfo res:', res);
+      console.log('options userInfo res:', res);
 
       handleLogin();
-      if (!res || res.error) {
-        console.log('用户未登陆');
-      } else if (res.result) {
-        console.log('content user:', res.result);
-        setUserinfo(res.result);
-        globalDispatch({
-          type: GlobalActionType.SetUserInfo,
-          payload: res.result,
-        });
-        globalDispatch({
-          type: GlobalActionType.SetLanguage,
-          payload: res.result.lang_type,
-        });
-      }
+      // if (!res || res.error) {
+      //   console.log('用户未登陆');
+      // } else if (res.result) {
+      //   console.log('content user:', res.result);
+      //   setUserinfo(res.result);
+      //   globalDispatch({
+      //     type: GlobalActionType.SetUserInfo,
+      //     payload: res.result,
+      //   });
+      //   globalDispatch({
+      //     type: GlobalActionType.SetLanguage,
+      //     payload: res.result.lang_type,
+      //   });
+      // }
     });
     chrome.runtime.onMessage.addListener(onLoginBack);
     return () => {

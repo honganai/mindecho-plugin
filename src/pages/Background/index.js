@@ -29,7 +29,7 @@ function handleMessages(message, sender, sendResponse) {
     openSettings();
   } else if (type === 'setAutoAddStatus') {
     setAutoAdd(message.status);
-    sendResponse('ok')
+    sendResponse('setAutoAddStatus ok')
   }
   return true;
 }

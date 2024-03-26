@@ -44,9 +44,25 @@ p {
   }
 
   .example {
+    position: relative;
+    width: 85%;
     margin-bottom: 0;
     padding: 12px 60px 12px 12px;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
     color: rgb(132, 126, 126);
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20%;
+      height: 100%;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+      z-index: 10;
+    }
 
     &:hover {
       text-decoration: underline;

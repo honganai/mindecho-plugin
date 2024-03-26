@@ -39,8 +39,8 @@ const AnswerModal: React.FC = () => {
         type: GlobalActionType.SetMarkdownStream,
         payload: markdownStreamRef.current,
       });
+      sendResponse('ws_chat_request ok');
     }
-    sendResponse('ok');
   }
 
   useEffect(() => {
