@@ -1,9 +1,8 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { Modal, Input, Spin, Switch } from 'antd';
 import { MoreOutlined, CheckCircleOutlined, CloseOutlined } from '@ant-design/icons';
-import { getDocument } from '@/utils/common.util';
+import {getDocument, SetInterval, truncateTitle,} from '@/utils/common.util';
 import GlobalContext, { ActionType as GlobalActionType } from '@/reducer/global';
-import { SetInterval } from '@/utils/common.util';
 import _, { set } from 'lodash';
 import EnterImage from '@/assets/img/enter.svg';
 import styles from './index.module.scss';
@@ -204,11 +203,9 @@ const AskModal: React.FC = () => {
             }
           }}
         />
-        <a href={example.url} target="_blank">
-          <p className={styles['example']}>
-            E.g. “*{example.title ? example.title : 'No data available'}*”
-          </p>
-        </a>
+
+        E.g. “*{example.title ? truncateTitle(example.title) : 'No data available'}*”
+
         <div className={styles.enter}>
           <EnterImage />
         </div>
