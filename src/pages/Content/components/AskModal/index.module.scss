@@ -6,7 +6,7 @@ p {
 
 .modal {
   text-align: left;
-  
+
   :global {
     .ant-modal-body {
       position: relative;
@@ -64,9 +64,9 @@ p {
       z-index: 10;
     }
 
-    &:hover {
-      text-decoration: underline;
-    }
+    //&:hover {
+    //  text-decoration: underline;
+    //}
   }
 
   .enter {
@@ -111,12 +111,12 @@ p {
       margin: 0 5px;
       color: #3378fa;
     }
-  
+
     .source-stauts {
       margin: 0;
       color: #837e7e;
       font-size: 14px;
-  
+
       .success {
         color: #3378fa;
       }
@@ -144,7 +144,7 @@ p {
     margin-top: 10px;
     color: #727272;
     font-size: 12px;
-    
+
     .switch {
       margin-right: 8px;
       //background-color: #4a755a;

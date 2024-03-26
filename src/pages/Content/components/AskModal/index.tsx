@@ -203,9 +203,9 @@ const AskModal: React.FC = () => {
             }
           }}
         />
-
+        <p className={styles['example']}>
         E.g. “*{example.title ? truncateTitle(example.title) : 'No data available'}*”
-
+        </p>
         <div className={styles.enter}>
           <EnterImage />
         </div>
