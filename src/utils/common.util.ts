@@ -72,3 +72,26 @@ export const SetInterval = (callback: Function, delay: number = 1000) => {
     }
   }, [delay]);
 }
+
+export const truncateTitle = (title:string, limitEnglish = 20, limitChinese = 10) => {
+  title = title.trim();
+  if (!title) return 'No data available';
+
+  // 判断字符串是否含有中文字符
+  const hasChinese = /[\u4e00-\u9fa5]/.test(title);
+  const limit = hasChinese ? limitChinese : limitEnglish;
+
+  // 根据字符类型截取
+  if (hasChinese) {
+    // 中文字符串，按字符数截取
+    return title.length > limit ? title.slice(0, limit) + '...' : title;
+  } else {
+    // 英文字符串，按单词数截取
+    const words = title.split(' ');
+    if (words.length > limit) {
+      return words.slice(0, limit).join(' ') + '...';
+    } else {
+      return title;
+    }
+  }
+};

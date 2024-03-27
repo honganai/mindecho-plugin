@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import { Modal, Input, Button, Skeleton, Result } from 'antd';
-import { getDocument } from '@/utils/common.util';
+import { getDocument, truncateTitle } from '@/utils/common.util';
 import GlobalContext, { ActionType as GlobalActionType } from '@/reducer/global';
 import _ from 'lodash';
 import MarkdownContent from './MarkdownContent';
@@ -190,11 +190,11 @@ const AnswerModal: React.FC = () => {
                         <a className={styles.title} href={item.url} target="_blank" rel="noreferrer">
                           {item.title}
                         </a>
-                        <p>
+                        <p className={styles.urlBox}>
                           <span className={styles.host}>{getHost(item.url)}</span>
-                          <a className={styles.title} href={item.url} target="_blank" rel="noreferrer">{item.url}</a>
+                          <a className={styles.url} href={item.url} target="_blank" rel="noreferrer">{item.url}</a>
                         </p>
-                        <p>{item.content}</p>
+                        <p className={styles.contentText}>{truncateTitle(item.content, 200, 80)}</p>
                         <span className={styles.blockquote}>{getBlockquote(item.source_type)}</span>
                       </li>
                     );

@@ -6,28 +6,18 @@
   text-align: left;
   --tip-font-size: 16px;
   --sources-color: #2388FF;
-
-  .content {
-    @extend %question-modal-content;
-
-    .header {
-      @extend %flex-center;
-      justify-content: space-between;
-      
-      h3 {
-        margin: 0;
-        font-size: var(--tip-font-size);
-        color: var(--sources-color);
-      }
-    }
-
-    .source-item {
-      
-    }
-  }
+  --source-color-black: #000;
+  --source-color-gray: #6b6b6b;
+  --small-size: 12px;
 
   .title {
     color: #fff;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
   :global {
@@ -43,6 +33,99 @@
       background-color: transparent;
       border-radius: 8px;
       box-shadow: none;
+    }
+  }
+
+  .content {
+    @extend %question-modal-content;
+
+    .header {
+      @extend %flex-center;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      
+      h3 {
+        margin: 0;
+        font-size: var(--tip-font-size);
+        color: var(--sources-color);
+      }
+    }
+
+    .source-item {
+      position: relative;
+      padding: 0 100px 0 25px;
+      margin-bottom: 10px;
+
+      .number {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        text-align: center;
+        border-radius: 50%;
+        color: #fff;
+        background-color: #4085fb;
+        font-size: var(--small-size);
+      }
+
+      .title {
+        display: inline-block;
+        width: 80%;
+        color: var(--sources-color);
+        font-size: var(--tip-font-size);
+
+        @extend %mindecho-extend-ellipsis;
+      }
+
+      .urlBox {
+        position: relative;
+        padding-left: 15px;
+        margin-top: -10px;
+        font-size: var(--small-size);
+        @extend %mindecho-extend-ellipsis;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 7px;
+          height: 7px;
+          background-color: #d4d4d4;
+          border-radius: 50%;
+          transform: translateY(-50%);
+        }
+
+        .host {
+
+          margin-right: 10px;
+          color: var(--source-color-black);
+        }
+
+        .url {
+          color: var(--source-color-gray);
+        }
+      }
+
+      .contentText {
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--source-color-gray);
+      }
+
+      .blockquote {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5px;
+        font-size: var(--small-size);
+        line-height: 1em;
+        background-color: #f6f7f9;
+        border-radius: 2px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+      }
     }
   }
 }
