@@ -87,6 +87,12 @@ p {
   font-size: 14px;
 }
 
+.source-container .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .setting {
   position: absolute;
   right: 0;

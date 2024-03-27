@@ -20,6 +20,7 @@ const AskModal: React.FC = () => {
   const [example, setExample] = useState<IExample>({ title: '', url: '' });
   const [showSettings, setShowSettings] = useState(false);
   const [autoAdd, setAutoAdd] = useState(true);
+  const [timer, setTimer] = useState<NodeJS.Timeout>();
 
   useEffect(() => {
     chrome.runtime.sendMessage({ type: 'request', api: 'get_user_recent' }, (res) => {
@@ -30,11 +31,37 @@ const AskModal: React.FC = () => {
         url,
       })
     });
-
+    getProgress();
     chrome.storage.local.get(['mindecho-auto-add']).then((result: any) => {
       setAutoAdd(result['mindecho-auto-add'])
     });
   }, []);
+
+  useEffect(() => {
+    if (showAskModal) {
+      setTimeout(() => {
+        getDocument().getElementById('mindecho-ask-input')?.focus();
+      }, 500);
+      const intervalId = setInterval(() => {
+        getProgress();
+      }, 5000);
+      setTimer(intervalId);
+    } else {
+      clearInterval(timer);
+    }
+  }, [showAskModal]);
+
+  const getProgress = () => {
+    chrome.runtime.sendMessage({ type: 'request', api: 'user_url_status' }, (res) => {
+      globalDispatch({
+        type: GlobalActionType.SetProgress,
+        payload: {
+          data: res || null,
+          getIng: false,
+        },
+      })
+    });
+  }
 
   const setAutoAddStatus = () => {
     setAutoAdd(!autoAdd);
@@ -120,8 +147,10 @@ const AskModal: React.FC = () => {
       </div>
       <div className={styles['source-container']}>
         <span className={styles.title}>Sources</span>
-        <MyProgress />
-        <MoreOutlined style={{ cursor: 'pointer' }} onClick={() => { setShowSettings(!showSettings) }} />
+        <div className={styles.right}>
+          <MyProgress />
+          <MoreOutlined style={{ cursor: 'pointer' }} onClick={() => { setShowSettings(!showSettings) }} />
+        </div>
       </div>
       {
         showSettings && (

@@ -20,6 +20,7 @@ const AnswerModal: React.FC = () => {
   const markdownStreamRef = useRef('');
   const [question, setQuestion] = useState('');
   const [References, setReferences] = useState<IReferences[]>([]);
+  const [timer, setTimer] = useState<NodeJS.Timeout>();
 
   // 重置返回结果
   useEffect(() => {
@@ -59,8 +60,38 @@ const AnswerModal: React.FC = () => {
   }, []);
 
   useEffect(() => {
+    //测试
+    if (showAnswerModal) {
+      const intervalId = setInterval(() => {
+        getProgress();
+      }, 5000);
+      setTimer(intervalId);
+    } else {
+      clearInterval(timer);
+    }
+  }, [showAnswerModal]);
+
+  const getProgress = () => {
+    chrome.runtime.sendMessage({ type: 'request', api: 'user_url_status' }, (res) => {
+      globalDispatch({
+        type: GlobalActionType.SetProgress,
+        payload: {
+          data: res || null,
+          getIng: false,
+        },
+      })
+    });
+  }
+
+  useEffect(() => {
+    if (globalState.question && isRequesting) {
+      setQuestion(globalState.question);
+      startSearch();
+    }
+  }, [globalState.question, isRequesting])
+
+  const startSearch = () => {
     if (globalState.question) {
-      console.log(11111, globalState.question)
       chrome.runtime.sendMessage({ type: 'request', api: 'get_dataset_document', body: { query: globalState.question } }, (res) => {
         setReferences(res || []);
 
@@ -79,7 +110,7 @@ const AnswerModal: React.FC = () => {
         );
       });
     }
-  }, [globalState.question])
+  }
 
   const getWsContent = (data: any) => {
     let result: string = '';
@@ -105,10 +136,6 @@ const AnswerModal: React.FC = () => {
         type: GlobalActionType.SetShowAskModal,
         payload: false,
       });
-      // globalDispatch({
-      //   type: GlobalActionType.SetShowAnswerModal,
-      //   payload: true,
-      // });
       globalDispatch({
         type: GlobalActionType.SetMarkdownStream,
         payload: '',
@@ -141,11 +168,11 @@ const AnswerModal: React.FC = () => {
 
   const getBlockquote = (source_type: string) => {
     switch (source_type) {
-      case 'bookmarks':
+      case 'bookmark':
         return 'Bookmarks';
       case 'history':
         return 'History';
-      case 'reading_list':
+      case 'readinglist':
         return 'Reading List';
       default:
         return source_type;
@@ -212,7 +239,7 @@ const AnswerModal: React.FC = () => {
               />
             )}
           </div>
-          <MarkdownContent markdownStream={markdownStream}></MarkdownContent>
+          <MarkdownContent markdownStream={markdownStream} refresh={sendQuestion}></MarkdownContent>
           {requestEnd && (
             <div className={styles.btns}>
               <div className={styles['new-query']}>

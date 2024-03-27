@@ -1,7 +1,27 @@
 @import '@/assets/style/public.extend.scss';
 
 .content {
+  position: relative;
   @extend %question-modal-content;
+  --tip-font-size: 16px;
+  --answer-color: #6563FF;
+  --source-color-black: #000;
+  --source-color-gray: #6b6b6b;
+  --small-size: 12px;
+
+  font-size: var(--tip-font-size);
+
+  .controls {
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    color: #8F8989;
+
+    span {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
 
   blockquote {
     position: relative;
@@ -28,8 +48,9 @@
 
   .title, h3 {
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: var(--tip-font-size);
     font-weight: bold;
+    color: var(--answer-color);
   }
 
   .text:not(:last-child) {
@@ -37,12 +58,13 @@
   }
 
   .text-p {
-    font-size: 18px;
+    font-size: var(--tip-font-size);
     line-height: 24px;
     color: var(--color-text);
     background-color: var(--color-background);
 
     p {
+      font-size: var(--tip-font-size);
       margin-bottom: 8px;
     }
   }

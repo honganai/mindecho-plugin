@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext, useEffect, useMemo } from 'react';
 import { getDocument } from '@/utils/common.util';
 import { Spin } from 'antd';
 import { CheckCircleOutlined } from '@ant-design/icons';
@@ -14,45 +14,41 @@ interface IProgressData {
 
 const MyProgress: React.FC = () => {
     const { state: { showAskModal, showAnswerModal, progress }, dispatch: globalDispatch } = useContext(GlobalContext);
-    const [progressData, setProgressData] = useState<Array<IProgressData>>([]);
-    const [timer, setTimer] = useState<NodeJS.Timeout>();
+    // const [timer, setTimer] = useState<NodeJS.Timeout>();
 
     useEffect(() => {
-        getProgress();
+        //getProgress();
     }, []);
 
-    useEffect(() => {
-        if (showAskModal || showAnswerModal) {
-            setTimeout(() => {
-                getDocument().getElementById('mindecho-ask-input')?.focus();
-            }, 500);
-            const intervalId = setInterval(() => {
-                getProgress();
-            }, 5000);
-            setTimer(intervalId);
-        } else {
-            clearInterval(timer);
-        }
-    }, [showAskModal, showAnswerModal]);
+    // useEffect(() => {
+    //     if (showAskModal) {
+    //         const intervalId = setInterval(() => {
+    //             getProgress();
+    //         }, 5000);
+    //         setAskTimer(intervalId);
+    //     } else {
+    //         clearInterval(askTimer);
+    //     }
+    // }, [showAskModal]);
 
-    const getProgress = () => {
-        chrome.runtime.sendMessage({ type: 'request', api: 'user_url_status' }, (res) => {
-            globalDispatch({
-                type: GlobalActionType.SetProgress,
-                payload: {
-                    data: res || null,
-                    getIng: false,
-                },
-            })
-        });
-    }
+    // const getProgress = () => {
+    //     chrome.runtime.sendMessage({ type: 'request', api: 'user_url_status' }, (res) => {
+    //         globalDispatch({
+    //             type: GlobalActionType.SetProgress,
+    //             payload: {
+    //                 data: res || null,
+    //                 getIng: false,
+    //             },
+    //         })
+    //     });
+    // }
 
-    useEffect(() => {
+    const progressData = useMemo(() => {
         if (_.isArray(progress?.data)) {
             let resData = [
                 { title: 'Bookmarks', count: 0, pended: 0 },
                 { title: 'Reading List', count: 0, pended: 0 },
-                { title: 'history', count: 0, pended: 0 },
+                // { title: 'history', count: 0, pended: 0 },
             ]
             progress?.data?.forEach((item: any) => {
                 if (item.status > 0) {
@@ -69,21 +65,22 @@ const MyProgress: React.FC = () => {
                                 resData[1].pended += item.count;
                             }
                             break;
-                        case 'history':
-                            resData[2].count += item.count;
-                            if (item.status >= 3) {
-                                resData[2].pended += item.count;
-                            }
-                            break;
+                        // case 'history':
+                        //     resData[2].count += item.count;
+                        //     if (item.status >= 3) {
+                        //         resData[2].pended += item.count;
+                        //     }
+                        //     break;
                     }
                 }
             })
-            setProgressData(resData)
+            return resData;
         }
-    }, [progress])
+        return [];
+    }, [progress]);
 
-    const renderProgress = () => {
-        return progressData.map((item, index) => {
+    const renderProgress = (data: Array<IProgressData>) => {
+        return data.map((item, index) => {
             return (
                 <div className={styles.items} key={item.title}>
                     <span className={styles['source-title']}>{item.title}</span>
@@ -108,7 +105,7 @@ const MyProgress: React.FC = () => {
 
     return (
         <div className={styles.content}>
-            {renderProgress()}
+            {renderProgress(progressData)}
         </div>
     );
 };

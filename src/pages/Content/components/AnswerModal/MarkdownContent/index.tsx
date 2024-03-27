@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react';
-
+import React, { useEffect, useState, memo } from 'react';
 import markdownit from 'markdown-it';
 import styles from './index.module.scss';
 import parse, { HTMLReactParserOptions, domToReact } from 'html-react-parser';
+import { ReloadOutlined, CopyOutlined, FileDoneOutlined } from '@ant-design/icons';
+import { message } from 'antd';
 
 interface IProps {
   markdownStream?: string;
+  refresh: Function;
 }
 
 const md = markdownit({
@@ -33,10 +35,11 @@ interface IContent {
   html: string;
 }
 
-const MarkdownContent: React.FC<IProps> = ({ markdownStream = '' }) => {
+const MarkdownContent: React.FC<IProps> = ({ markdownStream = '', refresh }) => {
   console.log('🚀 ~ markdownStream:', markdownStream);
 
   const [data, setData] = useState<IContent[]>([]);
+  const [copyStatus, setCopyStatus] = useState(false);
 
   const parseMd = (mdStr: string) => {
     const container = document.createElement('div');
@@ -80,17 +83,35 @@ const MarkdownContent: React.FC<IProps> = ({ markdownStream = '' }) => {
   // const parsePptions: HTMLReactParserOptions = {
   //   replace(domNode: any) {
   //     if (domNode.name === 'p' && domNode.children.length === 1 && domNode.children[0].data === 'Bookmarks') {
-  //       console.log(11111, domNode)
   //       return <p className={styles.quote}>{domToReact(domNode.children, parsePptions)}</p>
   //     }
   //   }
   // };
+
+  const copyText = () => {
+    if (navigator?.clipboard) {
+      setCopyStatus(true);
+      setTimeout(() => {
+        setCopyStatus(false);
+      }, 3000)
+      navigator.clipboard.writeText(data[0]?.content || '当前数据不能复制');
+      message.success('复制成功');
+    } else {
+      message.error('当前浏览器不支持复制');
+    }
+  }
 
   return (
     <div>
       {data.map((item, index) => {
         return (
           <div key={index} className={styles.content}>
+            <div className={styles.controls}>
+              <ReloadOutlined onClick={() => refresh()} />
+              {
+                copyStatus ? <FileDoneOutlined /> : <CopyOutlined onClick={copyText} />
+              }
+            </div>
             <div className={styles['text-p']}>{parse(item.html)}</div>
           </div>
         );
@@ -99,4 +120,4 @@ const MarkdownContent: React.FC<IProps> = ({ markdownStream = '' }) => {
   );
 };
 
-export default MarkdownContent;
+export default memo(MarkdownContent);

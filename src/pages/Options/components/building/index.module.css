@@ -13,7 +13,7 @@
   max-width: 1289px;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 220px 0;
+  padding: 320px 0;
 }
 
 .container .content {
@@ -48,8 +48,8 @@
 }
 
 .container .top .gif {
-  width: 261px;
-  height: 193px;
+  width: 345px;
+  height: 300px;
 }
 
 .container .top .direction {

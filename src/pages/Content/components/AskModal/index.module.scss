@@ -88,6 +88,12 @@ p {
     font-weight: bold;
     font-size: 14px;
   }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .setting {

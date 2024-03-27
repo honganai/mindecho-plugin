@@ -20,12 +20,6 @@ const Building: React.FC = () => {
   const TIMEOUT = 300;
   const [timer, setTimer] = useState<NodeJS.Timeout>();
 
-  // useEffect(() => {
-  //   //测试
-  //   //setDone(true)
-  //   upateUserUrl();
-  // }, []);
-
   useEffect(() => {
     upateUserUrl();
 
@@ -59,7 +53,7 @@ const Building: React.FC = () => {
   }
 
   useEffect(() => {
-    if (_.isArray(progress?.data)) {
+    if (_.isArray(progress?.data) && waitTime > 0) {
       let count = 0;
       let pending = 0;
       progress?.data?.forEach((item: any) => {
@@ -78,7 +72,7 @@ const Building: React.FC = () => {
     }
 
     return () => { }
-  }, [progress])
+  }, [progress, waitTime])
 
   return (
     <div className={styles.container}>
