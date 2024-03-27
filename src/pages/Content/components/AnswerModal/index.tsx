@@ -1,17 +1,25 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
-import { Modal, Input, Button, Skeleton } from 'antd';
+import { Modal, Input, Button, Skeleton, Result } from 'antd';
 import { getDocument } from '@/utils/common.util';
 import GlobalContext, { ActionType as GlobalActionType } from '@/reducer/global';
-
+import _ from 'lodash';
 import MarkdownContent from './MarkdownContent';
 import styles from './index.module.scss';
+import MyProgress from '../Myprogress';
+
+interface IReferences {
+  title: string;
+  content: string;
+  url: string;
+  source_type: string;
+}
 
 const AnswerModal: React.FC = () => {
   const { state: globalState, dispatch: globalDispatch } = useContext(GlobalContext);
   const { showAskModal, showAnswerModal, isRequesting, requestEnd, markdownStream } = globalState;
-  // const [markdownStream, setMarkdownStream] = useState('');
   const markdownStreamRef = useRef('');
   const [question, setQuestion] = useState('');
+  const [References, setReferences] = useState<IReferences[]>([]);
 
   // 重置返回结果
   useEffect(() => {
@@ -50,31 +58,57 @@ const AnswerModal: React.FC = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (globalState.question) {
+      console.log(11111, globalState.question)
+      chrome.runtime.sendMessage({ type: 'request', api: 'get_dataset_document', body: { query: globalState.question } }, (res) => {
+        setReferences(res || []);
+
+        chrome.runtime.sendMessage(
+          {
+            type: 'ws_chat_request',
+            data: {
+              message: globalState.question,
+              action: 'message',
+              article_content: getWsContent(res),
+            },
+          },
+          (res) => {
+            console.log('ws_chat_request res: ', res);
+          },
+        );
+      });
+    }
+  }, [globalState.question])
+
+  const getWsContent = (data: any) => {
+    let result: string = '';
+    data.forEach((item: any, index: number) => {
+      if (index > 0) result += `
+      -----------------------
+      `
+      result +=
+        `[${index + 1}]Title:${item.title}
+      Content: ${item.content}
+      URL:${item.url}`;
+    });
+    return result;
+  }
+
   const sendQuestion = () => {
     if (question?.trim()) {
-      globalState.question = question?.trim();
-      chrome.runtime.sendMessage(
-        {
-          type: 'ws_chat_request',
-          data: {
-            message: question?.trim(),
-            action: 'message',
-          },
-        },
-        (res) => {
-          console.log('ws_chat_request res: ', res);
-        },
-      );
-
-
+      globalDispatch({
+        type: GlobalActionType.SetQuestion,
+        payload: question?.trim(),
+      });
       globalDispatch({
         type: GlobalActionType.SetShowAskModal,
         payload: false,
       });
-      globalDispatch({
-        type: GlobalActionType.SetShowAnswerModal,
-        payload: true,
-      });
+      // globalDispatch({
+      //   type: GlobalActionType.SetShowAnswerModal,
+      //   payload: true,
+      // });
       globalDispatch({
         type: GlobalActionType.SetMarkdownStream,
         payload: '',
@@ -101,6 +135,23 @@ const AnswerModal: React.FC = () => {
     });
   };
 
+  const getHost = (url: string) => {
+    return new URL(url).host;
+  }
+
+  const getBlockquote = (source_type: string) => {
+    switch (source_type) {
+      case 'bookmarks':
+        return 'Bookmarks';
+      case 'history':
+        return 'History';
+      case 'reading_list':
+        return 'Reading List';
+      default:
+        return source_type;
+    }
+  }
+
   return (
     <Modal
       className={styles.modal}
@@ -124,6 +175,43 @@ const AnswerModal: React.FC = () => {
         </div>
       ) : (
         <>
+          <div className={styles.content}>
+            {References.length > 0 ? (
+              <>
+                <div className={styles.header}>
+                  <h3>Sources: {References.length}</h3>
+                  <MyProgress />
+                </div>
+                <ul>
+                  {References.map((item, index) => {
+                    return (
+                      <li key={item.title} className={styles['source-item']}>
+                        <span className={styles.number}>{index + 1}</span>
+                        <a className={styles.title} href={item.url} target="_blank" rel="noreferrer">
+                          {item.title}
+                        </a>
+                        <p>
+                          <span className={styles.host}>{getHost(item.url)}</span>
+                          <a className={styles.title} href={item.url} target="_blank" rel="noreferrer">{item.url}</a>
+                        </p>
+                        <p>{item.content}</p>
+                        <span className={styles.blockquote}>{getBlockquote(item.source_type)}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </>
+            ) : (
+              <Result
+                title="No data available"
+                extra={
+                  <Button type="primary" key="console">
+                    Go Console
+                  </Button>
+                }
+              />
+            )}
+          </div>
           <MarkdownContent markdownStream={markdownStream}></MarkdownContent>
           {requestEnd && (
             <div className={styles.btns}>
@@ -174,8 +262,9 @@ const AnswerModal: React.FC = () => {
             </div>
           )}
         </>
-      )}
-    </Modal>
+      )
+      }
+    </Modal >
   );
 };
 

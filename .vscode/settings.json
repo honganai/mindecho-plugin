@@ -20,5 +20,7 @@
   },
   "cSpell.words": [
     "posthog"
-  ]
+  ],
+  "editor.tabSize": 2,
+  "editor.detectIndentation": true
 }

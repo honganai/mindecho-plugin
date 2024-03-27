@@ -1,8 +1,14 @@
+p {
+  margin: 0;
+}
+
 .modal {
   text-align: left;
 }
 
 .modal :global .ant-modal-body {
+  position: relative;
+  min-width: 539px;
   padding: 0;
 }
 
@@ -34,12 +40,25 @@
 }
 
 .container .example {
+  position: relative;
+  width: 85%;
+  margin-bottom: 0;
   padding: 12px 60px 12px 12px;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
   color: #847e7e;
 }
 
-.container .example:hover {
-  text-decoration: underline;
+.container .example::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  z-index: 10;
 }
 
 .container .enter {
@@ -55,8 +74,9 @@
 .source-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 5px;
-  padding: 12px 60px 12px 12px;
+  align-items: center;
+  margin-top: 8px;
+  padding: 8px 12px;
   background-color: #fff;
   border-radius: 8px;
 }
@@ -67,17 +87,37 @@
   font-size: 14px;
 }
 
-.source-container .source-title {
-  color: #5c6380;
+.setting {
+  position: absolute;
+  right: 0;
+  width: 236px;
+  height: 73px;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.setting .title {
   font-weight: bold;
   font-size: 14px;
+  color: #717171;
 }
 
-.source-container .source-stauts {
-  color: #837e7e;
-  font-size: 14px;
+.setting .text {
+  margin-top: 10px;
+  color: #727272;
+  font-size: 12px;
 }
 
-.source-container .source-stauts .success {
-  color: #3378fa;
+.setting .text .switch {
+  margin-right: 8px;
+}
+
+.setting .close-setting-btn {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  color: #D9D9D9;
+  cursor: pointer;
 }

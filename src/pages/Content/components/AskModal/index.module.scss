@@ -1,5 +1,3 @@
-@import '@/assets/style/public.extend';
-
 p {
   margin: 0;
 }
@@ -63,10 +61,6 @@ p {
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
       z-index: 10;
     }
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
   .enter {
@@ -93,34 +87,6 @@ p {
     color: #2388FF;
     font-weight: bold;
     font-size: 14px;
-  }
-
-  .items {
-    padding: 2px 5px;
-    background-color: #f6f7f9;
-    border-radius: 6px;
-    @extend %flex-center;
-
-    .source-title {
-      color: #5c6380;
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    .success-icon {
-      margin: 0 5px;
-      color: #3378fa;
-    }
-  
-    .source-stauts {
-      margin: 0;
-      color: #837e7e;
-      font-size: 14px;
-  
-      .success {
-        color: #3378fa;
-      }
-    }
   }
 }
 

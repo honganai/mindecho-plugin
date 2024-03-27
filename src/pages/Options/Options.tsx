@@ -79,7 +79,7 @@ const Options: React.FC = () => {
         });
       }
       handleLogin();
-      sendResponse('ok');
+      sendResponse('setLogin ok');
     }
   };
 

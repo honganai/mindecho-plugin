@@ -1,3 +1,21 @@
+//回答弹窗content样式
+%question-modal-content {
+  position: relative;
+  padding: 12px 16px;
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
 // 按钮样式
 %btn {
   border-radius: 15px;

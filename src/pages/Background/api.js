@@ -51,6 +51,8 @@ const Api = {
   user_url_status: ({ headers = {} }) => http.get(`/api/v1/user_url_status`, headers),
   //获取用户资源
   get_user_recent: ({ body, headers = {} }) => http.get(`/api/v1/user_recent_url`, body, headers),
+  //根据关键词查询相关文本
+  get_dataset_document: ({ body, headers = {} }) => http.get(`/api/v1/dataset_document`, body, headers),
   test: () => http.get(`/api/v1/status/`),
   ...createRestApi('product'),
   ...createRestApi('usertag'),
