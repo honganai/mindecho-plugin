@@ -6,6 +6,7 @@ import _ from 'lodash';
 import MarkdownContent from './MarkdownContent';
 import styles from './index.module.scss';
 import MyProgress from '../Myprogress';
+import cs from 'classnames';
 
 interface IReferences {
   title: string;
@@ -74,17 +75,14 @@ const AnswerModal: React.FC = () => {
     chrome.runtime.sendMessage({ type: 'request', api: 'user_url_status' }, (res) => {
       globalDispatch({
         type: GlobalActionType.SetProgress,
-        payload: {
-          data: res || null,
-          getIng: false,
-        },
+        payload: res || null,
       })
     });
   }
 
   useEffect(() => {
     let done = true;
-    progress?.data?.forEach((item: any) => {
+    progress?.forEach((item: any) => {
       if (item.type !== 'history' && item.status > 0 && item.status < 3 && item.count > 0) {
         done = false;
       }
@@ -275,7 +273,7 @@ const AnswerModal: React.FC = () => {
                   </div>
                 )}
                 <Button
-                  type="primary"
+                  className={cs(styles['btn'], styles['btn-ask'])}
                   onClick={() => {
                     if (showAskModal) {
                       // 发起请求
@@ -292,6 +290,7 @@ const AnswerModal: React.FC = () => {
                 </Button>
               </div>
               <Button
+                className={cs(styles['btn'], styles['btn-close'])}
                 onClick={() => {
                   closeModal();
                 }}>

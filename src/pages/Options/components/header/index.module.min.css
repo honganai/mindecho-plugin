@@ -1,1 +1,1 @@
-.userInfo{display:flex;justify-content:flex-start;width:100%;padding:30px 50px 0px;font-size:var(--font-size);color:var(--font-color)}.userInfo .logo{width:100px;margin-right:20px}.userInfo .userName .name{font-weight:500}.userInfo .userName .recommend{font-size:18px;color:#3d3d3d}
+.userInfo{display:flex;justify-content:flex-start;width:100%;padding:30px 50px 0px;font-size:var(--font-size);color:var(--font-color)}.userInfo .logo{width:100px;height:96px;margin-right:20px}.userInfo .userName .name{font-weight:500}.userInfo .userName .recommend{font-size:18px;color:#3d3d3d}

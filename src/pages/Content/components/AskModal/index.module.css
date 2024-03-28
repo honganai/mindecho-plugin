@@ -4,6 +4,7 @@ p {
 
 .modal {
   text-align: left;
+  min-width: 539px;
 }
 
 .modal :global .ant-modal-body {

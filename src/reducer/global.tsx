@@ -39,10 +39,6 @@ export interface IProgressItem {
   count: number;
   status: 0 | 1 | 2 | 3 | 4 | 5;
 }
-export interface IProgress {
-  data: Array<IProgressItem>;
-  getIng: boolean;
-}
 export interface IState {
   /** 等待更新的数据 */
   upateData?: Array<IUpateData>;
@@ -71,7 +67,7 @@ export interface IState {
   /** 用户信息 */
   userInfo?: UserInfo | null;
   /** 上传进度 */
-  progress?: IProgress | null;
+  progress?: Array<IProgressItem> | null;
 }
 
 export enum ActionType {
@@ -119,7 +115,7 @@ export type IAction =
 
 export interface ISetProgress {
   type: ActionType.SetProgress;
-  payload: IProgress | null;
+  payload: Array<IProgressItem> | null;
 }
 export interface ISetUserInfo {
   type: ActionType.SetUserInfo;

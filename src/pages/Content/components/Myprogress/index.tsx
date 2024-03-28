@@ -44,13 +44,13 @@ const MyProgress: React.FC = () => {
     // }
 
     const progressData = useMemo(() => {
-        if (_.isArray(progress?.data)) {
+        if (_.isArray(progress)) {
             let resData = [
                 { title: 'Bookmarks', count: 0, pended: 0 },
                 { title: 'Reading List', count: 0, pended: 0 },
                 // { title: 'history', count: 0, pended: 0 },
             ]
-            progress?.data?.forEach((item: any) => {
+            progress?.forEach((item: any) => {
                 if (item.status > 0) {
                     switch (item.type) {
                         case 'bookmark':

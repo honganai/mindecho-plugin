@@ -27,13 +27,16 @@
       flex: 1;
       @extend %flex-center;
       flex-direction: column;
+      padding: 0 20px;
 
       .import-btn {
-        width: 236px;
+        width: 100%;
+        max-width: 236px;
+        min-width: 150px;
         height: 49px;
         margin-bottom: 20px;
         border-radius: 10px;
-        font-size: 20px;
+        font-size: 16px;
         letter-spacing: 0.5px;
       }
 

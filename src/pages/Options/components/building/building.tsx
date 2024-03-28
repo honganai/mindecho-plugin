@@ -17,7 +17,7 @@ const Building: React.FC = () => {
   const [precent, setPrecent] = useState(0);
   const [done, setDone] = useState(false);
   const [waitTime, setWaitTime] = useState(0);
-  const TIMEOUT = 300;
+  const TIMEOUT = 10; //seconds
   const [timer, setTimer] = useState<NodeJS.Timeout>();
 
   useEffect(() => {
@@ -44,21 +44,18 @@ const Building: React.FC = () => {
       console.log('user_url_status res:', res);
       globalDispatch({
         type: ActionType.SetProgress,
-        payload: {
-          data: res || null,
-          getIng: true,
-        },
+        payload: res || null,
       })
     });
   }
 
   useEffect(() => {
-    if (_.isArray(progress?.data) && waitTime > 0) {
+    if (_.isArray(progress) && waitTime > 0) {
       let count = 0;
       let pending = 0;
-      progress?.data?.forEach((item: any) => {
+      progress?.forEach((item: any) => {
         count += item.count;
-        if (item.status === 1) {
+        if (item.status === 1 || item.status === 2) {
           pending += item.count;
         }
       })
@@ -67,10 +64,9 @@ const Building: React.FC = () => {
       } else {
         clearInterval(timer)
         setPrecent(100)
-        setTimeout(() => { setDone(true) }, 1000)
+        //setTimeout(() => { setDone(true) }, 1000)
       }
     }
-
     return () => { }
   }, [progress, waitTime])
 

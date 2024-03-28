@@ -222,7 +222,28 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
   if (reason === 'update') {
     setExtensionUpdated();
   }
+  if (reason === 'install') {
+    executeScript();
+  }
 });
+
+/**
+ * 安装完成后自动注入弹窗
+ */
+function executeScript() {
+  chrome.tabs.query({}, function(tabs) {
+    var tabId = tabs[0].id;
+    //向当前标签页注入内容脚本
+    tabs.forEach(item => {
+      chrome.scripting.executeScript({
+        target: { tabId: item.id },
+        files: ['contentFlatScript.bundle.js'],
+      }, (res) => {
+        console.log('🚀 ~ background.index -脚本注入结果- line:240: ', res);
+      });
+    });
+  });
+}
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
   console.log(info);
