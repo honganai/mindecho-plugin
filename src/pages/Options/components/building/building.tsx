@@ -17,7 +17,7 @@ const Building: React.FC = () => {
   const [precent, setPrecent] = useState(0);
   const [done, setDone] = useState(false);
   const [waitTime, setWaitTime] = useState(0);
-  const TIMEOUT = 10; //seconds
+  const TIMEOUT = 600; //seconds
   const [timer, setTimer] = useState<NodeJS.Timeout>();
 
   useEffect(() => {
@@ -64,7 +64,7 @@ const Building: React.FC = () => {
       } else {
         clearInterval(timer)
         setPrecent(100)
-        //setTimeout(() => { setDone(true) }, 1000)
+        setTimeout(() => { setDone(true) }, 1000)
       }
     }
     return () => { }
