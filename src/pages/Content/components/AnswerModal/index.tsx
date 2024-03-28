@@ -230,7 +230,7 @@ const AnswerModal: React.FC = () => {
                           <span className={styles.host}>{getHost(item.url)}</span>
                           <a className={styles.url} href={item.url} target="_blank" rel="noreferrer">{item.url}</a>
                         </p>
-                        <p className={styles.contentText}>{truncateTitle(item.content, 30, 60)}</p>
+                        <p className={styles.contentText}>{truncateTitle(item.content, 200, 80)}</p>
                         <span className={styles.blockquote}>{getBlockquote(item.source_type)}</span>
                       </li>
                     );
