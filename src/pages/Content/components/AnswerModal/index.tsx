@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useContext, useEffect, useRef, useState } from 'react';
 import { Modal, Input, Button, Skeleton, Result } from 'antd';
 import { getDocument, truncateTitle } from '@/utils/common.util';
 import GlobalContext, { ActionType as GlobalActionType } from '@/reducer/global';
@@ -16,7 +16,7 @@ interface IReferences {
 
 const AnswerModal: React.FC = () => {
   const { state: globalState, dispatch: globalDispatch } = useContext(GlobalContext);
-  const { showAskModal, showAnswerModal, isRequesting, requestEnd, markdownStream } = globalState;
+  const { progress, showAskModal, showAnswerModal, isRequesting, requestEnd, markdownStream } = globalState;
   const markdownStreamRef = useRef('');
   const [question, setQuestion] = useState('');
   const [References, setReferences] = useState<IReferences[]>([]);
@@ -60,7 +60,6 @@ const AnswerModal: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    //测试
     if (showAnswerModal) {
       const intervalId = setInterval(() => {
         getProgress();
@@ -82,6 +81,18 @@ const AnswerModal: React.FC = () => {
       })
     });
   }
+
+  useEffect(() => {
+    let done = true;
+    progress?.data?.forEach((item: any) => {
+      if (item.type !== 'history' && item.status > 0 && item.status < 3 && item.count > 0) {
+        done = false;
+      }
+    });
+    if (done) {
+      clearInterval(timer);
+    }
+  }, [progress, timer]);
 
   useEffect(() => {
     if (globalState.question && isRequesting) {
@@ -126,7 +137,7 @@ const AnswerModal: React.FC = () => {
     return result;
   }
 
-  const sendQuestion = () => {
+  const sendQuestion = useCallback(() => {
     if (question?.trim()) {
       globalDispatch({
         type: GlobalActionType.SetQuestion,
@@ -149,7 +160,7 @@ const AnswerModal: React.FC = () => {
         payload: false,
       });
     }
-  };
+  }, [question]);
 
   const closeModal = () => {
     globalDispatch({
@@ -231,11 +242,11 @@ const AnswerModal: React.FC = () => {
             ) : (
               <Result
                 title="No data available"
-                extra={
-                  <Button type="primary" key="console">
-                    Go Console
-                  </Button>
-                }
+              // extra={
+              //   <Button type="primary" key="console">
+              //     Go Console
+              //   </Button>
+              // }
               />
             )}
           </div>

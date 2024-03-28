@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext, useEffect, useCallback } from 'react';
 import { Modal, Input, Spin, Switch } from 'antd';
 import { MoreOutlined, CheckCircleOutlined, CloseOutlined } from '@ant-design/icons';
 import { getDocument, SetInterval, truncateTitle, } from '@/utils/common.util';
@@ -45,6 +45,7 @@ const AskModal: React.FC = () => {
       const intervalId = setInterval(() => {
         getProgress();
       }, 5000);
+
       setTimer(intervalId);
     } else {
       clearInterval(timer);
@@ -62,6 +63,18 @@ const AskModal: React.FC = () => {
       })
     });
   }
+
+  useEffect(() => {
+    let done = true;
+    progress?.data?.forEach((item: any) => {
+      if (item.type !== 'history' && item.status > 0 && item.status < 3 && item.count > 0) {
+        done = false;
+      }
+    });
+    if (done) {
+      clearInterval(timer);
+    }
+  }, [progress, timer]);
 
   const setAutoAddStatus = () => {
     setAutoAdd(!autoAdd);
@@ -146,11 +159,18 @@ const AskModal: React.FC = () => {
         </div>
       </div>
       <div className={styles['source-container']}>
-        <span className={styles.title}>Sources</span>
+        {/* 靠左 koman */}
+        <div className={styles.right}>
+          <span className={styles.title}>Sources</span>
+          <MyProgress />
+        </div>
+        <MoreOutlined style={{ cursor: 'pointer' }} onClick={() => { setShowSettings(!showSettings) }} />
+        {/* 靠右 koman */}
+        {/* <span className={styles.title}>Sources</span>
         <div className={styles.right}>
           <MyProgress />
           <MoreOutlined style={{ cursor: 'pointer' }} onClick={() => { setShowSettings(!showSettings) }} />
-        </div>
+        </div> */}
       </div>
       {
         showSettings && (

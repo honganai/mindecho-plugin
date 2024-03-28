@@ -36,7 +36,7 @@ interface IContent {
 }
 
 const MarkdownContent: React.FC<IProps> = ({ markdownStream = '', refresh }) => {
-  console.log('🚀 ~ markdownStream:', markdownStream);
+  console.log('🚀  ~ markdownStream:', markdownStream);
 
   const [data, setData] = useState<IContent[]>([]);
   const [copyStatus, setCopyStatus] = useState(false);
