@@ -53,7 +53,7 @@ const Building: React.FC = () => {
     if (_.isArray(progress) && waitTime > 0) {
       let count = 0;
       let pending = 0;
-      progress?.forEach((item: any) => {
+      (progress || []).forEach((item: any) => {
         count += item.count;
         if (item.status === 1 || item.status === 2) {
           pending += item.count;

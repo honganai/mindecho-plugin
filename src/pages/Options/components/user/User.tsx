@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import dayjs from 'dayjs';
-import { Button, Spin } from 'antd';
+import { Button, Spin, Modal, Image, message } from 'antd';
 import { LogoutOutlined, PlusOutlined } from '@ant-design/icons';
 import { CONTACT_URL, SUBSCRIBE_URL } from '@/constants';
 import cs from 'classnames';
@@ -11,6 +11,8 @@ import posthog from "posthog-js";
 import logo from '@/assets/icons/logo.png';
 import GlobalContext, { ActionType, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
 import Header from '../header/header';
+import pocket from '@/assets/icons/pocket.png'
+
 
 
 export enum SubType {
@@ -36,20 +38,35 @@ interface Props {
 
 const User: React.FC<Props> = ({ onLink }: Props) => {
   const [spinning, setSpinning] = React.useState<boolean>(true);
+  const [otherSourceModalShow, setOtherSourceModalShow] = React.useState<boolean>(false);
+  const [datasourceStatusList, setDatasourceStatusList] = React.useState<any>({});
 
   const logoutText = chrome.i18n.getMessage('logout');
   const { state: { history, bookmarks, readinglist }, dispatch: globalDispatch } = useContext(GlobalContext);
+
+
+  const getBindStatues = () => {
+    chrome.runtime.sendMessage({ type: 'request', api: 'get_bind_status', body: {} }, (res) => {
+      setDatasourceStatusList(res.data || {});
+    })
+  }
 
   useEffect(() => {
     getHistory();
     getBookmarks();
     getReadingList();
+    getBindStatues();
   }, []);
+
+  useEffect(() => {
+    getBindStatues();
+  }, [otherSourceModalShow]);
+
 
   useEffect(() => {
     // @koman 暂时隐藏history
     //if (history && bookmarks && readinglist) {
-    if ( bookmarks && readinglist) {
+    if (bookmarks && readinglist) {
       mergeData()
     }
   }, [history, bookmarks, readinglist]);
@@ -158,20 +175,54 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
     });
   }
 
+  const Bind = (types: string) => {
+    chrome.runtime.sendMessage({ type: 'request', api: 'get_bind_url', body: { bind_source: types, extensionId: chrome.runtime.id } }, (res) => {
+      console.log('bindPocket res:', res);
+      if (res.data.url !== '') {
+        window.open(res.data.url, '_blank');
+        // 定义计时器变量
+        let timer = 0;
+        const interval = 5000;
+        const maxTime = 10 * 60 * 1000;
+
+        // 定义定时器函数
+        const mainTimer = setInterval(() => {
+          timer += interval;
+          if (timer >= maxTime) {
+            clearInterval(mainTimer); // 超过3分钟后清除主定时器
+          } else {
+            chrome.runtime.sendMessage({ type: 'request', api: 'get_bind_status', body: { code: res.data.code } }, (res) => {
+              // console.log('bindPocket res:', res);
+              if (res.data[types]) {
+                setOtherSourceModalShow(false);
+                message.success(`Bind [${types}] success`);
+                clearInterval(mainTimer); // 成功后清除主定时器
+              }
+            });
+          }
+        }, interval);
+      }
+    });
+  }
+
   return (
     <div className={styles.container}>
-      <Spin spinning={spinning} tip="initializing..." fullscreen="true">
+      <Spin spinning={spinning} tip="initializing..." >
         <Header tip={'How about we begin by choosing the treasure trove of information you’d like to explore again?'} />
         <div className={styles['control']}>
           <Button className={cs(styles['btn'], styles['btn-browser'])} size="middle" type="primary" block onClick={() => onLink()} icon={<PlusOutlined />}>
             <span>Import Browser Data</span>
           </Button>
-          <Button className={cs(styles['btn'], styles['btn-other'])} size="middle" block disabled icon={<PlusOutlined />}>
+          <Button className={cs(styles['btn'], styles['btn-other'])} size="middle" onClick={() => setOtherSourceModalShow(true)} icon={<PlusOutlined />}>
             <span>Connect Other Sources</span>
           </Button>
 
         </div>
       </Spin>
+      <Modal footer={[]} onCancel={() => setOtherSourceModalShow(false)} open={otherSourceModalShow} title='Others data integration'>
+        {/* <img style={{ cursor: 'pointer' }} src={pocket} alt="pocket" onClick={() => Bind('pocket')} /> */}
+        <Button type="text" block onClick={() => Bind('pocket')} ghost disabled={datasourceStatusList['pocket'] === true}><img src={pocket} alt="pocket" /></Button>
+      </Modal>
     </div>
   );
 };

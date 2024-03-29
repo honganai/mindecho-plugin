@@ -111,6 +111,9 @@ const Api = {
 
   // 原文高亮文本
   putHighlightText: ({ body, headers = {} }) => http.put('/api/v1/highlight_text', body, headers),
+
+  get_bind_url: ({ headers = {}, body = {} }) => http.post('/api/v1/user-bind/get_url', body, headers),
+  get_bind_status: ({ headers = {}, body = {} }) => http.post('/api/v1/user-bind/get_bind_status', body, headers),
 };
 
 export default Api;
