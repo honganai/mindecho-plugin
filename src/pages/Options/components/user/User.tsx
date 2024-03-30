@@ -55,12 +55,13 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
     getHistory();
     getBookmarks();
     getReadingList();
-    getBindStatues();
+    // @koman 暂时注释掉
+    // getBindStatues();
   }, []);
-
-  useEffect(() => {
-    getBindStatues();
-  }, [otherSourceModalShow]);
+  // @koman 暂时注释掉
+  // useEffect(() => {
+  //   getBindStatues();
+  // }, [otherSourceModalShow]);
 
 
   useEffect(() => {
