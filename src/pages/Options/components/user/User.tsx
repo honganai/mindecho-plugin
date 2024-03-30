@@ -213,7 +213,7 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
           <Button className={cs(styles['btn'], styles['btn-browser'])} size="middle" type="primary" block onClick={() => onLink()} icon={<PlusOutlined />}>
             <span>Import Browser Data</span>
           </Button>
-          <Button className={cs(styles['btn'], styles['btn-other'])} size="middle" onClick={() => setOtherSourceModalShow(true)} icon={<PlusOutlined />}>
+          <Button className={cs(styles['btn'], styles['btn-other'])} size="middle" block disabled icon={<PlusOutlined />}>
             <span>Connect Other Sources</span>
           </Button>
 
