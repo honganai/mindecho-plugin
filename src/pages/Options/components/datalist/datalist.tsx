@@ -49,8 +49,8 @@ const User: React.FC<Props> = ({ onLink }) => {
   const [userUrl, setUserUrl] = useState<IMergeData[]>([]);
   const [treeData, setTreeData] = useState<TreeDataNode[]>([]);
   const [expandedKeys, setExpandedKeys] = useState<React.Key[]>([]);
-  const [keyList, setKeyList] = useState<string[]>(['bookmarks', 'readinglist', 'history']);
-  const [checkedKeys, setCheckedKeys] = useState<React.Key[]>([`parent-${keyList[0]}`, `parent-${keyList[1]}`, `parent-${keyList[2]}`]);
+  const [keyList] = useState<string[]>(['bookmarks', 'readinglist', 'history']);
+  const [checkedKeys, setCheckedKeys] = useState<React.Key[]>([]);
   const [autoExpandParent, setAutoExpandParent] = useState<boolean>(true);
   const [checkedCount, setCheckedCount] = useState<number>(0);
   const [searchWord, setSearchWord] = useState<string>('');
@@ -81,7 +81,8 @@ const User: React.FC<Props> = ({ onLink }) => {
   }
 
   useEffect(() => {
-    chrome.runtime.sendMessage({ type: 'setAutoAddStatus', status: autoAdd })
+    //初始默认勾选自动更新
+    setStorageAutoAdd(autoAdd);
   }, [])
 
   useEffect(() => {
@@ -91,7 +92,7 @@ const User: React.FC<Props> = ({ onLink }) => {
   const getUserUrl = () => {
     setLoading(true);
     chrome.runtime.sendMessage({ type: 'request', api: 'get_user_url', body: { page: 1, page_size: 999, title: searchWord } }, (res) => {
-      //console.log('getUserUrl res:', res);
+      console.log('🚀 ~ datalist -获取用户上传数据- line:240: ', res);
       if (res?.result?.length > 0) {
         parsingData(res?.result)
       } else {
@@ -105,6 +106,7 @@ const User: React.FC<Props> = ({ onLink }) => {
     const reusltData = [
       { title: 'Bookmarks', key: `parent-${keyList[0]}`, children: [] as any[], disableCheckbox: true },
       { title: 'Reading List', key: `parent-${keyList[1]}`, children: [] as any[], disableCheckbox: true },
+      //@koman 暂时隐藏掉history
       // { title: 'History', key: `parent-${keyList[2]}`, children: [] as any[], disableCheckbox: true },
     ];
     const currentCheckeds: string[] = [];
@@ -136,7 +138,7 @@ const User: React.FC<Props> = ({ onLink }) => {
           });
           break;
         //@koman 暂时隐藏掉history
-        // case '  history':
+        // case 'history':
         //   reusltData[2].disableCheckbox = false;
         //   reusltData[2].children?.push({
         //     title: item.title,
@@ -145,9 +147,12 @@ const User: React.FC<Props> = ({ onLink }) => {
         //   });
         //   break;
       }
-      if ((initial && !hasSelected) || (initial && item.status > 1) || (!initial && isChecked(item.id))) {
-        item.selected = true;
-        currentCheckeds.push(item.type === 'bookmark' ? keyList[0] + '-' + item.id : item.type === 'readinglist' ? keyList[1] + '-' + item.id : keyList[2] + '-' + item.id)
+      if ((initial && !hasSelected) || (initial && item.status > 0) || (!initial && isChecked(item.id))) {
+        //@koman 暂时隐藏掉history
+        if (item.type !== 'history') {
+          item.selected = true;
+          currentCheckeds.push(item.type === 'bookmark' ? keyList[0] + '-' + item.id : item.type === 'readinglist' ? keyList[1] + '-' + item.id : keyList[2] + '-' + item.id)
+        }
       }
     });
     const bookmarks: TreeDataNode = parsingBookMarks(bookmarksData, bookmarksMap)

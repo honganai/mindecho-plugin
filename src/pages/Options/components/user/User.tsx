@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import dayjs from 'dayjs';
 import { Button, Spin, Modal, Image, message } from 'antd';
 import { LogoutOutlined, PlusOutlined } from '@ant-design/icons';
-import { CONTACT_URL, SUBSCRIBE_URL, setBookmarkTime, setReadlistTime, setHistoryTime } from '@/constants';
+import { CONTACT_URL, SUBSCRIBE_URL, setLastUpateDataTime } from '@/constants';
 import cs from 'classnames';
 import styles from './index.module.scss';
 import _ from "lodash";
@@ -55,7 +55,7 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
     getBookmarks();
     getReadingList();
     // @koman 暂时注释掉
-    // getBindStatues();
+    getBindStatues();
   }, []);
   // @koman 暂时注释掉
   // useEffect(() => {
@@ -87,7 +87,6 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
     //     origin_info: item,
     //   });
     // });
-    //setHistoryTime(new Date().getTime());
     readinglist?.forEach((item) => {
       data.push({
         title: item.title,
@@ -101,9 +100,8 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
         origin_info: item,
       });
     });
-    setReadlistTime(new Date().getTime());
     const result = concatBookmarks(bookmarks as IBookmarks);
-    setBookmarkTime(new Date().getTime());
+    setLastUpateDataTime(new Date().getTime());
 
     uploadUserUrl([...data, ...result])
   }
@@ -217,7 +215,7 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
           <Button className={cs(styles['btn'], styles['btn-browser'])} size="middle" type="primary" block onClick={() => onLink()} icon={<PlusOutlined />}>
             <span>Import Browser Data</span>
           </Button>
-          <Button className={cs(styles['btn'], styles['btn-other'])} size="middle" block disabled icon={<PlusOutlined />}>
+          <Button className={cs(styles['btn'], styles['btn-other'])} size="middle" block onClick={() => setOtherSourceModalShow(true)} icon={<PlusOutlined />}>
             <span>Connect Other Sources</span>
           </Button>
 

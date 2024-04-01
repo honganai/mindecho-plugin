@@ -1,22 +1,23 @@
 /* eslint-disable no-undef */
 import dayjs from 'dayjs';
-import { setBookmarkTime, getBookmarkTime, setReadlistTime, getReadlistTime, setHistoryTime, getHistoryTime } from '@/constants';
+import Api from './api';
+import { getUserInfo, getLastUpateDataTime, setLastUpateDataTime } from '@/constants';
 
 const startAutoAdd = async () => {
-    //const history = await getHistory();
+    //如果没有登录，不执行
+    const userInfo = await getUserInfo();
+    if (!userInfo) return false;
+    const promise = getLastUpateDataTime();
+    const lastUpateDataTime = await promise;
+    //@koman 暂时隐藏掉history
+    //const history = await getHistory(lastUpateDataTime);
     const bookmarks = await getBookmarks();
     const readinglist = await getReadingList();
 
-    const lastHistoryTime = getHistoryTime();
-    const lastBookmarkTime = getBookmarkTime();
-    const lastReadlistTime = getReadlistTime();
-
-    await lastHistoryTime, lastBookmarkTime, lastReadlistTime;
-
     const data = [];
-
+    //@koman 暂时隐藏掉history
     // history?.forEach((item) => {
-    //     if (item.lastVisitTime > lastHistoryTime) {
+    //     if (item.lastVisitTime > lastUpateDataTime) {
     //         data.push({
     //             title: item.title,
     //             url: item.url,
@@ -31,9 +32,8 @@ const startAutoAdd = async () => {
     //         });
     //     }
     // });
-    //setHistoryTime(new Date().getTime())
     readinglist?.forEach((item) => {
-        if (item.creationTime > lastReadlistTime) {
+        if (item.creationTime > lastUpateDataTime) {
             data.push({
                 title: item.title,
                 url: item.url,
@@ -48,49 +48,10 @@ const startAutoAdd = async () => {
             });
         }
     });
-    setReadlistTime(new Date().getTime())
-    let result = concatBookmarks(bookmarks);
-    result = result.filter((item) => {
-        const time = dayjs(item.user_create_time).valueOf()
-        return time > lastBookmarkTime;
-    })
-    setBookmarkTime(new Date().getTime())
 
-    uploadUserUrl([...data, ...result])
-}
-
-const getHistory = () => {
-    // 获取最近4小时的记录
-    let microsecondsPerWeek = 1000 * 60 * 60 * 4;
-    let oneWeekAgo = new Date().getTime() - microsecondsPerWeek;
-    chrome.history.search(
-        { text: '', startTime: oneWeekAgo },
-        (res) => {
-            console.log('history res:', res);
-            return res || [];
-        }
-    )
-}
-
-const getBookmarks = () => {
-    chrome.bookmarks.getTree((tree) => {
-        console.log('bookmarks res:', tree[0]);
-
-        return tree[0] || {}
-    });
-}
-
-const getReadingList = async () => {
-    const res = await chrome.readingList.query({})
-    console.log('readingList res:', res);
-    return res || [];
-}
-
-const concatBookmarks = (bookmarkItem, result = []) => {
-    for (const item of bookmarkItem?.children || []) {
-        // If the node is a bookmark, create a list item and append it to the parent node
-        if (item.url) {
-            result.push({
+    bookmarks?.forEach((item) => {
+        if (item.dateAdded > lastUpateDataTime) {
+            data.push({
                 title: item.title,
                 url: item.url,
                 type: 'bookmark',
@@ -103,20 +64,74 @@ const concatBookmarks = (bookmarkItem, result = []) => {
                 status: 1,
             });
         }
+    });
+    setLastUpateDataTime(new Date().getTime());
 
-        // If the node has children, recursively display them
-        if (item.children) {
-            concatBookmarks(item, result);
-        }
-    }
-
-    return result;
+    data.length > 0 && uploadUserUrl([...data]);
 }
 
-const uploadUserUrl = (data) => {
-    chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_url', body: data }, (res) => {
-        console.log('auto add res:', res);
+const getHistory = (startTime) => {
+    // 获取最近4小时的记录
+    // let microsecondsPerWeek = 1000 * 60 * 60 * 4;
+    // let oneWeekAgo = new Date().getTime() - microsecondsPerWeek;
+    return chrome.history.search(
+        { text: '', startTime }
+    ).then(res => {
+        console.log('history res:', res);
+        return res || [];
+    })
+}
+
+const getBookmarks = () => {
+    return chrome.bookmarks.getRecent(100).then(tree => {
+        console.log('bookmarks res:', tree);
+        return tree || {}
     });
+}
+
+const getReadingList = async () => {
+    return chrome.readingList.query({}).then(res => {
+        console.log('readingList res:', res);
+        return res || [];
+    });
+}
+
+// const concatBookmarks = (bookmarkItem, result = []) => {
+//     for (const item of bookmarkItem?.children || []) {
+//         // If the node is a bookmark, create a list item and append it to the parent node
+//         if (item.url) {
+//             result.push({
+//                 title: item.title,
+//                 url: item.url,
+//                 type: 'bookmark',
+//                 user_create_time: dayjs(item.dateAdded).format('YYYY-MM-DD HH:mm:ss'),
+//                 user_used_time: dayjs(item.dateAdded).format('YYYY-MM-DD HH:mm:ss'),
+//                 node_id: item.id,
+//                 node_index: item.index?.toString() || '',
+//                 parentId: item.parentId || '',
+//                 origin_info: item,
+//                 status: 1,
+//             });
+//         }
+
+//         // If the node has children, recursively display them
+//         if (item.children) {
+//             concatBookmarks(item, result);
+//         }
+//     }
+
+//     return result;
+// }
+
+const uploadUserUrl = (data) => {
+    // 在js中无法直接发起runtime消息
+    // chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_url', body: data }, (res) => {
+    //     console.log('auto add res:', res);
+    // });
+    Api['upload_user_url']({ body: data })
+        .then((res) => {
+            console.log('auto add res:', res);
+        })
 }
 
 setInterval(() => {
