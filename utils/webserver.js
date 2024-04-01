@@ -2,7 +2,7 @@
 process.env.BABEL_ENV = 'development';
 process.env.NODE_ENV = 'development';
 process.env.ASSET_PATH = '/';
-// process.env.API_URL = 'https://localhost:8000';
+// process.env.API_URL = 'http://localhost:8000';
 // process.env.API_URL = 'https://api.mindecho.app'
 //process.env.API_URL = 'https://pr.hongan.live';
 process.env.API_URL = 'https://me.hongan.live';

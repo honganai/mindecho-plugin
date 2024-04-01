@@ -17,11 +17,9 @@ const Building: React.FC = () => {
   const [precent, setPrecent] = useState(0);
   const [done, setDone] = useState(false);
   const [waitTime, setWaitTime] = useState(0);
-  //测试
-  const TIMEOUT = 5; //seconds
-  //const TIMEOUT = 600; //seconds
+  const TIMEOUT = 600; //seconds 最长等待时间
   const [timer, setTimer] = useState<NodeJS.Timeout>();
-
+  const MIN_TIMEOUT = 60; //最小等待时间
   useEffect(() => {
     upateUserUrl();
 
@@ -55,7 +53,7 @@ const Building: React.FC = () => {
     if (_.isArray(progress) && waitTime > 0) {
       let count = 0;
       let pending = 0;
-      progress?.forEach((item: any) => {
+      (progress || []).forEach((item: any) => {
         count += item.count;
         if (item.status === 1 || item.status === 2) {
           pending += item.count;
@@ -64,6 +62,10 @@ const Building: React.FC = () => {
       if (waitTime < TIMEOUT && pending) {
         setPrecent(Math.ceil((count - pending) / count * 100))
       } else {
+        if (waitTime < MIN_TIMEOUT) {
+          // 如果等待时间小于最小等待时间，即使所有任务完成，也不应该停止计时器或者标记为完成
+          return; // 直接返回，不继续执行后面的逻辑
+        }
         clearInterval(timer)
         setPrecent(100)
         setTimeout(() => { setDone(true) }, 1000)
