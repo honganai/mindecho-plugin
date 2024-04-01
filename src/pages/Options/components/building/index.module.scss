@@ -6,6 +6,25 @@
     margin: 0 auto;
     padding: 320px 0;
 
+    :global {
+        .ant-progress-status-success {
+            .ant-progress-inner {
+            background-color: #52c41a!important;
+
+                .ant-progress-circle-trail {
+                    stroke: #52c41a;
+                }
+            }
+            .ant-progress-text {
+                color: white;
+
+                .anticon {
+                    font-size: 2.167em;
+                }
+            }
+        }   
+    }
+
     .content {
         width: 100%;
         display: flex;
@@ -31,7 +50,7 @@
         .tip-2 {
             font-size: 30px;
             letter-spacing: 1px;
-        }     
+        }  
     }
 
     .top {

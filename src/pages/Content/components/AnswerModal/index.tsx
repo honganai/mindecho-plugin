@@ -82,13 +82,15 @@ const AnswerModal: React.FC = () => {
 
   useEffect(() => {
     let done = true;
-    progress?.forEach((item: any) => {
-      if (item.type !== 'history' && item.status > 0 && item.status < 3 && item.count > 0) {
-        done = false;
+    if (_.isArray(progress)) {
+      progress?.forEach((item: any) => {
+        if (item.type !== 'history' && item.status > 0 && item.status < 3 && item.count > 0) {
+          done = false;
+        }
+      });
+      if (done) {
+        clearInterval(timer);
       }
-    });
-    if (done) {
-      clearInterval(timer);
     }
   }, [progress, timer]);
 
@@ -212,12 +214,12 @@ const AnswerModal: React.FC = () => {
       ) : (
         <>
           <div className={styles.content}>
+            <div className={styles.header}>
+              <h3>Sources: {References.length}</h3>
+              <MyProgress />
+            </div>
             {References.length > 0 ? (
               <>
-                <div className={styles.header}>
-                  <h3>Sources: {References.length}</h3>
-                  <MyProgress />
-                </div>
                 <ul>
                   {References.map((item, index) => {
                     return (
@@ -238,14 +240,15 @@ const AnswerModal: React.FC = () => {
                 </ul>
               </>
             ) : (
-              <Result
-                title="No data available"
-              // extra={
-              //   <Button type="primary" key="console">
-              //     Go Console
-              //   </Button>
-              // }
-              />
+              <div className={styles['no-found']}>
+                <p className={styles.title}>No data available</p>
+                <p className={styles['sub-title']}>The sources may not be fully ready yet, or please try asking differently.</p>
+                <p className={styles['sub-title']}>Or you can</p>
+                <div className={styles['no-found-btns']}>
+                  <Button className={styles.btn} disabled>Query The Web</Button>
+                  <Button className={styles.btn} disabled>Ask AI</Button>
+                </div>
+              </div>
             )}
           </div>
           <MarkdownContent markdownStream={markdownStream} refresh={sendQuestion}></MarkdownContent>

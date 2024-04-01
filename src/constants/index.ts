@@ -16,6 +16,42 @@ export const GUIDE_COMPLETE_KEY = `mindecho-complete-guide-${version}`;
 export const EXTENSION_UPDATED = 'mindecho-extension-updated';
 /** 是否勾选了自动更新 */
 export const AUTO_ADD = 'mindecho-auto-add';
+/** 记录最新的bookmarks创建时间 */
+export const BOOKMARK_TIME = 'bookmark_time';
+/** 记录最新的readinglist创建时间 */
+export const READINGLIST_TIME = 'readinglist_time';
+/** 记录上次获取history的时间 */
+export const HISTORY_TIME = 'history_time';
+
+export const setBookmarkTime = (time: number) => {
+  chrome.storage.local.set({ [BOOKMARK_TIME]: time });
+};
+
+export const getBookmarkTime = () => {
+  return chrome.storage.local.get(BOOKMARK_TIME).then((res) => {
+    return res[BOOKMARK_TIME];
+  });
+};
+
+export const setReadlistTime = (time: number) => {
+  chrome.storage.local.set({ [READINGLIST_TIME]: time });
+};
+
+export const getReadlistTime = () => {
+  return chrome.storage.local.get(READINGLIST_TIME).then((res) => {
+    return res[READINGLIST_TIME];
+  });
+};
+
+export const setHistoryTime = (time: number) => {
+  chrome.storage.local.set({ [HISTORY_TIME]: time });
+};
+
+export const getHistoryTime = () => {
+  return chrome.storage.local.get(HISTORY_TIME).then((res) => {
+    return res[HISTORY_TIME];
+  });
+};
 
 export const getExtensionUpdated = () => {
   return chrome.storage.local.get(EXTENSION_UPDATED).then((res) => {
@@ -29,6 +65,12 @@ export const setExtensionUpdated = () => {
 
 export const setAutoAdd = (status: boolean = true) => {
   chrome.storage.local.set({ [AUTO_ADD]: status });
+};
+
+export const getAutoAdd = () => {
+  return chrome.storage.local.get(AUTO_ADD).then((res) => {
+    return res[AUTO_ADD];
+  });
 };
 
 export const removeExtensionUpdated = () => {

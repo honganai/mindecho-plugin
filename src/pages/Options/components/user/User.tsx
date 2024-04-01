@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import dayjs from 'dayjs';
 import { Button, Spin } from 'antd';
 import { LogoutOutlined, PlusOutlined } from '@ant-design/icons';
-import { CONTACT_URL, SUBSCRIBE_URL } from '@/constants';
+import { CONTACT_URL, SUBSCRIBE_URL, setBookmarkTime, setReadlistTime, setHistoryTime } from '@/constants';
 import cs from 'classnames';
 import styles from './index.module.scss';
 import _ from "lodash";
@@ -11,7 +11,6 @@ import posthog from "posthog-js";
 import logo from '@/assets/icons/logo.png';
 import GlobalContext, { ActionType, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
 import Header from '../header/header';
-
 
 export enum SubType {
   Free = 'free',
@@ -49,7 +48,7 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
   useEffect(() => {
     // @koman 暂时隐藏history
     //if (history && bookmarks && readinglist) {
-    if ( bookmarks && readinglist) {
+    if (bookmarks && readinglist) {
       mergeData()
     }
   }, [history, bookmarks, readinglist]);
@@ -70,6 +69,7 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
     //     origin_info: item,
     //   });
     // });
+    //setHistoryTime(new Date().getTime());
     readinglist?.forEach((item) => {
       data.push({
         title: item.title,
@@ -83,7 +83,10 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
         origin_info: item,
       });
     });
+    setReadlistTime(new Date().getTime());
     const result = concatBookmarks(bookmarks as IBookmarks);
+    setBookmarkTime(new Date().getTime());
+
     uploadUserUrl([...data, ...result])
   }
 

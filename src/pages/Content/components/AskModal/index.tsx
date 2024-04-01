@@ -8,6 +8,7 @@ import EnterImage from '@/assets/img/enter.svg';
 import styles from './index.module.scss';
 import { render } from 'react-dom';
 import MyProgress from '../Myprogress';
+import { getAutoAdd, setAutoAdd as setStorageAutoAdd } from '@/constants';
 
 interface IExample {
   title: string;
@@ -32,9 +33,9 @@ const AskModal: React.FC = () => {
       })
     });
     getProgress();
-    chrome.storage.local.get(['mindecho-auto-add']).then((result: any) => {
-      setAutoAdd(result['mindecho-auto-add'])
-    });
+    getAutoAdd().then(res => {
+      setAutoAdd(res);
+    })
   }, []);
 
   useEffect(() => {
@@ -63,19 +64,22 @@ const AskModal: React.FC = () => {
 
   useEffect(() => {
     let done = true;
-    progress?.forEach((item: any) => {
-      if (item.type !== 'history' && item.status > 0 && item.status < 3 && item.count > 0) {
-        done = false;
+    if (_.isArray(progress)) {
+      progress?.forEach((item: any) => {
+        if (item.type !== 'history' && item.status > 0 && item.status < 3 && item.count > 0) {
+          done = false;
+        }
+      });
+      if (done) {
+        clearInterval(timer);
       }
-    });
-    if (done) {
-      clearInterval(timer);
     }
   }, [progress, timer]);
 
   const setAutoAddStatus = () => {
     setAutoAdd(!autoAdd);
-    chrome.runtime.sendMessage({ type: 'setAutoAddStatus', status: !autoAdd })
+    setStorageAutoAdd(!autoAdd);
+    //chrome.runtime.sendMessage({ type: 'setAutoAddStatus', status: !autoAdd })
   }
 
   return (

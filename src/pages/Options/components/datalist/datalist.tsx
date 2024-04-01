@@ -9,6 +9,7 @@ import _ from "lodash";
 import posthog from "posthog-js";
 import GlobalContext, { ActionType, IUpateData, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
 import Header from '../header/header';
+import { setAutoAdd as setStorageAutoAdd } from '@/constants';
 
 
 export enum SubType {
@@ -182,7 +183,7 @@ const User: React.FC<Props> = ({ onLink }) => {
 
   const onChange = () => {
     setAutoAdd(!autoAdd);
-    chrome.runtime.sendMessage({ type: 'setAutoAddStatus', status: !autoAdd })
+    setStorageAutoAdd(!autoAdd);
   }
 
   const onImport = () => {

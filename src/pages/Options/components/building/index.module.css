@@ -16,6 +16,22 @@
   padding: 320px 0;
 }
 
+.container :global .ant-progress-status-success .ant-progress-inner {
+  background-color: #52c41a !important;
+}
+
+.container :global .ant-progress-status-success .ant-progress-inner .ant-progress-circle-trail {
+  stroke: #52c41a;
+}
+
+.container :global .ant-progress-status-success .ant-progress-text {
+  color: white;
+}
+
+.container :global .ant-progress-status-success .ant-progress-text .anticon {
+  font-size: 2.167em;
+}
+
 .container .content {
   width: 100%;
   display: flex;

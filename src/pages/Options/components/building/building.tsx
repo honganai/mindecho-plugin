@@ -17,7 +17,9 @@ const Building: React.FC = () => {
   const [precent, setPrecent] = useState(0);
   const [done, setDone] = useState(false);
   const [waitTime, setWaitTime] = useState(0);
-  const TIMEOUT = 600; //seconds
+  //测试
+  const TIMEOUT = 5; //seconds
+  //const TIMEOUT = 600; //seconds
   const [timer, setTimer] = useState<NodeJS.Timeout>();
 
   useEffect(() => {
@@ -97,7 +99,7 @@ const Building: React.FC = () => {
             <>
               <p className={styles['title']}>Building Your MindEcho</p>
               <p className={styles['tip']} style={{ display: done ? 'none' : 'block' }}>It may take up to 10 minutes</p>
-              <Progress type="circle" percent={precent} style={{ marginTop: '30px' }} />
+              <Progress type="circle" percent={precent} style={{ marginTop: '30px' }} className={styles.progress} />
             </>
           )
         }

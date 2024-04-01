@@ -31,8 +31,9 @@ function getCookie(name) {
 }
 
 
-let socket = null;
-async function connect() {
+const socketMap = {}
+async function connect(tabId) {
+    let socket = socketMap[tabId];
     const session = await getCookie('session');
     return new Promise((resolve, reject) => {
         if (session) {
@@ -43,11 +44,10 @@ async function connect() {
                 session: session
               },
               extraHeaders: {
-              },
-              query: {
-                user_id: 1
               }
           });
+          socketMap[tabId] = socket;
+
           socket.connect();
           // 监听连接成功事件
           socket.on('connect', () => {
@@ -80,12 +80,14 @@ async function connect() {
     });
 }
 
-function disconnect() {
-  if (socket == null) {
+function disconnect(tabId) {
+  let socket = socketMap[tabId];
+  if (!socket) {
     return;
   }
   socket.close();
   socket = null;
+  socketMap[tabId] = socket;
 }
 
 let keepAliveData = {};
@@ -106,16 +108,17 @@ function keepAlive(socket) {
 }
 
 const sendsocketMessage = async (eventType, message, sender, callback) => {
+  let socket = socketMap[sender.tab.id];
   if (!socket) {
-    connect().then(() => {
-      socket.off(eventType);
-      socket.on(eventType, (data) => {
+    connect(sender.tab.id).then((newSocket) => {
+      newSocket.off(eventType);
+      newSocket.on(eventType, (data) => {
           chrome.tabs.sendMessage(sender.tab.id, { type: eventType, data }, function () {
               console.log('send message to content script success', data);
           });
       });
       callback('ok');
-      socket.emit(eventType, message);
+      newSocket.emit(eventType, message);
     });
   } else {
     socket.off(eventType);

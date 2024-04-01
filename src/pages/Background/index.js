@@ -13,6 +13,14 @@ import './autoAdd';
 
 chrome.runtime.onMessage.addListener(handleMessages);
 chrome.action.onClicked.addListener(handleActiveClick);
+chrome.tabs.onRemoved.addListener(handleRemoveRab);
+
+/**
+ * 关闭tab断开websocket
+ */
+function handleRemoveRab(tabId) {
+  disconnect(tabId);
+}
 
 function handleMessages(message, sender, sendResponse) {
   console.log('message:', message, 'sender:', sender);
@@ -27,9 +35,6 @@ function handleMessages(message, sender, sendResponse) {
     sendsocketMessage(type, message, sender, sendResponse);
   } else if (type === 'openSettings') {
     openSettings();
-  } else if (type === 'setAutoAddStatus') {
-    setAutoAdd(message.status);
-    sendResponse('setAutoAddStatus ok')
   }
   return true;
 }
@@ -224,6 +229,7 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
   }
   if (reason === 'install') {
     executeScript();
+    setAutoAdd()
   }
 });
 

@@ -127,6 +127,39 @@
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
       }
     }
+
+    .no-found {
+      width: 100%;
+      margin-top: 30px;
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      .title {
+        font-size: var(--tip-font-size);
+        font-weight: bold;
+        color: #606060;
+      }
+
+      .sub-title {
+        font-size: var(--small-size);
+        color: #606060;
+      }
+
+      .no-found-btns {
+        margin-top: 10px;
+        
+        .btn {
+          width: 140px;
+          height: 30px;
+          margin-right: 10px;
+          color: #191e35;
+          font-size: var(--small-size);
+          border-radius: 8px;
+        }
+      }
+    }
   }
 }
 
