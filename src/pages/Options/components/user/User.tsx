@@ -223,7 +223,7 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
       </Spin>
       <Modal footer={[]} onCancel={() => setOtherSourceModalShow(false)} open={otherSourceModalShow} title='Others data integration'>
         {/* <img style={{ cursor: 'pointer' }} src={pocket} alt="pocket" onClick={() => Bind('pocket')} /> */}
-        <Button type="text" block onClick={() => Bind('pocket')} ghost disabled={datasourceStatusList['pocket'] === true}><img src={pocket} alt="pocket" /></Button>
+        <Button type="text" block onClick={() => Bind('pocket')} disabled={datasourceStatusList['pocket'] === true}><img src={pocket} alt="pocket" /></Button>
       </Modal>
     </div>
   );

@@ -32,6 +32,9 @@ interface IMergeData {
   status?: 1 | 0;
   selected?: boolean;
 }
+interface ITitleMap {
+  [key: string]: string;
+}
 interface Props {
   userinfo?: any;
   onLink: Function;
@@ -49,7 +52,7 @@ const User: React.FC<Props> = ({ onLink }) => {
   const [userUrl, setUserUrl] = useState<IMergeData[]>([]);
   const [treeData, setTreeData] = useState<TreeDataNode[]>([]);
   const [expandedKeys, setExpandedKeys] = useState<React.Key[]>([]);
-  const [keyList] = useState<string[]>(['bookmarks', 'readinglist', 'history']);
+  const [keyList] = useState<ITitleMap>({ bookmark: 'Bookmarks', readinglist: 'Reading List', history: 'History', pocket: 'Pocket' });
   const [checkedKeys, setCheckedKeys] = useState<React.Key[]>([]);
   const [autoExpandParent, setAutoExpandParent] = useState<boolean>(true);
   const [checkedCount, setCheckedCount] = useState<number>(0);
@@ -103,62 +106,89 @@ const User: React.FC<Props> = ({ onLink }) => {
   }
 
   const parsingData = (data: any) => {
-    const reusltData = [
-      { title: 'Bookmarks', key: `parent-${keyList[0]}`, children: [] as any[], disableCheckbox: true },
-      { title: 'Reading List', key: `parent-${keyList[1]}`, children: [] as any[], disableCheckbox: true },
-      //@koman 暂时隐藏掉history
-      // { title: 'History', key: `parent-${keyList[2]}`, children: [] as any[], disableCheckbox: true },
-    ];
+    const reusltData: Array<TreeDataNode> = [];
+    let reusltDataMap = {} as any;
+    // let reusltData_bookmarks: TreeDataNode = {} as TreeDataNode;
+    // let reusltData_readinglist: TreeDataNode = {} as TreeDataNode;
+    // let reusltData_history: TreeDataNode = {} as TreeDataNode;
+    // let reusltData_pocket: TreeDataNode = {} as TreeDataNode;
+
+    // const reusltData: TreeDataNode = [
+    //   { title: 'Bookmarks', key: `parent-${keyList[0]}`, children: [] as any[], disableCheckbox: true },
+    //   { title: 'Reading List', key: `parent-${keyList[1]}`, children: [] as any[], disableCheckbox: true },
+    //   // //@koman 暂时隐藏掉history
+    //   // // { title: 'History', key: `parent-${keyList[2]}`, children: [] as any[], disableCheckbox: true },
+    //   { title: 'Pocket', key: `parent-${keyList[3]}`, children: [] as any[], disableCheckbox: true },
+    // ];
     const currentCheckeds: string[] = [];
     const hasSelected = data.some((item: any) => item.status > 1);
     const bookmarksMap = new Map<string, Array<any>>();
     data.forEach((item: any) => {
       item.selected = false;
+
+      // if (!_.some(reusltData, ['title', keyList[item.type]])) {
+      //   const index = reusltData.push({ title: keyList[item.type], key: `parent-${item.type}`, children: [] as any[] });
+      //   reusltDataMap[item.type] = reusltData[index - 1];
+      // }
+
       switch (item.type) {
         case 'bookmark':
-          reusltData[0].disableCheckbox = false;
+          initialData(item.type, reusltData, reusltDataMap);
+
           if (!bookmarksMap.has(item.parentId)) {
             bookmarksMap.set(item.parentId, []);
           }
           bookmarksMap.get(item.parentId)?.push(
             {
               title: item.title,
-              key: keyList[0] + '-' + item.id,
+              key: item.type + '-' + item.id,
               url: item.url
             }
           );
           break;
 
         case 'readinglist':
-          reusltData[1].disableCheckbox = false;
-          reusltData[1].children?.push({
+          initialData(item.type, reusltData, reusltDataMap);
+
+          reusltDataMap[item.type].children?.push({
             title: item.title,
-            key: keyList[1] + '-' + item.id,
+            key: item.type + '-' + item.id,
             url: item.url
           });
           break;
         //@koman 暂时隐藏掉history
         // case 'history':
-        //   reusltData[2].disableCheckbox = false;
-        //   reusltData[2].children?.push({
+        //   initialData(item.type, reusltData, reusltDataMap);
+
+        //   reusltDataMap[item.type].children?.push({
         //     title: item.title,
-        //     key: keyList[2] + '-' + item.id,
+        //     key: item.type + '-' + item.id,
         //     url: item.urlyarn
         //   });
         //   break;
+
+        case 'pocket':
+          initialData(item.type, reusltData, reusltDataMap);
+
+          reusltDataMap[item.type].children?.push({
+            title: item.title,
+            key: item.type + '-' + item.id,
+            url: item.url
+          });
+          break;
       }
       if ((initial && !hasSelected) || (initial && item.status > 0) || (!initial && isChecked(item.id))) {
         //@koman 暂时隐藏掉history
         if (item.type !== 'history') {
           item.selected = true;
-          currentCheckeds.push(item.type === 'bookmark' ? keyList[0] + '-' + item.id : item.type === 'readinglist' ? keyList[1] + '-' + item.id : keyList[2] + '-' + item.id)
+          currentCheckeds.push(item.type + '-' + item.id)
         }
       }
     });
     const bookmarks: TreeDataNode = parsingBookMarks(bookmarksData, bookmarksMap)
-    reusltData[0].children?.push(...bookmarks.children || []);
+    reusltDataMap['bookmark'].children?.push(...bookmarks.children || []);
     setTreeData(reusltData)
-    onExpand([`parent-${keyList[0]}`, `parent-${keyList[1]}`])
+    onExpand([reusltData[0]?.key, reusltData[1]?.key])
 
     if (initial) {
       setAllUserUrl(data);
@@ -184,6 +214,13 @@ const User: React.FC<Props> = ({ onLink }) => {
       result?.children?.push(...map.get(data.id))
     }
     return result;
+  }
+
+  const initialData = (type: string, data: any, mapData: any) => {
+    if (!_.some(data, ['title', keyList[type]])) {
+      const index = data.push({ title: keyList[type], key: `parent-${type}`, children: [] as any[] });
+      mapData[type] = data[index - 1];
+    }
   }
 
   const onChange = () => {

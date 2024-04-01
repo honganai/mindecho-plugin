@@ -9,20 +9,23 @@ import LogoText from '@/assets/icons/logo-font.png';
 import './index.module.css';
 import GlobalContext, { ActionType } from '@/reducer/global';
 import { SetInterval } from '@/utils/common.util';
-import _ from 'lodash';
+import _, { set } from 'lodash';
 
 const Building: React.FC = () => {
   const signUpWithGoogle = chrome.i18n.getMessage('signUpWithGoogle');
   const { state: { upateData, progress }, dispatch: globalDispatch } = useContext(GlobalContext);
   const [precent, setPrecent] = useState(0);
   const [done, setDone] = useState(false);
-  const [waitTime, setWaitTime] = useState(0);
+  const [waitTime, setWaitTime] = useState(null as any);
   const TIMEOUT = 600; //seconds 最长等待时间
   const [timer, setTimer] = useState<NodeJS.Timeout>();
   const MIN_TIMEOUT = 60; //最小等待时间
+
   useEffect(() => {
     upateUserUrl();
+  }, [upateData]);
 
+  useEffect(() => {
     const intervalId = setInterval(() => {
       getProgress();
     }, 5000);
@@ -30,11 +33,12 @@ const Building: React.FC = () => {
     setTimer(intervalId)
 
     return () => clearInterval(intervalId); // Ensure the interval is cleared when the component unmounts
-  }, [upateData, waitTime]);
+  }, [waitTime]);
 
   const upateUserUrl = () => {
     chrome.runtime.sendMessage({ type: 'request', api: 'update_user_url', body: upateData }, (res) => {
       console.log('upateUserUrl res:', res);
+      setWaitTime(0);
     });
   }
 
