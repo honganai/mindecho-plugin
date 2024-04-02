@@ -11,7 +11,11 @@ import GlobalContext, { ActionType } from '@/reducer/global';
 import { SetInterval } from '@/utils/common.util';
 import _, { set } from 'lodash';
 
-const Building: React.FC = () => {
+interface IProp {
+  type: string;
+}
+
+const Building: React.FC<IProp> = ({ type = 'browser' }) => {
   const signUpWithGoogle = chrome.i18n.getMessage('signUpWithGoogle');
   const { state: { upateData, progress }, dispatch: globalDispatch } = useContext(GlobalContext);
   const [precent, setPrecent] = useState(0);
@@ -94,7 +98,7 @@ const Building: React.FC = () => {
         {
           done ? (
             <>
-              <p className={styles['title']}>Initialization Done!</p>
+              <p className={styles['title']}>{type === 'browser' ? 'Initialization Done!' : 'Pocket Saves Imported'}</p>
               <p className={styles['tip']}>The data's not all set just yet, but I'm on it, will get it done in the background</p>
               <p className={styles['title']} style={{ marginTop: '20px' }}>Meanwhile, You can start asking questions!</p>
               <p className={styles['tip-2']}>

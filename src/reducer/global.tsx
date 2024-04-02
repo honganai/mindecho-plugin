@@ -39,7 +39,11 @@ export interface IProgressItem {
   count: number;
   status: 0 | 1 | 2 | 3 | 4 | 5;
 }
+export interface ITitleMap {
+  [key: string]: string;
+}
 export interface IState {
+  titleMap: ITitleMap;
   /** 等待更新的数据 */
   upateData?: Array<IUpateData>;
   /** 历史记录 */
@@ -71,6 +75,8 @@ export interface IState {
 }
 
 export enum ActionType {
+  /** 设置upateData */
+  SetTitleMap = 'SET_TITLEMAP',
   /** 设置upateData */
   SetUpateData = 'SET_UPATEDATA',
   /** 设置history */
@@ -110,9 +116,14 @@ export type IAction =
   | ISetMarkdownStream
   | ISetIsLogin
   | ISetProgress
+  | ISetTitleMap
   | ISetUserInfo;
 
 
+export interface ISetTitleMap {
+  type: ActionType.SetTitleMap;
+  payload: ITitleMap;
+}
 export interface ISetProgress {
   type: ActionType.SetProgress;
   payload: Array<IProgressItem> | null;
@@ -177,6 +188,12 @@ export interface ISetQuestion {
 
 export function reducer(state: IState, action: IAction): IState {
   switch (action.type) {
+    case ActionType.SetTitleMap:
+      return {
+        ...state,
+        titleMap: action.payload,
+      };
+
     case ActionType.SetProgress:
       return {
         ...state,

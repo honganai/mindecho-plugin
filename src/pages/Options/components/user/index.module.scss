@@ -39,12 +39,12 @@
     @extend %flex-center;
 
     .btn {
-      width: 447px;
+      width: 543px;
       height: 97px;
       margin: 20px 0;
+      padding: 0 25px;
+      text-align: left;
       font-size: var(--btn-font-size);
-
-      @extend %flex-center;
       @extend %btn;
       color: var(--color-white);
     }
@@ -54,7 +54,16 @@
     }
 
     .btn-other {
-      background-color:#949AA5;
+      position: relative;
+      background-color:#d0c5e0;
+      color: #866BA1;
+
+      .pocket-icon {
+        position: absolute;
+        right: 25px;
+        width: 54px;
+        height: 54px;
+      }
     }
   }
 }

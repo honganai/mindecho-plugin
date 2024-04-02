@@ -13,13 +13,16 @@ interface IProgressData {
 }
 
 const MyProgress: React.FC = () => {
-    const { state: { showAskModal, showAnswerModal, progress }, dispatch: globalDispatch } = useContext(GlobalContext);
+    const { state: { showAskModal, showAnswerModal, progress, titleMap: keyList }, dispatch: globalDispatch } = useContext(GlobalContext);
+    //使用该组件时引用
     // const [timer, setTimer] = useState<NodeJS.Timeout>();
 
     useEffect(() => {
+        //使用该组件时引用
         //getProgress();
     }, []);
 
+    //使用该组件时引用
     // useEffect(() => {
     //     if (showAskModal) {
     //         const intervalId = setInterval(() => {
@@ -43,41 +46,32 @@ const MyProgress: React.FC = () => {
     //     });
     // }
 
+    const initialData = (type: string, data: any, mapData: any) => {
+        if (!_.some(data, ['title', keyList[type]])) {
+            const index = data.push({ title: keyList[type], count: 0, pended: 0 });
+            mapData[type] = data[index - 1];
+        }
+    }
+
     const progressData = useMemo(() => {
         if (_.isArray(progress)) {
-            let resData = [
-                { title: 'Bookmarks', count: 0, pended: 0 },
-                { title: 'Reading List', count: 0, pended: 0 },
-                // { title: 'history', count: 0, pended: 0 },
-            ]
+            let reusltData: Array<IProgressData> = []
+            let reusltDataMap = {} as any;
+
             progress?.forEach((item: any) => {
-                if (item.status > 0) {
-                    switch (item.type) {
-                        case 'bookmark':
-                            resData[0].count += item.count;
-                            if (item.status >= 3) {
-                                resData[0].pended += item.count;
-                            }
-                            break;
-                        case 'readinglist':
-                            resData[1].count += item.count;
-                            if (item.status >= 3) {
-                                resData[1].pended += item.count;
-                            }
-                            break;
-                        // case 'history':
-                        //     resData[2].count += item.count;
-                        //     if (item.status >= 3) {
-                        //         resData[2].pended += item.count;
-                        //     }
-                        //     break;
+                if (item.status > 0 && item.type !== 'history') {
+                    initialData(item.type, reusltData, reusltDataMap);
+
+                    reusltDataMap[item.type].count += item.count;
+                    if (item.status >= 3) {
+                        reusltDataMap[item.type].pended += item.count;
                     }
                 }
             })
-            return resData;
+            return reusltData;
         }
         return [];
-    }, [progress]);
+    }, [progress, initialData]);
 
     const renderProgress = (data: Array<IProgressData>) => {
         return data.map((item, index) => {

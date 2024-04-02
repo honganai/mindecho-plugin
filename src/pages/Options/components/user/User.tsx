@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import dayjs from 'dayjs';
 import { Button, Spin, Modal, Image, message } from 'antd';
 import { LogoutOutlined, PlusOutlined } from '@ant-design/icons';
-import { CONTACT_URL, SUBSCRIBE_URL, setLastUpateDataTime } from '@/constants';
+import { CONTACT_URL, SUBSCRIBE_URL } from '@/constants';
 import cs from 'classnames';
 import styles from './index.module.scss';
 import _ from "lodash";
@@ -11,8 +11,8 @@ import posthog from "posthog-js";
 import logo from '@/assets/icons/logo.png';
 import GlobalContext, { ActionType, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
 import Header from '../header/header';
-import pocket from '@/assets/icons/pocket.png'
-
+import pocket from '@/assets/icons/pocket.png';
+import pocketIcon from '@/assets/icons/pocket_icon.png';
 
 export enum SubType {
   Free = 'free',
@@ -38,30 +38,15 @@ interface Props {
 const User: React.FC<Props> = ({ onLink }: Props) => {
   const [spinning, setSpinning] = React.useState<boolean>(true);
   const [otherSourceModalShow, setOtherSourceModalShow] = React.useState<boolean>(false);
-  const [datasourceStatusList, setDatasourceStatusList] = React.useState<any>({});
 
   const logoutText = chrome.i18n.getMessage('logout');
   const { state: { history, bookmarks, readinglist }, dispatch: globalDispatch } = useContext(GlobalContext);
-
-
-  const getBindStatues = () => {
-    chrome.runtime.sendMessage({ type: 'request', api: 'get_bind_status', body: {} }, (res) => {
-      setDatasourceStatusList(res.data || {});
-    })
-  }
 
   useEffect(() => {
     getHistory();
     getBookmarks();
     getReadingList();
-    // @koman 暂时注释掉
-    getBindStatues();
   }, []);
-  // @koman 暂时注释掉
-  // useEffect(() => {
-  //   getBindStatues();
-  // }, [otherSourceModalShow]);
-
 
   useEffect(() => {
     // @koman 暂时隐藏history
@@ -101,7 +86,6 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
       });
     });
     const result = concatBookmarks(bookmarks as IBookmarks);
-    setLastUpateDataTime(new Date().getTime());
 
     uploadUserUrl([...data, ...result])
   }
@@ -207,23 +191,35 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
     });
   }
 
+  const getBindStatues = () => {
+    chrome.runtime.sendMessage({ type: 'request', api: 'get_bind_status', body: {} }, (res) => {
+      console.log(1111, res)
+      if (res?.data?.pocket) {
+        onLink(4);
+      } else {
+        setOtherSourceModalShow(true);
+      }
+    })
+  }
+
   return (
     <div className={styles.container}>
       <Spin spinning={spinning} tip="initializing..." >
         <Header tip={'How about we begin by choosing the treasure trove of information you’d like to explore again?'} />
         <div className={styles['control']}>
-          <Button className={cs(styles['btn'], styles['btn-browser'])} size="middle" type="primary" block onClick={() => onLink()} icon={<PlusOutlined />}>
-            <span>Import Browser Data</span>
+          <Button className={cs(styles['btn'], styles['btn-browser'])} size="middle" type="primary" block onClick={() => onLink(2)} icon={<PlusOutlined />}>
+            <span>Import Collections in Browser</span>
           </Button>
-          <Button className={cs(styles['btn'], styles['btn-other'])} size="middle" block onClick={() => setOtherSourceModalShow(true)} icon={<PlusOutlined />}>
+          <Button className={cs(styles['btn'], styles['btn-other'])} size="middle" block onClick={getBindStatues} icon={<PlusOutlined />}>
             <span>Connect Other Sources</span>
+            <img className={styles['pocket-icon']} src={pocketIcon} alt="pocket icon" />
           </Button>
 
         </div>
       </Spin>
       <Modal footer={[]} onCancel={() => setOtherSourceModalShow(false)} open={otherSourceModalShow} title='Others data integration'>
         {/* <img style={{ cursor: 'pointer' }} src={pocket} alt="pocket" onClick={() => Bind('pocket')} /> */}
-        <Button type="text" block onClick={() => Bind('pocket')} disabled={datasourceStatusList['pocket'] === true}><img src={pocket} alt="pocket" /></Button>
+        <Button type="text" block onClick={() => Bind('pocket')}><img src={pocket} alt="pocket" /></Button>
       </Modal>
     </div>
   );

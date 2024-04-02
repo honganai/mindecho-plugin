@@ -13,6 +13,7 @@ interface IReferences {
   content: string;
   url: string;
   source_type: string;
+  document_id: string;
 }
 
 const AnswerModal: React.FC = () => {
@@ -223,7 +224,7 @@ const AnswerModal: React.FC = () => {
                 <ul>
                   {References.map((item, index) => {
                     return (
-                      <li key={item.title} className={styles['source-item']}>
+                      <li key={item.document_id} className={styles['source-item']}>
                         <span className={styles.number}>{index + 1}</span>
                         <a className={styles.title} href={item.url} target="_blank" rel="noreferrer">
                           {item.title}

@@ -3,8 +3,9 @@ import './Options.css';
 import { Layout, ConfigProvider, Popover, message, Spin, notification, Select } from 'antd';
 import User, { SubType } from './components/user/User';
 import Login from './components/login/Login';
-import DataList from './components/datalist/datalist';
+import BrowserData from './components/browserData/browserData';
 import Building from './components/building/building';
+import Pocket from './components/pocketData/pocket';
 import { UserInfo, UserType } from '@/types';
 import getCleanArticle from './distillConfig';
 import GlobalContext, {
@@ -24,6 +25,7 @@ const Options: React.FC = () => {
   const [userinfo, setUserinfo] = useState<UserInfo>();
   const [isLogin, setIsLogin] = useState<boolean>(true);
   const [gloablState, globalDispatch] = useReducer(GlobalReducer, {
+    titleMap: { bookmark: 'Bookmarks', readinglist: 'Reading List', history: 'History', pocket: 'Pocket' },
     userInfo: {} as UserInfo,
     showAskModal: false,
     language: '',
@@ -32,6 +34,7 @@ const Options: React.FC = () => {
     requestEnd: false,
     isLogin: true,
   });
+  const [buildType, setBuildType] = useState<string>('');
 
   const handleLogin = () => {
     chrome.storage.local.get(['isLogin']).then((result) => {
@@ -52,10 +55,6 @@ const Options: React.FC = () => {
       }
     });
   };
-
-  const onToList = () => {
-    // 
-  }
 
   const onLoginBack = (request: any, sender: any, sendResponse: any) => {
     if (request === 'http-error') {
@@ -140,9 +139,10 @@ const Options: React.FC = () => {
               </>
             ) : (
               <>
-                {stepPage === 1 ? <User onLink={() => { setStepPage(2) }} /> :
-                  stepPage === 2 ? <DataList onLink={(page: number) => { setStepPage(page) }} /> :
-                    stepPage === 3 ? <Building /> : null}
+                {stepPage === 1 ? <User onLink={(page: number) => { setStepPage(page) }} /> :
+                  stepPage === 2 ? <BrowserData onLink={(page: number) => { setStepPage(page); setBuildType('browser') }} /> :
+                    stepPage === 3 ? <Building type={buildType} /> :
+                      stepPage === 4 ? <Pocket onLink={(page: number) => { setStepPage(page); setBuildType('pocket') }} /> : null}
                 <ModalContent type="options" />
               </>
             )}

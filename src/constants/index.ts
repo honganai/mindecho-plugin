@@ -18,14 +18,15 @@ export const EXTENSION_UPDATED = 'mindecho-extension-updated';
 export const AUTO_ADD = 'mindecho-auto-add';
 /** 储存userInfo */
 export const USERINFO = 'userInfo';
-/** 记录上一次更新数据日期 */
+/** 记录bookmark、readinglist、history上一次更新数据日期 */
 export const LAST_UPATE_DATA_TIME = 'last_upate_data_time';
+/** 记录pocket上一次更新数据日期 */
+export const LAST_UPATE_DATA_TIME_POCKET = 'last_upate_data_time_pocket';
 
 export const getUserInfo = () => {
   return chrome.storage.local.get(USERINFO).then((res) => {
     return res[USERINFO];
   });
-
 }
 
 export const setLastUpateDataTime = (time: number) => {
@@ -34,6 +35,16 @@ export const setLastUpateDataTime = (time: number) => {
 
 export const getLastUpateDataTime = () => {
   return chrome.storage.local.get(LAST_UPATE_DATA_TIME).then((res) => {
+    return res[LAST_UPATE_DATA_TIME];
+  });
+};
+
+export const setLastUpateDataTime_pocket = (time: number) => {
+  chrome.storage.local.set({ [LAST_UPATE_DATA_TIME_POCKET]: time });
+};
+
+export const getLastUpateDataTime_pocket = () => {
+  return chrome.storage.local.get(LAST_UPATE_DATA_TIME_POCKET).then((res) => {
     return res[LAST_UPATE_DATA_TIME];
   });
 };

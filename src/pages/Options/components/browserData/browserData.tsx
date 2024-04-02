@@ -8,7 +8,7 @@ import _ from "lodash";
 import posthog from "posthog-js";
 import GlobalContext, { ActionType, IUpateData, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
 import Header from '../header/header';
-import { setAutoAdd as setStorageAutoAdd } from '@/constants';
+import { setAutoAdd as setStorageAutoAdd, setLastUpateDataTime } from '@/constants';
 
 
 export enum SubType {
@@ -31,17 +31,14 @@ interface IMergeData {
   status?: 1 | 0;
   selected?: boolean;
 }
-interface ITitleMap {
-  [key: string]: string;
-}
 interface Props {
   userinfo?: any;
   onLink: Function;
 }
 
-const DataList: React.FC<Props> = ({ onLink }) => {
+const BrowserData: React.FC<Props> = ({ onLink }) => {
   const logoutText = chrome.i18n.getMessage('logout');
-  const { state: { upateData, bookmarks: bookmarksData }, dispatch: globalDispatch } = useContext(GlobalContext);
+  const { state: { upateData, bookmarks: bookmarksData, titleMap: keyList }, dispatch: globalDispatch } = useContext(GlobalContext);
 
   //选中的所有key集合、和初始数据集合
   const [initial, setInitial] = useState<boolean>(true);
@@ -50,7 +47,6 @@ const DataList: React.FC<Props> = ({ onLink }) => {
   const [userUrl, setUserUrl] = useState<IMergeData[]>([]);
   const [treeData, setTreeData] = useState<TreeDataNode[]>([]);
   const [expandedKeys, setExpandedKeys] = useState<React.Key[]>([]);
-  const [keyList] = useState<ITitleMap>({ bookmark: 'Bookmarks', readinglist: 'Reading List', history: 'History', pocket: 'Pocket' });
   const [checkedKeys, setCheckedKeys] = useState<React.Key[]>([]);
   const [autoExpandParent, setAutoExpandParent] = useState<boolean>(true);
   const [checkedCount, setCheckedCount] = useState<number>(0);
@@ -74,7 +70,7 @@ const DataList: React.FC<Props> = ({ onLink }) => {
   const selectChange = (checkedKeysValue: React.Key[]) => {
     const allSelect = allUserUrl;
     userUrl.forEach((item) => {
-      const ischecked = checkedKeysValue.some(itemKeys => itemKeys.split('-')[1] == item.id)
+      const ischecked = checkedKeysValue.some((itemKeys: any) => itemKeys.split('-')[1] == item.id)
       allSelect[allSelect.findIndex(allSelectItem => allSelectItem.id === item.id)].selected = ischecked ? true : false;
     });
     setAllUserUrl(allSelect);
@@ -92,7 +88,7 @@ const DataList: React.FC<Props> = ({ onLink }) => {
 
   const getUserUrl = () => {
     setLoading(true);
-    chrome.runtime.sendMessage({ type: 'request', api: 'get_user_url', body: { page: 1, page_size: 999, title: searchWord } }, (res) => {
+    chrome.runtime.sendMessage({ type: 'request', api: 'get_user_url', body: { page: 1, page_size: 999, title: searchWord, type: 'bookmark,readinglist' } }, (res) => {
       console.log('🚀 ~ datalist -获取用户上传数据- line:240: ', res);
       if (res?.result?.length > 0) {
         parsingData(res?.result)
@@ -106,28 +102,11 @@ const DataList: React.FC<Props> = ({ onLink }) => {
   const parsingData = (data: any) => {
     const reusltData: Array<TreeDataNode> = [];
     let reusltDataMap = {} as any;
-    // let reusltData_bookmarks: TreeDataNode = {} as TreeDataNode;
-    // let reusltData_readinglist: TreeDataNode = {} as TreeDataNode;
-    // let reusltData_history: TreeDataNode = {} as TreeDataNode;
-    // let reusltData_pocket: TreeDataNode = {} as TreeDataNode;
-
-    // const reusltData: TreeDataNode = [
-    //   { title: 'Bookmarks', key: `parent-${keyList[0]}`, children: [] as any[], disableCheckbox: true },
-    //   { title: 'Reading List', key: `parent-${keyList[1]}`, children: [] as any[], disableCheckbox: true },
-    //   // //@koman 暂时隐藏掉history
-    //   // // { title: 'History', key: `parent-${keyList[2]}`, children: [] as any[], disableCheckbox: true },
-    //   { title: 'Pocket', key: `parent-${keyList[3]}`, children: [] as any[], disableCheckbox: true },
-    // ];
     const currentCheckeds: string[] = [];
-    const hasSelected = data.some((item: any) => item.status > 1);
+    const hasSelected = data.some((item: any) => item.status > 0);
     const bookmarksMap = new Map<string, Array<any>>();
     data.forEach((item: any) => {
       item.selected = false;
-
-      // if (!_.some(reusltData, ['title', keyList[item.type]])) {
-      //   const index = reusltData.push({ title: keyList[item.type], key: `parent-${item.type}`, children: [] as any[] });
-      //   reusltDataMap[item.type] = reusltData[index - 1];
-      // }
 
       switch (item.type) {
         case 'bookmark':
@@ -236,6 +215,7 @@ const DataList: React.FC<Props> = ({ onLink }) => {
       type: ActionType.SetUpateData,
       payload: data as Array<IUpateData> || [],
     });
+    setLastUpateDataTime(new Date().getTime());
     onLink(3)
   }
 
@@ -301,4 +281,4 @@ const DataList: React.FC<Props> = ({ onLink }) => {
   );
 };
 
-export default DataList;
+export default BrowserData;

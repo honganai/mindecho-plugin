@@ -7,7 +7,7 @@
   letter-spacing: var(--letter-spacing-1);
 }
 
-.container .control, .container .control .btn {
+.container .control {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,9 +54,11 @@
 }
 
 .container .control .btn {
-  width: 447px;
+  width: 543px;
   height: 97px;
   margin: 20px 0;
+  padding: 0 25px;
+  text-align: left;
   font-size: var(--btn-font-size);
   color: var(--color-white);
 }
@@ -66,5 +68,14 @@
 }
 
 .container .control .btn-other {
-  background-color: #949AA5;
+  position: relative;
+  background-color: #d0c5e0;
+  color: #866BA1;
+}
+
+.container .control .btn-other .pocket-icon {
+  position: absolute;
+  right: 25px;
+  width: 54px;
+  height: 54px;
 }

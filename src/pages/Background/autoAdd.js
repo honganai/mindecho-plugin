@@ -1,18 +1,21 @@
 /* eslint-disable no-undef */
 import dayjs from 'dayjs';
 import Api from './api';
-import { getUserInfo, getLastUpateDataTime, setLastUpateDataTime } from '@/constants';
+import { getUserInfo, getLastUpateDataTime, setLastUpateDataTime, getLastUpateDataTime_pocket, setLastUpateDataTime_pocket } from '@/constants';
 
 const startAutoAdd = async () => {
     //如果没有登录，不执行
     const userInfo = await getUserInfo();
     if (!userInfo) return false;
-    const promise = getLastUpateDataTime();
-    const lastUpateDataTime = await promise;
+    const promise1 = getLastUpateDataTime();
+    const promise2 = getLastUpateDataTime_pocket();
+    const lastUpateDataTime = await promise1;
+    const lastUpateDataTime_pocket = await promise2;
     //@koman 暂时隐藏掉history
     //const history = await getHistory(lastUpateDataTime);
     const bookmarks = await getBookmarks();
     const readinglist = await getReadingList();
+    const pocket = await getPocket();
 
     const data = [];
     //@koman 暂时隐藏掉history
@@ -65,9 +68,27 @@ const startAutoAdd = async () => {
             });
         }
     });
-    setLastUpateDataTime(new Date().getTime());
 
-    data.length > 0 && uploadUserUrl([...data]);
+    pocket?.forEach((item) => {
+        if (item.user_create_time > lastUpateDataTime_pocket) {
+            data.push({
+                title: item.title,
+                url: item.url,
+                type: 'readinglist',
+                user_create_time: dayjs(item.user_create_time).format('YYYY-MM-DD HH:mm:ss'),
+                user_used_time: dayjs(item.user_used_time).format('YYYY-MM-DD HH:mm:ss'),
+                node_id: '',
+                node_index: '',
+                parentId: '',
+                origin_info: item,
+                status: 1,
+            });
+        }
+    });
+    setLastUpateDataTime(new Date().getTime());
+    setLastUpateDataTime_pocket(new Date().getTime());
+
+    (data.length > 0 || pocket.length > 0) && uploadUserUrl([...data, ...pocket]);
 }
 
 const getHistory = (startTime) => {
@@ -95,6 +116,13 @@ const getReadingList = async () => {
         return res || [];
     });
 }
+
+const getPocket = () => {
+    return Api['get_user_url']({ body: { page: 1, page_size: 999, title: '', type: 'pocket' } })
+        .then((res) => {
+            return res.json()?.result || null;
+        })
+  }
 
 // const concatBookmarks = (bookmarkItem, result = []) => {
 //     for (const item of bookmarkItem?.children || []) {
