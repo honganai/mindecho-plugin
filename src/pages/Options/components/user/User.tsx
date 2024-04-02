@@ -36,6 +36,7 @@ interface Props {
 }
 
 const User: React.FC<Props> = ({ onLink }: Props) => {
+  const bindSuccessI18N = chrome.i18n.getMessage('bindSuccess');
   const [spinning, setSpinning] = React.useState<boolean>(true);
   const [otherSourceModalShow, setOtherSourceModalShow] = React.useState<boolean>(false);
 
@@ -120,6 +121,7 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
     // 获取最近4小时的记录
     let microsecondsPerWeek = 1000 * 60 * 60 * 1;
     let oneWeekAgo = new Date().getTime() - microsecondsPerWeek;
+
     chrome.history.search(
       { text: '', startTime: oneWeekAgo },
       (res) => {
@@ -181,7 +183,7 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
               // console.log('bindPocket res:', res);
               if (res.data[types]) {
                 setOtherSourceModalShow(false);
-                message.success(`Bind [${types}] success`);
+                message.success(bindSuccessI18N);
                 clearInterval(mainTimer); // 成功后清除主定时器
               }
             });

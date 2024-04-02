@@ -22,5 +22,25 @@
     "copied": {
         "message": "已複製到剪貼簿",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "複製失敗",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "複製成功",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "不支援複製",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "綁定成功",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "沒有找到數據",
+        "description": ""
     }
 }

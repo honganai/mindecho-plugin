@@ -22,5 +22,25 @@
     "copied": {
         "message": "ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "ನಕಲು ವಿಫಲವಾಗಿದೆ",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "ನಕಲು ಯಶಸ್ಸು",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "ನಕಲು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "ಯಶಸ್ಸನ್ನು ಬಂಧಿಸಿ",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "ಯಾವುದೇ ಡೇಟಾ ಕಂಡುಬಂದಿಲ್ಲ",
+        "description": ""
     }
 }

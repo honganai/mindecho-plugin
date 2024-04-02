@@ -40,6 +40,7 @@ interface Props {
 }
 
 const DataList: React.FC<Props> = ({ onLink }) => {
+  const noDataFoundI18N = chrome.i18n.getMessage('noDataFound');
   const logoutText = chrome.i18n.getMessage('logout');
   const { state: { upateData, bookmarks: bookmarksData }, dispatch: globalDispatch } = useContext(GlobalContext);
 
@@ -97,7 +98,7 @@ const DataList: React.FC<Props> = ({ onLink }) => {
       if (res?.result?.length > 0) {
         parsingData(res?.result)
       } else {
-        message.error('No data found');
+        message.error(noDataFoundI18N);
         setLoading(false);
       }
     });

@@ -22,5 +22,25 @@
     "copied": {
         "message": "Копирано у међуспремник",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Копирање није успело",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Копирај успех",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Копирање није подржано",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Вези успех",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Није пронађен ниједан Подаци",
+        "description": ""
     }
 }

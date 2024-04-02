@@ -22,5 +22,25 @@
     "copied": {
         "message": "Imenakiliwa kwenye Ubao wa kunakili",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Imeshindwa kunakili",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Nakili mafanikio",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Nakala haitumiki",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Kufunga mafanikio",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Hakuna data iliyopatikana",
+        "description": ""
     }
 }

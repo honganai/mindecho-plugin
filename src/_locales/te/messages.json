@@ -22,5 +22,25 @@
     "copied": {
         "message": "క్లిప్‌బోర్డ్‌కి కాపీ చేయబడింది",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "కాపీ విఫలమైంది",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "కాపీ విజయం",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "కాపీకి మద్దతు లేదు",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "విజయాన్ని కట్టడి చేయండి",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "డేటా ఏదీ కనుగొనబడలేదు",
+        "description": ""
     }
 }

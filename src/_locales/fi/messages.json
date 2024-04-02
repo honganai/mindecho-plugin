@@ -22,5 +22,25 @@
     "copied": {
         "message": "Kopioitu leikepöydälle",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopiointi epäonnistui",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Kopiointi onnistui",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopiointia ei tueta",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Sido menestystä",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Dataa ei löytynyt",
+        "description": ""
     }
 }

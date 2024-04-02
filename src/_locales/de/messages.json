@@ -22,5 +22,25 @@
     "copied": {
         "message": "In die Zwischenablage kopiert",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Das Kopieren ist fehlgeschlagen",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Kopiererfolg",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopieren wird nicht unterstützt",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Erfolg binden",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Keine Daten gefunden",
+        "description": ""
     }
 }

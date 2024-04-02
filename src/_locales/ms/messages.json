@@ -22,5 +22,25 @@
     "copied": {
         "message": "Disalin ke Papan Klip",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Salinan gagal",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Salin kejayaan",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Salinan tidak disokong",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Ikat kejayaan",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Tiada data dijumpai",
+        "description": ""
     }
 }

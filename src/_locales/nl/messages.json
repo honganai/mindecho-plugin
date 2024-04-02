@@ -22,5 +22,25 @@
     "copied": {
         "message": "Gekopieerd naar het klembord",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopiëren mislukt",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Kopieer succes",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopiëren wordt niet ondersteund",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Succes binden",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Geen data gevonden",
+        "description": ""
     }
 }

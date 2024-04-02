@@ -22,5 +22,25 @@
     "copied": {
         "message": "Skopiowane do schowka",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopiowanie nie powiodło się",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Skopiuj sukces",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopiowanie nie jest obsługiwane",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Powiąż sukces",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Nie znaleziono danych",
+        "description": ""
     }
 }

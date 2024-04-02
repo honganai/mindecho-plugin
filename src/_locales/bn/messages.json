@@ -22,5 +22,25 @@
     "copied": {
         "message": "ক্লিপবোর্ডে কপি করা হয়েছে",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "অনুলিপি ব্যর্থ হয়েছে",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "কপি সাফল্য",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "অনুলিপি সমর্থিত নয়",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "সাফল্য আবদ্ধ করুন",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "কোন তথ্য পাওয়া যায়নি",
+        "description": ""
     }
 }

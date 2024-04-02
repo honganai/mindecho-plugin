@@ -22,5 +22,25 @@
     "copied": {
         "message": "கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "நகலெடுக்க முடியவில்லை",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "நகல் வெற்றி",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "நகல் ஆதரிக்கப்படவில்லை",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "வெற்றியைக் கட்டு",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "வேறு தகவல்கள் இல்லை",
+        "description": ""
     }
 }

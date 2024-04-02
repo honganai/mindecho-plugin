@@ -22,5 +22,25 @@
     "copied": {
         "message": "Скопійовано в буфер обміну",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Помилка копіювання",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Успішне копіювання",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Копіювання не підтримується",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Зв&#39;яжіть успіх",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Даних не знайдено",
+        "description": ""
     }
 }

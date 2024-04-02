@@ -22,5 +22,25 @@
     "copied": {
         "message": "Kopirano u međuspremnik",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopiranje nije uspjelo",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Uspjeh kopiranja",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopiranje nije podržano",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Vezati uspjeh",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Nema podataka",
+        "description": ""
     }
 }

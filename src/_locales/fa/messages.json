@@ -22,5 +22,25 @@
     "copied": {
         "message": "در کلیپ بورد کپی شد",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "کپی ناموفق بود",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "کپی موفقیت",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "کپی پشتیبانی نمی شود",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "موفقیت را مقید کنید",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "داده ای یافت نشد",
+        "description": ""
     }
 }

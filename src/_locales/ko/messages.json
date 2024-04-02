@@ -22,5 +22,25 @@
     "copied": {
         "message": "클립보드에 복사됨",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "복사 실패",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "복사 성공",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "복사가 지원되지 않음",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "바인딩 성공",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "데이터가 없습니다",
+        "description": ""
     }
 }

@@ -22,5 +22,25 @@
     "copied": {
         "message": "คัดลอกไปยังคลิปบอร์ดแล้ว",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "การคัดลอกล้มเหลว",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "คัดลอกสำเร็จ",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "ไม่รองรับการคัดลอก",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "ผูกมัดความสำเร็จ",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "ไม่พบข้อมูล",
+        "description": ""
     }
 }

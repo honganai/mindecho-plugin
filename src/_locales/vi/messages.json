@@ -22,5 +22,25 @@
     "copied": {
         "message": "Sao chép vào clipboard",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Sao chép không thành công",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Sao chép thành công",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Bản sao không được hỗ trợ",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Ràng buộc thành công",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Không tìm thấy dữ liệu nào",
+        "description": ""
     }
 }

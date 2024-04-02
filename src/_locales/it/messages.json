@@ -22,5 +22,25 @@
     "copied": {
         "message": "Copiato negli Appunti",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Copia non riuscita",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Copia il successo",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Copia non supportata",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Vincolare il successo",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Nessun dato trovato",
+        "description": ""
     }
 }

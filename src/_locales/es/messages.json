@@ -22,5 +22,25 @@
     "copied": {
         "message": "Copiado al portapapeles",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Copia fallida",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Copia exitosa",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Copia no admitida",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Vincular el éxito",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Datos no encontrados",
+        "description": ""
     }
 }

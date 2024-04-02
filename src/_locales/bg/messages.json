@@ -22,5 +22,25 @@
     "copied": {
         "message": "Копирано в клипборда",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Неуспешно копиране",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Успешно копиране",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Копирането не се поддържа",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Обвържете успех",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Няма намерени данни",
+        "description": ""
     }
 }

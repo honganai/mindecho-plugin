@@ -22,5 +22,25 @@
     "copied": {
         "message": "ક્લિપબોર્ડ પર કૉપિ કરી",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "નકલ નિષ્ફળ",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "સફળતાની નકલ કરો",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "નકલ સમર્થિત નથી",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "સફળતાને બાંધો",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "કોઈ ડેટા મળ્યો નથી",
+        "description": ""
     }
 }

@@ -22,5 +22,25 @@
     "copied": {
         "message": "ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തി",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "പകർത്താനായില്ല",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "കോപ്പി വിജയം",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "പകർപ്പ് പിന്തുണയ്ക്കുന്നില്ല",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "വിജയം ബന്ധിപ്പിക്കുക",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "വിവരങ്ങളൊന്നും കണ്ടെത്തിയില്ല",
+        "description": ""
     }
 }

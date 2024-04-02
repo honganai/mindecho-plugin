@@ -22,5 +22,25 @@
     "copied": {
         "message": "Copiat în Clipboard",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Copierea eșuată",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Copiere cu succes",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Copierea nu este acceptată",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Leagă succesul",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Nu s-au gasit date",
+        "description": ""
     }
 }

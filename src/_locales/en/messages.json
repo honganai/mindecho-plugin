@@ -1,6 +1,6 @@
 {
     "pluginName": {
-        "message": "mindECHO: Full-Text Search in Bookmarks & Collections",
+        "message": "mindECHO: Seamless Full-Text Search in Bookmarks & Collections",
         "description": ""
     },
     "pluginDescription": {
@@ -21,6 +21,26 @@
     },
     "copied": {
         "message": "Copied to Clipboard",
+        "description": ""
+    },
+    "copyFailed": {
+    "message": "Copy failed",
+    "description": ""
+    },
+    "copySuccess": {
+        "message": "Copy success",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Copy not supported",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Bind success",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "No data found",
         "description": ""
     }
 }

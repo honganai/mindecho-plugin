@@ -22,5 +22,25 @@
     "copied": {
         "message": "Copiado para a área de transferência",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Falha na cópia",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Sucesso na cópia",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Cópia não suportada",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Vincule o sucesso",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Nenhum dado encontrado",
+        "description": ""
     }
 }

@@ -22,5 +22,25 @@
     "copied": {
         "message": "ወደ ቅንጥብ ሰሌዳ ተቀድቷል።",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "መቅዳት አልተሳካም።",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "ስኬትን ይቅዱ",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "ቅጂ አይደገፍም።",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "ስኬትን ማሰር",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "ምንም ውሂብ አልተገኘም።",
+        "description": ""
     }
 }
