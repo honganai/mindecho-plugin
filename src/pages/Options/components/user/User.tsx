@@ -193,7 +193,6 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
 
   const getBindStatues = () => {
     chrome.runtime.sendMessage({ type: 'request', api: 'get_bind_status', body: {} }, (res) => {
-      console.log(1111, res)
       if (res?.data?.pocket) {
         onLink(4);
       } else {

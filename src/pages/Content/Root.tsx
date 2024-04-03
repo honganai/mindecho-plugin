@@ -4,6 +4,7 @@ import App from './App';
 
 const Root: React.FC = () => {
   const [globalState, globalDispatch] = useReducer(GlobalReducer, {
+    titleMap: { bookmark: 'Bookmarks', readinglist: 'Reading List', history: 'History', pocket: 'Pocket' },
     showAskModal: false,
     language: '',
     showAnswerModal: false,

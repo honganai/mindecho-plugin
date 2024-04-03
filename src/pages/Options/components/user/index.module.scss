@@ -58,6 +58,11 @@
       background-color:#d0c5e0;
       color: #866BA1;
 
+      &::hover {
+        border-color: #735491;
+        background-color: #000;
+      }
+
       .pocket-icon {
         position: absolute;
         right: 25px;

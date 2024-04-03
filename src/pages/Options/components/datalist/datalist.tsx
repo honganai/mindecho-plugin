@@ -41,7 +41,7 @@ interface Props {
 
 const DataList: React.FC<Props> = ({ onLink }) => {
   const logoutText = chrome.i18n.getMessage('logout');
-  const { state: { upateData, bookmarks: bookmarksData }, dispatch: globalDispatch } = useContext(GlobalContext);
+  const { state: { upateData, bookmarks: bookmarksData, titleMap: keyList }, dispatch: globalDispatch } = useContext(GlobalContext);
 
   //选中的所有key集合、和初始数据集合
   const [initial, setInitial] = useState<boolean>(true);
@@ -50,7 +50,6 @@ const DataList: React.FC<Props> = ({ onLink }) => {
   const [userUrl, setUserUrl] = useState<IMergeData[]>([]);
   const [treeData, setTreeData] = useState<TreeDataNode[]>([]);
   const [expandedKeys, setExpandedKeys] = useState<React.Key[]>([]);
-  const [keyList] = useState<ITitleMap>({ bookmark: 'Bookmarks', readinglist: 'Reading List', history: 'History', pocket: 'Pocket' });
   const [checkedKeys, setCheckedKeys] = useState<React.Key[]>([]);
   const [autoExpandParent, setAutoExpandParent] = useState<boolean>(true);
   const [checkedCount, setCheckedCount] = useState<number>(0);

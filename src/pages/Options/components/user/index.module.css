@@ -73,6 +73,11 @@
   color: #866BA1;
 }
 
+.container .control .btn-other::hover {
+  border-color: #735491;
+  background-color: #000;
+}
+
 .container .control .btn-other .pocket-icon {
   position: absolute;
   right: 25px;
