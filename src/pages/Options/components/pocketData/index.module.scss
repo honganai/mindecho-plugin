@@ -38,6 +38,7 @@
         border-radius: 10px;
         font-size: 16px;
         letter-spacing: 0.5px;
+        background-color: #6428be;
       }
 
       .auto-add {
@@ -85,14 +86,6 @@
         }
       }
 
-      .list-box {
-        height: calc(100vh - 200px);
-        padding: 10px 30px;
-        margin-bottom: 20px;
-        background-color: #fff;
-        border-radius: 15px;
-        overflow: scroll;
-      }
     }
   }
 }

@@ -11,8 +11,9 @@ import posthog from "posthog-js";
 import logo from '@/assets/icons/logo.png';
 import GlobalContext, { ActionType, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
 import Header from '../header/header';
-import pocket from '@/assets/icons/pocket.png';
 import pocketIcon from '@/assets/icons/pocket_icon.png';
+import pocketSourceIcon from '@/assets/icons/pocket_source_icon.png';
+import RaindRopSourceIcon from '@/assets/icons/raindrop_source_icon.png';
 
 export enum SubType {
   Free = 'free',
@@ -183,7 +184,8 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
               // console.log('bindPocket res:', res);
               if (res.data[types]) {
                 setOtherSourceModalShow(false);
-                message.success(bindSuccessI18N);
+                // message.success(bindSuccessI18N);
+                onLink(4);
                 clearInterval(mainTimer); // 成功后清除主定时器
               }
             });
@@ -218,9 +220,27 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
 
         </div>
       </Spin>
-      <Modal footer={[]} onCancel={() => setOtherSourceModalShow(false)} open={otherSourceModalShow} title='Others data integration'>
-        {/* <img style={{ cursor: 'pointer' }} src={pocket} alt="pocket" onClick={() => Bind('pocket')} /> */}
-        <Button type="text" block onClick={() => Bind('pocket')}><img src={pocket} alt="pocket" /></Button>
+      <Modal footer={false} className={styles['source-modal']} onCancel={() => setOtherSourceModalShow(false)} mask={false} open={otherSourceModalShow} title='Select Source' centered={true}>
+        <div className={styles['source-content']}>
+          <div className={styles['source-pocket']}>
+            <PlusOutlined className={styles.addIcon} />
+            <div className={styles['source-pocket-title']} onClick={() => Bind('pocket')}>
+              <img src={pocketSourceIcon} alt="pocketSourceIcon" />
+            </div>
+            <div className={styles['source-pocket-text']}>
+              <p>Your Pocket Saves list will be imported with secure authorization. </p>
+              <p>Full text of the saves will be fetched and made searchable.</p>
+            </div>
+          </div>
+          <div className={styles['raindrop-pocket']}>
+            <div className={styles['source-raindrop-title']}>
+              <img src={RaindRopSourceIcon} alt="RaindRopSourceIcon" />
+            </div>
+            <div className={styles['source-raindrop-text']}>
+              <p>More sources will be supported</p>
+            </div>
+          </div>
+        </div>
       </Modal>
     </div>
   );

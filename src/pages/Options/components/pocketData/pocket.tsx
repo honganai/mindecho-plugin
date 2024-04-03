@@ -9,6 +9,7 @@ import posthog from "posthog-js";
 import GlobalContext, { ActionType, IUpateData, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
 import Header from '../header/header';
 import { setAutoAdd as setStorageAutoAdd, setLastUpateDataTime_pocket } from '@/constants';
+import DataList from '../datalist/datalist';
 
 export enum SubType {
   Free = 'free',
@@ -36,7 +37,7 @@ interface Props {
 }
 
 const Pocket: React.FC<Props> = ({ onLink }) => {
-    const noDataFoundI18N = chrome.i18n.getMessage('noDataFound');
+  const noDataFoundI18N = chrome.i18n.getMessage('noDataFound');
   const logoutText = chrome.i18n.getMessage('logout');
   const { state: { titleMap: keyList }, dispatch: globalDispatch } = useContext(GlobalContext);
 
@@ -90,12 +91,13 @@ const Pocket: React.FC<Props> = ({ onLink }) => {
     setLoading(true);
     chrome.runtime.sendMessage({ type: 'request', api: 'get_user_url', body: { page: 1, page_size: 999, title: searchWord, type: 'pocket' } }, (res) => {
       console.log('🚀 ~ pocket -获取用户上传数据- line:240: ', res);
-      if (res?.result?.length > 0) {
-        parsingData(res?.result)
-      } else {
-        message.error(noDataFoundI18N);
-        setLoading(false);
-      }
+      parsingData(res?.result || [])
+      // if (res?.result?.length > 0) {
+      //   parsingData(res?.result)
+      // } else {
+      //   message.error(noDataFoundI18N);
+      //   setLoading(false);
+      // }
     });
   }
 
@@ -175,6 +177,23 @@ const Pocket: React.FC<Props> = ({ onLink }) => {
     }
   }
 
+  const titleRender = (nodeData: any) => {
+    if (nodeData.url) {
+      return (
+        <div className={styles.items}>
+          <p className={styles['title']}>{nodeData.title}</p>
+          <p className={styles['url']}>{nodeData.url}</p>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <span style={{ marginLeft: 8 }}>{nodeData.title}</span>
+        </div>
+      );
+    }
+  };
+
   return (
     <div className={styles.container}>
       <Header tip={'Connect to Pocket to revive your dusty stash.'} />
@@ -186,15 +205,16 @@ const Pocket: React.FC<Props> = ({ onLink }) => {
         </div>
         <div className={styles['center']}>
           <div className={styles['header']}>
-            <p>Pocket Saves</p>
+            <p><span style={{ color: '#e94554' }}>Pocket</span> Saves</p>
           </div>
           <div className={styles['control-box']}>
             <Input className={styles['search']} placeholder="Find items by keywords" prefix={<SearchOutlined />} onPressEnter={searchKeyWord} />
             <Checkbox className={styles['select']} onChange={onChange}>Select/Deselect All Shown</Checkbox>
           </div>
-          <Spin spinning={loading} tip='Loading...'>
-            <div className={styles['list-box']}>
+          <Spin spinning={loading} tip='Loading...' style={{ background: '#fff' }}>
+            {/* <div className={styles['list-box']}>
               <Tree
+                className={styles.treeList}
                 checkable
                 onExpand={onExpand}
                 expandedKeys={expandedKeys}
@@ -202,15 +222,24 @@ const Pocket: React.FC<Props> = ({ onLink }) => {
                 onCheck={onCheck}
                 checkedKeys={checkedKeys}
                 treeData={treeData}
-              />
-            </div>
+                titleRender={titleRender}
+              /> 
+            </div> */}
+            <DataList
+              checkable
+              onExpand={onExpand}
+              expandedKeys={expandedKeys}
+              autoExpandParent={autoExpandParent}
+              onCheck={onCheck}
+              checkedKeys={checkedKeys}
+              treeData={treeData} />
           </Spin>
 
           <p style={{ textAlign: 'right' }}><LockOutlined /> Secure Connection</p>
         </div>
         <div className={styles['right']}>
           <Button className={styles['import-btn']} size="middle" type="primary" block onClick={onImport}>
-            <span>Import {checkedCount} Items</span>
+            <span>Fetch {checkedCount} Items</span>
           </Button>
           <p className={styles['auto-add']}>
             <Switch checked={autoAdd} onChange={onChange} />

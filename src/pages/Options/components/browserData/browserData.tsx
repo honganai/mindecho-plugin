@@ -9,7 +9,7 @@ import posthog from "posthog-js";
 import GlobalContext, { ActionType, IUpateData, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
 import Header from '../header/header';
 import { setAutoAdd as setStorageAutoAdd, setLastUpateDataTime } from '@/constants';
-
+import DataList from '../datalist/datalist';
 
 export enum SubType {
   Free = 'free',
@@ -91,12 +91,13 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
     setLoading(true);
     chrome.runtime.sendMessage({ type: 'request', api: 'get_user_url', body: { page: 1, page_size: 999, title: searchWord, type: 'bookmark,readinglist' } }, (res) => {
       console.log('🚀 ~ datalist -获取用户上传数据- line:240: ', res);
-      if (res?.result?.length > 0) {
-        parsingData(res?.result)
-      } else {
-        message.error(noDataFoundI18N);
-        setLoading(false);
-      }
+      parsingData(res?.result || []);
+      // if (res?.result?.length > 0) {
+      //   parsingData(res?.result)
+      // } else {
+      //   message.error(noDataFoundI18N);
+      //   setLoading(false);
+      // }
     });
   }
 
@@ -164,7 +165,7 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
       }
     });
     const bookmarks: TreeDataNode = parsingBookMarks(bookmarksData, bookmarksMap)
-    reusltDataMap['bookmark'].children?.push(...bookmarks.children || []);
+    reusltDataMap['bookmark']?.children?.push(...bookmarks.children || []);
     setTreeData(reusltData)
     onExpand([reusltData[0]?.key, reusltData[1]?.key])
 
@@ -250,8 +251,8 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
             <Input className={styles['search']} placeholder="Find items by keywords" prefix={<SearchOutlined />} onPressEnter={searchKeyWord} />
             <Checkbox className={styles['select']} onChange={onChange}>Select/Deselect All Shown</Checkbox>
           </div>
-          <Spin spinning={loading} tip='Loading...'>
-            <div className={styles['list-box']}>
+          <Spin spinning={loading} tip='Loading...' style={{ background: '#fff' }}>
+            {/* <div className={styles['list-box']}>
               <Tree
                 checkable
                 onExpand={onExpand}
@@ -263,14 +264,22 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
                 //selectedKeys={selectedKeys}
                 treeData={treeData}
               />
-            </div>
+            </div> */}
+            <DataList
+              checkable
+              onExpand={onExpand}
+              expandedKeys={expandedKeys}
+              autoExpandParent={autoExpandParent}
+              onCheck={onCheck}
+              checkedKeys={checkedKeys}
+              treeData={treeData} />
           </Spin>
 
           <p>* Data on the current page is local only. No URLs will be synchronized unless selected and submitted in further steps.</p>
         </div>
         <div className={styles['right']}>
           <Button className={styles['import-btn']} size="middle" type="primary" block onClick={onImport}>
-            <span>Import {checkedCount} Items</span>
+            <span>Fetch {checkedCount} Items</span>
           </Button>
           <p className={styles['auto-add']}>
             <Switch checked={autoAdd} onChange={onChange} />

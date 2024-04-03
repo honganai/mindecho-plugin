@@ -1,98 +1,51 @@
 @import '../../../../assets/style/public.extend';
 
-.container {
-  width: 100vw;
-  min-height: 100vh;
-  position: relative;
-  line-height: var(--line-height);
+.list-box {
+  height: calc(100vh - 200px);
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: scroll;
 
-  .content {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .treeList {
 
-    .left {
-      flex: 1;
-      @extend %flex-center;
-
-      .back {
-        font-size: var(--icon-font-size);
-        cursor: pointer;
-      }
-    }
-
-    .right {
-      flex: 1;
-      @extend %flex-center;
-      flex-direction: column;
-      padding: 0 20px;
-
-      .import-btn {
+    :global {
+      .ant-tree-treenode {
         width: 100%;
-        max-width: 236px;
-        min-width: 150px;
-        height: 49px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        font-size: 16px;
-        letter-spacing: 0.5px;
+        flex: 1;
+        overflow: hidden;
       }
 
-      .auto-add {
-        color: rgb(109, 109, 109);
-        @extend %flex-center;
-        
-        span {
-          margin-left: 5px;
-        }
+      .ant-tree-node-content-wrapper {
+        width: 100%;
+        overflow: hidden;
       }
     }
 
-    .center {
-      width: 850px;
-      height: 100vh;
-      padding: 20px 0 40px;
+    .items {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-      .header {
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: center;
-        // margin-bottom: 10px;
-
-        p {
-          text-align: center;
-          font-size: var(--font-size);
-          font-weight: 700;
-          color: #1B6593;
-        }
+      .title {
+        display: inline-block;
+        width: 25%;
+        margin-right: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
 
-      .control-box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-
-        .search {
-          width: 250px;
-          height: 37;
-        }
-
-        .select {
-          display: none
-        }
+      .url {
+        display: inline-block;
+        width: 65%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #b7b7b7;
       }
-
-      .list-box {
-        height: calc(100vh - 200px);
-        padding: 10px 30px;
-        margin-bottom: 20px;
-        background-color: #fff;
-        border-radius: 15px;
-        overflow: scroll;
-      }
-    }
+    } 
   }
 }
