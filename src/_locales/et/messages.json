@@ -22,5 +22,25 @@
     "copied": {
         "message": "Kopeeriti lõikelauale",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopeerimine ebaõnnestus",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Edukas kopeerimine",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopeerimist ei toetata",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Edu sidumine",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Andmeid ei leitud",
+        "description": ""
     }
 }

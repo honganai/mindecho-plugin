@@ -22,5 +22,25 @@
     "copied": {
         "message": "クリップボードにコピーされました",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "コピーに失敗しました",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "コピー成功",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "コピーはサポートされていません",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "バインド成功",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "何もデータが見つかりませんでした",
+        "description": ""
     }
 }

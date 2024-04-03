@@ -40,6 +40,9 @@ const MarkdownContent: React.FC<IProps> = ({ markdownStream = '', refresh }) => 
 
   const [data, setData] = useState<IContent[]>([]);
   const [copyStatus, setCopyStatus] = useState(false);
+  const copyFailedI18N = chrome.i18n.getMessage('copyFailed');
+  const copySuccessI18N = chrome.i18n.getMessage('copySuccess');
+  const copyNotSupportedI18N = chrome.i18n.getMessage('copyNotSupported');
 
   const parseMd = (mdStr: string) => {
     const container = document.createElement('div');
@@ -94,10 +97,10 @@ const MarkdownContent: React.FC<IProps> = ({ markdownStream = '', refresh }) => 
       setTimeout(() => {
         setCopyStatus(false);
       }, 3000)
-      navigator.clipboard.writeText(data[0]?.content || '当前数据不能复制');
-      message.success('复制成功');
+      navigator.clipboard.writeText(data[0]?.content || copyFailedI18N);
+      message.success(copySuccessI18N);
     } else {
-      message.error('当前浏览器不支持复制');
+      message.error(copyNotSupportedI18N);
     }
   }
 

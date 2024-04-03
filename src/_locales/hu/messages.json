@@ -22,5 +22,25 @@
     "copied": {
         "message": "Vágólapra másolva",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "A másolás nem sikerült",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Sikeres másolás",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "A másolás nem támogatott",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Bind siker",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Nem található adat",
+        "description": ""
     }
 }

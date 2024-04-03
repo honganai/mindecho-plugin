@@ -22,5 +22,25 @@
     "copied": {
         "message": "Panoya kopyalandı",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopyalama başarısız oldu",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Başarıyı kopyala",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopyalama desteklenmiyor",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Başarıyı bağla",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Veri bulunamadı",
+        "description": ""
     }
 }

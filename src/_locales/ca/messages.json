@@ -22,5 +22,25 @@
     "copied": {
         "message": "S&#39;ha copiat al porta-retalls",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "La còpia ha fallat",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Còpia correctament",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "La còpia no és compatible",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Enllaçar l&#39;èxit",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "No s&#39;han trobat dades",
+        "description": ""
     }
 }

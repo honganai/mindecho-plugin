@@ -22,5 +22,25 @@
     "copied": {
         "message": "Copié dans le presse-papier",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Échec de la copie",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Copie réussie",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Copie non prise en charge",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Lier le succès",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Aucune donnée disponible",
+        "description": ""
     }
 }

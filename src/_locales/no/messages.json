@@ -22,5 +22,25 @@
     "copied": {
         "message": "Kopiert til utklippstavlen",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopiering mislyktes",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Kopieringssuksess",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopiering støttes ikke",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Bind suksess",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Ingen data funnet",
+        "description": ""
     }
 }

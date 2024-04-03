@@ -22,5 +22,25 @@
     "copied": {
         "message": "Skopírované do schránky",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopírovanie zlyhalo",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Kopírovať úspech",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopírovanie nie je podporované",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Viazať úspech",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Neboli nájdené žiadne dáta",
+        "description": ""
     }
 }

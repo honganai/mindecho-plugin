@@ -22,5 +22,25 @@
     "copied": {
         "message": "Zkopírováno do schránky",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopírování se nezdařilo",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Kopírovat úspěch",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopírování není podporováno",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Svázat úspěch",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Nenalezena žádná data",
+        "description": ""
     }
 }

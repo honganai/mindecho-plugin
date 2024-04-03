@@ -22,5 +22,25 @@
     "copied": {
         "message": "Скопировано в буфер обмена",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Не удалось скопировать",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Копирование выполнено успешно",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Копирование не поддерживается",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Связать успех",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Данные не найдены",
+        "description": ""
     }
 }

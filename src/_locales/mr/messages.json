@@ -22,5 +22,25 @@
     "copied": {
         "message": "क्लिपबोर्डवर कॉपी केले",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "कॉपी अयशस्वी",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "यश कॉपी करा",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "कॉपी समर्थित नाही",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "यशाला बांधा",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "माहिती आढळली नाही",
+        "description": ""
     }
 }

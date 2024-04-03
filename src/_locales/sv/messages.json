@@ -22,5 +22,25 @@
     "copied": {
         "message": "Kopierade till Urklipp",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopieringen misslyckades",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Kopieringsframgång",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopiering stöds inte",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Bind framgång",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Ingen information hittad",
+        "description": ""
     }
 }

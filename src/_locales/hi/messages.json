@@ -22,5 +22,25 @@
     "copied": {
         "message": "क्लिपबोर्ड पर नकल",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "प्रतिलिपि विफल",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "सफलता की नकल करें",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "प्रतिलिपि समर्थित नहीं है",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "सफलता बांधें",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "डाटा प्राप्त नहीं हुआ",
+        "description": ""
     }
 }

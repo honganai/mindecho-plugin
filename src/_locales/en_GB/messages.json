@@ -22,5 +22,25 @@
     "copied": {
         "message": "Copied to Clipboard",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Copy failed",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Copy success",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Copy not supported",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Bind success",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "No data found",
+        "description": ""
     }
 }

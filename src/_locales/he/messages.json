@@ -22,5 +22,25 @@
     "copied": {
         "message": "הועתק ללוח",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "ההעתקה נכשלה",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "העתקת הצלחה",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "העתקה לא נתמכת",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "לאגד הצלחה",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "לא נמצאו נתונים",
+        "description": ""
     }
 }

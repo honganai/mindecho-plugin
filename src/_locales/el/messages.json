@@ -22,5 +22,25 @@
     "copied": {
         "message": "Αντιγράφηκε στο Πρόχειρο",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Η αντιγραφή απέτυχε",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Επιτυχία αντιγραφής",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Η αντιγραφή δεν υποστηρίζεται",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Δέστε την επιτυχία",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Δε βρέθηκαν δεδομένα",
+        "description": ""
     }
 }

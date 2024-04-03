@@ -22,5 +22,25 @@
     "copied": {
         "message": "Kinopya sa Clipboard",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Nabigo ang pagkopya",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Kopyahin ang tagumpay",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Hindi sinusuportahan ang kopya",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Magbigkis ng tagumpay",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Walang nakitang data",
+        "description": ""
     }
 }

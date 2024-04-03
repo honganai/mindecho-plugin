@@ -22,5 +22,25 @@
     "copied": {
         "message": "Kopēts starpliktuvē",
         "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopēšana neizdevās",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Veiksmīga kopēšana",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopēšana netiek atbalstīta",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Saistīt panākumus",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Dati nav atrasti",
+        "description": ""
     }
 }
