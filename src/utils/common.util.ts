@@ -14,6 +14,21 @@ export const formatDateMMDD = (dateString: string, returnDefault = true) => {
 };
 
 /**
+ * 打开设置页
+ */
+export function openSettings(path?: string) {
+  console.log('🚀 ~ file: common.util.ts ~ line 21 ~ openSettings ~ path', path);
+  chrome.runtime.sendMessage(
+      {
+        type: 'openSettings',
+      },
+      () => {
+        //
+      },
+  );
+}
+
+/**
  * @description: 复制到剪切板
  * @param {string} copyText
  * @return {*}
