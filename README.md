@@ -144,6 +144,8 @@ ApiCall({ key: secrets.key });
 
 - [Webpack documentation](https://webpack.js.org/concepts/)
 - [Chrome Extension documentation](https://developer.chrome.com/extensions/getstarted)
+- [linnk.ai(https://linnk.ai?utm=github)]
+- [mindecho(https://mindecho.app)]
 
 ---
 
