@@ -217,7 +217,7 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
     type: 'normal',
     contexts:["selection"]
   });
-  chrome.runtime.openOptionsPage();
+
   // if (reason === 'install') {
   //   chrome.tabs.create({
   //     active: true,
@@ -228,6 +228,7 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
     setExtensionUpdated();
   }
   if (reason === 'install') {
+    chrome.runtime.openOptionsPage();
     executeScript();
     setAutoAdd()
   }
