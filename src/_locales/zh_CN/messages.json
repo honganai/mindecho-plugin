@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO：书签和收藏夹中的全文搜索",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "在书签、保存的页面、收藏和阅读列表中即时搜索和查找内容。从您的个人网络档案中获取相关答案。",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "使用 Google 注册",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "登出",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "系统错误",
+        "description": ""
+    },
+    "copied": {
+        "message": "已复制到剪贴板",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "复制失败",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "复制成功",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "不支持复制",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "绑定成功",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "没有找到数据",
+        "description": ""
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: బుక్‌మార్క్‌లు &amp; సేకరణలలో పూర్తి-వచన శోధన",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "మీ బుక్‌మార్క్‌లు, సేవ్ చేసిన పేజీలు, సేకరణలు మరియు పఠన జాబితాలలో తక్షణమే శోధించండి మరియు కంటెంట్‌ను కనుగొనండి. మీ వ్యక్తిగత వెబ్ ఆర్కైవ్ నుండి సంబంధిత సమాధానాలను పొందండి.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Googleతో సైన్ అప్ చేయండి",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "లాగ్ అవుట్ చేయండి",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "సిస్టమ్ లోపం",
+        "description": ""
+    },
+    "copied": {
+        "message": "క్లిప్‌బోర్డ్‌కి కాపీ చేయబడింది",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "కాపీ విఫలమైంది",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "కాపీ విజయం",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "కాపీకి మద్దతు లేదు",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "విజయాన్ని కట్టడి చేయండి",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "డేటా ఏదీ కనుగొనబడలేదు",
+        "description": ""
+    }
+}

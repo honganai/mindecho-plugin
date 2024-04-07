@@ -1,0 +1,44 @@
+.list-box {
+  height: calc(100vh - 200px);
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: scroll;
+}
+
+.list-box .treeList :global .ant-tree-treenode {
+  width: 100%;
+  flex: 1;
+  overflow: hidden;
+}
+
+.list-box .treeList :global .ant-tree-node-content-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.list-box .treeList .items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-box .treeList .items .title {
+  display: inline-block;
+  width: 25%;
+  margin-right: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.list-box .treeList .items .url {
+  display: inline-block;
+  width: 65%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #b7b7b7;
+}

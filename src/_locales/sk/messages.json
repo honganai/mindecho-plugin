@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: Fulltextové vyhľadávanie v záložkách a zbierkach",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Okamžite hľadajte a nájdite obsah vo svojich záložkách, uložených stránkach, zbierkach a zoznamoch na čítanie. Získajte relevantné odpovede zo svojho osobného webového archívu.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Zaregistrujte sa cez Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Odhlásiť sa",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Systémová chyba",
+        "description": ""
+    },
+    "copied": {
+        "message": "Skopírované do schránky",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopírovanie zlyhalo",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Kopírovať úspech",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopírovanie nie je podporované",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Viazať úspech",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Neboli nájdené žiadne dáta",
+        "description": ""
+    }
+}

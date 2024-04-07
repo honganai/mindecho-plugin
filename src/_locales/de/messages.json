@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: Volltextsuche in Lesezeichen und Sammlungen",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Suchen und finden Sie sofort Inhalte in Ihren Lesezeichen, gespeicherten Seiten, Sammlungen und Leselisten. Erhalten Sie relevante Antworten aus Ihrem persönlichen Webarchiv.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Melden Sie sich bei Google an",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Ausloggen",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Systemfehler",
+        "description": ""
+    },
+    "copied": {
+        "message": "In die Zwischenablage kopiert",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Das Kopieren ist fehlgeschlagen",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Kopiererfolg",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopieren wird nicht unterstützt",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Erfolg binden",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Keine Daten gefunden",
+        "description": ""
+    }
+}

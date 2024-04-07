@@ -1,0 +1,22 @@
+#app-container {
+    --main-bg-color: #F5F5F5;
+    --icon-font-size: 18px;
+    --font-size: 24px;
+    --font-size-big: 40px;
+    --font-color: rgb(0, 0, 0);
+    --color-black: rgb(20, 20, 20);
+    --color-white: rgb(255, 255, 255);
+    --btn-text-color: rgb(30, 30, 30);
+    --btn-font-size: 32px;
+    --letter-spacing-1: 1px;
+
+    /* p {
+        margin: 0
+    } */
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}

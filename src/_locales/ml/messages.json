@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: ബുക്ക്‌മാർക്കുകളിലും ശേഖരങ്ങളിലും പൂർണ്ണ-വാചക തിരയൽ",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "നിങ്ങളുടെ ബുക്ക്‌മാർക്കുകൾ, സംരക്ഷിച്ച പേജുകൾ, ശേഖരങ്ങൾ, വായനാ ലിസ്റ്റുകൾ എന്നിവയിലുടനീളം തൽക്ഷണം തിരയുകയും ഉള്ളടക്കം കണ്ടെത്തുകയും ചെയ്യുക. നിങ്ങളുടെ സ്വകാര്യ വെബ് ആർക്കൈവിൽ നിന്ന് പ്രസക്തമായ ഉത്തരങ്ങൾ നേടുക.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Google ഉപയോഗിച്ച് സൈൻ അപ്പ് ചെയ്യുക",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "ലോഗ് ഔട്ട് ചെയ്യുക",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "സിസ്റ്റം പിശക്",
+        "description": ""
+    },
+    "copied": {
+        "message": "ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തി",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "പകർത്താനായില്ല",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "കോപ്പി വിജയം",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "പകർപ്പ് പിന്തുണയ്ക്കുന്നില്ല",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "വിജയം ബന്ധിപ്പിക്കുക",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "വിവരങ്ങളൊന്നും കണ്ടെത്തിയില്ല",
+        "description": ""
+    }
+}

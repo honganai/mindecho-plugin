@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: pesquisa de texto completo em marcadores e coleções",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Pesquise e encontre conteúdo instantaneamente em seus favoritos, páginas salvas, coleções e listas de leitura. Obtenha respostas relevantes do seu arquivo pessoal da web.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Inscreva-se no Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Sair",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Erro no sistema",
+        "description": ""
+    },
+    "copied": {
+        "message": "Copiado para a área de transferência",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Falha na cópia",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Sucesso na cópia",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Cópia não suportada",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Vincule o sucesso",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Nenhum dado encontrado",
+        "description": ""
+    }
+}

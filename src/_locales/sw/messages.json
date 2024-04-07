@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: Utafutaji wa Maandishi Kamili katika Alamisho na Mikusanyiko",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Tafuta na upate maudhui papo hapo kwenye vialamisho, kurasa zilizohifadhiwa, mikusanyiko na orodha za kusoma. Pata majibu muhimu kutoka kwa kumbukumbu yako ya kibinafsi ya wavuti.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Jisajili na Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Toka nje",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Hitilafu ya Mfumo",
+        "description": ""
+    },
+    "copied": {
+        "message": "Imenakiliwa kwenye Ubao wa kunakili",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Imeshindwa kunakili",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Nakili mafanikio",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Nakala haitumiki",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Kufunga mafanikio",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Hakuna data iliyopatikana",
+        "description": ""
+    }
+}

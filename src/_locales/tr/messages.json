@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: Yer İmleri ve Koleksiyonlarda Tam Metin Arama",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Yer işaretleriniz, kayıtlı sayfalarınız, koleksiyonlarınız ve okuma listeleriniz genelinde içeriği anında arayın ve bulun. Kişisel web arşivinizden ilgili yanıtları alın.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Google&#39;a kaydolun",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Çıkış Yap",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Sistem hatası",
+        "description": ""
+    },
+    "copied": {
+        "message": "Panoya kopyalandı",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopyalama başarısız oldu",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Başarıyı kopyala",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopyalama desteklenmiyor",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Başarıyı bağla",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Veri bulunamadı",
+        "description": ""
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: pilna teksta meklēšana grāmatzīmēs un kolekcijās",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Nekavējoties meklējiet un atrodiet saturu savās grāmatzīmēs, saglabātajās lapās, kolekcijās un lasīšanas sarakstos. Saņemiet atbilstošas atbildes no sava personīgā tīmekļa arhīva.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Reģistrējieties ar Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Izlogoties",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Sistēmas kļūda",
+        "description": ""
+    },
+    "copied": {
+        "message": "Kopēts starpliktuvē",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopēšana neizdevās",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Veiksmīga kopēšana",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopēšana netiek atbalstīta",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Saistīt panākumus",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Dati nav atrasti",
+        "description": ""
+    }
+}

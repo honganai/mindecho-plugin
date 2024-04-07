@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: zoeken in volledige tekst in bladwijzers en collecties",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Zoek en vind direct inhoud in uw bladwijzers, opgeslagen pagina&#39;s, verzamelingen en leeslijsten. Haal relevante antwoorden uit uw persoonlijke webarchief.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Meld u aan bij Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Uitloggen",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Systeemfout",
+        "description": ""
+    },
+    "copied": {
+        "message": "Gekopieerd naar het klembord",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopiëren mislukt",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Kopieer succes",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopiëren wordt niet ondersteund",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Succes binden",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Geen data gevonden",
+        "description": ""
+    }
+}

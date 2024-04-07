@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "миндЕЦХО: Претрага пуног текста у обележивачима и колекцијама",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Одмах претражујте и пронађите садржај у својим обележивачима, сачуваним страницама, колекцијама и листама за читање. Добијте релевантне одговоре из ваше личне веб архиве.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Региструјте се на Гоогле",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Одјавити се",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Грешка у систему",
+        "description": ""
+    },
+    "copied": {
+        "message": "Копирано у међуспремник",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Копирање није успело",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Копирај успех",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Копирање није подржано",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Вези успех",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Није пронађен ниједан Подаци",
+        "description": ""
+    }
+}

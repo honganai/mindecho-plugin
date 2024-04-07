@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: täistekstiotsing järjehoidjatest ja kogudest",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Otsige ja leidke sisu koheselt oma järjehoidjatest, salvestatud lehtedest, kogudest ja lugemisloenditest. Hankige asjakohased vastused oma isiklikust veebiarhiivist.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Registreeruge Google&#39;iga",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Logi välja",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Süsteemitõrge",
+        "description": ""
+    },
+    "copied": {
+        "message": "Kopeeriti lõikelauale",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopeerimine ebaõnnestus",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Edukas kopeerimine",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopeerimist ei toetata",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Edu sidumine",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Andmeid ei leitud",
+        "description": ""
+    }
+}

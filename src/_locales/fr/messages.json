@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO : recherche en texte intégral dans les signets et les collections",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Recherchez et trouvez instantanément du contenu dans vos favoris, pages enregistrées, collections et listes de lecture. Obtenez des réponses pertinentes à partir de vos archives Web personnelles.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Inscrivez-vous avec Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Se déconnecter",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Erreur système",
+        "description": ""
+    },
+    "copied": {
+        "message": "Copié dans le presse-papier",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Échec de la copie",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Copie réussie",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Copie non prise en charge",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Lier le succès",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Aucune donnée disponible",
+        "description": ""
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು ಮತ್ತು ಸಂಗ್ರಹಣೆಗಳಲ್ಲಿ ಪೂರ್ಣ-ಪಠ್ಯ ಹುಡುಕಾಟ",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "ನಿಮ್ಮ ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು, ಉಳಿಸಿದ ಪುಟಗಳು, ಸಂಗ್ರಹಣೆಗಳು ಮತ್ತು ಓದುವ ಪಟ್ಟಿಗಳಲ್ಲಿ ವಿಷಯವನ್ನು ತ್ವರಿತವಾಗಿ ಹುಡುಕಿ ಮತ್ತು ಹುಡುಕಿ. ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ವೆಬ್ ಆರ್ಕೈವ್‌ನಿಂದ ಸಂಬಂಧಿತ ಉತ್ತರಗಳನ್ನು ಪಡೆಯಿರಿ.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Google ನೊಂದಿಗೆ ಸೈನ್ ಅಪ್ ಮಾಡಿ",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "ಲಾಗ್ ಔಟ್",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "ಸಿಸ್ಟಮ್ ದೋಷ",
+        "description": ""
+    },
+    "copied": {
+        "message": "ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "ನಕಲು ವಿಫಲವಾಗಿದೆ",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "ನಕಲು ಯಶಸ್ಸು",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "ನಕಲು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "ಯಶಸ್ಸನ್ನು ಬಂಧಿಸಿ",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "ಯಾವುದೇ ಡೇಟಾ ಕಂಡುಬಂದಿಲ್ಲ",
+        "description": ""
+    }
+}

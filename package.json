@@ -1,11 +1,11 @@
 {
-  "name": "PointRead",
-  "version": "0.1.19",
+  "name": "__MSG_pluginName__",
+  "version": "0.0.4",
   "description": "__MSG_pluginDescription__",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:honganai/pointread-plugin.git"
+    "url": "git@github.com:honganai/mindecho-plugin.git"
   },
   "scripts": {
     "build": "rm -rf build && node utils/build.js",
@@ -29,6 +29,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-draggable": "^4.4.6",
+    "react-router-dom": "6",
     "react-shadow-root": "^6.2.0",
     "socket.io-client": "^4.7.2",
     "stylelint": "^15.10.3",
@@ -41,7 +42,7 @@
     "@babel/preset-react": "^7.18.6",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
     "@svgr/webpack": "^8.1.0",
-    "@types/chrome": "^0.0.202",
+    "@types/chrome": "^0.0.263",
     "@types/jquery": "^3.5.29",
     "@types/lodash": "^4.14.199",
     "@types/react": "^18.0.26",

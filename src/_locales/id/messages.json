@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: Pencarian Teks Lengkap di Bookmark &amp; Koleksi",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Telusuri dan temukan konten secara instan di seluruh bookmark, halaman tersimpan, koleksi, dan daftar bacaan Anda. Dapatkan jawaban yang relevan dari arsip web pribadi Anda.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Daftar dengan Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Keluar",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Sistem bermasalah",
+        "description": ""
+    },
+    "copied": {
+        "message": "Disalin ke Papan Klip",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Penyalinan gagal",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Salin sukses",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Salinan tidak didukung",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Mengikat kesuksesan",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Tidak ada data ditemukan",
+        "description": ""
+    }
+}

@@ -30,15 +30,29 @@ const Api = {
   userinfo: () =>
     http.get(`/api/v1/user/info`).then((res) => {
       // 额外保存用户信息
-      chrome.storage.local
+      res.clone().json().then(res => {
+        chrome.storage.local
         .set({
-          userinfo: res.result,
+          userInfo: res.result || null,
         })
         .then((result) => {
-          console.log('set userinfo is ' + result);
+          console.log('set userInfo is ' + result);
         });
+      })
       return res;
     }),
+  //上传用户资源
+  upload_user_url: ({ body, headers = {} }) => http.post('/api/v1/user_url', body, headers),
+  //获取用户资源
+  get_user_url: ({ body, headers = {} }) => http.get(`/api/v1/user_url`, body, headers),
+  //更新用户资源
+  update_user_url: ({ body, headers = {} }) => http.put('/api/v1/user_url', body, headers),
+  //获取用户上传进度
+  user_url_status: ({ headers = {} }) => http.get(`/api/v1/user_url_status`, headers),
+  //获取用户资源
+  get_user_recent: ({ body, headers = {} }) => http.get(`/api/v1/user_recent_url`, body, headers),
+  //根据关键词查询相关文本
+  get_dataset_document: ({ body, headers = {} }) => http.get(`/api/v1/dataset_document`, body, headers),
   test: () => http.get(`/api/v1/status/`),
   ...createRestApi('product'),
   ...createRestApi('usertag'),
@@ -84,19 +98,22 @@ const Api = {
   highlightText: ({ body, headers = {} }) => http.post('/api/v1/highlight_text', body, headers),
 
   /** 记录用户页面停留时间 */
-  recordReadingTime: ({body, headers={}}) => http.post('/api/v1/user_read_article', body, headers),
+  recordReadingTime: ({ body, headers = {} }) => http.post('/api/v1/user_read_article', body, headers),
 
   // thinking 列表
-  getArticleGroup: ({body, headers={}}) => http.post('/api/v1/analyst/article_group', body, headers),
+  getArticleGroup: ({ body, headers = {} }) => http.post('/api/v1/analyst/article_group', body, headers),
 
   // 获取分享链接
-  getShareUrl: ({body, headers={}}) => http.post('/api/v1/generate_link', body, headers),
+  getShareUrl: ({ body, headers = {} }) => http.post('/api/v1/generate_link', body, headers),
 
   // 获取订阅计划列表
   getProduct: ({ headers = {}, params = {} }) => http.get('/api/v1/product/', params, headers),
 
   // 原文高亮文本
   putHighlightText: ({ body, headers = {} }) => http.put('/api/v1/highlight_text', body, headers),
+
+  get_bind_url: ({ headers = {}, body = {} }) => http.post('/api/v1/user-bind/get_url', body, headers),
+  get_bind_status: ({ headers = {}, body = {} }) => http.post('/api/v1/user-bind/get_bind_status', body, headers),
 };
 
 export default Api;

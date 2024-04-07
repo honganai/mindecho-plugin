@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: बुकमार्क आणि संग्रहांमध्ये पूर्ण-मजकूर शोध",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "तुमचे बुकमार्क, सेव्ह केलेली पेज, कलेक्शन आणि वाचन लिस्टवर सामग्री झटपट शोधा आणि शोधा. तुमच्या वैयक्तिक वेब संग्रहणातून संबंधित उत्तरे मिळवा.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Google सह साइन अप करा",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "बाहेर पडणे",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "सिस्टम एरर",
+        "description": ""
+    },
+    "copied": {
+        "message": "क्लिपबोर्डवर कॉपी केले",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "कॉपी अयशस्वी",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "यश कॉपी करा",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "कॉपी समर्थित नाही",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "यशाला बांधा",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "माहिती आढळली नाही",
+        "description": ""
+    }
+}

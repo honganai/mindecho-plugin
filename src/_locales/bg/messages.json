@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: Търсене на пълен текст в отметки и колекции",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Незабавно търсете и намирайте съдържание във вашите отметки, запазени страници, колекции и списъци за четене. Получете подходящи отговори от вашия личен уеб архив.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Регистрирайте се с Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Излез от профила си",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Системна грешка",
+        "description": ""
+    },
+    "copied": {
+        "message": "Копирано в клипборда",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Неуспешно копиране",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Успешно копиране",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Копирането не се поддържа",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Обвържете успех",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Няма намерени данни",
+        "description": ""
+    }
+}

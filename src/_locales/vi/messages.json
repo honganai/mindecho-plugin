@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: Tìm kiếm toàn văn bản trong Dấu trang &amp; Bộ sưu tập",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Tìm kiếm và tìm kiếm ngay lập tức nội dung trên dấu trang, trang đã lưu, bộ sưu tập và danh sách đọc của bạn. Nhận câu trả lời có liên quan từ kho lưu trữ web cá nhân của bạn.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Đăng ký với Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Đăng xuất",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Lỗi hệ thống",
+        "description": ""
+    },
+    "copied": {
+        "message": "Sao chép vào clipboard",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Sao chép không thành công",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Sao chép thành công",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Bản sao không được hỗ trợ",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Ràng buộc thành công",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Không tìm thấy dữ liệu nào",
+        "description": ""
+    }
+}

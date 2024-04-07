@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: બુકમાર્ક્સ અને કલેક્શન્સમાં પૂર્ણ-ટેક્સ્ટ શોધ",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "તમારા બુકમાર્ક્સ, સાચવેલા પૃષ્ઠો, સંગ્રહો અને વાંચન સૂચિમાં તરત જ સામગ્રી શોધો અને શોધો. તમારા વ્યક્તિગત વેબ આર્કાઇવમાંથી સંબંધિત જવાબો મેળવો.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Google સાથે સાઇન અપ કરો",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "લૉગ આઉટ",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "સિસ્ટમમાં ભુલ",
+        "description": ""
+    },
+    "copied": {
+        "message": "ક્લિપબોર્ડ પર કૉપિ કરી",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "નકલ નિષ્ફળ",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "સફળતાની નકલ કરો",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "નકલ સમર્થિત નથી",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "સફળતાને બાંધો",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "કોઈ ડેટા મળ્યો નથી",
+        "description": ""
+    }
+}

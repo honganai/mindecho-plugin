@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: koko tekstihaku kirjanmerkeistä ja kokoelmista",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Hae ja löydä sisältöä välittömästi kirjanmerkeistäsi, tallennetuista sivuistasi, kokoelmistasi ja lukulistoistasi. Hanki asiaankuuluvat vastaukset henkilökohtaisesta verkkoarkistostasi.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Rekisteröidy Googlella",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Kirjautua ulos",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Järjestelmävirhe",
+        "description": ""
+    },
+    "copied": {
+        "message": "Kopioitu leikepöydälle",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopiointi epäonnistui",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Kopiointi onnistui",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopiointia ei tueta",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Sido menestystä",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Dataa ei löytynyt",
+        "description": ""
+    }
+}

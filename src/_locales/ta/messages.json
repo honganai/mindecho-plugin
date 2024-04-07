@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: புக்மார்க்குகள் மற்றும் தொகுப்புகளில் முழு உரை தேடல்",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "உங்கள் புக்மார்க்குகள், சேமித்த பக்கங்கள், சேகரிப்புகள் மற்றும் வாசிப்புப் பட்டியல்களில் உள்ளடக்கத்தை உடனடியாகத் தேடிக் கண்டறியவும். உங்கள் தனிப்பட்ட இணையக் காப்பகத்திலிருந்து தொடர்புடைய பதில்களைப் பெறவும்.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Google உடன் பதிவு செய்யவும்",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "வெளியேறு",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "கணினி பிழை",
+        "description": ""
+    },
+    "copied": {
+        "message": "கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "நகலெடுக்க முடியவில்லை",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "நகல் வெற்றி",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "நகல் ஆதரிக்கப்படவில்லை",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "வெற்றியைக் கட்டு",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "வேறு தகவல்கள் இல்லை",
+        "description": ""
+    }
+}

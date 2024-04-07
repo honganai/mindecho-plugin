@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: 책갈피 및 컬렉션의 전체 텍스트 검색",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "북마크, 저장된 페이지, 컬렉션, 읽기 목록에서 콘텐츠를 즉시 검색하고 찾으세요. 개인 웹 아카이브에서 관련 답변을 얻으세요.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Google에 가입",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "로그 아웃",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "시스템 오류",
+        "description": ""
+    },
+    "copied": {
+        "message": "클립보드에 복사됨",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "복사 실패",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "복사 성공",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "복사가 지원되지 않음",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "바인딩 성공",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "데이터가 없습니다",
+        "description": ""
+    }
+}

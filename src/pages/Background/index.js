@@ -4,41 +4,64 @@ import Api from './api';
 import { sendsocketMessage, connect, disconnect } from './ws';
 import { baseUrl, welcomeUrl } from './config';
 import ReadingTime from './readingTime';
-import { EXCLUDE_URLS, setExtensionUpdated } from '@/constants';
+import { EXCLUDE_URLS, setExtensionUpdated, setAutoAdd } from '@/constants';
+import './autoAdd';
+
+// chrome.commands.onCommand.addListener((command) => {
+//   console.log(`Command "${command}" triggered`);
+// });
 
 chrome.runtime.onMessage.addListener(handleMessages);
 chrome.action.onClicked.addListener(handleActiveClick);
+chrome.tabs.onRemoved.addListener(handleRemoveRab);
 
-const css = `
-html {
-    width: calc(100% - 450px) !important;
-    position: relative !important;
-    min-height: 100vh !important;
-}`;
+/**
+ * 关闭tab断开websocket
+ */
+function handleRemoveRab(tabId) {
+  disconnect(tabId);
+}
+
+function handleMessages(message, sender, sendResponse) {
+  console.log('message:', message, 'sender:', sender);
+  const { type } = message;
+  if (type === 'login') {
+    onLoginAction(message, sendResponse);
+  } else if (type === 'request') {
+    onRequest(message, sendResponse);
+  } else if (type === 'getCookie') {
+    getCookie(message, sender, sendResponse);
+  } else if (_.startsWith(type, 'ws_')) {
+    sendsocketMessage(type, message, sender, sendResponse);
+  } else if (type === 'openSettings') {
+    openSettings();
+  }
+  return true;
+}
+
+/**
+ * 打开设置页
+ */
+export function openSettings() {
+  if (chrome.runtime.openOptionsPage) {
+    chrome.runtime.openOptionsPage();
+  } else {
+    window.open(chrome.runtime.getURL('options.html'));
+  }
+}
 
 /**
  * 点击插件logo，开始注入content
  * @param {} tab
  */
 async function handleActiveClick(tab) {
-  // 检查是否是需要排除的网址
-  if (EXCLUDE_URLS.some((url) => tab.url.indexOf(url) !== -1)) return false;
-  console.log('chrome.action.onClicked', tab);
-  await chrome.scripting.executeScript({
-    target: { tabId: tab.id },
-    function: () => {
-      window.contentLoaded = false;
-    },
-  });
+  // readigList获取示例 @王中港
+  // chrome.readingList.query({}).then((res) => {
+  //   console.log('🚀 ~ chrome.readingList.query ~ res:', res);
+  // });
 
-  chrome.scripting.executeScript({
-    target: { tabId: tab.id },
-    files: ['contentScript.bundle.js'],
-  });
-
-  chrome.scripting.insertCSS({
-    target: { tabId: tab.id },
-    css: css,
+  chrome.tabs.sendMessage(tab.id, { type: 'showAskModal' }, function (res) {
+    console.log('send showAskModal', res);
   });
 }
 
@@ -71,7 +94,9 @@ async function onLoginAction(message, sendResponse) {
             // /oauth-authorized/google
             const loginActionUrls = [baseUrl + '/oauth-authorized/'];
             const filterUrl = _.filter(loginActionUrls, (item) => _.startsWith(details.url, item));
-            if (filterUrl.length > 0) {
+            // if (filterUrl.length > 0) {
+            console.log("🚀 ~ listenOnHeadersReceived ~ details.url:", details.url)
+            if (details.url === baseUrl + '/') {
               console.log(filterUrl);
               chrome.cookies.getAll({ domain: url.hostname, session: true }, function (cookies) {
                 console.log(details.url, cookies);
@@ -109,78 +134,6 @@ async function onLoginAction(message, sendResponse) {
   });
 }
 
-async function onLogoutAction(message, sender, sendResponse) {
-  chrome.cookies.remove({ url: baseUrl, name: 'session' }, (cookie) => {
-    console.log('remove cookie:', cookie);
-    sendResponse({
-      message: 'logout ok',
-    });
-    setLogin(true);
-  });
-}
-
-function handleMessages(message, sender, sendResponse) {
-  console.log('message:', message, 'sender:', sender);
-  const { type } = message;
-  if (type === 'login') {
-    onLoginAction(message, sendResponse);
-  } else if (type === 'logout') {
-    onLogoutAction(message, sender, sendResponse);
-  } else if (type === 'request') {
-    onRequest(message, sendResponse);
-  } else if (type === 'setCookie') {
-    setCookie(message, sender, sendResponse);
-  } else if (type === 'getCookie') {
-    getCookie(message, sender, sendResponse);
-  } else if (type === 'close') {
-    onClose(sender, sendResponse);
-  } else if (_.startsWith(type, 'ws_')) {
-    sendsocketMessage(type, message, sender, sendResponse);
-  } else if (type === 'showContent') {
-    onShowContent(message, sender, sendResponse);
-  } else if (type === 'getPageTitles') {
-    onGetPageTitles(message, sender, sendResponse);
-  } else if (type === 'readBookMark') {
-    console.log('handleMessages readBookMark');
-    // chrome.bookmarks.getTree((tree) => {
-    //   console.log('tree:', tree);
-    // });
-    chrome.bookmarks.getRecent(10, (bookmarkTreeNodes) => {
-      console.log('bookmarkTreeNodes:', bookmarkTreeNodes);
-      for (var i = 0; i < bookmarkTreeNodes.length; i++) {
-        console.log('Bookmark: ' + bookmarkTreeNodes[i].title);
-      }
-    });
-  } else if (type === 'showSummary') {
-    // 点击图标时请求summary socket
-    onSummary(message, sender, sendResponse);
-  } else if (type === 'showGoal') {
-    // 点击图标时请求summary socket
-    chrome.tabs.sendMessage(sender.tab.id, { ...message, sender }, function (res) {
-      console.log('send showGoal', res);
-      //
-    });
-    sendResponse('ok');
-  } else if (type === 'readingTime') {
-    ReadingTime.getInstance({
-      tabId: sender.tab.id,
-      chrome,
-      articleId: message.data.articleId,
-      ua: message.data.ua,
-    });
-  } else if (type === 'disconnect') {
-    disconnect();
-  }
-  return true;
-}
-// 发送summary
-async function onSummary(message, sender, sendResponse) {
-  await chrome.tabs.sendMessage(sender.tab.id, { ...message, sender }, function (res) {
-    console.log('send showSummary', res);
-    //
-  });
-  sendResponse('ok');
-}
 // 缓存登录state
 function setLogin(value, activeTab) {
   chrome.storage.local.set({
@@ -202,6 +155,7 @@ function setLogin(value, activeTab) {
     });
   }
 }
+
 async function onRequest(message, sendResponse) {
   const { api } = message;
   console.log(api, Api, message);
@@ -234,14 +188,6 @@ async function onRequest(message, sendResponse) {
   return;
 }
 
-function setCookie(message, sender, sendResponse) {
-  console.log(message, sender);
-  sendResponse({
-    cmd: 'setCookie',
-    data: 'ok',
-  });
-}
-
 function getCookie(message, sender, sendResponse) {
   let { key, domain } = message;
 
@@ -261,129 +207,50 @@ function getCookie(message, sender, sendResponse) {
 }
 
 /**
- * 关闭content页面
- * @param {*} sender
- * @param {*} sendResponse
- */
-async function onClose(sender, sendResponse) {
-  chrome.scripting.removeCSS({
-    target: { tabId: sender.tab.id },
-    css: css,
-  });
-  // await chrome.scripting.executeScript({
-  //   target: { tabId: sender.tab.id },
-  //   function: () => {
-  //     const eleRoot = document.getElementById('pointread-sidebar');
-  //     document.body.removeChild(eleRoot);
-  //     window.contentLoaded = false;
-  //   },
-  // });
-
-  // 删除观察对象
-  const rt = ReadingTime.getDiretcInstance();
-  rt && rt.removeArticleObject(sender.tab.id);
-  sendResponse('ok');
-}
-
-async function onShowContent(message, sender, sendResponse) {
-  console.log('show-content:', message, sender);
-  await chrome.scripting.executeScript({
-    target: { tabId: sender.tab.id },
-    function: () => {
-      window.contentLoaded = false;
-    },
-  });
-
-  await chrome.scripting
-    .executeScript({
-      target: { tabId: sender.tab.id },
-      files: ['contentScript.bundle.js'],
-    })
-    .catch((e) => {
-      console.log('errrrr:', e);
-    });
-
-  await chrome.scripting.insertCSS({
-    target: { tabId: sender.tab.id },
-    css: css,
-  });
-  console.log({ ...message, sender });
-  await chrome.tabs.sendMessage(sender.tab.id, { ...message, sender }, function (res) {
-    console.log('send ContentFlat data content script success', res);
-    //
-  });
-  sendResponse('ok');
-}
-
-/**
- * onGetPageTitles
- * @param {*} sender
- * @param {*} sendResponse
- */
-async function onGetPageTitles(message, sender, sendResponse) {
-  let pageTitles = [];
-  const tags = await chrome.tabs.query({ active: false, currentWindow: true });
-  for (var i = 1; i < tags.length; i++) {
-    //第一个标签页是当前标签页 已经在current_title中获取了
-    pageTitles.push(tags[i].title);
-  }
-  //获取当前活跃标签页的标题 不在获取收藏夹内容
-  // const bookmarkTreeNodes = await chrome.bookmarks.getRecent(10);
-  // for (var i = 0; i < bookmarkTreeNodes.length; i++) {
-  //   pageTitles.push(bookmarkTreeNodes[i].title);
-  // }
-  console.info('onGetPageTitles pageTitles is : ', pageTitles);
-  sendResponse(pageTitles);
-}
-
-/**
- * localStoregeSet
- * @param {*} sender
- * @param {*} sendResponse
- */
-async function localSet(message, sender, sendResponse) {
-  chrome.storage.local.set({ key: 'value' }, function () {
-    console.log('Value is set to ' + 'value');
-  });
-
-  chrome.contextMenus.onClicked({
-    title: 'Context Menu',
-    contexts: ['page'],
-    onclick: function () {
-      // alert('You clicked me!');
-    },
-  });
-}
-
-chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-  if (request.action == 'popupOpened') {
-    chrome.storage.local.set({ key: 'value' }, function () {
-      console.log('Value is set to ' + 'value');
-    });
-  }
-});
-/**
  * contextmenu
  */
 chrome.runtime.onInstalled.addListener(({ reason }) => {
   console.log('reason:', reason);
   chrome.contextMenus.create({
     id: 'myContextMenu',
-    title: 'Run Analysis',
+    title: 'Test Context Menu',
     type: 'normal',
     contexts:["selection"]
   });
-  //暂时不需要新手引导页面
+
   // if (reason === 'install') {
   //   chrome.tabs.create({
   //     active: true,
   //     url: welcomeUrl
   //   })
   // }
-  // if (reason === 'update') {
-  //   setExtensionUpdated();
-  // }
+  if (reason === 'update') {
+    setExtensionUpdated();
+  }
+  if (reason === 'install') {
+    chrome.runtime.openOptionsPage();
+    executeScript();
+    setAutoAdd()
+  }
 });
+
+/**
+ * 安装完成后自动注入弹窗
+ */
+function executeScript() {
+  chrome.tabs.query({}, function(tabs) {
+    var tabId = tabs[0].id;
+    //向当前标签页注入内容脚本
+    tabs.forEach(item => {
+      chrome.scripting.executeScript({
+        target: { tabId: item.id },
+        files: ['contentFlatScript.bundle.js'],
+      }, (res) => {
+        console.log('🚀 ~ background.index -脚本注入结果- line:240: ', res);
+      });
+    });
+  });
+}
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
   console.log(info);

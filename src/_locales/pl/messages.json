@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: Wyszukiwanie pełnotekstowe w zakładkach i kolekcjach",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Natychmiast wyszukuj i znajduj zawartość w swoich zakładkach, zapisanych stronach, kolekcjach i listach do przeczytania. Uzyskaj odpowiednie odpowiedzi ze swojego osobistego archiwum internetowego.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Zarejestruj się w Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Wyloguj",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Błąd systemu",
+        "description": ""
+    },
+    "copied": {
+        "message": "Skopiowane do schowka",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopiowanie nie powiodło się",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Skopiuj sukces",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopiowanie nie jest obsługiwane",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Powiąż sukces",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Nie znaleziono danych",
+        "description": ""
+    }
+}

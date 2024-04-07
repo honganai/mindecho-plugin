@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: Fulltextové vyhledávání v záložkách a sbírkách",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Okamžitě hledejte a najděte obsah ve svých záložkách, uložených stránkách, sbírkách a seznamech četby. Získejte relevantní odpovědi ze svého osobního webového archivu.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Zaregistrujte se u Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Odhlásit se",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Chyba systému",
+        "description": ""
+    },
+    "copied": {
+        "message": "Zkopírováno do schránky",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopírování se nezdařilo",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Kopírovat úspěch",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopírování není podporováno",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Svázat úspěch",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Nenalezena žádná data",
+        "description": ""
+    }
+}

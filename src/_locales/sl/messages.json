@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: iskanje po celotnem besedilu v zaznamkih in zbirkah",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Takoj poiščite in poiščite vsebino med svojimi zaznamki, shranjenimi stranmi, zbirkami in seznami za branje. Pridobite ustrezne odgovore iz svojega osebnega spletnega arhiva.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Prijavite se z Googlom",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Odjava",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Sistemska napaka",
+        "description": ""
+    },
+    "copied": {
+        "message": "Kopirano v odložišče",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopiranje ni uspelo",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Kopiranje uspešno",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopiranje ni podprto",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Vezati uspeh",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Ni podatkov",
+        "description": ""
+    }
+}

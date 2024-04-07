@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO፡ የሙሉ ጽሑፍ ፍለጋ በዕልባቶች እና ስብስቦች",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "በፍጥነት ይፈልጉ እና በዕልባቶችዎ፣ በተቀመጡ ገጾችዎ፣ ስብስቦችዎ እና የንባብ ዝርዝሮችዎ ላይ ይዘቶችን ያግኙ። ተዛማጅ መልሶችን ከግል ድር ማህደርዎ ያግኙ።",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "በGoogle ይመዝገቡ",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "ውጣ",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "የስርዓት ስህተት",
+        "description": ""
+    },
+    "copied": {
+        "message": "ወደ ቅንጥብ ሰሌዳ ተቀድቷል።",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "መቅዳት አልተሳካም።",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "ስኬትን ይቅዱ",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "ቅጂ አይደገፍም።",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "ስኬትን ማሰር",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "ምንም ውሂብ አልተገኘም።",
+        "description": ""
+    }
+}

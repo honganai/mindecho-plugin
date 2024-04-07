@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: ricerca full-text nei segnalibri e nelle raccolte",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Cerca e trova istantaneamente contenuti tra segnalibri, pagine salvate, raccolte ed elenchi di lettura. Ottieni risposte pertinenti dal tuo archivio web personale.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Iscriviti con Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Disconnettersi",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Errore di sistema",
+        "description": ""
+    },
+    "copied": {
+        "message": "Copiato negli Appunti",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Copia non riuscita",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Copia il successo",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Copia non supportata",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Vincolare il successo",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Nessun dato trovato",
+        "description": ""
+    }
+}

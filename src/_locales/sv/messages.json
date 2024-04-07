@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: Fulltextsökning i bokmärken och samlingar",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Sök direkt och hitta innehåll i dina bokmärken, sparade sidor, samlingar och läslistor. Få relevanta svar från ditt personliga webbarkiv.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Registrera dig med Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Logga ut",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Systemfel",
+        "description": ""
+    },
+    "copied": {
+        "message": "Kopierade till Urklipp",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopieringen misslyckades",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Kopieringsframgång",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopiering stöds inte",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Bind framgång",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Ingen information hittad",
+        "description": ""
+    }
+}

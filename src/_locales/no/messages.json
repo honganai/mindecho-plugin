@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: Fulltekstsøk i bokmerker og samlinger",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Søk umiddelbart og finn innhold på tvers av bokmerkene dine, lagrede sider, samlinger og leselister. Få relevante svar fra ditt personlige nettarkiv.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Registrer deg med Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Logg ut",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Systemfeil",
+        "description": ""
+    },
+    "copied": {
+        "message": "Kopiert til utklippstavlen",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopiering mislyktes",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Kopieringssuksess",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopiering støttes ikke",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Bind suksess",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Ingen data funnet",
+        "description": ""
+    }
+}

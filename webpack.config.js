@@ -39,17 +39,22 @@ const styleLoaderOption = {
   loader: 'style-loader',
   options: {
     insert: function (element) {
-      const extensionHostID = 'pointread-extension-shadow';
-      let extensionHost = document.getElementById(extensionHostID);
+      /** options等页面不需要shadow，同时需要在HtmlWebpackPlugin配置里加上prepend chunk */
+      if (window.linnkPluginNoShadowDom) {
+        document.head.appendChild(element);
+      } else {
+        const extensionHostID = 'mindecho-extension-shadow';
+        let extensionHost = document.getElementById(extensionHostID);
 
-      if (!extensionHost) {
-        extensionHost = document.createElement('div');
-        extensionHost.setAttribute('id', extensionHostID);
-        document.body.append(extensionHost);
-        extensionHost.attachShadow({mode: 'open'});
-      }
-      if (extensionHost.shadowRoot) {
-        extensionHost.shadowRoot.appendChild(element);
+        if (!extensionHost) {
+          extensionHost = document.createElement('div');
+          extensionHost.setAttribute('id', extensionHostID);
+          document.body.append(extensionHost);
+          extensionHost.attachShadow({mode: 'open'});
+        }
+        if (extensionHost.shadowRoot) {
+          extensionHost.shadowRoot.appendChild(element);
+        }
       }
     },
   },
@@ -58,19 +63,17 @@ const styleLoaderOption = {
 var options = {
   mode: process.env.NODE_ENV || 'development',
   entry: {
+    prepend: path.join(__dirname, 'src', 'pages', 'Options', 'prepend.js'),
     newtab: path.join(__dirname, 'src', 'pages', 'Newtab', 'index.jsx'),
     options: path.join(__dirname, 'src', 'pages', 'Options', 'index.jsx'),
     popup: path.join(__dirname, 'src', 'pages', 'Popup', 'index.jsx'),
     background: path.join(__dirname, 'src', 'pages', 'Background', 'index.js'),
-    contentScript: path.join(__dirname, 'src', 'pages', 'Content', 'index.js'),
     contentFlatScript: path.join(__dirname, 'src', 'pages', 'Content', 'indexFlat.js'),
     devtools: path.join(__dirname, 'src', 'pages', 'Devtools', 'index.js'),
     panel: path.join(__dirname, 'src', 'pages', 'Panel', 'index.jsx'),
-    sidepanel: path.join(__dirname, 'src', 'pages', 'Content', 'index.jsx'),
-    guide: path.join(__dirname, 'src', 'pages', 'Content', 'guide.js'),
   },
   chromeExtensionBoilerplate: {
-    notHotReload: ['background', 'contentScript', 'devtools', 'contentFlatScript', 'guide'],
+    notHotReload: ['background', 'devtools', 'guide'],
   },
   output: {
     filename: '[name].bundle.js',
@@ -223,6 +226,11 @@ var options = {
           to: path.join(__dirname, 'build'),
           force: true,
         },
+        {
+          from: 'src/assets/img',
+          to: path.join(__dirname, 'build'),
+          force: true,
+        },
       ],
     }),
     new CopyWebpackPlugin({
@@ -243,7 +251,7 @@ var options = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src', 'pages', 'Options', 'index.html'),
       filename: 'options.html',
-      chunks: ['options'],
+      chunks: ['options', 'prepend'],
       cache: false,
     }),
     new HtmlWebpackPlugin({
@@ -270,6 +278,7 @@ var options = {
       chunks: ['sidepanel'],
       cache: false,
     }),
+    new webpack.HotModuleReplacementPlugin(),
   ].filter(Boolean),
   infrastructureLogging: {
     level: 'info',

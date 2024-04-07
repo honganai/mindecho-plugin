@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: Paghahanap ng Buong Teksto sa Mga Bookmark at Koleksyon",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Agad na maghanap at maghanap ng nilalaman sa iyong mga bookmark, naka-save na pahina, koleksyon, at listahan ng pagbabasa. Kumuha ng mga kaugnay na sagot mula sa iyong personal na web archive.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Mag-sign up sa Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Log Out",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "System Error",
+        "description": ""
+    },
+    "copied": {
+        "message": "Kinopya sa Clipboard",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Nabigo ang pagkopya",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Kopyahin ang tagumpay",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Hindi sinusuportahan ang kopya",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Magbigkis ng tagumpay",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Walang nakitang data",
+        "description": ""
+    }
+}

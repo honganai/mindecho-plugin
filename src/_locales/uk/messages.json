@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: повнотекстовий пошук у закладках і колекціях",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Миттєво шукайте та знаходьте вміст у своїх закладках, збережених сторінках, колекціях і списках для читання. Отримайте актуальні відповіді у своєму особистому веб-архіві.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Зареєструватися в Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Вийти",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Системна помилка",
+        "description": ""
+    },
+    "copied": {
+        "message": "Скопійовано в буфер обміну",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Помилка копіювання",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Успішне копіювання",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Копіювання не підтримується",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Зв&#39;яжіть успіх",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Даних не знайдено",
+        "description": ""
+    }
+}

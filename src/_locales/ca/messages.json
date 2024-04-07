@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: cerca de text complet a les adreces d&#39;interès i col·leccions",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Cerqueu i trobeu contingut a l&#39;instant entre les vostres adreces d&#39;interès, pàgines desades, col·leccions i llistes de lectura. Obteniu respostes rellevants del vostre arxiu web personal.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Registra&#39;t amb Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Tancar sessió",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Error del sistema",
+        "description": ""
+    },
+    "copied": {
+        "message": "S&#39;ha copiat al porta-retalls",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "La còpia ha fallat",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Còpia correctament",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "La còpia no és compatible",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Enllaçar l&#39;èxit",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "No s&#39;han trobat dades",
+        "description": ""
+    }
+}

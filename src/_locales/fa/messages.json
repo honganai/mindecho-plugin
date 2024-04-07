@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: جستجوی تمام متن در نشانک‌ها و مجموعه‌ها",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "فوراً محتوا را در میان نشانک‌ها، صفحات ذخیره‌شده، مجموعه‌ها و فهرست‌های خواندن جستجو و پیدا کنید. پاسخ های مرتبط را از آرشیو وب شخصی خود دریافت کنید.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "با گوگل ثبت نام کنید",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "خروج",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "خطای سیستم",
+        "description": ""
+    },
+    "copied": {
+        "message": "در کلیپ بورد کپی شد",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "کپی ناموفق بود",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "کپی موفقیت",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "کپی پشتیبانی نمی شود",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "موفقیت را مقید کنید",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "داده ای یافت نشد",
+        "description": ""
+    }
+}

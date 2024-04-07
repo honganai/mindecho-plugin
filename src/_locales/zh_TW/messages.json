@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO：書籤和收藏夾中的全文搜索",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "在書籤、儲存的頁面、收藏和閱讀清單中即時搜尋和尋找內容。從您的個人網路檔案中取得相關答案。",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "使用 Google 註冊",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "登出",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "系統錯誤",
+        "description": ""
+    },
+    "copied": {
+        "message": "已複製到剪貼簿",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "複製失敗",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "複製成功",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "不支援複製",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "綁定成功",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "沒有找到數據",
+        "description": ""
+    }
+}

@@ -1,0 +1,54 @@
+@import '../../../../assets/style/public.extend';
+
+.container{
+    width: 100%;
+    height: 100vh;
+
+    @extend %flex-center;
+    flex-direction: column;
+
+    .logo-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            margin: 0 10px;
+        }
+
+        .logo-icon {
+            @extend %logo;
+        }
+
+        .logo-text {
+            width: 190px;
+            height: 47px;
+        }
+    }
+
+    .title-text {
+        color: rgb(64, 159, 251);
+        font-size: var(--font-size-big);
+    }
+
+    .tip-text {
+        color: rgb(60, 60, 60);
+        font-size: var(--font-size);
+    }
+
+    .btn-login {
+        width: 482px;
+        height: 102px;
+        margin-top: 40px;
+        background-color: var(--color-white);
+
+        @extend %btn;
+        @extend %flex-center;
+
+        .btn-icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 25px;
+        }
+    }
+}

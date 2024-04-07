@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: Full-Text Search in Bookmarks & Collections",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Instantly search and find content across your bookmarks, saved pages, collections, and reading lists. Get relevant answers from your personal web archive.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Sign up with Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Log Out",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "System Error",
+        "description": ""
+    },
+    "copied": {
+        "message": "Copied to Clipboard",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Copy failed",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Copy success",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Copy not supported",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Bind success",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "No data found",
+        "description": ""
+    }
+}

@@ -1,0 +1,35 @@
+@import '@/assets/style/public.extend';
+
+
+.content {
+  @extend %flex-center;
+
+  .items {
+    margin: 0 5px;
+    padding: 2px 5px;
+    background-color: #f6f7f9;
+    border-radius: 6px;
+    @extend %flex-center;
+
+    .source-title {
+      color: #5c6380;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .success-icon {
+      margin: 0 5px;
+      color: #3378fa;
+    }
+
+    .source-stauts {
+      margin: 0;
+      color: #837e7e;
+      font-size: 14px;
+
+      .success {
+        color: #3378fa;
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import dayjs from 'dayjs';
 import { message } from 'antd';
 import { ThinkingCopyObject } from '@/types';
+import {useEffect, useRef} from 'react';
 
 /**
  * @description: 格式化时间为 MM/DD
@@ -11,6 +12,21 @@ export const formatDateMMDD = (dateString: string, returnDefault = true) => {
   if (!dateString && returnDefault) return '--/--';
   return dayjs(dateString).format('MM/DD');
 };
+
+/**
+ * 打开设置页
+ */
+export function openSettings(path?: string) {
+  console.log('🚀 ~ file: common.util.ts ~ line 21 ~ openSettings ~ path', path);
+  chrome.runtime.sendMessage(
+      {
+        type: 'openSettings',
+      },
+      () => {
+        //
+      },
+  );
+}
 
 /**
  * @description: 复制到剪切板
@@ -40,7 +56,7 @@ export const chromeDetectLanguage = async (text: string) => {
  * 获取shadowRoot，之前对插件的所有document操作都要换成这个
  */
 export const getDocument = () => {
-  return document.getElementById('pointread-extension-shadow')?.shadowRoot || document;
+  return document.getElementById('mindecho-extension-shadow')?.shadowRoot || document;
 };
 
 /**
@@ -53,4 +69,44 @@ export const splitTextRow = (text?: string) => {
       .filter((t: string) => t.length >= 13)
       .filter((t: string) => !!t) || []
   );
+};
+
+
+export const SetInterval = (callback: Function, delay: number = 1000) => {
+  const Ref = useRef<any>();
+
+  Ref.current = () => {
+    return callback();
+  }
+  useEffect(() => {
+    const timer = setInterval(() => {
+      Ref.current();
+    }, delay);
+    return () => {
+      clearInterval(timer);
+    }
+  }, [delay]);
+}
+
+export const truncateTitle = (title:string, limitEnglish = 20, limitChinese = 10) => {
+  title = title.trim();
+  if (!title) return 'No data available';
+
+  // 判断字符串是否含有中文字符
+  const hasChinese = /[\u4e00-\u9fa5]/.test(title);
+  const limit = hasChinese ? limitChinese : limitEnglish;
+
+  // 根据字符类型截取
+  if (hasChinese) {
+    // 中文字符串，按字符数截取
+    return title.length > limit ? title.slice(0, limit) + '...' : title;
+  } else {
+    // 英文字符串，按单词数截取
+    const words = title.split(' ');
+    if (words.length > limit) {
+      return words.slice(0, limit).join(' ') + '...';
+    } else {
+      return title;
+    }
+  }
 };

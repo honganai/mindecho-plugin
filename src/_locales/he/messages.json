@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: חיפוש טקסט מלא בסימניות ואוספים",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "חפש ומצא תוכן באופן מיידי בין הסימניות, הדפים השמורים, האוספים ורשימות הקריאה שלך. קבל תשובות רלוונטיות מארכיון האינטרנט האישי שלך.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "הירשם עם גוגל",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "להתנתק",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "שגיאת מערכת",
+        "description": ""
+    },
+    "copied": {
+        "message": "הועתק ללוח",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "ההעתקה נכשלה",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "העתקת הצלחה",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "העתקה לא נתמכת",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "לאגד הצלחה",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "לא נמצאו נתונים",
+        "description": ""
+    }
+}

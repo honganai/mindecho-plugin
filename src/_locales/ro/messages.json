@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: Căutare text integral în Marcaje și colecții",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Căutați și găsiți instantaneu conținut în marcajele, paginile salvate, colecțiile și listele de lectură. Obțineți răspunsuri relevante din arhiva dvs. web personală.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Înscrieți-vă cu Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Deconectați-vă",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Eroare de sistem",
+        "description": ""
+    },
+    "copied": {
+        "message": "Copiat în Clipboard",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Copierea eșuată",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Copiere cu succes",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Copierea nu este acceptată",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Leagă succesul",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Nu s-au gasit date",
+        "description": ""
+    }
+}

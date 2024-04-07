@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: viso teksto paieška žymėse ir kolekcijose",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Akimirksniu ieškokite ir raskite turinį savo žymėse, išsaugotuose puslapiuose, kolekcijose ir skaitymo sąrašuose. Gaukite atitinkamus atsakymus iš savo asmeninio žiniatinklio archyvo.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Prisiregistruokite naudodami „Google“.",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Atsijungti",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Sistemos klaida",
+        "description": ""
+    },
+    "copied": {
+        "message": "Nukopijuota į mainų sritį",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopijuoti nepavyko",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Sėkmės kopijavimas",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopijavimas nepalaikomas",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Susieti sėkmę",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Duomenų nerasta",
+        "description": ""
+    }
+}

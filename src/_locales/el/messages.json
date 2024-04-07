@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: Αναζήτηση πλήρους κειμένου σε σελιδοδείκτες και συλλογές",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Αναζητήστε και βρείτε άμεσα περιεχόμενο στους σελιδοδείκτες, τις αποθηκευμένες σελίδες, τις συλλογές και τις λίστες ανάγνωσης. Λάβετε σχετικές απαντήσεις από το προσωπικό σας διαδικτυακό αρχείο.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Εγγραφείτε με την Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Αποσύνδεση",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Σφάλμα συστήματος",
+        "description": ""
+    },
+    "copied": {
+        "message": "Αντιγράφηκε στο Πρόχειρο",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Η αντιγραφή απέτυχε",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Επιτυχία αντιγραφής",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Η αντιγραφή δεν υποστηρίζεται",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Δέστε την επιτυχία",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Δε βρέθηκαν δεδομένα",
+        "description": ""
+    }
+}

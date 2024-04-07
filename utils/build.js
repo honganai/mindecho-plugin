@@ -3,7 +3,7 @@ process.env.BABEL_ENV = 'production';
 process.env.NODE_ENV = 'production';
 process.env.ASSET_PATH = '/';
 // !!!!!!!!!!!!    build.js 中为生产使用 谨慎修改    !!!!!!!!!!!!!!!!!!!
-process.env.API_URL = 'https://api.pointread.app'
+process.env.API_URL = 'https://api.mindecho.app'
 process.env.POSTHOG_KEY = 'phc_PSM3JZG2Ti7DlJmhIuHMHWFsLtdZmWUOb2SEhCXnnPc';
 
 var webpack = require('webpack'),

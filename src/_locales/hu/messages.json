@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: Teljes szöveges keresés a könyvjelzőkben és gyűjteményekben",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Azonnal kereshet és találhat tartalmat könyvjelzői, mentett oldalai, gyűjteményei és olvasási listái között. Szerezzen releváns válaszokat személyes webarchívumából.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Regisztráljon a Google-lal",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Kijelentkezés",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Rendszer hiba",
+        "description": ""
+    },
+    "copied": {
+        "message": "Vágólapra másolva",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "A másolás nem sikerült",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Sikeres másolás",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "A másolás nem támogatott",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Bind siker",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Nem található adat",
+        "description": ""
+    }
+}

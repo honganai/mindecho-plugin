@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "mindECHO: Fuldtekstsøgning i bogmærker og samlinger",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "Søg og find indhold med det samme på tværs af dine bogmærker, gemte sider, samlinger og læselister. Få relevante svar fra dit personlige webarkiv.",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Tilmeld dig med Google",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "Log ud",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "Systemfejl",
+        "description": ""
+    },
+    "copied": {
+        "message": "Kopieret til udklipsholder",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "Kopiering mislykkedes",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "Kopierings succes",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "Kopi understøttes ikke",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "Bind succes",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "Ingen data fundet",
+        "description": ""
+    }
+}

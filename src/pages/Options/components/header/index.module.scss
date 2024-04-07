@@ -1,0 +1,29 @@
+@import '../../../../assets/style/public.extend';
+
+.userInfo {
+  // position: absolute;
+  // top: 30px;
+  // left: 50px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 30px 50px 0px;
+  font-size: var(--font-size);
+  color: var(--font-color);
+
+  .logo {
+    width: 100px;
+    height: 96px;
+    margin-right: 20px;
+  }
+
+  .userName{
+    .name {
+      font-weight: 500;
+    }
+    .recommend {
+      font-size: 18px;
+      color: rgb(61, 61, 61);
+    }
+  }
+}

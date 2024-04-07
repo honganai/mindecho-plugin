@@ -1,0 +1,46 @@
+{
+    "pluginName": {
+        "message": "minECHO: ブックマークとコレクションの全文検索",
+        "description": ""
+    },
+    "pluginDescription": {
+        "message": "ブックマーク、保存したページ、コレクション、リーディング リストのコンテンツを即座に検索して見つけます。個人の Web アーカイブから関連する回答を入手してください。",
+        "description": ""
+    },
+    "signUpWithGoogle": {
+        "message": "Google に登録する",
+        "description": "memorie页面来源"
+    },
+    "logout": {
+        "message": "ログアウト",
+        "description": ""
+    },
+    "errorDefault": {
+        "message": "システムエラー",
+        "description": ""
+    },
+    "copied": {
+        "message": "クリップボードにコピーされました",
+        "description": ""
+    },
+    "copyFailed": {
+        "message": "コピーに失敗しました",
+        "description": ""
+    },
+    "copySuccess": {
+        "message": "コピー成功",
+        "description": ""
+    },
+    "copyNotSupported": {
+        "message": "コピーはサポートされていません",
+        "description": ""
+    },
+    "bindSuccess": {
+        "message": "バインド成功",
+        "description": ""
+    },
+    "noDataFound": {
+        "message": "何もデータが見つかりませんでした",
+        "description": ""
+    }
+}
