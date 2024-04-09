@@ -63,6 +63,7 @@ const AnswerModal: React.FC = () => {
 
   useEffect(() => {
     if (showAnswerModal) {
+      getProgress();
       const intervalId = setInterval(() => {
         getProgress();
       }, 5000);
