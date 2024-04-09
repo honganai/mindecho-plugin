@@ -10,11 +10,12 @@ interface Props {
   expandedKeys: React.Key[];
   autoExpandParent: boolean;
   onCheck: (checkedKeysValue: React.Key[]) => void;
+  onSelect: (selectedKeysValue: React.Key[], info: any) => void;
   checkedKeys: React.Key[];
   treeData: TreeDataNode[];
 }
 
-const DataList: React.FC<Props> = ({ onExpand, expandedKeys, autoExpandParent, onCheck, checkedKeys, treeData }) => {
+const DataList: React.FC<Props> = ({ onExpand, expandedKeys, autoExpandParent, onCheck, onSelect, checkedKeys, treeData }) => {
   const noDataFoundI18N = chrome.i18n.getMessage('noDataFound');
 
   const titleRender = (nodeData: any) => {
@@ -27,7 +28,7 @@ const DataList: React.FC<Props> = ({ onExpand, expandedKeys, autoExpandParent, o
       );
     } else {
       return (
-        <div>
+        <div style={{ cursor: 'auto' }} onClick={(e) => e.stopPropagation()}>
           <span style={{ marginLeft: 8 }}>{nodeData.title}</span>
         </div>
       );
@@ -46,7 +47,7 @@ const DataList: React.FC<Props> = ({ onExpand, expandedKeys, autoExpandParent, o
             autoExpandParent={autoExpandParent}
             onCheck={onCheck}
             checkedKeys={checkedKeys}
-            //onSelect={onSelect}
+            onSelect={onSelect}
             //selectedKeys={selectedKeys}
             treeData={treeData}
             titleRender={titleRender}

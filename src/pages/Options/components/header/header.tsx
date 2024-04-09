@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect, useContext, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import dayjs from 'dayjs';
 import { Button, Spin } from 'antd';
@@ -18,9 +18,16 @@ interface Props {
 const Header: React.FC<Props> = ({ tip }: Props) => {
   const logoutText = chrome.i18n.getMessage('logout');
   const { state: { userInfo }, dispatch: globalDispatch } = useContext(GlobalContext);
+  const el_userInfo = useRef(null);
+
+  useEffect(() => {
+    if (el_userInfo.current) {
+      //console.log(11111111, el_userInfo.current, el_userInfo.current.offsetHeight)
+    }
+  }, []);
 
   return (
-    <div className={styles['userInfo']}>
+    <div className={styles['userInfo']} ref={el_userInfo}>
       <img className={styles['logo']} src={logo} alt="logo" />
       <div className={styles['userName']}>
         <p className={styles['name']}>Hello, {userInfo?.username || '-'}</p>

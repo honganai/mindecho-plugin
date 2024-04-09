@@ -1,6 +1,6 @@
 import React, { useEffect, useContext, useState } from 'react';
 import dayjs from 'dayjs';
-import { Button, Input, Checkbox, Tree, Spin, message, Switch, TreeDataNode } from 'antd';
+import { Button, Input, Checkbox, Tree, Spin, message, Switch, TreeDataNode, TreeProps } from 'antd';
 import { ArrowLeftOutlined, SearchOutlined } from '@ant-design/icons';
 import cs from 'classnames';
 import styles from './index.module.scss';
@@ -64,8 +64,9 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
 
   const onCheck = (checkedKeysValue: React.Key[], event: any) => {
     console.log('onCheck', checkedKeysValue, event);
-    setCheckedKeys(checkedKeysValue);
-    selectChange(checkedKeysValue);
+    const keylist = checkedKeysValue.filter((item: any) => !item.startsWith('parent-'));
+    setCheckedKeys(keylist);
+    selectChange(keylist);
   };
 
   const selectChange = (checkedKeysValue: React.Key[]) => {
@@ -77,6 +78,25 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
     setAllUserUrl(allSelect);
     setCheckedCount(allSelect.filter(item => item.selected).length)
   }
+
+  const onSelect: TreeProps['onSelect'] = (selectedKeysValue, info) => {
+    const { node } = info;
+    if (node.children) { return false; }
+    if (node.checked) {
+      setCheckedKeys((pre) => {
+        const newKeys = [...pre];
+        newKeys.splice(newKeys.findIndex(item => item === node.key), 1);
+        selectChange(newKeys);
+        return newKeys;
+      })
+    } else {
+      setCheckedKeys((pre) => {
+        const newKeys = [...pre, node.key];
+        selectChange(newKeys);
+        return newKeys;
+      })
+    }
+  };
 
   useEffect(() => {
     //初始默认勾选自动更新
@@ -271,6 +291,7 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
               expandedKeys={expandedKeys}
               autoExpandParent={autoExpandParent}
               onCheck={onCheck}
+              onSelect={onSelect}
               checkedKeys={checkedKeys}
               treeData={treeData} />
           </Spin>

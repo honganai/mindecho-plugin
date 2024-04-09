@@ -15,8 +15,11 @@ interface IExample {
   title: string;
   url: string;
 }
+interface IProps {
+  type?: 'options' | 'webPage'
+}
 
-const AskModal: React.FC = () => {
+const AskModal: React.FC<IProps> = ({ type }) => {
   const { state: globalState, dispatch: globalDispatch } = useContext(GlobalContext);
   const { showAskModal, showAnswerModal, progress } = globalState;
   const [example, setExample] = useState<IExample>({ title: '', url: '' });
@@ -171,7 +174,7 @@ const AskModal: React.FC = () => {
         showSettings && (
           <div className={styles['setting']}>
             <p className={styles['title']}>Settings</p>
-            <p className={styles['text']}>
+            <p className={styles['text']} style={{ display: type === 'options' ? "none" : 'block' }}>
               <span>Manage Sources</span>
               <svg width="20" height="20" onClick={() => openSettings()} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
                 style={{ float: 'right', cursor: 'pointer', marginLeft: 'auto' }}>
