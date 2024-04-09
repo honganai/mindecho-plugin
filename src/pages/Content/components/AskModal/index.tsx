@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect, useCallback } from 'react';
 import { Modal, Input, Spin, Switch } from 'antd';
 import { MoreOutlined, CheckCircleOutlined, CloseOutlined } from '@ant-design/icons';
-import { getDocument, SetInterval, truncateTitle,openSettings } from '@/utils/common.util';
+import { getDocument, SetInterval, truncateTitle, openSettings } from '@/utils/common.util';
 import GlobalContext, { ActionType as GlobalActionType } from '@/reducer/global';
 import _, { set } from 'lodash';
 import EnterImage from '@/assets/img/enter.svg';
@@ -25,22 +25,21 @@ const AskModal: React.FC = () => {
   const [timer, setTimer] = useState<NodeJS.Timeout>();
 
   useEffect(() => {
-    chrome.runtime.sendMessage({ type: 'request', api: 'get_user_recent' }, (res) => {
-      console.log('get_user_recent res: ', res);
-      const { title, url } = res;
-      setExample({
-        title,
-        url,
-      })
-    });
-    getProgress();
-    getAutoAdd().then(res => {
-      setAutoAdd(res);
-    })
-  }, []);
-
-  useEffect(() => {
     if (showAskModal) {
+      // 获取示例数据
+      chrome.runtime.sendMessage({ type: 'request', api: 'get_user_recent' }, (res) => {
+        console.log('get_user_recent res: ', res);
+        const { title, url } = res;
+        setExample({
+          title,
+          url,
+        })
+      });
+      getAutoAdd().then(res => {
+        setAutoAdd(res);
+      })
+
+      // 循环查询进度
       setTimeout(() => {
         getDocument().getElementById('mindecho-ask-input')?.focus();
       }, 500);
@@ -174,14 +173,14 @@ const AskModal: React.FC = () => {
             <p className={styles['title']}>Settings</p>
             <p className={styles['text']}>
               <span>Manage Sources</span>
-              <svg width="20" height="20" onClick={()=>openSettings()} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
-                   style={{ float: 'right',cursor: 'pointer', marginLeft: 'auto' }}>
-                <path d="M12.5 6.875V5.3125C12.5 4.8981 12.3354 4.50067 12.0424 4.20765C11.7493 3.91462 11.3519 3.75 10.9375 3.75H3.4375C3.0231 3.75 2.62567 3.91462 2.33265 4.20765C2.03962 4.50067 1.875 4.8981 1.875 5.3125V14.6875C1.875 15.1019 2.03962 15.4993 2.33265 15.7924C2.62567 16.0854 3.0231 16.25 3.4375 16.25H10.9375C11.3519 16.25 11.7493 16.0854 12.0424 15.7924C12.3354 15.4993 12.5 15.1019 12.5 14.6875V13.125" stroke="#6B6B6B" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M15 6.875L18.1254 10.0004L15 13.1259" stroke="#6B6B6B" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M7.46094 10H18.125" stroke="#6B6B6B" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round"/>
+              <svg width="20" height="20" onClick={() => openSettings()} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                style={{ float: 'right', cursor: 'pointer', marginLeft: 'auto' }}>
+                <path d="M12.5 6.875V5.3125C12.5 4.8981 12.3354 4.50067 12.0424 4.20765C11.7493 3.91462 11.3519 3.75 10.9375 3.75H3.4375C3.0231 3.75 2.62567 3.91462 2.33265 4.20765C2.03962 4.50067 1.875 4.8981 1.875 5.3125V14.6875C1.875 15.1019 2.03962 15.4993 2.33265 15.7924C2.62567 16.0854 3.0231 16.25 3.4375 16.25H10.9375C11.3519 16.25 11.7493 16.0854 12.0424 15.7924C12.3354 15.4993 12.5 15.1019 12.5 14.6875V13.125" stroke="#6B6B6B" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15 6.875L18.1254 10.0004L15 13.1259" stroke="#6B6B6B" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7.46094 10H18.125" stroke="#6B6B6B" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
 
-             {/* <img src={optionIcon} alt="Manage Sources"  style={{ float: 'right',cursor: 'pointer', width: '20px', height: '20px', marginLeft: 'auto' }} />*/}
+              {/* <img src={optionIcon} alt="Manage Sources"  style={{ float: 'right',cursor: 'pointer', width: '20px', height: '20px', marginLeft: 'auto' }} />*/}
             </p>
             <p className={styles['text']}>
               <Switch checked={autoAdd} onChange={setAutoAddStatus} size="small" className={styles.switch} /><span>Auto-add New Items</span>

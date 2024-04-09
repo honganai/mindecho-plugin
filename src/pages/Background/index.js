@@ -4,7 +4,7 @@ import Api from './api';
 import { sendsocketMessage, connect, disconnect } from './ws';
 import { baseUrl, welcomeUrl } from './config';
 import ReadingTime from './readingTime';
-import { EXCLUDE_URLS, setExtensionUpdated, setAutoAdd } from '@/constants';
+import { EXCLUDE_URLS, setExtensionUpdated, setAutoAdd, getIsLogin } from '@/constants';
 import './autoAdd';
 
 // chrome.commands.onCommand.addListener((command) => {
@@ -112,11 +112,11 @@ async function onLoginAction(message, sendResponse) {
                         console.log('Cookie 设置成功:', cookie);
                         chrome.webRequest.onHeadersReceived.removeListener(listenOnHeadersReceived);
                         setTimeout(() => {
-                          setLogin(false, activeTab);
+                          setLogin(true, activeTab);
                         }, 1000);
                         setTimeout(() => {
                           console.log('cookieListener activeTab.id:', window.id);
-                          setLogin(false, activeTab);
+                          setLogin(true, activeTab);
                           chrome.windows.remove(windowId);
                         }, 3000);
                       },
@@ -158,14 +158,15 @@ function setLogin(value, activeTab) {
 
 async function onRequest(message, sendResponse) {
   const { api } = message;
-  console.log(api, Api, message);
-  if (Api[api]) {
+  const isLogin = await getIsLogin();
+  console.log(isLogin, api, Api, message);
+  if (Api[api] && isLogin) {
     console.log(api, message);
     return Api[api](message)
       .then((res) => {
         if (res.status === 401) {
           // onLoginAction(message, sendResponse);
-          setLogin(true);
+          setLogin(false);
           return;
         }
         return res.json();
@@ -228,10 +229,12 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
     setExtensionUpdated();
   }
   if (reason === 'install') {
-    chrome.runtime.openOptionsPage();
+    openSettings();
     executeScript();
     setAutoAdd()
   }
+  //测试
+  openSettings();
 });
 
 /**

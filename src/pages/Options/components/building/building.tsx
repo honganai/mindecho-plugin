@@ -68,19 +68,17 @@ const Building: React.FC<IProp> = ({ type = 'browser' }) => {
         }
       })
       if (waitTime < TIMEOUT && pending) {
-        const percent=Math.floor((count - pending) / count * 100)
-        // console.info(`~percent: ${percent}, count: ${count}, pending: ${pending}`);
-        // console.info(Math.ceil((count - pending) / count * 100))
+        const percent = Math.floor((count - pending) / count * 100)
         setPrecent(percent)
       } else {
         if (waitTime < MIN_TIMEOUT) {
           setPrecent(99)
           // 如果等待时间小于最小等待时间，即使所有任务完成，也不应该停止计时器或者标记为完成
-          return; // 直接返回，不继续执行后面的逻辑
+        } else {
+          clearInterval(timer)
+          setPrecent(100)
+          setTimeout(() => { setDone(true) }, 1500)
         }
-        clearInterval(timer)
-        setPrecent(100)
-        setTimeout(() => { setDone(true) }, 1500)
       }
     }
     return () => { }

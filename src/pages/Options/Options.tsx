@@ -23,7 +23,7 @@ const Options: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [stepPage, setStepPage] = useState(1);
   const [userinfo, setUserinfo] = useState<UserInfo>();
-  const [isLogin, setIsLogin] = useState<boolean>(true);
+  const [isLogin, setIsLogin] = useState<boolean>(false);
   const [gloablState, globalDispatch] = useReducer(GlobalReducer, {
     titleMap: { bookmark: 'Bookmarks', readinglist: 'Reading List', history: 'History', pocket: 'Pocket' },
     userInfo: {} as UserInfo,
@@ -32,7 +32,7 @@ const Options: React.FC = () => {
     showAnswerModal: false,
     isRequesting: false,
     requestEnd: false,
-    isLogin: true,
+    isLogin: false,
   });
   const [buildType, setBuildType] = useState<string>('');
 
@@ -62,7 +62,7 @@ const Options: React.FC = () => {
     }
     if (request.type === 'setLogin') {
       console.log('content msg:', request, sender);
-      if (request.isLogin === false) {
+      if (request.isLogin === true) {
         chrome.runtime.sendMessage({ type: 'request', api: 'userinfo' }, (res) => {
           if (res) {
             setUserinfo(res.result);
@@ -133,7 +133,7 @@ const Options: React.FC = () => {
       <div className={styles['options-container']}>
         <ConfigProvider>
           <Spin spinning={loading}>
-            {loading ? null : isLogin ? (
+            {loading ? null : !isLogin ? (
               <>
                 <Login onLogin={toLogin} />
               </>

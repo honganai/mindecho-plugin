@@ -22,6 +22,14 @@ export const USERINFO = 'userInfo';
 export const LAST_UPATE_DATA_TIME = 'last_upate_data_time';
 /** 记录pocket上一次更新数据日期 */
 export const LAST_UPATE_DATA_TIME_POCKET = 'last_upate_data_time_pocket';
+/** 记录登陆状态 */
+export const ISLOGIN = 'isLogin';
+
+export const getIsLogin = () => {
+  return chrome.storage.local.get(ISLOGIN).then((res) => {
+    return res[ISLOGIN];
+  });
+}
 
 export const getUserInfo = () => {
   return chrome.storage.local.get(USERINFO).then((res) => {

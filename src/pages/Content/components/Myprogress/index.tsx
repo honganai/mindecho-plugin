@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect, useMemo } from 'react';
 import { getDocument } from '@/utils/common.util';
 import { Spin } from 'antd';
-import { CheckCircleOutlined } from '@ant-design/icons';
+import { CheckCircleOutlined, LoadingOutlined } from '@ant-design/icons';
 import GlobalContext, { ActionType as GlobalActionType } from '@/reducer/global';
 import _, { set } from 'lodash';
 import styles from './index.module.scss';
@@ -98,9 +98,12 @@ const MyProgress: React.FC = () => {
     }
 
     return (
-        <div className={styles.content}>
-            {renderProgress(progressData)}
-        </div>
+        <Spin spinning={progressData.length <= 0} indicator={<LoadingOutlined style={{ fontSize: 18 }} spin />}>
+            <div className={styles.content}>
+                {renderProgress(progressData)}
+            </div>
+        </Spin>
+
     );
 };
 

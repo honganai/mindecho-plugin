@@ -52,7 +52,7 @@ const App: React.FC<IProps> = ({ type = 'webPage' }) => {
   const onBackendMessage = useCallback((request: any) => {
     if (request.type === 'showAskModal') {
       handleLogin((result) => {
-        if (result.isLogin) {
+        if (!result.isLogin) {
           chrome.runtime.sendMessage(
             {
               type: 'openSettings',

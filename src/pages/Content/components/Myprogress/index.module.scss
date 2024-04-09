@@ -2,6 +2,7 @@
 
 
 .content {
+  min-width: 350px;
   @extend %flex-center;
 
   .items {
