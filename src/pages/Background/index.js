@@ -234,7 +234,7 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
     setAutoAdd()
   }
   //测试
-  openSettings();
+  //openSettings();
 });
 
 /**
