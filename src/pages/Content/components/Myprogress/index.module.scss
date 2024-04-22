@@ -4,6 +4,9 @@
 .content {
   min-width: 350px;
   @extend %flex-center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  transition: height 0.5s;
 
   .items {
     margin: 0 5px;

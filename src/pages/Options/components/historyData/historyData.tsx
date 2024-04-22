@@ -2,12 +2,11 @@ import React, { useEffect, useContext, useState } from 'react';
 import dayjs from 'dayjs';
 import { Button, Input, Checkbox, Tree, Spin, message, Switch, TreeDataNode, TreeProps } from 'antd';
 import { ArrowLeftOutlined, SearchOutlined } from '@ant-design/icons';
-import cs from 'classnames';
 import styles from './index.module.scss';
 import _ from "lodash";
-import GlobalContext, { ActionType, IUpateData, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
+import GlobalContext from '@/reducer/global';
 import Header from '../header/header';
-import { setAutoAdd as setStorageAutoAdd, setLastUpateDataTime } from '@/constants';
+import { setHistoryAutoAdd as setStorageAutoAdd, getPagesInfo, initPagesInfo } from '@/constants';
 import DataList from '../datalist/datalist';
 
 export enum SubType {
@@ -26,7 +25,7 @@ interface IMergeData {
   node_index: string;
   parentId: string;
   user_used_time: string;
-  origin_info: IBookmarks | IHistory | IReadingList;
+  origin_info: any;
   status?: 1 | 0;
   selected?: boolean;
 }
@@ -35,10 +34,9 @@ interface Props {
   onLink: Function;
 }
 
-const BrowserData: React.FC<Props> = ({ onLink }) => {
+const HistoryData: React.FC<Props> = ({ onLink }) => {
   const noDataFoundI18N = chrome.i18n.getMessage('noDataFound');
-  const logoutText = chrome.i18n.getMessage('logout');
-  const { state: { upateData, bookmarks: bookmarksData, titleMap: keyList }, dispatch: globalDispatch } = useContext(GlobalContext);
+  const { state: { titleMap: keyList }, dispatch: globalDispatch } = useContext(GlobalContext);
 
   //选中的所有key集合、和初始数据集合
   const [initial, setInitial] = useState<boolean>(true);
@@ -55,8 +53,6 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
   const [autoAdd, setAutoAdd] = useState<boolean>(true);
 
   const onExpand = (expandedKeysValue: React.Key[]) => {
-    // if not set autoExpandParent to false, if children expanded, parent can not collapse.
-    // or, you can remove all expanded children keys.
     setExpandedKeys(expandedKeysValue);
     setAutoExpandParent(false);
   };
@@ -106,18 +102,14 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
     getUserUrl()
   }, [searchWord]);
 
-  const getUserUrl = () => {
+  const getUserUrl = async () => {
+    let pagesInfo = await getPagesInfo();
+    if (searchWord.trim()) {
+      pagesInfo = _.filter(pagesInfo, (item) => item.title.includes(searchWord));
+    }
+    console.log(111111, pagesInfo, searchWord)
     setLoading(true);
-    chrome.runtime.sendMessage({ type: 'request', api: 'get_user_url', body: { page: 1, page_size: 999, title: searchWord, type: 'bookmark,readinglist' } }, (res) => {
-      console.log('🚀 ~ datalist -获取用户上传数据- line:240: ', res);
-      parsingData(res?.result || []);
-      // if (res?.result?.length > 0) {
-      //   parsingData(res?.result)
-      // } else {
-      //   message.error(noDataFoundI18N);
-      //   setLoading(false);
-      // }
-    });
+    parsingData(pagesInfo || []);
   }
 
   const parsingData = (data: any) => {
@@ -125,92 +117,31 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
     let reusltDataMap = {} as any;
     const currentCheckeds: string[] = [];
     const hasSelected = data.some((item: any) => item.status > 0);
-    const bookmarksMap = new Map<string, Array<any>>();
     data.forEach((item: any) => {
       item.selected = false;
+      initialData(item.type, reusltData, reusltDataMap);
 
-      switch (item.type) {
-        case 'bookmark':
-          initialData(item.type, reusltData, reusltDataMap);
-
-          if (!bookmarksMap.has(item.parentId)) {
-            bookmarksMap.set(item.parentId, []);
-          }
-          bookmarksMap.get(item.parentId)?.push(
-            {
-              title: item.title,
-              key: item.type + '-' + item.id,
-              url: item.url
-            }
-          );
-          break;
-
-        case 'readinglist':
-          initialData(item.type, reusltData, reusltDataMap);
-
-          reusltDataMap[item.type].children?.push({
-            title: item.title,
-            key: item.type + '-' + item.id,
-            url: item.url
-          });
-          break;
-        //@koman 暂时隐藏掉history
-        // case 'history':
-        //   initialData(item.type, reusltData, reusltDataMap);
-
-        //   reusltDataMap[item.type].children?.push({
-        //     title: item.title,
-        //     key: item.type + '-' + item.id,
-        //     url: item.urlyarn
-        //   });
-        //   break;
-
-        case 'pocket':
-          initialData(item.type, reusltData, reusltDataMap);
-
-          reusltDataMap[item.type].children?.push({
-            title: item.title,
-            key: item.type + '-' + item.id,
-            url: item.url
-          });
-          break;
-      }
+      reusltDataMap[item.type].children?.push({
+        title: item.title,
+        key: item.type + '-' + item.id,
+        url: item.url
+      });
       if ((initial && !hasSelected) || (initial && item.status > 0) || (!initial && isChecked(item.id))) {
-        //@koman 暂时隐藏掉history
-        if (item.type !== 'history') {
-          item.selected = true;
-          currentCheckeds.push(item.type + '-' + item.id)
-        }
+        item.selected = true;
+        currentCheckeds.push(item.type + '-' + item.id)
       }
     });
-    const bookmarks: TreeDataNode = parsingBookMarks(bookmarksData, bookmarksMap)
-    reusltDataMap['bookmark']?.children?.push(...bookmarks.children || []);
     setTreeData(reusltData)
-    onExpand([reusltData[0]?.key, reusltData[1]?.key])
+    onExpand([reusltData[0]?.key])
 
     if (initial) {
       setAllUserUrl(data);
       setCheckedCount(currentCheckeds.length);
-      setInitial(false);
     }
     setUserUrl(data);
     setCheckedKeys(currentCheckeds);
 
     setLoading(false);
-  }
-
-  const parsingBookMarks = (data: any, map: Map<string, any>): TreeDataNode => {
-    const result: TreeDataNode = { title: data.title, key: 'parent-' + data.id, children: [] }
-    for (const item of data.children || []) {
-      if (item.children?.length > 0) {
-        const res = parsingBookMarks(item, map) as any;
-        res.children.length > 0 && result?.children?.push(res)
-      }
-    }
-    if (map.has(data.id)) {
-      result?.children?.push(...map.get(data.id))
-    }
-    return result;
   }
 
   const initialData = (type: string, data: any, mapData: any) => {
@@ -226,22 +157,22 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
   }
 
   const onImport = () => {
-    const data = allUserUrl.map((item) => {
-      return {
-        url: item.url,
-        status: item.selected ? 1 : 0,
-      }
+    const data = allUserUrl.filter((item) => {
+      return item.selected;
     })
-    globalDispatch({
-      type: ActionType.SetUpateData,
-      payload: data as Array<IUpateData> || [],
+    console.log(222222, data)
+    uploadUserArticle(data);
+    onLink(3)
+  }
+
+  const uploadUserArticle = (data: Array<IMergeData>) => {
+    chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: data }, (res) => {
+      console.log('uploadUserArticle res:', res);
+      initPagesInfo();
     });
-    setLastUpateDataTime(new Date().getTime());
-    onLink(5)
   }
 
   const isChecked = (key: string | number) => {
-
     const result = allUserUrl.filter(item => item.id === key);
     return result[0]?.selected || false;
   }
@@ -250,21 +181,22 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
     const searchText = e.target.value;
     if (searchText.trim() !== searchWord) {
       setSearchWord(e.target.value)
+      setInitial(false)
     }
   }
 
   return (
     <div className={styles.container}>
-      <Header tip={'Select content to be made searchable.'} />
+      <Header tip={'Enable full-text search in browsing history to eliminate the need for memorization.'} note={'Only URLs of public articles, blogs, and essay PDFs can be included. Personal and work-related history are NOT included.'} />
       <div className={styles['content']}>
         <div className={styles['left']}>
-          <div className={styles['back']} onClick={() => onLink(1)}>
+          <div className={styles['back']} onClick={() => onLink(2)}>
             <ArrowLeftOutlined />
           </div>
         </div>
         <div className={styles['center']}>
           <div className={styles['header']}>
-            <p>BookMarks & Reading Lists</p>
+            <p>Public Knowledge Pages from Browsing History</p>
           </div>
           <div className={styles['control-box']}>
             <Input className={styles['search']} placeholder="Find items by keywords" prefix={<SearchOutlined />} onPressEnter={searchKeyWord} />
@@ -290,13 +222,13 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
           </Button>
           <p className={styles['auto-add']}>
             <Switch checked={autoAdd} onChange={onChange} />
-            <span>Auto-add New Items</span>
+            <span>Auto-Collect New Matches</span>
           </p>
-          <p className={styles['exclude-tip']}>Exclude Bookmarks or Reading List</p>
+          <p className={styles['exclude-tip']}>Exclude  History</p>
         </div>
       </div>
     </div>
   );
 };
 
-export default BrowserData;
+export default HistoryData;

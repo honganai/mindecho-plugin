@@ -6,6 +6,20 @@ export enum enumSubscribeModalType {
   Premium,
   Elite,
 }
+// export interface IPageInfo {
+//   title: String;
+//   url: String;
+//   type: "history";
+//   user_create_time: String;
+//   node_id: 0;
+//   node_index: 0;
+//   parentId: 0;
+//   user_used_time: String;
+//   origin_info: any;
+//   author: String;
+//   content: String;
+//   status: 3;
+// }
 export interface IUpateData {
   url: string;
   status: 1 | 0;
@@ -72,9 +86,13 @@ export interface IState {
   userInfo?: UserInfo | null;
   /** 上传进度 */
   progress?: Array<IProgressItem> | null;
+  /** 历史网页数据 **/
+  // historyPage?: Array<IPageInfo> | [];
+  // historyId: number;
 }
 
 export enum ActionType {
+  // SetHistoryPage = 'SET_HISTORY_PAGE',
   /** 设置upateData */
   SetTitleMap = 'SET_TITLEMAP',
   /** 设置upateData */
@@ -120,6 +138,10 @@ export type IAction =
   | ISetUserInfo;
 
 
+// export interface ISetHistoryPage {
+//   type: ActionType.SetHistoryPage;
+//   payload: Array<IPageInfo>;
+// }
 export interface ISetTitleMap {
   type: ActionType.SetTitleMap;
   payload: ITitleMap;
@@ -188,6 +210,13 @@ export interface ISetQuestion {
 
 export function reducer(state: IState, action: IAction): IState {
   switch (action.type) {
+    // case ActionType.SetHistoryPage:
+    //   return {
+    //     ...state,
+    //     historyId: ++state.historyId,
+    //     historyPage: [...state.historyPage as Array<any>, { ...action.payload, id: state.historyId || 0 }],
+    //   };
+
     case ActionType.SetTitleMap:
       return {
         ...state,

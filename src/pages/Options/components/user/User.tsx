@@ -12,6 +12,7 @@ import logo from '@/assets/icons/logo.png';
 import GlobalContext, { ActionType, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
 import Header from '../header/header';
 import pocketIcon from '@/assets/icons/pocket_icon.png';
+import TwitterIcon from '@/assets/icons/twitter_icon.png';
 import pocketSourceIcon from '@/assets/icons/pocket_source_icon.png';
 import RaindRopSourceIcon from '@/assets/icons/raindrop_source_icon.png';
 
@@ -42,7 +43,7 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
   const [otherSourceModalShow, setOtherSourceModalShow] = React.useState<boolean>(false);
 
   const logoutText = chrome.i18n.getMessage('logout');
-  const { state: { history, bookmarks, readinglist }, dispatch: globalDispatch } = useContext(GlobalContext);
+  const { state: { history, bookmarks, readinglist, isLogin, historyPage }, dispatch: globalDispatch } = useContext(GlobalContext);
 
   useEffect(() => {
     getHistory();
@@ -215,7 +216,8 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
           </Button>
           <Button className={cs(styles['btn'], styles['btn-other'])} size="middle" block onClick={getBindStatues} icon={<PlusOutlined />}>
             <span>Connect Other Sources</span>
-            <img className={styles['pocket-icon']} src={pocketIcon} alt="pocket icon" />
+            <img className={cs(styles['pocket-icon'], styles['icon'])} src={pocketIcon} alt="pocket icon" />
+            {/* <img className={cs(styles['twitter-icon'], styles['icon'])} src={TwitterIcon} alt="twitter icon" /> */}
           </Button>
 
         </div>

@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect, useMemo } from 'react';
 import { getDocument } from '@/utils/common.util';
 import { Spin } from 'antd';
-import { CheckCircleOutlined, LoadingOutlined } from '@ant-design/icons';
+import { CheckCircleOutlined, LoadingOutlined, RightOutlined, DownOutlined } from '@ant-design/icons';
 import GlobalContext, { ActionType as GlobalActionType } from '@/reducer/global';
 import _, { set } from 'lodash';
 import styles from './index.module.scss';
@@ -14,6 +14,7 @@ interface IProgressData {
 
 const MyProgress: React.FC = () => {
     const { state: { showAskModal, showAnswerModal, progress, titleMap: keyList }, dispatch: globalDispatch } = useContext(GlobalContext);
+    const [more, setMore] = useState<boolean>(false);
     //使用该组件时引用
     // const [timer, setTimer] = useState<NodeJS.Timeout>();
 
@@ -59,7 +60,7 @@ const MyProgress: React.FC = () => {
             let reusltDataMap = {} as any;
 
             progress?.forEach((item: any) => {
-                if (item.status > 0 && item.type !== 'history') {
+                if (item.status > 0) {
                     initialData(item.type, reusltData, reusltDataMap);
 
                     reusltDataMap[item.type].count += item.count;
@@ -99,7 +100,10 @@ const MyProgress: React.FC = () => {
 
     return (
         <Spin spinning={progressData.length <= 0} indicator={<LoadingOutlined style={{ fontSize: 18 }} spin />}>
-            <div className={styles.content}>
+            <div className={styles.content} style={{ height: more ? 'auto' : '26px' }}>
+                {
+                    more ? <DownOutlined onClick={() => setMore(false)} /> : <RightOutlined onClick={() => setMore(true)} />
+                }
                 {renderProgress(progressData)}
             </div>
         </Spin>

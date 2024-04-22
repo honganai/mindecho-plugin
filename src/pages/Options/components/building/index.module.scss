@@ -1,7 +1,20 @@
 @import '../../../../assets/style/public.extend';
 
+:global {
+    @keyframes load {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+
 .container {
     max-width: 1289px;
+    min-width: 1270px;
     min-height: 100vh;
     margin: 0 auto;
     padding: 320px 0;
@@ -9,12 +22,13 @@
     :global {
         .ant-progress-status-success {
             .ant-progress-inner {
-            background-color: #52c41a!important;
+                background-color: #52c41a !important;
 
                 .ant-progress-circle-trail {
                     stroke: #52c41a;
                 }
             }
+
             .ant-progress-text {
                 color: white;
 
@@ -22,7 +36,7 @@
                     font-size: 2.167em;
                 }
             }
-        }   
+        }
     }
 
     .content {
@@ -50,7 +64,25 @@
         .tip-2 {
             font-size: 30px;
             letter-spacing: 1px;
-        }  
+        }
+
+        .tip-3 {
+            margin-top: 40px;
+            line-height: 1.2em;
+            font-size: 40px;
+            color: #415da0;
+            text-align: center;
+        }
+
+        .loading-icon {
+            margin-top: 50px;
+            width: 77px;
+            height: 77px;
+            transition: all;
+            animation: load 2s infinite;
+        }
+
+
     }
 
     .top {
@@ -75,17 +107,16 @@
         .git-arrow {
             width: 60px;
             height: 230px;
-        } 
+        }
     }
 
     .bottom {
-        float: left;
         display: flex;
         flex-direction: column;
         align-items: center;
 
         img {
-            height: 100px; 
+            height: 100px;
             width: auto;
         }
 

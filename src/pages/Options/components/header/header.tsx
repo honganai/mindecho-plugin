@@ -13,9 +13,10 @@ import GlobalContext, { ActionType, IBookmarks, IHistory, IReadingList } from '@
 
 interface Props {
   tip?: string;
+  note?: string;
 }
 
-const Header: React.FC<Props> = ({ tip }: Props) => {
+const Header: React.FC<Props> = ({ tip, note }) => {
   const logoutText = chrome.i18n.getMessage('logout');
   const { state: { userInfo }, dispatch: globalDispatch } = useContext(GlobalContext);
   const el_userInfo = useRef(null);
@@ -32,6 +33,9 @@ const Header: React.FC<Props> = ({ tip }: Props) => {
       <div className={styles['userName']}>
         <p className={styles['name']}>Hello, {userInfo?.username || '-'}</p>
         <p className={styles['recommend']}>{tip || ''}</p>
+        {
+          note && <p className={styles['note']}><strong>Note:</strong> {note}</p>
+        }
       </div>
     </div>
   );

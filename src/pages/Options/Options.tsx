@@ -1,9 +1,10 @@
-import React, { useEffect, useReducer, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useReducer, useRef, useState } from 'react';
 import './Options.css';
 import { Layout, ConfigProvider, Popover, message, Spin, notification, Select } from 'antd';
 import User, { SubType } from './components/user/User';
 import Login from './components/login/Login';
 import BrowserData from './components/browserData/browserData';
+import HistoryData from './components/historyData/historyData';
 import Building from './components/building/building';
 import Pocket from './components/pocketData/pocket';
 import { UserInfo, UserType } from '@/types';
@@ -80,7 +81,7 @@ const Options: React.FC = () => {
       handleLogin();
       sendResponse('setLogin ok');
     }
-  };
+  }
 
   useEffect(() => {
     setLoading(true);
@@ -141,8 +142,9 @@ const Options: React.FC = () => {
               <>
                 {stepPage === 1 ? <User onLink={(page: number) => { setStepPage(page) }} /> :
                   stepPage === 2 ? <BrowserData onLink={(page: number) => { setStepPage(page); setBuildType('browser') }} /> :
-                    stepPage === 3 ? <Building type={buildType} /> :
-                      stepPage === 4 ? <Pocket onLink={(page: number) => { setStepPage(page); setBuildType('pocket') }} /> : null}
+                    stepPage === 5 ? <HistoryData onLink={(page: number) => { setStepPage(page); setBuildType('browser') }} /> :
+                      stepPage === 3 ? <Building type={buildType} /> :
+                        stepPage === 4 ? <Pocket onLink={(page: number) => { setStepPage(page); setBuildType('pocket') }} /> : null}
                 <ModalContent type="options" />
               </>
             )}

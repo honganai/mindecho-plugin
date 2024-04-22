@@ -1,15 +1,15 @@
 import React, { useEffect, useRef, useState, useContext } from 'react';
-import { Progress } from 'antd';
 import styles from './index.module.scss';
-import Logo from '@/assets/icons/logo.png';
 import GifArrow from '@/assets/icons/gif_arrow.png';
 import Gif from '@/assets/icons/control.gif';
 import QuestArrow from '@/assets/icons/quest_arrow.png';
-import LogoText from '@/assets/icons/logo-font.png';
 import './index.module.css';
 import GlobalContext, { ActionType } from '@/reducer/global';
-import { SetInterval } from '@/utils/common.util';
 import _, { set } from 'lodash';
+import LoadingIcon from '@/assets/icons/loading_icon.png';
+import Logo from '@/assets/icons/logo.png';
+import cs from 'classnames';
+import { Trumpet } from '@icon-park/react';
 
 interface IProp {
   type: string;
@@ -96,22 +96,27 @@ const Building: React.FC<IProp> = ({ type = 'browser' }) => {
         )
       }
       <div className={styles['content']}>
-        <img className={`${styles['logo']} ${styles['logo-icon']}`} src={Logo} />
+        <img className={cs(styles['logo'], styles['logo-icon'])} src={Logo} />
         {
           done ? (
             <>
-              <p className={styles['title']}>{type === 'browser' ? 'Initialization Done!' : 'Pocket Saves Imported'}</p>
-              <p className={styles['tip']}>The data's not all set just yet, but I'm on it, will get it done in the background</p>
-              <p className={styles['title']} style={{ marginTop: '20px' }}>Meanwhile, You can start asking questions!</p>
-              <p className={styles['tip-2']}>
-                Feel free to <span className={styles['point-1']}>summon me</span> anytime by <span className={styles['point-2']}>clicking on the toolbar up top</span>, or with <span className={styles['point-3']}>quick keyboard shortcuts</span>, whenever you need to dive into your saved treasures.
+              <p className={styles['title']}>{type === 'browser' ? 'Browser Data Imported' : 'Pocket Saves Imported'}</p>
+              <p className={styles['tip']}>Data is still processing; I'm on it and will continue in the background.</p>
+              <p className={styles['tip-3']}>
+                Activate mindECHO to search Your Saves<br />
+                anytime via <span style={{ color: '#6428be' }}>keystroke</span> or <span style={{ color: '#2b984d' }}>icon click</span>
               </p>
+              {/* <p className={styles['title']} style={{ marginTop: '20px' }}>Meanwhile, You can start asking questions!</p> */}
+              {/* <p className={styles['tip-2']}>
+                Feel free to <span className={styles['point-1']}>summon me</span> anytime by <span className={styles['point-2']}>clicking on the toolbar up top</span>, or with <span className={styles['point-3']}>quick keyboard shortcuts</span>, whenever you need to dive into your saved treasures.
+              </p> */}
             </>
           ) : (
             <>
               <p className={styles['title']}>Building Your MindEcho</p>
-              <p className={styles['tip']} style={{ display: done ? 'none' : 'block' }}>It may take up to 10 minutes</p>
-              <Progress type="circle" percent={precent} style={{ marginTop: '30px' }} className={styles.progress} />
+              <p className={styles['tip']} style={{ display: done ? 'none' : 'block' }}>This may take up to 10 minutes. Please keep this page open and continue with other tasks.</p>
+              {/* <Progress type="circle" percent={precent} style={{ marginTop: '30px' }} className={styles.progress} /> */}
+              <img className={styles['loading-icon']} src={LoadingIcon} alt="loading" />
             </>
           )
         }
@@ -121,12 +126,14 @@ const Building: React.FC<IProp> = ({ type = 'browser' }) => {
           <div className={styles['bottom']}>
             <img src={QuestArrow} alt="" />
             <span className={styles['direction']}>Keyboard Stroke ShortCuts</span>
-            <p className={styles['doneTip']}>
-              Press <strong>Command + E</strong> on Mac
-            </p>
-            <p className={styles['doneTip']}>
-              Press <strong>Ctrl + E</strong> on PC
-            </p>
+            <div>
+              <p className={styles['doneTip']}>
+                Press <strong>Command + E</strong> on Mac
+              </p>
+              <p className={styles['doneTip']}>
+                Press <strong>Ctrl + E</strong> on PC
+              </p>
+            </div>
           </div>
         )
       }

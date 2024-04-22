@@ -4,8 +4,10 @@ import Api from './api';
 import { sendsocketMessage, connect, disconnect } from './ws';
 import { baseUrl, welcomeUrl } from './config';
 import ReadingTime from './readingTime';
-import { EXCLUDE_URLS, setExtensionUpdated, setAutoAdd, getIsLogin } from '@/constants';
+import { EXCLUDE_URLS, setExtensionUpdated, setAutoAdd, getIsLogin, initPagesInfo } from '@/constants';
 import './autoAdd';
+
+initPagesInfo();
 
 // chrome.commands.onCommand.addListener((command) => {
 //   console.log(`Command "${command}" triggered`);
@@ -35,7 +37,10 @@ function handleMessages(message, sender, sendResponse) {
     sendsocketMessage(type, message, sender, sendResponse);
   } else if (type === 'openSettings') {
     openSettings();
-  }
+  } 
+  // else if (type === 'PageInfo') {
+  //   console.log(3333333, message, sender)
+  // }
   return true;
 }
 
@@ -96,9 +101,11 @@ async function onLoginAction(message, sendResponse) {
             const filterUrl = _.filter(loginActionUrls, (item) => _.startsWith(details.url, item));
             // if (filterUrl.length > 0) {
             console.log("🚀 ~ listenOnHeadersReceived ~ details.url:", details.url)
+            const domainParts = url.hostname.split('.');
+            const topLevelDomain = domainParts.slice(-2).join('.');
             if (details.url === baseUrl + '/') {
               console.log(filterUrl);
-              chrome.cookies.getAll({ domain: url.hostname, session: true }, function (cookies) {
+              chrome.cookies.getAll({ domain: topLevelDomain, session: true }, function (cookies) {
                 console.log(details.url, cookies);
                 _.forEach(cookies || [], (cookie) => {
                   cookie.name === 'session' &&
@@ -234,7 +241,8 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
     setAutoAdd()
   }
   //测试
-  //openSettings();
+  // openSettings();
+  // executeScript();
 });
 
 /**

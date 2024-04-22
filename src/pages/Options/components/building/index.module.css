@@ -9,8 +9,18 @@
   height: 96px;
 }
 
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .container {
   max-width: 1289px;
+  min-width: 1270px;
   min-height: 100vh;
   margin: 0 auto;
   padding: 320px 0;
@@ -56,6 +66,22 @@
   letter-spacing: 1px;
 }
 
+.container .content .tip-3 {
+  margin-top: 40px;
+  line-height: 1.2em;
+  font-size: 40px;
+  color: #415da0;
+  text-align: center;
+}
+
+.container .content .loading-icon {
+  margin-top: 50px;
+  width: 77px;
+  height: 77px;
+  transition: all;
+  animation: load 2s infinite;
+}
+
 .container .top {
   position: absolute;
   right: 0;
@@ -81,7 +107,6 @@
 }
 
 .container .bottom {
-  float: left;
   display: flex;
   flex-direction: column;
   align-items: center;

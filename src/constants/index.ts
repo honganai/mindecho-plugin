@@ -14,8 +14,10 @@ export const DRAG_POSITION_KEY = 'mindecho-drag-position';
 export const GUIDE_COMPLETE_KEY = `mindecho-complete-guide-${version}`;
 /** 是否更新了插件 */
 export const EXTENSION_UPDATED = 'mindecho-extension-updated';
-/** 是否勾选了自动更新 */
+/** 是否勾选了bookmark、readinglist自动更新 */
 export const AUTO_ADD = 'mindecho-auto-add';
+/** 是否勾选了history自动更新 */
+export const HISTORY_AUTO_ADD = 'mindecho-history-auto-add';
 /** 储存userInfo */
 export const USERINFO = 'userInfo';
 /** 记录bookmark、readinglist、history上一次更新数据日期 */
@@ -24,6 +26,26 @@ export const LAST_UPATE_DATA_TIME = 'last_upate_data_time';
 export const LAST_UPATE_DATA_TIME_POCKET = 'last_upate_data_time_pocket';
 /** 记录登陆状态 */
 export const ISLOGIN = 'isLogin';
+/** 暂存当前打开的页面info */
+export const PAGES_INFO = 'pages_info';
+
+export const initPagesInfo = () => {
+  return chrome.storage.local.set({ [PAGES_INFO]: [] });
+}
+
+export const getPagesInfo = () => {
+  return chrome.storage.local.get(PAGES_INFO).then((res) => {
+    return res[PAGES_INFO];
+  });
+}
+
+export const setPagesInfo = async (info: any) => {
+  let pagesInfo = await getPagesInfo();
+  pagesInfo = pagesInfo || [];
+  console.log(333333, pagesInfo)
+  const PAGES_INFO_ID = pagesInfo.length;
+  chrome.storage.local.set({ [PAGES_INFO]: [...pagesInfo, {...info, id: PAGES_INFO_ID}] });
+};
 
 export const getIsLogin = () => {
   return chrome.storage.local.get(ISLOGIN).then((res) => {
@@ -74,6 +96,16 @@ export const setAutoAdd = (status: boolean = true) => {
 export const getAutoAdd = () => {
   return chrome.storage.local.get(AUTO_ADD).then((res) => {
     return res[AUTO_ADD];
+  });
+};
+
+export const setHistoryAutoAdd = (status: boolean = true) => {
+  chrome.storage.local.set({ [HISTORY_AUTO_ADD]: status });
+};
+
+export const getHistoryAutoAdd = () => {
+  return chrome.storage.local.get(HISTORY_AUTO_ADD).then((res) => {
+    return res[HISTORY_AUTO_ADD];
   });
 };
 

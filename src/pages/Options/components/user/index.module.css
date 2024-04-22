@@ -68,7 +68,8 @@
 }
 
 .container .control .btn-other {
-  position: relative;
+  display: flex;
+  align-items: center;
   background-color: #d0c5e0;
   color: #866BA1;
 }
@@ -77,11 +78,10 @@
   border-color: #735491;
 }
 
-.container .control .btn-other .pocket-icon {
-  position: absolute;
-  right: 25px;
-  width: 54px;
-  height: 54px;
+.container .control .btn-other .icon {
+  margin-left: 15px;
+  width: 39px;
+  height: 39px;
 }
 
 .source-modal {

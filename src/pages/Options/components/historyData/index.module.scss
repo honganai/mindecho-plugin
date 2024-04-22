@@ -44,16 +44,16 @@
         margin-bottom: 10px;
         color: rgb(109, 109, 109);
         @extend %flex-center;
-
+        
         span {
           margin-left: 5px;
         }
       }
 
       .exclude-tip {
-        font-size: 20px;
-        font-weight: bold;
-        color: var(--color-blue);
+          font-size: 20px;
+          font-weight: bold;
+          color: var(--color-blue);
       }
     }
 
