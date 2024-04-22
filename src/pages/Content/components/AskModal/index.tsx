@@ -46,6 +46,7 @@ const AskModal: React.FC<IProps> = ({ type }) => {
       setTimeout(() => {
         getDocument().getElementById('mindecho-ask-input')?.focus();
       }, 500);
+      getProgress();
       const intervalId = setInterval(() => {
         getProgress();
       }, 5000);
