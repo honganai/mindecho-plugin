@@ -107,7 +107,6 @@ const HistoryData: React.FC<Props> = ({ onLink }) => {
     if (searchWord.trim()) {
       pagesInfo = _.filter(pagesInfo, (item) => item.title.includes(searchWord));
     }
-    console.log(111111, pagesInfo, searchWord)
     setLoading(true);
     parsingData(pagesInfo || []);
   }
@@ -160,7 +159,6 @@ const HistoryData: React.FC<Props> = ({ onLink }) => {
     const data = allUserUrl.filter((item) => {
       return item.selected;
     })
-    console.log(222222, data)
     uploadUserArticle(data);
     onLink(3)
   }

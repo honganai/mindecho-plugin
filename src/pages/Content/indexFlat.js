@@ -68,7 +68,6 @@ async function grabPageInfo() {
       console.error('Error parsing JSON-LD:', error);
     }
   });
-  console.log(111111, cTypeList)
   const result = _.intersectionBy(typeList, cTypeList);
   if (result.length > 0) {
     const {title, content, timestrip} = getCleanArticle();
@@ -80,12 +79,11 @@ async function grabPageInfo() {
       node_id: 0, node_index: 0, parentId: 0, 
       user_used_time: new Date().toISOString(), 
       origin_info: '', 
-      author: document.querySelector('meta[name="author"]')?.content || document.querySelector('meta[property="og:article:author"]')?.content || document.querySelector('[class*="time"]')?.innerHTML || '', 
+      author: document.querySelector('meta[name="author"]')?.content || document.querySelector('meta[property="og:article:author"]')?.content || document.querySelector('[class*="author"]')?.innerHTML || '', 
       content, 
       status: 3};
   
     const auto = await getHistoryAutoAdd();
-    console.log(222222, auto, info )
     if ( auto ) {
       chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: [info] }, (res) => {
         console.log('uploadUserArticle res:', res);

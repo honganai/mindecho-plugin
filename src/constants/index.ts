@@ -42,7 +42,6 @@ export const getPagesInfo = () => {
 export const setPagesInfo = async (info: any) => {
   let pagesInfo = await getPagesInfo();
   pagesInfo = pagesInfo || [];
-  console.log(333333, pagesInfo)
   const PAGES_INFO_ID = pagesInfo.length;
   chrome.storage.local.set({ [PAGES_INFO]: [...pagesInfo, {...info, id: PAGES_INFO_ID}] });
 };
