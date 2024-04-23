@@ -83,7 +83,7 @@
         "message": "Keyboard Stroke ShortCuts",
         "description": ""
     },
-    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks.": {
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
         "message": "This may take up to 10 minutes. Please keep this page open and continue with other tasks.",
         "description": ""
     },
@@ -171,7 +171,7 @@
         "message": "Current URL list is local only until you authorize data collection.",
         "description": ""
     },
-    "loading...": {
+    "loading": {
         "message": "Loading...",
         "description": ""
     },
@@ -219,7 +219,7 @@
         "message": "Hello",
         "description": ""
     },
-    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you’d_like_to_explore_again": {
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
         "message": "How about we begin by choosing the treasure trove of information you’d like to explore again?",
         "description": ""
     },

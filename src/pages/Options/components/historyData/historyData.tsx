@@ -200,7 +200,7 @@ const HistoryData: React.FC<Props> = ({ onLink }) => {
             <Input className={styles['search']} placeholder={t('find_items_by_keywords')} prefix={<SearchOutlined />} onPressEnter={searchKeyWord} />
             <Checkbox className={styles['select']} onChange={onChange}>{t('select_deselect_all_shown')}</Checkbox>
           </div>
-          <Spin spinning={loading} tip={t('loading...')} style={{ background: '#fff' }}>
+          <Spin spinning={loading} tip={t('loading')} style={{ background: '#fff' }}>
             <DataList
               checkable
               onExpand={onExpand}

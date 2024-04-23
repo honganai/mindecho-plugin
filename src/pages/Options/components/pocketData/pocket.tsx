@@ -210,7 +210,7 @@ const Pocket: React.FC<Props> = ({ onLink }) => {
             <Input className={styles['search']} placeholder={t('find_items_by_keywords')} prefix={<SearchOutlined />} onPressEnter={searchKeyWord} />
             <Checkbox className={styles['select']} onChange={onChange}>{t('select_deselect_all_shown')}</Checkbox>
           </div>
-          <Spin spinning={loading} tip='Loading...' style={{ background: '#fff' }}>
+          <Spin spinning={loading} tip={t('loading')} style={{ background: '#fff' }}>
             {/* <div className={styles['list-box']}>
               <Tree
                 className={styles.treeList}

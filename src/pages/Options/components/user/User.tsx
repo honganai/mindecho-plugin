@@ -203,7 +203,7 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
   return (
     <div className={styles.container}>
       <Spin spinning={spinning} tip="initializing..." >
-        <Header tip={t('how_about_we_begin_by_choosing_the_treasure_trove_of_information_you’d_like_to_explore_again')} />
+        <Header tip={t('how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again')} />
         <div className={styles['control']}>
           <Button className={cs(styles['btn'], styles['btn-browser'])} size="middle" type="primary" block onClick={() => onLink(2)} icon={<PlusOutlined />}>
             <span>{t('import_collections_in_browser')}</span>

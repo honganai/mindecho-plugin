@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect, useMemo } from 'react';
 import { getDocument } from '@/utils/common.util';
 import { Spin } from 'antd';
-import { CheckCircleOutlined, LoadingOutlined, RightOutlined, DownOutlined } from '@ant-design/icons';
+import { CheckCircleOutlined, LoadingOutlined, CaretRightOutlined, CaretDownOutlined } from '@ant-design/icons';
 import GlobalContext, { ActionType as GlobalActionType } from '@/reducer/global';
 import _, { set } from 'lodash';
 import styles from './index.module.scss';
@@ -102,7 +102,7 @@ const MyProgress: React.FC = () => {
         <Spin spinning={progressData.length <= 0} indicator={<LoadingOutlined style={{ fontSize: 18 }} spin />}>
             <div className={styles.content} style={{ height: more ? 'auto' : '26px' }}>
                 {
-                    more ? <DownOutlined onClick={() => setMore(false)} /> : <RightOutlined onClick={() => setMore(true)} />
+                    more ? <CaretDownOutlined onClick={() => setMore(false)} /> : <CaretRightOutlined onClick={() => setMore(true)} />
                 }
                 {renderProgress(progressData)}
             </div>

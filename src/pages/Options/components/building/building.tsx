@@ -27,18 +27,18 @@ const Building: React.FC<IProp> = ({ type = 'browser', status = false }) => {
   const MIN_TIMEOUT = 60; //最小等待时间
 
   useEffect(() => {
-    upateUserUrl();
+    !status && upateUserUrl();
   }, [upateData]);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      getProgress();
+      !status && getProgress();
     }, 5000);
 
     setTimer(intervalId)
 
     return () => clearInterval(intervalId); // Ensure the interval is cleared when the component unmounts
-  }, [waitTime]);
+  }, [waitTime, status]);
 
   const upateUserUrl = () => {
     chrome.runtime.sendMessage({ type: 'request', api: 'update_user_url', body: upateData }, (res) => {
