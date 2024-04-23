@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Nem található adat",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Ugorja át ezt a lépést",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Új lekérdezés",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Kérdezd meg az AI-t",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Lekérdezés a Webről",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Vagy tudsz",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "Előfordulhat, hogy a források még nincsenek teljesen készen, vagy próbáljon másképp kérdezni.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Források kezelése",
+        "description": ""
+    },
+    "settings": {
+        "message": "Beállítások",
+        "description": ""
+    },
+    "sources": {
+        "message": "Források",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Nincs elérhető adat",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Kérdezze meg megtakarításait",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Biztonságos kapcsolat",
+        "description": ""
+    },
+    "saves": {
+        "message": "Menti",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Zseb",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Csatlakoztassa a Pockethez, hogy életre keltse poros rejtekét.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "PC-n",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl+E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "Mac rendszeren",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Command + E",
+        "description": ""
+    },
+    "press": {
+        "message": "nyomja meg",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Billentyűzet-billentyűparancsok",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "Ez akár 10 percig is eltarthat. Kérjük, tartsa nyitva ezt az oldalt, és folytassa a többi feladattal.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "A MindEcho felépítése",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "ikon kattintás",
+        "description": ""
+    },
+    "or": {
+        "message": "vagy",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "billentyűleütés",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "keresztül bármikor",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Aktiválja a mindECHO-t a mentések kereséséhez",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Az adatok feldolgozása még folyamatban van; Rajta vagyok és a háttérben folytatom.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Pocket Saves Imported",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Böngészőadatok importálva",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "A fenti bővítősávból",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Előzmények kizárása",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Új találatok automatikus gyűjtése",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Keressen elemeket kulcsszavak alapján",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Nyilvános tudásoldalak a böngészési előzményekből",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Csak nyilvános cikkek, blogok és esszé-PDF-ek URL-címei szerepeltethetők. A személyes és munkával kapcsolatos előzményeket NEM tartalmazza.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Engedélyezze a teljes szöveges keresést a böngészési előzményekben, hogy elkerülje a memorizálás szükségességét.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Könyvjelzők vagy Olvasólista kizárása",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Új elemek automatikus hozzáadása",
+        "description": ""
+    },
+    "items": {
+        "message": "Tételek",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Fetch",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "A jelenlegi URL-lista csak helyi, amíg nem engedélyezi az adatgyűjtést.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Betöltés...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Az összes látható kijelölése/kijelölés törlése",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Könyvjelzők és olvasási listák",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Válassza ki a kereshetővé tenni kívánt tartalmat.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Több forrás is támogatott lesz",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "A mentések teljes szövege lekérésre kerül, és kereshetővé válik.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "A Pocket Saves listája biztonságos engedéllyel lesz importálva.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Válassza a Forrás lehetőséget",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Más források csatlakoztatása",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Gyűjtemények importálása a böngészőben",
+        "description": ""
+    },
+    "Note": {
+        "message": "jegyzet",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Helló",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Mit szólnál, ha először kiválasztanánk azt az információkincset, amelyet újra fel szeretne fedezni?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Bármit azonnal megtalálhat saját mentései közül.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Készítsen privát Google + ChatGPT-t saját webéhez percek alatt",
+        "description": ""
     }
 }

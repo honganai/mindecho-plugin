@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "ไม่พบข้อมูล",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "ข้ามขั้นตอนนี้",
+        "description": ""
+    },
+    "new_query": {
+        "message": "แบบสอบถามใหม่",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "ถามเอไอ",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "สอบถามเว็บ",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "หรือคุณสามารถ",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "แหล่งที่มาอาจยังไม่พร้อมอย่างสมบูรณ์ หรือโปรดลองถามแตกต่างออกไป",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "จัดการแหล่งที่มา",
+        "description": ""
+    },
+    "settings": {
+        "message": "การตั้งค่า",
+        "description": ""
+    },
+    "sources": {
+        "message": "แหล่งที่มา",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "ไม่มีข้อมูลที่สามารถใช้ได้",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "ถามเงินออมของคุณ",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "การเชื่อมต่อที่ปลอดภัย",
+        "description": ""
+    },
+    "saves": {
+        "message": "บันทึก",
+        "description": ""
+    },
+    "pocket": {
+        "message": "กระเป๋า",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "เชื่อมต่อกับ Pocket เพื่อฟื้นฟูคลังฝุ่นของคุณ",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "บนพีซี",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "บนเครื่องแมค",
+        "description": ""
+    },
+    "command_E": {
+        "message": "คำสั่ง + E",
+        "description": ""
+    },
+    "press": {
+        "message": "กด",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "แป้นพิมพ์ลัดจังหวะแป้นพิมพ์",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "การดำเนินการนี้อาจใช้เวลานานถึง 10 นาที โปรดเปิดหน้านี้ไว้และทำงานอื่นต่อ",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "สร้าง MindEcho ของคุณ",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "คลิกไอคอน",
+        "description": ""
+    },
+    "or": {
+        "message": "หรือ",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "การกดแป้นพิมพ์",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "ได้ตลอดเวลาผ่านทาง",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "เปิดใช้งาน mindECHO เพื่อค้นหาบันทึกของคุณ",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "ข้อมูลยังอยู่ระหว่างการประมวลผล ฉันดำเนินการอยู่และจะดำเนินการต่อในเบื้องหลัง",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "พ็อกเก็ตบันทึกนำเข้า",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "นำเข้าข้อมูลเบราว์เซอร์แล้ว",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "จากแถบส่วนขยายด้านบน",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "ไม่รวมประวัติ",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "รวบรวมการแข่งขันใหม่โดยอัตโนมัติ",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "ค้นหารายการตามคำสำคัญ",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "หน้าความรู้สาธารณะจากประวัติการเรียกดู",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "สามารถรวมได้เฉพาะ URL ของบทความสาธารณะ บล็อก และ PDF เรียงความเท่านั้น ไม่รวมประวัติส่วนตัวและประวัติการทำงาน",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "เปิดใช้งานการค้นหาข้อความแบบเต็มในประวัติการเข้าชมเพื่อขจัดความจำเป็นในการท่องจำ",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "ไม่รวมบุ๊กมาร์กหรือรายการเรื่องรออ่าน",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "เพิ่มรายการใหม่อัตโนมัติ",
+        "description": ""
+    },
+    "items": {
+        "message": "รายการ",
+        "description": ""
+    },
+    "fetch": {
+        "message": "ดึงข้อมูล",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "รายการ URL ปัจจุบันจะอยู่ในเครื่องเท่านั้น จนกว่าคุณจะอนุญาตการรวบรวมข้อมูล",
+        "description": ""
+    },
+    "loading": {
+        "message": "กำลังโหลด...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "เลือก/ยกเลิกการเลือกที่แสดงทั้งหมด",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "บุ๊กมาร์กและรายการเรื่องรออ่าน",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "เลือกเนื้อหาที่จะค้นหาได้",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "แหล่งข้อมูลเพิ่มเติมจะได้รับการสนับสนุน",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "ข้อความทั้งหมดของบันทึกจะถูกดึงออกมาและทำให้สามารถค้นหาได้",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "รายการ Pocket Saves ของคุณจะถูกนำเข้าพร้อมการอนุญาตที่ปลอดภัย",
+        "description": ""
+    },
+    "select_source": {
+        "message": "เลือกแหล่งที่มา",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "เชื่อมต่อแหล่งอื่น",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "นำเข้าคอลเลกชันในเบราว์เซอร์",
+        "description": ""
+    },
+    "Note": {
+        "message": "บันทึก",
+        "description": ""
+    },
+    "Hello": {
+        "message": "สวัสดี",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "แล้วเราจะเริ่มต้นด้วยการเลือกขุมสมบัติของข้อมูลที่คุณต้องการสำรวจอีกครั้งหรือไม่",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "ค้นหาทุกสิ่งได้ทันทีจากบันทึกของคุณเอง",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "สร้าง Google + ChatGPT ส่วนตัวสำหรับเว็บของคุณเองในไม่กี่นาที",
+        "description": ""
     }
 }

@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "No s&#39;han trobat dades",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Ometi aquest pas",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Nova consulta",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Pregunta a AI",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Consulta al web",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "O pots",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "És possible que les fonts encara no estiguin completament preparades o proveu de preguntar d&#39;una altra manera.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Gestionar les fonts",
+        "description": ""
+    },
+    "settings": {
+        "message": "Configuració",
+        "description": ""
+    },
+    "sources": {
+        "message": "Fonts",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "No hi ha dades disponibles",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Demaneu els vostres estalvis",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Connexió segura",
+        "description": ""
+    },
+    "saves": {
+        "message": "Desa",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Butxaca",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Connecteu-vos a Pocket per reviure el vostre dipòsit de pols.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "al PC",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "a Mac",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Ordre + E",
+        "description": ""
+    },
+    "press": {
+        "message": "Premeu",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Dreceres de cops de teclat",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "Això pot trigar fins a 10 minuts. Si us plau, mantingueu aquesta pàgina oberta i continueu amb altres tasques.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "Construeix el teu MindEcho",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "clic a la icona",
+        "description": ""
+    },
+    "or": {
+        "message": "o",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "teclat",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "en qualsevol moment via",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Activa mindECHO per cercar els teus desats",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Les dades encara s&#39;estan processant; Hi estic i continuaré en segon pla.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Desacions de butxaca importades",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Dades del navegador importades",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "Des de la barra d&#39;extensió de dalt",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Exclou l&#39;historial",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Recollida automàtica de noves coincidències",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Cerca elements per paraules clau",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Pàgines de coneixement públic de l&#39;historial de navegació",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Només es poden incloure URL d&#39;articles públics, blocs i PDF d&#39;assaig. Els antecedents personals i laborals NO s&#39;inclouen.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Activeu la cerca de text complet a l&#39;historial de navegació per eliminar la necessitat de memoritzar.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Exclou les adreces d&#39;interès o la llista de lectura",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Afegeix elements nous automàticament",
+        "description": ""
+    },
+    "items": {
+        "message": "Elements",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Recupera",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "La llista d&#39;URL actual només és local fins que autoritzeu la recollida de dades.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Carregant...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Seleccioneu/Desseleccioneu Totes les que es mostren",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Marcadors i llistes de lectura",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Seleccioneu el contingut que es farà cercable.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Es donaran suport a més fonts",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "El text complet dels desats es recuperarà i es podrà cercar.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "La vostra llista de desats de butxaca s&#39;importarà amb autorització segura.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Seleccioneu Font",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Connecteu altres fonts",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Importa col·leccions al navegador",
+        "description": ""
+    },
+    "Note": {
+        "message": "Nota",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Hola",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Què tal si comencem per triar el tresor d&#39;informació que t&#39;agradaria explorar de nou?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Trobeu qualsevol cosa a l&#39;instant dels vostres propis desats.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Creeu un Google + ChatGPT privat per al vostre propi web en qüestió de minuts",
+        "description": ""
     }
 }

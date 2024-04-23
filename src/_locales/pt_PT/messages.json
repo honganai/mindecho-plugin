@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Nenhum dado encontrado",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Pular esta etapa",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Nova consulta",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Pergunte à IA",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Consulte a web",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Ou você pode",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "As fontes podem não estar totalmente prontas ainda ou tente perguntar de forma diferente.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Gerenciar fontes",
+        "description": ""
+    },
+    "settings": {
+        "message": "Configurações",
+        "description": ""
+    },
+    "sources": {
+        "message": "Fontes",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Não há dados disponíveis",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Pergunte aos seus salvamentos",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Conexão segura",
+        "description": ""
+    },
+    "saves": {
+        "message": "Economizar",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Bolso",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Conecte-se ao Pocket para reviver seu estoque empoeirado.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "no computador",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "no Mac",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Comando + E",
+        "description": ""
+    },
+    "press": {
+        "message": "Imprensa",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Atalhos de teclado",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "Isso pode levar até 10 minutos. Por favor, mantenha esta página aberta e continue com outras tarefas.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "Construindo sua menteEcho",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "clique no ícone",
+        "description": ""
+    },
+    "or": {
+        "message": "ou",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "pressionamento de tecla",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "a qualquer hora através",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Ative mindECHO para pesquisar seus salvamentos",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Os dados ainda estão sendo processados; Estou nisso e continuarei em segundo plano.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Pocket salva importado",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Dados do navegador importados",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "Da barra de extensão acima",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Excluir histórico",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Coletar automaticamente novas correspondências",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Encontre itens por palavras-chave",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Páginas de conhecimento público do histórico de navegação",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Somente URLs de artigos públicos, blogs e PDFs de ensaios podem ser incluídos. O histórico pessoal e profissional NÃO está incluído.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Ative a pesquisa de texto completo no histórico de navegação para eliminar a necessidade de memorização.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Excluir favoritos ou lista de leitura",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Adicionar automaticamente novos itens",
+        "description": ""
+    },
+    "items": {
+        "message": "Unid",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Buscar",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "A lista de URLs atual é local apenas até você autorizar a coleta de dados.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Carregando...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Selecionar/desmarcar tudo mostrado",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Marcadores e listas de leitura",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Selecione o conteúdo a ser pesquisável.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Mais fontes serão suportadas",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "O texto completo dos salvamentos será obtido e tornado pesquisável.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Sua lista Pocket Saves será importada com autorização segura.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Selecione a fonte",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Conecte outras fontes",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Importar coleções no navegador",
+        "description": ""
+    },
+    "Note": {
+        "message": "Observação",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Olá",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Que tal começarmos escolhendo o tesouro de informações que você gostaria de explorar novamente?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Encontre qualquer coisa instantaneamente em seus próprios arquivos salvos.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Crie um Google + ChatGPT privado para sua própria web em minutos",
+        "description": ""
     }
 }

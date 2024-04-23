@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Không tìm thấy dữ liệu nào",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Bỏ qua bước này",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Truy vấn mới",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Hỏi AI",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Truy vấn Web",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Hoặc bạn có thể",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "Các nguồn có thể chưa hoàn toàn sẵn sàng hoặc vui lòng thử hỏi cách khác.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Quản lý nguồn",
+        "description": ""
+    },
+    "settings": {
+        "message": "Cài đặt",
+        "description": ""
+    },
+    "sources": {
+        "message": "Nguồn",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Không có dữ liệu",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Hỏi số tiền đã lưu của bạn",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Kết nối an toàn",
+        "description": ""
+    },
+    "saves": {
+        "message": "Lưu",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Túi",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Kết nối với Pocket để hồi sinh kho lưu trữ bụi bặm của bạn.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "trên PC",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "trên máy Mac",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Lệnh + E",
+        "description": ""
+    },
+    "press": {
+        "message": "Nhấn",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Phím tắt hành trình bàn phím",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "Việc này có thể mất tới 10 phút. Hãy giữ trang này mở và tiếp tục với các nhiệm vụ khác.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "Xây dựng tâm trí của bạnEcho",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "bấm vào biểu tượng",
+        "description": ""
+    },
+    "or": {
+        "message": "hoặc",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "gõ phím",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "bất cứ lúc nào thông qua",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Kích hoạt mindECHO để tìm kiếm Lưu của bạn",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Dữ liệu vẫn đang được xử lý; Tôi đang ở trên đó và sẽ tiếp tục ở chế độ nền.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Lưu trữ bỏ túi đã nhập",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Đã nhập dữ liệu trình duyệt",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "Từ thanh mở rộng ở trên",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Loại trừ lịch sử",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Tự động thu thập các trận đấu mới",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Tìm mục theo từ khóa",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Các trang kiến thức công khai từ lịch sử duyệt web",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Chỉ có thể bao gồm URL của các bài viết công khai, blog và bài luận PDF. Lịch sử cá nhân và liên quan đến công việc KHÔNG được bao gồm.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Cho phép tìm kiếm toàn văn trong lịch sử duyệt web để loại bỏ nhu cầu ghi nhớ.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Loại trừ Dấu trang hoặc Danh sách Đọc",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Tự động thêm các mục mới",
+        "description": ""
+    },
+    "items": {
+        "message": "Mặt hàng",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Tìm về",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "Danh sách URL hiện tại chỉ mang tính cục bộ cho đến khi bạn cho phép thu thập dữ liệu.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Đang tải...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Chọn/Bỏ chọn tất cả được hiển thị",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Điểm sách &amp; Danh sách đọc",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Chọn nội dung có thể tìm kiếm được.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Nhiều nguồn hơn sẽ được hỗ trợ",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "Toàn bộ văn bản của các bản lưu sẽ được tìm nạp và có thể tìm kiếm được.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Danh sách Pocket Saves của bạn sẽ được nhập với sự cho phép an toàn.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Chọn nguồn",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Kết nối các nguồn khác",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Nhập bộ sưu tập vào trình duyệt",
+        "description": ""
+    },
+    "Note": {
+        "message": "Ghi chú",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Xin chào",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Hay chúng ta bắt đầu bằng việc chọn kho tàng thông tin mà bạn muốn khám phá lại thì sao?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Tìm mọi thứ ngay lập tức từ bản lưu của riêng bạn.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Xây dựng Google + ChatGPT riêng tư cho trang web của riêng bạn trong vài phút",
+        "description": ""
     }
 }

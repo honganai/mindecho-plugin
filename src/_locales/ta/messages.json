@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "வேறு தகவல்கள் இல்லை",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "இந்த படியைத் தவிர்க்கவும்",
+        "description": ""
+    },
+    "new_query": {
+        "message": "புதிய வினவல்",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "AIயிடம் கேளுங்கள்",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "இணையத்தில் வினவவும்",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "அல்லது உங்களால் முடியும்",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "ஆதாரங்கள் இன்னும் முழுமையாக தயாராக இல்லாமல் இருக்கலாம் அல்லது வேறுவிதமாகக் கேட்கவும்.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "ஆதாரங்களை நிர்வகிக்கவும்",
+        "description": ""
+    },
+    "settings": {
+        "message": "அமைப்புகள்",
+        "description": ""
+    },
+    "sources": {
+        "message": "ஆதாரங்கள்",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "தரவு எதுவும் கிடைக்கவில்லை",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "உங்கள் சேமிப்பைக் கேளுங்கள்",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "பாதுகாப்பான இணைப்பு",
+        "description": ""
+    },
+    "saves": {
+        "message": "சேமிக்கிறது",
+        "description": ""
+    },
+    "pocket": {
+        "message": "பாக்கெட்",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "உங்கள் தூசி நிறைந்த ஸ்டாஷைப் புதுப்பிக்க, பாக்கெட்டுடன் இணைக்கவும்.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "கணினியில்",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "Mac இல்",
+        "description": ""
+    },
+    "command_E": {
+        "message": "கட்டளை + ஈ",
+        "description": ""
+    },
+    "press": {
+        "message": "அச்சகம்",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "விசைப்பலகை ஸ்ட்ரோக் குறுக்குவழிகள்",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "இதற்கு 10 நிமிடங்கள் வரை ஆகலாம். இந்தப் பக்கத்தைத் திறந்து வைத்து மற்ற பணிகளைத் தொடரவும்.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "உங்கள் மனதை உருவாக்குதல்",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "ஐகான் கிளிக்",
+        "description": ""
+    },
+    "or": {
+        "message": "அல்லது",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "விசை அழுத்துதல்",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "எந்த நேரத்திலும் வழியாக",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "உங்கள் சேமிப்புகளைத் தேட, mindECHO ஐச் செயல்படுத்தவும்",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "தரவு இன்னும் செயலாக்கத்தில் உள்ளது; நான் அதில் இருக்கிறேன், பின்புலத்தில் தொடர்வேன்.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "பாக்கெட் சேமிப்பு இறக்குமதி செய்யப்பட்டது",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "உலாவி தரவு இறக்குமதி செய்யப்பட்டது",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "மேலே உள்ள நீட்டிப்பு பட்டியில் இருந்து",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "வரலாற்றை விலக்கு",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "புதிய பொருத்தங்களை தானாக சேகரிக்கவும்",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "முக்கிய வார்த்தைகள் மூலம் பொருட்களைக் கண்டறியவும்",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "உலாவல் வரலாற்றிலிருந்து பொது அறிவு பக்கங்கள்",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "பொது கட்டுரைகள், வலைப்பதிவுகள் மற்றும் கட்டுரை PDFகளின் URLகளை மட்டுமே சேர்க்க முடியும். தனிப்பட்ட மற்றும் பணி தொடர்பான வரலாறு சேர்க்கப்படவில்லை.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "மனப்பாடம் செய்ய வேண்டிய தேவையை நீக்க உலாவல் வரலாற்றில் முழு உரை தேடலை இயக்கவும்.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "புக்மார்க்குகள் அல்லது வாசிப்புப் பட்டியலை விலக்கவும்",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "புதிய பொருட்களை தானாகச் சேர்க்கவும்",
+        "description": ""
+    },
+    "items": {
+        "message": "பொருட்களை",
+        "description": ""
+    },
+    "fetch": {
+        "message": "எடுக்கவும்",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "நீங்கள் தரவு சேகரிப்பை அங்கீகரிக்கும் வரை, தற்போதைய URL பட்டியல் உள்ளூர் மட்டுமே.",
+        "description": ""
+    },
+    "loading": {
+        "message": "ஏற்றுகிறது...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "காட்டப்பட்டுள்ள அனைத்தையும் தேர்ந்தெடு/தேர்ந்தெடு",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "புத்தகக்குறிகள் &amp; வாசிப்புப் பட்டியல்கள்",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "தேடக்கூடிய உள்ளடக்கத்தைத் தேர்ந்தெடுக்கவும்.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "மேலும் ஆதாரங்கள் ஆதரிக்கப்படும்",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "சேமிப்பின் முழு உரையும் பெறப்பட்டு தேடக்கூடியதாக மாற்றப்படும்.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "உங்கள் பாக்கெட் சேமிப்பு பட்டியல் பாதுகாப்பான அங்கீகாரத்துடன் இறக்குமதி செய்யப்படும்.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "மூலத்தைத் தேர்ந்தெடுக்கவும்",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "பிற ஆதாரங்களை இணைக்கவும்",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "உலாவியில் சேகரிப்புகளை இறக்குமதி செய்யவும்",
+        "description": ""
+    },
+    "Note": {
+        "message": "குறிப்பு",
+        "description": ""
+    },
+    "Hello": {
+        "message": "வணக்கம்",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "நீங்கள் மீண்டும் ஆராய விரும்பும் தகவல் பொக்கிஷத்தைத் தேர்ந்தெடுப்பதன் மூலம் நாங்கள் எப்படித் தொடங்குவது?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "உங்கள் சொந்த சேமிப்பிலிருந்து எதையும் உடனடியாகக் கண்டறியவும்.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "நிமிடங்களில் உங்கள் சொந்த இணையத்திற்கான தனிப்பட்ட Google + ChatGPT ஐ உருவாக்கவும்",
+        "description": ""
     }
 }

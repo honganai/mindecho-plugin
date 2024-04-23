@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "داده ای یافت نشد",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "از این مرحله بگذر",
+        "description": ""
+    },
+    "new_query": {
+        "message": "پرس و جو جدید",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "از هوش مصنوعی بپرسید",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "پرس و جو از وب",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "یا شما می توانید",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "ممکن است منابع هنوز کاملاً آماده نباشند، یا لطفاً سؤال دیگری را امتحان کنید.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "مدیریت منابع",
+        "description": ""
+    },
+    "settings": {
+        "message": "تنظیمات",
+        "description": ""
+    },
+    "sources": {
+        "message": "منابع",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "اطلاعاتی موجود نیست",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "پس انداز خود را بپرسید",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "ارتباط امن",
+        "description": ""
+    },
+    "saves": {
+        "message": "ذخیره می کند",
+        "description": ""
+    },
+    "pocket": {
+        "message": "جیبی",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "برای احیای مخزن گرد و غبار خود به Pocket متصل شوید.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "روی کامپیوتر",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "در مک",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Command + E",
+        "description": ""
+    },
+    "press": {
+        "message": "مطبوعات",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "کلیدهای میانبر ضربه ای صفحه کلید",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "این ممکن است تا 10 دقیقه طول بکشد. لطفاً این صفحه را باز نگه دارید و به کارهای دیگر ادامه دهید.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "ساختن MindEcho شما",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "کلیک کنید",
+        "description": ""
+    },
+    "or": {
+        "message": "یا",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "ضربه زدن به کلید",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "در هر زمان از طریق",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "برای جستجوی ذخیره های شما، mindECHO را فعال کنید",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "داده ها هنوز در حال پردازش هستند. من روی آن هستم و در پس زمینه ادامه خواهم داد.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "ذخیره های جیبی وارد شده است",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "داده های مرورگر وارد شد",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "از نوار Extension در بالا",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "تاریخ را حذف کنید",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "جمع‌آوری خودکار مسابقات جدید",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "موارد را با کلمات کلیدی پیدا کنید",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "صفحات دانش عمومی از تاریخچه مرور",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "فقط نشانی‌های اینترنتی مقالات عمومی، وبلاگ‌ها و فایل‌های PDF مقاله را می‌توان گنجاند. سابقه شخصی و مرتبط با کار گنجانده نشده است.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "جستجوی متن کامل را در تاریخچه مرور فعال کنید تا نیازی به حفظ کردن نباشد.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "نشانک‌ها یا فهرست خواندن را حذف کنید",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "افزودن خودکار موارد جدید",
+        "description": ""
+    },
+    "items": {
+        "message": "موارد",
+        "description": ""
+    },
+    "fetch": {
+        "message": "رفتن و آوردن",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "لیست URL فعلی فقط محلی است تا زمانی که اجازه جمع آوری داده ها را بدهید.",
+        "description": ""
+    },
+    "loading": {
+        "message": "بارگذاری...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "همه نمایش داده شده را انتخاب کنید/لغو انتخاب کنید",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "نشانک‌ها و فهرست‌های خواندن",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "محتوای قابل جستجو را انتخاب کنید.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "منابع بیشتری پشتیبانی خواهند شد",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "متن کامل ذخیره‌ها واکشی و قابل جستجو می‌شود.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "فهرست ذخیره‌های جیبی شما با مجوز ایمن وارد خواهد شد.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "منبع را انتخاب کنید",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "منابع دیگر را وصل کنید",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "وارد کردن مجموعه ها در مرورگر",
+        "description": ""
+    },
+    "Note": {
+        "message": "توجه داشته باشید",
+        "description": ""
+    },
+    "Hello": {
+        "message": "سلام",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "چطور می‌شود با انتخاب گنجینه اطلاعاتی که می‌خواهید دوباره کاوش کنید، شروع کنیم؟",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "هر چیزی را فوراً از سیوهای خود بیابید.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "در عرض چند دقیقه یک Google + ChatGPT خصوصی برای وب خود بسازید",
+        "description": ""
     }
 }

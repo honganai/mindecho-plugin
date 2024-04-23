@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Veri bulunamadı",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Bu adımı atla",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Yeni Sorgu",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Yapay zekaya sor",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Web&#39;i Sorgulayın",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Veya yapabilirsin",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "Kaynaklar henüz tam olarak hazır olmayabilir veya lütfen farklı şekilde sormayı deneyin.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Kaynakları Yönet",
+        "description": ""
+    },
+    "settings": {
+        "message": "Ayarlar",
+        "description": ""
+    },
+    "sources": {
+        "message": "Kaynaklar",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Veri yok",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Kayıtlarınıza Sorun",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Güvenli bağlantı",
+        "description": ""
+    },
+    "saves": {
+        "message": "kaydeder",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Cep",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Tozlu zulanızı canlandırmak için Pocket&#39;e bağlanın.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "PC&#39;de",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "Mac&#39;te",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Komut + E",
+        "description": ""
+    },
+    "press": {
+        "message": "Basmak",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Klavye Vuruşu Kısayolları",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "Bu 10 dakika kadar sürebilir. Lütfen bu sayfayı açık tutun ve diğer görevlere devam edin.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "MindEcho&#39;nuzu Oluşturmak",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "simge tıklaması",
+        "description": ""
+    },
+    "or": {
+        "message": "veya",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "tuş vuruşu",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "herhangi bir zamanda aracılığıyla",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Kayıtlarınızı aramak için mindECHO&#39;yu etkinleştirin",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Veriler hâlâ işleniyor; Ben üzerindeyim ve arka planda devam edeceğim.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "İçe Aktarılan Cep Kayıtları",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "İçe Aktarılan Tarayıcı Verileri",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "Yukarıdaki Uzatma Çubuğundan",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Geçmişi Hariç Tut",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Yeni Eşleşmeleri Otomatik Topla",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Öğeleri anahtar kelimelere göre bulun",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Tarama Geçmişinden Herkese Açık Bilgi Sayfaları",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Yalnızca genel makalelerin, blogların ve makale PDF&#39;lerinin URL&#39;leri eklenebilir. Kişisel ve işle ilgili geçmiş dahil DEĞİLDİR.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Ezberleme ihtiyacını ortadan kaldırmak için tarama geçmişinde tam metin aramasını etkinleştirin.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Yer İşaretlerini veya Okuma Listesini Hariç Tut",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Yeni Öğeleri Otomatik Ekle",
+        "description": ""
+    },
+    "items": {
+        "message": "Öğeler",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Gidip getirmek",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "Geçerli URL listesi yalnızca siz veri toplanmasına izin verene kadar yereldir.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Yükleniyor...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Gösterilenlerin Tümünü Seç/Seçimi Kaldır",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Kitap İşaretleri ve Okuma Listeleri",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Aranabilir hale getirilecek içeriği seçin.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Daha fazla kaynak desteklenecek",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "Kayıtların tam metni getirilecek ve aranabilir hale getirilecek.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Cep Kayıtları listeniz güvenli yetkilendirmeyle içe aktarılacaktır.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Kaynak Seç",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Diğer Kaynakları Bağlayın",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Koleksiyonları Tarayıcıya İçe Aktar",
+        "description": ""
+    },
+    "Note": {
+        "message": "Not",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Merhaba",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Tekrar keşfetmek istediğiniz bilgi hazinesini seçerek başlamaya ne dersiniz?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Kendi kayıtlarınızdaki her şeyi anında bulun.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Dakikalar içinde kendi web&#39;iniz için Özel bir Google + ChatGPT oluşturun",
+        "description": ""
     }
 }

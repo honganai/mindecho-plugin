@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "ምንም ውሂብ አልተገኘም።",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "ይህንን ደረጃ ይዝለሉ",
+        "description": ""
+    },
+    "new_query": {
+        "message": "አዲስ መጠይቅ",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "AIን ይጠይቁ",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "መጠይቁ ድሩን",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "ወይም ትችላለህ",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "ምንጮቹ እስካሁን ሙሉ በሙሉ ዝግጁ ላይሆኑ ይችላሉ፣ ወይም እባክዎን በተለየ መንገድ ለመጠየቅ ይሞክሩ።",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "ምንጮችን ያስተዳድሩ",
+        "description": ""
+    },
+    "settings": {
+        "message": "ቅንብሮች",
+        "description": ""
+    },
+    "sources": {
+        "message": "ምንጮች",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "ምንም ውሂብ አይገኝም",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "ቁጠባዎችዎን ይጠይቁ",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "ደህንነቱ የተጠበቀ ግንኙነት",
+        "description": ""
+    },
+    "saves": {
+        "message": "ያስቀምጣል።",
+        "description": ""
+    },
+    "pocket": {
+        "message": "ኪስ",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "አቧራማ ቆሻሻዎን ለማደስ ከኪስ ጋር ይገናኙ።",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "በፒሲ ላይ",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "ማክ ላይ",
+        "description": ""
+    },
+    "command_E": {
+        "message": "ትዕዛዝ + ኢ",
+        "description": ""
+    },
+    "press": {
+        "message": "ተጫን",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "የቁልፍ ሰሌዳ ስትሮክ አቋራጮች",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "ይህ እስከ 10 ደቂቃዎች ድረስ ሊወስድ ይችላል. እባኮትን ይህን ገጽ ክፍት ያድርጉት እና በሌሎች ስራዎች ይቀጥሉ።",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "አስተሳሰብህን መገንባት",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "አዶ ጠቅ ያድርጉ",
+        "description": ""
+    },
+    "or": {
+        "message": "ወይም",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "መርገጫ",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "በማንኛውም ጊዜ በኩል",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "የእርስዎን ያድናል ለመፈለግ mindECHO ን ያግብሩ",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "ውሂብ አሁንም በሂደት ላይ ነው; በእሱ ላይ ነኝ እና ከበስተጀርባ እቀጥላለሁ።",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "የኪስ ቁጠባ ከውጭ መጥቷል።",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "የአሳሽ ውሂብ መጥቷል።",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "ከላይ ካለው የኤክስቴንሽን አሞሌ",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "ታሪክን አግልል።",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "አዲስ ግጥሚያዎችን በራስ-ሰብስብ",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "እቃዎችን በቁልፍ ቃላት ያግኙ",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "የህዝብ እውቀት ገጾች ከአሰሳ ታሪክ",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "የወል ጽሑፎች፣ ብሎጎች እና የጽሑፍ ፒዲኤፍ ዩአርኤሎች ብቻ ሊካተቱ ይችላሉ። የግል እና ከስራ ጋር የተያያዘ ታሪክ አልተካተተም።",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "የማስታወስን አስፈላጊነት ለማስወገድ በአሰሳ ታሪክ ውስጥ የሙሉ ጽሑፍ ፍለጋን ያንቁ።",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "ዕልባቶችን ወይም የንባብ ዝርዝርን አስወግድ",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "አዲስ እቃዎችን በራስ-አክል",
+        "description": ""
+    },
+    "items": {
+        "message": "እቃዎች",
+        "description": ""
+    },
+    "fetch": {
+        "message": "አምጣ",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "የአሁኑ የዩአርኤል ዝርዝር መረጃ መሰብሰብን እስክትፈቅድ ድረስ ብቻ አካባቢያዊ ነው።",
+        "description": ""
+    },
+    "loading": {
+        "message": "በመጫን ላይ...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "ሁሉንም የታዩትን ይምረጡ/አይምረጡ",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "የመጻሕፍት ምልክቶች እና የንባብ ዝርዝሮች",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "ሊፈለግ የሚችል ይዘት ይምረጡ።",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "ተጨማሪ ምንጮች ይደገፋሉ",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "የቁጠባዎች ሙሉ ጽሁፍ ተወስዶ እንዲፈለግ ይደረጋል።",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "የኪስ ቁጠባዎች ዝርዝርዎ ደህንነቱ በተጠበቀ ፈቃድ ነው የሚመጣው።",
+        "description": ""
+    },
+    "select_source": {
+        "message": "ምንጭ ይምረጡ",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "ሌሎች ምንጮችን ያገናኙ",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "በአሳሽ ውስጥ ስብስቦችን አስመጣ",
+        "description": ""
+    },
+    "Note": {
+        "message": "ማስታወሻ",
+        "description": ""
+    },
+    "Hello": {
+        "message": "ሀሎ",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "እንደገና ማሰስ የሚፈልጉትን ውድ የመረጃ ክምችት በመምረጥ እንጀምራለን?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "ማንኛውንም ነገር ከእራስዎ ቁጠባዎች ወዲያውኑ ያግኙ።",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "በደቂቃዎች ውስጥ ለራስህ ድህረ ገጽ የግል Google+ ChatGPT ይገንቡ",
+        "description": ""
     }
 }

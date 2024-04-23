@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "没有找到数据",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "跳过此步骤",
+        "description": ""
+    },
+    "new_query": {
+        "message": "新查询",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "询问人工智能",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "查询网络",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "或者你可以",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "来源可能尚未完全准备好，或者请尝试以不同的方式询问。",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "管理来源",
+        "description": ""
+    },
+    "settings": {
+        "message": "设置",
+        "description": ""
+    },
+    "sources": {
+        "message": "来源",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "无可用数据",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "询问您的保存",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "安全连接",
+        "description": ""
+    },
+    "saves": {
+        "message": "保存",
+        "description": ""
+    },
+    "pocket": {
+        "message": "口袋",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "连接到 Pocket 来恢复你布满灰尘的储藏物。",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "在电脑上",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "在 Mac 上",
+        "description": ""
+    },
+    "command_E": {
+        "message": "命令 + E",
+        "description": ""
+    },
+    "press": {
+        "message": "按",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "键盘快捷键",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "这可能需要 10 分钟。请保持此页面打开并继续执行其他任务。",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "构建你的 MindEcho",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "图标点击",
+        "description": ""
+    },
+    "or": {
+        "message": "或者",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "按键",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "随时通过",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "激活 mindECHO 搜索你的保存",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "数据仍在处理中；我正在处理并将在后台继续。",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "口袋保存进口",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "已导入浏览器数据",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "从上面的扩展栏",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "排除历史记录",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "自动收集新比赛",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "按关键字查找商品",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "来自浏览历史记录的公共知识页面",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "仅可包含公开文章、博客和论文 PDF 的 URL。个人和工作相关历史不包括在内。",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "可在浏览历史记录中启用全文搜索，无需记忆。",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "排除书签或阅读列表",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "自动添加新商品",
+        "description": ""
+    },
+    "items": {
+        "message": "项目",
+        "description": ""
+    },
+    "fetch": {
+        "message": "拿来",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "当前 URL 列表仅限于本地，直到您授权数据收集。",
+        "description": ""
+    },
+    "loading": {
+        "message": "加载中...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "选择/取消选择全部显示",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "书签和阅读清单",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "选择要可搜索的内容。",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "将支持更多来源",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "将获取保存的全文并进行搜索。",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "您的 Pocket Saves 列表将通过安全授权导入。",
+        "description": ""
+    },
+    "select_source": {
+        "message": "选择来源",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "连接其他来源",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "在浏览器中导入收藏集",
+        "description": ""
+    },
+    "Note": {
+        "message": "笔记",
+        "description": ""
+    },
+    "Hello": {
+        "message": "你好",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "我们先选择一下您想再次探索的信息宝库怎么样？",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "立即从您自己的保存中找到任何内容。",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "在几分钟内为您自己的网站构建私人 Google + ChatGPT",
+        "description": ""
     }
 }

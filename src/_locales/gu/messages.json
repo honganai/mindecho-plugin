@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "કોઈ ડેટા મળ્યો નથી",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "આ પગલું અવગણો",
+        "description": ""
+    },
+    "new_query": {
+        "message": "નવી ક્વેરી",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "AI ને પૂછો",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "વેબ ક્વેરી",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "અથવા તમે કરી શકો છો",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "સ્ત્રોતો હજી સંપૂર્ણ રીતે તૈયાર ન હોઈ શકે અથવા કૃપા કરીને અલગ રીતે પૂછવાનો પ્રયાસ કરો.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "સ્ત્રોતોનું સંચાલન કરો",
+        "description": ""
+    },
+    "settings": {
+        "message": "સેટિંગ્સ",
+        "description": ""
+    },
+    "sources": {
+        "message": "સ્ત્રોતો",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "કોઈ ડેટા ઉપલબ્ધ નથી",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "તમારી બચતને પૂછો",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "સુરક્ષિત કનેક્શન",
+        "description": ""
+    },
+    "saves": {
+        "message": "સાચવે છે",
+        "description": ""
+    },
+    "pocket": {
+        "message": "પોકેટ",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "તમારા ડસ્ટી સ્ટેશને પુનર્જીવિત કરવા માટે પોકેટ સાથે કનેક્ટ કરો.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "પીસી પર",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "મેક પર",
+        "description": ""
+    },
+    "command_E": {
+        "message": "આદેશ + ઇ",
+        "description": ""
+    },
+    "press": {
+        "message": "દબાવો",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "કીબોર્ડ સ્ટ્રોક શોર્ટકટ્સ",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "આમાં 10 મિનિટ જેટલો સમય લાગી શકે છે. કૃપા કરીને આ પૃષ્ઠને ખુલ્લું રાખો અને અન્ય કાર્યો સાથે ચાલુ રાખો.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "તમારું માઇન્ડ ઇકો બનાવવું",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "ચિહ્ન પર ક્લિક કરો",
+        "description": ""
+    },
+    "or": {
+        "message": "અથવા",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "કીસ્ટ્રોક",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "દ્વારા ગમે ત્યારે",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "તમારા સેવ્સને શોધવા માટે mindECHO ને સક્રિય કરો",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "ડેટા હજી પ્રોસેસ થઈ રહ્યો છે; હું તેના પર છું અને પૃષ્ઠભૂમિમાં ચાલુ રાખીશ.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "પોકેટ સેવ ઈમ્પોર્ટેડ",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "બ્રાઉઝર ડેટા આયાત કરેલો",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "ઉપરના એક્સ્ટેંશન બારમાંથી",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "ઇતિહાસને બાકાત રાખો",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "નવી મેચો સ્વતઃ એકત્ર કરો",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "કીવર્ડ્સ દ્વારા વસ્તુઓ શોધો",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "બ્રાઉઝિંગ ઇતિહાસમાંથી જાહેર જ્ઞાન પૃષ્ઠો",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "ફક્ત સાર્વજનિક લેખો, બ્લોગ્સ અને નિબંધ પીડીએફના URL નો સમાવેશ કરી શકાય છે. વ્યક્તિગત અને કાર્ય-સંબંધિત ઇતિહાસ શામેલ નથી.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "યાદ રાખવાની જરૂરિયાતને દૂર કરવા માટે બ્રાઉઝિંગ ઇતિહાસમાં સંપૂર્ણ-ટેક્સ્ટ શોધને સક્ષમ કરો.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "બુકમાર્ક્સ અથવા વાંચન સૂચિને બાકાત રાખો",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "નવી આઇટમ્સ સ્વતઃ ઉમેરો",
+        "description": ""
+    },
+    "items": {
+        "message": "વસ્તુઓ",
+        "description": ""
+    },
+    "fetch": {
+        "message": "મેળવો",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "જ્યાં સુધી તમે ડેટા સંગ્રહને અધિકૃત ન કરો ત્યાં સુધી વર્તમાન URL સૂચિ સ્થાનિક છે.",
+        "description": ""
+    },
+    "loading": {
+        "message": "લોડ કરી રહ્યું છે...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "બતાવેલ તમામ પસંદ કરો/પસંદ કરો",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "બુકમાર્ક્સ અને વાંચન યાદીઓ",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "શોધવા યોગ્ય બનાવવા માટે સામગ્રી પસંદ કરો.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "વધુ સ્ત્રોતોને સમર્થન આપવામાં આવશે",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "સેવનું સંપૂર્ણ લખાણ મેળવવામાં આવશે અને તેને શોધવા યોગ્ય બનાવવામાં આવશે.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "તમારી પોકેટ સેવ્સ સૂચિ સુરક્ષિત અધિકૃતતા સાથે આયાત કરવામાં આવશે.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "સ્ત્રોત પસંદ કરો",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "અન્ય સ્ત્રોતોને કનેક્ટ કરો",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "બ્રાઉઝરમાં સંગ્રહો આયાત કરો",
+        "description": ""
+    },
+    "Note": {
+        "message": "નૉૅધ",
+        "description": ""
+    },
+    "Hello": {
+        "message": "નમસ્તે",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "તમે ફરીથી અન્વેષણ કરવા માંગો છો તે માહિતીનો ખજાનો પસંદ કરીને અમે કેવી રીતે શરૂઆત કરીએ?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "તમારા પોતાના સેવમાંથી તરત કંઈપણ શોધો.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "મિનિટોમાં તમારા પોતાના વેબ માટે ખાનગી Google + ChatGPT બનાવો",
+        "description": ""
     }
 }

@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Ingen data funnet",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Hoppe over dette trinnet",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Ny spørring",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Spør AI",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Spør på nettet",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Eller du kan",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "Kildene er kanskje ikke helt klare ennå, eller prøv å spørre annerledes.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Administrer kilder",
+        "description": ""
+    },
+    "settings": {
+        "message": "Innstillinger",
+        "description": ""
+    },
+    "sources": {
+        "message": "Kilder",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Ingen data tilgjengelig",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Spør dine sparepenger",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Sikker tilkobling",
+        "description": ""
+    },
+    "saves": {
+        "message": "Lagrer",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Lomme",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Koble til Pocket for å gjenopplive din støvete oppbevaring.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "på PC",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "på Mac",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Kommando + E",
+        "description": ""
+    },
+    "press": {
+        "message": "trykk",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Snarveier for tastaturslag",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "Dette kan ta opptil 10 minutter. Vennligst hold denne siden åpen og fortsett med andre oppgaver.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "Bygg ditt MindEcho",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "ikon klikk",
+        "description": ""
+    },
+    "or": {
+        "message": "eller",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "tastetrykk",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "når som helst via",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Aktiver mindECHO for å søke i dine lagrede filer",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Data behandles fortsatt; Jeg holder på og vil fortsette i bakgrunnen.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Pocket Saves importert",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Nettleserdata importert",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "Fra utvidelseslinjen ovenfor",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Ekskluder historikk",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Samle nye treff automatisk",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Finn varer etter nøkkelord",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Offentlige kunnskapssider fra nettleserloggen",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Bare nettadresser til offentlige artikler, blogger og essay-PDF-er kan inkluderes. Personlig og arbeidsrelatert historie er IKKE inkludert.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Aktiver fulltekstsøk i nettleserloggen for å eliminere behovet for memorering.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Ekskluder bokmerker eller leseliste",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Legg til nye elementer automatisk",
+        "description": ""
+    },
+    "items": {
+        "message": "Varer",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Hent",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "Gjeldende URL-liste er kun lokal inntil du godkjenner datainnsamling.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Laster inn...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Velg/fravelg alle vist",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Bokmerker og leselister",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Velg innhold som skal gjøres søkbart.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Flere kilder vil bli støttet",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "Fulltekst av lagringene vil bli hentet og gjort søkbare.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Din Pocket Saves-liste vil bli importert med sikker autorisasjon.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Velg Kilde",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Koble til andre kilder",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Importer samlinger i nettleseren",
+        "description": ""
+    },
+    "Note": {
+        "message": "Merk",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Hallo",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Hva med å begynne med å velge skattekammeret av informasjon du vil utforske igjen?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Finn hva som helst umiddelbart fra dine egne lagringer.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Bygg en privat Google + ChatGPT for ditt eget nett på få minutter",
+        "description": ""
     }
 }

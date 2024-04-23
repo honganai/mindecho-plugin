@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Nu s-au gasit date",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Sari peste acest pas",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Interogare nouă",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Ask AI",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Interogați pe Web",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Sau puteți",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "Este posibil ca sursele să nu fie încă complet pregătite sau încercați să întrebați altfel.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Gestionați sursele",
+        "description": ""
+    },
+    "settings": {
+        "message": "Setări",
+        "description": ""
+    },
+    "sources": {
+        "message": "Surse",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Nici o informatie disponibila",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Întreabă-ți economiile",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Conexiune sigură",
+        "description": ""
+    },
+    "saves": {
+        "message": "Salvează",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Buzunar",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Conectați-vă la Pocket pentru a vă reînvia depozitul prăfuit.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "pe PC",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "pe Mac",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Comanda + E",
+        "description": ""
+    },
+    "press": {
+        "message": "presa",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Comenzi rapide de la tastatură",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "Acest lucru poate dura până la 10 minute. Vă rugăm să păstrați această pagină deschisă și să continuați cu alte sarcini.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "Construiește-ți MindEcho",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "clic pe pictogramă",
+        "description": ""
+    },
+    "or": {
+        "message": "sau",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "apăsarea tastei",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "oricând prin",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Activați mindECHO pentru a căuta Salvarile dvs",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Datele sunt încă în procesare; Sunt pe el și voi continua în fundal.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Salvari de buzunar importate",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Date de browser importate",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "Din bara de extensie de mai sus",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Excludeți istoricul",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Colectați automat potriviri noi",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Găsiți articole după cuvinte cheie",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Pagini de cunoștințe publice din istoricul de navigare",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Pot fi incluse numai adresele URL ale articolelor publice, blogurilor și eseurilor PDF. Istoricul personal și cel legat de muncă NU sunt incluse.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Activați căutarea full-text în istoricul de navigare pentru a elimina nevoia de memorare.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Excludeți marcajele sau lista de lectură",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Adăugați automat elemente noi",
+        "description": ""
+    },
+    "items": {
+        "message": "Articole",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Preluare",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "Lista actuală de adrese URL este locală numai până când autorizați colectarea datelor.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Se încarcă...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Selectați/Deselectați Toate afișate",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Semne de carte și liste de lectură",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Selectați conținutul pentru a fi căutat.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Mai multe surse vor fi acceptate",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "Textul complet al salvărilor va fi preluat și va putea fi căutat.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Lista dvs. Pocket Saves va fi importată cu autorizare sigură.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Selectați Sursă",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Conectați alte surse",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Importați colecții în browser",
+        "description": ""
+    },
+    "Note": {
+        "message": "Notă",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Buna ziua",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Ce zici să începem prin a alege comoara de informații pe care ai dori să-l explorezi din nou?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Găsiți orice instantaneu din propriile salvate.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Creați un Google + ChatGPT privat pentru propriul dvs. web în câteva minute",
+        "description": ""
     }
 }

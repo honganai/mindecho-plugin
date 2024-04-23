@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Dati nav atrasti",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Izlaist šo soli",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Jauns vaicājums",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Jautājiet AI",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Vaicājums tīmeklī",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Vai arī jūs varat",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "Avoti, iespējams, vēl nav pilnībā sagatavoti, vai, lūdzu, mēģiniet jautāt citādi.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Pārvaldīt avotus",
+        "description": ""
+    },
+    "settings": {
+        "message": "Iestatījumi",
+        "description": ""
+    },
+    "sources": {
+        "message": "Avoti",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Nav pieejami dati",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Jautājiet saviem ietaupījumiem",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Drošs savienojums",
+        "description": ""
+    },
+    "saves": {
+        "message": "Ietaupa",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Kabata",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Savienojiet ar Pocket, lai atdzīvinātu putekļaino krātuvi.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "datorā",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl+E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "operētājsistēmā Mac",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Command+E",
+        "description": ""
+    },
+    "press": {
+        "message": "Nospiediet",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Tastatūras īsinājumtaustiņi",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "Tas var ilgt līdz 10 minūtēm. Lūdzu, atstājiet šo lapu atvērtu un turpiniet veikt citus uzdevumus.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "Veidojot savu MindEcho",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "noklikšķiniet uz ikonas",
+        "description": ""
+    },
+    "or": {
+        "message": "vai",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "taustiņsitiens",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "jebkurā laikā, izmantojot",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Aktivizējiet mindECHO, lai meklētu savos ietaupījumos",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Dati joprojām tiek apstrādāti; Es esmu par to un turpināšu fonā.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Pocket Saglabā importētos",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Importēti pārlūkprogrammas dati",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "No pagarinājuma joslas augšpusē",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Izslēgt vēsturi",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Automātiski savākt jaunas spēles",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Atrodiet preces pēc atslēgvārdiem",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Publiskas zināšanu lapas no pārlūkošanas vēstures",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Var iekļaut tikai publisko rakstu, emuāru un eseju PDF failu vietrāžus URL. Personiskā un ar darbu saistītā vēsture NAV iekļauta.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Iespējojiet pilna teksta meklēšanu pārlūkošanas vēsturē, lai novērstu nepieciešamību iegaumēt.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Izslēdziet grāmatzīmes vai lasīšanas sarakstu",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Automātiski pievienot jaunus vienumus",
+        "description": ""
+    },
+    "items": {
+        "message": "Preces",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Atnest",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "Pašreizējais URL saraksts ir lokāls tikai līdz brīdim, kad atļaujat datu apkopošanu.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Notiek ielāde...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Atlasīt/atcelt atlasi Visi parādītie",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Grāmatzīmes un lasīšanas saraksti",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Atlasiet saturu, kas jāpadara meklējams.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Tiks atbalstīti vairāki avoti",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "Pilns saglabāto tekstu teksts tiks ielādēts un padarīts meklējams.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Jūsu Pocket Saves saraksts tiks importēts ar drošu autorizāciju.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Atlasiet Avots",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Savienojiet citus avotus",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Importējiet kolekcijas pārlūkprogrammā",
+        "description": ""
+    },
+    "Note": {
+        "message": "Piezīme",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Sveiki",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Kā būtu, ja mēs sāktu, izvēloties informācijas dārgumu krātuvi, kuru vēlaties vēlreiz izpētīt?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Nekavējoties atrodiet jebko no saviem krājumiem.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Dažu minūšu laikā izveidojiet privātu Google + ChatGPT savam tīmeklim",
+        "description": ""
     }
 }

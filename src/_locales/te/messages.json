@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "డేటా ఏదీ కనుగొనబడలేదు",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "ఈ దశను దాటవేయి",
+        "description": ""
+    },
+    "new_query": {
+        "message": "కొత్త ప్రశ్న",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "AIని అడగండి",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "వెబ్‌ని ప్రశ్నించండి",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "లేదా మీరు చేయవచ్చు",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "మూలాధారాలు ఇంకా పూర్తిగా సిద్ధంగా ఉండకపోవచ్చు లేదా దయచేసి వేరే విధంగా అడగడానికి ప్రయత్నించండి.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "మూలాలను నిర్వహించండి",
+        "description": ""
+    },
+    "settings": {
+        "message": "సెట్టింగ్‌లు",
+        "description": ""
+    },
+    "sources": {
+        "message": "మూలాలు",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "సమాచారం అందుబాటులో లేదు",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "మీ పొదుపులను అడగండి",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "సురక్షిత కనెక్షన్",
+        "description": ""
+    },
+    "saves": {
+        "message": "ఆదా చేస్తుంది",
+        "description": ""
+    },
+    "pocket": {
+        "message": "జేబులో",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "మీ మురికి నిల్వను పునరుద్ధరించడానికి పాకెట్‌కి కనెక్ట్ చేయండి.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "PC లో",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "Macలో",
+        "description": ""
+    },
+    "command_E": {
+        "message": "కమాండ్ + ఇ",
+        "description": ""
+    },
+    "press": {
+        "message": "నొక్కండి",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "కీబోర్డ్ స్ట్రోక్ షార్ట్‌కట్‌లు",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "దీనికి గరిష్టంగా 10 నిమిషాలు పట్టవచ్చు. దయచేసి ఈ పేజీని తెరిచి ఉంచి, ఇతర పనులతో కొనసాగించండి.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "మీ మైండ్‌ఎకోను నిర్మించడం",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "చిహ్నం క్లిక్ చేయండి",
+        "description": ""
+    },
+    "or": {
+        "message": "లేదా",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "కీస్ట్రోక్",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "ఎప్పుడైనా ద్వారా",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "మీ పొదుపులను శోధించడానికి mindECHOని సక్రియం చేయండి",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "డేటా ఇంకా ప్రాసెస్ చేయబడుతోంది; నేను దానిపై ఉన్నాను మరియు నేపథ్యంలో కొనసాగుతాను.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "పాకెట్ ఆదా దిగుమతి చేయబడింది",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "బ్రౌజర్ డేటా దిగుమతి చేయబడింది",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "పైన ఉన్న పొడిగింపు పట్టీ నుండి",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "చరిత్రను మినహాయించండి",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "కొత్త సరిపోలికలను స్వయంచాలకంగా సేకరించండి",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "కీలక పదాల ద్వారా అంశాలను కనుగొనండి",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "బ్రౌజింగ్ చరిత్ర నుండి పబ్లిక్ నాలెడ్జ్ పేజీలు",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "పబ్లిక్ ఆర్టికల్స్, బ్లాగ్‌లు మరియు ఎస్సే PDFల URLలు మాత్రమే చేర్చబడతాయి. వ్యక్తిగత మరియు పని సంబంధిత చరిత్ర చేర్చబడలేదు.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "గుర్తుంచుకోవలసిన అవసరాన్ని తొలగించడానికి బ్రౌజింగ్ చరిత్రలో పూర్తి-వచన శోధనను ప్రారంభించండి.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "బుక్‌మార్క్‌లు లేదా పఠన జాబితాను మినహాయించండి",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "కొత్త అంశాలను స్వయంచాలకంగా జోడించండి",
+        "description": ""
+    },
+    "items": {
+        "message": "వస్తువులు",
+        "description": ""
+    },
+    "fetch": {
+        "message": "పొందండి",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "మీరు డేటా సేకరణను ప్రామాణీకరించే వరకు మాత్రమే ప్రస్తుత URL జాబితా స్థానికంగా ఉంటుంది.",
+        "description": ""
+    },
+    "loading": {
+        "message": "లోడ్...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "చూపినవన్నీ ఎంచుకోండి/ఎంపికను తీసివేయండి",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "బుక్‌మార్క్‌లు &amp; పఠన జాబితాలు",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "శోధించదగిన కంటెంట్‌ను ఎంచుకోండి.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "మరిన్ని మూలాలకు మద్దతు ఉంటుంది",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "పొదుపుల యొక్క పూర్తి వచనం పొందబడుతుంది మరియు శోధించదగినదిగా చేయబడుతుంది.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "మీ పాకెట్ ఆదాల జాబితా సురక్షిత అధికారంతో దిగుమతి చేయబడుతుంది.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "మూలాన్ని ఎంచుకోండి",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "ఇతర వనరులను కనెక్ట్ చేయండి",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "బ్రౌజర్‌లో సేకరణలను దిగుమతి చేయండి",
+        "description": ""
+    },
+    "Note": {
+        "message": "గమనిక",
+        "description": ""
+    },
+    "Hello": {
+        "message": "హలో",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "మీరు మళ్లీ అన్వేషించాలనుకుంటున్న సమాచారం యొక్క నిధిని ఎంచుకోవడం ద్వారా మేము ఎలా ప్రారంభిస్తాము?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "మీ స్వంత పొదుపుల నుండి ఏదైనా తక్షణమే కనుగొనండి.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "నిమిషాల్లో మీ స్వంత వెబ్ కోసం ప్రైవేట్ Google + ChatGPTని రూపొందించండి",
+        "description": ""
     }
 }

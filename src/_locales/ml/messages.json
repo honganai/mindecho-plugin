@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "വിവരങ്ങളൊന്നും കണ്ടെത്തിയില്ല",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "ഈ ഘട്ടം ഒഴിവാക്കുക",
+        "description": ""
+    },
+    "new_query": {
+        "message": "പുതിയ ചോദ്യം",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "AI-യോട് ചോദിക്കുക",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "വെബിൽ അന്വേഷിക്കുക",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "അല്ലെങ്കിൽ നിങ്ങൾക്ക് കഴിയും",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "ഉറവിടങ്ങൾ ഇതുവരെ പൂർണ്ണമായി തയ്യാറായിട്ടില്ലായിരിക്കാം, അല്ലെങ്കിൽ വ്യത്യസ്തമായി ചോദിക്കാൻ ശ്രമിക്കുക.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "ഉറവിടങ്ങൾ നിയന്ത്രിക്കുക",
+        "description": ""
+    },
+    "settings": {
+        "message": "ക്രമീകരണങ്ങൾ",
+        "description": ""
+    },
+    "sources": {
+        "message": "ഉറവിടങ്ങൾ",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "ഡാറ്റ ലഭ്യമല്ല",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "നിങ്ങളുടെ സേവ്സ് ചോദിക്കുക",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "സുരക്ഷിത കണക്ഷൻ",
+        "description": ""
+    },
+    "saves": {
+        "message": "സംരക്ഷിക്കുന്നു",
+        "description": ""
+    },
+    "pocket": {
+        "message": "പോക്കറ്റ്",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "നിങ്ങളുടെ പൊടിപടലങ്ങൾ പുനരുജ്ജീവിപ്പിക്കാൻ പോക്കറ്റിലേക്ക് കണക്റ്റുചെയ്യുക.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "പിസിയിൽ",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "മാക്കിൽ",
+        "description": ""
+    },
+    "command_E": {
+        "message": "കമാൻഡ് + ഇ",
+        "description": ""
+    },
+    "press": {
+        "message": "അമർത്തുക",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "കീബോർഡ് സ്ട്രോക്ക് കുറുക്കുവഴികൾ",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "ഇതിന് 10 മിനിറ്റ് വരെ എടുത്തേക്കാം. ദയവായി ഈ പേജ് തുറന്ന് സൂക്ഷിച്ച് മറ്റ് ജോലികളുമായി തുടരുക.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "നിങ്ങളുടെ മൈൻഡ് എക്കോ നിർമ്മിക്കുന്നു",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "ഐക്കൺ ക്ലിക്ക്",
+        "description": ""
+    },
+    "or": {
+        "message": "അഥവാ",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "കീസ്ട്രോക്ക്",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "എപ്പോൾ വേണമെങ്കിലും വഴി",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "നിങ്ങളുടെ സേവുകൾ തിരയാൻ mindECHO സജീവമാക്കുക",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "ഡാറ്റ ഇപ്പോഴും പ്രോസസ്സ് ചെയ്യുന്നു; ഞാൻ ഇതിലുണ്ട്, പശ്ചാത്തലത്തിൽ തുടരും.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "പോക്കറ്റ് സേവ്സ് ഇറക്കുമതി ചെയ്തു",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "ബ്രൗസർ ഡാറ്റ ഇറക്കുമതി ചെയ്തു",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "മുകളിലെ വിപുലീകരണ ബാറിൽ നിന്ന്",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "ചരിത്രം ഒഴിവാക്കുക",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "പുതിയ പൊരുത്തങ്ങൾ സ്വയമേവ ശേഖരിക്കുക",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "കീവേഡുകൾ ഉപയോഗിച്ച് ഇനങ്ങൾ കണ്ടെത്തുക",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "ബ്രൗസിംഗ് ചരിത്രത്തിൽ നിന്നുള്ള പൊതു വിജ്ഞാന പേജുകൾ",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "പൊതു ലേഖനങ്ങൾ, ബ്ലോഗുകൾ, ഉപന്യാസ PDF എന്നിവയുടെ URL-കൾ മാത്രമേ ഉൾപ്പെടുത്താൻ കഴിയൂ. വ്യക്തിപരവും ജോലി സംബന്ധമായതുമായ ചരിത്രം ഉൾപ്പെടുത്തിയിട്ടില്ല.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "ഓർമ്മപ്പെടുത്തലിൻ്റെ ആവശ്യകത ഇല്ലാതാക്കാൻ ബ്രൗസിംഗ് ചരിത്രത്തിൽ പൂർണ്ണ-വാചക തിരയൽ പ്രവർത്തനക്ഷമമാക്കുക.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "ബുക്ക്‌മാർക്കുകളോ വായനാ പട്ടികയോ ഒഴിവാക്കുക",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "പുതിയ ഇനങ്ങൾ സ്വയമേവ ചേർക്കുക",
+        "description": ""
+    },
+    "items": {
+        "message": "ഇനങ്ങൾ",
+        "description": ""
+    },
+    "fetch": {
+        "message": "കൊണ്ടുവരിക",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "നിങ്ങൾ ഡാറ്റാ ശേഖരണം അംഗീകരിക്കുന്നത് വരെ നിലവിലെ URL ലിസ്റ്റ് ലോക്കൽ മാത്രമായിരിക്കും.",
+        "description": ""
+    },
+    "loading": {
+        "message": "ലോഡിംഗ്...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "കാണിച്ചിരിക്കുന്നതെല്ലാം തിരഞ്ഞെടുക്കുക/തിരഞ്ഞെടുക്കുക",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "ബുക്ക്‌മാർക്കുകളും വായനാ ലിസ്റ്റുകളും",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "തിരയാനാകുന്ന ഉള്ളടക്കം തിരഞ്ഞെടുക്കുക.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "കൂടുതൽ ഉറവിടങ്ങൾ പിന്തുണയ്ക്കും",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "സേവുകളുടെ പൂർണ്ണമായ വാചകം ലഭ്യമാക്കുകയും തിരയാൻ സാധിക്കുകയും ചെയ്യും.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "നിങ്ങളുടെ പോക്കറ്റ് സേവ്സ് ലിസ്റ്റ് സുരക്ഷിതമായ അംഗീകാരത്തോടെ ഇറക്കുമതി ചെയ്യപ്പെടും.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "ഉറവിടം തിരഞ്ഞെടുക്കുക",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "മറ്റ് ഉറവിടങ്ങൾ ബന്ധിപ്പിക്കുക",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "ബ്രൗസറിൽ ശേഖരങ്ങൾ ഇറക്കുമതി ചെയ്യുക",
+        "description": ""
+    },
+    "Note": {
+        "message": "കുറിപ്പ്",
+        "description": ""
+    },
+    "Hello": {
+        "message": "ഹലോ",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "നിങ്ങൾ വീണ്ടും പര്യവേക്ഷണം ചെയ്യാൻ ആഗ്രഹിക്കുന്ന വിവരങ്ങളുടെ ശേഖരം തിരഞ്ഞെടുത്ത് ഞങ്ങൾ എങ്ങനെ തുടങ്ങും?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "നിങ്ങളുടെ സ്വന്തം സമ്പാദ്യത്തിൽ നിന്ന് എന്തും തൽക്ഷണം കണ്ടെത്തുക.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "മിനിറ്റുകൾക്കുള്ളിൽ നിങ്ങളുടെ സ്വന്തം വെബിനായി ഒരു സ്വകാര്യ Google + ChatGPT നിർമ്മിക്കുക",
+        "description": ""
     }
 }

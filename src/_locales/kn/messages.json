@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "ಯಾವುದೇ ಡೇಟಾ ಕಂಡುಬಂದಿಲ್ಲ",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "ಈ ಹಂತವನ್ನು ಬಿಡಿ",
+        "description": ""
+    },
+    "new_query": {
+        "message": "ಹೊಸ ಪ್ರಶ್ನೆ",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "AI ಅನ್ನು ಕೇಳಿ",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "ವೆಬ್ ಅನ್ನು ಪ್ರಶ್ನಿಸಿ",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "ಅಥವಾ ನೀವು ಮಾಡಬಹುದು",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "ಮೂಲಗಳು ಇನ್ನೂ ಸಂಪೂರ್ಣವಾಗಿ ಸಿದ್ಧವಾಗಿಲ್ಲದಿರಬಹುದು ಅಥವಾ ದಯವಿಟ್ಟು ಬೇರೆ ರೀತಿಯಲ್ಲಿ ಕೇಳಲು ಪ್ರಯತ್ನಿಸಿ.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "ಮೂಲಗಳನ್ನು ನಿರ್ವಹಿಸಿ",
+        "description": ""
+    },
+    "settings": {
+        "message": "ಸಂಯೋಜನೆಗಳು",
+        "description": ""
+    },
+    "sources": {
+        "message": "ಮೂಲಗಳು",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "ಯಾವುದೇ ಮಾಹಿತಿ ಇಲ್ಲ",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "ನಿಮ್ಮ ಉಳಿತಾಯವನ್ನು ಕೇಳಿ",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "ಸುರಕ್ಷಿತ ಸಂಪರ್ಕ",
+        "description": ""
+    },
+    "saves": {
+        "message": "ಉಳಿಸುತ್ತದೆ",
+        "description": ""
+    },
+    "pocket": {
+        "message": "ಪಾಕೆಟ್",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "ನಿಮ್ಮ ಧೂಳಿನ ಸ್ಟಾಶ್ ಅನ್ನು ಪುನರುಜ್ಜೀವನಗೊಳಿಸಲು ಪಾಕೆಟ್‌ಗೆ ಸಂಪರ್ಕಿಸಿ.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "PC ಯಲ್ಲಿ",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "Mac ನಲ್ಲಿ",
+        "description": ""
+    },
+    "command_E": {
+        "message": "ಕಮಾಂಡ್ + ಇ",
+        "description": ""
+    },
+    "press": {
+        "message": "ಒತ್ತಿ",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "ಕೀಬೋರ್ಡ್ ಸ್ಟ್ರೋಕ್ ಶಾರ್ಟ್‌ಕಟ್‌ಗಳು",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "ಇದು 10 ನಿಮಿಷಗಳವರೆಗೆ ತೆಗೆದುಕೊಳ್ಳಬಹುದು. ದಯವಿಟ್ಟು ಈ ಪುಟವನ್ನು ತೆರೆಯಿರಿ ಮತ್ತು ಇತರ ಕಾರ್ಯಗಳೊಂದಿಗೆ ಮುಂದುವರಿಯಿರಿ.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "ನಿಮ್ಮ ಮೈಂಡ್ ಎಕೋವನ್ನು ನಿರ್ಮಿಸುವುದು",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "ಐಕಾನ್ ಕ್ಲಿಕ್ ಮಾಡಿ",
+        "description": ""
+    },
+    "or": {
+        "message": "ಅಥವಾ",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "ಕೀಸ್ಟ್ರೋಕ್",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ಮೂಲಕ",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "ನಿಮ್ಮ ಉಳಿತಾಯಗಳನ್ನು ಹುಡುಕಲು mindECHO ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "ಡೇಟಾ ಇನ್ನೂ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿದೆ; ನಾನು ಅದರಲ್ಲಿದ್ದೇನೆ ಮತ್ತು ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಮುಂದುವರಿಯುತ್ತೇನೆ.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "ಪಾಕೆಟ್ ಸೇವ್ಸ್ ಆಮದು ಮಾಡಲಾಗಿದೆ",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "ಬ್ರೌಸರ್ ಡೇಟಾವನ್ನು ಆಮದು ಮಾಡಲಾಗಿದೆ",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "ಮೇಲಿನ ವಿಸ್ತರಣೆ ಪಟ್ಟಿಯಿಂದ",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "ಇತಿಹಾಸವನ್ನು ಹೊರತುಪಡಿಸಿ",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "ಹೊಸ ಹೊಂದಾಣಿಕೆಗಳನ್ನು ಸ್ವಯಂ-ಸಂಗ್ರಹಿಸಿ",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "ಕೀವರ್ಡ್‌ಗಳ ಮೂಲಕ ಐಟಂಗಳನ್ನು ಹುಡುಕಿ",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "ಬ್ರೌಸಿಂಗ್ ಇತಿಹಾಸದಿಂದ ಸಾರ್ವಜನಿಕ ಜ್ಞಾನ ಪುಟಗಳು",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "ಸಾರ್ವಜನಿಕ ಲೇಖನಗಳು, ಬ್ಲಾಗ್‌ಗಳು ಮತ್ತು ಪ್ರಬಂಧ PDFಗಳ URL ಗಳನ್ನು ಮಾತ್ರ ಸೇರಿಸಬಹುದು. ವೈಯಕ್ತಿಕ ಮತ್ತು ಕೆಲಸಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಇತಿಹಾಸವನ್ನು ಸೇರಿಸಲಾಗಿಲ್ಲ.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "ಕಂಠಪಾಠದ ಅಗತ್ಯವನ್ನು ತೊಡೆದುಹಾಕಲು ಬ್ರೌಸಿಂಗ್ ಇತಿಹಾಸದಲ್ಲಿ ಪೂರ್ಣ-ಪಠ್ಯ ಹುಡುಕಾಟವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು ಅಥವಾ ಓದುವ ಪಟ್ಟಿಯನ್ನು ಹೊರತುಪಡಿಸಿ",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "ಹೊಸ ಐಟಂಗಳನ್ನು ಸ್ವಯಂ ಸೇರಿಸಿ",
+        "description": ""
+    },
+    "items": {
+        "message": "ವಸ್ತುಗಳು",
+        "description": ""
+    },
+    "fetch": {
+        "message": "ತರಲು",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "ನೀವು ಡೇಟಾ ಸಂಗ್ರಹಣೆಯನ್ನು ದೃಢೀಕರಿಸುವವರೆಗೆ ಮಾತ್ರ ಪ್ರಸ್ತುತ URL ಪಟ್ಟಿಯು ಸ್ಥಳೀಯವಾಗಿರುತ್ತದೆ.",
+        "description": ""
+    },
+    "loading": {
+        "message": "ಲೋಡ್ ಆಗುತ್ತಿದೆ...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "ತೋರಿಸಿರುವ ಎಲ್ಲವನ್ನೂ ಆಯ್ಕೆಮಾಡಿ/ಆಯ್ಕೆ ರದ್ದುಮಾಡಿ",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು ಮತ್ತು ಓದುವಿಕೆ ಪಟ್ಟಿಗಳು",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "ಹುಡುಕುವಂತೆ ಮಾಡಬೇಕಾದ ವಿಷಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "ಹೆಚ್ಚಿನ ಮೂಲಗಳನ್ನು ಬೆಂಬಲಿಸಲಾಗುತ್ತದೆ",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "ಉಳಿತಾಯದ ಪೂರ್ಣ ಪಠ್ಯವನ್ನು ಪಡೆದುಕೊಳ್ಳಲಾಗುವುದು ಮತ್ತು ಹುಡುಕಲು ಸಾಧ್ಯವಾಗುವಂತೆ ಮಾಡಲಾಗುತ್ತದೆ.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "ನಿಮ್ಮ ಪಾಕೆಟ್ ಉಳಿತಾಯ ಪಟ್ಟಿಯನ್ನು ಸುರಕ್ಷಿತ ದೃಢೀಕರಣದೊಂದಿಗೆ ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗುತ್ತದೆ.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "ಮೂಲವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "ಇತರ ಮೂಲಗಳನ್ನು ಸಂಪರ್ಕಿಸಿ",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಸಂಗ್ರಹಣೆಗಳನ್ನು ಆಮದು ಮಾಡಿ",
+        "description": ""
+    },
+    "Note": {
+        "message": "ಸೂಚನೆ",
+        "description": ""
+    },
+    "Hello": {
+        "message": "ನಮಸ್ಕಾರ",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "ನೀವು ಮತ್ತೆ ಅನ್ವೇಷಿಸಲು ಬಯಸುವ ಮಾಹಿತಿಯ ನಿಧಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡುವ ಮೂಲಕ ನಾವು ಹೇಗೆ ಪ್ರಾರಂಭಿಸುತ್ತೇವೆ?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "ನಿಮ್ಮ ಸ್ವಂತ ಉಳಿತಾಯದಿಂದ ಯಾವುದನ್ನಾದರೂ ತಕ್ಷಣವೇ ಹುಡುಕಿ.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "ನಿಮಿಷಗಳಲ್ಲಿ ನಿಮ್ಮ ಸ್ವಂತ ವೆಬ್‌ಗಾಗಿ ಖಾಸಗಿ Google + ChatGPT ಅನ್ನು ನಿರ್ಮಿಸಿ",
+        "description": ""
     }
 }
