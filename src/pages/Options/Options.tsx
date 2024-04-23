@@ -1,6 +1,6 @@
-import React, { useCallback, useEffect, useReducer, useRef, useState } from 'react';
+import React, { useEffect, useReducer, useState } from 'react';
 import './Options.css';
-import { Layout, ConfigProvider, Popover, message, Spin, notification, Select } from 'antd';
+import { ConfigProvider, message, Spin } from 'antd';
 import User, { SubType } from './components/user/User';
 import Login from './components/login/Login';
 import BrowserData from './components/browserData/browserData';
@@ -8,7 +8,6 @@ import HistoryData from './components/historyData/historyData';
 import Building from './components/building/building';
 import Pocket from './components/pocketData/pocket';
 import { UserInfo, UserType } from '@/types';
-import getCleanArticle from './distillConfig';
 import GlobalContext, {
   reducer as GlobalReducer,
   ActionType as GlobalActionType,
@@ -20,7 +19,13 @@ import styles from './Options.module.scss';
 
 import ModalContent from '../Content/App';
 
+interface ILinkProps {
+  page: number;
+  status?: false
+}
+
 const Options: React.FC = () => {
+  const [buildStatus, setBuildStatus] = useState(false);
   const [loading, setLoading] = useState(true);
   const [stepPage, setStepPage] = useState(1);
   const [userinfo, setUserinfo] = useState<UserInfo>();
@@ -141,9 +146,9 @@ const Options: React.FC = () => {
             ) : (
               <>
                 {stepPage === 1 ? <User onLink={(page: number) => { setStepPage(page) }} /> :
-                  stepPage === 2 ? <BrowserData onLink={(page: number) => { setStepPage(page); setBuildType('browser') }} /> :
-                    stepPage === 5 ? <HistoryData onLink={(page: number) => { setStepPage(page); setBuildType('browser') }} /> :
-                      stepPage === 3 ? <Building type={buildType} /> :
+                  stepPage === 2 ? <BrowserData onLink={(page: number, status = false) => { setStepPage(page); setBuildType('browser'); setBuildStatus(status) }} /> :
+                    stepPage === 5 ? <HistoryData onLink={(page: number, status = false) => { setStepPage(page); setBuildType('browser'); setBuildStatus(status) }} /> :
+                      stepPage === 3 ? <Building type={buildType} status={buildStatus} /> :
                         stepPage === 4 ? <Pocket onLink={(page: number) => { setStepPage(page); setBuildType('pocket') }} /> : null}
                 <ModalContent type="options" />
               </>

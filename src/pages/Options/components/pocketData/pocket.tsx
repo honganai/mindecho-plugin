@@ -37,8 +37,7 @@ interface Props {
 }
 
 const Pocket: React.FC<Props> = ({ onLink }) => {
-  const noDataFoundI18N = chrome.i18n.getMessage('noDataFound');
-  const logoutText = chrome.i18n.getMessage('logout');
+  const { getMessage: t } = chrome.i18n;
   const { state: { titleMap: keyList }, dispatch: globalDispatch } = useContext(GlobalContext);
 
   //选中的所有key集合、和初始数据集合
@@ -196,7 +195,7 @@ const Pocket: React.FC<Props> = ({ onLink }) => {
 
   return (
     <div className={styles.container}>
-      <Header tip={'Connect to Pocket to revive your dusty stash.'} />
+      <Header tip={t('connect_to_pocket_to_revive_your_dusty_stash')} />
       <div className={styles['content']}>
         <div className={styles['left']}>
           <div className={styles['back']} onClick={() => onLink(1)}>
@@ -205,11 +204,11 @@ const Pocket: React.FC<Props> = ({ onLink }) => {
         </div>
         <div className={styles['center']}>
           <div className={styles['header']}>
-            <p><span style={{ color: '#e94554' }}>Pocket</span> Saves</p>
+            <p><span style={{ color: '#e94554' }}>{t('pocket')}</span> {t('saves')}</p>
           </div>
           <div className={styles['control-box']}>
-            <Input className={styles['search']} placeholder="Find items by keywords" prefix={<SearchOutlined />} onPressEnter={searchKeyWord} />
-            <Checkbox className={styles['select']} onChange={onChange}>Select/Deselect All Shown</Checkbox>
+            <Input className={styles['search']} placeholder={t('find_items_by_keywords')} prefix={<SearchOutlined />} onPressEnter={searchKeyWord} />
+            <Checkbox className={styles['select']} onChange={onChange}>{t('select_deselect_all_shown')}</Checkbox>
           </div>
           <Spin spinning={loading} tip='Loading...' style={{ background: '#fff' }}>
             {/* <div className={styles['list-box']}>
@@ -235,15 +234,15 @@ const Pocket: React.FC<Props> = ({ onLink }) => {
               treeData={treeData} />
           </Spin>
 
-          <p style={{ textAlign: 'right' }}><LockOutlined /> Secure Connection</p>
+          <p style={{ textAlign: 'right' }}><LockOutlined /> {t('secure_connection')}</p>
         </div>
         <div className={styles['right']}>
           <Button className={styles['import-btn']} size="middle" type="primary" block onClick={onImport}>
-            <span>Fetch {checkedCount} Items</span>
+            <span>{t('fetch')} {checkedCount} {t('items')}</span>
           </Button>
           <p className={styles['auto-add']}>
             <Switch checked={autoAdd} onChange={onChange} />
-            <span>Auto-add New Items</span>
+            <span>{t('auto_add_new_items')}</span>
           </p>
         </div>
       </div>

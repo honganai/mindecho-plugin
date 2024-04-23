@@ -4,7 +4,6 @@ import { createPortal } from 'react-dom';
 import AskModal from './components/AskModal';
 import AnswerModal from './components/AnswerModal';
 import GlobalContext, { ActionType as GlobalActionType, IState } from '../../reducer/global';
-import { UserInfo } from '@/types';
 
 interface IProps {
   type?: 'options' | 'webPage'

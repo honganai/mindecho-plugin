@@ -13,13 +13,14 @@ import { Trumpet } from '@icon-park/react';
 
 interface IProp {
   type: string;
+  status: boolean;
 }
 
-const Building: React.FC<IProp> = ({ type = 'browser' }) => {
-  const signUpWithGoogle = chrome.i18n.getMessage('signUpWithGoogle');
+const Building: React.FC<IProp> = ({ type = 'browser', status = false }) => {
+  const { getMessage: t } = chrome.i18n;
   const { state: { upateData, progress }, dispatch: globalDispatch } = useContext(GlobalContext);
   const [precent, setPrecent] = useState(0);
-  const [done, setDone] = useState(false);
+  const [done, setDone] = useState(status);
   const [waitTime, setWaitTime] = useState(null as any);
   const TIMEOUT = 600; //seconds 最长等待时间
   const [timer, setTimer] = useState<NodeJS.Timeout>();
@@ -90,7 +91,7 @@ const Building: React.FC<IProp> = ({ type = 'browser' }) => {
         done && (
           <div className={styles['top']}>
             <img className={styles['gif']} src={Gif} alt="gif" />
-            <p className={styles['direction']}>From the Extension Bar Above</p>
+            <p className={styles['direction']}>{t('from_the_extension_bar_above')}</p>
             <img className={styles['git-arrow']} src={GifArrow} alt="" />
           </div>
         )
@@ -100,11 +101,11 @@ const Building: React.FC<IProp> = ({ type = 'browser' }) => {
         {
           done ? (
             <>
-              <p className={styles['title']}>{type === 'browser' ? 'Browser Data Imported' : 'Pocket Saves Imported'}</p>
-              <p className={styles['tip']}>Data is still processing; I'm on it and will continue in the background.</p>
+              <p className={styles['title']}>{type === 'browser' ? t('browser_data_imported') : t('pocket_saves_imported')}</p>
+              <p className={styles['tip']}>{t('data_is_still_processing_Im_on_it_and_will_continue_in_the_background')}</p>
               <p className={styles['tip-3']}>
-                Activate mindECHO to search Your Saves<br />
-                anytime via <span style={{ color: '#6428be' }}>keystroke</span> or <span style={{ color: '#2b984d' }}>icon click</span>
+                {t('activate_mindECHO_to_search_your_saves')}<br />
+                {t('anytime_via')} <span style={{ color: '#6428be' }}>{t('keystroke')}</span> {t('or')} <span style={{ color: '#2b984d' }}>{t('icon_click')}</span>
               </p>
               {/* <p className={styles['title']} style={{ marginTop: '20px' }}>Meanwhile, You can start asking questions!</p> */}
               {/* <p className={styles['tip-2']}>
@@ -113,8 +114,8 @@ const Building: React.FC<IProp> = ({ type = 'browser' }) => {
             </>
           ) : (
             <>
-              <p className={styles['title']}>Building Your MindEcho</p>
-              <p className={styles['tip']} style={{ display: done ? 'none' : 'block' }}>This may take up to 10 minutes. Please keep this page open and continue with other tasks.</p>
+              <p className={styles['title']}>{t('building_your_mindEcho')}</p>
+              <p className={styles['tip']} style={{ display: done ? 'none' : 'block' }}>{t('this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks')}</p>
               {/* <Progress type="circle" percent={precent} style={{ marginTop: '30px' }} className={styles.progress} /> */}
               <img className={styles['loading-icon']} src={LoadingIcon} alt="loading" />
             </>
@@ -125,13 +126,13 @@ const Building: React.FC<IProp> = ({ type = 'browser' }) => {
         done && (
           <div className={styles['bottom']}>
             <img src={QuestArrow} alt="" />
-            <span className={styles['direction']}>Keyboard Stroke ShortCuts</span>
+            <span className={styles['direction']}>{t('keyboard_stroke_shortCuts')}</span>
             <div>
               <p className={styles['doneTip']}>
-                Press <strong>Command + E</strong> on Mac
+                {t('press')} <strong>{t('command_E')}</strong> {t('on_mac')}
               </p>
               <p className={styles['doneTip']}>
-                Press <strong>Ctrl + E</strong> on PC
+                {t('press')} <strong>{t('ctrl_E')}</strong> {t('on_pc')}
               </p>
             </div>
           </div>

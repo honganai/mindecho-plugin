@@ -35,7 +35,7 @@ interface Props {
 }
 
 const HistoryData: React.FC<Props> = ({ onLink }) => {
-  const noDataFoundI18N = chrome.i18n.getMessage('noDataFound');
+  const { getMessage: t } = chrome.i18n;
   const { state: { titleMap: keyList }, dispatch: globalDispatch } = useContext(GlobalContext);
 
   //选中的所有key集合、和初始数据集合
@@ -185,7 +185,7 @@ const HistoryData: React.FC<Props> = ({ onLink }) => {
 
   return (
     <div className={styles.container}>
-      <Header tip={'Enable full-text search in browsing history to eliminate the need for memorization.'} note={'Only URLs of public articles, blogs, and essay PDFs can be included. Personal and work-related history are NOT included.'} />
+      <Header tip={t('enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization')} note={t('only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included')} />
       <div className={styles['content']}>
         <div className={styles['left']}>
           <div className={styles['back']} onClick={() => onLink(2)}>
@@ -194,13 +194,13 @@ const HistoryData: React.FC<Props> = ({ onLink }) => {
         </div>
         <div className={styles['center']}>
           <div className={styles['header']}>
-            <p>Public Knowledge Pages from Browsing History</p>
+            <p>{t('public_knowledge_pages_from_browsing_history')}</p>
           </div>
           <div className={styles['control-box']}>
-            <Input className={styles['search']} placeholder="Find items by keywords" prefix={<SearchOutlined />} onPressEnter={searchKeyWord} />
-            <Checkbox className={styles['select']} onChange={onChange}>Select/Deselect All Shown</Checkbox>
+            <Input className={styles['search']} placeholder={t('find_items_by_keywords')} prefix={<SearchOutlined />} onPressEnter={searchKeyWord} />
+            <Checkbox className={styles['select']} onChange={onChange}>{t('select_deselect_all_shown')}</Checkbox>
           </div>
-          <Spin spinning={loading} tip='Loading...' style={{ background: '#fff' }}>
+          <Spin spinning={loading} tip={t('loading...')} style={{ background: '#fff' }}>
             <DataList
               checkable
               onExpand={onExpand}
@@ -212,17 +212,17 @@ const HistoryData: React.FC<Props> = ({ onLink }) => {
               treeData={treeData} />
           </Spin>
 
-          <p>* Current URL list is local only until you authorize data collection.</p>
+          <p>* {t('current_URL_list_is_local_only_until_you_authorize_data_collection')}</p>
         </div>
         <div className={styles['right']}>
           <Button className={styles['import-btn']} size="middle" type="primary" block onClick={onImport}>
-            <span>Fetch {checkedCount} Items</span>
+            <span>{t('fetch')} {checkedCount} {t('items')}</span>
           </Button>
           <p className={styles['auto-add']}>
             <Switch checked={autoAdd} onChange={onChange} />
-            <span>Auto-Collect New Matches</span>
+            <span>{t('auto_collect_new_matches')}</span>
           </p>
-          <p className={styles['exclude-tip']}>Exclude  History</p>
+          <p onClick={() => onLink(3, true)} className={styles['exclude-tip']}>{t('exclude_history')}</p>
         </div>
       </div>
     </div>

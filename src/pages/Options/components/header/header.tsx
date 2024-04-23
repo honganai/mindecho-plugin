@@ -17,7 +17,7 @@ interface Props {
 }
 
 const Header: React.FC<Props> = ({ tip, note }) => {
-  const logoutText = chrome.i18n.getMessage('logout');
+  const { getMessage: t } = chrome.i18n;
   const { state: { userInfo }, dispatch: globalDispatch } = useContext(GlobalContext);
   const el_userInfo = useRef(null);
 
@@ -31,10 +31,10 @@ const Header: React.FC<Props> = ({ tip, note }) => {
     <div className={styles['userInfo']} ref={el_userInfo}>
       <img className={styles['logo']} src={logo} alt="logo" />
       <div className={styles['userName']}>
-        <p className={styles['name']}>Hello, {userInfo?.username || '-'}</p>
+        <p className={styles['name']}>{t('Hello')}, {userInfo?.username || '-'}</p>
         <p className={styles['recommend']}>{tip || ''}</p>
         {
-          note && <p className={styles['note']}><strong>Note:</strong> {note}</p>
+          note && <p className={styles['note']}><strong>{t('Note')}:</strong> {note}</p>
         }
       </div>
     </div>

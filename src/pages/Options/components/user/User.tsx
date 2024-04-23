@@ -1,14 +1,12 @@
 import React, { useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import dayjs from 'dayjs';
-import { Button, Spin, Modal, Image, message } from 'antd';
+import { Button, Spin, Modal } from 'antd';
 import { LogoutOutlined, PlusOutlined } from '@ant-design/icons';
-import { CONTACT_URL, SUBSCRIBE_URL } from '@/constants';
 import cs from 'classnames';
 import styles from './index.module.scss';
 import _ from "lodash";
 import posthog from "posthog-js";
-import logo from '@/assets/icons/logo.png';
 import GlobalContext, { ActionType, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
 import Header from '../header/header';
 import pocketIcon from '@/assets/icons/pocket_icon.png';
@@ -38,12 +36,10 @@ interface Props {
 }
 
 const User: React.FC<Props> = ({ onLink }: Props) => {
-  const bindSuccessI18N = chrome.i18n.getMessage('bindSuccess');
+  const { getMessage: t } = chrome.i18n;
   const [spinning, setSpinning] = React.useState<boolean>(true);
   const [otherSourceModalShow, setOtherSourceModalShow] = React.useState<boolean>(false);
-
-  const logoutText = chrome.i18n.getMessage('logout');
-  const { state: { history, bookmarks, readinglist, isLogin, historyPage }, dispatch: globalDispatch } = useContext(GlobalContext);
+  const { state: { history, bookmarks, readinglist, isLogin }, dispatch: globalDispatch } = useContext(GlobalContext);
 
   useEffect(() => {
     getHistory();
@@ -182,10 +178,8 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
             clearInterval(mainTimer); // 超过3分钟后清除主定时器
           } else {
             chrome.runtime.sendMessage({ type: 'request', api: 'get_bind_status', body: { code: res.data.code } }, (res) => {
-              // console.log('bindPocket res:', res);
               if (res.data[types]) {
                 setOtherSourceModalShow(false);
-                // message.success(bindSuccessI18N);
                 onLink(4);
                 clearInterval(mainTimer); // 成功后清除主定时器
               }
@@ -209,20 +203,20 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
   return (
     <div className={styles.container}>
       <Spin spinning={spinning} tip="initializing..." >
-        <Header tip={'How about we begin by choosing the treasure trove of information you’d like to explore again?'} />
+        <Header tip={t('how_about_we_begin_by_choosing_the_treasure_trove_of_information_you’d_like_to_explore_again')} />
         <div className={styles['control']}>
           <Button className={cs(styles['btn'], styles['btn-browser'])} size="middle" type="primary" block onClick={() => onLink(2)} icon={<PlusOutlined />}>
-            <span>Import Collections in Browser</span>
+            <span>{t('import_collections_in_browser')}</span>
           </Button>
           <Button className={cs(styles['btn'], styles['btn-other'])} size="middle" block onClick={getBindStatues} icon={<PlusOutlined />}>
-            <span>Connect Other Sources</span>
+            <span>{t('connect_other_sources')}</span>
             <img className={cs(styles['pocket-icon'], styles['icon'])} src={pocketIcon} alt="pocket icon" />
             {/* <img className={cs(styles['twitter-icon'], styles['icon'])} src={TwitterIcon} alt="twitter icon" /> */}
           </Button>
 
         </div>
       </Spin>
-      <Modal footer={false} className={styles['source-modal']} onCancel={() => setOtherSourceModalShow(false)} mask={false} open={otherSourceModalShow} title='Select Source' centered={true}>
+      <Modal footer={false} className={styles['source-modal']} onCancel={() => setOtherSourceModalShow(false)} mask={false} open={otherSourceModalShow} title={t('select_source')} centered={true}>
         <div className={styles['source-content']}>
           <div className={styles['source-pocket']}>
             <PlusOutlined className={styles.addIcon} />
@@ -230,8 +224,8 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
               <img src={pocketSourceIcon} alt="pocketSourceIcon" />
             </div>
             <div className={styles['source-pocket-text']}>
-              <p>Your Pocket Saves list will be imported with secure authorization. </p>
-              <p>Full text of the saves will be fetched and made searchable.</p>
+              <p>{t('your_pocket_saves_list_will_be_imported_with_secure_authorization')}</p>
+              <p>{t('full_text_of_the_saves_will_be_fetched_and_made_searchable')}</p>
             </div>
           </div>
           <div className={styles['raindrop-pocket']}>
@@ -239,7 +233,7 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
               <img src={RaindRopSourceIcon} alt="RaindRopSourceIcon" />
             </div>
             <div className={styles['source-raindrop-text']}>
-              <p>More sources will be supported</p>
+              <p>{t('more_sources_will_be_supported')}</p>
             </div>
           </div>
         </div>

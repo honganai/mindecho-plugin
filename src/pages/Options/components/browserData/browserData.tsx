@@ -1,6 +1,6 @@
 import React, { useEffect, useContext, useState } from 'react';
 import dayjs from 'dayjs';
-import { Button, Input, Checkbox, Tree, Spin, message, Switch, TreeDataNode, TreeProps } from 'antd';
+import { Button, Input, Checkbox, Spin, Switch, TreeDataNode, TreeProps } from 'antd';
 import { ArrowLeftOutlined, SearchOutlined } from '@ant-design/icons';
 import cs from 'classnames';
 import styles from './index.module.scss';
@@ -36,8 +36,7 @@ interface Props {
 }
 
 const BrowserData: React.FC<Props> = ({ onLink }) => {
-  const noDataFoundI18N = chrome.i18n.getMessage('noDataFound');
-  const logoutText = chrome.i18n.getMessage('logout');
+  const { getMessage: t } = chrome.i18n;
   const { state: { upateData, bookmarks: bookmarksData, titleMap: keyList }, dispatch: globalDispatch } = useContext(GlobalContext);
 
   //选中的所有key集合、和初始数据集合
@@ -255,7 +254,7 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
 
   return (
     <div className={styles.container}>
-      <Header tip={'Select content to be made searchable.'} />
+      <Header tip={t('select_content_to_be_made_searchable')} />
       <div className={styles['content']}>
         <div className={styles['left']}>
           <div className={styles['back']} onClick={() => onLink(1)}>
@@ -264,13 +263,13 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
         </div>
         <div className={styles['center']}>
           <div className={styles['header']}>
-            <p>BookMarks & Reading Lists</p>
+            <p>{t('bookMarks_reading_lists')}</p>
           </div>
           <div className={styles['control-box']}>
             <Input className={styles['search']} placeholder="Find items by keywords" prefix={<SearchOutlined />} onPressEnter={searchKeyWord} />
-            <Checkbox className={styles['select']} onChange={onChange}>Select/Deselect All Shown</Checkbox>
+            <Checkbox className={styles['select']} onChange={onChange}>{t('select_deselect_all_shown')}</Checkbox>
           </div>
-          <Spin spinning={loading} tip='Loading...' style={{ background: '#fff' }}>
+          <Spin spinning={loading} tip={t('loading...')} style={{ background: '#fff' }}>
             <DataList
               checkable
               onExpand={onExpand}
@@ -282,17 +281,17 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
               treeData={treeData} />
           </Spin>
 
-          <p>* Current URL list is local only until you authorize data collection.</p>
+          <p>* {t('current_URL_list_is_local_only_until_you_authorize_data_collection')}</p>
         </div>
         <div className={styles['right']}>
           <Button className={styles['import-btn']} size="middle" type="primary" block onClick={onImport}>
-            <span>Fetch {checkedCount} Items</span>
+            <span>{t('fetch')} {checkedCount} {t('items')}</span>
           </Button>
           <p className={styles['auto-add']}>
             <Switch checked={autoAdd} onChange={onChange} />
-            <span>Auto-add New Items</span>
+            <span>{t('auto_add_new_items')}</span>
           </p>
-          <p className={styles['exclude-tip']}>Exclude Bookmarks or Reading List</p>
+          <p onClick={() => onLink(3, true)} className={styles['exclude-tip']}>{t('skip_this_step')}</p>
         </div>
       </div>
     </div>

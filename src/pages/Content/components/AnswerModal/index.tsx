@@ -17,6 +17,7 @@ interface IReferences {
 }
 
 const AnswerModal: React.FC = () => {
+  const { getMessage: t } = chrome.i18n;
   const { state: globalState, dispatch: globalDispatch } = useContext(GlobalContext);
   const { progress, showAskModal, showAnswerModal, isRequesting, requestEnd, markdownStream } = globalState;
   const markdownStreamRef = useRef('');
@@ -217,7 +218,7 @@ const AnswerModal: React.FC = () => {
         <>
           <div className={styles.content}>
             <div className={styles.header}>
-              <h3>Sources: {References.length}</h3>
+              <h3>{t('sources')}: {References.length}</h3>
               <MyProgress />
             </div>
             {References.length > 0 ? (
@@ -243,12 +244,12 @@ const AnswerModal: React.FC = () => {
               </>
             ) : (
               <div className={styles['no-found']}>
-                <p className={styles.title}>No data available</p>
-                <p className={styles['sub-title']}>The sources may not be fully ready yet, or please try asking differently.</p>
-                <p className={styles['sub-title']}>Or you can</p>
+                <p className={styles.title}>{t('no_data_available')}</p>
+                <p className={styles['sub-title']}>{t('the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently')}</p>
+                <p className={styles['sub-title']}>{t('or_you_can')}</p>
                 <div className={styles['no-found-btns']}>
-                  <Button className={styles.btn} disabled>Query The Web</Button>
-                  <Button className={styles.btn} disabled>Ask AI</Button>
+                  <Button className={styles.btn} disabled>{t('query_the_web')}</Button>
+                  <Button className={styles.btn} disabled>{t('ask_AI')}</Button>
                 </div>
               </div>
             )}
@@ -263,7 +264,7 @@ const AnswerModal: React.FC = () => {
                       autoSize={false}
                       rows={1}
                       autoFocus={showAnswerModal}
-                      placeholder="Ask Your Saves"
+                      placeholder={t('ask_your_saves')}
                       onChange={(e) => {
                         setQuestion(e.currentTarget.value);
                       }}
@@ -291,7 +292,7 @@ const AnswerModal: React.FC = () => {
                       });
                     }
                   }}>
-                  New Query
+                  {t('new_query')}
                 </Button>
               </div>
               <Button

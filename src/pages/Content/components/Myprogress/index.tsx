@@ -13,7 +13,7 @@ interface IProgressData {
 }
 
 const MyProgress: React.FC = () => {
-    const { state: { showAskModal, showAnswerModal, progress, titleMap: keyList }, dispatch: globalDispatch } = useContext(GlobalContext);
+    const { state: { progress, titleMap: keyList }, dispatch: globalDispatch } = useContext(GlobalContext);
     const [more, setMore] = useState<boolean>(false);
     //使用该组件时引用
     // const [timer, setTimer] = useState<NodeJS.Timeout>();

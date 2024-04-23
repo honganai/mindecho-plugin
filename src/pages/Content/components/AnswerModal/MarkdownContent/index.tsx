@@ -40,9 +40,10 @@ const MarkdownContent: React.FC<IProps> = ({ markdownStream = '', refresh }) => 
 
   const [data, setData] = useState<IContent[]>([]);
   const [copyStatus, setCopyStatus] = useState(false);
-  const copyFailedI18N = chrome.i18n.getMessage('copyFailed');
-  const copySuccessI18N = chrome.i18n.getMessage('copySuccess');
-  const copyNotSupportedI18N = chrome.i18n.getMessage('copyNotSupported');
+  const { getMessage: t } = chrome.i18n;
+  const copyFailedI18N = t('copyFailed');
+  const copySuccessI18N = t('copySuccess');
+  const copyNotSupportedI18N = t('copyNotSupported');
 
   const parseMd = (mdStr: string) => {
     const container = document.createElement('div');

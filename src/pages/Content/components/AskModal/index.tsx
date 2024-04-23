@@ -1,12 +1,11 @@
-import React, { useState, useContext, useEffect, useCallback } from 'react';
-import { Modal, Input, Spin, Switch } from 'antd';
-import { MoreOutlined, CheckCircleOutlined, CloseOutlined } from '@ant-design/icons';
-import { getDocument, SetInterval, truncateTitle, openSettings } from '@/utils/common.util';
+import React, { useState, useContext, useEffect } from 'react';
+import { Modal, Input, Switch } from 'antd';
+import { MoreOutlined, CloseOutlined } from '@ant-design/icons';
+import { getDocument, truncateTitle, openSettings } from '@/utils/common.util';
 import GlobalContext, { ActionType as GlobalActionType } from '@/reducer/global';
 import _, { set } from 'lodash';
 import EnterImage from '@/assets/img/enter.svg';
 import styles from './index.module.scss';
-import { render } from 'react-dom';
 import MyProgress from '../Myprogress';
 import { getAutoAdd, setAutoAdd as setStorageAutoAdd } from '@/constants';
 
@@ -20,6 +19,7 @@ interface IProps {
 }
 
 const AskModal: React.FC<IProps> = ({ type }) => {
+  const { getMessage: t } = chrome.i18n;
   const { state: globalState, dispatch: globalDispatch } = useContext(GlobalContext);
   const { showAskModal, showAnswerModal, progress } = globalState;
   const [example, setExample] = useState<IExample>({ title: '', url: '' });
@@ -111,7 +111,7 @@ const AskModal: React.FC<IProps> = ({ type }) => {
           id="mindecho-ask-input"
           autoSize={false}
           rows={2}
-          placeholder="Ask Your Saves"
+          placeholder={t('ask_your_saves')}
           onPressEnter={(e) => {
             e.preventDefault(); // 阻止回车换行，直接提交
             console.log(e.currentTarget.value);
@@ -157,7 +157,7 @@ const AskModal: React.FC<IProps> = ({ type }) => {
           }}
         />
         <p className={styles['example']}>
-          E.g. “*{example.title ? truncateTitle(example.title) : 'No data available'}*”
+          E.g. “*{example.title ? truncateTitle(example.title) : t('no_data_available')}*”
         </p>
         <div className={styles.enter}>
           <EnterImage />
@@ -166,7 +166,7 @@ const AskModal: React.FC<IProps> = ({ type }) => {
       <div className={styles['source-container']}>
         {/* 靠左 koman */}
         <div className={styles.right}>
-          <span className={styles.title}>Sources</span>
+          <span className={styles.title}>{t('sources')}</span>
           <MyProgress />
         </div>
         <MoreOutlined style={{ cursor: 'pointer' }} onClick={() => { setShowSettings(!showSettings) }} />
@@ -174,9 +174,9 @@ const AskModal: React.FC<IProps> = ({ type }) => {
       {
         showSettings && (
           <div className={styles['setting']}>
-            <p className={styles['title']}>Settings</p>
+            <p className={styles['title']}>{t('settings')}</p>
             <p className={styles['text']} style={{ display: type === 'options' ? "none" : 'block' }}>
-              <span>Manage Sources</span>
+              <span>{t('manage_sources')}</span>
               <svg width="20" height="20" onClick={() => openSettings()} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
                 style={{ float: 'right', cursor: 'pointer', marginLeft: 'auto' }}>
                 <path d="M12.5 6.875V5.3125C12.5 4.8981 12.3354 4.50067 12.0424 4.20765C11.7493 3.91462 11.3519 3.75 10.9375 3.75H3.4375C3.0231 3.75 2.62567 3.91462 2.33265 4.20765C2.03962 4.50067 1.875 4.8981 1.875 5.3125V14.6875C1.875 15.1019 2.03962 15.4993 2.33265 15.7924C2.62567 16.0854 3.0231 16.25 3.4375 16.25H10.9375C11.3519 16.25 11.7493 16.0854 12.0424 15.7924C12.3354 15.4993 12.5 15.1019 12.5 14.6875V13.125" stroke="#6B6B6B" stroke-width="1.00189" stroke-linecap="round" stroke-linejoin="round" />
@@ -187,7 +187,7 @@ const AskModal: React.FC<IProps> = ({ type }) => {
               {/* <img src={optionIcon} alt="Manage Sources"  style={{ float: 'right',cursor: 'pointer', width: '20px', height: '20px', marginLeft: 'auto' }} />*/}
             </p>
             <p className={styles['text']}>
-              <Switch checked={autoAdd} onChange={setAutoAddStatus} size="small" className={styles.switch} /><span>Auto-add New Items</span>
+              <Switch checked={autoAdd} onChange={setAutoAddStatus} size="small" className={styles.switch} /><span>{t('auto_add_new_items')}</span>
             </p>
             <CloseOutlined onClick={() => { setShowSettings(false) }} className={styles['close-setting-btn']} />
           </div>
