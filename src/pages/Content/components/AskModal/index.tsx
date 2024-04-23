@@ -167,7 +167,7 @@ const AskModal: React.FC<IProps> = ({ type }) => {
         {/* 靠左 koman */}
         <div className={styles.right}>
           <span className={styles.title}>{t('sources')}</span>
-          <MyProgress />
+          <MyProgress moreCount={3} />
         </div>
         <MoreOutlined style={{ cursor: 'pointer' }} onClick={() => { setShowSettings(!showSettings) }} />
       </div>

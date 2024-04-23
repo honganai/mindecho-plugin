@@ -20,25 +20,27 @@ const Building: React.FC<IProp> = ({ type = 'browser', status = false }) => {
   const { getMessage: t } = chrome.i18n;
   const { state: { upateData, progress }, dispatch: globalDispatch } = useContext(GlobalContext);
   const [precent, setPrecent] = useState(0);
-  const [done, setDone] = useState(status);
+  const [done, setDone] = useState(false);
   const [waitTime, setWaitTime] = useState(null as any);
   const TIMEOUT = 600; //seconds 最长等待时间
   const [timer, setTimer] = useState<NodeJS.Timeout>();
   const MIN_TIMEOUT = 60; //最小等待时间
 
   useEffect(() => {
-    !status && upateUserUrl();
+    if (_.isArray(upateData) && upateData.length > 0) {
+      upateUserUrl();
+    }
   }, [upateData]);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      !status && getProgress();
+      getProgress();
     }, 5000);
 
     setTimer(intervalId)
 
     return () => clearInterval(intervalId); // Ensure the interval is cleared when the component unmounts
-  }, [waitTime, status]);
+  }, [waitTime]);
 
   const upateUserUrl = () => {
     chrome.runtime.sendMessage({ type: 'request', api: 'update_user_url', body: upateData }, (res) => {

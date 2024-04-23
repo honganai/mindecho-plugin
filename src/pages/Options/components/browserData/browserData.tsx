@@ -291,7 +291,7 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
             <Switch checked={autoAdd} onChange={onChange} />
             <span>{t('auto_add_new_items')}</span>
           </p>
-          <p onClick={() => onLink(3, true)} className={styles['exclude-tip']}>{t('skip_this_step')}</p>
+          <p onClick={() => onLink(5)} className={styles['exclude-tip']}>{t('skip_this_step')}</p>
         </div>
       </div>
     </div>

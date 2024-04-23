@@ -1,5 +1,7 @@
 import dayjs from 'dayjs';
 import { message } from 'antd';
+import { getDocument as pdfGetDocument } from 'pdfjs-dist';
+import 'pdfjs-dist/build/pdf.worker.entry';
 import { ThinkingCopyObject } from '@/types';
 import {useEffect, useRef} from 'react';
 
@@ -69,6 +71,39 @@ export const splitTextRow = (text?: string) => {
       .filter((t: string) => t.length >= 13)
       .filter((t: string) => !!t) || []
   );
+};
+
+/**
+ * @description: 通过 url 提取 pdf 的文本
+ * @param {string} pdfUrl pdf 的链接
+ * @param {boolean} process 是否要在执行过程中抛出（用于进度条
+ * @param {function} callback 回调方法，返回执行状态 status 和文本内容 textContent
+ * @return {*}
+ */
+export const getPdfTextContent = async (
+  { pdfUrl, process = false }: { pdfUrl: string; process?: boolean },
+  callback: ({ status, result }: { status: string; result: any }) => void,
+) => {
+  const pdf = await pdfGetDocument(pdfUrl).promise;
+  // 获取文档的元数据
+  const metaData = await pdf.getMetadata();
+  let title = '' ;
+  let author = '';
+  if (metaData.info) {
+    title = (metaData.info as any).Title;
+    author = (metaData.info as any).Author;
+  }
+
+  const total = pdf.numPages;
+  let totalContent = '';
+  for (let i = 1; i <= total; i++) {
+    const page = await pdf.getPage(i);
+    const { items } = await page.getTextContent();
+    if (!(Array.isArray(items) && items.length > 0)) return false;
+    items.forEach((item: any) => (totalContent += item.str === '' ? '\n' : item.str));
+  }
+  title = title || totalContent.split('\n')[0];
+  return { status: 'completed', result: {title, author, content: totalContent, info: metaData.info} };
 };
 
 

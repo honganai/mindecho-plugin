@@ -11,8 +11,11 @@ interface IProgressData {
     count: number;
     pended: number;
 }
+interface IProps {
+    moreCount: number;
+}
 
-const MyProgress: React.FC = () => {
+const MyProgress: React.FC<IProps> = ({ moreCount }) => {
     const { state: { progress, titleMap: keyList }, dispatch: globalDispatch } = useContext(GlobalContext);
     const [more, setMore] = useState<boolean>(false);
     //使用该组件时引用
@@ -102,7 +105,9 @@ const MyProgress: React.FC = () => {
         <Spin spinning={progressData.length <= 0} indicator={<LoadingOutlined style={{ fontSize: 18 }} spin />}>
             <div className={styles.content} style={{ height: more ? 'auto' : '26px' }}>
                 {
-                    more ? <CaretDownOutlined onClick={() => setMore(false)} /> : <CaretRightOutlined onClick={() => setMore(true)} />
+                    progressData.length > moreCount ?
+                        more ? <CaretDownOutlined onClick={() => setMore(false)} /> : <CaretRightOutlined onClick={() => setMore(true)} />
+                        : null
                 }
                 {renderProgress(progressData)}
             </div>

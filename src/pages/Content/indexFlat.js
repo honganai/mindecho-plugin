@@ -3,6 +3,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import Root from './Root';
 import _ from 'lodash';
+import { getPdfTextContent } from '@/utils/common.util';
 import getCleanArticle from './distillConfig';
 import { setPagesInfo, getHistoryAutoAdd } from '@/constants';
 import './content.styles.css';
@@ -54,7 +55,39 @@ function init() {
 }
 
 async function grabPageInfo() {
+  const data = await getNeedAndData();
+  if (data) {
+    updatePageInfo(data);
+  }
+}
+
+async function updatePageInfo(pageInfo) {
+  const info = {
+    title: pageInfo?.title || '',
+    url: window.location.href, 
+    type: 'history', 
+    user_create_time: pageInfo?.timestrip || new Date().toISOString(), 
+    node_id: 0, node_index: 0, parentId: 0, 
+    user_used_time: new Date().toISOString(), 
+    origin_info: '', 
+    author: pageInfo?.author || document.querySelector('meta[name="author"]')?.content || document.querySelector('meta[property="og:article:author"]')?.content || document.querySelector('[class*="author"]')?.innerHTML || '', 
+    content: pageInfo?.content || '', 
+    status: 3
+  };
+
+  const auto = await getHistoryAutoAdd();
+  if ( auto ) {
+    chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: [info] }, (res) => {
+      console.log('uploadUserArticle res:', res);
+    });
+  }else {
+    setPagesInfo(info);
+  }
+}
+
+async function getNeedAndData() {
   // 获取页面中的JSON-LD数据
+  //如果schema为新闻、文章、博客、学术文章中的一种，则返回true
   const typeList = ['NewsArticle', 'Article', 'BlogPosting', 'ScholarlyArticle'];
   const jsonLdElements = document.querySelectorAll('script[type="application/ld+json"]');
   const cTypeList = [];
@@ -69,27 +102,20 @@ async function grabPageInfo() {
     }
   });
   const result = _.intersectionBy(typeList, cTypeList);
-  if (result.length > 0) {
+  if (result.length > 0 || window.location.href.startsWith('https://mp.weixin.qq.com/s/')) {
     const {title, content, timestrip} = getCleanArticle();
-    const info = {
-      title,
-      url: window.location.href, 
-      type: 'history', 
-      user_create_time: timestrip, 
-      node_id: 0, node_index: 0, parentId: 0, 
-      user_used_time: new Date().toISOString(), 
-      origin_info: '', 
-      author: document.querySelector('meta[name="author"]')?.content || document.querySelector('meta[property="og:article:author"]')?.content || document.querySelector('[class*="author"]')?.innerHTML || '', 
-      content, 
-      status: 3};
-  
-    const auto = await getHistoryAutoAdd();
-    if ( auto ) {
-      chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: [info] }, (res) => {
-        console.log('uploadUserArticle res:', res);
-      });
+    return {title, content, timestrip};
+  }
+  //如果网页后缀为.pdf，则返回true
+  else if (window.location.href.endsWith('.pdf')) {
+    const res = await getPdfTextContent({ pdfUrl: window.location.href });
+    if (res.status === 'completed') {
+      return res.result;
     }else {
-      setPagesInfo(info);
+      return false;
     }
+  }
+  else{
+    return false;
   }
 }

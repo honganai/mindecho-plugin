@@ -222,7 +222,7 @@ const HistoryData: React.FC<Props> = ({ onLink }) => {
             <Switch checked={autoAdd} onChange={onChange} />
             <span>{t('auto_collect_new_matches')}</span>
           </p>
-          <p onClick={() => onLink(3, true)} className={styles['exclude-tip']}>{t('exclude_history')}</p>
+          <p onClick={() => onLink(3, true)} className={styles['exclude-tip']}>{t('skip_this_step')}</p>
         </div>
       </div>
     </div>
