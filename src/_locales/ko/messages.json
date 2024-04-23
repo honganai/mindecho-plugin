@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "데이터가 없습니다",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "이 단계를 건너 뛰",
+        "description": ""
+    },
+    "new_query": {
+        "message": "새 쿼리",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "AI에게 물어보세요",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "웹 쿼리",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "아니면 할 수 있습니다",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "소스가 아직 완전히 준비되지 않았을 수 있습니다. 아니면 다르게 요청해 보세요.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "소스 관리",
+        "description": ""
+    },
+    "settings": {
+        "message": "설정",
+        "description": ""
+    },
+    "sources": {
+        "message": "출처",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "자료 없음",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "저장 내용을 물어보세요",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "보안 연결",
+        "description": ""
+    },
+    "saves": {
+        "message": "저장",
+        "description": ""
+    },
+    "pocket": {
+        "message": "포켓",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "먼지 쌓인 보관함을 되살리려면 Pocket에 연결하세요.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "PC에서",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "맥에서",
+        "description": ""
+    },
+    "command_E": {
+        "message": "명령 + E",
+        "description": ""
+    },
+    "press": {
+        "message": "누르다",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "키보드 스트로크 단축키",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "이 작업에는 최대 10분이 소요될 수 있습니다. 이 페이지를 열어두고 다른 작업을 계속하세요.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "당신의 마음을 구축Echo",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "아이콘 클릭",
+        "description": ""
+    },
+    "or": {
+        "message": "또는",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "키스트로크",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "언제든지",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "저장 내용을 검색하려면 mindECHO를 활성화하세요",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "데이터가 아직 처리 중입니다. 나는 그것에 참여하고 있으며 백그라운드에서 계속할 것입니다.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Pocket Saves를 가져왔습니다.",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "가져온 브라우저 데이터",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "위의 확장 바에서",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "기록 제외",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "새로운 일치 항목 자동 수집",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "키워드로 항목 찾기",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "검색 기록의 공개 지식 페이지",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "공개 기사, 블로그, 에세이 PDF의 URL만 포함될 수 있습니다. 개인 및 업무 관련 이력은 포함되지 않습니다.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "기억할 필요가 없도록 검색 기록에서 전체 텍스트 검색을 활성화합니다.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "북마크 또는 읽기 목록 제외",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "새 항목 자동 추가",
+        "description": ""
+    },
+    "items": {
+        "message": "품목",
+        "description": ""
+    },
+    "fetch": {
+        "message": "술책",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "현재 URL 목록은 데이터 수집을 승인할 때까지만 로컬입니다.",
+        "description": ""
+    },
+    "loading": {
+        "message": "로드 중...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "표시된 항목 모두 선택/선택 취소",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "북마크 및 읽기 목록",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "검색 가능하게 만들 콘텐츠를 선택하세요.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "더 많은 소스가 지원됩니다",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "저장된 내용의 전체 텍스트를 가져와서 검색할 수 있습니다.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "귀하의 Pocket Saves 목록은 보안 인증을 통해 가져오게 됩니다.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "소스 선택",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "다른 소스 연결",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "브라우저에서 컬렉션 가져오기",
+        "description": ""
+    },
+    "Note": {
+        "message": "메모",
+        "description": ""
+    },
+    "Hello": {
+        "message": "안녕하세요",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "다시 탐색하고 싶은 정보의 보고를 선택하는 것부터 시작해 보는 것은 어떨까요?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "저장한 내용에서 즉시 무엇이든 찾아보세요.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "몇 분 안에 나만의 웹용 비공개 Google + ChatGPT를 구축하세요",
+        "description": ""
     }
 }

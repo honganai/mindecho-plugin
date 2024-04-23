@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "डाटा प्राप्त नहीं हुआ",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "इस स्टेप को छोड़ दें",
+        "description": ""
+    },
+    "new_query": {
+        "message": "नया प्रश्न",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "एआई से पूछें",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "वेब पर क्वेरी करें",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "या आप कर सकते हैं",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "हो सकता है कि स्रोत अभी पूरी तरह से तैयार न हों, या कृपया अलग तरीके से पूछने का प्रयास करें।",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "स्रोत प्रबंधित करें",
+        "description": ""
+    },
+    "settings": {
+        "message": "समायोजन",
+        "description": ""
+    },
+    "sources": {
+        "message": "सूत्रों का कहना है",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "कोई डेटा मौजूद नहीं",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "अपने सेव से पूछें",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "सुरक्षित संयोजन",
+        "description": ""
+    },
+    "saves": {
+        "message": "बचाता है",
+        "description": ""
+    },
+    "pocket": {
+        "message": "जेब",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "अपने धूल भरे भंडार को पुनर्जीवित करने के लिए पॉकेट से कनेक्ट करें।",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "पीसी पर",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + ई",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "मैक पर",
+        "description": ""
+    },
+    "command_E": {
+        "message": "कमांड + ई",
+        "description": ""
+    },
+    "press": {
+        "message": "प्रेस",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "कीबोर्ड स्ट्रोक शॉर्टकट",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "इसमें 10 मिनट तक का समय लग सकता है। कृपया इस पेज को खुला रखें और अन्य कार्य जारी रखें।",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "अपने माइंडइको का निर्माण",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "आइकन क्लिक करें",
+        "description": ""
+    },
+    "or": {
+        "message": "या",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "कीस्ट्रोक",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "किसी भी समय",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "अपने सेव को खोजने के लिए mindECHO को सक्रिय करें",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "डेटा अभी भी संसाधित हो रहा है; मैं इस पर काम कर रहा हूं और पृष्ठभूमि में काम जारी रखूंगा।",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "पॉकेट सेव आयातित",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "ब्राउज़र डेटा आयातित",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "ऊपर एक्सटेंशन बार से",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "इतिहास बहिष्कृत करें",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "नए मिलानों को स्वतः एकत्रित करें",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "कीवर्ड द्वारा आइटम खोजें",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "ब्राउज़िंग इतिहास से सार्वजनिक ज्ञान पृष्ठ",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "केवल सार्वजनिक लेख, ब्लॉग और निबंध पीडीएफ के यूआरएल ही शामिल किए जा सकते हैं। व्यक्तिगत और कार्य-संबंधी इतिहास शामिल नहीं हैं।",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "याद रखने की आवश्यकता को खत्म करने के लिए ब्राउज़िंग इतिहास में पूर्ण-पाठ खोज सक्षम करें।",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "बुकमार्क या पठन सूची को बाहर करें",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "नए आइटम स्वचालित रूप से जोड़ें",
+        "description": ""
+    },
+    "items": {
+        "message": "सामान",
+        "description": ""
+    },
+    "fetch": {
+        "message": "लाना",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "वर्तमान URL सूची तब तक स्थानीय ही रहेगी जब तक आप डेटा संग्रहण को अधिकृत नहीं करते।",
+        "description": ""
+    },
+    "loading": {
+        "message": "लोड हो रहा है...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "दिखाए गए सभी का चयन/अचयन करें",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "बुकमार्क और पठन सूची",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "खोज योग्य बनाने के लिए सामग्री का चयन करें.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "अधिक स्रोतों का समर्थन किया जाएगा",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "सहेजे गए दस्तावेज़ों का पूरा पाठ प्राप्त किया जाएगा तथा उसे खोजा जा सकेगा।",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "आपकी पॉकेट सेव सूची सुरक्षित प्राधिकरण के साथ आयात की जाएगी।",
+        "description": ""
+    },
+    "select_source": {
+        "message": "सोर्स चुनें",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "अन्य स्रोतों से जुड़ें",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "ब्राउज़र में संग्रह आयात करें",
+        "description": ""
+    },
+    "Note": {
+        "message": "टिप्पणी",
+        "description": ""
+    },
+    "Hello": {
+        "message": "नमस्ते",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "क्यों न हम जानकारी के उस खजाने को चुनने से शुरुआत करें जिसे आप फिर से खोजना चाहेंगे?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "अपने स्वयं के सहेजे गए डेटा से तुरंत कुछ भी खोजें।",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "मिनटों में अपने वेब के लिए एक निजी Google + ChatGPT बनाएं",
+        "description": ""
     }
 }

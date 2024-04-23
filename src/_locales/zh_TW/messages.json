@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "沒有找到數據",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "跳過此步驟",
+        "description": ""
+    },
+    "new_query": {
+        "message": "新查詢",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "詢問人工智慧",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "網上查詢",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "或者你可以",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "來源可能尚未完全準備好，或者請嘗試以其他方式詢問。",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "管理資源",
+        "description": ""
+    },
+    "settings": {
+        "message": "設定",
+        "description": ""
+    },
+    "sources": {
+        "message": "來源",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "無可用數據",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "詢問你的保存狀況",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "安全連線",
+        "description": ""
+    },
+    "saves": {
+        "message": "儲存",
+        "description": ""
+    },
+    "pocket": {
+        "message": "口袋",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "連接到 Pocket 即可恢復您塵土飛揚的藏品。",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "在電腦上",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "在蘋果電腦上",
+        "description": ""
+    },
+    "command_E": {
+        "message": "指令+E",
+        "description": ""
+    },
+    "press": {
+        "message": "按",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "鍵盤快速鍵",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "這可能最多需要 10 分鐘。請保持此頁面開啟並繼續執行其他任務。",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "培養你的思維Echo",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "圖標點擊",
+        "description": ""
+    },
+    "or": {
+        "message": "或者",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "擊鍵",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "隨時透過",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "啟動 mindECHO 來搜尋您的保存",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "數據仍在處理中；我正在處理這件事，並將在後台繼續進行。",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Pocket Save 導入",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "瀏覽器資料導入",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "從上面的延長桿",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "排除歷史記錄",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "自動收集新比賽",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "按關鍵字找項目",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "瀏覽歷史記錄中的公共知識頁面",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "只能包含公共文章、部落格和論文 PDF 的 URL。不包括個人和工作相關的歷史記錄。",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "在瀏覽歷史記錄中啟用全文搜索，以消除記憶的需要。",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "排除書籤或閱讀列表",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "自動新增項目",
+        "description": ""
+    },
+    "items": {
+        "message": "專案",
+        "description": ""
+    },
+    "fetch": {
+        "message": "拿來",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "在您授權資料收集之前，目前 URL 清單僅是本機的。",
+        "description": ""
+    },
+    "loading": {
+        "message": "載入中...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "選擇/取消選擇所有顯示的內容",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "書籤和閱讀列表",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "選擇要搜尋的內容。",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "將支援更多來源",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "將獲取保存的全文並使其可搜尋。",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "您的 Pocket Saves 清單將透過安全授權匯入。",
+        "description": ""
+    },
+    "select_source": {
+        "message": "選擇來源",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "連接其他來源",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "在瀏覽器中匯入集合",
+        "description": ""
+    },
+    "Note": {
+        "message": "筆記",
+        "description": ""
+    },
+    "Hello": {
+        "message": "你好",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "我們首先選擇您想要再次探索的資訊寶庫怎麼樣？",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "從您自己的保存中立即查找任何內容。",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "只需幾分鐘即可為您自己的網站建立私人 Google + ChatGPT",
+        "description": ""
     }
 }

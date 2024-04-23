@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Δε βρέθηκαν δεδομένα",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Παραλείψτε αυτό το βήμα",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Νέο ερώτημα",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Ρωτήστε το AI",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Ερώτηση στον Ιστό",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Ή μπορείς",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "Οι πηγές μπορεί να μην είναι ακόμη πλήρως έτοιμες ή δοκιμάστε να ρωτήσετε διαφορετικά.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Διαχείριση πηγών",
+        "description": ""
+    },
+    "settings": {
+        "message": "Ρυθμίσεις",
+        "description": ""
+    },
+    "sources": {
+        "message": "Πηγές",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Δεν υπάρχουν διαθέσιμα δεδομένα",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Ρωτήστε τις αποταμιεύσεις σας",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Ασφαλής Σύνδεση",
+        "description": ""
+    },
+    "saves": {
+        "message": "Αποθηκεύει",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Τσέπη",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Συνδεθείτε στο Pocket για να αναβιώσετε τη σκονισμένη αποθήκη σας.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "στον υπολογιστή",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "σε Mac",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Command + E",
+        "description": ""
+    },
+    "press": {
+        "message": "Τύπος",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Συντομεύσεις πληκτρολογίου",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "Αυτό μπορεί να διαρκέσει έως και 10 λεπτά. Κρατήστε αυτή τη σελίδα ανοιχτή και συνεχίστε με άλλες εργασίες.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "Χτίζοντας το MindEcho σας",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "κλικ στο εικονίδιο",
+        "description": ""
+    },
+    "or": {
+        "message": "ή",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "πληκτρολόγηση",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "οποιαδήποτε στιγμή μέσω",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Ενεργοποιήστε το mindECHO για να κάνετε αναζήτηση στα Saves σας",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Τα δεδομένα είναι ακόμα υπό επεξεργασία. Είμαι σε αυτό και θα συνεχίσω στο παρασκήνιο.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Αποθηκεύσεις τσέπης εισήχθησαν",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Εισήχθησαν δεδομένα προγράμματος περιήγησης",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "Από τη γραμμή επέκτασης παραπάνω",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Εξαίρεση Ιστορίας",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Αυτόματη συλλογή νέων αντιστοιχιών",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Βρείτε στοιχεία με λέξεις-κλειδιά",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Σελίδες δημόσιας γνώσης από το ιστορικό περιήγησης",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Μπορούν να συμπεριληφθούν μόνο διευθύνσεις URL δημόσιων άρθρων, ιστολογίων και PDF δοκιμίων. Το προσωπικό και το επαγγελματικό ιστορικό ΔΕΝ περιλαμβάνονται.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Ενεργοποιήστε την αναζήτηση πλήρους κειμένου στο ιστορικό περιήγησης για να εξαλείψετε την ανάγκη για απομνημόνευση.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Εξαίρεση σελιδοδεικτών ή λίστας ανάγνωσης",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Αυτόματη προσθήκη νέων στοιχείων",
+        "description": ""
+    },
+    "items": {
+        "message": "Είδη",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Φέρω",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "Η τρέχουσα λίστα διευθύνσεων URL είναι τοπική μόνο μέχρι να εξουσιοδοτήσετε τη συλλογή δεδομένων.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Φόρτωση...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Επιλογή/Αποεπιλογή όλων των Εμφανιζόμενων",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Σελιδοδείκτες και λίστες ανάγνωσης",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Επιλέξτε περιεχόμενο για αναζήτηση.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Θα υποστηριχθούν περισσότερες πηγές",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "Το πλήρες κείμενο των αποθηκευμένων θα ληφθεί και θα γίνει αναζήτηση.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Η λίστα Pocket Saves θα εισαχθεί με ασφαλή εξουσιοδότηση.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Επιλέξτε Πηγή",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Συνδέστε άλλες πηγές",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Εισαγωγή συλλογών στο πρόγραμμα περιήγησης",
+        "description": ""
+    },
+    "Note": {
+        "message": "Σημείωση",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Γειά σου",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Τι θα λέγατε να ξεκινήσουμε επιλέγοντας τον θησαυρό των πληροφοριών που θα θέλατε να εξερευνήσετε ξανά;",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Βρείτε οτιδήποτε άμεσα από τα δικά σας αποθηκευμένα.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Δημιουργήστε ένα ιδιωτικό Google + ChatGPT για τον δικό σας ιστό μέσα σε λίγα λεπτά",
+        "description": ""
     }
 }

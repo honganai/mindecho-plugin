@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Nenalezena žádná data",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Tento krok přeskočte",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Nový dotaz",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Zeptejte se AI",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Dotaz na webu",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Nebo můžete",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "Zdroje možná ještě nejsou plně připraveny, nebo se prosím zkuste zeptat jinak.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Správa zdrojů",
+        "description": ""
+    },
+    "settings": {
+        "message": "Nastavení",
+        "description": ""
+    },
+    "sources": {
+        "message": "Prameny",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Nejsou k dispozici žádné údaje",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Zeptejte se svých úspor",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Zabezpečené připojení",
+        "description": ""
+    },
+    "saves": {
+        "message": "Uloží",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Kapsa",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Připojte se ke Pocket a oživte svou zaprášenou skrýš.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "na PC",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "na Macu",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Command + E",
+        "description": ""
+    },
+    "press": {
+        "message": "lis",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Klávesové zkratky pro tahy klávesnice",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "To může trvat až 10 minut. Ponechte prosím tuto stránku otevřenou a pokračujte v dalších úkolech.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "Budování svého MindEcho",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "kliknutí na ikonu",
+        "description": ""
+    },
+    "or": {
+        "message": "nebo",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "stisknutí klávesy",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "kdykoliv přes",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Aktivujte mindECHO a prohledejte své úspory",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Data se stále zpracovávají; Jsem na tom a budu pokračovat na pozadí.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Pocket Saves Importováno",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Data prohlížeče byla importována",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "Z lišty rozšíření výše",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Vyloučit historii",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Automatické shromažďování nových shod",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Najděte položky podle klíčových slov",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Veřejné znalostní stránky z historie prohlížení",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Zahrnout lze pouze adresy URL veřejných článků, blogů a esejí PDF. Osobní a pracovní historie NENÍ zahrnuta.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Povolte fulltextové vyhledávání v historii procházení, abyste si nemuseli pamatovat.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Vyloučit záložky nebo seznam četby",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Automatické přidávání nových položek",
+        "description": ""
+    },
+    "items": {
+        "message": "Položky",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Vynést",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "Aktuální seznam adres URL je pouze místní, dokud nepovolíte shromažďování dat.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Načítání...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Vybrat/zrušit výběr všech zobrazených",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Záložky a seznamy četby",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Vyberte obsah, který bude možné vyhledávat.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Bude podporováno více zdrojů",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "Úplný text uložení bude načten a bude možné jej vyhledávat.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Váš seznam Pocket Saves bude importován se zabezpečenou autorizací.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Vyberte Zdroj",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Připojte další zdroje",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Import sbírek v prohlížeči",
+        "description": ""
+    },
+    "Note": {
+        "message": "Poznámka",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Ahoj",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Co kdybychom začali výběrem pokladu informací, které byste rádi znovu prozkoumali?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Okamžitě najděte cokoli ze svých vlastních uložených položek.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Vytvořte si soukromý Google + ChatGPT pro svůj vlastní web v minutách",
+        "description": ""
     }
 }

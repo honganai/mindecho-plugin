@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "何もデータが見つかりませんでした",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "このステップを飛ばす",
+        "description": ""
+    },
+    "new_query": {
+        "message": "新しいクエリ",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "AIに聞く",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "ウェブを検索",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "あるいは",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "ソースがまだ完全に準備されていない可能性があります。または、別の方法で質問してください。",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "ソースの管理",
+        "description": ""
+    },
+    "settings": {
+        "message": "設定",
+        "description": ""
+    },
+    "sources": {
+        "message": "出典",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "データなし",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "セーブについて質問する",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "安全な接続",
+        "description": ""
+    },
+    "saves": {
+        "message": "保存",
+        "description": ""
+    },
+    "pocket": {
+        "message": "ポケット",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Pocket に接続して、ほこりまみれの隠し場所を復活させましょう。",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "PCで",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "Macの場合",
+        "description": ""
+    },
+    "command_E": {
+        "message": "コマンド+E",
+        "description": ""
+    },
+    "press": {
+        "message": "プレス",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "キーボードストロークのショートカット",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "これには最大 10 分かかる場合があります。このページを開いたままにして、他のタスクを続行してください。",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "MindEchoの構築",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "アイコンをクリック",
+        "description": ""
+    },
+    "or": {
+        "message": "または",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "キーストローク",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "いつでも",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "mindECHO をアクティブにして保存したデータを検索する",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "データはまだ処理中です。処理中なので、バックグラウンドで続行します。",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "ポケットセーブをインポートしました",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "ブラウザデータをインポートしました",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "上の延長バーから",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "履歴を除外",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "新しいマッチを自動収集",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "キーワードでアイテムを検索",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "閲覧履歴からの公開ナレッジページ",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "公開記事、ブログ、エッセイ PDF の URL のみを含めることができます。個人履歴や仕事関連の履歴は含められません。",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "閲覧履歴の全文検索を有効にして、記憶する必要をなくします。",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "ブックマークまたはリーディングリストを除外する",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "新しいアイテムを自動追加",
+        "description": ""
+    },
+    "items": {
+        "message": "アイテム",
+        "description": ""
+    },
+    "fetch": {
+        "message": "フェッチ",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "現在の URL リストは、データ収集を承認するまでローカルのみです。",
+        "description": ""
+    },
+    "loading": {
+        "message": "読み込み中...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "表示されているものをすべて選択/選択解除",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "ブックマークと読書リスト",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "検索可能にするコンテンツを選択します。",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "より多くのソースがサポートされる",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "保存された全文が取得され、検索可能になります。",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Pocket Saves リストは安全な認証でインポートされます。",
+        "description": ""
+    },
+    "select_source": {
+        "message": "ソースを選択",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "他のソースを接続する",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "ブラウザでコレクションをインポートする",
+        "description": ""
+    },
+    "Note": {
+        "message": "注記",
+        "description": ""
+    },
+    "Hello": {
+        "message": "こんにちは",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "まずは、もう一度探索したい情報の宝庫を選ぶことから始めてみませんか?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "自分の保存したものから何でもすぐに見つけられます。",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "数分で自分のウェブにプライベートな Google + ChatGPT を構築",
+        "description": ""
     }
 }

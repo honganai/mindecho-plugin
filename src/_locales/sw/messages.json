@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Hakuna data iliyopatikana",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Ruka Hatua Hii",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Swali Jipya",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Uliza AI",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Swali kwenye Mtandao",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Au unaweza",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "Vyanzo vinaweza kuwa bado havijawa tayari, au tafadhali jaribu kuuliza kwa njia tofauti.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Dhibiti Vyanzo",
+        "description": ""
+    },
+    "settings": {
+        "message": "Mipangilio",
+        "description": ""
+    },
+    "sources": {
+        "message": "Vyanzo",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Hakuna data inayopatikana",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Uliza Hifadhi Zako",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Muunganisho Salama",
+        "description": ""
+    },
+    "saves": {
+        "message": "Huhifadhi",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Mfukoni",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Unganisha kwenye Pocket ili kufufua stash yako yenye vumbi.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "kwenye PC",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "kwenye Mac",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Amri + E",
+        "description": ""
+    },
+    "press": {
+        "message": "Bonyeza",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Njia za Mkato za Kibodi",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "Hii inaweza kuchukua hadi dakika 10. Tafadhali weka ukurasa huu wazi na uendelee na kazi zingine.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "Kujenga Akili Yako",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "bonyeza icon",
+        "description": ""
+    },
+    "or": {
+        "message": "au",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "kibonye",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "wakati wowote kupitia",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Washa mindECHO kutafuta Hifadhi Zako",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Data bado inachakatwa; Niko juu yake na nitaendelea nyuma.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Hifadhi za Mfukoni Zimeingizwa",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Data ya Kivinjari Imeingizwa",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "Kutoka kwa Upau wa Kiendelezi Juu",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Ondoa Historia",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Kusanya Mechi Mpya Kiotomatiki",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Tafuta vitu kwa maneno muhimu",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Kurasa za Maarifa ya Umma kutoka kwa Historia ya Kuvinjari",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "URL za makala za umma, blogu, na PDF za insha pekee ndizo zinazoweza kujumuishwa. Historia ya kibinafsi na inayohusiana na kazi HAIJAjumuishwa.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Washa utafutaji wa maandishi kamili katika historia ya kuvinjari ili kuondoa hitaji la kukariri.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Usijumuishe Alamisho au Orodha ya Kusoma",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Ongeza Vipengee Vipya kiotomatiki",
+        "description": ""
+    },
+    "items": {
+        "message": "Vipengee",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Leta",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "Orodha ya sasa ya URL ni ya ndani pekee hadi uidhinishe ukusanyaji wa data.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Inapakia...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Chagua/Ondoa Uteuzi Zote Zinazoonyeshwa",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Alama za Vitabu &amp; Orodha za Kusoma",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Chagua maudhui yanayoweza kutafutwa.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Vyanzo zaidi vitasaidiwa",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "Maandishi kamili ya hifadhi yataletwa na kutafutwa.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Orodha yako ya Hifadhi za Pocket italetwa kwa uidhinishaji salama.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Chagua Chanzo",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Unganisha Vyanzo vingine",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Ingiza Mikusanyiko katika Kivinjari",
+        "description": ""
+    },
+    "Note": {
+        "message": "Kumbuka",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Habari",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Je, tuanze kwa kuchagua hazina ya maelezo ambayo ungependa kuchunguza tena?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Pata chochote mara moja kutoka kwa hifadhi zako mwenyewe.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Unda Google + ChatGPT ya Faragha kwa ajili ya wavuti yako ndani ya Dakika",
+        "description": ""
     }
 }

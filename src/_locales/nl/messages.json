@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Geen data gevonden",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Sla deze stap over",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Nieuwe vraag",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Vraag het AI",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Vraag het web",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Of je kan",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "Het kan zijn dat de bronnen nog niet helemaal klaar zijn, of probeer het anders te vragen.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Beheer bronnen",
+        "description": ""
+    },
+    "settings": {
+        "message": "Instellingen",
+        "description": ""
+    },
+    "sources": {
+        "message": "Bronnen",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Geen gegevens beschikbaar",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Vraag uw spaargeld",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Beveiligde verbinding",
+        "description": ""
+    },
+    "saves": {
+        "message": "Bespaart",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Zak",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Maak verbinding met Pocket om je stoffige voorraad nieuw leven in te blazen.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "op pc",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "op Mac",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Commando + E",
+        "description": ""
+    },
+    "press": {
+        "message": "druk op",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Sneltoetsen voor toetsenbordaanslagen",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "Dit kan maximaal 10 minuten duren. Houd deze pagina open en ga door met andere taken.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "Je geest opbouwenEcho",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "pictogram klik",
+        "description": ""
+    },
+    "or": {
+        "message": "of",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "toetsaanslag",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "op elk gewenst moment via",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Activeer mindECHO om uw opgeslagen bestanden te doorzoeken",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Er worden nog steeds gegevens verwerkt; Ik ben ermee bezig en ga verder op de achtergrond.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Pocket Saves geïmporteerd",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Browsergegevens geïmporteerd",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "Van de verlengbalk hierboven",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Geschiedenis uitsluiten",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Automatisch nieuwe matches verzamelen",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Zoek items op trefwoorden",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Publieke kennispagina&#39;s uit de browsegeschiedenis",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Alleen URL&#39;s van openbare artikelen, blogs en essay-pdf&#39;s kunnen worden opgenomen. Persoonlijke en werkgerelateerde geschiedenis zijn NIET inbegrepen.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Schakel zoeken in volledige tekst in de browsegeschiedenis in om de noodzaak van onthouden te elimineren.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Sluit bladwijzers of leeslijst uit",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Automatisch nieuwe items toevoegen",
+        "description": ""
+    },
+    "items": {
+        "message": "Artikelen",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Ophalen",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "De huidige URL-lijst is alleen lokaal totdat u toestemming geeft voor het verzamelen van gegevens.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Bezig met laden...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Selecteer/deselecteer alles weergegeven",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Bladwijzers en leeslijsten",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Selecteer inhoud die doorzoekbaar moet worden gemaakt.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Er zullen meer bronnen worden ondersteund",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "De volledige tekst van de opgeslagen bestanden wordt opgehaald en doorzoekbaar gemaakt.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Uw Pocket Saves-lijst wordt met beveiligde autorisatie geïmporteerd.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Selecteer Bron",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Sluit andere bronnen aan",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Importeer collecties in de browser",
+        "description": ""
+    },
+    "Note": {
+        "message": "Opmerking",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Hallo",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Zullen we beginnen met het kiezen van de schat aan informatie die u opnieuw wilt verkennen?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Vind direct iets uit uw eigen opgeslagen bestanden.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Bouw binnen enkele minuten een privé Google + ChatGPT voor uw eigen internet",
+        "description": ""
     }
 }

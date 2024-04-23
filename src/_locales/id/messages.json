@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Tidak ada data ditemukan",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Lewati langkah ini",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Kueri Baru",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Tanya AI",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Kueri Web",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Atau kamu bisa",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "Sumbernya mungkin belum sepenuhnya siap, atau coba tanyakan secara berbeda.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Kelola Sumber",
+        "description": ""
+    },
+    "settings": {
+        "message": "Pengaturan",
+        "description": ""
+    },
+    "sources": {
+        "message": "Sumber",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Tidak ada data yang tersedia",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Tanyakan Simpanan Anda",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Koneksi aman",
+        "description": ""
+    },
+    "saves": {
+        "message": "Menghemat",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Saku",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Hubungkan ke Pocket untuk menghidupkan kembali simpanan Anda yang berdebu.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "di PC",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "di Mac",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Perintah + E",
+        "description": ""
+    },
+    "press": {
+        "message": "Tekan",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Pintasan Sapuan Keyboard",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "Ini mungkin memerlukan waktu hingga 10 menit. Harap tetap membuka halaman ini dan melanjutkan tugas lainnya.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "Membangun Pikiran Anda Gema",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "klik ikon",
+        "description": ""
+    },
+    "or": {
+        "message": "atau",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "penekanan tombol",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "kapan saja melalui",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Aktifkan mindECHO untuk mencari Simpanan Anda",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Data masih diproses; Saya sedang mengerjakannya dan akan melanjutkan di latar belakang.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Simpanan Saku Diimpor",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Data Peramban Diimpor",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "Dari Bilah Ekstensi Di Atas",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Kecualikan Sejarah",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Kumpulkan Pertandingan Baru Secara Otomatis",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Temukan item berdasarkan kata kunci",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Halaman Pengetahuan Publik dari Riwayat Penjelajahan",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Hanya URL artikel publik, blog, dan PDF esai yang dapat disertakan. Riwayat pribadi dan terkait pekerjaan TIDAK disertakan.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Aktifkan pencarian teks lengkap dalam riwayat penelusuran untuk menghilangkan kebutuhan akan menghafal.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Kecualikan Bookmark atau Daftar Bacaan",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Tambahkan Item Baru secara otomatis",
+        "description": ""
+    },
+    "items": {
+        "message": "Barang",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Mengambil",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "Daftar URL saat ini hanya bersifat lokal sampai Anda mengizinkan pengumpulan data.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Memuat...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Pilih/Batalkan Pilihan Semua yang Ditampilkan",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Penanda Buku &amp; Daftar Bacaan",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Pilih konten yang ingin dibuat dapat dicari.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Lebih banyak sumber akan didukung",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "Teks lengkap dari simpanan akan diambil dan dapat dicari.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Daftar Pocket Saves Anda akan diimpor dengan otorisasi aman.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Pilih Sumber",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Hubungkan Sumber Lain",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Impor Koleksi di Browser",
+        "description": ""
+    },
+    "Note": {
+        "message": "Catatan",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Halo",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Bagaimana kalau kita mulai dengan memilih harta karun berupa informasi yang ingin Anda jelajahi lagi?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Temukan apa pun secara instan dari simpanan Anda sendiri.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Bangun Google+ ChatGPT Pribadi untuk web Anda sendiri dalam hitungan Menit",
+        "description": ""
     }
 }

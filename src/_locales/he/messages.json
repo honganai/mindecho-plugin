@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "לא נמצאו נתונים",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "דלג על שלב זה",
+        "description": ""
+    },
+    "new_query": {
+        "message": "שאילתה חדשה",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "תשאל AI",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "שאל את האינטרנט",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "או שאתה יכול",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "ייתכן שהמקורות עדיין לא מוכנים לחלוטין, או בבקשה נסה לשאול אחרת.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "נהל מקורות",
+        "description": ""
+    },
+    "settings": {
+        "message": "הגדרות",
+        "description": ""
+    },
+    "sources": {
+        "message": "מקורות",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "אין נתונים זמינים",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "שאל את השמירה שלך",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "חיבור מאובטח",
+        "description": ""
+    },
+    "saves": {
+        "message": "שומר",
+        "description": ""
+    },
+    "pocket": {
+        "message": "כִּיס",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "התחבר ל-Pocket כדי להחיות את המחסן המאובק שלך.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "במחשב",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "ב-Mac",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Command + E",
+        "description": ""
+    },
+    "press": {
+        "message": "ללחוץ",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "קיצורי דרך ללחיצת מקלדת",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "פעולה זו עשויה להימשך עד 10 דקות. אנא השאר את הדף הזה פתוח והמשך במשימות אחרות.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "בניית MindEcho שלך",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "לחץ על סמל",
+        "description": ""
+    },
+    "or": {
+        "message": "אוֹ",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "הקשה",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "בכל עת באמצעות",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "הפעל את mindECHO כדי לחפש את השמירה שלך",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "הנתונים עדיין מעובדים; אני על זה ואמשיך ברקע.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Pocket Saves מיובאים",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "נתוני דפדפן מיובאים",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "מתוך סרגל ההרחבה למעלה",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "אל תכלול היסטוריה",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "איסוף אוטומטי של התאמות חדשות",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "מצא פריטים לפי מילות מפתח",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "דפי ידע ציבורי מהיסטוריית גלישה",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "ניתן לכלול רק כתובות אתרים של מאמרים ציבוריים, בלוגים וקובצי PDF של מאמרים. היסטוריה אישית וקשורה לעבודה אינה כלולה.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "אפשר חיפוש בטקסט מלא בהיסטוריית הגלישה כדי למנוע את הצורך בשינון.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "אל תכלול סימניות או רשימת קריאה",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "הוסף אוטומטית פריטים חדשים",
+        "description": ""
+    },
+    "items": {
+        "message": "פריטים",
+        "description": ""
+    },
+    "fetch": {
+        "message": "לְהָבִיא",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "רשימת כתובות האתרים הנוכחית היא מקומית רק עד שתאשר איסוף נתונים.",
+        "description": ""
+    },
+    "loading": {
+        "message": "טוען...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "בחר/בטל את הבחירה בכל המוצגים",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "סימניות ורשימות קריאה",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "בחר תוכן שיהיה ניתן לחיפוש.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "מקורות נוספים ייתמכו",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "הטקסט המלא של השמירות יועבר ויהפוך לניתן לחיפוש.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "רשימת ה-Pocket Saves שלך תיובא עם הרשאה מאובטחת.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "בחר מקור",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "חבר מקורות אחרים",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "ייבוא אוספים בדפדפן",
+        "description": ""
+    },
+    "Note": {
+        "message": "הערה",
+        "description": ""
+    },
+    "Hello": {
+        "message": "שלום",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "מה דעתך שנתחיל בבחירת אוצר המידע שתרצה לחקור שוב?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "מצא כל דבר באופן מיידי מהחיסכון שלך.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "בנה Google + ChatGPT פרטי עבור האינטרנט שלך תוך דקות",
+        "description": ""
     }
 }

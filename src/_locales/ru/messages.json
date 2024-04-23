@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Данные не найдены",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Пропустить этот шаг",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Новый запрос",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Спросите ИИ",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Запрос в Интернете",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Или вы можете",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "Возможно, исходники еще не полностью готовы, или попробуйте задать другой вопрос.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Управление источниками",
+        "description": ""
+    },
+    "settings": {
+        "message": "Настройки",
+        "description": ""
+    },
+    "sources": {
+        "message": "Источники",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Данные недоступны",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Спросите свои сохранения",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Безопасное соединение",
+        "description": ""
+    },
+    "saves": {
+        "message": "Сохраняет",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Карман",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Подключитесь к Pocket, чтобы оживить свой пыльный тайник.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "на ПК",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + Е",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "на Mac",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Команда + Е",
+        "description": ""
+    },
+    "press": {
+        "message": "Нажимать",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Сочетания клавиш для нажатия клавиш",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "Это может занять до 10 минут. Пожалуйста, оставьте эту страницу открытой и продолжайте выполнять другие задачи.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "Формируем свой разумEcho",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "щелчок по значку",
+        "description": ""
+    },
+    "or": {
+        "message": "или",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "нажатие клавиши",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "в любое время через",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Активируйте MindECHO для поиска ваших сохранений.",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Данные все еще обрабатываются; Я на нем и продолжу в фоновом режиме.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Карманные сохранения импортированы",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Данные браузера импортированы",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "Из панели расширения выше",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Исключить историю",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Автоматический сбор новых матчей",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Найдите элементы по ключевым словам",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Страницы общедоступных знаний из истории просмотра",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Можно включать только URL-адреса общедоступных статей, блогов и PDF-файлов с эссе. Личная и трудовая история НЕ включена.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Включите полнотекстовый поиск в истории просмотров, чтобы исключить необходимость запоминания.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Исключить закладки или список чтения",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Автоматическое добавление новых элементов",
+        "description": ""
+    },
+    "items": {
+        "message": "Предметы",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Принести",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "Текущий список URL-адресов является локальным только до тех пор, пока вы не разрешите сбор данных.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Загрузка...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Выбрать/отменить выбор всех показанных",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Закладки и списки чтения",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Выберите контент, который будет доступен для поиска.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Будет поддерживаться больше источников",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "Полный текст сохранений будет загружен и доступен для поиска.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Ваш список карманных сохранений будет импортирован с безопасной авторизацией.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Выберите источник",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Подключите другие источники",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Импорт коллекций в браузере",
+        "description": ""
+    },
+    "Note": {
+        "message": "Примечание",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Привет",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Как насчет того, чтобы начать с выбора сокровищницы информации, которую вы хотели бы изучить еще раз?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Мгновенно находите что-нибудь из своих сохранений.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Создайте частный Google + ChatGPT для своей сети за считанные минуты",
+        "description": ""
     }
 }

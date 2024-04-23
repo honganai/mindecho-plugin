@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Даних не знайдено",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Пропустіть цей крок",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Новий запит",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Запитайте AI",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Запит в Інтернеті",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Або ви можете",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "Можливо, джерела ще не повністю готові, або спробуйте запитати інакше.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Керування джерелами",
+        "description": ""
+    },
+    "settings": {
+        "message": "Налаштування",
+        "description": ""
+    },
+    "sources": {
+        "message": "Джерела",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Немає даних",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Запитайте своїх збереження",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Безпечне з&#39;єднання",
+        "description": ""
+    },
+    "saves": {
+        "message": "Зберігає",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Кишеньковий",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Підключіться до Pocket, щоб оживити свій запилений тайник.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "на ПК",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "на Mac",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Command + E",
+        "description": ""
+    },
+    "press": {
+        "message": "Прес",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Сполучення клавіш на клавіатурі",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "Це може зайняти до 10 хвилин. Будь ласка, тримайте цю сторінку відкритою та продовжуйте виконувати інші завдання.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "Building Your MindEcho",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "клацання значка",
+        "description": ""
+    },
+    "or": {
+        "message": "або",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "натискання клавіші",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "будь-коли через",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Активуйте mindECHO для пошуку Ваших Збережень",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Дані ще обробляються; Я на цьому і продовжуватиму у фоновому режимі.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Кишенькові збереження Імпортовані",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Дані веб-переглядача імпортовано",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "З панелі розширення вище",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Виключити історію",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Автоматичний збір нових збігів",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Знайдіть елементи за ключовими словами",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Загальнодоступні сторінки знань з історії веб-перегляду",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Можна включити лише URL-адреси загальнодоступних статей, блогів і PDF-файлів есе. Особиста та пов’язана з роботою історія НЕ включена.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Увімкніть повнотекстовий пошук в історії веб-перегляду, щоб уникнути необхідності запам&#39;ятовувати.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Виключити закладки або список для читання",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Автоматичне додавання нових елементів",
+        "description": ""
+    },
+    "items": {
+        "message": "Предмети",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Fetch",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "Поточний список URL-адрес є локальним лише до тих пір, поки ви не дозволите збір даних.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Завантаження...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Виберіть/Скасуйте вибір усіх показаних",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Закладки та списки читання",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Виберіть вміст, який потрібно зробити доступним для пошуку.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Буде підтримуватися більше джерел",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "Повний текст збереження буде отримано та доступно для пошуку.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Ваш список кишенькових збереження буде імпортовано з безпечною авторизацією.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Виберіть Джерело",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Підключіть інші джерела",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Імпорт колекцій у браузері",
+        "description": ""
+    },
+    "Note": {
+        "message": "Примітка",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Привіт",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Як щодо того, щоб почати з вибору скарбниці інформації, яку ви хотіли б дослідити знову?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Миттєво знаходьте будь-що у своїх власних збереженнях.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Створіть приватний Google + ChatGPT для власної мережі за лічені хвилини",
+        "description": ""
     }
 }

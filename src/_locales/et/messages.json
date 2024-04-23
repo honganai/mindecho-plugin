@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Andmeid ei leitud",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Jätke see samm vahele",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Uus päring",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Küsige AI-st",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Päring veebist",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Või saate",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "Allikad ei pruugi veel täielikult valmis olla või proovige küsida teisiti.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Hallake allikaid",
+        "description": ""
+    },
+    "settings": {
+        "message": "Seaded",
+        "description": ""
+    },
+    "sources": {
+        "message": "Allikad",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Andmed puuduvad",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Küsige oma säästudelt",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Turvaline ühendus",
+        "description": ""
+    },
+    "saves": {
+        "message": "Salvestab",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Tasku",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Tolmunud varude taaselustamiseks ühendage Pocket.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "arvutis",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "Macis",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Command + E",
+        "description": ""
+    },
+    "press": {
+        "message": "Vajutage",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Klaviatuurilöökide otseteed",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "Selleks võib kuluda kuni 10 minutit. Palun hoidke see leht avatuna ja jätkake muude ülesannetega.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "Oma MindEcho loomine",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "ikooni klõps",
+        "description": ""
+    },
+    "or": {
+        "message": "või",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "klahvivajutus",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "igal ajal kaudu",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Salvestatud lehtede otsimiseks aktiveerige mindECHO",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Andmeid veel töödeldakse; Olen selle peal ja jätkan taustal.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Tasku salvestab imporditud",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Brauseri andmed imporditud",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "Ülaltoodud pikendusribalt",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Välista ajalugu",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Automaatne uute vastete kogumine",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Otsige üksusi märksõnade järgi",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Avalikud teabelehed sirvimisajaloost",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Kaasata saab ainult avalike artiklite, ajaveebide ja esseede PDF-ide URL-e. Isiklikku ja tööga seotud ajalugu EI OLE kaasatud.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Lubage sirvimisajaloos täistekstiotsing, et vältida meeldejätmise vajadust.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Välista järjehoidjad või lugemisloend",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Uute üksuste automaatne lisamine",
+        "description": ""
+    },
+    "items": {
+        "message": "Üksused",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Too",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "Praegune URL-ide loend on ainult kohalik, kuni annate loa andmete kogumiseks.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Laadimine...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Valige/tühista valik Kõik kuvatud",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Järjehoidjad ja lugemisloendid",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Valige otsitavaks sisu.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Toetatakse rohkem allikaid",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "Salvestuste täistekst tuuakse ja tehakse otsitavaks.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Teie taskusalvestuste loend imporditakse turvalise autoriseerimisega.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Valige Allikas",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Ühendage muud allikad",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Importige kogud brauseris",
+        "description": ""
+    },
+    "Note": {
+        "message": "Märge",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Tere",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Kuidas oleks, kui hakkaksime valima teabe aardelaeka, mida soovite uuesti uurida?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Otsige oma salvestustelt midagi kohe üles.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Looge mõne minutiga oma veebi jaoks privaatne Google + ChatGPT",
+        "description": ""
     }
 }

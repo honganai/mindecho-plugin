@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Ni podatkov",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Preskočite ta korak",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Nova poizvedba",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Vprašajte AI",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Poizvedujte po spletu",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Ali pa lahko",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "Viri morda še niso v celoti pripravljeni ali pa poskusite vprašati drugače.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Upravljanje virov",
+        "description": ""
+    },
+    "settings": {
+        "message": "nastavitve",
+        "description": ""
+    },
+    "sources": {
+        "message": "Viri",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Ni podatkov",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Vprašajte svoje varčevalce",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Varna povezava",
+        "description": ""
+    },
+    "saves": {
+        "message": "Shrani",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Žep",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Povežite se s Pocket, da oživite svojo zaprašeno zalogo.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "na računalniku",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "na Macu",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Command + E",
+        "description": ""
+    },
+    "press": {
+        "message": "Pritisnite",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Bližnjice na tipkovnici",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "To lahko traja do 10 minut. Pustite to stran odprto in nadaljujte z drugimi nalogami.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "Building Your MindEcho",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "klik na ikono",
+        "description": ""
+    },
+    "or": {
+        "message": "oz",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "pritisk na tipko",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "kadarkoli prek",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Aktivirajte mindECHO za iskanje vaših shranjenih podatkov",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Podatki so še v obdelavi; Delam tega in bom nadaljeval v ozadju.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Pocket Saves Uvoženo",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Uvoženi podatki brskalnika",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "Iz razširitvene vrstice zgoraj",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Izključi zgodovino",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Samodejno zbiranje novih zadetkov",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Poiščite elemente po ključnih besedah",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Javne strani znanja iz zgodovine brskanja",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Vključeni so lahko samo URL-ji javnih člankov, blogov in PDF-jev esejev. Osebna in delovna zgodovina NISO vključeni.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Omogočite iskanje po celotnem besedilu v zgodovini brskanja, da odpravite potrebo po pomnjenju.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Izključite zaznamke ali bralni seznam",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Samodejno dodajanje novih elementov",
+        "description": ""
+    },
+    "items": {
+        "message": "Predmeti",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Prinesi",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "Trenutni seznam URL-jev je samo lokalni, dokler ne dovolite zbiranja podatkov.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Nalaganje...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Izberite/prekličite izbor vseh prikazanih",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Zaznamki in bralni seznami",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Izberite vsebino, po kateri želite iskati.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Podprtih bo več virov",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "Celotno besedilo shranjenih podatkov bo pridobljeno in omogočeno iskanje.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Vaš seznam Pocket Saves bo uvožen z varno avtorizacijo.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Izberite Vir",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Povežite druge vire",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Uvozi zbirke v brskalniku",
+        "description": ""
+    },
+    "Note": {
+        "message": "Opomba",
+        "description": ""
+    },
+    "Hello": {
+        "message": "zdravo",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Kaj pa, če začnemo z izbiro zakladnice informacij, ki bi jo radi znova raziskali?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Takoj poiščite karkoli iz svojih shranjenih podatkov.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Zgradite zasebni Google + ChatGPT za svoj splet v nekaj minutah",
+        "description": ""
     }
 }

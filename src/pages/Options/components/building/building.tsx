@@ -131,10 +131,10 @@ const Building: React.FC<IProp> = ({ type = 'browser', status = false }) => {
             <span className={styles['direction']}>{t('keyboard_stroke_shortCuts')}</span>
             <div>
               <p className={styles['doneTip']}>
-                {t('press')} <strong>{t('command_E')}</strong> {t('on_mac')}
+                {t('press')} <strong>Command + E</strong> {t('on_mac')}
               </p>
               <p className={styles['doneTip']}>
-                {t('press')} <strong>{t('ctrl_E')}</strong> {t('on_pc')}
+                {t('press')} <strong>Ctrl + E</strong> {t('on_pc')}
               </p>
             </div>
           </div>

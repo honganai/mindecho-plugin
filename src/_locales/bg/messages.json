@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Няма намерени данни",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Пропуснете тази стъпка",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Нова заявка",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Попитайте AI",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Запитване в мрежата",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Или можете",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "Източниците може все още да не са напълно готови или, моля, опитайте да попитате по различен начин.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Управление на източниците",
+        "description": ""
+    },
+    "settings": {
+        "message": "Настройки",
+        "description": ""
+    },
+    "sources": {
+        "message": "Източници",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Няма данни",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Попитайте спестяванията си",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Сигурна връзка",
+        "description": ""
+    },
+    "saves": {
+        "message": "Спестява",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Джоб",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Свържете се с Pocket, за да съживите прашното си скривалище.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "на компютър",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "на Mac",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Command + E",
+        "description": ""
+    },
+    "press": {
+        "message": "Натиснете",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Клавиатурни клавишни комбинации",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "Това може да отнеме до 10 минути. Моля, дръжте тази страница отворена и продължете с други задачи.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "Изграждане на вашия умEcho",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "щракване върху иконата",
+        "description": ""
+    },
+    "or": {
+        "message": "или",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "натискане на клавиш",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "по всяко време чрез",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Активирайте mindECHO, за да търсите във вашите запазени файлове",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Данните все още се обработват; Аз съм на него и ще продължа на заден план.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Импортирани джобни спестявания",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Данните за браузъра са импортирани",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "От лентата за разширение по-горе",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Изключване на историята",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Автоматично събиране на нови съвпадения",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Намерете елементи по ключови думи",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Обществени страници със знания от хронологията на сърфирането",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Могат да бъдат включени само URL адреси на публични статии, блогове и PDF файлове с есета. Личната и свързаната с работата история НЕ са включени.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Активирайте пълнотекстово търсене в хронологията на сърфиране, за да елиминирате нуждата от запаметяване.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Изключете отметки или списък за четене",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Автоматично добавяне на нови елементи",
+        "description": ""
+    },
+    "items": {
+        "message": "Предмети",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Извличане",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "Текущият списък с URL адреси е локален само докато не разрешите събирането на данни.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Зареждане...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Изберете/демаркирайте всички показани",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Отметки и списъци за четене",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Изберете съдържание, което да стане достъпно за търсене.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Ще се поддържат повече източници",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "Пълният текст на записите ще бъде извлечен и ще може да се търси.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Вашият списък Pocket Saves ще бъде импортиран със защитено разрешение.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Изберете Източник",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Свържете други източници",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Импортиране на колекции в браузър",
+        "description": ""
+    },
+    "Note": {
+        "message": "Забележка",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Здравейте",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Какво ще кажете да започнем, като изберем съкровищницата от информация, която искате да проучите отново?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Намерете нещо незабавно от собствените си запазени.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Създайте частен Google + ChatGPT за вашата собствена мрежа за минути",
+        "description": ""
     }
 }

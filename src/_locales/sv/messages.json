@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Ingen information hittad",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Hoppa över det här steget",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Ny fråga",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Fråga AI",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Fråga på webben",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Eller kan du",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "Källorna kanske inte är helt klara än, eller försök fråga annorlunda.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Hantera källor",
+        "description": ""
+    },
+    "settings": {
+        "message": "inställningar",
+        "description": ""
+    },
+    "sources": {
+        "message": "Källor",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Ingen data tillgänglig",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Fråga dina sparar",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Säker anslutning",
+        "description": ""
+    },
+    "saves": {
+        "message": "Sparar",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Ficka",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Anslut till Pocket för att återuppliva ditt dammiga förråd.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "på PC",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Ctrl + E",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "på Mac",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Kommando + E",
+        "description": ""
+    },
+    "press": {
+        "message": "Tryck",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Tangentbordsgenvägar",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "Detta kan ta upp till 10 minuter. Håll den här sidan öppen och fortsätt med andra uppgifter.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "Bygg ditt MindEcho",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "ikon klicka",
+        "description": ""
+    },
+    "or": {
+        "message": "eller",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "tangenttryckning",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "när som helst via",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Aktivera mindECHO för att söka efter dina besparingar",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Data bearbetas fortfarande; Jag håller på och kommer att fortsätta i bakgrunden.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Pocket Saves importerade",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Webbläsardata importerad",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "Från tilläggsfältet ovan",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Uteslut historik",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Samla in nya matchningar automatiskt",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Hitta objekt efter nyckelord",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Allmänna kunskapssidor från webbhistorik",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Endast webbadresser till offentliga artiklar, bloggar och PDF-filer kan inkluderas. Personlig och arbetsrelaterad historia ingår INTE.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Aktivera fulltextsökning i webbhistoriken för att eliminera behovet av memorering.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Uteslut bokmärken eller läslista",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Lägg till nya objekt automatiskt",
+        "description": ""
+    },
+    "items": {
+        "message": "Föremål",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Hämta",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "Aktuell URL-lista är endast lokal tills du godkänner datainsamling.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Läser in...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Välj/avmarkera alla visade",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Bokmärken och läslistor",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Välj innehåll som ska göras sökbart.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Fler källor kommer att stödjas",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "Den fullständiga texten för sparningarna kommer att hämtas och göras sökbar.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Din Pocket Saves-lista kommer att importeras med säker auktorisering.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Välj Källa",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Anslut andra källor",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Importera samlingar i webbläsaren",
+        "description": ""
+    },
+    "Note": {
+        "message": "Notera",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Hallå",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Vad sägs om att vi börjar med att välja den skattkammare av information som du vill utforska igen?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Hitta vad som helst direkt från dina egna besparingar.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Bygg en privat Google + ChatGPT för din egen webb på några minuter",
+        "description": ""
     }
 }

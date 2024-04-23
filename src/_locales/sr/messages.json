@@ -42,5 +42,237 @@
     "noDataFound": {
         "message": "Није пронађен ниједан Подаци",
         "description": ""
+    },
+    "skip_this_step": {
+        "message": "Прескочите овај корак",
+        "description": ""
+    },
+    "new_query": {
+        "message": "Нови упит",
+        "description": ""
+    },
+    "ask_AI": {
+        "message": "Питајте АИ",
+        "description": ""
+    },
+    "query_the_web": {
+        "message": "Питајте веб",
+        "description": ""
+    },
+    "or_you_can": {
+        "message": "Или можеш",
+        "description": ""
+    },
+    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+        "message": "Извори можда још нису у потпуности спремни или покушајте да питате другачије.",
+        "description": ""
+    },
+    "manage_sources": {
+        "message": "Управљајте изворима",
+        "description": ""
+    },
+    "settings": {
+        "message": "Подешавања",
+        "description": ""
+    },
+    "sources": {
+        "message": "Извори",
+        "description": ""
+    },
+    "no_data_available": {
+        "message": "Нема расположивих података",
+        "description": ""
+    },
+    "ask_your_saves": {
+        "message": "Питајте своје чуваре",
+        "description": ""
+    },
+    "secure_connection": {
+        "message": "Сигурна веза",
+        "description": ""
+    },
+    "saves": {
+        "message": "Савес",
+        "description": ""
+    },
+    "pocket": {
+        "message": "Џеп",
+        "description": ""
+    },
+    "connect_to_pocket_to_revive_your_dusty_stash": {
+        "message": "Повежите се на Поцкет да оживите своју прашњаву залиху.",
+        "description": ""
+    },
+    "on_pc": {
+        "message": "на рачунару",
+        "description": ""
+    },
+    "ctrl_E": {
+        "message": "Цтрл + Е",
+        "description": ""
+    },
+    "on_mac": {
+        "message": "на Мац-у",
+        "description": ""
+    },
+    "command_E": {
+        "message": "Цомманд + Е",
+        "description": ""
+    },
+    "press": {
+        "message": "Притисните",
+        "description": ""
+    },
+    "keyboard_stroke_shortCuts": {
+        "message": "Пречице на тастатури",
+        "description": ""
+    },
+    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+        "message": "Ово може потрајати до 10 минута. Оставите ову страницу отвореном и наставите са другим задацима.",
+        "description": ""
+    },
+    "building_your_mindEcho": {
+        "message": "Изградња вашег МиндЕцхо-а",
+        "description": ""
+    },
+    "icon_click": {
+        "message": "клик на икону",
+        "description": ""
+    },
+    "or": {
+        "message": "или",
+        "description": ""
+    },
+    "keystroke": {
+        "message": "притиском на тастер",
+        "description": ""
+    },
+    "anytime_via": {
+        "message": "било када преко",
+        "description": ""
+    },
+    "activate_mindECHO_to_search_your_saves": {
+        "message": "Активирајте миндЕЦХО да бисте претражили своје сачуване податке",
+        "description": ""
+    },
+    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+        "message": "Подаци се још обрађују; Ја сам на томе и наставићу у позадини.",
+        "description": ""
+    },
+    "pocket_saves_imported": {
+        "message": "Поцкет Савес Импортед",
+        "description": ""
+    },
+    "browser_data_imported": {
+        "message": "Подаци прегледача су увезени",
+        "description": ""
+    },
+    "from_the_extension_bar_above": {
+        "message": "Са горње траке за проширење",
+        "description": ""
+    },
+    "exclude_history": {
+        "message": "Искључи историју",
+        "description": ""
+    },
+    "auto_collect_new_matches": {
+        "message": "Аутоматско прикупљање нових утакмица",
+        "description": ""
+    },
+    "find_items_by_keywords": {
+        "message": "Пронађите ставке по кључним речима",
+        "description": ""
+    },
+    "public_knowledge_pages_from_browsing_history": {
+        "message": "Странице јавног знања из историје прегледања",
+        "description": ""
+    },
+    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+        "message": "Само УРЛ-ови јавних чланака, блогова и ПДФ-ова есеја могу бити укључени. Лична историја и историја везана за посао НИЈЕ укључена.",
+        "description": ""
+    },
+    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+        "message": "Омогућите претрагу целог текста у историји прегледања да бисте елиминисали потребу за памћењем.",
+        "description": ""
+    },
+    "exclude_bookmarks_or_reading_list": {
+        "message": "Изузми обележиваче или листу за читање",
+        "description": ""
+    },
+    "auto_add_new_items": {
+        "message": "Аутоматско додавање нових ставки",
+        "description": ""
+    },
+    "items": {
+        "message": "Предмети",
+        "description": ""
+    },
+    "fetch": {
+        "message": "Дохвати",
+        "description": ""
+    },
+    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+        "message": "Тренутна листа УРЛ адреса је само локална док не одобрите прикупљање података.",
+        "description": ""
+    },
+    "loading": {
+        "message": "Учитавање...",
+        "description": ""
+    },
+    "select_deselect_all_shown": {
+        "message": "Изаберите/поништите избор свих приказаних",
+        "description": ""
+    },
+    "bookMarks_reading_lists": {
+        "message": "Обележивачи и листе за читање",
+        "description": ""
+    },
+    "select_content_to_be_made_searchable": {
+        "message": "Изаберите садржај који желите да претражите.",
+        "description": ""
+    },
+    "more_sources_will_be_supported": {
+        "message": "Више извора ће бити подржано",
+        "description": ""
+    },
+    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+        "message": "Комплетан текст сачуваних података ће бити преузет и омогућен за претрагу.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+        "message": "Ваша листа џепних чувања ће бити увезена уз безбедно овлашћење.",
+        "description": ""
+    },
+    "select_source": {
+        "message": "Изаберите Извор",
+        "description": ""
+    },
+    "connect_other_sources": {
+        "message": "Повежите друге изворе",
+        "description": ""
+    },
+    "import_collections_in_browser": {
+        "message": "Увезите колекције у претраживач",
+        "description": ""
+    },
+    "Note": {
+        "message": "Белешка",
+        "description": ""
+    },
+    "Hello": {
+        "message": "Здраво",
+        "description": ""
+    },
+    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+        "message": "Шта кажете на то да почнемо тако што ћемо изабрати ризницу информација коју желите поново да истражите?",
+        "description": ""
+    },
+    "find_anything_instantly_from_your_own_saves": {
+        "message": "Пронађите било шта одмах из сопствених сачуваних података.",
+        "description": ""
+    },
+    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+        "message": "Направите приватни Гоогле+ ЦхатГПТ за свој веб за неколико минута",
+        "description": ""
     }
 }
