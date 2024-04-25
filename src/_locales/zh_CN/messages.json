@@ -52,7 +52,7 @@
         "description": ""
     },
     "ask_AI": {
-        "message": "询问人工智能",
+        "message": "询问AI",
         "description": ""
     },
     "query_the_web": {
@@ -64,11 +64,11 @@
         "description": ""
     },
     "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
-        "message": "来源可能尚未完全准备好，或者请尝试以不同的方式询问。",
+        "message": "数据可能尚未完全准备好，或者请尝试以不同的方式询问。",
         "description": ""
     },
     "manage_sources": {
-        "message": "管理来源",
+        "message": "管理数据源",
         "description": ""
     },
     "settings": {
@@ -76,7 +76,7 @@
         "description": ""
     },
     "sources": {
-        "message": "来源",
+        "message": "数据源",
         "description": ""
     },
     "no_data_available": {
@@ -84,7 +84,7 @@
         "description": ""
     },
     "ask_your_saves": {
-        "message": "询问您的保存",
+        "message": "查询自有内容库",
         "description": ""
     },
     "secure_connection": {
@@ -96,15 +96,15 @@
         "description": ""
     },
     "pocket": {
-        "message": "口袋",
+        "message": "Pocket",
         "description": ""
     },
     "connect_to_pocket_to_revive_your_dusty_stash": {
-        "message": "连接到 Pocket 来恢复你布满灰尘的储藏物。",
+        "message": "连接 Pocket 来让以前存的待读重见天日。",
         "description": ""
     },
     "on_pc": {
-        "message": "在电脑上",
+        "message": "在Windows上",
         "description": ""
     },
     "ctrl_E": {
@@ -112,11 +112,11 @@
         "description": ""
     },
     "on_mac": {
-        "message": "在 Mac 上",
+        "message": "在Mac上",
         "description": ""
     },
     "command_E": {
-        "message": "命令 + E",
+        "message": "Command + E",
         "description": ""
     },
     "press": {
@@ -128,7 +128,7 @@
         "description": ""
     },
     "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
-        "message": "这可能需要 10 分钟。请保持此页面打开并继续执行其他任务。",
+        "message": "这可能需要 10 分钟。请保持此页面打开。您可以先切换到其他页面",
         "description": ""
     },
     "building_your_mindEcho": {
@@ -136,7 +136,7 @@
         "description": ""
     },
     "icon_click": {
-        "message": "图标点击",
+        "message": "点击图标",
         "description": ""
     },
     "or": {
@@ -152,7 +152,7 @@
         "description": ""
     },
     "activate_mindECHO_to_search_your_saves": {
-        "message": "激活 mindECHO 搜索你的保存",
+        "message": "唤起 mindECHO 来在你的收藏中实时检索",
         "description": ""
     },
     "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
@@ -160,7 +160,7 @@
         "description": ""
     },
     "pocket_saves_imported": {
-        "message": "口袋保存进口",
+        "message": "Pocket数据已导入",
         "description": ""
     },
     "browser_data_imported": {
@@ -168,27 +168,27 @@
         "description": ""
     },
     "from_the_extension_bar_above": {
-        "message": "从上面的扩展栏",
+        "message": "从上方的浏览器扩展栏",
         "description": ""
     },
     "exclude_history": {
-        "message": "排除历史记录",
+        "message": "跳过历史记录",
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "自动收集新比赛",
+        "message": "自动收集新的匹配项",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "按关键字查找商品",
+        "message": "按关键字查找",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
-        "message": "来自浏览历史记录的公共知识页面",
+        "message": "保存浏览过的公开知识页面",
         "description": ""
     },
     "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
-        "message": "仅可包含公开文章、博客和论文 PDF 的 URL。个人和工作相关历史不包括在内。",
+        "message": "仅可包含公开文章、博客和论文PDF的 URL。个人内容和工作相关历史不包括在内。",
         "description": ""
     },
     "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
@@ -196,23 +196,23 @@
         "description": ""
     },
     "exclude_bookmarks_or_reading_list": {
-        "message": "排除书签或阅读列表",
+        "message": "跳过收藏夹和阅读列表",
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "自动添加新商品",
+        "message": "自动添加新项",
         "description": ""
     },
     "items": {
-        "message": "项目",
+        "message": "条目",
         "description": ""
     },
     "fetch": {
-        "message": "拿来",
+        "message": "采集",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
-        "message": "当前 URL 列表仅限于本地，直到您授权数据收集。",
+        "message": "当前的URL列表只在本地，仅会同步你授权的条目。",
         "description": ""
     },
     "loading": {
@@ -224,7 +224,7 @@
         "description": ""
     },
     "bookMarks_reading_lists": {
-        "message": "书签和阅读清单",
+        "message": "收藏夹和阅读清单",
         "description": ""
     },
     "select_content_to_be_made_searchable": {
@@ -236,7 +236,7 @@
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
-        "message": "将获取保存的全文并进行搜索。",
+        "message": "将获取保存的全文并进行索引。",
         "description": ""
     },
     "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
@@ -244,11 +244,11 @@
         "description": ""
     },
     "select_source": {
-        "message": "选择来源",
+        "message": "选择数据源",
         "description": ""
     },
     "connect_other_sources": {
-        "message": "连接其他来源",
+        "message": "连接其他数据源",
         "description": ""
     },
     "import_collections_in_browser": {
@@ -264,15 +264,15 @@
         "description": ""
     },
     "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
-        "message": "我们先选择一下您想再次探索的信息宝库怎么样？",
+        "message": "请选择需要搜索的数据源",
         "description": ""
     },
     "find_anything_instantly_from_your_own_saves": {
-        "message": "立即从您自己的保存中找到任何内容。",
+        "message": "立即从你的自有内容库中找到任何内容。",
         "description": ""
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
-        "message": "在几分钟内为您自己的网站构建私人 Google + ChatGPT",
+        "message": "在几分钟内为你构建私有的Google + ChatGPT",
         "description": ""
     }
 }

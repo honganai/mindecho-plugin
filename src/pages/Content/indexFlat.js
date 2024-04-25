@@ -64,14 +64,14 @@ async function grabPageInfo() {
 async function updatePageInfo(pageInfo) {
   const info = {
     title: pageInfo?.title || '',
-    url: window.location.href, 
-    type: 'history', 
-    user_create_time: pageInfo?.timestrip || new Date().toISOString(), 
-    node_id: 0, node_index: 0, parentId: 0, 
-    user_used_time: new Date().toISOString(), 
-    origin_info: '', 
-    author: pageInfo?.author || document.querySelector('meta[name="author"]')?.content || document.querySelector('meta[property="og:article:author"]')?.content || document.querySelector('[class*="author"]')?.innerHTML || '', 
-    content: pageInfo?.content || '', 
+    url: window.location.href,
+    type: 'history',
+    user_create_time: pageInfo?.timestrip || new Date().toISOString(),
+    node_id: 0, node_index: 0, parentId: 0,
+    user_used_time: new Date().toISOString(),
+    origin_info: '',
+    author: pageInfo?.author || document.querySelector('meta[name="author"]')?.content || document.querySelector('meta[property="og:article:author"]')?.content || document.querySelector('[class*="author"]')?.innerHTML || '',
+    content: pageInfo?.content || '',
     status: 3
   };
 
@@ -102,7 +102,7 @@ async function getNeedAndData() {
     }
   });
   const result = _.intersectionBy(typeList, cTypeList);
-  if (result.length > 0 || window.location.href.startsWith('https://mp.weixin.qq.com/s/')) {
+  if (result.length > 0 || window.location.href.startsWith('https://mp.weixin.qq.com/s')) {
     const {title, content, timestrip} = getCleanArticle();
     return {title, content, timestrip};
   }
