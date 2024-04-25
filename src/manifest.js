@@ -40,10 +40,10 @@ function generChromeExtensionManifest() {
       // },
       // 激活插件快捷键，效果和点击插件按钮一样
       "_execute_action": {
-        "suggested_key": {
-          "default": "Ctrl+E",
-          "mac": "Command+E",
-        }
+        // "suggested_key": {
+        //   "default": "Ctrl+E",
+        //   "mac": "Command+E",
+        // }
       }
     },
     chrome_url_overrides: {

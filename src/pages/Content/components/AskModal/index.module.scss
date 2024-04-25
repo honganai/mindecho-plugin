@@ -85,6 +85,7 @@ p {
   border-radius: 8px;
 
   .title {
+    flex-shrink: 0;
     margin-right: 10px;
     color: #2388FF;
     font-weight: bold;

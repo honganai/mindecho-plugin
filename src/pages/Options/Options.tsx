@@ -7,6 +7,7 @@ import BrowserData from './components/browserData/browserData';
 import HistoryData from './components/historyData/historyData';
 import Building from './components/building/building';
 import Pocket from './components/pocketData/pocket';
+import Twitter from './components/twitter/twitter';
 import { UserInfo, UserType } from '@/types';
 import GlobalContext, {
   reducer as GlobalReducer,
@@ -149,7 +150,8 @@ const Options: React.FC = () => {
                   stepPage === 2 ? <BrowserData onLink={(page: number, status = false) => { setStepPage(page); setBuildType('browser'); setBuildStatus(status) }} /> :
                     stepPage === 5 ? <HistoryData onLink={(page: number, status = false) => { setStepPage(page); setBuildType('browser'); setBuildStatus(status) }} /> :
                       stepPage === 3 ? <Building type={buildType} status={buildStatus} /> :
-                        stepPage === 4 ? <Pocket onLink={(page: number) => { setStepPage(page); setBuildType('pocket') }} /> : null}
+                        stepPage === 4 ? <Pocket onLink={(page: number) => { setStepPage(page); setBuildType('pocket') }} /> :
+                          stepPage === 6 ? <Twitter onLink={(page: number) => { setStepPage(page) }} /> : null}
                 <ModalContent type="options" />
               </>
             )}

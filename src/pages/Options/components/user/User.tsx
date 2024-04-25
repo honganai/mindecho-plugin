@@ -12,6 +12,7 @@ import Header from '../header/header';
 import pocketIcon from '@/assets/icons/pocket_icon.png';
 import TwitterIcon from '@/assets/icons/twitter_icon.png';
 import pocketSourceIcon from '@/assets/icons/pocket_source_icon.png';
+import twitterSourceIcon from '@/assets/icons/twitter_source_icon.png';
 import RaindRopSourceIcon from '@/assets/icons/raindrop_source_icon.png';
 
 export enum SubType {
@@ -162,42 +163,43 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
   }
 
   const Bind = (types: string) => {
-    chrome.runtime.sendMessage({ type: 'request', api: 'get_bind_url', body: { bind_source: types, extensionId: chrome.runtime.id } }, (res) => {
-      console.log('bindPocket res:', res);
-      if (res.data.url !== '') {
-        window.open(res.data.url, '_blank');
-        // 定义计时器变量
-        let timer = 0;
-        const interval = 5000;
-        const maxTime = 10 * 60 * 1000;
-
-        // 定义定时器函数
-        const mainTimer = setInterval(() => {
-          timer += interval;
-          if (timer >= maxTime) {
-            clearInterval(mainTimer); // 超过3分钟后清除主定时器
-          } else {
-            chrome.runtime.sendMessage({ type: 'request', api: 'get_bind_status', body: { code: res.data.code } }, (res) => {
-              if (res.data[types]) {
-                setOtherSourceModalShow(false);
-                onLink(4);
-                clearInterval(mainTimer); // 成功后清除主定时器
-              }
-            });
-          }
-        }, interval);
-      }
-    });
-  }
-
-  const getBindStatues = () => {
     chrome.runtime.sendMessage({ type: 'request', api: 'get_bind_status', body: {} }, (res) => {
       if (res?.data?.pocket) {
         onLink(4);
       } else {
-        setOtherSourceModalShow(true);
+        chrome.runtime.sendMessage({ type: 'request', api: 'get_bind_url', body: { bind_source: types, extensionId: chrome.runtime.id } }, (res) => {
+          console.log('bindPocket res:', res);
+          if (res.data.url !== '') {
+            window.open(res.data.url, '_blank');
+            // 定义计时器变量
+            let timer = 0;
+            const interval = 5000;
+            const maxTime = 10 * 60 * 1000;
+
+            // 定义定时器函数
+            const mainTimer = setInterval(() => {
+              timer += interval;
+              if (timer >= maxTime) {
+                clearInterval(mainTimer); // 超过3分钟后清除主定时器
+              } else {
+                chrome.runtime.sendMessage({ type: 'request', api: 'get_bind_status', body: { code: res.data.code } }, (res) => {
+                  if (res.data[types]) {
+                    setOtherSourceModalShow(false);
+                    onLink(4);
+                    clearInterval(mainTimer); // 成功后清除主定时器
+                  }
+                });
+              }
+            }, interval);
+          }
+        });
       }
     })
+
+  }
+
+  const getBindStatues = () => {
+
   }
 
   return (
@@ -208,27 +210,39 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
           <Button className={cs(styles['btn'], styles['btn-browser'])} size="middle" type="primary" block onClick={() => onLink(2)} icon={<PlusOutlined />}>
             <span>{t('import_collections_in_browser')}</span>
           </Button>
-          <Button className={cs(styles['btn'], styles['btn-other'])} size="middle" block onClick={getBindStatues} icon={<PlusOutlined />}>
+          <Button className={cs(styles['btn'], styles['btn-other'])} size="middle" block onClick={() => setOtherSourceModalShow(true)} icon={<PlusOutlined />}>
             <span>{t('connect_other_sources')}</span>
             <img className={cs(styles['pocket-icon'], styles['icon'])} src={pocketIcon} alt="pocket icon" />
+            {/* Twitter */}
             {/* <img className={cs(styles['twitter-icon'], styles['icon'])} src={TwitterIcon} alt="twitter icon" /> */}
           </Button>
-
         </div>
       </Spin>
       <Modal footer={false} className={styles['source-modal']} onCancel={() => setOtherSourceModalShow(false)} mask={false} open={otherSourceModalShow} title={t('select_source')} centered={true}>
         <div className={styles['source-content']}>
-          <div className={styles['source-pocket']}>
+          {/* pocket数据来源 */}
+          <div className={cs(styles['source-item'], styles['source-pocket'])}>
             <PlusOutlined className={styles.addIcon} />
-            <div className={styles['source-pocket-title']} onClick={() => Bind('pocket')}>
+            <div className={styles['source-item-title']} onClick={() => Bind('pocket')}>
               <img src={pocketSourceIcon} alt="pocketSourceIcon" />
             </div>
-            <div className={styles['source-pocket-text']}>
+            <div className={styles['source-item-text']}>
               <p>{t('your_pocket_saves_list_will_be_imported_with_secure_authorization')}</p>
               <p>{t('full_text_of_the_saves_will_be_fetched_and_made_searchable')}</p>
             </div>
           </div>
-          <div className={styles['raindrop-pocket']}>
+          {/* Twitter数据 */}
+          {/* <div className={cs(styles['source-item'], styles['source-twitter'])}>
+            <PlusOutlined className={styles.addIcon} />
+            <div className={styles['source-item-title']} onClick={() => onLink(6)}>
+              <img src={twitterSourceIcon} alt="twitterSourceIcon" />
+            </div>
+            <div className={styles['source-item-text']}>
+              <p>{t('your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you')}</p>
+            </div>
+          </div> */}
+          {/* 其他 */}
+          <div className={styles['raindrop-other']}>
             <div className={styles['source-raindrop-title']}>
               <img src={RaindRopSourceIcon} alt="RaindRopSourceIcon" />
             </div>

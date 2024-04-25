@@ -1,4 +1,12 @@
 {
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Enable Search for Your X Bookmarks.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Your Bookmarks in X(Formally Twitter) will be imported with your authorization. Full text in the bookmarked content will be fetched and made searchable to you.",
+        "description": ""
+    },
     "skip_this_step": {
         "message": "Skip This Step",
         "description": ""

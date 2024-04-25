@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 import dayjs from 'dayjs';
 import Api from './api';
+import { MAX_SIZE } from '@/utils/common.util';
 import { getUserInfo, getLastUpateDataTime, setLastUpateDataTime, getLastUpateDataTime_pocket, setLastUpateDataTime_pocket } from '@/constants';
 
 const startAutoAdd = async () => {
@@ -118,7 +119,7 @@ const getReadingList = async () => {
 }
 
 const getPocket = () => {
-    return Api['get_user_url']({ body: { page: 1, page_size: 999, title: '', type: 'pocket' } })
+    return Api['get_user_url']({ body: { page: 1, page_size: MAX_SIZE, title: '', type: 'pocket' } })
         .then((res) => {
             return res.json()?.result || null;
         })

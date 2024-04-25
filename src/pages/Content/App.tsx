@@ -38,6 +38,7 @@ const App: React.FC<IProps> = ({ type = 'webPage' }) => {
   };
 
   useEffect(() => {
+    setActionListener();
     if (type === 'options') {
       handleLogin();
     } else {
@@ -48,31 +49,61 @@ const App: React.FC<IProps> = ({ type = 'webPage' }) => {
     }
   }, []);
 
-  const onBackendMessage = useCallback((request: any) => {
-    if (request.type === 'showAskModal') {
-      handleLogin((result) => {
-        if (!result.isLogin) {
-          chrome.runtime.sendMessage(
-            {
-              type: 'openSettings',
-            },
-            () => {
-              //
-            },
-          );
-        } else {
-          setShowAskModal(true);
+  const setActionListener = () => {
+    document.addEventListener('keydown', function (event) {
+      // 检查是否按下了 'E' 键
+      if (event.key === 'e' || event.key === 'E') {
+        // 对于 Mac 用户，event.metaKey 是 Command 键
+        // 对于 Windows 用户，event.ctrlKey 是 Ctrl 键
+        if (event.metaKey || event.ctrlKey) {
+          // 阻止默认的行为（如果有的话）
+          event.preventDefault();
+          // 执行你的代码
+          handleLogin((result) => {
+            if (!result.isLogin) {
+              chrome.runtime.sendMessage(
+                {
+                  type: 'openSettings',
+                },
+                () => {
+                  //
+                },
+              );
+            } else {
+              setShowAskModal(true);
+            }
+          });
         }
-      });
-    }
-  }, []);
+      }
+    });
+  }
 
-  useEffect(() => {
-    chrome.runtime.onMessage.addListener(onBackendMessage);
-    return () => {
-      chrome.runtime.onMessage.removeListener(onBackendMessage);
-    };
-  }, []);
+  // const onBackendMessage = useCallback((request: any) => {
+  //   console.log('onBackendMessage:', request);
+  //   if (request.type === 'showAskModal') {
+  //     handleLogin((result) => {
+  //       if (!result.isLogin) {
+  //         chrome.runtime.sendMessage(
+  //           {
+  //             type: 'openSettings',
+  //           },
+  //           () => {
+  //             //
+  //           },
+  //         );
+  //       } else {
+  //         setShowAskModal(true);
+  //       }
+  //     });
+  //   }
+  // }, []);
+
+  // useEffect(() => {
+  //   chrome.runtime.onMessage.addListener(onBackendMessage);
+  //   return () => {
+  //     chrome.runtime.onMessage.removeListener(onBackendMessage);
+  //   };
+  // }, []);
 
   return (
     <>

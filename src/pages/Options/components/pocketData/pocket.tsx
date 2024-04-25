@@ -10,6 +10,7 @@ import GlobalContext, { ActionType, IUpateData, IBookmarks, IHistory, IReadingLi
 import Header from '../header/header';
 import { setAutoAdd as setStorageAutoAdd, setLastUpateDataTime_pocket } from '@/constants';
 import DataList from '../datalist/datalist';
+import { MAX_SIZE } from '@/utils/common.util';
 
 export enum SubType {
   Free = 'free',
@@ -88,7 +89,7 @@ const Pocket: React.FC<Props> = ({ onLink }) => {
 
   const getUserUrl = () => {
     setLoading(true);
-    chrome.runtime.sendMessage({ type: 'request', api: 'get_user_url', body: { page: 1, page_size: 999, title: searchWord, type: 'pocket' } }, (res) => {
+    chrome.runtime.sendMessage({ type: 'request', api: 'get_user_url', body: { page: 1, page_size: MAX_SIZE, title: searchWord, type: 'pocket' } }, (res) => {
       console.log('🚀 ~ pocket -获取用户上传数据- line:240: ', res);
       parsingData(res?.result || [])
       // if (res?.result?.length > 0) {

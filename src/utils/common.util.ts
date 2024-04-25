@@ -5,6 +5,9 @@ import 'pdfjs-dist/build/pdf.worker.entry';
 import { ThinkingCopyObject } from '@/types';
 import {useEffect, useRef} from 'react';
 
+//获取数据最大限制
+export const MAX_SIZE = 1999;
+
 /**
  * @description: 格式化时间为 MM/DD
  * @param {string} dateString 时间字符串

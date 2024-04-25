@@ -6,6 +6,7 @@ import { baseUrl, welcomeUrl } from './config';
 import ReadingTime from './readingTime';
 import { EXCLUDE_URLS, setExtensionUpdated, setAutoAdd, getIsLogin, initPagesInfo } from '@/constants';
 import './autoAdd';
+import onTwitterAction from './bookmarks/bookmarks';
 
 initPagesInfo();
 
@@ -14,7 +15,7 @@ initPagesInfo();
 // });
 
 chrome.runtime.onMessage.addListener(handleMessages);
-chrome.action.onClicked.addListener(handleActiveClick);
+// chrome.action.onClicked.addListener(handleActiveClick);
 chrome.tabs.onRemoved.addListener(handleRemoveRab);
 
 /**
@@ -37,10 +38,9 @@ function handleMessages(message, sender, sendResponse) {
     sendsocketMessage(type, message, sender, sendResponse);
   } else if (type === 'openSettings') {
     openSettings();
-  } 
-  // else if (type === 'PageInfo') {
-  //   console.log(3333333, message, sender)
-  // }
+  } else if (type === 'twitter') {
+    onTwitterAction(message, sendResponse);
+  }
   return true;
 }
 
@@ -223,7 +223,7 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
     id: 'myContextMenu',
     title: 'Test Context Menu',
     type: 'normal',
-    contexts:["selection"]
+    contexts: ["selection"]
   });
 
   // if (reason === 'install') {
@@ -241,15 +241,15 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
     setAutoAdd()
   }
   //测试
-  // openSettings();
-  // executeScript();
+  openSettings();
+  executeScript();
 });
 
 /**
  * 安装完成后自动注入弹窗
  */
 function executeScript() {
-  chrome.tabs.query({}, function(tabs) {
+  chrome.tabs.query({}, function (tabs) {
     var tabId = tabs[0].id;
     //向当前标签页注入内容脚本
     tabs.forEach(item => {
