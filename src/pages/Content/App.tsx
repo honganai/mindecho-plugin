@@ -59,51 +59,42 @@ const App: React.FC<IProps> = ({ type = 'webPage' }) => {
           // 阻止默认的行为（如果有的话）
           event.preventDefault();
           // 执行你的代码
-          handleLogin((result) => {
-            if (!result.isLogin) {
-              chrome.runtime.sendMessage(
-                {
-                  type: 'openSettings',
-                },
-                () => {
-                  //
-                },
-              );
-            } else {
-              setShowAskModal(true);
-            }
-          });
+          shouldShowModal();
         }
       }
     });
   }
 
-  // const onBackendMessage = useCallback((request: any) => {
-  //   console.log('onBackendMessage:', request);
-  //   if (request.type === 'showAskModal') {
-  //     handleLogin((result) => {
-  //       if (!result.isLogin) {
-  //         chrome.runtime.sendMessage(
-  //           {
-  //             type: 'openSettings',
-  //           },
-  //           () => {
-  //             //
-  //           },
-  //         );
-  //       } else {
-  //         setShowAskModal(true);
-  //       }
-  //     });
-  //   }
-  // }, []);
+  const onBackendMessage = useCallback((request: any) => {
+    console.log('onBackendMessage:', request);
+    if (request.type === 'showAskModal') {
+      shouldShowModal();
+    }
+  }, []);
 
-  // useEffect(() => {
-  //   chrome.runtime.onMessage.addListener(onBackendMessage);
-  //   return () => {
-  //     chrome.runtime.onMessage.removeListener(onBackendMessage);
-  //   };
-  // }, []);
+  useEffect(() => {
+    chrome.runtime.onMessage.addListener(onBackendMessage);
+    return () => {
+      chrome.runtime.onMessage.removeListener(onBackendMessage);
+    };
+  }, []);
+
+  const shouldShowModal = () => {
+    handleLogin((result) => {
+      if (!result.isLogin) {
+        chrome.runtime.sendMessage(
+          {
+            type: 'openSettings',
+          },
+          () => {
+            //
+          },
+        );
+      } else {
+        setShowAskModal(true);
+      }
+    });
+  }
 
   return (
     <>

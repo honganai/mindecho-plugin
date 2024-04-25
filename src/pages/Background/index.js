@@ -15,7 +15,7 @@ initPagesInfo();
 // });
 
 chrome.runtime.onMessage.addListener(handleMessages);
-// chrome.action.onClicked.addListener(handleActiveClick);
+chrome.action.onClicked.addListener(handleActiveClick);
 chrome.tabs.onRemoved.addListener(handleRemoveRab);
 
 /**
@@ -241,8 +241,8 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
     setAutoAdd()
   }
   //测试
-  openSettings();
-  executeScript();
+  // openSettings();
+  // executeScript();
 });
 
 /**
