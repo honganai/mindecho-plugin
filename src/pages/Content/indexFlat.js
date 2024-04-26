@@ -91,12 +91,28 @@ async function getNeedAndData() {
   const typeList = ['NewsArticle', 'Article', 'BlogPosting', 'ScholarlyArticle'];
   const jsonLdElements = document.querySelectorAll('script[type="application/ld+json"]');
   const cTypeList = [];
+
   jsonLdElements.forEach(el => {
     try {
       const data = JSON.parse(el.innerText);
+
+      if (Array.isArray(data)) {
+        data.forEach(item => {
+          if (item['@type']) {
+            cTypeList.push(item['@type']);
+          }
+        });
+      } else if (typeof data === 'object' && data['@type']) {
+        cTypeList.push(data['@type']);
+      } else if (data['@graph']) {
+        data['@graph'].forEach(item => {
+          if (item['@type']) {
+            cTypeList.push(item['@type']);
+          }
+        });
+      }
+
       console.log('Found Schema.org data:', data);
-      _.isArray(data) && data.forEach(item => {cTypeList.push(item['@type'])});
-      _.isObject(data) && cTypeList.push(data['@type']);
     } catch (error) {
       console.error('Error parsing JSON-LD:', error);
     }
