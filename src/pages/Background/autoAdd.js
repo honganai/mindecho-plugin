@@ -121,7 +121,7 @@ const getReadingList = async () => {
 const getPocket = () => {
     return Api['get_user_url']({ body: { page: 1, page_size: MAX_SIZE, title: '', type: 'pocket' } })
         .then((res) => {
-            return res.json()?.result || null;
+            return res.json()?.result || [];
         })
   }
 

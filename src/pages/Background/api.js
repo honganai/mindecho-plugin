@@ -31,12 +31,11 @@ const Api = {
     http.get(`/api/v1/user/info`).then((res) => {
       // 额外保存用户信息
       res.clone().json().then(res => {
-        chrome.storage.local
-        .set({
+        chrome.storage.local.set({
           userInfo: res.result || null,
         })
-        .then((result) => {
-          console.log('set userInfo is ' + result);
+        .then(() => {
+          console.log('set userInfo is ok');
         });
       })
       return res;

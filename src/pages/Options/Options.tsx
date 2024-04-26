@@ -16,9 +16,9 @@ import GlobalContext, {
 } from '../../reducer/global';
 import _ from 'lodash';
 import styles from './Options.module.scss';
-// import { BrowserRouter } from 'react-router-dom';
-
+import { getIsLogin } from '@/constants';
 import ModalContent from '../Content/App';
+import { handleLogin } from '@/utils/common.util';
 
 interface ILinkProps {
   page: number;
@@ -43,13 +43,6 @@ const Options: React.FC = () => {
   });
   const [buildType, setBuildType] = useState<string>('');
 
-  const handleLogin = () => {
-    chrome.storage.local.get(['isLogin']).then((result) => {
-      console.log(result);
-      setIsLogin(result.isLogin);
-    });
-  };
-
   const toLogin = () => {
     chrome.runtime.sendMessage({ type: 'login', data: {} }, (res) => {
       console.log('login res:', res);
@@ -70,47 +63,42 @@ const Options: React.FC = () => {
     if (request.type === 'setLogin') {
       console.log('content msg:', request, sender);
       if (request.isLogin === true) {
-        chrome.runtime.sendMessage({ type: 'request', api: 'userinfo' }, (res) => {
-          if (res) {
-            setUserinfo(res.result);
-            globalDispatch({
-              type: GlobalActionType.SetUserInfo,
-              payload: res.result,
-            });
-            globalDispatch({
-              type: GlobalActionType.SetLanguage,
-              payload: res.result.lang_type,
-            });
-          }
+        chrome.runtime.sendMessage({ type: 'request', api: 'userinfo' }, (result) => {
+          handleLogin((res: any) => { successFn(res) });
         });
       }
-      handleLogin();
       sendResponse('setLogin ok');
     }
   }
 
+  //判断已经设置过用户信息、登录状态的缓存时，直接使用
+  const successFn = (res: any) => {
+    const { isLogin, userInfo } = res;
+    setIsLogin(isLogin)
+    setUserinfo(userInfo);
+    globalDispatch({
+      type: GlobalActionType.SetUserInfo,
+      payload: userInfo,
+    });
+    globalDispatch({
+      type: GlobalActionType.SetLanguage,
+      payload: userInfo.lang_type,
+    });
+  }
+
   useEffect(() => {
     setLoading(true);
-    chrome.runtime.sendMessage({ type: 'request', api: 'userinfo' }, (res) => {
-      setLoading(false);
-      console.log('options userInfo res:', res);
+    handleLogin(
+      (res: any) => {
+        setLoading(false);
+        successFn(res);
+      },
+      //如果没有登录，则等用户点击登陆按钮
+      () => {
+        setLoading(false);
+      }
+    );
 
-      handleLogin();
-      // if (!res || res.error) {
-      //   console.log('用户未登陆');
-      // } else if (res.result) {
-      //   console.log('content user:', res.result);
-      //   setUserinfo(res.result);
-      //   globalDispatch({
-      //     type: GlobalActionType.SetUserInfo,
-      //     payload: res.result,
-      //   });
-      //   globalDispatch({
-      //     type: GlobalActionType.SetLanguage,
-      //     payload: res.result.lang_type,
-      //   });
-      // }
-    });
     chrome.runtime.onMessage.addListener(onLoginBack);
     return () => {
       chrome.runtime.onMessage.removeListener(onLoginBack);

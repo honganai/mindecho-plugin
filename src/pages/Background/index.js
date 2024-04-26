@@ -4,7 +4,7 @@ import Api from './api';
 import { sendsocketMessage, connect, disconnect } from './ws';
 import { baseUrl, welcomeUrl } from './config';
 import ReadingTime from './readingTime';
-import { EXCLUDE_URLS, setExtensionUpdated, setAutoAdd, getIsLogin, initPagesInfo } from '@/constants';
+import { EXCLUDE_URLS, setExtensionUpdated, setAutoAdd, getIsLogin, setIsLogin, initPagesInfo, setUserInfo } from '@/constants';
 import './autoAdd';
 import onTwitterAction from './bookmarks/bookmarks';
 
@@ -143,9 +143,10 @@ async function onLoginAction(message, sendResponse) {
 
 // 缓存登录state
 function setLogin(value, activeTab) {
-  chrome.storage.local.set({
-    isLogin: value,
-  });
+  // chrome.storage.local.set({
+  //   isLogin: value,
+  // });
+  setIsLogin(value);
   if (activeTab) {
     chrome.tabs.sendMessage(activeTab.id, { isLogin: value, type: 'setLogin' }, function (res) {
       console.log('set login ok');
@@ -172,9 +173,12 @@ async function onRequest(message, sendResponse) {
     return Api[api](message)
       .then((res) => {
         if (res.status === 401) {
-          // onLoginAction(message, sendResponse);
           setLogin(false);
           return;
+        }else if (res.status !== 200) {
+          //登出后导致接口报错，需要清除登录状态
+          setLogin(false);
+          setUserInfo(null);
         }
         return res.json();
       })

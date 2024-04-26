@@ -16,8 +16,10 @@ interface IProps {
 }
 
 const MyProgress: React.FC<IProps> = ({ moreCount }) => {
+    const { getMessage: t } = chrome.i18n;
     const { state: { progress, titleMap: keyList }, dispatch: globalDispatch } = useContext(GlobalContext);
     const [more, setMore] = useState<boolean>(false);
+    const [inited, setInited] = useState<boolean>(false);
     //使用该组件时引用
     // const [timer, setTimer] = useState<NodeJS.Timeout>();
 
@@ -49,6 +51,10 @@ const MyProgress: React.FC<IProps> = ({ moreCount }) => {
     //         })
     //     });
     // }
+
+    useEffect(() => {
+        setInited(true);
+    }, [progress]);
 
     const initialData = (type: string, data: any, mapData: any) => {
         if (!_.some(data, ['title', keyList[type]])) {
@@ -102,14 +108,16 @@ const MyProgress: React.FC<IProps> = ({ moreCount }) => {
     }
 
     return (
-        <Spin spinning={progressData.length <= 0} indicator={<LoadingOutlined style={{ fontSize: 18 }} spin />}>
+        <Spin spinning={!inited} indicator={<LoadingOutlined style={{ fontSize: 18 }} spin />}>
             <div className={styles.content} style={{ height: more ? 'auto' : '26px' }}>
                 {
                     progressData.length > moreCount ?
                         more ? <CaretDownOutlined onClick={() => setMore(false)} /> : <CaretRightOutlined onClick={() => setMore(true)} />
                         : null
                 }
-                {renderProgress(progressData)}
+                {
+                    progressData.length > 0 ? renderProgress(progressData) : null
+                }
             </div>
         </Spin>
 

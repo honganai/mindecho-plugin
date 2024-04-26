@@ -8,6 +8,18 @@ import {useEffect, useRef} from 'react';
 //获取数据最大限制
 export const MAX_SIZE = 1999;
 
+export const handleLogin = (success?: (result: any) => void, fail?: () => void) => {
+  // 查询是否登录
+  chrome.storage.local.get(['isLogin', 'userInfo']).then((result) => {
+    console.log("🚀 ~ chrome.storage.local.get ~ result:", result)
+    if ( result.isLogin && result.userInfo ) {
+      success?.(result);
+    }else {
+      fail?.();
+    }
+  });
+};
+
 /**
  * @description: 格式化时间为 MM/DD
  * @param {string} dateString 时间字符串

@@ -1,4 +1,4 @@
-import { getDocument } from '@/utils/common.util';
+import { getDocument, handleLogin } from '@/utils/common.util';
 import React, { useCallback, useContext, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import AskModal from './components/AskModal';
@@ -11,24 +11,7 @@ interface IProps {
 
 const App: React.FC<IProps> = ({ type = 'webPage' }) => {
   const { state: globalState, dispatch: globalDispatch } = useContext(GlobalContext);
-
   const flatRoot = type === 'options' ? document.body : getDocument().getElementById('mindecho-sidebar-flat');
-
-  const handleLogin = (callback?: (result: any) => void) => {
-    // 查询是否登录
-    chrome.storage.local.get(['isLogin', 'userInfo']).then((result) => {
-      console.log("🚀 ~ chrome.storage.local.get ~ result:", result)
-      globalDispatch({
-        type: GlobalActionType.SetIsLogin,
-        payload: result.isLogin,
-      });
-      globalDispatch({
-        type: GlobalActionType.SetUserInfo,
-        payload: result.userInfo,
-      });
-      callback?.(result);
-    });
-  };
 
   const setShowAskModal = (value: boolean) => {
     globalDispatch({
@@ -37,18 +20,37 @@ const App: React.FC<IProps> = ({ type = 'webPage' }) => {
     });
   };
 
+  //判断已经设置过用户信息、登录状态的缓存时，直接使用
+  const successFn = (res: any) => {
+    const { isLogin, userInfo } = res;
+    globalDispatch({
+      type: GlobalActionType.SetUserInfo,
+      payload: userInfo,
+    });
+    globalDispatch({
+      type: GlobalActionType.SetLanguage,
+      payload: userInfo.lang_type,
+    });
+  }
+
   useEffect(() => {
     setActionListener();
-    if (type === 'options') {
-      handleLogin();
-    } else {
-      chrome.runtime.sendMessage({ type: 'request', api: 'userinfo' }, (res) => {
-        console.log('userinfo res:', res);
-        handleLogin();
-      });
-    }
+
+    handleLogin(
+      (res: any) => {
+        successFn(res);
+      },
+      //如果没有登录，调登陆接口
+      () => {
+        chrome.runtime.sendMessage({ type: 'request', api: 'userinfo' }, (result) => {
+          console.log('userinfo res:', result);
+          handleLogin((res: any) => successFn(res));
+        });
+      }
+    );
   }, []);
 
+  //快捷键监听
   const setActionListener = () => {
     document.addEventListener('keydown', function (event) {
       // 检查是否按下了 'E' 键
@@ -80,19 +82,17 @@ const App: React.FC<IProps> = ({ type = 'webPage' }) => {
   }, []);
 
   const shouldShowModal = () => {
-    handleLogin((result) => {
-      if (!result.isLogin) {
-        chrome.runtime.sendMessage(
-          {
-            type: 'openSettings',
-          },
-          () => {
-            //
-          },
-        );
-      } else {
-        setShowAskModal(true);
-      }
+    handleLogin((res: any) => {
+      setShowAskModal(true);
+    }, () => {
+      chrome.runtime.sendMessage(
+        {
+          type: 'openSettings',
+        },
+        () => {
+          //
+        },
+      );
     });
   }
 

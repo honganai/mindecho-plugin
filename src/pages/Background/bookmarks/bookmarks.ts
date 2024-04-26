@@ -38,7 +38,6 @@ export default async function onTwitterAction() {
         if (!/\/graphql\/.+\/Bookmarks/.test(details.url)) {
           return;
         }
-        console.log(111111, details, details.url)
       
         try {
           const newData = extractDataFromResponse<BookmarksResponse, Tweet>(

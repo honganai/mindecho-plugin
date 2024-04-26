@@ -52,10 +52,18 @@ export const getIsLogin = () => {
   });
 }
 
+export const setIsLogin = (status: boolean) => {
+  return chrome.storage.local.set({ [ISLOGIN]: status });
+}
+
 export const getUserInfo = () => {
   return chrome.storage.local.get(USERINFO).then((res) => {
     return res[USERINFO];
   });
+}
+
+export const setUserInfo = (info: any) => {
+  return chrome.storage.local.set({ [USERINFO]: info });
 }
 
 export const setLastUpateDataTime = (time: number) => {
