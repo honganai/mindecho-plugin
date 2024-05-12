@@ -1,15 +1,7 @@
-import React, { useEffect, useContext, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
-import dayjs from 'dayjs';
-import { Button, Spin } from 'antd';
-import { LogoutOutlined, PlusOutlined } from '@ant-design/icons';
-import { CONTACT_URL, SUBSCRIBE_URL } from '@/constants';
-import cs from 'classnames';
-import styles from './index.module.scss';
-import _ from "lodash";
-import posthog from "posthog-js";
+import React, { useContext, useRef } from 'react';
+import clsx from 'clsx';
 import logo from '@/assets/icons/logo.png';
-import GlobalContext, { ActionType, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
+import GlobalContext from '@/reducer/global';
 
 interface Props {
   tip?: string;
@@ -18,23 +10,17 @@ interface Props {
 
 const Header: React.FC<Props> = ({ tip, note }) => {
   const { getMessage: t } = chrome.i18n;
-  const { state: { userInfo }, dispatch: globalDispatch } = useContext(GlobalContext);
+  const { state: { userInfo } } = useContext(GlobalContext);
   const el_userInfo = useRef(null);
 
-  useEffect(() => {
-    if (el_userInfo.current) {
-      //console.log(11111111, el_userInfo.current, el_userInfo.current.offsetHeight)
-    }
-  }, []);
-
   return (
-    <div className={styles['userInfo']} ref={el_userInfo}>
-      <img className={styles['logo']} src={logo} alt="logo" />
-      <div className={styles['userName']}>
-        <p className={styles['name']}>{t('Hello')}, {userInfo?.username || '-'}</p>
-        <p className={styles['recommend']}>{tip || ''}</p>
+    <div className={clsx(`flex p-2  text-lg	 items-center text-gray-700 weight-500`)} ref={el_userInfo}>
+      <img className={clsx(`w-25 h-24  mr-2`)} src={logo} alt="logo" />
+      <div className={clsx(`weight-500 flex flex-col justify-center`)}>
+        <p className={clsx(`text-xl	`)}>{t('Hello')}, {userInfo?.username || '-'}</p>
+        <p className={clsx(`text-gray-400`)}>{tip || ''}</p>
         {
-          note && <p className={styles['note']}><strong>{t('Note')}:</strong> {note}</p>
+          note && <p className={clsx(`fs-14 text-gray-400`)}><strong>{t('Note')}:</strong> {note}</p>
         }
       </div>
     </div>

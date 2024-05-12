@@ -15,11 +15,13 @@ import GlobalContext, {
   enumSubscribeModalType,
 } from '../../reducer/global';
 import _ from 'lodash';
-import styles from './Options.module.scss';
+// import styles from './Options.module.scss';
 import { getIsLogin } from '@/constants';
 import ModalContent from '../Content/App';
 import { handleLogin } from '@/utils/common.util';
-
+import clsx from 'clsx';
+import { FullScreenLoading } from './components/user/FullScreenLoading';
+import { motion, AnimatePresence } from "framer-motion";
 interface ILinkProps {
   page: number;
   status?: false
@@ -125,28 +127,30 @@ const Options: React.FC = () => {
         state: gloablState,
         dispatch: globalDispatch,
       }}>
-      <div className={styles['options-container']}>
+      <div className={clsx(`bg-white`)}>
         <ConfigProvider>
-          <Spin spinning={loading}>
-            {loading ? null : !isLogin ? (
-              <>
-                <Login onLogin={toLogin} />
-              </>
-            ) : (
-              <>
-                {stepPage === 1 ? <User onLink={(page: number) => { setStepPage(page) }} /> :
-                  stepPage === 2 ? <BrowserData onLink={(page: number, status = false) => { setStepPage(page); setBuildType('browser'); setBuildStatus(status) }} /> :
-                    stepPage === 5 ? <HistoryData onLink={(page: number, status = false) => { setStepPage(page); setBuildType('browser'); setBuildStatus(status) }} /> :
-                      stepPage === 3 ? <Building type={buildType} status={buildStatus} /> :
-                        stepPage === 4 ? <Pocket onLink={(page: number) => { setStepPage(page); setBuildType('pocket') }} /> :
-                          stepPage === 6 ? <Twitter onLink={(page: number) => { setStepPage(page) }} /> : null}
-                <ModalContent type="options" />
-              </>
-            )}
-          </Spin>
+          <AnimatePresence>
+            {loading ? <FullScreenLoading />
+              : !isLogin ? (
+                <>
+                  <Login onLogin={toLogin} />
+                </>
+              ) : (
+                <>
+                  {stepPage === 1 ? <User onLink={(page: number) => { setStepPage(page) }} /> :
+                    stepPage === 2 ? <BrowserData onLink={(page: number, status = false) => { setStepPage(page); setBuildType('browser'); setBuildStatus(status) }} /> :
+                      stepPage === 5 ? <HistoryData onLink={(page: number, status = false) => { setStepPage(page); setBuildType('browser'); setBuildStatus(status) }} /> :
+                        stepPage === 3 ? <Building type={buildType} status={buildStatus} /> :
+                          stepPage === 4 ? <Pocket onLink={(page: number) => { setStepPage(page); setBuildType('pocket') }} /> :
+                            stepPage === 6 ? <Twitter onLink={(page: number) => { setStepPage(page) }} /> : null}
+                  <ModalContent type="options" />
+                </>
+              )}
+          </AnimatePresence>
+
         </ConfigProvider>
       </div>
-    </GlobalContext.Provider>
+    </GlobalContext.Provider >
   )
 };
 

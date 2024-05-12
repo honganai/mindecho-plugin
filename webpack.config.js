@@ -8,7 +8,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const ReactRefreshTypeScript = require('react-refresh-typescript');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const ASSET_PATH = process.env.ASSET_PATH || '/';
 
@@ -50,7 +50,7 @@ const styleLoaderOption = {
           extensionHost = document.createElement('div');
           extensionHost.setAttribute('id', extensionHostID);
           document.body.append(extensionHost);
-          extensionHost.attachShadow({mode: 'open'});
+          extensionHost.attachShadow({ mode: 'open' });
         }
         if (extensionHost.shadowRoot) {
           extensionHost.shadowRoot.appendChild(element);
@@ -102,6 +102,7 @@ var options = {
               sourceMap: true,
             },
           },
+          { loader: 'postcss-loader' },
         ],
       },
       {
@@ -122,10 +123,10 @@ var options = {
                 sourceMap: true,
                 modifyVars: {
                   'primary-color': '#0a85d1',
-                  'font-size-base': '15px'
+                  'font-size-base': '15px',
                 },
                 javascriptEnabled: true,
-              }
+              },
             },
           },
         ],
@@ -156,7 +157,7 @@ var options = {
                   'import',
                   {
                     libraryName: 'antd',
-                    style: true
+                    style: true,
                   },
                 ],
               ],
@@ -198,9 +199,11 @@ var options = {
   resolve: {
     alias: {
       ...alias,
-      '@': path.resolve(__dirname, 'src')
+      '@': path.resolve(__dirname, 'src'),
     },
-    extensions: fileExtensions.map((extension) => '.' + extension).concat(['.js', '.jsx', '.ts', '.tsx', '.css', 'scss']),
+    extensions: fileExtensions
+      .map((extension) => '.' + extension)
+      .concat(['.js', '.jsx', '.ts', '.tsx', '.css', 'scss']),
   },
   plugins: [
     // new MiniCssExtractPlugin(),

@@ -1,6 +1,34 @@
 import React from 'react';
 import { UserInfo } from '@/types';
 
+export const ContentTypeMap: { [key: string]: string } = {
+  bookmark: 'Bookmarks',
+  readinglist: 'Reading List',
+  history: 'History',
+  pocket: 'Pocket',
+  x: 'X',
+}
+
+
+// status 0初始化 1用户确认启动抓取  2开始抓取 3抓取成功 4抓取失败 5title抓取完成
+export enum ContentProcessStatusMap {
+  Init = 0,
+  UserConfirm = 1,
+  Start = 2,
+  Success = 3,
+  Fail = 4,
+  TitleFinish = 5
+}
+
+export const ContentProcessStatusLabelMap: { [key: number]: string } = {
+  0: 'Init',
+  1: 'UserConfirm',
+  2: 'Start',
+  3: 'Success',
+  4: 'Fail',
+  5: 'TitleFinish'
+}
+
 /** 弹窗类型 */
 export enum enumSubscribeModalType {
   Premium,
@@ -20,6 +48,17 @@ export enum enumSubscribeModalType {
 //   content: String;
 //   status: 3;
 // }
+
+export interface INav {
+  title: string;
+  action: string;
+}
+
+export const NavigationMap: INav[] = [
+  { title: 'Collection', action: 'collection' },
+  { title: 'Manages Sources', action: 'manages-sources' },
+];
+
 export interface IUpateData {
   url: string;
   status: 1 | 0;
@@ -52,6 +91,7 @@ export interface IReadingList {
 export interface IProgressItem {
   count: number;
   status: 0 | 1 | 2 | 3 | 4 | 5;
+  type?: string
 }
 export interface ITitleMap {
   [key: string]: string;
@@ -89,6 +129,8 @@ export interface IState {
   /** 历史网页数据 **/
   // historyPage?: Array<IPageInfo> | [];
   // historyId: number;
+  // nav
+  nav: string;
 }
 
 export enum ActionType {
@@ -116,6 +158,7 @@ export enum ActionType {
   SetIsLogin = 'SetIsLogin',
   SetUserInfo = 'SetUserInfo',
   SetProgress = 'SetProgress',
+  SetNav = 'SetNav',
 }
 
 export type IAction =
@@ -135,13 +178,15 @@ export type IAction =
   | ISetIsLogin
   | ISetProgress
   | ISetTitleMap
-  | ISetUserInfo;
+  | ISetUserInfo
+  | ISetNav;
 
 
-// export interface ISetHistoryPage {
-//   type: ActionType.SetHistoryPage;
-//   payload: Array<IPageInfo>;
-// }
+export interface ISetNav {
+  type: ActionType.SetNav;
+  payload: string;
+}
+
 export interface ISetTitleMap {
   type: ActionType.SetTitleMap;
   payload: ITitleMap;
@@ -307,13 +352,21 @@ export function reducer(state: IState, action: IAction): IState {
         requestEnd: action.payload,
       };
 
+    case ActionType.SetNav:
+      return {
+        ...state,
+        nav: action.payload,
+      };
+
     default:
       throw new Error();
   }
 }
 
 const context = React.createContext(
-  {} as {
+  {
+    nav: NavigationMap[0].action
+  } as unknown as {
     state: IState;
     dispatch: React.Dispatch<IAction>;
   },
