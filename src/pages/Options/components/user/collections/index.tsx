@@ -17,8 +17,8 @@ export function Collections() {
   const [page, setPage] = React.useState<number>(1);
   const [totalPage, setTotalPage] = React.useState<number>(0);
   const pageSize = 10;
-
-  const [currentContentType, setCurrentContentType] = useState(0);
+  //查询时type默认值为1，即查询用户确认上传的数据
+  const [currentContentType, setCurrentContentType] = useState(1);
 
   const getProgress = () => {
     chrome.runtime.sendMessage({ type: 'request', api: 'user_url_status' }, (res) => {
@@ -41,6 +41,7 @@ export function Collections() {
     });
   }
   React.useEffect(() => {
+    console.log('currentContentType:', currentContentType)
     getUserUrl({ status: currentContentType, page, page_size: pageSize })
     getProgress()
   }, [page, pageSize, currentContentType]);
@@ -55,6 +56,7 @@ export function Collections() {
   }
 
   const iconMap: { [key: number]: any } = {
+    0: fetchingIcon,
     1: fetchingIcon,
     2: fetchingIcon,
     5: fetchingIcon,
