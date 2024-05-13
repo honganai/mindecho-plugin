@@ -2,11 +2,11 @@ import React from 'react';
 import { UserInfo } from '@/types';
 
 export const ContentTypeMap: { [key: string]: string } = {
-  bookmark: 'Bookmarks',
-  readinglist: 'Reading List',
-  history: 'History',
-  pocket: 'Pocket',
-  x: 'X',
+  bookmark: 'bookmarks',
+  readinglist: 'reading_list',
+  history: 'history',
+  pocket: 'pocket',
+  x: 'x',
 }
 
 
@@ -52,11 +52,12 @@ export enum enumSubscribeModalType {
 export interface INav {
   title: string;
   action: string;
+  icon: string
 }
 
 export const NavigationMap: INav[] = [
-  { title: 'Collection', action: 'collection' },
-  { title: 'Manages Sources', action: 'manages-sources' },
+  { title: 'collection', action: 'collection', icon: 'collection' },
+  { title: 'manages_sources', action: 'manageSources', icon: '' },
 ];
 
 export interface IUpateData {

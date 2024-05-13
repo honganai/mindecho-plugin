@@ -7,7 +7,6 @@ import styles from './index.module.scss';
 import _ from "lodash";
 import posthog from "posthog-js";
 import GlobalContext, { ActionType, IUpateData, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
-import Header from '../header/header';
 import { setAutoAdd as setStorageAutoAdd, setLastUpateDataTime_pocket } from '@/constants';
 import DataList from '../datalist/datalist';
 import { MAX_SIZE } from '@/utils/common.util';
@@ -196,7 +195,6 @@ const Pocket: React.FC<Props> = ({ onLink }) => {
 
   return (
     <div className={styles.container}>
-      <Header tip={t('connect_to_pocket_to_revive_your_dusty_stash')} />
       <div className={styles['content']}>
         <div className={styles['left']}>
           <div className={styles['back']} onClick={() => onLink(1)}>

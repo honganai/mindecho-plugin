@@ -4,7 +4,6 @@ import cs from 'classnames';
 import styles from './index.module.scss';
 import _ from "lodash";
 import GlobalContext, { ActionType, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
-import Header from '../header/header';
 import BadIcon from '@/assets/icons/bad_icon.png'
 
 interface Props {
@@ -26,7 +25,6 @@ const Twitter: React.FC<Props> = ({ onLink }: Props) => {
 
   return (
     <div className={styles.container}>
-      <Header tip={t('enable_search_for_your_X_bookmarks')} />
       <div className={styles.content}>
         <div className={styles.title}>X Bookmarks</div>
         <p className={styles.tip}>

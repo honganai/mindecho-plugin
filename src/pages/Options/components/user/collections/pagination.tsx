@@ -6,10 +6,15 @@ const Pagination = ({
   totalPage = 1,
   pageSize = 10,
   onPageChange,
+}: {
+  page: number,
+  totalPage: number,
+  pageSize: number,
+  onPageChange: (page: number) => void
 }) => {
   const [currentPage, setCurrentPage] = useState(page);
 
-  const handlePageChange = (newPage) => {
+  const handlePageChange: (newPage: number) => void = (newPage) => {
     if (newPage < 1 || newPage > totalPage) return;
     setCurrentPage(newPage);
     onPageChange(newPage);

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState, useContext } from 'react';
 import styles from './index.module.scss';
 import GifArrow from '@/assets/icons/gif_arrow.png';
 import Gif from '@/assets/icons/control.gif';
-import QuestArrow from '@/assets/icons/quest_arrow.png';
+import QuestArrow from '@/assets/icons/Vector 1.png';
 import './index.module.css';
 import GlobalContext, { ActionType } from '@/reducer/global';
 import _, { set } from 'lodash';
@@ -24,7 +24,7 @@ const Building: React.FC<IProp> = ({ type = 'browser', status = false }) => {
   const [waitTime, setWaitTime] = useState(null as any);
   const TIMEOUT = 600; //seconds 最长等待时间
   const [timer, setTimer] = useState<NodeJS.Timeout>();
-  const MIN_TIMEOUT = 60; //最小等待时间
+  const MIN_TIMEOUT = 5; //最小等待时间
 
   useEffect(() => {
     if (_.isArray(upateData) && upateData.length > 0) {
@@ -37,7 +37,12 @@ const Building: React.FC<IProp> = ({ type = 'browser', status = false }) => {
       getProgress();
     }, 5000);
 
-    setTimer(intervalId)
+    setTimeout(() => {
+
+      clearInterval(timer)
+      setPrecent(100)
+      setDone(true)
+    }, 1000 * MIN_TIMEOUT)
 
     return () => clearInterval(intervalId); // Ensure the interval is cleared when the component unmounts
   }, [waitTime]);
@@ -60,32 +65,34 @@ const Building: React.FC<IProp> = ({ type = 'browser', status = false }) => {
     });
   }
 
-  useEffect(() => {
-    if (_.isArray(progress) && waitTime > 0) {
-      let count = 0;
-      let pending = 0;
-      (progress || []).forEach((item: any) => {
-        count += item.count;
-        if (item.status === 1 || item.status === 2) {
-          pending += item.count;
-        }
-      })
-      if (waitTime < TIMEOUT && pending) {
-        const percent = Math.floor((count - pending) / count * 100)
-        setPrecent(percent)
-      } else {
-        if (waitTime < MIN_TIMEOUT) {
-          setPrecent(99)
-          // 如果等待时间小于最小等待时间，即使所有任务完成，也不应该停止计时器或者标记为完成
-        } else {
-          clearInterval(timer)
-          setPrecent(100)
-          setTimeout(() => { setDone(true) }, 1500)
-        }
-      }
-    }
-    return () => { }
-  }, [progress, waitTime])
+  // useEffect(() => {
+  //   if (_.isArray(progress) && waitTime > 0) {
+  //     let count = 0;
+  //     let pending = 0;
+  //     (progress || []).forEach((item: any) => {
+  //       count += item.count;
+  //       if (item.status === 1 || item.status === 2) {
+  //         pending += item.count;
+  //       }
+  // })
+
+
+  // if (waitTime < TIMEOUT && pending) {
+  //   const percent = Math.floor((count - pending) / count * 100)
+  //   setPrecent(percent)
+  // } else {
+  //   if (waitTime < MIN_TIMEOUT) {
+  //     setPrecent(99)
+  //     // 如果等待时间小于最小等待时间，即使所有任务完成，也不应该停止计时器或者标记为完成
+  //   } else {
+  //     clearInterval(timer)
+  //     setPrecent(100)
+  //     setTimeout(() => { setDone(true) }, 1500)
+  //   }
+  // }
+  //   }
+  //   return () => { }
+  // }, [progress, waitTime])
 
   return (
     <div className={styles.container}>

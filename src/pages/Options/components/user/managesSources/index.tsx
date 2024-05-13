@@ -6,14 +6,38 @@ import cs from 'classnames';
 import pocketIcon from '@/assets/icons/pocket_icon.png';
 import TwitterIcon from '@/assets/icons/twitter_icon.png';
 import pocketSourceIcon from '@/assets/icons/pocket_source_icon.png';
+import raindropIcon from '@/assets/icons/image 27.png';
+import RIcon from '@/assets/icons/image 30.png';
+import XIcon from '@/assets/icons/image 28.png';
+
 import twitterSourceIcon from '@/assets/icons/twitter_source_icon.png';
 import RaindRopSourceIcon from '@/assets/icons/raindrop_source_icon.png';
 import { LogoutOutlined, PlusOutlined } from '@ant-design/icons';
-import styles from '../index.module.scss';
-
-const { getMessage: t } = chrome.i18n;
+import { motion } from 'framer-motion';
 
 export function ManagesSources({ onLink }: { onLink: Function }) {
+  const { getMessage: t } = chrome.i18n;
+
+  const CardComponentMaker = ({ title, subTitle, handleClick }: {
+    title: React.ReactElement | string;
+    subTitle: React.ReactElement | string;
+    handleClick: () => void
+  }): JSX.Element => {
+    return <div className={clsx(
+      `h-40 min-w-96 w-1/3 rounded-xl text-xl	flex between`,
+      `cursor-pointer border border-gray-500 hover hover:border-sky-500`,
+      `p-4`
+    )}
+      onClick={handleClick}
+    >
+      <PlusOutlined style={{ fontSize: '28px' }} className="h-10 mr-2" />
+
+      <div className="w-0 flex-1">
+        <p className="h-10 flex text-gray-900 text-xl text-bold">{title}</p>
+        <p className="text-gray-500 text-sm mt-2">{subTitle}</p>
+      </div>
+    </div>
+  }
 
   const [otherSourceModalShow, setOtherSourceModalShow] = React.useState<boolean>(false);
 
@@ -29,7 +53,7 @@ export function ManagesSources({ onLink }: { onLink: Function }) {
             // 定义计时器变量
             let timer = 0;
             const interval = 5000;
-            const maxTime = 10 * 60 * 1000;
+            const maxTime = 5 * 1000;
 
             // 定义定时器函数
             const mainTimer = setInterval(() => {
@@ -54,32 +78,68 @@ export function ManagesSources({ onLink }: { onLink: Function }) {
 
 
 
-  return <div className={clsx(`relative flex flex-col px-4`)}>
-    <div className={``}>
+  return <div className={clsx(`relative flex flex-col px-4 pl-4`)}>
+    <div className="my-4">
+      <p className="text-gray-900 text-xl my-2">{t('browser')}</p>
+      <div className={clsx(
+        `flex wrap gap-4`
+      )}>
 
-      <Button className={clsx(
-        `h-20 my-5 font-bold text-xl rounded-xl	flex items-center justify-center`,
-      )} size="middle" type="primary" block onClick={() => onLink(2)} icon={<PlusOutlined />}>
-        <span>{t('import_collections_in_browser')}</span>
-      </Button>
-      <Button className={clsx(
-        `h-20 my-5 font-bold text-xl rounded-xl	flex items-center justify-center`,
-      )} size="middle" block onClick={() => setOtherSourceModalShow(true)} icon={<PlusOutlined />}>
-        <span>{t('connect_other_sources')}</span>
-        <img className={clsx(`w-10 h-10 ml-2`)} src={pocketIcon} alt="pocket icon" />
-        {/* Twitter */}
-        {/* <img className={cs(styles['twitter-icon'], styles['icon'])} src={TwitterIcon} alt="twitter icon" /> */}
-      </Button>
+        {CardComponentMaker({
+          title: t('sync_browser_collections'),
+          subTitle: t(`choose_from_bookmarks_reading_list_history`),
+          handleClick: () => onLink(2)
+        })}
+      </div>
     </div>
-    <Modal footer={false} className={styles['source-modal']} onCancel={() => setOtherSourceModalShow(false)} mask={false} open={otherSourceModalShow} title={t('select_source')} centered={true}>
-      <div className={styles['source-content']}>
+
+    <div className="my-4">
+      <p className="text-gray-900 text-xl my-2">{t('reading_services')}</p>
+      <div className={clsx(
+        `flex wrap gap-4`
+      )}>
+        {CardComponentMaker({
+          title: <img className="h-full" src={pocketSourceIcon} alt="pocketSourceIcon" />,
+          subTitle: t('your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you'),
+          handleClick: () => onLink(4)
+        })}
+        {CardComponentMaker({
+          title: <img src={raindropIcon} alt="raindropIcon" />,
+          subTitle: t('more_sources_will_be_supported'),
+          handleClick: () => { }
+        })}
+
+        {CardComponentMaker({
+          title: <img src={RIcon} alt="RIcon" />,
+          subTitle: t('more_sources_will_be_supported'),
+          handleClick: () => { }
+        })}
+
+      </div>
+    </div>
+
+    <div className="my-4">
+      <p className="text-gray-900 text-xl my-2">{t('social')}</p>
+      <div className={clsx(
+        `flex wrap gap-1`
+      )}>
+        {CardComponentMaker({
+          title: <img className="h-full" src={XIcon} alt="XIcon" />,
+          subTitle: t('your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you'),
+          handleClick: () => { }
+        })}
+      </div>
+    </div>
+
+    <Modal footer={false} onCancel={() => setOtherSourceModalShow(false)} mask={false} open={otherSourceModalShow} title={t('select_source')} centered={true}>
+      <div>
         {/* pocket数据来源 */}
-        <div className={cs(styles['source-item'], styles['source-pocket'])}>
-          <PlusOutlined className={styles.addIcon} />
-          <div className={styles['source-item-title']} onClick={() => Bind('pocket')}>
+        <div>
+          <PlusOutlined />
+          <div onClick={() => Bind('pocket')}>
             <img src={pocketSourceIcon} alt="pocketSourceIcon" />
           </div>
-          <div className={styles['source-item-text']}>
+          <div>
             <p>{t('your_pocket_saves_list_will_be_imported_with_secure_authorization')}</p>
             <p>{t('full_text_of_the_saves_will_be_fetched_and_made_searchable')}</p>
           </div>
@@ -95,15 +155,15 @@ export function ManagesSources({ onLink }: { onLink: Function }) {
     </div>
   </div> */}
         {/* 其他 */}
-        <div className={styles['raindrop-other']}>
-          <div className={styles['source-raindrop-title']}>
+        <div>
+          <div>
             <img src={RaindRopSourceIcon} alt="RaindRopSourceIcon" />
           </div>
-          <div className={styles['source-raindrop-text']}>
+          <div>
             <p>{t('more_sources_will_be_supported')}</p>
           </div>
         </div>
       </div>
     </Modal>
-  </div>;
+  </div >
 }

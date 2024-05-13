@@ -6,10 +6,10 @@ import cs from 'classnames';
 import styles from './index.module.scss';
 import _ from "lodash";
 import GlobalContext, { ActionType, IUpateData, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
-import Header from '../header/header';
 import { setAutoAdd as setStorageAutoAdd, setLastUpateDataTime } from '@/constants';
 import DataList from '../datalist/datalist';
 import { MAX_SIZE } from '@/utils/common.util';
+import clsx from 'clsx';
 
 export enum SubType {
   Free = 'free',
@@ -254,8 +254,10 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
   }
 
   return (
-    <div className={styles.container}>
-      <Header tip={t('select_content_to_be_made_searchable')} />
+    <div className={clsx(
+      styles.container,
+      'flex-1 w-0 overflow-auto'
+    )}>
       <div className={styles['content']}>
         <div className={styles['left']}>
           <div className={styles['back']} onClick={() => onLink(1)}>

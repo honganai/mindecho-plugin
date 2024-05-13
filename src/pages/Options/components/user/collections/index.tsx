@@ -65,13 +65,12 @@ export function Collections() {
       popText: `Full content  & available for query`,
     },
     4: {
-      Component: <ExclamationOutlined className="rounded-full border border-solid border-red-500	 text-red-500" />,
+      Component: <ExclamationOutlined className="rounded-full border border-solid border-red-500 text-red-500" />,
       popText: `Content not available.`,
     },
   }
 
   return <div className={clsx(`h-full relative flex flex-col px-4`)}>
-
 
     <CollectionsHeaderTabSwitcher
       currentContentType={currentContentType}
@@ -81,43 +80,43 @@ export function Collections() {
     <div className="flex-1 h-0 overflow-auto  flex flex-col ">
       {loading && <FullScreenLoading />}
 
-      {collections.map(item => (
-        <motion.div
-          key={item.id}
-          className='flex p-4 hover:bg-gray-100 hover text-gray-600 w-full border-solid border-gray-100 border-b last:border-b-0 last:pb-0'
-        >
+      {
+        collections.length ? collections.map(item => (
+          <motion.div
+            key={item.id}
+            className='flex p-4 hover:bg-gray-100 hover text-gray-600 w-full border-solid border-gray-100 border-b last:border-b-0 last:pb-0'
+          >
 
-          <div className="mr-2">
-            <Tooltip placement="top" title={iconMap[item.status].popText}>{
-              iconMap[item.status].Component
-            }</Tooltip></div>
+            <div className="mr-2">
+              <Tooltip placement="top" title={iconMap[item.status].popText}>{
+                iconMap[item.status].Component
+              }</Tooltip></div>
 
-          <div className="w-0 flex-1">
-            <div className="flex between">
-              <div className={
-                clsx('font-bold flex-1 w-0 text-inherit hover:text-slate-900 cursor-pointer')
-              }>
-                {item.title}
+            <div className="w-0 flex-1">
+              <div className="flex between">
+                <div className={
+                  clsx('font-bold flex-1 w-0 text-inherit hover:text-slate-900 cursor-pointer')
+                }>
+                  {item.title}
+                </div>
+                <div className="pl-10">{(new Date(item.user_create_time)).toString()}</div>
               </div>
-              <div className="pl-10">{(new Date(item.user_create_time)).toString()}</div>
+
+              <div className="text-sm text-gray-500">{item.url}</div>
+
+              <div className={
+                clsx('line-clamp-3')
+              }>{item.article_content || item.title} </div>
+
             </div>
+          </motion.div>)
+        ) :
+          <div className="w-full h-full flex justify-center items-center text-gray-400">No Data</div>
+      }
 
-            <div className="text-sm text-gray-500">{item.url}</div>
-
-            <div className={
-              clsx('line-clamp-3')
-            }>{
-                item.article_content || item.title
-              } </div>
-
-          </div>
-        </motion.div>)
-      )}
     </div>
 
-    {totalPage > 0 && <div
-      className="mt-4 mb-4 w-full text-center "
-    >
+    {totalPage > 0 && <div className="mt-4 mb-4 w-full text-center ">
       <Pagination
         current={page}
         showSizeChanger={false}

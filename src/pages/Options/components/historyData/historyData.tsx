@@ -5,7 +5,6 @@ import { ArrowLeftOutlined, SearchOutlined } from '@ant-design/icons';
 import styles from './index.module.scss';
 import _ from "lodash";
 import GlobalContext from '@/reducer/global';
-import Header from '../header/header';
 import { setHistoryAutoAdd as setStorageAutoAdd, getPagesInfo, initPagesInfo } from '@/constants';
 import DataList from '../datalist/datalist';
 
@@ -185,7 +184,6 @@ const HistoryData: React.FC<Props> = ({ onLink }) => {
 
   return (
     <div className={styles.container}>
-      <Header tip={t('enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization')} note={t('only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included')} />
       <div className={styles['content']}>
         <div className={styles['left']}>
           <div className={styles['back']} onClick={() => onLink(2)}>

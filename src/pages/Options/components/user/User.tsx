@@ -3,12 +3,10 @@ import dayjs from 'dayjs';
 // import styles from './index.module.scss';
 import _ from "lodash";
 import GlobalContext, { ActionType, IBookmarks, IHistory, IReadingList, NavigationMap } from '@/reducer/global';
-import { Navigation } from './Navigation';
 import { motion, AnimatePresence } from "framer-motion";
 import { FullScreenLoading } from './FullScreenLoading';
 import { ManagesSources } from './managesSources';
 import { Collections } from './collections';
-import Header from '../header/header';
 
 export enum SubType {
   Free = 'free',
@@ -164,23 +162,11 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
   const Component = components[nav];
 
   return (
-    <div className='w-full h-screen flex flex-col'>
-      <div className='p-4 pt-6' >
-        <Header tip="All the saves are here." />
-      </div>
-
-      <div className='flex-1 h-0'>
-        {spinning
-          ? <FullScreenLoading />
-          : <motion.div className={`flex w-full h-full`}>
-            <Navigation />
-
-            <div className='flex-1 w-0 h-full overflow-auto'>
-              {Component}
-            </div>
-
-          </motion.div>}
-      </div>
+    <div className='flex-1 w-0 h-full overflow-auto'>
+      {spinning
+        ? <FullScreenLoading />
+        : <>{Component}</>
+      }
     </div>
   );
 };
