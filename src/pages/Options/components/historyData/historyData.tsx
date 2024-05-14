@@ -7,6 +7,7 @@ import _ from "lodash";
 import GlobalContext from '@/reducer/global';
 import { setHistoryAutoAdd as setStorageAutoAdd, getPagesInfo, initPagesInfo } from '@/constants';
 import DataList from '../datalist/datalist';
+import clsx from 'clsx';
 
 export enum SubType {
   Free = 'free',
@@ -183,7 +184,10 @@ const HistoryData: React.FC<Props> = ({ onLink }) => {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={clsx(
+      styles.container,
+      `flex-1 w-0`
+    )}>
       <div className={styles['content']}>
         <div className={styles['left']}>
           <div className={styles['back']} onClick={() => onLink(2)}>

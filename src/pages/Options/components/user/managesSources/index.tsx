@@ -83,7 +83,7 @@ export function ManagesSources({ onLink }: { onLink: Function }) {
       )}>
 
         {CardComponentMaker({
-          title: 'Browser',
+          title: t('sync_browser_collections'),
           subTitle: t(`choose_from_bookmarks_reading_list_history`),
           handleClick: () => onLink(2)
         })}

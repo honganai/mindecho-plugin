@@ -61,7 +61,7 @@ export function Navigation() {
   return (
     <div className={clsx(
       'border-r border-gray-200',
-      `flex flex-col basis-1/5  w-180 `,
+      `flex flex-col w-64`,
     )}>
       <motion.ul
         role="list"
