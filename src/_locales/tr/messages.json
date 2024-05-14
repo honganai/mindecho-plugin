@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Yeni Eşleşmeleri Otomatik Topla",
+        "message": "Otomatik Olarak Yeni Bağlantılar Ekle",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "Öğeleri anahtar kelimelere göre bulun",
+        "message": "URL&#39;leri anahtar kelimelere göre bulun",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Yeni Öğeleri Otomatik Ekle",
+        "message": "Otomatik Olarak Yeni Bağlantılar Ekle",
         "description": ""
     },
     "items": {
-        "message": "Öğeler",
+        "message": "URL&#39;ler",
         "description": ""
     },
     "fetch": {
-        "message": "Gidip getirmek",
+        "message": "Seçilen İçeriği Al",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "Sosyal?",
+        "message": "Sosyal medya",
         "description": ""
     },
     "browser": {

@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "नवीन जुळण्या स्वयं-संकलित करा",
+        "message": "आपोआप नवीन लिंक्स जोडा",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "कीवर्डद्वारे आयटम शोधा",
+        "message": "कीवर्डद्वारे URL शोधा",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "नवीन आयटम स्वयं-जोडा",
+        "message": "आपोआप नवीन लिंक्स जोडा",
         "description": ""
     },
     "items": {
-        "message": "वस्तू",
+        "message": "URLs",
         "description": ""
     },
     "fetch": {
-        "message": "आणा",
+        "message": "निवडलेली सामग्री पुनर्प्राप्त करा",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "सामाजिक?",
+        "message": "सामाजिक माध्यमे",
         "description": ""
     },
     "browser": {

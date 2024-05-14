@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Автоматичний збір нових збігів",
+        "message": "Автоматично додавати нові посилання",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "Знайдіть елементи за ключовими словами",
+        "message": "Знайдіть URL-адреси за ключовими словами",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Автоматичне додавання нових елементів",
+        "message": "Автоматично додавати нові посилання",
         "description": ""
     },
     "items": {
-        "message": "Предмети",
+        "message": "URL-адреси",
         "description": ""
     },
     "fetch": {
-        "message": "Fetch",
+        "message": "Отримати вибраний вміст",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "Соціальний?",
+        "message": "Соц.медіа",
         "description": ""
     },
     "browser": {

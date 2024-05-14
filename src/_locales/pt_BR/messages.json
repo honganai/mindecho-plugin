@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Coletar automaticamente novas correspondências",
+        "message": "Adicionar novos links automaticamente",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "Encontre itens por palavras-chave",
+        "message": "Encontre URLs por palavras-chave",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Adicionar automaticamente novos itens",
+        "message": "Adicionar novos links automaticamente",
         "description": ""
     },
     "items": {
-        "message": "Unid",
+        "message": "URLs",
         "description": ""
     },
     "fetch": {
-        "message": "Buscar",
+        "message": "Recuperar conteúdo selecionado",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "Social?",
+        "message": "Mídia social",
         "description": ""
     },
     "browser": {

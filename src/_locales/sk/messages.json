@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Automatické zhromažďovanie nových zhôd",
+        "message": "Automaticky pridávať nové odkazy",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "Nájdite položky podľa kľúčových slov",
+        "message": "Nájdite adresy URL podľa kľúčových slov",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Automatické pridávanie nových položiek",
+        "message": "Automaticky pridávať nové odkazy",
         "description": ""
     },
     "items": {
-        "message": "Položky",
+        "message": "URL",
         "description": ""
     },
     "fetch": {
-        "message": "Načítať",
+        "message": "Načítať vybraný obsah",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "Sociálna?",
+        "message": "Sociálne médiá",
         "description": ""
     },
     "browser": {

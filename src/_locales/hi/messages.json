@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "नए मिलानों को स्वतः एकत्रित करें",
+        "message": "स्वचालित रूप से नए लिंक जोड़ें",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "कीवर्ड द्वारा आइटम खोजें",
+        "message": "कीवर्ड द्वारा URL खोजें",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "नए आइटम स्वचालित रूप से जोड़ें",
+        "message": "स्वचालित रूप से नए लिंक जोड़ें",
         "description": ""
     },
     "items": {
-        "message": "सामान",
+        "message": "यूआरएल",
         "description": ""
     },
     "fetch": {
-        "message": "लाना",
+        "message": "चयनित सामग्री पुनः प्राप्त करें",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "सामाजिक?",
+        "message": "सामाजिक मीडिया",
         "description": ""
     },
     "browser": {

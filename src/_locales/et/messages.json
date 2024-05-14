@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Automaatne uute vastete kogumine",
+        "message": "Lisage automaatselt uusi linke",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "Otsige üksusi märksõnade järgi",
+        "message": "Otsige URL-e märksõnade järgi",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Uute üksuste automaatne lisamine",
+        "message": "Lisage automaatselt uusi linke",
         "description": ""
     },
     "items": {
-        "message": "Üksused",
+        "message": "URL-id",
         "description": ""
     },
     "fetch": {
-        "message": "Too",
+        "message": "Valitud sisu allalaadimine",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "Sotsiaalne?",
+        "message": "Sotsiaalmeedia",
         "description": ""
     },
     "browser": {

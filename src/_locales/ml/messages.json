@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "പുതിയ പൊരുത്തങ്ങൾ സ്വയമേവ ശേഖരിക്കുക",
+        "message": "പുതിയ ലിങ്കുകൾ സ്വയമേവ ചേർക്കുക",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "കീവേഡുകൾ ഉപയോഗിച്ച് ഇനങ്ങൾ കണ്ടെത്തുക",
+        "message": "കീവേഡുകൾ ഉപയോഗിച്ച് URL-കൾ കണ്ടെത്തുക",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "പുതിയ ഇനങ്ങൾ സ്വയമേവ ചേർക്കുക",
+        "message": "പുതിയ ലിങ്കുകൾ സ്വയമേവ ചേർക്കുക",
         "description": ""
     },
     "items": {
-        "message": "ഇനങ്ങൾ",
+        "message": "URL-കൾ",
         "description": ""
     },
     "fetch": {
-        "message": "കൊണ്ടുവരിക",
+        "message": "തിരഞ്ഞെടുത്ത ഉള്ളടക്കം വീണ്ടെടുക്കുക",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "സാമൂഹിക?",
+        "message": "സോഷ്യൽ മീഡിയ",
         "description": ""
     },
     "browser": {

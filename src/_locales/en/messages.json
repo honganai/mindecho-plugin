@@ -140,11 +140,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Auto-Collect New Matches",
+        "message": "Automatically Add New Links",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "Find items by keywords",
+        "message": "Find URLs by keywords",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -164,15 +164,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Auto-add New Items",
+        "message": "Automatically Add New Links",
         "description": ""
     },
     "items": {
-        "message": "Items",
+        "message": "URLs",
         "description": ""
     },
     "fetch": {
-        "message": "Fetch",
+        "message": "Retrieve Selected Content",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "Social?",
+        "message": "Social Media",
         "description": ""
     },
     "browser": {

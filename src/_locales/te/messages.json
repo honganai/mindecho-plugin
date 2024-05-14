@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "కొత్త సరిపోలికలను స్వయంచాలకంగా సేకరించండి",
+        "message": "స్వయంచాలకంగా కొత్త లింక్‌లను జోడించండి",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "కీలక పదాల ద్వారా అంశాలను కనుగొనండి",
+        "message": "కీలక పదాల ద్వారా URLలను కనుగొనండి",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "కొత్త అంశాలను స్వయంచాలకంగా జోడించండి",
+        "message": "స్వయంచాలకంగా కొత్త లింక్‌లను జోడించండి",
         "description": ""
     },
     "items": {
-        "message": "వస్తువులు",
+        "message": "URLలు",
         "description": ""
     },
     "fetch": {
-        "message": "పొందండి",
+        "message": "ఎంచుకున్న కంటెంట్‌ను తిరిగి పొందండి",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "సామాజికమా?",
+        "message": "సాంఘిక ప్రసార మాధ్యమం",
         "description": ""
     },
     "browser": {

@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "새로운 일치 항목 자동 수집",
+        "message": "새 링크 자동 추가",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "키워드로 항목 찾기",
+        "message": "키워드로 URL 찾기",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "새 항목 자동 추가",
+        "message": "새 링크 자동 추가",
         "description": ""
     },
     "items": {
-        "message": "품목",
+        "message": "URL",
         "description": ""
     },
     "fetch": {
-        "message": "술책",
+        "message": "선택한 콘텐츠 검색",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "사회의?",
+        "message": "소셜 미디어",
         "description": ""
     },
     "browser": {

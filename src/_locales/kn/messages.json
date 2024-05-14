@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "ಹೊಸ ಹೊಂದಾಣಿಕೆಗಳನ್ನು ಸ್ವಯಂ-ಸಂಗ್ರಹಿಸಿ",
+        "message": "ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಹೊಸ ಲಿಂಕ್‌ಗಳನ್ನು ಸೇರಿಸಿ",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "ಕೀವರ್ಡ್‌ಗಳ ಮೂಲಕ ಐಟಂಗಳನ್ನು ಹುಡುಕಿ",
+        "message": "ಕೀವರ್ಡ್‌ಗಳ ಮೂಲಕ URL ಗಳನ್ನು ಹುಡುಕಿ",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "ಹೊಸ ಐಟಂಗಳನ್ನು ಸ್ವಯಂ ಸೇರಿಸಿ",
+        "message": "ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಹೊಸ ಲಿಂಕ್‌ಗಳನ್ನು ಸೇರಿಸಿ",
         "description": ""
     },
     "items": {
-        "message": "ವಸ್ತುಗಳು",
+        "message": "URL ಗಳು",
         "description": ""
     },
     "fetch": {
-        "message": "ತರಲು",
+        "message": "ಆಯ್ಕೆಮಾಡಿದ ವಿಷಯವನ್ನು ಹಿಂಪಡೆಯಿರಿ",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "ಸಾಮಾಜಿಕವೇ?",
+        "message": "ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ",
         "description": ""
     },
     "browser": {

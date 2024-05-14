@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "AutoKumpul Padanan Baharu",
+        "message": "Tambah Pautan Baharu secara automatik",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "Cari item mengikut kata kunci",
+        "message": "Cari URL mengikut kata kunci",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Autotambah Item Baharu",
+        "message": "Tambah Pautan Baharu secara automatik",
         "description": ""
     },
     "items": {
-        "message": "barang",
+        "message": "URL",
         "description": ""
     },
     "fetch": {
-        "message": "Ambil",
+        "message": "Dapatkan Kandungan Terpilih",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "sosial?",
+        "message": "Media Sosial",
         "description": ""
     },
     "browser": {

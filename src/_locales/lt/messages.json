@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Automatiškai rinkti naujus atitikmenis",
+        "message": "Automatiškai pridėti naujų nuorodų",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "Raskite elementus pagal raktinius žodžius",
+        "message": "Raskite URL pagal raktinius žodžius",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Automatiškai pridėti naujų elementų",
+        "message": "Automatiškai pridėti naujų nuorodų",
         "description": ""
     },
     "items": {
-        "message": "Daiktai",
+        "message": "URL",
         "description": ""
     },
     "fetch": {
-        "message": "Atnešti",
+        "message": "Gauti pasirinktą turinį",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "Socialinis?",
+        "message": "Socialinė žiniasklaida",
         "description": ""
     },
     "browser": {
