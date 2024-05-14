@@ -1,14 +1,14 @@
 {
     "pluginName": {
-        "message": "minECHO: ブックマークとコレクションの全文検索",
+        "message": "mindECHO: ブックマークとコレクションでのシームレスな全文検索",
         "description": ""
     },
     "pluginDescription": {
-        "message": "ブックマーク、保存したページ、コレクション、リーディング リストのコンテンツを即座に検索して見つけます。個人の Web アーカイブから関連する回答を入手してください。",
+        "message": "複数のブックマークや保存したコンテンツを瞬時に検索して見つけます。個人の Web アーカイブから関連する回答を取得します。",
         "description": ""
     },
     "signUpWithGoogle": {
-        "message": "Google に登録する",
+        "message": "Googleでサインアップ",
         "description": "memorie页面来源"
     },
     "logout": {
@@ -160,7 +160,7 @@
         "description": ""
     },
     "pocket_saves_imported": {
-        "message": "ポケットセーブをインポートしました",
+        "message": "ポケットセーブをインポート",
         "description": ""
     },
     "browser_data_imported": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "より多くのソースがサポートされる",
+        "message": "より多くのソースがサポートされます。",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "数分で自分のウェブにプライベートな Google + ChatGPT を構築",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "X ブックマークの検索を有効にします。",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "X(旧 Twitter) のブックマークは、あなたの許可を得てインポートされます。ブックマークされたコンテンツの全文が取得され、検索可能になります。",
+        "description": ""
+    },
+    "collection": {
+        "message": "コレクション",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "ソースを管理する",
+        "description": ""
+    },
+    "questions": {
+        "message": "ご質問はございますか？",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "ブラウザコレクションを同期する",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "ブラウザのブックマーク、閲覧リスト、履歴（公開記事のみ）から選択します。",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Pocket Saves リストは安全な認証でインポートされます。保存の全文が取得され、検索可能になります。",
+        "description": ""
+    },
+    "social": {
+        "message": "社交？",
+        "description": ""
+    },
+    "browser": {
+        "message": "ブラウザ",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "読書サービス",
+        "description": ""
+    },
+    "all_items": {
+        "message": "全てのアイテム",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "ブックマーク",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "リーディングリスト",
+        "description": ""
+    },
+    "history": {
+        "message": "歴史",
+        "description": ""
+    },
+    "x": {
+        "message": "バツ",
         "description": ""
     }
 }

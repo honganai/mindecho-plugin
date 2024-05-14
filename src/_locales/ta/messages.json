@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: புக்மார்க்குகள் மற்றும் தொகுப்புகளில் முழு உரை தேடல்",
+        "message": "mindECHO: புக்மார்க்குகள் மற்றும் தொகுப்புகளில் தடையற்ற முழு உரை தேடல்",
         "description": ""
     },
     "pluginDescription": {
-        "message": "உங்கள் புக்மார்க்குகள், சேமித்த பக்கங்கள், சேகரிப்புகள் மற்றும் வாசிப்புப் பட்டியல்களில் உள்ளடக்கத்தை உடனடியாகத் தேடிக் கண்டறியவும். உங்கள் தனிப்பட்ட இணையக் காப்பகத்திலிருந்து தொடர்புடைய பதில்களைப் பெறவும்.",
+        "message": "உங்களின் பல புக்மார்க்குகள் மற்றும் சேமிப்பில் உள்ள உள்ளடக்கத்தை உடனடியாகத் தேடிக் கண்டறியவும். உங்கள் தனிப்பட்ட இணையக் காப்பகத்திலிருந்து தொடர்புடைய பதில்களைப் பெறவும்.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -64,7 +64,7 @@
         "description": ""
     },
     "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
-        "message": "ஆதாரங்கள் இன்னும் முழுமையாக தயாராக இல்லாமல் இருக்கலாம் அல்லது வேறுவிதமாகக் கேட்கவும்.",
+        "message": "ஆதாரங்கள் இன்னும் முழுமையாக தயாராக இல்லாமல் இருக்கலாம் அல்லது வேறு விதமாகக் கேட்கவும்.",
         "description": ""
     },
     "manage_sources": {
@@ -128,7 +128,7 @@
         "description": ""
     },
     "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
-        "message": "இதற்கு 10 நிமிடங்கள் வரை ஆகலாம். இந்தப் பக்கத்தைத் திறந்து வைத்து மற்ற பணிகளைத் தொடரவும்.",
+        "message": "இதற்கு 10 நிமிடங்கள் வரை ஆகலாம். இந்தப் பக்கத்தைத் திறந்து வைத்து, மற்ற பணிகளைத் தொடரவும்.",
         "description": ""
     },
     "building_your_mindEcho": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "மேலும் ஆதாரங்கள் ஆதரிக்கப்படும்",
+        "message": "மேலும் ஆதாரங்கள் ஆதரிக்கப்படும்.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "நிமிடங்களில் உங்கள் சொந்த இணையத்திற்கான தனிப்பட்ட Google + ChatGPT ஐ உருவாக்கவும்",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "உங்கள் X புக்மார்க்குகளுக்கான தேடலை இயக்கவும்.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "X(முறையாக Twitter) இல் உள்ள உங்கள் புக்மார்க்குகள் உங்கள் அங்கீகாரத்துடன் இறக்குமதி செய்யப்படும். புக்மார்க் செய்யப்பட்ட உள்ளடக்கத்தில் உள்ள முழு உரையும் பெறப்பட்டு நீங்கள் தேடக்கூடியதாக மாற்றப்படும்.",
+        "description": ""
+    },
+    "collection": {
+        "message": "சேகரிப்பு",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "ஆதாரங்களை நிர்வகிக்கிறது",
+        "description": ""
+    },
+    "questions": {
+        "message": "கேள்விகள்?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "உலாவி தொகுப்புகளை ஒத்திசைக்கவும்",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "உலாவியில் உள்ள புக்மார்க்குகள், படித்தல் பட்டியல், வரலாறு (பொது கட்டுரைகள் மட்டும்) ஆகியவற்றிலிருந்து தேர்வு செய்யவும்.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "உங்கள் பாக்கெட் சேமிப்பு பட்டியல் பாதுகாப்பான அங்கீகாரத்துடன் இறக்குமதி செய்யப்படும். சேமிப்பின் முழு உரையும் பெறப்பட்டு நீங்கள் தேடக்கூடியதாக மாற்றப்படும்.",
+        "description": ""
+    },
+    "social": {
+        "message": "சமூகமா?",
+        "description": ""
+    },
+    "browser": {
+        "message": "உலாவி",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "வாசிப்பு சேவைகள்",
+        "description": ""
+    },
+    "all_items": {
+        "message": "அனைத்து பொருட்கள்",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "புக்மார்க்குகள்",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "வாசிப்பு பட்டியல்",
+        "description": ""
+    },
+    "history": {
+        "message": "வரலாறு",
+        "description": ""
+    },
+    "x": {
+        "message": "எக்ஸ்",
         "description": ""
     }
 }

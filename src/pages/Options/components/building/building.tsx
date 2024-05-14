@@ -124,7 +124,7 @@ const Building: React.FC<IProp> = ({ type = 'browser', status = false }) => {
           ) : (
             <>
               <p className={styles['title']}>{t('building_your_mindEcho')}</p>
-              <p className={styles['tip']} style={{ display: done ? 'none' : 'block' }}>{t('this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks')}</p>
+              <p className={styles['tip']} style={{ display: done ? 'none' : 'block' }}>{/*{t('this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks')}*/}</p>
               {/* <Progress type="circle" percent={precent} style={{ marginTop: '30px' }} className={styles.progress} /> */}
               <img className={styles['loading-icon']} src={LoadingIcon} alt="loading" />
             </>

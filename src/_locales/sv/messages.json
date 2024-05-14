@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Fulltextsökning i bokmärken och samlingar",
+        "message": "mindECHO: Sömlös fulltextsökning i bokmärken och samlingar",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Sök direkt och hitta innehåll i dina bokmärken, sparade sidor, samlingar och läslistor. Få relevanta svar från ditt personliga webbarkiv.",
+        "message": "Sök omedelbart och hitta innehåll i dina flera bokmärken och sparar. Få relevanta svar från ditt personliga webbarkiv.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -64,7 +64,7 @@
         "description": ""
     },
     "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
-        "message": "Källorna kanske inte är helt klara än, eller försök fråga annorlunda.",
+        "message": "Källorna kanske inte är helt klara ännu, eller försök fråga annorlunda.",
         "description": ""
     },
     "manage_sources": {
@@ -176,7 +176,7 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Samla in nya matchningar automatiskt",
+        "message": "Auto-samla nya matchningar",
         "description": ""
     },
     "find_items_by_keywords": {
@@ -192,7 +192,7 @@
         "description": ""
     },
     "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
-        "message": "Aktivera fulltextsökning i webbhistoriken för att eliminera behovet av memorering.",
+        "message": "Aktivera fulltextsökning i webbhistorik för att eliminera behovet av memorering.",
         "description": ""
     },
     "exclude_bookmarks_or_reading_list": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Fler källor kommer att stödjas",
+        "message": "Fler källor kommer att stödjas.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Bygg en privat Google + ChatGPT för din egen webb på några minuter",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Aktivera Sök efter dina X-bokmärken.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Dina bokmärken i X (formellt Twitter) kommer att importeras med ditt tillstånd. Fulltext i det bokmärkta innehållet kommer att hämtas och göras sökbar för dig.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Samling",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Hanterar källor",
+        "description": ""
+    },
+    "questions": {
+        "message": "Frågor?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Synkronisera webbläsarsamlingar",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Välj från bokmärken, läslista, historik (endast offentliga artiklar) i webbläsaren.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Din Pocket Saves-lista kommer att importeras med säker auktorisering. Den fullständiga texten för sparningarna kommer att hämtas och göras sökbar för dig.",
+        "description": ""
+    },
+    "social": {
+        "message": "Social?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Webbläsare",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Lästjänster",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Alla objekt",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Bokmärken",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Läslista",
+        "description": ""
+    },
+    "history": {
+        "message": "Historia",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

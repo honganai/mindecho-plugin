@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: koko tekstihaku kirjanmerkeistä ja kokoelmista",
+        "message": "mindECHO: Saumaton koko tekstihaku kirjanmerkeistä ja kokoelmista",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Hae ja löydä sisältöä välittömästi kirjanmerkeistäsi, tallennetuista sivuistasi, kokoelmistasi ja lukulistoistasi. Hanki asiaankuuluvat vastaukset henkilökohtaisesta verkkoarkistostasi.",
+        "message": "Hae ja löydä sisältöä välittömästi useista kirjanmerkeistäsi ja tallennuksistasi. Hanki asiaankuuluvat vastaukset henkilökohtaisesta verkkoarkistostasi.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -52,7 +52,7 @@
         "description": ""
     },
     "ask_AI": {
-        "message": "Kysy AI",
+        "message": "Kysy AI:ltä",
         "description": ""
     },
     "query_the_web": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Lisää lähteitä tuetaan",
+        "message": "Lisää lähteitä tuetaan.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Rakenna yksityinen Google + ChatGPT omaa verkkoasi varten muutamassa minuutissa",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Ota X-kirjanmerkkihaku käyttöön.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Kirjanmerkkisi X:ssä (muodollisesti Twitterissä) tuodaan luvallasi. Kirjanmerkkeihin lisätyn sisällön koko teksti noudetaan ja tehdään haettavaksi.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Kokoelma",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Hallitsee lähteitä",
+        "description": ""
+    },
+    "questions": {
+        "message": "Kysymyksiä?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Synkronoi selaimen kokoelmat",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Valitse selaimen kirjanmerkeistä, lukulistasta tai historiasta (vain julkiset artikkelit).",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Pocket Saves -luettelosi tuodaan suojatulla luvalla. Tallenteiden koko teksti noudetaan ja tehdään sinulle haettavaksi.",
+        "description": ""
+    },
+    "social": {
+        "message": "Sosiaalinen?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Selain",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Lukupalvelut",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Kaikki tavarat",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Kirjanmerkit",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Lukulista",
+        "description": ""
+    },
+    "history": {
+        "message": "Historia",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "MindECHO: Полнотекстовый поиск в закладках и коллекциях",
+        "message": "MindECHO: Бесшовный полнотекстовый поиск в закладках и коллекциях",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Мгновенно выполняйте поиск и находите контент в своих закладках, сохраненных страницах, коллекциях и списках чтения. Получите актуальные ответы из своего личного веб-архива.",
+        "message": "Мгновенно ищите и находите контент в многочисленных закладках и сохранениях. Получите актуальные ответы из своего личного веб-архива.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -92,7 +92,7 @@
         "description": ""
     },
     "saves": {
-        "message": "Сохраняет",
+        "message": "Сохранения",
         "description": ""
     },
     "pocket": {
@@ -152,7 +152,7 @@
         "description": ""
     },
     "activate_mindECHO_to_search_your_saves": {
-        "message": "Активируйте MindECHO для поиска ваших сохранений.",
+        "message": "Активируйте MindECHO для поиска в ваших сохранениях.",
         "description": ""
     },
     "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Будет поддерживаться больше источников",
+        "message": "Будут поддерживаться дополнительные источники.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -272,7 +272,71 @@
         "description": ""
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
-        "message": "Создайте частный Google + ChatGPT для своей сети за считанные минуты",
+        "message": "Создайте частный Google + ChatGPT для своей сети за считанные минуты.",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Включите поиск ваших X-закладок.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Ваши закладки в X (формально Twitter) будут импортированы с вашего разрешения. Полный текст содержимого, добавленного в закладки, будет загружен и доступен для поиска.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Коллекция",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Управляет источниками",
+        "description": ""
+    },
+    "questions": {
+        "message": "Вопросы?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Синхронизировать коллекции браузера",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Выбирайте закладки, список чтения, историю (только общедоступные статьи) в браузере.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Ваш список карманных сохранений будет импортирован с безопасной авторизацией. Полный текст сохранений будет загружен и доступен для поиска.",
+        "description": ""
+    },
+    "social": {
+        "message": "Социальное?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Браузер",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Услуги чтения",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Все детали",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Закладки",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Список для чтения",
+        "description": ""
+    },
+    "history": {
+        "message": "История",
+        "description": ""
+    },
+    "x": {
+        "message": "Икс",
         "description": ""
     }
 }

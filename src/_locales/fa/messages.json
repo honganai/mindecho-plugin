@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: جستجوی تمام متن در نشانک‌ها و مجموعه‌ها",
+        "message": "mindECHO: جستجوی متن کامل بدون درز در نشانک‌ها و مجموعه‌ها",
         "description": ""
     },
     "pluginDescription": {
-        "message": "فوراً محتوا را در میان نشانک‌ها، صفحات ذخیره‌شده، مجموعه‌ها و فهرست‌های خواندن جستجو و پیدا کنید. پاسخ های مرتبط را از آرشیو وب شخصی خود دریافت کنید.",
+        "message": "فوراً محتوا را در چندین نشانک و ذخیره خود جستجو و پیدا کنید. پاسخ های مرتبط را از آرشیو وب شخصی خود دریافت کنید.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -64,7 +64,7 @@
         "description": ""
     },
     "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
-        "message": "ممکن است منابع هنوز کاملاً آماده نباشند، یا لطفاً سؤال دیگری را امتحان کنید.",
+        "message": "ممکن است منابع هنوز کاملاً آماده نباشند، یا لطفاً به روش دیگری سؤال کنید.",
         "description": ""
     },
     "manage_sources": {
@@ -132,7 +132,7 @@
         "description": ""
     },
     "building_your_mindEcho": {
-        "message": "ساختن MindEcho شما",
+        "message": "ساخت MindEcho شما",
         "description": ""
     },
     "icon_click": {
@@ -160,7 +160,7 @@
         "description": ""
     },
     "pocket_saves_imported": {
-        "message": "ذخیره های جیبی وارد شده است",
+        "message": "ذخیره جیبی وارد شده است",
         "description": ""
     },
     "browser_data_imported": {
@@ -212,7 +212,7 @@
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
-        "message": "لیست URL فعلی فقط محلی است تا زمانی که اجازه جمع آوری داده ها را بدهید.",
+        "message": "لیست URL فعلی فقط محلی است تا زمانی که جمع آوری داده ها را مجاز کنید.",
         "description": ""
     },
     "loading": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "منابع بیشتری پشتیبانی خواهند شد",
+        "message": "منابع بیشتر پشتیبانی خواهد شد.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -272,7 +272,71 @@
         "description": ""
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
-        "message": "در عرض چند دقیقه یک Google + ChatGPT خصوصی برای وب خود بسازید",
+        "message": "در چند دقیقه یک Google + ChatGPT خصوصی برای وب خود بسازید",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "جستجو برای نشانک های X خود را فعال کنید.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "نشانک‌های شما در X (به طور رسمی توییتر) با مجوز شما وارد خواهند شد. متن کامل در محتوای نشانک شده برای شما واکشی و قابل جستجو می شود.",
+        "description": ""
+    },
+    "collection": {
+        "message": "مجموعه",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "منابع را مدیریت می کند",
+        "description": ""
+    },
+    "questions": {
+        "message": "سوالات؟",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "همگام سازی مجموعه های مرورگر",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "از بین نشانک‌ها، فهرست خواندن، تاریخچه (فقط مقالات عمومی) در مرورگر انتخاب کنید.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "فهرست ذخیره‌های جیبی شما با مجوز ایمن وارد می‌شود. متن کامل ذخیره‌ها برای شما واکشی و قابل جستجو می‌شود.",
+        "description": ""
+    },
+    "social": {
+        "message": "اجتماعی؟",
+        "description": ""
+    },
+    "browser": {
+        "message": "مرورگر",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "خدمات خواندن",
+        "description": ""
+    },
+    "all_items": {
+        "message": "همه موارد",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "نشانک ها",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "لیست خواندن",
+        "description": ""
+    },
+    "history": {
+        "message": "تاریخ",
+        "description": ""
+    },
+    "x": {
+        "message": "ایکس",
         "description": ""
     }
 }

@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: 책갈피 및 컬렉션의 전체 텍스트 검색",
+        "message": "mindECHO: 책갈피 및 컬렉션에서 원활한 전체 텍스트 검색",
         "description": ""
     },
     "pluginDescription": {
-        "message": "북마크, 저장된 페이지, 컬렉션, 읽기 목록에서 콘텐츠를 즉시 검색하고 찾으세요. 개인 웹 아카이브에서 관련 답변을 얻으세요.",
+        "message": "여러 북마크에 저장된 콘텐츠를 즉시 검색하고 찾으세요. 개인 웹 아카이브에서 관련 답변을 얻으세요.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -192,7 +192,7 @@
         "description": ""
     },
     "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
-        "message": "기억할 필요가 없도록 검색 기록에서 전체 텍스트 검색을 활성화합니다.",
+        "message": "검색 기록에서 전체 텍스트 검색을 활성화하면 기억할 필요가 없습니다.",
         "description": ""
     },
     "exclude_bookmarks_or_reading_list": {
@@ -232,11 +232,11 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "더 많은 소스가 지원됩니다",
+        "message": "더 많은 소스가 지원됩니다.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
-        "message": "저장된 내용의 전체 텍스트를 가져와서 검색할 수 있습니다.",
+        "message": "저장된 내용의 전체 텍스트를 가져와 검색할 수 있습니다.",
         "description": ""
     },
     "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
@@ -272,7 +272,71 @@
         "description": ""
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
-        "message": "몇 분 안에 나만의 웹용 비공개 Google + ChatGPT를 구축하세요",
+        "message": "몇 분 만에 나만의 웹용 비공개 Google + ChatGPT를 구축하세요",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "X 북마크 검색을 활성화합니다.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "X(공식적으로 Twitter)의 북마크는 귀하의 승인을 받아 가져옵니다. 북마크된 콘텐츠의 전체 텍스트를 가져와 검색할 수 있습니다.",
+        "description": ""
+    },
+    "collection": {
+        "message": "수집",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "소스 관리",
+        "description": ""
+    },
+    "questions": {
+        "message": "질문?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "브라우저 컬렉션 동기화",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "브라우저의 북마크, 읽기 목록, 기록(공개 기사만) 중에서 선택하세요.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "귀하의 Pocket Saves 목록은 보안 인증을 통해 가져오게 됩니다. 저장된 내용의 전체 텍스트를 가져와서 검색할 수 있습니다.",
+        "description": ""
+    },
+    "social": {
+        "message": "사회의?",
+        "description": ""
+    },
+    "browser": {
+        "message": "브라우저",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "독서 서비스",
+        "description": ""
+    },
+    "all_items": {
+        "message": "모든 아이템",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "북마크",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "읽기 목록",
+        "description": ""
+    },
+    "history": {
+        "message": "역사",
+        "description": ""
+    },
+    "x": {
+        "message": "엑스",
         "description": ""
     }
 }

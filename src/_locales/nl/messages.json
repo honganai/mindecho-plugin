@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: zoeken in volledige tekst in bladwijzers en collecties",
+        "message": "mindECHO: naadloos zoeken in volledige tekst in bladwijzers en collecties",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Zoek en vind direct inhoud in uw bladwijzers, opgeslagen pagina&#39;s, verzamelingen en leeslijsten. Haal relevante antwoorden uit uw persoonlijke webarchief.",
+        "message": "Zoek en vind direct inhoud in uw meerdere bladwijzers en opgeslagen bestanden. Krijg relevante antwoorden uit uw persoonlijke webarchief.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Er zullen meer bronnen worden ondersteund",
+        "message": "Er zullen meer bronnen worden ondersteund.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Bouw binnen enkele minuten een privé Google + ChatGPT voor uw eigen internet",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Schakel Zoeken naar uw X-bladwijzers in.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Uw bladwijzers in X (formeel Twitter) worden met uw toestemming geïmporteerd. De volledige tekst in de inhoud met een bladwijzer wordt opgehaald en voor u doorzoekbaar gemaakt.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Verzameling",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Beheert bronnen",
+        "description": ""
+    },
+    "questions": {
+        "message": "Vragen?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Synchroniseer browsercollecties",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Kies uit bladwijzers, leeslijst, geschiedenis (alleen openbare artikelen) in de browser.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Uw Pocket Saves-lijst wordt met beveiligde autorisatie geïmporteerd. De volledige tekst van de opgeslagen bestanden wordt opgehaald en voor u doorzoekbaar gemaakt.",
+        "description": ""
+    },
+    "social": {
+        "message": "Sociaal?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Browser",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Diensten lezen",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Alle spullen",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Bladwijzers",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Lees lijst",
+        "description": ""
+    },
+    "history": {
+        "message": "Geschiedenis",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

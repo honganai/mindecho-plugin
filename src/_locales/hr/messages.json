@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Pretraživanje cijelog teksta u oznakama i zbirkama",
+        "message": "mindECHO: Besprijekorno pretraživanje cijelog teksta u oznakama i zbirkama",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Odmah pretražite i pronađite sadržaj u svojim knjižnim oznakama, spremljenim stranicama, zbirkama i popisima za čitanje. Dobijte relevantne odgovore iz svoje osobne web arhive.",
+        "message": "Trenutačno pretražite i pronađite sadržaj u višestrukim oznakama i spremanjima. Dobijte relevantne odgovore iz svoje osobne web arhive.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -124,7 +124,7 @@
         "description": ""
     },
     "keyboard_stroke_shortCuts": {
-        "message": "Prečaci za potez tipkovnice",
+        "message": "Tipkovnički prečaci",
         "description": ""
     },
     "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Bit će podržano više izvora",
+        "message": "Bit će podržano više izvora.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Izgradite privatni Google + ChatGPT za svoj web u nekoliko minuta",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Omogućite pretraživanje za svoje X oznake.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Vaše oznake u X (formalno Twitter) bit će uvezene uz vaše ovlaštenje. Cijeli tekst u označenom sadržaju bit će dohvaćen i omogućen vam pretraživanje.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Kolekcija",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Upravlja izvorima",
+        "description": ""
+    },
+    "questions": {
+        "message": "Pitanja?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Sinkronizirajte zbirke preglednika",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Birajte između oznaka, popisa za čitanje, povijesti (samo javni članci) u pregledniku.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Vaš Pocket Saves popis će biti uvezen sa sigurnom autorizacijom. Puni tekst spremanja bit će dohvaćen i omogućen vam pretraživanje.",
+        "description": ""
+    },
+    "social": {
+        "message": "Društveni?",
+        "description": ""
+    },
+    "browser": {
+        "message": "preglednik",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Usluge čitanja",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Svi predmeti",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Oznake",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Popis lektire",
+        "description": ""
+    },
+    "history": {
+        "message": "Povijest",
+        "description": ""
+    },
+    "x": {
+        "message": "x",
         "description": ""
     }
 }

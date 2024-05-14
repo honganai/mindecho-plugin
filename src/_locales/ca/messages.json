@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: cerca de text complet a les adreces d&#39;interès i col·leccions",
+        "message": "mindECHO: cerca perfecta de text complet a les adreces d&#39;interès i col·leccions",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Cerqueu i trobeu contingut a l&#39;instant entre les vostres adreces d&#39;interès, pàgines desades, col·leccions i llistes de lectura. Obteniu respostes rellevants del vostre arxiu web personal.",
+        "message": "Cerqueu i trobeu contingut a l&#39;instant entre els vostres múltiples marcadors i desats. Obteniu respostes rellevants del vostre arxiu web personal.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -28,7 +28,7 @@
         "description": ""
     },
     "copySuccess": {
-        "message": "Còpia correctament",
+        "message": "Còpia encertada",
         "description": ""
     },
     "copyNotSupported": {
@@ -36,7 +36,7 @@
         "description": ""
     },
     "bindSuccess": {
-        "message": "Enllaçar l&#39;èxit",
+        "message": "Lligar l&#39;èxit",
         "description": ""
     },
     "noDataFound": {
@@ -64,7 +64,7 @@
         "description": ""
     },
     "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
-        "message": "És possible que les fonts encara no estiguin completament preparades o proveu de preguntar d&#39;una altra manera.",
+        "message": "És possible que les fonts encara no estiguin completament preparades, o proveu de preguntar d&#39;una altra manera.",
         "description": ""
     },
     "manage_sources": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Es donaran suport a més fonts",
+        "message": "Es donaran suport a més fonts.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Creeu un Google + ChatGPT privat per al vostre propi web en qüestió de minuts",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Activeu la cerca de les vostres adreces d&#39;interès X.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Les vostres adreces d&#39;interès a X (formalment Twitter) s&#39;importaran amb la vostra autorització. El text complet del contingut marcat es recuperarà i es podrà cercar.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Col · lecció",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Gestiona les fonts",
+        "description": ""
+    },
+    "questions": {
+        "message": "Preguntes?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Sincronitza les col·leccions del navegador",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Trieu entre les adreces d&#39;interès, la llista de lectura, l&#39;historial (només articles públics) al navegador.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "La vostra llista de desats de butxaca s&#39;importarà amb autorització segura. El text complet dels desats es recuperarà i es podrà cercar.",
+        "description": ""
+    },
+    "social": {
+        "message": "Social?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Navegador",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Serveis de lectura",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Tots els articles",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Adreces d&#39;interès",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Llista de lectura",
+        "description": ""
+    },
+    "history": {
+        "message": "Història",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

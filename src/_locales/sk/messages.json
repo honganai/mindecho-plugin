@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Fulltextové vyhľadávanie v záložkách a zbierkach",
+        "message": "mindECHO: Bezproblémové fulltextové vyhľadávanie v záložkách a zbierkach",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Okamžite hľadajte a nájdite obsah vo svojich záložkách, uložených stránkach, zbierkach a zoznamoch na čítanie. Získajte relevantné odpovede zo svojho osobného webového archívu.",
+        "message": "Okamžite hľadajte a nájdite obsah vo viacerých záložkách a uloženiach. Získajte relevantné odpovede zo svojho osobného webového archívu.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -132,7 +132,7 @@
         "description": ""
     },
     "building_your_mindEcho": {
-        "message": "Budovanie vášho MindEcho",
+        "message": "Budovanie MindEcho",
         "description": ""
     },
     "icon_click": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Podporovaných bude viac zdrojov",
+        "message": "Podporované budú ďalšie zdroje.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Vytvorte si súkromný Google + ChatGPT pre svoj vlastný web v priebehu niekoľkých minút",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Povoliť vyhľadávanie vašich X záložiek.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Vaše záložky v X (formálne Twitter) budú importované s vašou autorizáciou. Načíta sa celý text v obsahu so záložkami a umožní sa vám ho vyhľadať.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Zbierka",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Spravuje zdroje",
+        "description": ""
+    },
+    "questions": {
+        "message": "otázky?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Synchronizujte zbierky prehliadača",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Vyberte si zo záložiek, zoznamu na čítanie, histórie (len verejné články) v prehliadači.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Váš zoznam Pocket Saves bude importovaný so zabezpečenou autorizáciou. Úplný text uložených položiek sa načíta a umožní vám vyhľadávať.",
+        "description": ""
+    },
+    "social": {
+        "message": "Sociálna?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Prehliadač",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Služby čítania",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Všetky položky",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Záložky",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Zoznam na čítanie",
+        "description": ""
+    },
+    "history": {
+        "message": "História",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

@@ -1,14 +1,14 @@
 {
     "pluginName": {
-        "message": "माइंडइको: बुकमार्क और संग्रह में पूर्ण-पाठ खोज",
+        "message": "mindECHO: बुकमार्क और संग्रह में निर्बाध पूर्ण-पाठ खोज",
         "description": ""
     },
     "pluginDescription": {
-        "message": "अपने बुकमार्क, सहेजे गए पृष्ठों, संग्रहों और पढ़ने की सूचियों में तुरंत सामग्री खोजें और ढूंढें। अपने व्यक्तिगत वेब संग्रह से प्रासंगिक उत्तर प्राप्त करें।",
+        "message": "अपने कई बुकमार्क और सेव में तुरंत सामग्री खोजें और पाएँ। अपने व्यक्तिगत वेब संग्रह से प्रासंगिक उत्तर प्राप्त करें।",
         "description": ""
     },
     "signUpWithGoogle": {
-        "message": "Google के साथ साइन अप करें",
+        "message": "गूगल के साथ साइन अप करें",
         "description": "memorie页面来源"
     },
     "logout": {
@@ -28,15 +28,15 @@
         "description": ""
     },
     "copySuccess": {
-        "message": "सफलता की नकल करें",
+        "message": "कॉपी सफल",
         "description": ""
     },
     "copyNotSupported": {
-        "message": "प्रतिलिपि समर्थित नहीं है",
+        "message": "कॉपी समर्थित नहीं है",
         "description": ""
     },
     "bindSuccess": {
-        "message": "सफलता बांधें",
+        "message": "बाँध सफलता",
         "description": ""
     },
     "noDataFound": {
@@ -160,7 +160,7 @@
         "description": ""
     },
     "pocket_saves_imported": {
-        "message": "पॉकेट सेव आयातित",
+        "message": "पॉकेट सेव्स आयातित",
         "description": ""
     },
     "browser_data_imported": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "अधिक स्रोतों का समर्थन किया जाएगा",
+        "message": "अधिक स्रोतों का समर्थन किया जाएगा.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -268,11 +268,75 @@
         "description": ""
     },
     "find_anything_instantly_from_your_own_saves": {
-        "message": "अपने स्वयं के सहेजे गए डेटा से तुरंत कुछ भी खोजें।",
+        "message": "अपने स्वयं के सेव से तुरंत कुछ भी खोजें।",
         "description": ""
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "मिनटों में अपने वेब के लिए एक निजी Google + ChatGPT बनाएं",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "अपने X बुकमार्क्स के लिए खोज सक्षम करें.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "X (पूर्व में ट्विटर) में आपके बुकमार्क आपके प्राधिकरण के साथ आयात किए जाएँगे। बुकमार्क की गई सामग्री में पूरा पाठ लाया जाएगा और आपके लिए खोज योग्य बनाया जाएगा।",
+        "description": ""
+    },
+    "collection": {
+        "message": "संग्रह",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "स्रोतों का प्रबंधन करता है",
+        "description": ""
+    },
+    "questions": {
+        "message": "प्रशन?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "ब्राउज़र संग्रह सिंक करें",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "ब्राउज़र में बुकमार्क, पठन सूची, इतिहास (केवल सार्वजनिक लेख) में से चुनें।",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "आपकी पॉकेट सेव सूची सुरक्षित प्राधिकरण के साथ आयात की जाएगी। सेव का पूरा पाठ प्राप्त किया जाएगा और आपके लिए खोज योग्य बनाया जाएगा।",
+        "description": ""
+    },
+    "social": {
+        "message": "सामाजिक?",
+        "description": ""
+    },
+    "browser": {
+        "message": "ब्राउज़र",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "पठन सेवाएँ",
+        "description": ""
+    },
+    "all_items": {
+        "message": "सभी वस्तुएं",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "बुकमार्क",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "पढ़ने की सूची",
+        "description": ""
+    },
+    "history": {
+        "message": "इतिहास",
+        "description": ""
+    },
+    "x": {
+        "message": "एक्स",
         "description": ""
     }
 }

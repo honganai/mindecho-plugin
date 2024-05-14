@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO：書籤和收藏夾中的全文搜索",
+        "message": "mindECHO：書籤和收藏夾中的無縫全文搜索",
         "description": ""
     },
     "pluginDescription": {
-        "message": "在書籤、儲存的頁面、收藏和閱讀清單中即時搜尋和尋找內容。從您的個人網路檔案中取得相關答案。",
+        "message": "立即搜尋並尋找多個書籤中的內容並儲存。從您的個人網路檔案中取得相關答案。",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -100,7 +100,7 @@
         "description": ""
     },
     "connect_to_pocket_to_revive_your_dusty_stash": {
-        "message": "連接到 Pocket 即可恢復您塵土飛揚的藏品。",
+        "message": "連接到 Pocket 即可恢復積滿灰塵的藏品。",
         "description": ""
     },
     "on_pc": {
@@ -212,7 +212,7 @@
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
-        "message": "在您授權資料收集之前，目前 URL 清單僅是本機的。",
+        "message": "在您授權資料收集之前，目前 URL 清單僅是本地的。",
         "description": ""
     },
     "loading": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "將支援更多來源",
+        "message": "將支援更多來源。",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "只需幾分鐘即可為您自己的網站建立私人 Google + ChatGPT",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "啟用搜尋您的 X 書籤。",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "您在 X（以前的 Twitter）中的書籤將在您的授權下匯入。新增書籤的內容中的全文將被獲取並可供您搜尋。",
+        "description": ""
+    },
+    "collection": {
+        "message": "收藏",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "管理來源",
+        "description": ""
+    },
+    "questions": {
+        "message": "問題？",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "同步瀏覽器集合",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "在瀏覽器中從書籤、閱讀清單、歷史記錄（僅限公開文章）中進行選擇。",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "您的 Pocket Saves 清單將透過安全授權匯入。將獲取已儲存的全文並可供您搜尋。",
+        "description": ""
+    },
+    "social": {
+        "message": "社會的？",
+        "description": ""
+    },
+    "browser": {
+        "message": "瀏覽器",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "閱讀服務",
+        "description": ""
+    },
+    "all_items": {
+        "message": "所有項目",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "書籤",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "閱讀清單",
+        "description": ""
+    },
+    "history": {
+        "message": "歷史",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

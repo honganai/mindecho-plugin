@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: ค้นหาข้อความแบบเต็มในบุ๊กมาร์กและคอลเลกชัน",
+        "message": "mindECHO: การค้นหาข้อความแบบเต็มอย่างราบรื่นในบุ๊กมาร์กและคอลเลกชัน",
         "description": ""
     },
     "pluginDescription": {
-        "message": "ค้นหาและค้นหาเนื้อหาในบุ๊กมาร์ก หน้าที่บันทึกไว้ คอลเลกชัน และรายการเรื่องรออ่านของคุณได้ทันที รับคำตอบที่เกี่ยวข้องจากเอกสารเว็บส่วนตัวของคุณ",
+        "message": "ค้นหาและค้นหาเนื้อหาจากบุ๊กมาร์กและบันทึกหลายรายการของคุณได้ทันที รับคำตอบที่เกี่ยวข้องจากเอกสารเว็บส่วนตัวของคุณ",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -64,7 +64,7 @@
         "description": ""
     },
     "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
-        "message": "แหล่งที่มาอาจยังไม่พร้อมอย่างสมบูรณ์ หรือโปรดลองถามแตกต่างออกไป",
+        "message": "แหล่งที่มาอาจยังไม่พร้อมอย่างสมบูรณ์ หรือโปรดลองถามอย่างอื่น",
         "description": ""
     },
     "manage_sources": {
@@ -192,7 +192,7 @@
         "description": ""
     },
     "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
-        "message": "เปิดใช้งานการค้นหาข้อความแบบเต็มในประวัติการเข้าชมเพื่อขจัดความจำเป็นในการท่องจำ",
+        "message": "เปิดใช้งานการค้นหาข้อความแบบเต็มในประวัติการเรียกดูเพื่อขจัดความจำเป็นในการท่องจำ",
         "description": ""
     },
     "exclude_bookmarks_or_reading_list": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "สร้าง Google + ChatGPT ส่วนตัวสำหรับเว็บของคุณเองในไม่กี่นาที",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "เปิดใช้งานการค้นหาบุ๊กมาร์ก X ของคุณ",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "บุ๊กมาร์กของคุณใน X (อย่างเป็นทางการ Twitter) จะถูกนำเข้าโดยได้รับอนุญาตจากคุณ ข้อความทั้งหมดในเนื้อหาที่บุ๊กมาร์กไว้จะถูกดึงออกมาและทำให้คุณสามารถค้นหาได้",
+        "description": ""
+    },
+    "collection": {
+        "message": "ของสะสม",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "จัดการแหล่งที่มา",
+        "description": ""
+    },
+    "questions": {
+        "message": "คำถาม?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "ซิงค์คอลเลกชันเบราว์เซอร์",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "เลือกจากบุ๊กมาร์ก รายการอ่าน ประวัติศาสตร์ (เฉพาะบทความสาธารณะ) ในเบราว์เซอร์",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "รายการ Pocket Saves ของคุณจะถูกนำเข้าพร้อมการอนุญาตที่ปลอดภัย ข้อความทั้งหมดของบันทึกจะถูกดึงออกมาและทำให้คุณสามารถค้นหาได้",
+        "description": ""
+    },
+    "social": {
+        "message": "ทางสังคม?",
+        "description": ""
+    },
+    "browser": {
+        "message": "เบราว์เซอร์",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "บริการการอ่าน",
+        "description": ""
+    },
+    "all_items": {
+        "message": "สิ่งของทั้งหมด",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "บุ๊กมาร์ก",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "รายการเรื่องรออ่าน",
+        "description": ""
+    },
+    "history": {
+        "message": "ประวัติศาสตร์",
+        "description": ""
+    },
+    "x": {
+        "message": "เอ็กซ์",
         "description": ""
     }
 }

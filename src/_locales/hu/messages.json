@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Teljes szöveges keresés a könyvjelzőkben és gyűjteményekben",
+        "message": "mindECHO: Zökkenőmentes teljes szöveges keresés a könyvjelzőkben és gyűjteményekben",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Azonnal kereshet és találhat tartalmat könyvjelzői, mentett oldalai, gyűjteményei és olvasási listái között. Szerezzen releváns válaszokat személyes webarchívumából.",
+        "message": "Azonnal kereshet és találhat tartalmat több könyvjelzője és mentése között. Szerezzen releváns válaszokat személyes webarchívumából.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -92,7 +92,7 @@
         "description": ""
     },
     "saves": {
-        "message": "Menti",
+        "message": "Ment",
         "description": ""
     },
     "pocket": {
@@ -100,7 +100,7 @@
         "description": ""
     },
     "connect_to_pocket_to_revive_your_dusty_stash": {
-        "message": "Csatlakoztassa a Pockethez, hogy életre keltse poros rejtekét.",
+        "message": "Csatlakoztassa a Pockethez, hogy újraéleszthesse poros rejtekét.",
         "description": ""
     },
     "on_pc": {
@@ -136,7 +136,7 @@
         "description": ""
     },
     "icon_click": {
-        "message": "ikon kattintás",
+        "message": "ikonra kattintás",
         "description": ""
     },
     "or": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Több forrás is támogatott lesz",
+        "message": "Több forrás támogatott.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Készítsen privát Google + ChatGPT-t saját webéhez percek alatt",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Engedélyezze az X könyvjelzők keresését.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Az X (formálisan Twitter) könyvjelzőit az Ön engedélyével importáljuk. A könyvjelzővel ellátott tartalom teljes szövegét a rendszer lekéri, és kereshetővé teszi az Ön számára.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Gyűjtemény",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Kezeli a Forrásokat",
+        "description": ""
+    },
+    "questions": {
+        "message": "Kérdések?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Böngészőgyűjtemények szinkronizálása",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Válasszon a könyvjelzők, az olvasási lista, az előzmények (csak nyilvános cikkek) közül a böngészőben.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "A Pocket Saves listája biztonságos engedéllyel lesz importálva. A mentések teljes szövegét lekérjük és kereshetővé teszi az Ön számára.",
+        "description": ""
+    },
+    "social": {
+        "message": "Szociális?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Böngésző",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Olvasási szolgáltatások",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Minden elem",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Könyvjelzők",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Olvasólista",
+        "description": ""
+    },
+    "history": {
+        "message": "Történelem",
+        "description": ""
+    },
+    "x": {
+        "message": "x",
         "description": ""
     }
 }

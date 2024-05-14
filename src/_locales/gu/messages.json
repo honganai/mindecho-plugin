@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: બુકમાર્ક્સ અને કલેક્શન્સમાં પૂર્ણ-ટેક્સ્ટ શોધ",
+        "message": "mindECHO: બુકમાર્ક્સ અને સંગ્રહોમાં સીમલેસ પૂર્ણ-ટેક્સ્ટ શોધ",
         "description": ""
     },
     "pluginDescription": {
-        "message": "તમારા બુકમાર્ક્સ, સાચવેલા પૃષ્ઠો, સંગ્રહો અને વાંચન સૂચિમાં તરત જ સામગ્રી શોધો અને શોધો. તમારા વ્યક્તિગત વેબ આર્કાઇવમાંથી સંબંધિત જવાબો મેળવો.",
+        "message": "તમારા બહુવિધ બુકમાર્ક્સ અને સેવમાં તરત જ સામગ્રી શોધો અને શોધો. તમારા વ્યક્તિગત વેબ આર્કાઇવમાંથી સંબંધિત જવાબો મેળવો.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -220,7 +220,7 @@
         "description": ""
     },
     "select_deselect_all_shown": {
-        "message": "બતાવેલ તમામ પસંદ કરો/પસંદ કરો",
+        "message": "બતાવેલ બધાને પસંદ/નાપસંદ કરો",
         "description": ""
     },
     "bookMarks_reading_lists": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "વધુ સ્ત્રોતોને સમર્થન આપવામાં આવશે",
+        "message": "વધુ સ્ત્રોતોને સમર્થન આપવામાં આવશે.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "મિનિટોમાં તમારા પોતાના વેબ માટે ખાનગી Google + ChatGPT બનાવો",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "તમારા X બુકમાર્ક્સ માટે શોધ સક્ષમ કરો.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "X (ઔપચારિક રીતે Twitter) માં તમારા બુકમાર્ક્સ તમારી અધિકૃતતા સાથે આયાત કરવામાં આવશે. બુકમાર્ક કરેલી સામગ્રીમાં સંપૂર્ણ ટેક્સ્ટ મેળવવામાં આવશે અને તમને શોધવા યોગ્ય બનાવવામાં આવશે.",
+        "description": ""
+    },
+    "collection": {
+        "message": "સંગ્રહ",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "સ્ત્રોતોનું સંચાલન કરે છે",
+        "description": ""
+    },
+    "questions": {
+        "message": "પ્રશ્નો?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "બ્રાઉઝર સંગ્રહો સમન્વયિત કરો",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "બ્રાઉઝરમાં બુકમાર્ક્સ, વાંચન સૂચિ, ઇતિહાસ (ફક્ત જાહેર લેખો)માંથી પસંદ કરો.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "તમારી પોકેટ સેવ્સ સૂચિ સુરક્ષિત અધિકૃતતા સાથે આયાત કરવામાં આવશે. સેવનો સંપૂર્ણ ટેક્સ્ટ મેળવવામાં આવશે અને તમને શોધવા યોગ્ય બનાવવામાં આવશે.",
+        "description": ""
+    },
+    "social": {
+        "message": "સામાજિક?",
+        "description": ""
+    },
+    "browser": {
+        "message": "બ્રાઉઝર",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "વાંચન સેવાઓ",
+        "description": ""
+    },
+    "all_items": {
+        "message": "બધી વસ્તુઓ",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "બુકમાર્ક્સ",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "વાંચન સૂચિ",
+        "description": ""
+    },
+    "history": {
+        "message": "ઇતિહાસ",
+        "description": ""
+    },
+    "x": {
+        "message": "એક્સ",
         "description": ""
     }
 }

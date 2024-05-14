@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: बुकमार्क आणि संग्रहांमध्ये पूर्ण-मजकूर शोध",
+        "message": "mindECHO: बुकमार्क आणि संग्रहांमध्ये अखंड पूर्ण-मजकूर शोध",
         "description": ""
     },
     "pluginDescription": {
-        "message": "तुमचे बुकमार्क, सेव्ह केलेली पेज, कलेक्शन आणि वाचन लिस्टवर सामग्री झटपट शोधा आणि शोधा. तुमच्या वैयक्तिक वेब संग्रहणातून संबंधित उत्तरे मिळवा.",
+        "message": "तुमच्या एकाधिक बुकमार्क्स आणि सेव्हमध्ये झटपट शोधा आणि सामग्री शोधा. तुमच्या वैयक्तिक वेब संग्रहणातून संबंधित उत्तरे मिळवा.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -168,7 +168,7 @@
         "description": ""
     },
     "from_the_extension_bar_above": {
-        "message": "वरील विस्तार बार वरून",
+        "message": "वरील विस्तार बारमधून",
         "description": ""
     },
     "exclude_history": {
@@ -188,7 +188,7 @@
         "description": ""
     },
     "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
-        "message": "फक्त सार्वजनिक लेख, ब्लॉग आणि निबंध PDF च्या URL समाविष्ट केल्या जाऊ शकतात. वैयक्तिक आणि कार्य-संबंधित इतिहास समाविष्ट केलेला नाही.",
+        "message": "केवळ सार्वजनिक लेख, ब्लॉग आणि निबंध PDF च्या URL समाविष्ट केल्या जाऊ शकतात. वैयक्तिक आणि कार्य-संबंधित इतिहास समाविष्ट केलेला नाही.",
         "description": ""
     },
     "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
@@ -212,7 +212,7 @@
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
-        "message": "तुम्ही डेटा संकलन अधिकृत करेपर्यंत वर्तमान URL सूची केवळ स्थानिक असते.",
+        "message": "तुम्ही डेटा संकलन अधिकृत करेपर्यंत वर्तमान URL सूची स्थानिक असते.",
         "description": ""
     },
     "loading": {
@@ -232,11 +232,11 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "अधिक स्रोत समर्थित केले जातील",
+        "message": "अधिक स्रोत समर्थित केले जातील.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
-        "message": "सेव्हचा संपूर्ण मजकूर आणला जाईल आणि शोधण्यायोग्य केला जाईल.",
+        "message": "सेव्हचा पूर्ण मजकूर आणला जाईल आणि शोधण्यायोग्य बनवला जाईल.",
         "description": ""
     },
     "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "तुमच्या स्वतःच्या वेबसाठी काही मिनिटांत खाजगी Google + ChatGPT तयार करा",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "तुमच्या एक्स बुकमार्कसाठी शोध सक्षम करा.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "तुमचे X (औपचारिकपणे Twitter) मधील बुकमार्क तुमच्या अधिकृततेसह आयात केले जातील. बुकमार्क केलेल्या सामग्रीमधील संपूर्ण मजकूर आणला जाईल आणि तुम्हाला शोधण्यायोग्य बनवला जाईल.",
+        "description": ""
+    },
+    "collection": {
+        "message": "संकलन",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "स्रोत व्यवस्थापित करते",
+        "description": ""
+    },
+    "questions": {
+        "message": "प्रश्न?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "ब्राउझर संग्रह समक्रमित करा",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "ब्राउझरमधील बुकमार्क, वाचन सूची, इतिहास (केवळ सार्वजनिक लेख) मधून निवडा.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "तुमची पॉकेट सेव्ह यादी सुरक्षित अधिकृततेसह आयात केली जाईल. सेव्हचा संपूर्ण मजकूर आणला जाईल आणि तुम्हाला शोधण्यायोग्य बनवला जाईल.",
+        "description": ""
+    },
+    "social": {
+        "message": "सामाजिक?",
+        "description": ""
+    },
+    "browser": {
+        "message": "ब्राउझर",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "वाचन सेवा",
+        "description": ""
+    },
+    "all_items": {
+        "message": "सर्व आयटम",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "बुकमार्क",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "वाचन यादी",
+        "description": ""
+    },
+    "history": {
+        "message": "इतिहास",
+        "description": ""
+    },
+    "x": {
+        "message": "एक्स",
         "description": ""
     }
 }

@@ -203,7 +203,7 @@ const Pocket: React.FC<Props> = ({ onLink }) => {
         </div>
         <div className={styles['center']}>
           <div className={styles['header']}>
-            <p><span style={{ color: '#e94554' }}>{t('pocket')}</span> {t('saves')}</p>
+            <p><span style={{ color: '#e94554' }}>Pocket</span> {t('saves')}</p>
           </div>
           <div className={styles['control-box']}>
             <Input className={styles['search']} placeholder={t('find_items_by_keywords')} prefix={<SearchOutlined />} onPressEnter={searchKeyWord} />
@@ -221,7 +221,7 @@ const Pocket: React.FC<Props> = ({ onLink }) => {
                 checkedKeys={checkedKeys}
                 treeData={treeData}
                 titleRender={titleRender}
-              /> 
+              />
             </div> */}
             <DataList
               checkable

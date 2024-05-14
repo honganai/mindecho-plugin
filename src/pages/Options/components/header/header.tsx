@@ -20,7 +20,7 @@ const Header: React.FC<Props> = ({ tip, note }) => {
         <p className={clsx(`text-xl	`)}>{t('Hello')}, {userInfo?.username || '-'}</p>
         <p className={clsx(`text-gray-400`)}>{tip || ''}</p>
         {
-          note && <p className={clsx(`fs-14 text-gray-400`)}><strong>{t('Note')}:</strong> {note}</p>
+          note && <p className={clsx(`fs-14 text-gray-400`)}><strong>Note:</strong> {note}</p>
         }
       </div>
     </div>

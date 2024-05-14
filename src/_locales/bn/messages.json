@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: বুকমার্ক এবং সংগ্রহে পূর্ণ-পাঠ্য অনুসন্ধান",
+        "message": "mindECHO: বুকমার্ক এবং সংগ্রহে বিরামহীন পূর্ণ-পাঠ্য অনুসন্ধান",
         "description": ""
     },
     "pluginDescription": {
-        "message": "অবিলম্বে আপনার বুকমার্ক, সংরক্ষিত পৃষ্ঠা, সংগ্রহ, এবং পড়ার তালিকা জুড়ে সামগ্রী অনুসন্ধান করুন এবং খুঁজুন। আপনার ব্যক্তিগত ওয়েব সংরক্ষণাগার থেকে প্রাসঙ্গিক উত্তর পান।",
+        "message": "আপনার একাধিক বুকমার্ক এবং সংরক্ষণ জুড়ে অবিলম্বে অনুসন্ধান করুন এবং সামগ্রী খুঁজুন৷ আপনার ব্যক্তিগত ওয়েব সংরক্ষণাগার থেকে প্রাসঙ্গিক উত্তর পান।",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -100,7 +100,7 @@
         "description": ""
     },
     "connect_to_pocket_to_revive_your_dusty_stash": {
-        "message": "আপনার ধুলোবালি পুনরুজ্জীবিত করতে পকেটের সাথে সংযোগ করুন।",
+        "message": "আপনার ধুলাবালি পুনরুজ্জীবিত করতে পকেটের সাথে সংযোগ করুন।",
         "description": ""
     },
     "on_pc": {
@@ -156,7 +156,7 @@
         "description": ""
     },
     "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
-        "message": "ডেটা এখনও প্রক্রিয়াকরণ করা হচ্ছে; আমি এটিতে আছি এবং পটভূমিতে চালিয়ে যাব।",
+        "message": "ডেটা এখনও প্রক্রিয়া করা হচ্ছে; আমি এটিতে আছি এবং পটভূমিতে চালিয়ে যাব।",
         "description": ""
     },
     "pocket_saves_imported": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "আরও উত্স সমর্থন করা হবে",
+        "message": "আরও উত্স সমর্থন করা হবে.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "মিনিটে আপনার নিজের ওয়েবের জন্য একটি ব্যক্তিগত Google + ChatGPT তৈরি করুন",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "আপনার এক্স বুকমার্কগুলির জন্য অনুসন্ধান সক্ষম করুন৷",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "X (আনুষ্ঠানিকভাবে টুইটার) এ আপনার বুকমার্কগুলি আপনার অনুমোদনের সাথে আমদানি করা হবে। বুকমার্ক করা বিষয়বস্তুর সম্পূর্ণ পাঠ্য আনা হবে এবং আপনার জন্য অনুসন্ধানযোগ্য করা হবে।",
+        "description": ""
+    },
+    "collection": {
+        "message": "সংগ্রহ",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "সোর্স ম্যানেজ করে",
+        "description": ""
+    },
+    "questions": {
+        "message": "প্রশ্ন?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "সিঙ্ক ব্রাউজার সংগ্রহ",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "ব্রাউজারে বুকমার্ক, পড়ার তালিকা, ইতিহাস (শুধুমাত্র পাবলিক নিবন্ধ) থেকে বেছে নিন।",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "আপনার পকেট সংরক্ষণ তালিকা নিরাপদ অনুমোদনের সাথে আমদানি করা হবে। সংরক্ষণের সম্পূর্ণ পাঠ্য আনা হবে এবং আপনার জন্য অনুসন্ধানযোগ্য করা হবে।",
+        "description": ""
+    },
+    "social": {
+        "message": "সামাজিক?",
+        "description": ""
+    },
+    "browser": {
+        "message": "ব্রাউজার",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "রিডিং সার্ভিস",
+        "description": ""
+    },
+    "all_items": {
+        "message": "সকল প্রকার",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "বুকমার্ক",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "পড়ার তালিকা",
+        "description": ""
+    },
+    "history": {
+        "message": "ইতিহাস",
+        "description": ""
+    },
+    "x": {
+        "message": "এক্স",
         "description": ""
     }
 }

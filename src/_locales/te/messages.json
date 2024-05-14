@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: బుక్‌మార్క్‌లు &amp; సేకరణలలో పూర్తి-వచన శోధన",
+        "message": "mindECHO: బుక్‌మార్క్‌లు &amp; సేకరణలలో అతుకులు లేని పూర్తి-వచన శోధన",
         "description": ""
     },
     "pluginDescription": {
-        "message": "మీ బుక్‌మార్క్‌లు, సేవ్ చేసిన పేజీలు, సేకరణలు మరియు పఠన జాబితాలలో తక్షణమే శోధించండి మరియు కంటెంట్‌ను కనుగొనండి. మీ వ్యక్తిగత వెబ్ ఆర్కైవ్ నుండి సంబంధిత సమాధానాలను పొందండి.",
+        "message": "మీ బహుళ బుక్‌మార్క్‌లు మరియు ఆదాలలో తక్షణమే శోధించండి మరియు కంటెంట్‌ను కనుగొనండి. మీ వ్యక్తిగత వెబ్ ఆర్కైవ్ నుండి సంబంధిత సమాధానాలను పొందండి.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -188,7 +188,7 @@
         "description": ""
     },
     "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
-        "message": "పబ్లిక్ ఆర్టికల్స్, బ్లాగ్‌లు మరియు ఎస్సే PDFల URLలు మాత్రమే చేర్చబడతాయి. వ్యక్తిగత మరియు పని సంబంధిత చరిత్ర చేర్చబడలేదు.",
+        "message": "పబ్లిక్ కథనాలు, బ్లాగులు మరియు వ్యాస PDFల URLలు మాత్రమే చేర్చబడతాయి. వ్యక్తిగత మరియు పని సంబంధిత చరిత్ర చేర్చబడలేదు.",
         "description": ""
     },
     "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
@@ -232,11 +232,11 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "మరిన్ని మూలాలకు మద్దతు ఉంటుంది",
+        "message": "మరిన్ని మూలాలకు మద్దతు ఉంటుంది.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
-        "message": "పొదుపుల యొక్క పూర్తి వచనం పొందబడుతుంది మరియు శోధించదగినదిగా చేయబడుతుంది.",
+        "message": "పొదుపుల పూర్తి వచనం పొందబడుతుంది మరియు వెతకగలిగేలా చేయబడుతుంది.",
         "description": ""
     },
     "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "నిమిషాల్లో మీ స్వంత వెబ్ కోసం ప్రైవేట్ Google + ChatGPTని రూపొందించండి",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "మీ X బుక్‌మార్క్‌ల కోసం శోధనను ప్రారంభించండి.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "X(అధికారికంగా Twitter)లోని మీ బుక్‌మార్క్‌లు మీ అధికారంతో దిగుమతి చేయబడతాయి. బుక్‌మార్క్ చేసిన కంటెంట్‌లోని పూర్తి వచనం పొందబడుతుంది మరియు మీరు వెతకగలిగేలా చేయబడుతుంది.",
+        "description": ""
+    },
+    "collection": {
+        "message": "సేకరణ",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "మూలాలను నిర్వహిస్తుంది",
+        "description": ""
+    },
+    "questions": {
+        "message": "ప్రశ్నలు?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "బ్రౌజర్ సేకరణలను సమకాలీకరించండి",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "బ్రౌజర్‌లో బుక్‌మార్క్‌లు, పఠన జాబితా, చరిత్ర (పబ్లిక్ ఆర్టికల్స్ మాత్రమే) నుండి ఎంచుకోండి.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "మీ పాకెట్ ఆదాల జాబితా సురక్షిత అధికారంతో దిగుమతి చేయబడుతుంది. పొదుపుల యొక్క పూర్తి వచనం పొందబడుతుంది మరియు మీరు వెతకగలిగేలా చేయబడుతుంది.",
+        "description": ""
+    },
+    "social": {
+        "message": "సామాజికమా?",
+        "description": ""
+    },
+    "browser": {
+        "message": "బ్రౌజర్",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "పఠన సేవలు",
+        "description": ""
+    },
+    "all_items": {
+        "message": "అన్ని అంశాలు",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "బుక్‌మార్క్‌లు",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "పఠన జాబితా",
+        "description": ""
+    },
+    "history": {
+        "message": "చరిత్ర",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

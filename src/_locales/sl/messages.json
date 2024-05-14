@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: iskanje po celotnem besedilu v zaznamkih in zbirkah",
+        "message": "mindECHO: brezhibno iskanje po celotnem besedilu v zaznamkih in zbirkah",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Takoj poiščite in poiščite vsebino med svojimi zaznamki, shranjenimi stranmi, zbirkami in seznami za branje. Pridobite ustrezne odgovore iz svojega osebnega spletnega arhiva.",
+        "message": "Takoj poiščite in poiščite vsebino med številnimi zaznamki in shranjenimi vsebinami. Pridobite ustrezne odgovore iz svojega osebnega spletnega arhiva.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -80,7 +80,7 @@
         "description": ""
     },
     "no_data_available": {
-        "message": "Ni podatkov",
+        "message": "Podatki niso na voljo",
         "description": ""
     },
     "ask_your_saves": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Podprtih bo več virov",
+        "message": "Podprtih bo več virov.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Zgradite zasebni Google + ChatGPT za svoj splet v nekaj minutah",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Omogoči iskanje za zaznamke X.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Vaši zaznamki v X (formalno Twitter) bodo uvoženi z vašim dovoljenjem. Celotno besedilo v vsebini, označeni z zaznamki, bo pridobljeno in vam bo omogočeno iskanje.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Zbirka",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Upravlja vire",
+        "description": ""
+    },
+    "questions": {
+        "message": "Vprašanja?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Sinhroniziraj zbirke brskalnika",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Izbirajte med zaznamki, seznamom za branje, zgodovino (samo javni članki) v brskalniku.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Vaš seznam Pocket Saves bo uvožen z varno avtorizacijo. Celotno besedilo shranjenih podatkov bo pridobljeno in vam bo omogočeno iskanje.",
+        "description": ""
+    },
+    "social": {
+        "message": "Socialno?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Brskalnik",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Storitve branja",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Vsi predmeti",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Zaznamki",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Bralni seznam",
+        "description": ""
+    },
+    "history": {
+        "message": "Zgodovina",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

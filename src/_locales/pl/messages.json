@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Wyszukiwanie pełnotekstowe w zakładkach i kolekcjach",
+        "message": "mindECHO: Bezproblemowe wyszukiwanie pełnotekstowe w zakładkach i kolekcjach",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Natychmiast wyszukuj i znajduj zawartość w swoich zakładkach, zapisanych stronach, kolekcjach i listach do przeczytania. Uzyskaj odpowiednie odpowiedzi ze swojego osobistego archiwum internetowego.",
+        "message": "Natychmiast wyszukuj i znajduj zawartość w wielu zakładkach i zapisach. Uzyskaj odpowiednie odpowiedzi ze swojego osobistego archiwum internetowego.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -232,11 +232,11 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Obsługiwanych będzie więcej źródeł",
+        "message": "Obsługiwanych będzie więcej źródeł.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
-        "message": "Pełny tekst zapisów zostanie pobrany i będzie można go przeszukiwać.",
+        "message": "Pełny tekst zapisów zostanie pobrany i umożliwiony przeszukiwanie.",
         "description": ""
     },
     "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Zbuduj prywatny czat Google + GPT dla swojej własnej sieci w kilka minut",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Włącz wyszukiwanie zakładek X.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Twoje zakładki w X (formalnie Twitterze) zostaną zaimportowane za Twoją autoryzacją. Pełny tekst zawartości dodanej do zakładek zostanie pobrany i umożliwiony przeszukiwanie.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Kolekcja",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Zarządza źródłami",
+        "description": ""
+    },
+    "questions": {
+        "message": "Pytania?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Synchronizuj zbiory przeglądarki",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Wybieraj spośród zakładek, listy czytelniczej, historii (tylko artykuły publiczne) w przeglądarce.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Twoja lista Pocket Saves zostanie zaimportowana z bezpieczną autoryzacją. Pełny tekst zapisów zostanie pobrany i umożliwiony przeszukiwanie.",
+        "description": ""
+    },
+    "social": {
+        "message": "Społeczny?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Przeglądarka",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Usługi czytelnicze",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Wszystkie przedmioty",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Zakładki",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Lista do przeczytania",
+        "description": ""
+    },
+    "history": {
+        "message": "Historia",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

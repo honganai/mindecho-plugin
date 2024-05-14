@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: повнотекстовий пошук у закладках і колекціях",
+        "message": "mindECHO: безперервний повнотекстовий пошук у закладках і колекціях",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Миттєво шукайте та знаходьте вміст у своїх закладках, збережених сторінках, колекціях і списках для читання. Отримайте актуальні відповіді у своєму особистому веб-архіві.",
+        "message": "Миттєво шукайте та знаходьте вміст у своїх численних закладках і збереженнях. Отримайте актуальні відповіді у своєму особистому веб-архіві.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Буде підтримуватися більше джерел",
+        "message": "Буде підтримуватися більше джерел.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Створіть приватний Google + ChatGPT для власної мережі за лічені хвилини",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Увімкніть пошук ваших закладок X.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Ваші закладки в X (формально Twitter) будуть імпортовані з вашого дозволу. Повний текст вмісту закладок буде отримано та доступно для пошуку.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Колекція",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Керує джерелами",
+        "description": ""
+    },
+    "questions": {
+        "message": "Запитання?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Синхронізація колекцій браузера",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Вибирайте закладки, список читання, історію (тільки загальнодоступні статті) у браузері.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Ваш список Pocket Saves буде імпортовано з безпечною авторизацією. Повний текст збереження буде отримано та доступно для пошуку.",
+        "description": ""
+    },
+    "social": {
+        "message": "Соціальний?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Браузер",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Послуги читання",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Усі предмети",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Закладки",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Список для читання",
+        "description": ""
+    },
+    "history": {
+        "message": "історія",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

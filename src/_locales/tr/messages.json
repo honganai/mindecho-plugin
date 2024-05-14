@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Yer İmleri ve Koleksiyonlarda Tam Metin Arama",
+        "message": "mindECHO: Yer İmleri ve Koleksiyonlarda Sorunsuz Tam Metin Arama",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Yer işaretleriniz, kayıtlı sayfalarınız, koleksiyonlarınız ve okuma listeleriniz genelinde içeriği anında arayın ve bulun. Kişisel web arşivinizden ilgili yanıtları alın.",
+        "message": "Birden fazla yer işaretiniz ve kayıtlarınız arasında içeriği anında arayın ve bulun. Kişisel web arşivinizden ilgili yanıtları alın.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Daha fazla kaynak desteklenecek",
+        "message": "Daha fazla Kaynak desteklenecektir.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Dakikalar içinde kendi web&#39;iniz için Özel bir Google + ChatGPT oluşturun",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "X Yer İşaretlerinizi Aramayı Etkinleştirin.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "X&#39;teki (Resmi olarak Twitter) Yer İşaretleriniz sizin izninizle içe aktarılacaktır. Yer imlerine eklenen içerikteki tam metin getirilecek ve sizin için aranabilir hale getirilecektir.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Toplamak",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Kaynakları Yönetir",
+        "description": ""
+    },
+    "questions": {
+        "message": "Sorunuz mu var?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Tarayıcı Koleksiyonlarını Senkronize Et",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Tarayıcıda yer imleri, Okuma Listesi, geçmiş (yalnızca herkese açık makaleler) arasından seçim yapın.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Cep Kayıtları listeniz güvenli yetkilendirmeyle içe aktarılacaktır. Kayıtların tam metni getirilecek ve sizin için aranabilir hale getirilecektir.",
+        "description": ""
+    },
+    "social": {
+        "message": "Sosyal?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Tarayıcı",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Okuma Hizmetleri",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Tüm eşyalar",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Yer imleri",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Okuma listesi",
+        "description": ""
+    },
+    "history": {
+        "message": "Tarih",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }
