@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "自动收集新比赛",
+        "message": "自动添加新链接",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "按关键字查找商品",
+        "message": "通过关键字查找 URL",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "自动添加新商品",
+        "message": "自动添加新链接",
         "description": ""
     },
     "items": {
-        "message": "项目",
+        "message": "网址",
         "description": ""
     },
     "fetch": {
-        "message": "拿来",
+        "message": "检索选定内容",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "社会的？",
+        "message": "社交媒体",
         "description": ""
     },
     "browser": {

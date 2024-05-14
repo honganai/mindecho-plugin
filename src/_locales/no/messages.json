@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Auto-samle nye treff",
+        "message": "Legg til nye lenker automatisk",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "Finn varer etter nøkkelord",
+        "message": "Finn nettadresser etter nøkkelord",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Legg til nye elementer automatisk",
+        "message": "Legg til nye lenker automatisk",
         "description": ""
     },
     "items": {
-        "message": "Varer",
+        "message": "URL-er",
         "description": ""
     },
     "fetch": {
-        "message": "Hent",
+        "message": "Hent valgt innhold",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "Sosial?",
+        "message": "Sosiale medier",
         "description": ""
     },
     "browser": {

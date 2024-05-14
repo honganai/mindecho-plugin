@@ -269,7 +269,7 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
             <p>{t('bookMarks_reading_lists')}</p>
           </div>
           <div className={styles['control-box']}>
-            <Input className={styles['search']} placeholder="Find items by keywords" prefix={<SearchOutlined />} onPressEnter={searchKeyWord} />
+            <Input className={styles['search']} placeholder={t('find_items_by_keywords')} prefix={<SearchOutlined />} onPressEnter={searchKeyWord} />
             <Checkbox className={styles['select']} onChange={onChange}>{t('select_deselect_all_shown')}</Checkbox>
           </div>
           <Spin spinning={loading} tip={t('loading')} style={{ background: '#fff' }}>
@@ -288,10 +288,11 @@ const BrowserData: React.FC<Props> = ({ onLink }) => {
         </div>
         <div className={styles['right']}>
           <Button className={styles['import-btn']} size="middle" type="primary" block onClick={onImport}>
-            <span>{t('fetch')} {checkedCount} {t('items')}</span>
+            <span>{checkedCount} {t('items')}</span><br></br>
+            <span>{t('fetch')} </span>
           </Button>
           <p className={styles['auto-add']}>
-            <Switch checked={autoAdd} onChange={onChange} />
+          <Switch checked={autoAdd} onChange={onChange} />
             <span>{t('auto_add_new_items')}</span>
           </p>
           <p onClick={() => onLink(5)} className={styles['exclude-tip']}>{t('skip_this_step')}</p>

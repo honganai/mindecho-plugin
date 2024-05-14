@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "புதிய பொருத்தங்களை தானாக சேகரிக்கவும்",
+        "message": "தானாக புதிய இணைப்புகளைச் சேர்க்கவும்",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "முக்கிய வார்த்தைகள் மூலம் பொருட்களைக் கண்டறியவும்",
+        "message": "முக்கிய வார்த்தைகள் மூலம் URL களைக் கண்டறியவும்",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "புதிய பொருட்களை தானாகச் சேர்க்கவும்",
+        "message": "தானாக புதிய இணைப்புகளைச் சேர்க்கவும்",
         "description": ""
     },
     "items": {
-        "message": "பொருட்களை",
+        "message": "URLகள்",
         "description": ""
     },
     "fetch": {
-        "message": "எடுக்கவும்",
+        "message": "தேர்ந்தெடுக்கப்பட்ட உள்ளடக்கத்தை மீட்டெடுக்கவும்",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -296,7 +296,7 @@
         "description": ""
     },
     "sync_browser_collections": {
-        "message": "உலாவி தொகுப்புகளை ஒத்திசைக்கவும்",
+        "message": "உலாவி சேகரிப்புகளை ஒத்திசைக்கவும்",
         "description": ""
     },
     "choose_from_bookmarks_reading_list_history": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "சமூகமா?",
+        "message": "சமூக ஊடகம்",
         "description": ""
     },
     "browser": {

@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Аутоматско прикупљање нових утакмица",
+        "message": "Аутоматски додај нове везе",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "Пронађите ставке по кључним речима",
+        "message": "Пронађите УРЛ адресе према кључним речима",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Аутоматско додавање нових ставки",
+        "message": "Аутоматски додај нове везе",
         "description": ""
     },
     "items": {
-        "message": "Предмети",
+        "message": "УРЛ адресе",
         "description": ""
     },
     "fetch": {
-        "message": "Дохвати",
+        "message": "Преузми изабрани садржај",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "Друштвено?",
+        "message": "Друштвени медији",
         "description": ""
     },
     "browser": {

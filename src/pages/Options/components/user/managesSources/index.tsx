@@ -91,7 +91,7 @@ export function ManagesSources({ onLink }: { onLink: Function }) {
     </div>
 
     <div className="my-4">
-      <p className="text-gray-900 text-xl my-2">Reading Services</p>
+      <p className="text-gray-900 text-xl my-2">{t('reading_services')}</p>
       <div className={clsx(
         `flex wrap gap-4`
       )}>
@@ -116,7 +116,7 @@ export function ManagesSources({ onLink }: { onLink: Function }) {
     </div>
 
     <div className="my-4">
-      <p className="text-gray-900 text-xl my-2">Social</p>
+      <p className="text-gray-900 text-xl my-2">{t('social')}</p>
       <div className={clsx(
         `flex wrap gap-1`
       )}>

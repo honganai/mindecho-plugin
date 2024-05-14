@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Automātiski savākt jaunas spēles",
+        "message": "Automātiski pievienot jaunas saites",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "Atrodiet preces pēc atslēgvārdiem",
+        "message": "Atrodiet URL pēc atslēgvārdiem",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Automātiski pievienot jaunus vienumus",
+        "message": "Automātiski pievienot jaunas saites",
         "description": ""
     },
     "items": {
-        "message": "Preces",
+        "message": "URL",
         "description": ""
     },
     "fetch": {
-        "message": "Atnest",
+        "message": "Izgūt atlasīto saturu",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "Sociālie?",
+        "message": "Sociālie mēdiji",
         "description": ""
     },
     "browser": {

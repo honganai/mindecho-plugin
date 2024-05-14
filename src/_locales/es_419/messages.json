@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Recopilar automáticamente nuevas coincidencias",
+        "message": "Agregar automáticamente nuevos enlaces",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "Buscar artículos por palabras clave",
+        "message": "Buscar URL por palabras clave",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Agregar automáticamente nuevos artículos",
+        "message": "Agregar automáticamente nuevos enlaces",
         "description": ""
     },
     "items": {
-        "message": "Elementos",
+        "message": "URL",
         "description": ""
     },
     "fetch": {
-        "message": "Buscar",
+        "message": "Recuperar contenido seleccionado",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "¿Social?",
+        "message": "Medios de comunicación social",
         "description": ""
     },
     "browser": {

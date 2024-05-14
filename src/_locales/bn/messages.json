@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "নতুন মিলগুলি স্বয়ংক্রিয়ভাবে সংগ্রহ করুন৷",
+        "message": "স্বয়ংক্রিয়ভাবে নতুন লিঙ্ক যোগ করুন",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "কীওয়ার্ড দ্বারা আইটেম খুঁজুন",
+        "message": "কীওয়ার্ড দ্বারা ইউআরএল খুঁজুন",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "নতুন আইটেম স্বয়ংক্রিয় যোগ করুন",
+        "message": "স্বয়ংক্রিয়ভাবে নতুন লিঙ্ক যোগ করুন",
         "description": ""
     },
     "items": {
-        "message": "আইটেম",
+        "message": "ইউআরএল",
         "description": ""
     },
     "fetch": {
-        "message": "আনুন",
+        "message": "নির্বাচিত সামগ্রী পুনরুদ্ধার করুন",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "সামাজিক?",
+        "message": "সামাজিক মাধ্যম",
         "description": ""
     },
     "browser": {

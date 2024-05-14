@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Kusanya Mechi Mpya Kiotomatiki",
+        "message": "Ongeza Viungo Vipya kiotomatiki",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "Tafuta vitu kwa maneno muhimu",
+        "message": "Tafuta URL kwa maneno muhimu",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Ongeza Vipengee Vipya kiotomatiki",
+        "message": "Ongeza Viungo Vipya kiotomatiki",
         "description": ""
     },
     "items": {
-        "message": "Vipengee",
+        "message": "URL",
         "description": ""
     },
     "fetch": {
-        "message": "Leta",
+        "message": "Rejesha Maudhui Uliyochagua",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "Kijamii?",
+        "message": "Mtandao wa kijamii",
         "description": ""
     },
     "browser": {

@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Автоматический сбор новых матчей",
+        "message": "Автоматически добавлять новые ссылки",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "Найдите элементы по ключевым словам",
+        "message": "Поиск URL-адресов по ключевым словам",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Автоматическое добавление новых элементов",
+        "message": "Автоматически добавлять новые ссылки",
         "description": ""
     },
     "items": {
-        "message": "Предметы",
+        "message": "URL-адреса",
         "description": ""
     },
     "fetch": {
-        "message": "Принести",
+        "message": "Получить выбранный контент",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "Социальное?",
+        "message": "Социальные медиа",
         "description": ""
     },
     "browser": {

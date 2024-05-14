@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "નવી મેચો સ્વતઃ એકત્ર કરો",
+        "message": "આપમેળે નવી લિંક્સ ઉમેરો",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "કીવર્ડ્સ દ્વારા વસ્તુઓ શોધો",
+        "message": "કીવર્ડ્સ દ્વારા URL શોધો",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "નવી આઇટમ્સ સ્વતઃ ઉમેરો",
+        "message": "આપમેળે નવી લિંક્સ ઉમેરો",
         "description": ""
     },
     "items": {
-        "message": "વસ્તુઓ",
+        "message": "URLs",
         "description": ""
     },
     "fetch": {
-        "message": "મેળવો",
+        "message": "પસંદ કરેલી સામગ્રી પુનઃપ્રાપ્ત કરો",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "સામાજિક?",
+        "message": "સામાજિક મીડિયા",
         "description": ""
     },
     "browser": {

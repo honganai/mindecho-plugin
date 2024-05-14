@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "新しいマッチを自動収集",
+        "message": "新しいリンクを自動的に追加する",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "キーワードでアイテムを検索",
+        "message": "キーワードでURLを検索する",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "新しいアイテムを自動追加",
+        "message": "新しいリンクを自動的に追加する",
         "description": ""
     },
     "items": {
-        "message": "アイテム",
+        "message": "URL",
         "description": ""
     },
     "fetch": {
-        "message": "フェッチ",
+        "message": "選択したコンテンツを取得",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "社交？",
+        "message": "ソーシャルメディア",
         "description": ""
     },
     "browser": {

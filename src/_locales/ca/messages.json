@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Recollida automàtica de noves coincidències",
+        "message": "Afegeix nous enllaços automàticament",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "Cerca elements per paraules clau",
+        "message": "Cerqueu URL per paraules clau",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Afegeix elements nous automàticament",
+        "message": "Afegeix nous enllaços automàticament",
         "description": ""
     },
     "items": {
-        "message": "Elements",
+        "message": "URL",
         "description": ""
     },
     "fetch": {
-        "message": "Recupera",
+        "message": "Recuperar contingut seleccionat",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "Social?",
+        "message": "Mitjans de comunicació social",
         "description": ""
     },
     "browser": {

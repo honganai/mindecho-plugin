@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Auto-Collect Bagong Mga Tugma",
+        "message": "Awtomatikong Magdagdag ng Mga Bagong Link",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "Maghanap ng mga item ayon sa mga keyword",
+        "message": "Maghanap ng mga URL ayon sa mga keyword",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Awtomatikong magdagdag ng mga Bagong Item",
+        "message": "Awtomatikong Magdagdag ng Mga Bagong Link",
         "description": ""
     },
     "items": {
-        "message": "Mga bagay",
+        "message": "Mga URL",
         "description": ""
     },
     "fetch": {
-        "message": "Kunin",
+        "message": "Kunin ang Napiling Nilalaman",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "Sosyal?",
+        "message": "Social Media",
         "description": ""
     },
     "browser": {

@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Kerää automaattisesti uusia osumia",
+        "message": "Lisää uusia linkkejä automaattisesti",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "Etsi kohteita avainsanoilla",
+        "message": "Etsi URL-osoitteita avainsanojen perusteella",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Lisää uusia kohteita automaattisesti",
+        "message": "Lisää uusia linkkejä automaattisesti",
         "description": ""
     },
     "items": {
-        "message": "Tuotteet",
+        "message": "URL-osoitteet",
         "description": ""
     },
     "fetch": {
-        "message": "Hae",
+        "message": "Hae valittu sisältö",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "Sosiaalinen?",
+        "message": "Sosiaalinen media",
         "description": ""
     },
     "browser": {

@@ -176,11 +176,11 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Kumpulkan Pertandingan Baru Secara Otomatis",
+        "message": "Secara Otomatis Menambahkan Tautan Baru",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "Temukan item berdasarkan kata kunci",
+        "message": "Temukan URL berdasarkan kata kunci",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -200,15 +200,15 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Tambahkan Item Baru secara otomatis",
+        "message": "Secara Otomatis Menambahkan Tautan Baru",
         "description": ""
     },
     "items": {
-        "message": "Barang",
+        "message": "URL",
         "description": ""
     },
     "fetch": {
-        "message": "Mengambil",
+        "message": "Ambil Konten yang Dipilih",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
@@ -308,7 +308,7 @@
         "description": ""
     },
     "social": {
-        "message": "Sosial?",
+        "message": "Media sosial",
         "description": ""
     },
     "browser": {
