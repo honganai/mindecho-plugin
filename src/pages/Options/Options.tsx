@@ -163,9 +163,12 @@ const Options: React.FC = () => {
 
           <AnimatePresence>
             <div className='w-full h-screen flex flex-col'>
-              <div className='p-4 pt-6' >
-                <Header tip={(headerNoticeMap[stepPage - 1].tip || '')} note={headerNoticeMap[stepPage - 1].note || ''} />
-              </div>
+              {
+                isLogin &&
+                <div className='p-4 pt-6' >
+                  <Header tip={(headerNoticeMap[stepPage - 1].tip || '')} note={headerNoticeMap[stepPage - 1].note || ''} />
+                </div>
+              }
 
               <div className='flex-1 h-0 flex'>
                 {loading ? <FullScreenLoading />
