@@ -18,7 +18,7 @@ export function Collections() {
   const [totalPage, setTotalPage] = React.useState<number>(0);
   const pageSize = 10;
   //查询时type默认值为1，即查询用户确认上传的数据
-  const [currentContentType, setCurrentContentType] = useState(1);
+  const [currentContentType, setCurrentContentType] = useState('');
 
   const getProgress = () => {
     chrome.runtime.sendMessage({ type: 'request', api: 'user_url_status' }, (res) => {
@@ -31,7 +31,8 @@ export function Collections() {
   const getUserUrl = (data: {
     status: number,
     page: number,
-    page_size: number
+    page_size: number,
+    type: string
   }) => {
     setLoading(true)
     chrome.runtime.sendMessage({ type: 'request', api: 'get_user_url', body: data }, (res) => {
@@ -41,8 +42,7 @@ export function Collections() {
     });
   }
   React.useEffect(() => {
-    console.log('currentContentType:', currentContentType)
-    getUserUrl({ status: currentContentType, page, page_size: pageSize })
+    getUserUrl({ type: currentContentType, status: 1, page, page_size: pageSize })
     getProgress()
   }, [page, pageSize, currentContentType]);
 
@@ -78,10 +78,9 @@ export function Collections() {
     />
 
     <div className="flex-1 h-0 overflow-auto  flex flex-col ">
-      {loading && <FullScreenLoading />}
-
-      {
-        collections.length ? collections.map(item => (
+      {loading
+        ? <FullScreenLoading />
+        : collections.length ? collections.map(item => (
           <motion.div
             key={item.id}
             className='flex p-4 hover:bg-gray-100 hover text-gray-600 w-full border-solid border-gray-100 border-b last:border-b-0 last:pb-0'
@@ -95,14 +94,14 @@ export function Collections() {
             <div className="w-0 flex-1">
               <div className="flex between">
                 <div className={
-                  clsx('font-bold flex-1 w-0 text-inherit hover:text-slate-900 cursor-pointer')
+                  clsx('font-bold flex-1 w-0 text-inherit hover:text-slate-900 cursor-pointer truncate ')
                 }>
                   {item.title}
                 </div>
-                <div className="pl-10">{(new Date(item.user_create_time)).toString()}</div>
+                <div className="pl-10 truncate ">{(new Date(item.user_create_time)).toString()}</div>
               </div>
 
-              <div className="text-sm text-gray-500">{item.url}</div>
+              <div className="text-sm text-gray-500 truncate ">{item.url}</div>
 
               <div className={
                 clsx('line-clamp-3')
@@ -110,8 +109,8 @@ export function Collections() {
 
             </div>
           </motion.div>)
-        ) :
-          <div className="w-full h-full flex justify-center items-center text-gray-400">No Data</div>
+        )
+          : <div className="w-full h-full flex justify-center items-center text-gray-400">No Data</div>
       }
 
     </div>

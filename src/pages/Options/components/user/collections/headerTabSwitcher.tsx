@@ -7,8 +7,8 @@ import GlobalContext, { ContentTypeMap } from "@/reducer/global";
 import InputWithKeyboardForModal from "./inputWithKeyboard";
 
 interface Props {
-  currentContentType: number;
-  onTypeChange: (type: number) => void;
+  currentContentType: string;
+  onTypeChange: (type: string) => void;
 }
 
 export const CollectionsHeaderTabSwitcher: React.FC<Props> = ({
@@ -19,7 +19,7 @@ export const CollectionsHeaderTabSwitcher: React.FC<Props> = ({
   const { state: { progress } } = React.useContext(GlobalContext);
   const [contentTypeList, setContentTypeList] = React.useState([
     {
-      code: 'all',
+      code: '',
       key: 0,
       title: 'all_items',
       count: 0
@@ -31,8 +31,6 @@ export const CollectionsHeaderTabSwitcher: React.FC<Props> = ({
       count: 0
     }))
   ]);
-  console.log('all_items');
-  console.log(t('all_items'));
 
   React.useEffect(() => {
     if (progress?.length) {
@@ -61,10 +59,10 @@ export const CollectionsHeaderTabSwitcher: React.FC<Props> = ({
         return <div
           className={clsx(
             `mr-1 basic-40 leading-8 cursor-pointer inline-flex gap-0.5 justify-center overflow-hidden transition rounded-full bg-zinc-100 py-1 px-3 text-zinc-700 hover:bg-zinc-200`,
-            item.key === currentContentType ? 'font-bold text-zinc-900' : 'font-xl',
+            item.code === currentContentType ? 'font-bold text-zinc-900' : 'font-xl',
           )}
           key={item.key}
-          onClick={() => onTypeChange(item.key)}
+          onClick={() => onTypeChange(item.code)}
         >{`${t(item.title)} (${item.count})`}</div>
       })}
     </div>

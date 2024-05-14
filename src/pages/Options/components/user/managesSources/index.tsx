@@ -1,19 +1,15 @@
 import React from "react";
-import Header from '@/pages/Options/components/header/header';
 import clsx from 'clsx';
-import { Button, Spin, Modal } from 'antd';
-import cs from 'classnames';
-import pocketIcon from '@/assets/icons/pocket_icon.png';
-import TwitterIcon from '@/assets/icons/twitter_icon.png';
+import { Modal } from 'antd';
 import pocketSourceIcon from '@/assets/icons/pocket_source_icon.png';
 import raindropIcon from '@/assets/icons/image 27.png';
 import RIcon from '@/assets/icons/image 30.png';
 import XIcon from '@/assets/icons/image 28.png';
 
-import twitterSourceIcon from '@/assets/icons/twitter_source_icon.png';
+
+import _, { unescape } from 'lodash'
 import RaindRopSourceIcon from '@/assets/icons/raindrop_source_icon.png';
-import { LogoutOutlined, PlusOutlined } from '@ant-design/icons';
-import { motion } from 'framer-motion';
+import { PlusOutlined } from '@ant-design/icons';
 
 export function ManagesSources({ onLink }: { onLink: Function }) {
   const { getMessage: t } = chrome.i18n;
@@ -21,14 +17,15 @@ export function ManagesSources({ onLink }: { onLink: Function }) {
   const CardComponentMaker = ({ title, subTitle, handleClick }: {
     title: React.ReactElement | string;
     subTitle: React.ReactElement | string;
-    handleClick: () => void
+    handleClick: (() => void) | null
   }): JSX.Element => {
     return <div className={clsx(
       `h-40 min-w-96 w-1/3 rounded-xl text-xl	flex between`,
-      `cursor-pointer border border-gray-500 hover hover:border-sky-500`,
-      `p-4`
+      `border border-gray-500`,
+      `p-4`,
+      _.isFunction(handleClick) ? 'cursor-pointer hover hover:border-sky-500' : ''
     )}
-      onClick={handleClick}
+      onClick={handleClick || undefined}
     >
       <PlusOutlined style={{ fontSize: '28px' }} className="h-10 mr-2" />
 
@@ -106,13 +103,13 @@ export function ManagesSources({ onLink }: { onLink: Function }) {
         {CardComponentMaker({
           title: <img src={raindropIcon} alt="raindropIcon" />,
           subTitle: t('more_sources_will_be_supported'),
-          handleClick: () => { }
+          handleClick: null
         })}
 
         {CardComponentMaker({
           title: <img src={RIcon} alt="RIcon" />,
           subTitle: t('more_sources_will_be_supported'),
-          handleClick: () => { }
+          handleClick: null
         })}
 
       </div>
@@ -126,7 +123,7 @@ export function ManagesSources({ onLink }: { onLink: Function }) {
         {CardComponentMaker({
           title: <img className="h-full" src={XIcon} alt="XIcon" />,
           subTitle: t('your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you'),
-          handleClick: () => { }
+          handleClick: null
         })}
       </div>
     </div>
