@@ -218,7 +218,8 @@ const HistoryData: React.FC<Props> = ({ onLink }) => {
         </div>
         <div className={styles['right']}>
           <Button className={styles['import-btn']} size="middle" type="primary" block onClick={onImport}>
-            <span>{t('fetch')} {checkedCount} {t('items')}</span>
+            <span>{checkedCount} {t('items')}</span><br></br>
+            <span>{t('fetch')} </span>
           </Button>
           <p className={styles['auto-add']}>
             <Switch checked={autoAdd} onChange={onChange} />
