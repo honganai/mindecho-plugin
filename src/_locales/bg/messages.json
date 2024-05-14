@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Търсене на пълен текст в отметки и колекции",
+        "message": "mindECHO: Безпроблемно търсене на пълен текст в отметки и колекции",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Незабавно търсете и намирайте съдържание във вашите отметки, запазени страници, колекции и списъци за четене. Получете подходящи отговори от вашия личен уеб архив.",
+        "message": "Незабавно търсете и намирайте съдържание в множеството си отметки и записвания. Получете подходящи отговори от вашия личен уеб архив.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -192,7 +192,7 @@
         "description": ""
     },
     "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
-        "message": "Активирайте пълнотекстово търсене в хронологията на сърфиране, за да елиминирате нуждата от запаметяване.",
+        "message": "Активирайте пълнотекстово търсене в хронологията на сърфирането, за да елиминирате необходимостта от запомняне.",
         "description": ""
     },
     "exclude_bookmarks_or_reading_list": {
@@ -220,7 +220,7 @@
         "description": ""
     },
     "select_deselect_all_shown": {
-        "message": "Изберете/демаркирайте всички показани",
+        "message": "Изберете/премахнете отметката от всички показани",
         "description": ""
     },
     "bookMarks_reading_lists": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Ще се поддържат повече източници",
+        "message": "Ще се поддържат повече източници.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -252,7 +252,7 @@
         "description": ""
     },
     "import_collections_in_browser": {
-        "message": "Импортиране на колекции в браузър",
+        "message": "Импортиране на колекции в браузъра",
         "description": ""
     },
     "Note": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Създайте частен Google + ChatGPT за вашата собствена мрежа за минути",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Активирайте търсенето на вашите X отметки.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Вашите отметки в X (официално Twitter) ще бъдат импортирани с вашето разрешение. Пълният текст в маркираното съдържание ще бъде извлечен и ще бъде направен достъпен за търсене.",
+        "description": ""
+    },
+    "collection": {
+        "message": "колекция",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Управлява източници",
+        "description": ""
+    },
+    "questions": {
+        "message": "въпроси?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Синхронизиране на колекциите на браузъра",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Изберете от отметки, списък за четене, история (само за публични статии) в браузъра.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Вашият списък Pocket Saves ще бъде импортиран със защитено разрешение. Пълният текст на записите ще бъде извлечен и достъпен за търсене.",
+        "description": ""
+    },
+    "social": {
+        "message": "Социални?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Браузър",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Услуги за четене",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Всички предмети",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Отметки",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Списък за четене",
+        "description": ""
+    },
+    "history": {
+        "message": "История",
+        "description": ""
+    },
+    "x": {
+        "message": "х",
         "description": ""
     }
 }

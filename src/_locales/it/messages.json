@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: ricerca full-text nei segnalibri e nelle raccolte",
+        "message": "mindECHO: ricerca completa del testo senza soluzione di continuità nei segnalibri e nelle raccolte",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Cerca e trova istantaneamente contenuti tra segnalibri, pagine salvate, raccolte ed elenchi di lettura. Ottieni risposte pertinenti dal tuo archivio web personale.",
+        "message": "Cerca e trova istantaneamente contenuti tra i tuoi molteplici segnalibri e salvataggi. Ottieni risposte pertinenti dal tuo archivio web personale.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Saranno supportate più fonti",
+        "message": "Saranno supportate più fonti.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Crea un Google + ChatGPT privato per il tuo web in pochi minuti",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Abilita la ricerca dei tuoi segnalibri X.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "I tuoi segnalibri in X (formalmente Twitter) verranno importati con la tua autorizzazione. Il testo completo del contenuto aggiunto ai segnalibri verrà recuperato e reso ricercabile.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Collezione",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Gestisce le fonti",
+        "description": ""
+    },
+    "questions": {
+        "message": "Domande?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Sincronizza le raccolte del browser",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Scegli tra segnalibri, Elenco di lettura, cronologia (solo articoli pubblici) nel browser.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "L&#39;elenco dei tuoi salvataggi tascabili verrà importato con autorizzazione sicura. Il testo completo dei salvataggi verrà recuperato e reso ricercabile.",
+        "description": ""
+    },
+    "social": {
+        "message": "Sociale?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Navigatore",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Servizi di lettura",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Tutti gli articoli",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Segnalibri",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Lista di lettura",
+        "description": ""
+    },
+    "history": {
+        "message": "Storia",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO：书签和收藏夹中的全文搜索",
+        "message": "mindECHO：书签和收藏中的无缝全文搜索",
         "description": ""
     },
     "pluginDescription": {
-        "message": "在书签、保存的页面、收藏和阅读列表中即时搜索和查找内容。从您的个人网络档案中获取相关答案。",
+        "message": "即时搜索并查找您多个书签和保存的内容。从您的个人网络档案中获取相关答案。",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -52,7 +52,7 @@
         "description": ""
     },
     "ask_AI": {
-        "message": "询问AI",
+        "message": "询问人工智能",
         "description": ""
     },
     "query_the_web": {
@@ -64,11 +64,11 @@
         "description": ""
     },
     "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
-        "message": "数据可能尚未完全准备好，或者请尝试以不同的方式询问。",
+        "message": "来源可能尚未完全准备好，或者请尝试以不同的方式询问。",
         "description": ""
     },
     "manage_sources": {
-        "message": "管理数据源",
+        "message": "管理来源",
         "description": ""
     },
     "settings": {
@@ -76,7 +76,7 @@
         "description": ""
     },
     "sources": {
-        "message": "数据源",
+        "message": "来源",
         "description": ""
     },
     "no_data_available": {
@@ -84,7 +84,7 @@
         "description": ""
     },
     "ask_your_saves": {
-        "message": "查询自有内容库",
+        "message": "询问您的保存",
         "description": ""
     },
     "secure_connection": {
@@ -96,15 +96,15 @@
         "description": ""
     },
     "pocket": {
-        "message": "Pocket",
+        "message": "口袋",
         "description": ""
     },
     "connect_to_pocket_to_revive_your_dusty_stash": {
-        "message": "连接 Pocket 来让以前存的待读重见天日。",
+        "message": "连接到 Pocket 来恢复你布满灰尘的储藏物。",
         "description": ""
     },
     "on_pc": {
-        "message": "在Windows上",
+        "message": "在电脑上",
         "description": ""
     },
     "ctrl_E": {
@@ -112,11 +112,11 @@
         "description": ""
     },
     "on_mac": {
-        "message": "在Mac上",
+        "message": "在 Mac 上",
         "description": ""
     },
     "command_E": {
-        "message": "Command + E",
+        "message": "命令 + E",
         "description": ""
     },
     "press": {
@@ -128,7 +128,7 @@
         "description": ""
     },
     "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
-        "message": "这可能需要 10 分钟。请保持此页面打开。您可以先切换到其他页面",
+        "message": "这可能需要 10 分钟。请保持此页面打开并继续执行其他任务。",
         "description": ""
     },
     "building_your_mindEcho": {
@@ -136,7 +136,7 @@
         "description": ""
     },
     "icon_click": {
-        "message": "点击图标",
+        "message": "图标点击",
         "description": ""
     },
     "or": {
@@ -152,7 +152,7 @@
         "description": ""
     },
     "activate_mindECHO_to_search_your_saves": {
-        "message": "唤起 mindECHO 来在你的收藏中实时检索",
+        "message": "激活 mindECHO 搜索你的保存",
         "description": ""
     },
     "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
@@ -160,7 +160,7 @@
         "description": ""
     },
     "pocket_saves_imported": {
-        "message": "Pocket数据已导入",
+        "message": "口袋保存进口",
         "description": ""
     },
     "browser_data_imported": {
@@ -168,51 +168,51 @@
         "description": ""
     },
     "from_the_extension_bar_above": {
-        "message": "从上方的浏览器扩展栏",
+        "message": "从上面的扩展栏",
         "description": ""
     },
     "exclude_history": {
-        "message": "跳过历史记录",
+        "message": "排除历史记录",
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "自动收集新的匹配项",
+        "message": "自动收集新比赛",
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "按关键字查找",
+        "message": "按关键字查找商品",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
-        "message": "保存浏览过的公开知识页面",
+        "message": "来自浏览历史记录的公共知识页面",
         "description": ""
     },
     "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
-        "message": "仅可包含公开文章、博客和论文PDF的 URL。个人内容和工作相关历史不包括在内。",
+        "message": "仅可包含公开文章、博客和论文 PDF 的 URL。个人和工作相关历史不包括在内。",
         "description": ""
     },
     "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
-        "message": "可在浏览历史记录中启用全文搜索，无需记忆。",
+        "message": "在浏览历史记录中启用全文搜索，从而无需记忆。",
         "description": ""
     },
     "exclude_bookmarks_or_reading_list": {
-        "message": "跳过收藏夹和阅读列表",
+        "message": "排除书签或阅读列表",
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "自动添加新项",
+        "message": "自动添加新商品",
         "description": ""
     },
     "items": {
-        "message": "条目",
+        "message": "项目",
         "description": ""
     },
     "fetch": {
-        "message": "采集",
+        "message": "拿来",
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
-        "message": "当前的URL列表只在本地，仅会同步你授权的条目。",
+        "message": "当前 URL 列表仅限于本地，直到您授权数据收集。",
         "description": ""
     },
     "loading": {
@@ -224,7 +224,7 @@
         "description": ""
     },
     "bookMarks_reading_lists": {
-        "message": "收藏夹和阅读清单",
+        "message": "书签和阅读清单",
         "description": ""
     },
     "select_content_to_be_made_searchable": {
@@ -232,11 +232,11 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "将支持更多来源",
+        "message": "将支持更多来源。",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
-        "message": "将获取保存的全文并进行索引。",
+        "message": "将获取保存的全文并进行搜索。",
         "description": ""
     },
     "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
@@ -244,11 +244,11 @@
         "description": ""
     },
     "select_source": {
-        "message": "选择数据源",
+        "message": "选择来源",
         "description": ""
     },
     "connect_other_sources": {
-        "message": "连接其他数据源",
+        "message": "连接其他来源",
         "description": ""
     },
     "import_collections_in_browser": {
@@ -256,7 +256,7 @@
         "description": ""
     },
     "Note": {
-        "message": "笔记",
+        "message": "提示",
         "description": ""
     },
     "Hello": {
@@ -264,15 +264,79 @@
         "description": ""
     },
     "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
-        "message": "请选择需要搜索的数据源",
+        "message": "我们先选择一下您想再次探索的信息宝库怎么样？",
         "description": ""
     },
     "find_anything_instantly_from_your_own_saves": {
-        "message": "立即从你的自有内容库中找到任何内容。",
+        "message": "立即从您自己的保存中找到任何内容。",
         "description": ""
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
-        "message": "在几分钟内为你构建私有的Google + ChatGPT",
+        "message": "在几分钟内为您自己的网站构建私人 Google + ChatGPT",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "启用“搜索您的 X 个书签”。",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "您在X（正式名称为Twitter）的书签将在您授权的情况下导入。书签内容的全文将被提取并供您搜索。",
+        "description": ""
+    },
+    "collection": {
+        "message": "收藏",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "管理来源",
+        "description": ""
+    },
+    "questions": {
+        "message": "问题？",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "同步浏览器集合",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "从浏览器中的书签、阅读列表、历史记录（仅限公开文章）中进行选择。",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "您的 Pocket Saves 列表将通过安全授权导入。保存的全文将被提取并供您搜索。",
+        "description": ""
+    },
+    "social": {
+        "message": "社会的？",
+        "description": ""
+    },
+    "browser": {
+        "message": "浏览器",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "阅读服务",
+        "description": ""
+    },
+    "all_items": {
+        "message": "所有项目",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "书签",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "阅读清单",
+        "description": ""
+    },
+    "history": {
+        "message": "历史",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

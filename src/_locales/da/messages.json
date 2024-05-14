@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Fuldtekstsøgning i bogmærker og samlinger",
+        "message": "mindECHO: Sømløs fuldtekstsøgning i bogmærker og samlinger",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Søg og find indhold med det samme på tværs af dine bogmærker, gemte sider, samlinger og læselister. Få relevante svar fra dit personlige webarkiv.",
+        "message": "Søg og find øjeblikkeligt indhold på tværs af dine flere bogmærker og gemmer. Få relevante svar fra dit personlige webarkiv.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -28,7 +28,7 @@
         "description": ""
     },
     "copySuccess": {
-        "message": "Kopierings succes",
+        "message": "Kopiering succes",
         "description": ""
     },
     "copyNotSupported": {
@@ -192,7 +192,7 @@
         "description": ""
     },
     "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
-        "message": "Aktiver fuldtekstsøgning i browserhistorikken for at eliminere behovet for memorering.",
+        "message": "Aktiver fuldtekstsøgning i browserhistorikken for at eliminere behovet for at huske.",
         "description": ""
     },
     "exclude_bookmarks_or_reading_list": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Flere kilder vil blive understøttet",
+        "message": "Flere kilder vil blive understøttet.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Byg en privat Google + ChatGPT til dit eget web på få minutter",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Aktiver Søg efter dine X-bogmærker.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Dine bogmærker i X (formelt Twitter) vil blive importeret med din tilladelse. Fuld tekst i det bogmærkede indhold vil blive hentet og gjort søgbart for dig.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Kollektion",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Styrer kilder",
+        "description": ""
+    },
+    "questions": {
+        "message": "Spørgsmål?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Synkroniser browsersamlinger",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Vælg mellem bogmærker, læseliste, historie (kun offentlige artikler) i browseren.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Din Pocket Saves-liste vil blive importeret med sikker autorisation. Den fulde tekst af gemmes vil blive hentet og gjort søgbar for dig.",
+        "description": ""
+    },
+    "social": {
+        "message": "Social?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Browser",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Læsetjenester",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Alle dele",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Bogmærker",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Læseliste",
+        "description": ""
+    },
+    "history": {
+        "message": "Historie",
+        "description": ""
+    },
+    "x": {
+        "message": "x",
         "description": ""
     }
 }

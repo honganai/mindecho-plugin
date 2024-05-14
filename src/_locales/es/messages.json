@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: búsqueda de texto completo en marcadores y colecciones",
+        "message": "mindECHO: búsqueda fluida de texto completo en marcadores y colecciones",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Busque y encuentre contenido instantáneamente en sus marcadores, páginas guardadas, colecciones y listas de lectura. Obtenga respuestas relevantes de su archivo web personal.",
+        "message": "Busque y encuentre contenido instantáneamente en sus múltiples marcadores y archivos guardados. Obtenga respuestas relevantes de su archivo web personal.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -112,7 +112,7 @@
         "description": ""
     },
     "on_mac": {
-        "message": "en Mac",
+        "message": "en mac",
         "description": ""
     },
     "command_E": {
@@ -160,7 +160,7 @@
         "description": ""
     },
     "pocket_saves_imported": {
-        "message": "Guardado de bolsillo importado",
+        "message": "Guardados de bolsillo importados",
         "description": ""
     },
     "browser_data_imported": {
@@ -200,7 +200,7 @@
         "description": ""
     },
     "auto_add_new_items": {
-        "message": "Agregar automáticamente nuevos artículos",
+        "message": "Agregar automáticamente nuevos elementos",
         "description": ""
     },
     "items": {
@@ -232,11 +232,11 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Se admitirán más fuentes",
+        "message": "Se admitirán más fuentes.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
-        "message": "Se recuperará el texto completo de las partidas guardadas y se podrá realizar búsquedas.",
+        "message": "Se recuperará el texto completo de las partidas guardadas y se podrá buscar.",
         "description": ""
     },
     "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Cree un ChatGPT privado de Google + para su propia web en minutos",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Habilite la búsqueda de sus marcadores X.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Tus marcadores en X (formalmente Twitter) se importarán con tu autorización. Se recuperará el texto completo del contenido marcado y podrá realizar búsquedas.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Recopilación",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Gestiona fuentes",
+        "description": ""
+    },
+    "questions": {
+        "message": "¿Preguntas?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Sincronizar colecciones del navegador",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Elija entre marcadores, lista de lectura e historial (solo artículos públicos) en el navegador.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Su lista de Pocket Saves se importará con una autorización segura. Se recuperará el texto completo de las partidas guardadas y podrás realizar búsquedas.",
+        "description": ""
+    },
+    "social": {
+        "message": "¿Social?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Navegador",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Servicios de lectura",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Todos los artículos",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Marcadores",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Leyendo lista",
+        "description": ""
+    },
+    "history": {
+        "message": "Historia",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

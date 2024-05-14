@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Pencarian Teks Lengkap di Bookmark &amp; Koleksi",
+        "message": "mindECHO: Pencarian Teks Lengkap yang Mulus di Bookmark &amp; Koleksi",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Telusuri dan temukan konten secara instan di seluruh bookmark, halaman tersimpan, koleksi, dan daftar bacaan Anda. Dapatkan jawaban yang relevan dari arsip web pribadi Anda.",
+        "message": "Telusuri dan temukan konten secara instan di berbagai bookmark dan simpanan Anda. Dapatkan jawaban yang relevan dari arsip web pribadi Anda.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -128,7 +128,7 @@
         "description": ""
     },
     "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
-        "message": "Ini mungkin memerlukan waktu hingga 10 menit. Harap tetap membuka halaman ini dan melanjutkan tugas lainnya.",
+        "message": "Ini mungkin memakan waktu hingga 10 menit. Harap tetap membuka halaman ini dan melanjutkan tugas lainnya.",
         "description": ""
     },
     "building_your_mindEcho": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Lebih banyak sumber akan didukung",
+        "message": "Lebih banyak Sumber akan didukung.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Bangun Google+ ChatGPT Pribadi untuk web Anda sendiri dalam hitungan Menit",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Aktifkan Pencarian untuk X Bookmark Anda.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Bookmark Anda di X (Resmi Twitter) akan diimpor dengan otorisasi Anda. Teks lengkap dalam konten yang diberi bookmark akan diambil dan dibuat dapat dicari oleh Anda.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Koleksi",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Mengelola Sumber",
+        "description": ""
+    },
+    "questions": {
+        "message": "Pertanyaan?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Sinkronkan Koleksi Browser",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Pilih dari bookmark, Daftar Bacaan, riwayat (hanya artikel publik) di browser.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Daftar Pocket Saves Anda akan diimpor dengan otorisasi aman. Teks lengkap dari simpanan akan diambil dan dapat dicari oleh Anda.",
+        "description": ""
+    },
+    "social": {
+        "message": "Sosial?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Peramban",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Layanan Membaca",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Semua barang",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Bookmark",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Membaca daftar",
+        "description": ""
+    },
+    "history": {
+        "message": "Sejarah",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

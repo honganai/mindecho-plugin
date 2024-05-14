@@ -77,13 +77,13 @@ export function ManagesSources({ onLink }: { onLink: Function }) {
 
   return <div className={clsx(`relative flex flex-col px-4 pl-4`)}>
     <div className="my-4">
-      <p className="text-gray-900 text-xl my-2">{t('browser')}</p>
+      <p className="text-gray-900 text-xl my-2">Browser</p>
       <div className={clsx(
         `flex wrap gap-4`
       )}>
 
         {CardComponentMaker({
-          title: t('sync_browser_collections'),
+          title: 'Browser',
           subTitle: t(`choose_from_bookmarks_reading_list_history`),
           handleClick: () => onLink(2)
         })}
@@ -91,7 +91,7 @@ export function ManagesSources({ onLink }: { onLink: Function }) {
     </div>
 
     <div className="my-4">
-      <p className="text-gray-900 text-xl my-2">{t('reading_services')}</p>
+      <p className="text-gray-900 text-xl my-2">Reading Services</p>
       <div className={clsx(
         `flex wrap gap-4`
       )}>
@@ -116,7 +116,7 @@ export function ManagesSources({ onLink }: { onLink: Function }) {
     </div>
 
     <div className="my-4">
-      <p className="text-gray-900 text-xl my-2">{t('social')}</p>
+      <p className="text-gray-900 text-xl my-2">Social</p>
       <div className={clsx(
         `flex wrap gap-1`
       )}>

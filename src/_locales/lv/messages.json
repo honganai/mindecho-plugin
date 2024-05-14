@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: pilna teksta meklēšana grāmatzīmēs un kolekcijās",
+        "message": "mindECHO: nevainojama pilna teksta meklēšana grāmatzīmēs un kolekcijās",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Nekavējoties meklējiet un atrodiet saturu savās grāmatzīmēs, saglabātajās lapās, kolekcijās un lasīšanas sarakstos. Saņemiet atbilstošas atbildes no sava personīgā tīmekļa arhīva.",
+        "message": "Nekavējoties meklējiet un atrodiet saturu vairākās grāmatzīmēs un saglabājumos. Saņemiet atbilstošas atbildes no sava personīgā tīmekļa arhīva.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -64,7 +64,7 @@
         "description": ""
     },
     "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
-        "message": "Avoti, iespējams, vēl nav pilnībā sagatavoti, vai, lūdzu, mēģiniet jautāt citādi.",
+        "message": "Avoti, iespējams, vēl nav pilnībā sagatavoti, vai arī mēģiniet jautāt citādi.",
         "description": ""
     },
     "manage_sources": {
@@ -188,7 +188,7 @@
         "description": ""
     },
     "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
-        "message": "Var iekļaut tikai publisko rakstu, emuāru un eseju PDF failu vietrāžus URL. Personiskā un ar darbu saistītā vēsture NAV iekļauta.",
+        "message": "Var iekļaut tikai publisko rakstu, emuāru un eseju PDF failu vietrāžus URL. Personīgā un ar darbu saistītā vēsture NAV iekļauta.",
         "description": ""
     },
     "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Tiks atbalstīti vairāki avoti",
+        "message": "Tiks atbalstīti citi avoti.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -268,11 +268,75 @@
         "description": ""
     },
     "find_anything_instantly_from_your_own_saves": {
-        "message": "Nekavējoties atrodiet jebko no saviem krājumiem.",
+        "message": "Nekavējoties atrodiet jebko no saviem ietaupījumiem.",
         "description": ""
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Dažu minūšu laikā izveidojiet privātu Google + ChatGPT savam tīmeklim",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Iespējot X grāmatzīmju meklēšanu.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Jūsu grāmatzīmes pakalpojumā X (formāli Twitter) tiks importētas ar jūsu atļauju. Pilns teksts grāmatzīmēm pievienotajā saturā tiks ielādēts un padarīts meklējams.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Kolekcija",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Pārvalda avotus",
+        "description": ""
+    },
+    "questions": {
+        "message": "Jautājumi?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Sinhronizējiet pārlūkprogrammas kolekcijas",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Izvēlieties no grāmatzīmēm, lasīšanas saraksta, vēstures (tikai publiskiem rakstiem) pārlūkprogrammā.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Jūsu Pocket Saves saraksts tiks importēts ar drošu autorizāciju. Pilns saglabāto tekstu teksts tiks ielādēts un padarīts meklējams.",
+        "description": ""
+    },
+    "social": {
+        "message": "Sociālie?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Pārlūkprogramma",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Lasīšanas pakalpojumi",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Visas preces",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Grāmatzīmes",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Lasīšanas saraksts",
+        "description": ""
+    },
+    "history": {
+        "message": "Vēsture",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು ಮತ್ತು ಸಂಗ್ರಹಣೆಗಳಲ್ಲಿ ಪೂರ್ಣ-ಪಠ್ಯ ಹುಡುಕಾಟ",
+        "message": "mindECHO: ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು ಮತ್ತು ಸಂಗ್ರಹಣೆಗಳಲ್ಲಿ ತಡೆರಹಿತ ಪೂರ್ಣ-ಪಠ್ಯ ಹುಡುಕಾಟ",
         "description": ""
     },
     "pluginDescription": {
-        "message": "ನಿಮ್ಮ ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು, ಉಳಿಸಿದ ಪುಟಗಳು, ಸಂಗ್ರಹಣೆಗಳು ಮತ್ತು ಓದುವ ಪಟ್ಟಿಗಳಲ್ಲಿ ವಿಷಯವನ್ನು ತ್ವರಿತವಾಗಿ ಹುಡುಕಿ ಮತ್ತು ಹುಡುಕಿ. ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ವೆಬ್ ಆರ್ಕೈವ್‌ನಿಂದ ಸಂಬಂಧಿತ ಉತ್ತರಗಳನ್ನು ಪಡೆಯಿರಿ.",
+        "message": "ನಿಮ್ಮ ಬಹು ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು ಮತ್ತು ಉಳಿತಾಯಗಳಾದ್ಯಂತ ವಿಷಯವನ್ನು ತಕ್ಷಣವೇ ಹುಡುಕಿ ಮತ್ತು ಹುಡುಕಿ. ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ವೆಬ್ ಆರ್ಕೈವ್‌ನಿಂದ ಸಂಬಂಧಿತ ಉತ್ತರಗಳನ್ನು ಪಡೆಯಿರಿ.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -128,7 +128,7 @@
         "description": ""
     },
     "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
-        "message": "ಇದು 10 ನಿಮಿಷಗಳವರೆಗೆ ತೆಗೆದುಕೊಳ್ಳಬಹುದು. ದಯವಿಟ್ಟು ಈ ಪುಟವನ್ನು ತೆರೆಯಿರಿ ಮತ್ತು ಇತರ ಕಾರ್ಯಗಳೊಂದಿಗೆ ಮುಂದುವರಿಯಿರಿ.",
+        "message": "ಇದು 10 ನಿಮಿಷಗಳವರೆಗೆ ತೆಗೆದುಕೊಳ್ಳಬಹುದು. ದಯವಿಟ್ಟು ಈ ಪುಟವನ್ನು ತೆರೆದಿಡಿ ಮತ್ತು ಇತರ ಕಾರ್ಯಗಳೊಂದಿಗೆ ಮುಂದುವರಿಯಿರಿ.",
         "description": ""
     },
     "building_your_mindEcho": {
@@ -228,11 +228,11 @@
         "description": ""
     },
     "select_content_to_be_made_searchable": {
-        "message": "ಹುಡುಕುವಂತೆ ಮಾಡಬೇಕಾದ ವಿಷಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+        "message": "ಹುಡುಕುವಂತೆ ಮಾಡಲು ವಿಷಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "ಹೆಚ್ಚಿನ ಮೂಲಗಳನ್ನು ಬೆಂಬಲಿಸಲಾಗುತ್ತದೆ",
+        "message": "ಹೆಚ್ಚಿನ ಮೂಲಗಳನ್ನು ಬೆಂಬಲಿಸಲಾಗುತ್ತದೆ.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "ನಿಮಿಷಗಳಲ್ಲಿ ನಿಮ್ಮ ಸ್ವಂತ ವೆಬ್‌ಗಾಗಿ ಖಾಸಗಿ Google + ChatGPT ಅನ್ನು ನಿರ್ಮಿಸಿ",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "ನಿಮ್ಮ X ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳಿಗಾಗಿ ಹುಡುಕಾಟವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "X(ಔಪಚಾರಿಕವಾಗಿ Twitter) ನಲ್ಲಿ ನಿಮ್ಮ ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳನ್ನು ನಿಮ್ಮ ದೃಢೀಕರಣದೊಂದಿಗೆ ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗುತ್ತದೆ. ಬುಕ್‌ಮಾರ್ಕ್ ಮಾಡಲಾದ ವಿಷಯದಲ್ಲಿನ ಪೂರ್ಣ ಪಠ್ಯವನ್ನು ಪಡೆದುಕೊಳ್ಳಲಾಗುತ್ತದೆ ಮತ್ತು ನಿಮಗೆ ಹುಡುಕಲು ಸಾಧ್ಯವಾಗುವಂತೆ ಮಾಡಲಾಗುತ್ತದೆ.",
+        "description": ""
+    },
+    "collection": {
+        "message": "ಸಂಗ್ರಹ",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "ಮೂಲಗಳನ್ನು ನಿರ್ವಹಿಸುತ್ತದೆ",
+        "description": ""
+    },
+    "questions": {
+        "message": "ಪ್ರಶ್ನೆಗಳು?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "ಬ್ರೌಸರ್ ಸಂಗ್ರಹಣೆಗಳನ್ನು ಸಿಂಕ್ ಮಾಡಿ",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು, ಓದುವಿಕೆ ಪಟ್ಟಿ, ಇತಿಹಾಸ (ಸಾರ್ವಜನಿಕ ಲೇಖನಗಳು ಮಾತ್ರ) ಆಯ್ಕೆಮಾಡಿ.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "ನಿಮ್ಮ ಪಾಕೆಟ್ ಉಳಿತಾಯ ಪಟ್ಟಿಯನ್ನು ಸುರಕ್ಷಿತ ದೃಢೀಕರಣದೊಂದಿಗೆ ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗುತ್ತದೆ. ಉಳಿತಾಯದ ಪೂರ್ಣ ಪಠ್ಯವನ್ನು ಪಡೆದುಕೊಳ್ಳಲಾಗುವುದು ಮತ್ತು ನಿಮಗೆ ಹುಡುಕಲು ಸಾಧ್ಯವಾಗುವಂತೆ ಮಾಡಲಾಗುತ್ತದೆ.",
+        "description": ""
+    },
+    "social": {
+        "message": "ಸಾಮಾಜಿಕವೇ?",
+        "description": ""
+    },
+    "browser": {
+        "message": "ಬ್ರೌಸರ್",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "ಓದುವ ಸೇವೆಗಳು",
+        "description": ""
+    },
+    "all_items": {
+        "message": "ಎಲ್ಲಾ ವಸ್ತುಗಳು",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "ಓದುವ ಪಟ್ಟಿ",
+        "description": ""
+    },
+    "history": {
+        "message": "ಇತಿಹಾಸ",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

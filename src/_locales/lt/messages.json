@@ -1,14 +1,14 @@
 {
     "pluginName": {
-        "message": "mindECHO: viso teksto paieška žymėse ir kolekcijose",
+        "message": "mindECHO: vientisa viso teksto paieška žymėse ir kolekcijose",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Akimirksniu ieškokite ir raskite turinį savo žymėse, išsaugotuose puslapiuose, kolekcijose ir skaitymo sąrašuose. Gaukite atitinkamus atsakymus iš savo asmeninio žiniatinklio archyvo.",
+        "message": "Akimirksniu ieškokite ir raskite turinį keliose žymėse ir išsaugotuose įrašuose. Gaukite atitinkamus atsakymus iš savo asmeninio žiniatinklio archyvo.",
         "description": ""
     },
     "signUpWithGoogle": {
-        "message": "Prisiregistruokite naudodami „Google“.",
+        "message": "Prisiregistruokite su Google",
         "description": "memorie页面来源"
     },
     "logout": {
@@ -232,11 +232,11 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Bus palaikoma daugiau šaltinių",
+        "message": "Bus palaikoma daugiau šaltinių.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
-        "message": "Visas išsaugotų tekstų tekstas bus paimtas ir bus galima ieškoti.",
+        "message": "Visas išsaugojimo tekstas bus paimtas ir bus galima ieškoti.",
         "description": ""
     },
     "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Per kelias minutes sukurkite privatų „Google + ChatGPT“ savo žiniatinkliui",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Įgalinkite savo X žymių paiešką.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Jūsų žymės X (formaliai Twitter) bus importuotos su jūsų leidimu. Visas tekstas pažymėtame turinyje bus paimtas ir jums bus suteikta galimybė ieškoti.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Kolekcija",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Tvarko šaltinius",
+        "description": ""
+    },
+    "questions": {
+        "message": "Klausimai?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Sinchronizuoti naršyklės kolekcijas",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Naršyklėje pasirinkite iš žymių, skaitymo sąrašo, istorijos (tik viešų straipsnių).",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Jūsų Pocket Saves sąrašas bus importuotas su saugiu leidimu. Visas išsaugojimo tekstas bus paimtas ir jums bus suteikta galimybė ieškoti.",
+        "description": ""
+    },
+    "social": {
+        "message": "Socialinis?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Naršyklė",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Skaitymo paslaugos",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Visi daiktai",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Žymės",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Skaitymo sąrašas",
+        "description": ""
+    },
+    "history": {
+        "message": "Istorija",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

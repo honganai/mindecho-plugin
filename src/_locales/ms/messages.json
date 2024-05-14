@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Carian Teks Penuh dalam Penanda Halaman &amp; Koleksi",
+        "message": "mindECHO: Carian Teks Penuh Lancar dalam Penanda Halaman &amp; Koleksi",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Cari dan cari kandungan dengan serta-merta merentas penanda halaman, halaman yang disimpan, koleksi dan senarai bacaan anda. Dapatkan jawapan yang berkaitan daripada arkib web peribadi anda.",
+        "message": "Cari dan cari kandungan dengan serta-merta merentas berbilang penanda halaman anda dan simpan. Dapatkan jawapan yang berkaitan daripada arkib web peribadi anda.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Lebih banyak sumber akan disokong",
+        "message": "Lebih banyak Sumber akan disokong.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Bina Google + ChatGPT Peribadi untuk web anda sendiri dalam Minit",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Dayakan Carian Penanda Halaman X Anda.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Penanda Halaman anda dalam X(Secara rasmi Twitter) akan diimport dengan kebenaran anda. Teks penuh dalam kandungan yang ditanda halaman akan diambil dan dijadikan boleh dicari kepada anda.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Koleksi",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Menguruskan Sumber",
+        "description": ""
+    },
+    "questions": {
+        "message": "Soalan?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Segerakkan Koleksi Penyemak Imbas",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Pilih daripada penanda halaman, Senarai Bacaan, sejarah (artikel awam sahaja) dalam pelayar.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Senarai Simpanan Poket anda akan diimport dengan kebenaran selamat. Teks penuh simpanan akan diambil dan dijadikan boleh dicari kepada anda.",
+        "description": ""
+    },
+    "social": {
+        "message": "sosial?",
+        "description": ""
+    },
+    "browser": {
+        "message": "pelayar",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Perkhidmatan Membaca",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Semua barang",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Penanda buku",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Senarai Bacaan",
+        "description": ""
+    },
+    "history": {
+        "message": "Sejarah",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Tìm kiếm toàn văn bản trong Dấu trang &amp; Bộ sưu tập",
+        "message": "mindECHO: Tìm kiếm toàn văn liền mạch trong Dấu trang &amp; Bộ sưu tập",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Tìm kiếm và tìm kiếm ngay lập tức nội dung trên dấu trang, trang đã lưu, bộ sưu tập và danh sách đọc của bạn. Nhận câu trả lời có liên quan từ kho lưu trữ web cá nhân của bạn.",
+        "message": "Tìm kiếm và tìm thấy nội dung ngay lập tức trên nhiều dấu trang và lưu của bạn. Nhận câu trả lời có liên quan từ kho lưu trữ web cá nhân của bạn.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -100,7 +100,7 @@
         "description": ""
     },
     "connect_to_pocket_to_revive_your_dusty_stash": {
-        "message": "Kết nối với Pocket để hồi sinh kho lưu trữ bụi bặm của bạn.",
+        "message": "Kết nối với Pocket để khôi phục kho lưu trữ bụi bặm của bạn.",
         "description": ""
     },
     "on_pc": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Nhiều nguồn hơn sẽ được hỗ trợ",
+        "message": "Nhiều nguồn hơn sẽ được hỗ trợ.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -264,7 +264,7 @@
         "description": ""
     },
     "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
-        "message": "Hay chúng ta bắt đầu bằng việc chọn kho tàng thông tin mà bạn muốn khám phá lại thì sao?",
+        "message": "Hay chúng ta bắt đầu bằng cách chọn kho tàng thông tin mà bạn muốn khám phá lại thì sao?",
         "description": ""
     },
     "find_anything_instantly_from_your_own_saves": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Xây dựng Google + ChatGPT riêng tư cho trang web của riêng bạn trong vài phút",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Bật Tìm kiếm dấu trang X của bạn.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Dấu trang của bạn trong X (Twitter chính thức) sẽ được nhập với sự cho phép của bạn. Toàn bộ văn bản trong nội dung được đánh dấu sẽ được tìm nạp và giúp bạn có thể tìm kiếm được.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Bộ sưu tập",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Quản lý nguồn",
+        "description": ""
+    },
+    "questions": {
+        "message": "Câu hỏi?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Đồng bộ hóa bộ sưu tập trình duyệt",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Chọn từ dấu trang, Danh sách đọc, lịch sử (chỉ các bài viết công khai) trong trình duyệt.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Danh sách Pocket Saves của bạn sẽ được nhập với sự cho phép an toàn. Toàn bộ nội dung của các bản lưu sẽ được tìm nạp và bạn có thể tìm kiếm được.",
+        "description": ""
+    },
+    "social": {
+        "message": "Xã hội?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Trình duyệt",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Dịch vụ đọc sách",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Tất cả món đồ",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Dấu trang",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Danh sách đọc",
+        "description": ""
+    },
+    "history": {
+        "message": "Lịch sử",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

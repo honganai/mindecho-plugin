@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Volltextsuche in Lesezeichen und Sammlungen",
+        "message": "mindECHO: Nahtlose Volltextsuche in Lesezeichen und Sammlungen",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Suchen und finden Sie sofort Inhalte in Ihren Lesezeichen, gespeicherten Seiten, Sammlungen und Leselisten. Erhalten Sie relevante Antworten aus Ihrem persönlichen Webarchiv.",
+        "message": "Suchen und finden Sie sofort Inhalte in Ihren zahlreichen Lesezeichen und gespeicherten Dateien. Erhalten Sie relevante Antworten aus Ihrem persönlichen Webarchiv.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -24,19 +24,19 @@
         "description": ""
     },
     "copyFailed": {
-        "message": "Das Kopieren ist fehlgeschlagen",
+        "message": "Kopieren fehlgeschlagen",
         "description": ""
     },
     "copySuccess": {
-        "message": "Kopiererfolg",
+        "message": "Erfolg kopieren",
         "description": ""
     },
     "copyNotSupported": {
-        "message": "Kopieren wird nicht unterstützt",
+        "message": "Kopieren nicht unterstützt",
         "description": ""
     },
     "bindSuccess": {
-        "message": "Erfolg binden",
+        "message": "Bindungserfolg",
         "description": ""
     },
     "noDataFound": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Weitere Quellen werden unterstützt",
+        "message": "Weitere Quellen werden unterstützt.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Erstellen Sie in wenigen Minuten einen privaten Google + ChatGPT für Ihr eigenes Web",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Aktivieren Sie die Suche nach Ihren X-Lesezeichen.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Ihre Lesezeichen in X (früher Twitter) werden mit Ihrer Genehmigung importiert. Der vollständige Text des mit Lesezeichen versehenen Inhalts wird abgerufen und für Sie durchsuchbar gemacht.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Sammlung",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Verwaltet Quellen",
+        "description": ""
+    },
+    "questions": {
+        "message": "Fragen?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Browsersammlungen synchronisieren",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Wählen Sie im Browser aus Lesezeichen, Leseliste und Verlauf (nur öffentliche Artikel).",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Ihre Pocket Saves-Liste wird mit sicherer Autorisierung importiert. Der vollständige Text der Saves wird abgerufen und für Sie durchsuchbar gemacht.",
+        "description": ""
+    },
+    "social": {
+        "message": "Sozial?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Browser",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Lesedienste",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Alle Elemente",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Merkliste",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Lese liste",
+        "description": ""
+    },
+    "history": {
+        "message": "Geschichte",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

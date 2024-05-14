@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: חיפוש טקסט מלא בסימניות ואוספים",
+        "message": "mindECHO: חיפוש חלק ללא טקסט מלא בסימניות ואוספים",
         "description": ""
     },
     "pluginDescription": {
-        "message": "חפש ומצא תוכן באופן מיידי בין הסימניות, הדפים השמורים, האוספים ורשימות הקריאה שלך. קבל תשובות רלוונטיות מארכיון האינטרנט האישי שלך.",
+        "message": "חפש ומצא תוכן באופן מיידי בסימניות מרובות ושמירה. קבל תשובות רלוונטיות מארכיון האינטרנט האישי שלך.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -156,7 +156,7 @@
         "description": ""
     },
     "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
-        "message": "הנתונים עדיין מעובדים; אני על זה ואמשיך ברקע.",
+        "message": "הנתונים עדיין בעיבוד; אני על זה ואמשיך ברקע.",
         "description": ""
     },
     "pocket_saves_imported": {
@@ -168,7 +168,7 @@
         "description": ""
     },
     "from_the_extension_bar_above": {
-        "message": "מתוך סרגל ההרחבה למעלה",
+        "message": "מסרגל ההרחבה למעלה",
         "description": ""
     },
     "exclude_history": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "מקורות נוספים ייתמכו",
+        "message": "מקורות נוספים ייתמכו.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "בנה Google + ChatGPT פרטי עבור האינטרנט שלך תוך דקות",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "אפשר חיפוש עבור X Bookmarks שלך.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "הסימניות שלך ב-X (פורמלית טוויטר) ייובאו בהרשאתך. הטקסט המלא בתוכן המסומן בסימנייה יובא וייעשה לך חיפוש.",
+        "description": ""
+    },
+    "collection": {
+        "message": "אוסף",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "מנהל מקורות",
+        "description": ""
+    },
+    "questions": {
+        "message": "שאלות?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "סנכרון אוספי דפדפן",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "בחר מתוך סימניות, רשימת קריאה, היסטוריה (מאמרים ציבוריים בלבד) בדפדפן.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "רשימת ה-Pocket Saves שלך תיובא עם הרשאה מאובטחת. הטקסט המלא של השמירות יועבר ויהפוך לאפשרי חיפוש עבורך.",
+        "description": ""
+    },
+    "social": {
+        "message": "חֶברָתִי?",
+        "description": ""
+    },
+    "browser": {
+        "message": "דפדפן",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "שירותי קריאה",
+        "description": ""
+    },
+    "all_items": {
+        "message": "כל הפריטים",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "סימניות",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "רשימת קריאה",
+        "description": ""
+    },
+    "history": {
+        "message": "הִיסטוֹרִיָה",
+        "description": ""
+    },
+    "x": {
+        "message": "איקס",
         "description": ""
     }
 }

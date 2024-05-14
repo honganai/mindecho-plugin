@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: ബുക്ക്‌മാർക്കുകളിലും ശേഖരങ്ങളിലും പൂർണ്ണ-വാചക തിരയൽ",
+        "message": "mindECHO: ബുക്ക്‌മാർക്കുകളിലും ശേഖരങ്ങളിലും തടസ്സമില്ലാത്ത പൂർണ്ണ-വാചക തിരയൽ",
         "description": ""
     },
     "pluginDescription": {
-        "message": "നിങ്ങളുടെ ബുക്ക്‌മാർക്കുകൾ, സംരക്ഷിച്ച പേജുകൾ, ശേഖരങ്ങൾ, വായനാ ലിസ്റ്റുകൾ എന്നിവയിലുടനീളം തൽക്ഷണം തിരയുകയും ഉള്ളടക്കം കണ്ടെത്തുകയും ചെയ്യുക. നിങ്ങളുടെ സ്വകാര്യ വെബ് ആർക്കൈവിൽ നിന്ന് പ്രസക്തമായ ഉത്തരങ്ങൾ നേടുക.",
+        "message": "നിങ്ങളുടെ ഒന്നിലധികം ബുക്ക്‌മാർക്കുകളിലും സേവുകളിലും ഉടനീളം തൽക്ഷണം തിരയുകയും ഉള്ളടക്കം കണ്ടെത്തുകയും ചെയ്യുക. നിങ്ങളുടെ സ്വകാര്യ വെബ് ആർക്കൈവിൽ നിന്ന് പ്രസക്തമായ ഉത്തരങ്ങൾ നേടുക.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -68,7 +68,7 @@
         "description": ""
     },
     "manage_sources": {
-        "message": "ഉറവിടങ്ങൾ നിയന്ത്രിക്കുക",
+        "message": "ഉറവിടങ്ങൾ കൈകാര്യം ചെയ്യുക",
         "description": ""
     },
     "settings": {
@@ -212,7 +212,7 @@
         "description": ""
     },
     "current_URL_list_is_local_only_until_you_authorize_data_collection": {
-        "message": "നിങ്ങൾ ഡാറ്റാ ശേഖരണം അംഗീകരിക്കുന്നത് വരെ നിലവിലെ URL ലിസ്റ്റ് ലോക്കൽ മാത്രമായിരിക്കും.",
+        "message": "നിങ്ങൾ ഡാറ്റ ശേഖരണത്തിന് അംഗീകാരം നൽകുന്നത് വരെ നിലവിലെ URL ലിസ്റ്റ് ലോക്കൽ മാത്രമായിരിക്കും.",
         "description": ""
     },
     "loading": {
@@ -224,7 +224,7 @@
         "description": ""
     },
     "bookMarks_reading_lists": {
-        "message": "ബുക്ക്‌മാർക്കുകളും വായനാ ലിസ്റ്റുകളും",
+        "message": "ബുക്ക്‌മാർക്കുകളും വായനാ പട്ടികകളും",
         "description": ""
     },
     "select_content_to_be_made_searchable": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "കൂടുതൽ ഉറവിടങ്ങൾ പിന്തുണയ്ക്കും",
+        "message": "കൂടുതൽ ഉറവിടങ്ങൾ പിന്തുണയ്ക്കും.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "മിനിറ്റുകൾക്കുള്ളിൽ നിങ്ങളുടെ സ്വന്തം വെബിനായി ഒരു സ്വകാര്യ Google + ChatGPT നിർമ്മിക്കുക",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "നിങ്ങളുടെ X ബുക്ക്‌മാർക്കുകൾക്കായുള്ള തിരയൽ പ്രവർത്തനക്ഷമമാക്കുക.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "X (ഔപചാരികമായി Twitter) ലെ നിങ്ങളുടെ ബുക്ക്‌മാർക്കുകൾ നിങ്ങളുടെ അംഗീകാരത്തോടെ ഇറക്കുമതി ചെയ്യപ്പെടും. ബുക്ക്‌മാർക്ക് ചെയ്‌ത ഉള്ളടക്കത്തിലെ മുഴുവൻ ടെക്‌സ്‌റ്റും ലഭ്യമാക്കുകയും നിങ്ങൾക്ക് തിരയാൻ കഴിയുന്നതാക്കുകയും ചെയ്യും.",
+        "description": ""
+    },
+    "collection": {
+        "message": "സമാഹാരം",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "ഉറവിടങ്ങൾ നിയന്ത്രിക്കുന്നു",
+        "description": ""
+    },
+    "questions": {
+        "message": "ചോദ്യങ്ങൾ?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "ബ്രൗസർ ശേഖരങ്ങൾ സമന്വയിപ്പിക്കുക",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "ബ്രൗസറിലെ ബുക്ക്‌മാർക്കുകൾ, റീഡിംഗ് ലിസ്റ്റ്, ചരിത്രം (പൊതു ലേഖനങ്ങൾ മാത്രം) എന്നിവയിൽ നിന്ന് തിരഞ്ഞെടുക്കുക.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "നിങ്ങളുടെ പോക്കറ്റ് സേവ്സ് ലിസ്റ്റ് സുരക്ഷിതമായ അംഗീകാരത്തോടെ ഇറക്കുമതി ചെയ്യപ്പെടും. സംരക്ഷിച്ചതിൻ്റെ പൂർണ്ണമായ വാചകം നിങ്ങൾക്ക് ലഭ്യമാക്കുകയും നിങ്ങൾക്ക് തിരയാൻ സാധിക്കുകയും ചെയ്യും.",
+        "description": ""
+    },
+    "social": {
+        "message": "സാമൂഹിക?",
+        "description": ""
+    },
+    "browser": {
+        "message": "ബ്രൗസർ",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "വായനാ സേവനങ്ങൾ",
+        "description": ""
+    },
+    "all_items": {
+        "message": "എല്ലാ വസ്തുക്കളും",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "ബുക്ക്മാർക്കുകൾ",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "വായന ലിസ്റ്റ്",
+        "description": ""
+    },
+    "history": {
+        "message": "ചരിത്രം",
+        "description": ""
+    },
+    "x": {
+        "message": "എക്സ്",
         "description": ""
     }
 }

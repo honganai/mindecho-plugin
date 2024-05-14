@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO : recherche en texte intégral dans les signets et les collections",
+        "message": "mindECHO : recherche transparente en texte intégral dans les signets et les collections",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Recherchez et trouvez instantanément du contenu dans vos favoris, pages enregistrées, collections et listes de lecture. Obtenez des réponses pertinentes à partir de vos archives Web personnelles.",
+        "message": "Recherchez et trouvez instantanément du contenu dans vos multiples favoris et sauvegardes. Obtenez des réponses pertinentes à partir de vos archives Web personnelles.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Plus de sources seront prises en charge",
+        "message": "Plus de sources seront prises en charge.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Créez un Google + ChatGPT privé pour votre propre site Web en quelques minutes",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Activez la recherche de vos signets X.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Vos favoris dans X (anciennement Twitter) seront importés avec votre autorisation. Le texte intégral du contenu mis en signet sera récupéré et rendu consultable pour vous.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Collection",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Gère les sources",
+        "description": ""
+    },
+    "questions": {
+        "message": "Des questions?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Synchroniser les collections du navigateur",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Choisissez parmi les signets, la liste de lecture, l&#39;historique (articles publics uniquement) dans le navigateur.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Votre liste Pocket Saves sera importée avec une autorisation sécurisée. Le texte intégral des sauvegardes sera récupéré et rendu consultable pour vous.",
+        "description": ""
+    },
+    "social": {
+        "message": "Sociale?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Navigateur",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Services de lecture",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Tous les articles",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Signets",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Liste de lecture",
+        "description": ""
+    },
+    "history": {
+        "message": "Histoire",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

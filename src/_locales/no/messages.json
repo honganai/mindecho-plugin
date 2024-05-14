@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Fulltekstsøk i bokmerker og samlinger",
+        "message": "mindECHO: Sømløst fulltekstsøk i bokmerker og samlinger",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Søk umiddelbart og finn innhold på tvers av bokmerkene dine, lagrede sider, samlinger og leselister. Få relevante svar fra ditt personlige nettarkiv.",
+        "message": "Søk umiddelbart og finn innhold på tvers av flere bokmerker og lagre. Få relevante svar fra ditt personlige nettarkiv.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -176,7 +176,7 @@
         "description": ""
     },
     "auto_collect_new_matches": {
-        "message": "Samle nye treff automatisk",
+        "message": "Auto-samle nye treff",
         "description": ""
     },
     "find_items_by_keywords": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Flere kilder vil bli støttet",
+        "message": "Flere kilder vil bli støttet.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Bygg en privat Google + ChatGPT for ditt eget nett på få minutter",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Aktiver søk etter X-bokmerkene dine.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Bokmerkene dine i X (formelt Twitter) vil bli importert med din autorisasjon. Fulltekst i bokmerket innhold vil bli hentet og gjort søkbar for deg.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Samling",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Administrerer kilder",
+        "description": ""
+    },
+    "questions": {
+        "message": "Spørsmål?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Synkroniser nettlesersamlinger",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Velg mellom bokmerker, leseliste, historie (kun offentlige artikler) i nettleseren.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Din Pocket Saves-liste vil bli importert med sikker autorisasjon. Fulltekst av lagringene vil bli hentet og gjort søkbar for deg.",
+        "description": ""
+    },
+    "social": {
+        "message": "Sosial?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Nettleser",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Lesetjenester",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Alle ting",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Bokmerker",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Leseliste",
+        "description": ""
+    },
+    "history": {
+        "message": "Historie",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }

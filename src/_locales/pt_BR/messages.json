@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: pesquisa de texto completo em marcadores e coleções",
+        "message": "mindECHO: pesquisa contínua de texto completo em marcadores e coleções",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Pesquise e encontre conteúdo instantaneamente em seus favoritos, páginas salvas, coleções e listas de leitura. Obtenha respostas relevantes do seu arquivo pessoal da web.",
+        "message": "Pesquise e encontre conteúdo instantaneamente em seus vários favoritos e salvamentos. Obtenha respostas relevantes do seu arquivo pessoal da web.",
         "description": ""
     },
     "signUpWithGoogle": {
@@ -232,7 +232,7 @@
         "description": ""
     },
     "more_sources_will_be_supported": {
-        "message": "Mais fontes serão suportadas",
+        "message": "Mais fontes serão suportadas.",
         "description": ""
     },
     "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
@@ -273,6 +273,70 @@
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
         "message": "Crie um Google + ChatGPT privado para sua própria web em minutos",
+        "description": ""
+    },
+    "enable_search_for_your_X_bookmarks": {
+        "message": "Ative a pesquisa por seus marcadores X.",
+        "description": ""
+    },
+    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Seus favoritos no X (formalmente Twitter) serão importados com sua autorização. O texto completo no conteúdo marcado será obtido e tornado pesquisável para você.",
+        "description": ""
+    },
+    "collection": {
+        "message": "Coleção",
+        "description": ""
+    },
+    "manages_sources": {
+        "message": "Gerencia fontes",
+        "description": ""
+    },
+    "questions": {
+        "message": "Questões?",
+        "description": ""
+    },
+    "sync_browser_collections": {
+        "message": "Sincronizar coleções do navegador",
+        "description": ""
+    },
+    "choose_from_bookmarks_reading_list_history": {
+        "message": "Escolha entre favoritos, lista de leitura, histórico (somente artigos públicos) no navegador.",
+        "description": ""
+    },
+    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+        "message": "Sua lista Pocket Saves será importada com autorização segura. O texto completo dos salvamentos será obtido e tornado pesquisável para você.",
+        "description": ""
+    },
+    "social": {
+        "message": "Social?",
+        "description": ""
+    },
+    "browser": {
+        "message": "Navegador",
+        "description": ""
+    },
+    "reading_services": {
+        "message": "Serviços de leitura",
+        "description": ""
+    },
+    "all_items": {
+        "message": "Todos os itens",
+        "description": ""
+    },
+    "bookmarks": {
+        "message": "Favoritos",
+        "description": ""
+    },
+    "reading_list": {
+        "message": "Lista de leitura",
+        "description": ""
+    },
+    "history": {
+        "message": "História",
+        "description": ""
+    },
+    "x": {
+        "message": "X",
         "description": ""
     }
 }
