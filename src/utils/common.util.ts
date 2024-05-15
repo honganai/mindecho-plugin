@@ -6,7 +6,7 @@ import { ThinkingCopyObject } from '@/types';
 import {useEffect, useRef} from 'react';
 
 //获取数据最大限制
-export const MAX_SIZE = 19999;
+export const MAX_SIZE = 2999;
 
 export const handleLogin = (success?: (result: any) => void, fail?: () => void) => {
   // 查询是否登录
