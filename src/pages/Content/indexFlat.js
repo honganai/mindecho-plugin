@@ -20,10 +20,10 @@ function addNewStyle(newStyle) {
   var styleElement = document.getElementById('styles_js');
 
   if (!styleElement) {
-      styleElement = document.createElement('style');
-      styleElement.type = 'text/css';
-      styleElement.id = 'mindecho-extension-styles';
-      document.getElementsByTagName('head')[0].appendChild(styleElement);
+    styleElement = document.createElement('style');
+    styleElement.type = 'text/css';
+    styleElement.id = 'mindecho-extension-styles';
+    document.getElementsByTagName('head')[0].appendChild(styleElement);
   }
 
   styleElement.appendChild(document.createTextNode(newStyle));
@@ -67,20 +67,27 @@ async function updatePageInfo(pageInfo) {
     url: window.location.href,
     type: 'history',
     user_create_time: pageInfo?.timestrip || new Date().toISOString(),
-    node_id: 0, node_index: 0, parentId: 0,
+    node_id: 0,
+    node_index: 0,
+    parentId: 0,
     user_used_time: new Date().toISOString(),
     origin_info: '',
-    author: pageInfo?.author || document.querySelector('meta[name="author"]')?.content || document.querySelector('meta[property="og:article:author"]')?.content || document.querySelector('[class*="author"]')?.innerHTML || '',
+    author:
+      pageInfo?.author ||
+      document.querySelector('meta[name="author"]')?.content ||
+      document.querySelector('meta[property="og:article:author"]')?.content ||
+      document.querySelector('[class*="author"]')?.innerHTML ||
+      '',
     content: pageInfo?.content || '',
-    status: 3
+    status: 3,
   };
 
   const auto = await getHistoryAutoAdd();
-  if ( auto ) {
+  if (auto) {
     chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: [info] }, (res) => {
       console.log('uploadUserArticle res:', res);
     });
-  }else {
+  } else {
     setPagesInfo(info);
   }
 }
@@ -92,12 +99,12 @@ async function getNeedAndData() {
   const jsonLdElements = document.querySelectorAll('script[type="application/ld+json"]');
   const cTypeList = [];
 
-  jsonLdElements.forEach(el => {
+  jsonLdElements.forEach((el) => {
     try {
       const data = JSON.parse(el.innerText);
 
       if (Array.isArray(data)) {
-        data.forEach(item => {
+        data.forEach((item) => {
           if (item['@type']) {
             cTypeList.push(item['@type']);
           }
@@ -105,7 +112,7 @@ async function getNeedAndData() {
       } else if (typeof data === 'object' && data['@type']) {
         cTypeList.push(data['@type']);
       } else if (data['@graph']) {
-        data['@graph'].forEach(item => {
+        data['@graph'].forEach((item) => {
           if (item['@type']) {
             cTypeList.push(item['@type']);
           }
@@ -119,19 +126,22 @@ async function getNeedAndData() {
   });
   const result = _.intersectionBy(typeList, cTypeList);
   if (result.length > 0 || window.location.href.startsWith('https://mp.weixin.qq.com/s')) {
-    const {title, content, timestrip} = getCleanArticle();
-    return {title, content, timestrip};
+    const { title, content, timestrip } = getCleanArticle();
+    return { title, content, timestrip };
   }
   //如果网页后缀为.pdf，则返回true
-  else if (window.location.href.endsWith('.pdf')) {
+  else if (
+    window.location.href.endsWith('.pdf') ||
+    (window.location.href.includes('arxiv.org/pdf/') && document.querySelector('embed[type="application/pdf"]'))
+  ) {
     const res = await getPdfTextContent({ pdfUrl: window.location.href });
     if (res.status === 'completed') {
+      console.log('completed');
       return res.result;
-    }else {
+    } else {
       return false;
     }
-  }
-  else{
+  } else {
     return false;
   }
 }

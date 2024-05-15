@@ -4,10 +4,19 @@ import Api from './api';
 import { sendsocketMessage, connect, disconnect } from './ws';
 import { baseUrl, welcomeUrl } from './config';
 import ReadingTime from './readingTime';
-import { EXCLUDE_URLS, setExtensionUpdated, setAutoAdd, getIsLogin, setIsLogin, initPagesInfo, setUserInfo } from '@/constants';
+import {
+  EXCLUDE_URLS,
+  setExtensionUpdated,
+  setAutoAdd,
+  getIsLogin,
+  setIsLogin,
+  initPagesInfo,
+  setUserInfo,
+} from '@/constants';
 import './autoAdd';
 import onTwitterAction from './bookmarks/bookmarks';
 
+import './syncXRequestHeader';
 initPagesInfo();
 
 // chrome.commands.onCommand.addListener((command) => {
@@ -100,7 +109,7 @@ async function onLoginAction(message, sendResponse) {
             const loginActionUrls = [baseUrl + '/oauth-authorized/'];
             const filterUrl = _.filter(loginActionUrls, (item) => _.startsWith(details.url, item));
             // if (filterUrl.length > 0) {
-            console.log("🚀 ~ listenOnHeadersReceived ~ details.url:", details.url)
+            console.log('🚀 ~ listenOnHeadersReceived ~ details.url:', details.url);
             const domainParts = url.hostname.split('.');
             const topLevelDomain = domainParts.slice(-2).join('.');
             if (details.url === baseUrl + '/') {
@@ -175,7 +184,7 @@ async function onRequest(message, sendResponse) {
         if (res.status === 401) {
           setLogin(false);
           return;
-        }else if (res.status !== 200) {
+        } else if (res.status !== 200) {
           //登出后导致接口报错，需要清除登录状态
           setLogin(false);
           setUserInfo(null);
@@ -227,7 +236,7 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
     id: 'myContextMenu',
     title: 'Test Context Menu',
     type: 'normal',
-    contexts: ["selection"]
+    contexts: ['selection'],
   });
 
   // if (reason === 'install') {
@@ -242,7 +251,7 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
   if (reason === 'install') {
     openSettings();
     executeScript();
-    setAutoAdd()
+    setAutoAdd();
   }
   //测试
   // openSettings();
@@ -256,13 +265,16 @@ function executeScript() {
   chrome.tabs.query({}, function (tabs) {
     var tabId = tabs[0].id;
     //向当前标签页注入内容脚本
-    tabs.forEach(item => {
-      chrome.scripting.executeScript({
-        target: { tabId: item.id },
-        files: ['contentFlatScript.bundle.js'],
-      }, (res) => {
-        console.log('🚀 ~ background.index -脚本注入结果- line:240: ', res);
-      });
+    tabs.forEach((item) => {
+      chrome.scripting.executeScript(
+        {
+          target: { tabId: item.id },
+          files: ['contentFlatScript.bundle.js'],
+        },
+        (res) => {
+          console.log('🚀 ~ background.index -脚本注入结果- line:240: ', res);
+        },
+      );
     });
   });
 }

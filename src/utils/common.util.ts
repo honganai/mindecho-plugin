@@ -3,18 +3,18 @@ import { message } from 'antd';
 import { getDocument as pdfGetDocument } from 'pdfjs-dist';
 import 'pdfjs-dist/build/pdf.worker.entry';
 import { ThinkingCopyObject } from '@/types';
-import {useEffect, useRef} from 'react';
+import { useEffect, useRef } from 'react';
 
 //获取数据最大限制
-export const MAX_SIZE = 19999;
+export const MAX_SIZE = 2999;
 
 export const handleLogin = (success?: (result: any) => void, fail?: () => void) => {
   // 查询是否登录
   chrome.storage.local.get(['isLogin', 'userInfo']).then((result) => {
-    console.log("🚀 ~ chrome.storage.local.get ~ result:", result)
-    if ( result.isLogin && result.userInfo ) {
+    console.log('🚀 ~ chrome.storage.local.get ~ result:', result);
+    if (result.isLogin && result.userInfo) {
       success?.(result);
-    }else {
+    } else {
       fail?.();
     }
   });
@@ -36,12 +36,12 @@ export const formatDateMMDD = (dateString: string, returnDefault = true) => {
 export function openSettings(path?: string) {
   console.log('🚀 ~ file: common.util.ts ~ line 21 ~ openSettings ~ path', path);
   chrome.runtime.sendMessage(
-      {
-        type: 'openSettings',
-      },
-      () => {
-        //
-      },
+    {
+      type: 'openSettings',
+    },
+    () => {
+      //
+    },
   );
 }
 
@@ -102,7 +102,7 @@ export const getPdfTextContent = async (
   const pdf = await pdfGetDocument(pdfUrl).promise;
   // 获取文档的元数据
   const metaData = await pdf.getMetadata();
-  let title = '' ;
+  let title = '';
   let author = '';
   if (metaData.info) {
     title = (metaData.info as any).Title;
@@ -118,27 +118,26 @@ export const getPdfTextContent = async (
     items.forEach((item: any) => (totalContent += item.str === '' ? '\n' : item.str));
   }
   title = title || totalContent.split('\n')[0];
-  return { status: 'completed', result: {title, author, content: totalContent, info: metaData.info} };
+  return { status: 'completed', result: { title, author, content: totalContent, info: metaData.info } };
 };
-
 
 export const SetInterval = (callback: Function, delay: number = 1000) => {
   const Ref = useRef<any>();
 
   Ref.current = () => {
     return callback();
-  }
+  };
   useEffect(() => {
     const timer = setInterval(() => {
       Ref.current();
     }, delay);
     return () => {
       clearInterval(timer);
-    }
+    };
   }, [delay]);
-}
+};
 
-export const truncateTitle = (title:string, limitEnglish = 20, limitChinese = 10) => {
+export const truncateTitle = (title: string, limitEnglish = 20, limitChinese = 10) => {
   title = title.trim();
   if (!title) return 'No data available';
 
