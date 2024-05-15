@@ -10,6 +10,7 @@ import GlobalContext, { ActionType, IUpateData, IBookmarks, IHistory, IReadingLi
 import { setAutoAdd as setStorageAutoAdd, setLastUpateDataTime_pocket } from '@/constants';
 import DataList from '../datalist/datalist';
 import { MAX_SIZE } from '@/utils/common.util';
+import clsx from 'clsx';
 
 export enum SubType {
   Free = 'free',
@@ -194,7 +195,10 @@ const Pocket: React.FC<Props> = ({ onLink }) => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={clsx(
+      styles.container,
+      'flex-1 w-0 h-full overflow-auto'
+    )}>
       <div className={styles['content']}>
         <div className={styles['left']}>
           <div className={styles['back']} onClick={() => onLink(1)}>

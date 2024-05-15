@@ -123,7 +123,7 @@ export function ManagesSources({ onLink }: { onLink: Function }) {
         {CardComponentMaker({
           title: <img className="h-full" src={XIcon} alt="XIcon" />,
           subTitle: t('your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you'),
-          handleClick: null
+          handleClick: () => onLink(6)
         })}
       </div>
     </div>

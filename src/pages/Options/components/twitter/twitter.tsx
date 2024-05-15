@@ -5,6 +5,7 @@ import styles from './index.module.scss';
 import _ from "lodash";
 import GlobalContext, { ActionType, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
 import BadIcon from '@/assets/icons/bad_icon.png'
+import clsx from 'clsx';
 
 interface Props {
   onLink: Function;
@@ -24,7 +25,7 @@ const Twitter: React.FC<Props> = ({ onLink }: Props) => {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={clsx(styles.container, 'flex-1 w-0')}>
       <div className={styles.content}>
         <div className={styles.title}>X Bookmarks</div>
         <p className={styles.tip}>

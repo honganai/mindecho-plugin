@@ -191,13 +191,7 @@ const Options: React.FC = () => {
                   )}
               </div>
             </div>
-
-
-
-
-
           </AnimatePresence>
-
         </ConfigProvider>
       </div>
     </GlobalContext.Provider >
