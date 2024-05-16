@@ -1,342 +1,366 @@
 {
-    "pluginName": {
-        "message": "mindECHO: Seamless Full-Text Search in Bookmarks & Collections",
-        "description": ""
-    },
-    "pluginDescription": {
-        "message": "Instantly search and find content across your multiple bookmarks and saves. Get relevant answers from your personal web archive.",
-        "description": ""
-    },
-    "signUpWithGoogle": {
-        "message": "Sign up with Google",
-        "description": "memorie页面来源"
-    },
-    "logout": {
-        "message": "Log Out",
-        "description": ""
-    },
-    "errorDefault": {
-        "message": "System Error",
-        "description": ""
-    },
-    "copied": {
-        "message": "Copied to Clipboard",
-        "description": ""
-    },
-    "copyFailed": {
-        "message": "Copy failed",
-        "description": ""
-    },
-    "copySuccess": {
-        "message": "Copy success",
-        "description": ""
-    },
-    "copyNotSupported": {
-        "message": "Copy not supported",
-        "description": ""
-    },
-    "bindSuccess": {
-        "message": "Bind success",
-        "description": ""
-    },
-    "noDataFound": {
-        "message": "No data found",
-        "description": ""
-    },
-    "skip_this_step": {
-        "message": "Skip This Step",
-        "description": ""
-    },
-    "new_query": {
-        "message": "New Query",
-        "description": ""
-    },
-    "ask_AI": {
-        "message": "Ask AI",
-        "description": ""
-    },
-    "query_the_web": {
-        "message": "Query The Web",
-        "description": ""
-    },
-    "or_you_can": {
-        "message": "Or you can",
-        "description": ""
-    },
-    "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
-        "message": "The sources may not be fully ready yet, or please try asking differently.",
-        "description": ""
-    },
-    "manage_sources": {
-        "message": "Manage Sources",
-        "description": ""
-    },
-    "settings": {
-        "message": "Settings",
-        "description": ""
-    },
-    "sources": {
-        "message": "Sources",
-        "description": ""
-    },
-    "no_data_available": {
-        "message": "No data available",
-        "description": ""
-    },
-    "ask_your_saves": {
-        "message": "Ask Your Saves",
-        "description": ""
-    },
-    "secure_connection": {
-        "message": "Secure Connection",
-        "description": ""
-    },
-    "saves": {
-        "message": "Saves",
-        "description": ""
-    },
-    "pocket": {
-        "message": "Pocket",
-        "description": ""
-    },
-    "connect_to_pocket_to_revive_your_dusty_stash": {
-        "message": "Connect to Pocket to revive your dusty stash.",
-        "description": ""
-    },
-    "on_pc": {
-        "message": "on PC",
-        "description": ""
-    },
-    "ctrl_E": {
-        "message": "Ctrl + E",
-        "description": ""
-    },
-    "on_mac": {
-        "message": "on Mac",
-        "description": ""
-    },
-    "command_E": {
-        "message": "Command + E",
-        "description": ""
-    },
-    "press": {
-        "message": "Press",
-        "description": ""
-    },
-    "keyboard_stroke_shortCuts": {
-        "message": "Keyboard Stroke ShortCuts",
-        "description": ""
-    },
-    "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
-        "message": "This may take up to 10 minutes. Please keep this page open and continue with other tasks.",
-        "description": ""
-    },
-    "building_your_mindEcho": {
-        "message": "Building Your MindEcho",
-        "description": ""
-    },
-    "icon_click": {
-        "message": "icon click",
-        "description": ""
-    },
-    "or": {
-        "message": "or",
-        "description": ""
-    },
-    "keystroke": {
-        "message": "keystroke",
-        "description": ""
-    },
-    "anytime_via": {
-        "message": "anytime via",
-        "description": ""
-    },
-    "activate_mindECHO_to_search_your_saves": {
-        "message": "Activate mindECHO to search Your Saves",
-        "description": ""
-    },
-    "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
-        "message": "Data is still processing; I'm on it and will continue in the background.",
-        "description": ""
-    },
-    "pocket_saves_imported": {
-        "message": "Pocket Saves Imported",
-        "description": ""
-    },
-    "browser_data_imported": {
-        "message": "Browser Data Imported",
-        "description": ""
-    },
-    "from_the_extension_bar_above": {
-        "message": "From the Extension Bar Above",
-        "description": ""
-    },
-    "exclude_history": {
-        "message": "Exclude History",
-        "description": ""
-    },
-    "auto_collect_new_matches": {
-        "message": "Automatically Add New Links",
-        "description": ""
-    },
-    "find_items_by_keywords": {
-        "message": "Find URLs by keywords",
-        "description": ""
-    },
-    "public_knowledge_pages_from_browsing_history": {
-        "message": "Public Knowledge Pages from Browsing History",
-        "description": ""
-    },
-    "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
-        "message": "Only URLs of public articles, blogs, and essay PDFs can be included. Personal and work-related history are NOT included.",
-        "description": ""
-    },
-    "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
-        "message": "Enable full-text search in browsing history to eliminate the need for memorization.",
-        "description": ""
-    },
-    "exclude_bookmarks_or_reading_list": {
-        "message": "Exclude Bookmarks or Reading List",
-        "description": ""
-    },
-    "auto_add_new_items": {
-        "message": "Automatically Add New Links",
-        "description": ""
-    },
-    "items": {
-        "message": "URLs",
-        "description": ""
-    },
-    "fetch": {
-        "message": "Retrieve Selected Content",
-        "description": ""
-    },
-    "current_URL_list_is_local_only_until_you_authorize_data_collection": {
-        "message": "Current URL list is local only until you authorize data collection.",
-        "description": ""
-    },
-    "loading": {
-        "message": "Loading...",
-        "description": ""
-    },
-    "select_deselect_all_shown": {
-        "message": "Select/Deselect All Shown",
-        "description": ""
-    },
-    "bookMarks_reading_lists": {
-        "message": "BookMarks & Reading Lists",
-        "description": ""
-    },
-    "select_content_to_be_made_searchable": {
-        "message": "Select content to be made searchable.",
-        "description": ""
-    },
-    "more_sources_will_be_supported": {
-        "message": "More Sources will be supported.",
-        "description": ""
-    },
-    "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
-        "message": "Full text of the saves will be fetched and made searchable.",
-        "description": ""
-    },
-    "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
-        "message": "Your Pocket Saves list will be imported with secure authorization.",
-        "description": ""
-    },
-    "select_source": {
-        "message": "Select Source",
-        "description": ""
-    },
-    "connect_other_sources": {
-        "message": "Connect Other Sources",
-        "description": ""
-    },
-    "import_collections_in_browser": {
-        "message": "Import Collections in Browser",
-        "description": ""
-    },
-    "Note": {
-        "message": "Note",
-        "description": ""
-    },
-    "Hello": {
-        "message": "Hello",
-        "description": ""
-    },
-    "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
-        "message": "How about we begin by choosing the treasure trove of information you’d like to explore again?",
-        "description": ""
-    },
-    "find_anything_instantly_from_your_own_saves": {
-        "message": "Find anything instantly from your own saves.",
-        "description": ""
-    },
-    "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
-        "message": "Build a Private Google + ChatGPT for your own web in Minutes",
-        "description": ""
-    },
-    "enable_search_for_your_X_bookmarks": {
-        "message": "Enable Search for Your X Bookmarks.",
-        "description": ""
-    },
-    "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
-        "message": "Your Bookmarks in X(Formally Twitter) will be imported with your authorization. Full text in the bookmarked content will be fetched and made searchable to you.",
-        "description": ""
-    },
-    "collection": {
-        "message": "Collection",
-        "description": ""
-    },
-    "manages_sources": {
-        "message": "Manages Sources",
-        "description": ""
-    },
-    "questions": {
-        "message": "Questions?",
-        "description": ""
-    },
-    "sync_browser_collections": {
-        "message": "Sync Browser Collections",
-        "description": ""
-    },
-    "choose_from_bookmarks_reading_list_history": {
-        "message": "Choose from bookmarks, Reading List, history(public articles only) in browser.",
-        "description": ""
-    },
-    "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
-        "message": "Your Pocket Saves list will be imported with secure authorization. Full text of the saves will be fetched and made searchable to you.",
-        "description": ""
-    },
-    "social": {
-        "message": "Social Media",
-        "description": ""
-    },
-    "browser": {
-        "message": "Browser",
-        "description": ""
-    },
-    "reading_services": {
-        "message": "Reading Services",
-        "description": ""
-    },
-    "all_items": {
-        "message": "All Items",
-        "description": ""
-    },
-    "bookmarks": {
-        "message": "Bookmarks",
-        "description": ""
-    },
-    "reading_list": {
-        "message": "Reading List",
-        "description": ""
-    },
-    "history": {
-        "message": "History",
-        "description": ""
-    },
-    "x": {
-        "message": "X",
-        "description": ""
-    }
+  "pluginName": {
+    "message": "mindECHO: Seamless Full-Text Search in Bookmarks & Collections",
+    "description": ""
+  },
+  "pluginDescription": {
+    "message": "Instantly search and find content across your multiple bookmarks and saves. Get relevant answers from your personal web archive.",
+    "description": ""
+  },
+  "signUpWithGoogle": {
+    "message": "Sign up with Google",
+    "description": "memorie页面来源"
+  },
+  "logout": {
+    "message": "Log Out",
+    "description": ""
+  },
+  "errorDefault": {
+    "message": "System Error",
+    "description": ""
+  },
+  "copied": {
+    "message": "Copied to Clipboard",
+    "description": ""
+  },
+  "copyFailed": {
+    "message": "Copy failed",
+    "description": ""
+  },
+  "copySuccess": {
+    "message": "Copy success",
+    "description": ""
+  },
+  "copyNotSupported": {
+    "message": "Copy not supported",
+    "description": ""
+  },
+  "bindSuccess": {
+    "message": "Bind success",
+    "description": ""
+  },
+  "noDataFound": {
+    "message": "No data found",
+    "description": ""
+  },
+  "skip_this_step": {
+    "message": "Skip This Step",
+    "description": ""
+  },
+  "new_query": {
+    "message": "New Query",
+    "description": ""
+  },
+  "ask_AI": {
+    "message": "Ask AI",
+    "description": ""
+  },
+  "query_the_web": {
+    "message": "Query The Web",
+    "description": ""
+  },
+  "or_you_can": {
+    "message": "Or you can",
+    "description": ""
+  },
+  "the_sources_may_not_be_fully_ready_yet_or_please_try_asking_differently": {
+    "message": "The sources may not be fully ready yet, or please try asking differently.",
+    "description": ""
+  },
+  "manage_sources": {
+    "message": "Manage Sources",
+    "description": ""
+  },
+  "settings": {
+    "message": "Settings",
+    "description": ""
+  },
+  "sources": {
+    "message": "Sources",
+    "description": ""
+  },
+  "no_data_available": {
+    "message": "No data available",
+    "description": ""
+  },
+  "ask_your_saves": {
+    "message": "Ask Your Saves",
+    "description": ""
+  },
+  "secure_connection": {
+    "message": "Secure Connection",
+    "description": ""
+  },
+  "saves": {
+    "message": "Saves",
+    "description": ""
+  },
+  "pocket": {
+    "message": "Pocket",
+    "description": ""
+  },
+  "connect_to_pocket_to_revive_your_dusty_stash": {
+    "message": "Connect to Pocket to revive your dusty stash.",
+    "description": ""
+  },
+  "on_pc": {
+    "message": "on PC",
+    "description": ""
+  },
+  "ctrl_E": {
+    "message": "Ctrl + E",
+    "description": ""
+  },
+  "on_mac": {
+    "message": "on Mac",
+    "description": ""
+  },
+  "command_E": {
+    "message": "Command + E",
+    "description": ""
+  },
+  "press": {
+    "message": "Press",
+    "description": ""
+  },
+  "keyboard_stroke_shortCuts": {
+    "message": "Keyboard Stroke ShortCuts",
+    "description": ""
+  },
+  "this_may_take_up_to_10_minutes_please_keep_this_page_open_and_continue_with_other_tasks": {
+    "message": "This may take up to 10 minutes. Please keep this page open and continue with other tasks.",
+    "description": ""
+  },
+  "building_your_mindEcho": {
+    "message": "Building Your MindEcho",
+    "description": ""
+  },
+  "icon_click": {
+    "message": "icon click",
+    "description": ""
+  },
+  "or": {
+    "message": "or",
+    "description": ""
+  },
+  "keystroke": {
+    "message": "keystroke",
+    "description": ""
+  },
+  "anytime_via": {
+    "message": "anytime via",
+    "description": ""
+  },
+  "activate_mindECHO_to_search_your_saves": {
+    "message": "Activate mindECHO to search Your Saves",
+    "description": ""
+  },
+  "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
+    "message": "Data is still processing; I'm on it and will continue in the background.",
+    "description": ""
+  },
+  "pocket_saves_imported": {
+    "message": "Pocket Saves Imported",
+    "description": ""
+  },
+  "browser_data_imported": {
+    "message": "Browser Data Imported",
+    "description": ""
+  },
+  "from_the_extension_bar_above": {
+    "message": "From the Extension Bar Above",
+    "description": ""
+  },
+  "exclude_history": {
+    "message": "Exclude History",
+    "description": ""
+  },
+  "auto_collect_new_matches": {
+    "message": "Automatically Add New Links",
+    "description": ""
+  },
+  "find_items_by_keywords": {
+    "message": "Find URLs by keywords",
+    "description": ""
+  },
+  "public_knowledge_pages_from_browsing_history": {
+    "message": "Public Knowledge Pages from Browsing History",
+    "description": ""
+  },
+  "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
+    "message": "Only URLs of public articles, blogs, and essay PDFs can be included. Personal and work-related history are NOT included.",
+    "description": ""
+  },
+  "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
+    "message": "Enable full-text search in browsing history to eliminate the need for memorization.",
+    "description": ""
+  },
+  "exclude_bookmarks_or_reading_list": {
+    "message": "Exclude Bookmarks or Reading List",
+    "description": ""
+  },
+  "auto_add_new_items": {
+    "message": "Automatically Add New Links",
+    "description": ""
+  },
+  "items": {
+    "message": "URLs",
+    "description": ""
+  },
+  "fetch": {
+    "message": "Retrieve Selected Content",
+    "description": ""
+  },
+  "current_URL_list_is_local_only_until_you_authorize_data_collection": {
+    "message": "Current URL list is local only until you authorize data collection.",
+    "description": ""
+  },
+  "loading": {
+    "message": "Loading...",
+    "description": ""
+  },
+  "select_deselect_all_shown": {
+    "message": "Select/Deselect All Shown",
+    "description": ""
+  },
+  "bookMarks_reading_lists": {
+    "message": "BookMarks & Reading Lists",
+    "description": ""
+  },
+  "select_content_to_be_made_searchable": {
+    "message": "Select content to be made searchable.",
+    "description": ""
+  },
+  "more_sources_will_be_supported": {
+    "message": "More Sources will be supported.",
+    "description": ""
+  },
+  "full_text_of_the_saves_will_be_fetched_and_made_searchable": {
+    "message": "Full text of the saves will be fetched and made searchable.",
+    "description": ""
+  },
+  "your_pocket_saves_list_will_be_imported_with_secure_authorization": {
+    "message": "Your Pocket Saves list will be imported with secure authorization.",
+    "description": ""
+  },
+  "select_source": {
+    "message": "Select Source",
+    "description": ""
+  },
+  "connect_other_sources": {
+    "message": "Connect Other Sources",
+    "description": ""
+  },
+  "import_collections_in_browser": {
+    "message": "Import Collections in Browser",
+    "description": ""
+  },
+  "Note": {
+    "message": "Note",
+    "description": ""
+  },
+  "Hello": {
+    "message": "Hello",
+    "description": ""
+  },
+  "how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again": {
+    "message": "How about we begin by choosing the treasure trove of information you’d like to explore again?",
+    "description": ""
+  },
+  "find_anything_instantly_from_your_own_saves": {
+    "message": "Find anything instantly from your own saves.",
+    "description": ""
+  },
+  "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
+    "message": "Build a Private Google + ChatGPT for your own web in Minutes",
+    "description": ""
+  },
+  "enable_search_for_your_X_bookmarks": {
+    "message": "Enable Search for Your X Bookmarks.",
+    "description": ""
+  },
+  "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
+    "message": "Your Bookmarks in X(Formally Twitter) will be imported with your authorization. Full text in the bookmarked content will be fetched and made searchable to you.",
+    "description": ""
+  },
+  "collection": {
+    "message": "Collection",
+    "description": ""
+  },
+  "manages_sources": {
+    "message": "Manages Sources",
+    "description": ""
+  },
+  "questions": {
+    "message": "Questions?",
+    "description": ""
+  },
+  "sync_browser_collections": {
+    "message": "Sync Browser Collections",
+    "description": ""
+  },
+  "choose_from_bookmarks_reading_list_history": {
+    "message": "Choose from bookmarks, Reading List, history(public articles only) in browser.",
+    "description": ""
+  },
+  "your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you": {
+    "message": "Your Pocket Saves list will be imported with secure authorization. Full text of the saves will be fetched and made searchable to you.",
+    "description": ""
+  },
+  "social": {
+    "message": "Social Media",
+    "description": ""
+  },
+  "browser": {
+    "message": "Browser",
+    "description": ""
+  },
+  "reading_services": {
+    "message": "Reading Services",
+    "description": ""
+  },
+  "all_items": {
+    "message": "All Items",
+    "description": ""
+  },
+  "bookmarks": {
+    "message": "Bookmarks",
+    "description": ""
+  },
+  "reading_list": {
+    "message": "Reading List",
+    "description": ""
+  },
+  "history": {
+    "message": "History",
+    "description": ""
+  },
+  "x": {
+    "message": "X",
+    "description": ""
+  },
+  "xbookmark": {
+    "message": "X Bookmarks",
+    "description": ""
+  },
+  "fetching_more": {
+    "message": "Fetching More Tweet, Please Wait...",
+    "description": ""
+  },
+  "all_bookmarks_have_been_loaded": {
+    "message": "All bookmarks have been loaded",
+    "description": ""
+  },
+  "search_items_by_keywords": {
+    "message": "Search items by keywords",
+    "description": ""
+  },
+  "select_deselect_all_shown": {
+    "message": "Select/Deselect All Shown",
+    "description": ""
+  },
+  "got": {
+    "message": "Got",
+    "description": ""
+  }
 }

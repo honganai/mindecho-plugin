@@ -1,10 +1,13 @@
 function listenOnSendHeaders(details: any) {
   // console.log(details.url);
 
+  // if (!details.url.includes(`/api/graphql`)) {
+  //   return;
+  // }
+
   if (!/\/graphql\/.+\/Bookmarks/.test(details.url)) {
     return;
   }
-  console.log(details);
 
   try {
     chrome.storage.local

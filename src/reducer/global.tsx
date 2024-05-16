@@ -6,7 +6,7 @@ export const ContentTypeMap: { [key: string]: string } = {
   readinglist: 'reading_list',
   history: 'history',
   pocket: 'pocket',
-  x: 'x',
+  xbookmark: 'xbookmark',
 }
 
 

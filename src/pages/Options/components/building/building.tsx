@@ -12,16 +12,27 @@ import cs from 'classnames';
 import clsx from 'clsx';
 
 interface IProp {
-  type: string;
+  type:
+  'xbookmark' |
+  'browser' |
+  'pocket' |
+  ''
   status: boolean;
 }
 
 const Building: React.FC<IProp> = ({ type = 'browser', status = false }) => {
+
   const { getMessage: t } = chrome.i18n;
   const { state: { upateData, }, dispatch: globalDispatch } = useContext(GlobalContext);
   const [done, setDone] = useState(false);
   const [waitTime, setWaitTime] = useState(null as any);
   const MIN_TIMEOUT = 5; //最小等待时间
+
+  const typeLabelMap = {
+    'xbookmark': t("Twitter Bookmark"),
+    'browser': t('browser_data_imported'),
+    'pocket': t('pocket_saves_imported'),
+  }
 
   useEffect(() => {
     if (_.isArray(upateData) && upateData.length > 0) {
@@ -59,7 +70,7 @@ const Building: React.FC<IProp> = ({ type = 'browser', status = false }) => {
         {
           done ? (
             <>
-              <p className={styles['title']}>{type === 'browser' ? t('browser_data_imported') : t('pocket_saves_imported')}</p>
+              <p className={styles['title']}>{typeLabelMap[type] || ''}</p>
               <p className={styles['tip']}>{t('data_is_still_processing_Im_on_it_and_will_continue_in_the_background')}</p>
               <p className={styles['tip-3']}>
                 {t('activate_mindECHO_to_search_your_saves')}<br />

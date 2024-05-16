@@ -17,7 +17,7 @@ export enum SubType {
 interface IMergeData {
   title: string;
   url: string;
-  type: 'history' | 'bookmark' | 'readinglist';
+  type: 'history' | 'bookmark' | 'readinglist' | 'xbookmark';
   user_create_time: string;
   node_id: string;
   node_index: string;

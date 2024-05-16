@@ -46,7 +46,12 @@ const Options: React.FC = () => {
     requestEnd: false,
     isLogin: false,
   });
-  const [buildType, setBuildType] = useState<string>('');
+  const [buildType, setBuildType] = useState<
+    'xbookmark' |
+    'browser' |
+    'pocket' |
+    ''
+  >('');
   const { getMessage: t } = chrome.i18n;
 
   const toLogin = () => {
@@ -185,7 +190,7 @@ const Options: React.FC = () => {
                           stepPage === 5 ? <HistoryData onLink={(page: number, status = false) => { setStepPage(page); setBuildType('browser'); setBuildStatus(status) }} /> :
                             stepPage === 3 ? <Building type={buildType} status={buildStatus} /> :
                               stepPage === 4 ? <Pocket onLink={(page: number) => { setStepPage(page); setBuildType('pocket') }} /> :
-                                stepPage === 6 ? <Twitter onLink={(page: number) => { setStepPage(page) }} /> : null}
+                                stepPage === 6 ? <Twitter onLink={(page: number) => { setStepPage(page), setBuildType('xbookmark') }} /> : null}
                       <ModalContent type="options" />
                     </>
                   )}

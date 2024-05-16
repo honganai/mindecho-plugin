@@ -59,4 +59,30 @@
       }
     }
   }
+
+  .right {
+    padding: 0 20px;
+
+    .import-btn {
+      width: 100%;
+      max-width: 236px;
+      min-width: 150px;
+      height: 64px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      background-color: #6428be;
+    }
+
+    .auto-add {
+      color: rgb(109, 109, 109);
+      @extend %flex-center;
+
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+
 }
