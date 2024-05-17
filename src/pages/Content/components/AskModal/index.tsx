@@ -8,6 +8,7 @@ import EnterImage from '@/assets/img/enter.svg';
 import styles from './index.module.scss';
 import MyProgress from '../Myprogress';
 import { getAutoAdd, setAutoAdd as setStorageAutoAdd } from '@/constants';
+import clsx from 'clsx';
 
 
 interface IExample {
@@ -175,9 +176,14 @@ const AskModal: React.FC<IProps> = ({ type }) => {
         showSettings && (
           <div className={styles['setting']}>
             <p className={styles['title']}>{t('settings')}</p>
-            <p className={styles['text']} style={{ display: type === 'options' ? "none" : 'block' }}>
+            <p className={clsx(
+              styles['text']
+            )}
+              onClick={() => openSettings()}
+              style={{ cursor: 'pointer', display: type === 'options' ? "none" : 'block' }}
+            >
               <span>{t('manage_sources')}</span>
-              <svg width="20" height="20" onClick={() => openSettings()} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
                 style={{ float: 'right', cursor: 'pointer', marginLeft: 'auto' }}>
                 <path d="M12.5 6.875V5.3125C12.5 4.8981 12.3354 4.50067 12.0424 4.20765C11.7493 3.91462 11.3519 3.75 10.9375 3.75H3.4375C3.0231 3.75 2.62567 3.91462 2.33265 4.20765C2.03962 4.50067 1.875 4.8981 1.875 5.3125V14.6875C1.875 15.1019 2.03962 15.4993 2.33265 15.7924C2.62567 16.0854 3.0231 16.25 3.4375 16.25H10.9375C11.3519 16.25 11.7493 16.0854 12.0424 15.7924C12.3354 15.4993 12.5 15.1019 12.5 14.6875V13.125" stroke="#6B6B6B" strokeWidth="1.00189" strokeLinecap="round" strokeLinejoin="round" />
                 <path d="M15 6.875L18.1254 10.0004L15 13.1259" stroke="#6B6B6B" strokeWidth="1.00189" strokeLinecap="round" strokeLinejoin="round" />
@@ -187,7 +193,8 @@ const AskModal: React.FC<IProps> = ({ type }) => {
               {/* <img src={optionIcon} alt="Manage Sources"  style={{ float: 'right',cursor: 'pointer', width: '20px', height: '20px', marginLeft: 'auto' }} />*/}
             </p>
             <p className={styles['text']}>
-              <Switch checked={autoAdd} onChange={setAutoAddStatus} size="small" className={styles.switch} /><span>{t('auto_add_new_items')}</span>
+              <Switch checked={autoAdd} onChange={setAutoAddStatus} size="small" className={styles.switch} />
+              <span>{t('auto_add_new_items')}</span>
             </p>
             <CloseOutlined onClick={() => { setShowSettings(false) }} className={styles['close-setting-btn']} />
           </div>

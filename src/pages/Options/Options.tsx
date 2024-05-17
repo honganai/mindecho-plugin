@@ -174,7 +174,7 @@ const Options: React.FC = () => {
             <div className='w-full h-screen flex flex-col'>
               {
                 isLogin &&
-                <div className='p-4 pt-6' >
+                <div className='p-4' >
                   <Header tip={(headerNoticeMap[stepPage - 1].tip || '')} note={headerNoticeMap[stepPage - 1].note || ''} />
                 </div>
               }

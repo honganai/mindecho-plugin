@@ -8,6 +8,28 @@ const { getMessage: t } = chrome.i18n;
 import GlobalContext, { ActionType as GlobalActionType } from "@/reducer/global";
 
 import { CollectionsHeaderTabSwitcher } from '@/pages/Options/components/user/collections/headerTabSwitcher';
+function formatDateObject(date: Date) {
+  const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  const dayOfWeek = days[date.getUTCDay()];
+  const month = months[date.getUTCMonth()];
+  const day = date.getUTCDate();
+  const year = date.getUTCFullYear();
+  const hours = date.getUTCHours();
+  const minutes = date.getUTCMinutes();
+  const seconds = date.getUTCSeconds();
+  const timezoneOffset = -date.getTimezoneOffset();
+  const timezoneHours = String(Math.floor(Math.abs(timezoneOffset) / 60)).padStart(2, '0');
+  const timezoneMinutes = String(Math.abs(timezoneOffset) % 60).padStart(2, '0');
+  const timezoneSign = timezoneOffset >= 0 ? '+' : '-';
+  const timezone = `GMT${timezoneSign}${timezoneHours}${timezoneMinutes}`;
+
+  const formattedDate = `${dayOfWeek} ${month} ${day} ${year} ${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')} ${timezone}`;
+
+  return formattedDate;
+}
+
 export function Collections() {
   const { dispatch: globalDispatch } = useContext(GlobalContext);
 
@@ -95,10 +117,10 @@ export function Collections() {
               <div className="flex between">
                 <div className={
                   clsx('font-bold flex-1 w-0 text-inherit hover:text-slate-900 cursor-pointer truncate ')
-                }>
+                } onClick={() => window.open(item.url, '_blank')}>
                   {item.title}
                 </div>
-                <div className="pl-10 truncate ">{(new Date(item.user_create_time)).toString()}</div>
+                <div className="pl-10 truncate ">{item.created_on ? formatDateObject(new Date(item.created_on)) : ''}</div>
               </div>
 
               <div className="text-sm text-gray-500 truncate ">{item.url}</div>

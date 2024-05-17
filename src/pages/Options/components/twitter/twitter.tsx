@@ -173,7 +173,7 @@ const Twitter: React.FC<Props> = ({ onLink }: Props) => {
       </div>
 
       <div className='flex-1 w-0'>
-        <div className='mr-2 mb-2 inline-block border rounded-sm p-2 cursor-pointer' onClick={() => {
+        {/* <div className='mr-2 mb-2 inline-block border rounded-sm p-2 cursor-pointer' onClick={() => {
           setLocalStorage(X_BOOKMARKS_HEADERS, null);
         }}>remove twitterAPI Token</div>
         <div className='mr-2 mb-2 inline-block border rounded-sm p-2 cursor-pointer' onClick={() => {
@@ -188,7 +188,7 @@ const Twitter: React.FC<Props> = ({ onLink }: Props) => {
           getLocalStorage(X_BOOKMARKS_STORE).then(res => {
             console.log(res);
           })
-        }}>Log Stored Tweets</div>
+        }}>Log Stored Tweets</div> */}
 
         {!isConfirm ? (
           <div className={styles.content}>
@@ -202,15 +202,18 @@ const Twitter: React.FC<Props> = ({ onLink }: Props) => {
               'flex flex-col items-center justify-center',
               'text-xl text-slate-700'
             )}>
-              <p className='text-center'>
-                <span>{t('please_first_log_into_your_x_account_and')}</span>
+              <p className='w-full'>
+                <span className='pl-10'>{t('please_first_log_into_your_x_account_and')}</span>
                 <span className='text-bold'>{t('open_your_bookmarks_page')} </span>
-                <p className={styles.backlink} onClick={goTwitter}>https://x.com/i/bookmarks/all</p>
+                <p className={clsx(
+                  styles.backlink,
+                  'text-center'
+                )} onClick={goTwitter}>https://x.com/i/bookmarks/all</p>
               </p>
 
               <img className='mt-8' src={XGuidePNG} alt="" />
 
-              <p className='my-4'>{t('switch_back_to_this_page_and_continue')}</p>
+              <p className='w-full pl-10 my-4'>{t('switch_back_to_this_page_and_continue')}</p>
             </p>
 
             {isLoginTwitter ? (
