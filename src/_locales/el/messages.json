@@ -276,7 +276,7 @@
         "description": ""
     },
     "enable_search_for_your_X_bookmarks": {
-        "message": "Ενεργοποιήστε την Αναζήτηση για τους X σελιδοδείκτες σας.",
+        "message": "Ενεργοποιήστε την Αναζήτηση για το δικό σας",
         "description": ""
     },
     "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
@@ -337,6 +337,34 @@
     },
     "x": {
         "message": "Χ",
+        "description": ""
+    },
+    "to_login_x": {
+        "message": "Μεταβείτε στο X.com και ανοίξτε τους Σελιδοδείκτες",
+        "description": ""
+    },
+    "please_first_log_into_your_x_account_and": {
+        "message": "1. Συνδεθείτε πρώτα στον X λογαριασμό σας και",
+        "description": ""
+    },
+    "open_bookmarks": {
+        "message": "2. Ανοίξτε τους Σελιδοδείκτες",
+        "description": ""
+    },
+    "open_your_bookmarks_page": {
+        "message": "ανοίξτε τη σελίδα σας σελιδοδείκτες:",
+        "description": ""
+    },
+    "switch_back_to_this_page_and_continue": {
+        "message": "2. Επιστρέψτε σε αυτήν τη σελίδα και συνεχίστε.",
+        "description": ""
+    },
+    "open": {
+        "message": "Ανοιξε",
+        "description": ""
+    },
+    "continue": {
+        "message": "Να συνεχίσει",
         "description": ""
     }
 }

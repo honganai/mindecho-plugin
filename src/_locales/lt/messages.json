@@ -276,7 +276,7 @@
         "description": ""
     },
     "enable_search_for_your_X_bookmarks": {
-        "message": "Įgalinkite savo X žymių paiešką.",
+        "message": "Įgalinkite savo paiešką",
         "description": ""
     },
     "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
@@ -337,6 +337,34 @@
     },
     "x": {
         "message": "X",
+        "description": ""
+    },
+    "to_login_x": {
+        "message": "Eikite į X.com ir atidarykite žymes",
+        "description": ""
+    },
+    "please_first_log_into_your_x_account_and": {
+        "message": "1. Pirmiausia prisijunkite prie savo X paskyros ir",
+        "description": ""
+    },
+    "open_bookmarks": {
+        "message": "2. Atidarykite Žymės",
+        "description": ""
+    },
+    "open_your_bookmarks_page": {
+        "message": "atidarykite savo žymių puslapį:",
+        "description": ""
+    },
+    "switch_back_to_this_page_and_continue": {
+        "message": "2. Grįžkite į šį puslapį ir tęskite.",
+        "description": ""
+    },
+    "open": {
+        "message": "Atviras",
+        "description": ""
+    },
+    "continue": {
+        "message": "Tęsti",
         "description": ""
     }
 }

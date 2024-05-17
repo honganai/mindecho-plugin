@@ -276,7 +276,7 @@
         "description": ""
     },
     "enable_search_for_your_X_bookmarks": {
-        "message": "Paganahin ang Paghahanap para sa Iyong Mga X Bookmark.",
+        "message": "Paganahin ang Paghahanap para sa Iyo",
         "description": ""
     },
     "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
@@ -337,6 +337,34 @@
     },
     "x": {
         "message": "X",
+        "description": ""
+    },
+    "to_login_x": {
+        "message": "Pumunta sa X.com at buksan ang Bookmarks",
+        "description": ""
+    },
+    "please_first_log_into_your_x_account_and": {
+        "message": "1. Mangyaring mag-log in muna sa iyong X account at",
+        "description": ""
+    },
+    "open_bookmarks": {
+        "message": "2. Buksan ang Mga Bookmark",
+        "description": ""
+    },
+    "open_your_bookmarks_page": {
+        "message": "buksan ang iyong pahina ng Mga Bookmark:",
+        "description": ""
+    },
+    "switch_back_to_this_page_and_continue": {
+        "message": "2. Bumalik sa pahinang ito at magpatuloy.",
+        "description": ""
+    },
+    "open": {
+        "message": "Bukas",
+        "description": ""
+    },
+    "continue": {
+        "message": "Magpatuloy",
         "description": ""
     }
 }

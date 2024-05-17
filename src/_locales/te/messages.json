@@ -276,7 +276,7 @@
         "description": ""
     },
     "enable_search_for_your_X_bookmarks": {
-        "message": "మీ X బుక్‌మార్క్‌ల కోసం శోధనను ప్రారంభించండి.",
+        "message": "మీ కోసం శోధనను ప్రారంభించండి",
         "description": ""
     },
     "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
@@ -337,6 +337,34 @@
     },
     "x": {
         "message": "X",
+        "description": ""
+    },
+    "to_login_x": {
+        "message": "X.comకి వెళ్లి బుక్‌మార్క్‌లను తెరవండి",
+        "description": ""
+    },
+    "please_first_log_into_your_x_account_and": {
+        "message": "1. దయచేసి ముందుగా మీ X ఖాతాలోకి లాగిన్ అవ్వండి మరియు",
+        "description": ""
+    },
+    "open_bookmarks": {
+        "message": "2. బుక్‌మార్క్‌లను తెరవండి",
+        "description": ""
+    },
+    "open_your_bookmarks_page": {
+        "message": "మీ బుక్‌మార్క్‌ల పేజీని తెరవండి:",
+        "description": ""
+    },
+    "switch_back_to_this_page_and_continue": {
+        "message": "2. ఈ పేజీకి తిరిగి మారండి మరియు కొనసాగించండి.",
+        "description": ""
+    },
+    "open": {
+        "message": "తెరవండి",
+        "description": ""
+    },
+    "continue": {
+        "message": "కొనసాగించు",
         "description": ""
     }
 }

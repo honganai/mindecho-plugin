@@ -276,7 +276,7 @@
         "description": ""
     },
     "enable_search_for_your_X_bookmarks": {
-        "message": "Povolte vyhledávání vašich X záložek.",
+        "message": "Povolte vyhledávání",
         "description": ""
     },
     "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
@@ -337,6 +337,34 @@
     },
     "x": {
         "message": "X",
+        "description": ""
+    },
+    "to_login_x": {
+        "message": "Přejděte na X.com a otevřete Záložky",
+        "description": ""
+    },
+    "please_first_log_into_your_x_account_and": {
+        "message": "1. Nejprve se prosím přihlaste ke svému X účtu a",
+        "description": ""
+    },
+    "open_bookmarks": {
+        "message": "2. Otevřete Záložky",
+        "description": ""
+    },
+    "open_your_bookmarks_page": {
+        "message": "otevřete stránku Záložky:",
+        "description": ""
+    },
+    "switch_back_to_this_page_and_continue": {
+        "message": "2. Přepněte zpět na tuto stránku a pokračujte.",
+        "description": ""
+    },
+    "open": {
+        "message": "OTEVŘENO",
+        "description": ""
+    },
+    "continue": {
+        "message": "Pokračovat",
         "description": ""
     }
 }

@@ -276,7 +276,7 @@
         "description": ""
     },
     "enable_search_for_your_X_bookmarks": {
-        "message": "अपने X बुकमार्क्स के लिए खोज सक्षम करें.",
+        "message": "अपने लिए खोज सक्षम करें",
         "description": ""
     },
     "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
@@ -337,6 +337,34 @@
     },
     "x": {
         "message": "एक्स",
+        "description": ""
+    },
+    "to_login_x": {
+        "message": "X.com पर जाएं और बुकमार्क खोलें",
+        "description": ""
+    },
+    "please_first_log_into_your_x_account_and": {
+        "message": "1. कृपया पहले अपने एक्स खाते में लॉग इन करें और",
+        "description": ""
+    },
+    "open_bookmarks": {
+        "message": "2. बुकमार्क खोलें",
+        "description": ""
+    },
+    "open_your_bookmarks_page": {
+        "message": "अपना बुकमार्क पृष्ठ खोलें:",
+        "description": ""
+    },
+    "switch_back_to_this_page_and_continue": {
+        "message": "2. इस पृष्ठ पर वापस आएँ और जारी रखें।",
+        "description": ""
+    },
+    "open": {
+        "message": "खुला",
+        "description": ""
+    },
+    "continue": {
+        "message": "जारी रखना",
         "description": ""
     }
 }

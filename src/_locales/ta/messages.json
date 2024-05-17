@@ -276,7 +276,7 @@
         "description": ""
     },
     "enable_search_for_your_X_bookmarks": {
-        "message": "உங்கள் X புக்மார்க்குகளுக்கான தேடலை இயக்கவும்.",
+        "message": "உங்களுக்கான தேடலை இயக்கு",
         "description": ""
     },
     "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
@@ -337,6 +337,34 @@
     },
     "x": {
         "message": "எக்ஸ்",
+        "description": ""
+    },
+    "to_login_x": {
+        "message": "X.com க்குச் சென்று புக்மார்க்குகளைத் திறக்கவும்",
+        "description": ""
+    },
+    "please_first_log_into_your_x_account_and": {
+        "message": "1. முதலில் உங்கள் X கணக்கில் உள்நுழையவும்",
+        "description": ""
+    },
+    "open_bookmarks": {
+        "message": "2. புக்மார்க்குகளைத் திறக்கவும்",
+        "description": ""
+    },
+    "open_your_bookmarks_page": {
+        "message": "உங்கள் புக்மார்க்ஸ் பக்கத்தைத் திறக்கவும்:",
+        "description": ""
+    },
+    "switch_back_to_this_page_and_continue": {
+        "message": "2. இந்தப் பக்கத்திற்குத் திரும்பி, தொடரவும்.",
+        "description": ""
+    },
+    "open": {
+        "message": "திற",
+        "description": ""
+    },
+    "continue": {
+        "message": "தொடரவும்",
         "description": ""
     }
 }

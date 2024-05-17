@@ -276,7 +276,7 @@
         "description": ""
     },
     "enable_search_for_your_X_bookmarks": {
-        "message": "X ブックマークの検索を有効にします。",
+        "message": "検索を有効にする",
         "description": ""
     },
     "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
@@ -337,6 +337,34 @@
     },
     "x": {
         "message": "バツ",
+        "description": ""
+    },
+    "to_login_x": {
+        "message": "X.comにアクセスしてブックマークを開きます",
+        "description": ""
+    },
+    "please_first_log_into_your_x_account_and": {
+        "message": "1.まずXアカウントにログインし、",
+        "description": ""
+    },
+    "open_bookmarks": {
+        "message": "2. ブックマークを開く",
+        "description": ""
+    },
+    "open_your_bookmarks_page": {
+        "message": "ブックマークページを開きます:",
+        "description": ""
+    },
+    "switch_back_to_this_page_and_continue": {
+        "message": "2. このページに戻って続行します。",
+        "description": ""
+    },
+    "open": {
+        "message": "開ける",
+        "description": ""
+    },
+    "continue": {
+        "message": "続く",
         "description": ""
     }
 }

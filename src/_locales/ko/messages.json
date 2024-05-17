@@ -276,7 +276,7 @@
         "description": ""
     },
     "enable_search_for_your_X_bookmarks": {
-        "message": "X 북마크 검색을 활성화합니다.",
+        "message": "귀하의 검색을 활성화하십시오",
         "description": ""
     },
     "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
@@ -337,6 +337,34 @@
     },
     "x": {
         "message": "엑스",
+        "description": ""
+    },
+    "to_login_x": {
+        "message": "X.com으로 이동하여 북마크를 엽니다.",
+        "description": ""
+    },
+    "please_first_log_into_your_x_account_and": {
+        "message": "1. 먼저 X 계정에 로그인하고",
+        "description": ""
+    },
+    "open_bookmarks": {
+        "message": "2. 북마크 열기",
+        "description": ""
+    },
+    "open_your_bookmarks_page": {
+        "message": "북마크 페이지를 엽니다.",
+        "description": ""
+    },
+    "switch_back_to_this_page_and_continue": {
+        "message": "2. 이 페이지로 다시 전환하고 계속하세요.",
+        "description": ""
+    },
+    "open": {
+        "message": "열려 있는",
+        "description": ""
+    },
+    "continue": {
+        "message": "계속하다",
         "description": ""
     }
 }

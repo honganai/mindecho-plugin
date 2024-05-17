@@ -8,7 +8,7 @@
         "description": ""
     },
     "signUpWithGoogle": {
-        "message": "Google&#39;a kaydolun",
+        "message": "Google a kaydolun",
         "description": "memorie页面来源"
     },
     "logout": {
@@ -56,7 +56,7 @@
         "description": ""
     },
     "query_the_web": {
-        "message": "Web&#39;i Sorgulayın",
+        "message": "Web i Sorgulayın",
         "description": ""
     },
     "or_you_can": {
@@ -100,11 +100,11 @@
         "description": ""
     },
     "connect_to_pocket_to_revive_your_dusty_stash": {
-        "message": "Tozlu zulanızı canlandırmak için Pocket&#39;e bağlanın.",
+        "message": "Tozlu zulanızı canlandırmak için Pocket e bağlanın.",
         "description": ""
     },
     "on_pc": {
-        "message": "PC&#39;de",
+        "message": "PC de",
         "description": ""
     },
     "ctrl_E": {
@@ -112,7 +112,7 @@
         "description": ""
     },
     "on_mac": {
-        "message": "Mac&#39;te",
+        "message": "Mac te",
         "description": ""
     },
     "command_E": {
@@ -132,7 +132,7 @@
         "description": ""
     },
     "building_your_mindEcho": {
-        "message": "MindEcho&#39;nuzu Oluşturmak",
+        "message": "MindEcho nuzu Oluşturmak",
         "description": ""
     },
     "icon_click": {
@@ -152,7 +152,7 @@
         "description": ""
     },
     "activate_mindECHO_to_search_your_saves": {
-        "message": "Kayıtlarınızı aramak için mindECHO&#39;yu etkinleştirin",
+        "message": "Kayıtlarınızı aramak için mindECHO yu etkinleştirin",
         "description": ""
     },
     "data_is_still_processing_Im_on_it_and_will_continue_in_the_background": {
@@ -180,7 +180,7 @@
         "description": ""
     },
     "find_items_by_keywords": {
-        "message": "URL&#39;leri anahtar kelimelere göre bulun",
+        "message": "URL leri anahtar kelimelere göre bulun",
         "description": ""
     },
     "public_knowledge_pages_from_browsing_history": {
@@ -188,7 +188,7 @@
         "description": ""
     },
     "only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included": {
-        "message": "Yalnızca genel makalelerin, blogların ve makale PDF&#39;lerinin URL&#39;leri eklenebilir. Kişisel ve işle ilgili geçmiş dahil DEĞİLDİR.",
+        "message": "Yalnızca genel makalelerin, blogların ve makale PDF lerinin URL leri eklenebilir. Kişisel ve işle ilgili geçmiş dahil DEĞİLDİR.",
         "description": ""
     },
     "enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization": {
@@ -204,7 +204,7 @@
         "description": ""
     },
     "items": {
-        "message": "URL&#39;ler",
+        "message": "URL ler",
         "description": ""
     },
     "fetch": {
@@ -272,15 +272,15 @@
         "description": ""
     },
     "build_a_Private_google_chatGPT_for_your_own_web_in_minutes": {
-        "message": "Dakikalar içinde kendi web&#39;iniz için Özel bir Google + ChatGPT oluşturun",
+        "message": "Dakikalar içinde kendi web iniz için Özel bir Google + ChatGPT oluşturun",
         "description": ""
     },
     "enable_search_for_your_X_bookmarks": {
-        "message": "X Yer İşaretlerinizi Aramayı Etkinleştirin.",
+        "message": "Aramanızı Etkinleştirin",
         "description": ""
     },
     "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
-        "message": "X&#39;teki (Resmi olarak Twitter) Yer İşaretleriniz sizin izninizle içe aktarılacaktır. Yer imlerine eklenen içerikteki tam metin getirilecek ve sizin için aranabilir hale getirilecektir.",
+        "message": "X teki (Resmi olarak Twitter) Yer İşaretleriniz sizin izninizle içe aktarılacaktır. Yer imlerine eklenen içerikteki tam metin getirilecek ve sizin için aranabilir hale getirilecektir.",
         "description": ""
     },
     "collection": {
@@ -337,6 +337,34 @@
     },
     "x": {
         "message": "X",
+        "description": ""
+    },
+    "to_login_x": {
+        "message": "X.com a gidin ve Yer İşaretlerini açın",
+        "description": ""
+    },
+    "please_first_log_into_your_x_account_and": {
+        "message": "1. Lütfen önce X hesabınıza giriş yapın ve",
+        "description": ""
+    },
+    "open_bookmarks": {
+        "message": "2. Yer İmlerini açın",
+        "description": ""
+    },
+    "open_your_bookmarks_page": {
+        "message": "Yer İmleri sayfanızı açın:",
+        "description": ""
+    },
+    "switch_back_to_this_page_and_continue": {
+        "message": "2. Bu sayfaya geri dönün ve devam edin.",
+        "description": ""
+    },
+    "open": {
+        "message": "Açık",
+        "description": ""
+    },
+    "continue": {
+        "message": "Devam etmek",
         "description": ""
     }
 }

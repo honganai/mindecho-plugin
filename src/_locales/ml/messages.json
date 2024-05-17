@@ -276,7 +276,7 @@
         "description": ""
     },
     "enable_search_for_your_X_bookmarks": {
-        "message": "നിങ്ങളുടെ X ബുക്ക്‌മാർക്കുകൾക്കായുള്ള തിരയൽ പ്രവർത്തനക്ഷമമാക്കുക.",
+        "message": "നിങ്ങൾക്കായി തിരയൽ പ്രവർത്തനക്ഷമമാക്കുക",
         "description": ""
     },
     "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
@@ -337,6 +337,34 @@
     },
     "x": {
         "message": "എക്സ്",
+        "description": ""
+    },
+    "to_login_x": {
+        "message": "X.com-ലേക്ക് പോയി ബുക്ക്‌മാർക്കുകൾ തുറക്കുക",
+        "description": ""
+    },
+    "please_first_log_into_your_x_account_and": {
+        "message": "1. ആദ്യം നിങ്ങളുടെ X അക്കൗണ്ടിലേക്ക് ലോഗിൻ ചെയ്യുക",
+        "description": ""
+    },
+    "open_bookmarks": {
+        "message": "2. ബുക്ക്മാർക്കുകൾ തുറക്കുക",
+        "description": ""
+    },
+    "open_your_bookmarks_page": {
+        "message": "നിങ്ങളുടെ ബുക്ക്‌മാർക്ക് പേജ് തുറക്കുക:",
+        "description": ""
+    },
+    "switch_back_to_this_page_and_continue": {
+        "message": "2. ഈ പേജിലേക്ക് തിരികെ പോയി തുടരുക.",
+        "description": ""
+    },
+    "open": {
+        "message": "തുറക്കുക",
+        "description": ""
+    },
+    "continue": {
+        "message": "തുടരുക",
         "description": ""
     }
 }

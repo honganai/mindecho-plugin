@@ -276,7 +276,7 @@
         "description": ""
     },
     "enable_search_for_your_X_bookmarks": {
-        "message": "Activez la recherche de vos signets X.",
+        "message": "Activer la recherche de votre",
         "description": ""
     },
     "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
@@ -337,6 +337,34 @@
     },
     "x": {
         "message": "X",
+        "description": ""
+    },
+    "to_login_x": {
+        "message": "Accédez à X.com et ouvrez les favoris",
+        "description": ""
+    },
+    "please_first_log_into_your_x_account_and": {
+        "message": "1. Veuillez d&#39;abord vous connecter à votre compte X et",
+        "description": ""
+    },
+    "open_bookmarks": {
+        "message": "2. Ouvrez les favoris",
+        "description": ""
+    },
+    "open_your_bookmarks_page": {
+        "message": "ouvrez votre page Favoris :",
+        "description": ""
+    },
+    "switch_back_to_this_page_and_continue": {
+        "message": "2. Revenez à cette page et continuez.",
+        "description": ""
+    },
+    "open": {
+        "message": "Ouvrir",
+        "description": ""
+    },
+    "continue": {
+        "message": "Continuer",
         "description": ""
     }
 }
