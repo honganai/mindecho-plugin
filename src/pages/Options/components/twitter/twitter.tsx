@@ -173,23 +173,6 @@ const Twitter: React.FC<Props> = ({ onLink }: Props) => {
       </div>
 
       <div className='flex-1 w-0'>
-        {/* <div className='mr-2 mb-2 inline-block border rounded-sm p-2 cursor-pointer' onClick={() => {
-          setLocalStorage(X_BOOKMARKS_HEADERS, null);
-        }}>remove twitterAPI Token</div>
-        <div className='mr-2 mb-2 inline-block border rounded-sm p-2 cursor-pointer' onClick={() => {
-          getLocalStorage(X_BOOKMARKS_HEADERS).then(res => {
-            console.log(res);
-          })
-        }}>Log twitterAPI Token</div>
-        <div className='mr-2 mb-2 inline-block border rounded-sm p-2 cursor-pointer' onClick={() => {
-          setLocalStorage(X_BOOKMARKS_STORE, null);
-        }}>remove Stored Tweets</div>
-        <div className='mr-2 mb-2 inline-block border rounded-sm p-2 cursor-pointer' onClick={() => {
-          getLocalStorage(X_BOOKMARKS_STORE).then(res => {
-            console.log(res);
-          })
-        }}>Log Stored Tweets</div> */}
-
         {!isConfirm ? (
           <div className={styles.content}>
             <div className={clsx(

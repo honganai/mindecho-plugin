@@ -37,7 +37,13 @@ const Options: React.FC = () => {
   const [userinfo, setUserinfo] = useState<UserInfo>();
   const [isLogin, setIsLogin] = useState<boolean>(false);
   const [gloablState, globalDispatch] = useReducer(GlobalReducer, {
-    titleMap: { bookmark: 'Bookmarks', readinglist: 'Reading List', history: 'History', pocket: 'Pocket' },
+    titleMap: {
+      bookmark: 'Bookmarks',
+      readinglist: 'Reading List',
+      history: 'History',
+      pocket: 'Pocket',
+      xbookmark: 'X Bookmarks'
+    },
     userInfo: {} as UserInfo,
     showAskModal: false,
     language: '',
@@ -153,7 +159,7 @@ const Options: React.FC = () => {
       note: t('only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included')
     },
     {
-      tip: t('enable_search_for_your_X_bookmarks')+' X Bookmarks',
+      tip: t('enable_search_for_your_X_bookmarks') + ' X Bookmarks',
     }
   ]
 
