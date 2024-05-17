@@ -35,7 +35,7 @@ export default function TwitterList({ list, isFetching, onLink }: Props) {
   const [selectList, setSelectList] = useState([] as string[])
   const [selectAll, setSelectAll] = useState(false)
   const processedList = list.filter(item => keywords
-    ? (item.title.includes(keywords) || item.author.includes(keywords))
+    ? (item.title.toLocaleUpperCase().includes(keywords.toLocaleUpperCase()) || item.author.toLocaleUpperCase().includes(keywords.toLocaleUpperCase()))
     : true
   )
 
@@ -66,7 +66,9 @@ export default function TwitterList({ list, isFetching, onLink }: Props) {
       }))
     });
 
-    chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_url', body: data }, (res) => {
+    chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: data }, (res) => {
+      console.log(res);
+
       onLink(3)
     });
   }
@@ -120,16 +122,16 @@ export default function TwitterList({ list, isFetching, onLink }: Props) {
                 setSelectAll(selectList.length === processedList.length)
               }} />
             </div>
-            <label htmlFor="comments" className="ml-3 w-0 flex-1 text-sm leading-6 font-medium text-gray-900">
-              <span className="w-10 mx-2 truncate">
+            <label htmlFor="comments" className="flex ml-3 w-0 flex-1 text-sm leading-6 font-medium text-gray-900">
+              <span className="w-24 mx-2 truncate ">
                 @{item.author}
               </span>
-              <span className="w-10 mx-2 truncate">
+              <span className="w-24 mx-2 truncate">
                 {formatDate(new Date(item.user_create_time))}
               </span>
-              <span className="truncate mx-2 text-gray-500 flex-1 w-0">
+              <p className="truncate mx-2 text-gray-500 flex-1 w-0">
                 {item.content}
-              </span>
+              </p>
             </label>
           </div>
         })}

@@ -56,6 +56,10 @@ const Options: React.FC = () => {
 
   const toLogin = () => {
     chrome.runtime.sendMessage({ type: 'login', data: {} }, (res) => {
+
+      // 清除token
+
+
       console.log('login res:', res);
       //发送用户身份信息
       const event_name = "plugin_click_login"

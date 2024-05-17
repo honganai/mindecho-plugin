@@ -1,17 +1,17 @@
-import React, { useEffect, useContext, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button } from 'antd';
 import styles from './index.module.scss';
-import _, { set } from "lodash";
-import GlobalContext from '@/reducer/global';
-import BadIcon from '@/assets/icons/bad_icon.png'
+import BadIcon from '@/assets/icons/bad_icon.png';
+import XGuidePNG from '@/assets/icons/CleanShot 2024-05-17 at 13.45 1.png';
 import clsx from 'clsx';
 import TwitterList from './twitterList';
 import { TweetResultsResult, TweetItem, TwitterResult, XBookmarkHeaders } from './type';
 import { ArrowLeftOutlined } from '@ant-design/icons';
-import useStateRef from './useStateRef';
+import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
+import { getLocalStorage, setLocalStorage } from './storage';
 
 interface Props {
-  onLink: (page: number) => void
+  onLink: (page: number) => void;
 }
 
 const TWEET_TYPES = [
@@ -20,193 +20,201 @@ const TWEET_TYPES = [
   "TimelineTimelineItem",
 ];
 const SEPARATOR = " https://t.co/";
-export const X_BOOKMARKS_STORE = `XBookmarkStore`
-const X_BOOKMARKS_HEADERS = `XBookmarkHeaders`
+export const X_BOOKMARKS_STORE = `XBookmarkStore`;
+const X_BOOKMARKS_HEADERS = `XBookmarkHeaders`;
 
 const Twitter: React.FC<Props> = ({ onLink }: Props) => {
-  const [isLoginTwitter, setIsLoginWitter] = useState(false)
-  const [isConfirm, setIsConfirm] = useState(false)
-  const [isFetching, setIsFetching] = useState(false)
-  const [tweetList, setTweetList] = useState([] as TweetItem[])
-  const [isOverrideXHR, setIsOverrideXHR] = useState(false)
+  const { getMessage: t } = chrome.i18n;
+  const [isLoginTwitter, setIsLoginTwitter] = useState(false);
+  const [isConfirm, setIsConfirm] = useState(false);
+  const [isFetching, setIsFetching] = useState(false);
+  const [tweetList, setTweetList] = useState<TweetItem[]>([]);
+  const [timer, setTimer] = useState<NodeJS.Timeout>();
 
-  const goTiwtter = () => {
+  const goTwitter = () => {
     chrome.runtime.sendMessage({ type: 'twitter' }, (res) => {
       console.log('twitter res:', res);
     });
-  }
+  };
 
   useEffect(() => {
-    // chrome.storage.local.set({
-    //   [X_BOOKMARKS_STORE]: []
-    // });
-    chrome.storage.local.get(X_BOOKMARKS_STORE).then((data): void => {
-      console.log(data[X_BOOKMARKS_STORE]);
+    const initializeBookmarks = async () => {
+      const storedTweets = await getLocalStorage<TweetItem[]>(X_BOOKMARKS_STORE);
+      const bookmarkHeaders = await getLocalStorage<XBookmarkHeaders>(X_BOOKMARKS_HEADERS);
 
-      data[X_BOOKMARKS_STORE]
-        && data[X_BOOKMARKS_STORE].length
-        && setTweetList((prevList) => [
-          ...data[X_BOOKMARKS_STORE],
-          ...prevList,
-        ])
+      if (storedTweets?.length) {
+        setTweetList(storedTweets);
+      }
 
-      setIsLoginWitter(!!data.XBookmarkHeaders)
-    })
+      setIsLoginTwitter(!!bookmarkHeaders);
+    };
 
-    chrome.storage.local.get(X_BOOKMARKS_HEADERS).then((data): void => {
-      setIsLoginWitter(!!data.XBookmarkHeaders)
-    })
-  }, [])
+    initializeBookmarks();
+  }, []);
+
 
   useEffect(() => {
-    isConfirm && chrome.storage.local.get(X_BOOKMARKS_HEADERS).then((data): void => {
+    if (!isLoginTwitter) {
+      const intervalId = setInterval(async () => {
+        const bookmarkHeaders = await getLocalStorage<XBookmarkHeaders>(X_BOOKMARKS_HEADERS);
 
-      const { url, method, headers } = data.XBookmarkHeaders as XBookmarkHeaders
+        setIsLoginTwitter(!!bookmarkHeaders);
+      }, 2000);
+      setTimer(intervalId);
+    } else {
+      clearInterval(timer);
+    }
+  }, [isLoginTwitter])
 
-      if (!isOverrideXHR) {
-        setIsOverrideXHR(true)
+  useEffect(() => {
+    if (isConfirm) {
+      clearInterval(timer);
 
-        // 重写 XMLHttpRequest.prototype.open 方法
-        const originalOpen = XMLHttpRequest.prototype.open;
-        XMLHttpRequest.prototype.open = function (method: string, url: string) {
-          if (url?.includes(`/Bookmarks?variables=`)) {
-            const xhr = this;
-            xhr.onload = function () {
-              let lastStoredIndex = -1
-              const result: TwitterResult = JSON.parse(xhr.responseText);
-              const entries = result.data.bookmark_timeline_v2.timeline.instructions[0].entries
-              const filteredEntries = entries.filter(item => {
-                if (TWEET_TYPES.includes(item.content.entryType)
-                  && item?.content?.itemContent?.tweet_results.result) {
-                  const storedIndex = tweetList.findIndex(({ id }) => id === item.entryId);
-                  const isMatch = storedIndex > -1
+      const fetchBookmarks = async () => {
+        const bookmarkHeaders = await getLocalStorage<XBookmarkHeaders>(X_BOOKMARKS_HEADERS);
+        if (!bookmarkHeaders) return;
 
-                  isMatch && (lastStoredIndex = storedIndex)
+        const { url, method, headers } = bookmarkHeaders;
+        setIsFetching(true);
 
-                  return !isMatch
+        const fetchTweets = async (requestUrl: string) => {
+          try {
+            const config: AxiosRequestConfig = {
+              method,
+              url: requestUrl,
+              headers: headers.reduce((acc, { name, value }) => ({ ...acc, [name]: value }), {}),
+            };
+
+            const response: AxiosResponse<TwitterResult> = await axios(config);
+            const result = response.data;
+
+            const entries = result.data.bookmark_timeline_v2.timeline.instructions[0].entries;
+
+            const filteredEntries = entries.filter(item => {
+              if (TWEET_TYPES.includes(item.content.entryType)
+                && item?.content?.itemContent?.tweet_results.result) {
+                const storedIndex = tweetList.findIndex(({ id }) => id === item.entryId);
+                return storedIndex === -1;
+              }
+              return false;
+            });
+
+            const newTweets = filteredEntries.map((item) => {
+              if (item && item.content && item.content.itemContent && item.content.itemContent.tweet_results.result) {
+                const result = item.content.itemContent.tweet_results.result?.tweet ||
+                  item.content.itemContent.tweet_results.result;
+
+                try {
+                  return {
+                    id: item.entryId,
+                    title: result.legacy.full_text.split(SEPARATOR)[0],
+                    url: `https://twitter.com/x/status/${result.rest_id}`,
+                    type: "xbookmark",
+                    user_create_time: result.legacy.created_at || '',
+                    node_id: "0",
+                    node_index: "0",
+                    parentId: "0",
+                    user_used_time: result.legacy.created_at || "",
+                    origin_info: "",
+                    author: result.core.user_results.result.legacy.name || '',
+                    content: result.legacy.full_text || '',
+                    status: "1",
+                  } as unknown as TweetItem;
+                } catch (error) {
+                  console.log(error);
                 }
-                return false
-              });
 
-              if (lastStoredIndex > -1) {
-                setIsFetching(false)
-                filteredEntries.splice(lastStoredIndex)
+                return null
               }
-
-              setTweetList((prevList) => [
-                ...prevList,
-                ...filteredEntries.map((item) => {
-                  if (
-                    item &&
-                    item.content &&
-                    item.content.itemContent &&
-                    item.content.itemContent.tweet_results.result
-                  ) {
-                    const result = (item?.content?.itemContent.tweet_results.result) as TweetResultsResult
-
-                    return {
-                      id: item.entryId,
-                      title: result.legacy.full_text.split(SEPARATOR)[0],
-                      "url": `https://twitter.com/x/status/${result.rest_id}`,
-                      "type": "xbookmark",
-                      "user_create_time": result.legacy.created_at || '',
-                      "node_id": "0",
-                      "node_index": "0",
-                      "parentId": "0",
-                      "user_used_time": result.legacy.created_at || "",
-                      "origin_info": "",
-                      "author": result.core.user_results.result.legacy.name || '',
-                      "content": result.legacy.full_text || '',
-                      "status": "1",
-                    }
-                  }
-                })
-              ] as unknown as TweetItem[])
+              return null;
+            }).filter(item => item !== null) as TweetItem[];
 
 
-              if (entries.length > 2 && lastStoredIndex === -1) {
-                const cursor = entries[entries.length - 1].content.value;
+            setTweetList((prevList) => [
+              ...prevList,
+              ...newTweets,
+            ]);
 
-                // 解析url请求参数
-                const params = new URLSearchParams(url.split('?')[1]);
-                params.set('variables', JSON.stringify(Object.assign(JSON.parse(params.get('variables')), { cursor })));
+            await setLocalStorage(X_BOOKMARKS_STORE, tweetList);
 
-                // 创建一个新的请求
-                const newXhr = new XMLHttpRequest();
+            if (entries.length > 2) {
+              const cursor = entries[entries.length - 1].content.value;
+              const params = new URLSearchParams(requestUrl.split('?')[1]);
+              params.set('variables', JSON.stringify({ ...JSON.parse(params.get('variables')!), cursor }));
+              const nextUrl = `${requestUrl.split('?')[0]}?${params.toString()}`;
 
-                newXhr.open(method, `${url.split('?')[0]}?${params.toString()}`);
-                // 设置请求头信息
-                headers.forEach(({ name, value }) => {
-                  newXhr.setRequestHeader(name, value);
-                });
-                newXhr.send(null);
-              } else {
-                setIsFetching(false)
-                console.log(`isFetching ${isFetching}`);
-              }
-            };
-
-            //当请求失败时
-            xhr.onerror = () => {
-              setIsLoginWitter(false)
-              setIsConfirm(false)
-              setIsFetching(false)
-            };
+              await fetchTweets(nextUrl);
+            } else {
+              setIsFetching(false);
+            }
+          } catch (error) {
+            console.error(error);
+            setIsLoginTwitter(false);
+            setIsConfirm(false);
+            setIsFetching(false);
           }
-
-          // 调用原始 open 方法
-          originalOpen.apply(this, arguments);
         };
 
-      }
-      // 模拟第一次请求
-      const newXhr = new XMLHttpRequest();
-      newXhr.open(method, url);
-      // 设置请求头信息
-      headers.forEach(({ name, value }) => {
-        newXhr.setRequestHeader(name, value);
-      });
-      setIsFetching(true)
-      newXhr.send(null);
+        await fetchTweets(url);
+      };
 
-    })
+      fetchBookmarks();
+    }
   }, [isConfirm]);
-
-  useEffect(() => {
-    chrome.storage.local.set({
-      [X_BOOKMARKS_STORE]: tweetList
-    });
-  }, [tweetList])
 
   return (
     <div className={clsx(styles.container, 'flex-1 w-0 flex')}>
-
       <div className='flex items-center justify-center w-6 h-full'>
         <ArrowLeftOutlined className='cursor-pointer' onClick={() => onLink(1)} />
       </div>
 
       <div className='flex-1 w-0'>
-        {!isConfirm ?
+        <div className='inline-block border rounded-sm p-2 cursor-pointer' onClick={() => {
+          setLocalStorage(X_BOOKMARKS_HEADERS, null);
+        }}>remove twitterAPI Token</div>
+
+        {!isConfirm ? (
           <div className={styles.content}>
-            {isLoginTwitter ? <>
-              <div className={styles.title}>X Bookmarks</div>
-              <p className={styles.tip}>
-                Please first go to <span className={styles.backlink} onClick={goTiwtter}>X.com</span> to log in to your account.
+            <div className={clsx(
+              styles.title,
+              'mt-4',
+            )}>X Bookmarks</div>
+
+            <p className={clsx(
+              styles.tip,
+              'flex flex-col items-center justify-center',
+              'text-xl text-slate-700'
+            )}>
+              <p className='text-center'>
+                <span>{t('please_first_log_into_your_x_account_and')}</span>
+                <span className='text-bold'>{t('open_your_bookmarks_page')} </span>
+                <p className={styles.backlink} onClick={goTwitter}>https://x.com/i/bookmarks/all</p>
               </p>
-              <Button className={styles.btn} onClick={() => {
-                setIsConfirm(true)
-              }}>I’ve Logged In. Go Get My X Bookmarks. </Button>
-            </>
-              : <div className={styles.errBox}>
-                <img src={BadIcon} alt="BadIcon" />
-                <p>Not logged into X yet. </p>
-                <p>Please try again:</p>
-                <p>Go to <a className={styles.backlink}>https://x.com</a></p>
-              </div>
-            }
+
+              <img className='mt-8' src={XGuidePNG} alt="" />
+
+              <p className='my-4'>{t('switch_back_to_this_page_and_continue')}</p>
+            </p>
+
+            {isLoginTwitter ? (
+              <Button className={clsx(
+                styles.btn,
+                'min-w-96',
+              )} onClick={() => setIsConfirm(true)}>
+                {t('continue')} {`>`}
+              </Button>
+            ) : (
+              <Button className={clsx(
+                styles.btn,
+                'min-w-96',
+              )} onClick={goTwitter}>
+                {t('to_login_x')}
+              </Button>
+            )}
           </div>
-          : <TwitterList onLink={onLink} isFetching={isFetching} list={tweetList} />
-        }
+        ) : (
+          <TwitterList onLink={onLink} isFetching={isFetching} list={tweetList} />
+        )}
       </div>
     </div>
   );

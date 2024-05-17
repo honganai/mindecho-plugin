@@ -27,9 +27,9 @@ function listenOnSendHeaders(details: any) {
     console.error(details.method, details.url, details.status, details.responseText);
     console.error('Bookmarks: Failed to parse API response', err as Error);
   }
-  chrome.webRequest.onSendHeaders.removeListener(listenOnSendHeaders);
+  // chrome.webRequest.onSendHeaders.removeListener(listenOnSendHeaders);
 }
 
-console.log(`listenOnHeadersReceived-1`);
+// console.log(`listenOnHeadersReceived-1`);
 
 chrome.webRequest.onSendHeaders.addListener(listenOnSendHeaders, { urls: ['<all_urls>'] }, ['requestHeaders']);
