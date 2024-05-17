@@ -276,7 +276,7 @@
         "description": ""
     },
     "enable_search_for_your_X_bookmarks": {
-        "message": "Activați Căutare pentru marcajele dvs. X.",
+        "message": "Activați Căutare pentru dvs",
         "description": ""
     },
     "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
@@ -337,6 +337,34 @@
     },
     "x": {
         "message": "X",
+        "description": ""
+    },
+    "to_login_x": {
+        "message": "Accesați X.com și deschideți Marcaje",
+        "description": ""
+    },
+    "please_first_log_into_your_x_account_and": {
+        "message": "1. Vă rugăm mai întâi să vă conectați la contul dvs. X și",
+        "description": ""
+    },
+    "open_bookmarks": {
+        "message": "2. Deschideți Marcaje",
+        "description": ""
+    },
+    "open_your_bookmarks_page": {
+        "message": "deschide-ți pagina Marcaje:",
+        "description": ""
+    },
+    "switch_back_to_this_page_and_continue": {
+        "message": "2. Reveniți la această pagină și continuați.",
+        "description": ""
+    },
+    "open": {
+        "message": "Deschis",
+        "description": ""
+    },
+    "continue": {
+        "message": "Continua",
         "description": ""
     }
 }

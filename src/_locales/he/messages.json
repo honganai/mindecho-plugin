@@ -276,7 +276,7 @@
         "description": ""
     },
     "enable_search_for_your_X_bookmarks": {
-        "message": "אפשר חיפוש עבור X Bookmarks שלך.",
+        "message": "הפעל את החיפוש שלך",
         "description": ""
     },
     "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
@@ -337,6 +337,34 @@
     },
     "x": {
         "message": "איקס",
+        "description": ""
+    },
+    "to_login_x": {
+        "message": "עבור אל X.com ופתח את הסימניות",
+        "description": ""
+    },
+    "please_first_log_into_your_x_account_and": {
+        "message": "1. אנא היכנס תחילה לחשבון X שלך ו",
+        "description": ""
+    },
+    "open_bookmarks": {
+        "message": "2. פתח את הסימניות",
+        "description": ""
+    },
+    "open_your_bookmarks_page": {
+        "message": "פתח את דף הסימניות שלך:",
+        "description": ""
+    },
+    "switch_back_to_this_page_and_continue": {
+        "message": "2. חזור לדף זה והמשך.",
+        "description": ""
+    },
+    "open": {
+        "message": "לִפְתוֹחַ",
+        "description": ""
+    },
+    "continue": {
+        "message": "לְהַמשִׁיך",
         "description": ""
     }
 }

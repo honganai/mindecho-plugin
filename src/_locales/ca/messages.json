@@ -276,7 +276,7 @@
         "description": ""
     },
     "enable_search_for_your_X_bookmarks": {
-        "message": "Activeu la cerca de les vostres adreces d&#39;interès X.",
+        "message": "Activa la cerca del teu",
         "description": ""
     },
     "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
@@ -337,6 +337,34 @@
     },
     "x": {
         "message": "X",
+        "description": ""
+    },
+    "to_login_x": {
+        "message": "Aneu a X.com i obriu Adreces d&#39;interès",
+        "description": ""
+    },
+    "please_first_log_into_your_x_account_and": {
+        "message": "1. Inicieu sessió primer al vostre compte X i",
+        "description": ""
+    },
+    "open_bookmarks": {
+        "message": "2. Obriu Adreces d&#39;interès",
+        "description": ""
+    },
+    "open_your_bookmarks_page": {
+        "message": "obre la teva pàgina d&#39;adreces d&#39;interès:",
+        "description": ""
+    },
+    "switch_back_to_this_page_and_continue": {
+        "message": "2. Torneu a aquesta pàgina i continueu.",
+        "description": ""
+    },
+    "open": {
+        "message": "Obert",
+        "description": ""
+    },
+    "continue": {
+        "message": "Continua",
         "description": ""
     }
 }

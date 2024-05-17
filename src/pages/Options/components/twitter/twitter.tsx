@@ -173,7 +173,7 @@ const Twitter: React.FC<Props> = ({ onLink }: Props) => {
       </div>
 
       <div className='flex-1 w-0'>
-        <div className='mr-2 mb-2 inline-block border rounded-sm p-2 cursor-pointer' onClick={() => {
+        {/*<div className='mr-2 mb-2 inline-block border rounded-sm p-2 cursor-pointer' onClick={() => {
           setLocalStorage(X_BOOKMARKS_HEADERS, null);
         }}>remove twitterAPI Token</div>
         <div className='mr-2 mb-2 inline-block border rounded-sm p-2 cursor-pointer' onClick={() => {
@@ -188,7 +188,7 @@ const Twitter: React.FC<Props> = ({ onLink }: Props) => {
           getLocalStorage(X_BOOKMARKS_STORE).then(res => {
             console.log(res);
           })
-        }}>Log Stored Tweets</div>
+        }}>Log Stored Tweets</div>*/}
 
         {!isConfirm ? (
           <div className={styles.content}>
@@ -204,7 +204,7 @@ const Twitter: React.FC<Props> = ({ onLink }: Props) => {
             )}>
               <p className='text-center'>
                 <span>{t('please_first_log_into_your_x_account_and')}</span>
-                <span className='text-bold'>{t('open_your_bookmarks_page')} </span>
+                <span className='text-bold'> {t('open_your_bookmarks_page')} </span>
                 <p className={styles.backlink} onClick={goTwitter}>https://x.com/i/bookmarks/all</p>
               </p>
 

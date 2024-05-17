@@ -276,7 +276,7 @@
         "description": ""
     },
     "enable_search_for_your_X_bookmarks": {
-        "message": "ನಿಮ್ಮ X ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳಿಗಾಗಿ ಹುಡುಕಾಟವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ.",
+        "message": "ನಿಮ್ಮ ಹುಡುಕಾಟವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ",
         "description": ""
     },
     "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
@@ -337,6 +337,34 @@
     },
     "x": {
         "message": "X",
+        "description": ""
+    },
+    "to_login_x": {
+        "message": "X.com ಗೆ ಹೋಗಿ ಮತ್ತು ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ",
+        "description": ""
+    },
+    "please_first_log_into_your_x_account_and": {
+        "message": "1. ದಯವಿಟ್ಟು ಮೊದಲು ನಿಮ್ಮ X ಖಾತೆಗೆ ಲಾಗ್ ಇನ್ ಮಾಡಿ ಮತ್ತು",
+        "description": ""
+    },
+    "open_bookmarks": {
+        "message": "2. ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ",
+        "description": ""
+    },
+    "open_your_bookmarks_page": {
+        "message": "ನಿಮ್ಮ ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳ ಪುಟವನ್ನು ತೆರೆಯಿರಿ:",
+        "description": ""
+    },
+    "switch_back_to_this_page_and_continue": {
+        "message": "2. ಈ ಪುಟಕ್ಕೆ ಹಿಂತಿರುಗಿ ಮತ್ತು ಮುಂದುವರಿಸಿ.",
+        "description": ""
+    },
+    "open": {
+        "message": "ತೆರೆಯಿರಿ",
+        "description": ""
+    },
+    "continue": {
+        "message": "ಮುಂದುವರಿಸಿ",
         "description": ""
     }
 }

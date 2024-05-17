@@ -276,7 +276,7 @@
         "description": ""
     },
     "enable_search_for_your_X_bookmarks": {
-        "message": "Aktivieren Sie die Suche nach Ihren X-Lesezeichen.",
+        "message": "Aktivieren Sie die Suche für",
         "description": ""
     },
     "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
@@ -337,6 +337,34 @@
     },
     "x": {
         "message": "X",
+        "description": ""
+    },
+    "to_login_x": {
+        "message": "Gehen Sie zu X.com und öffnen Sie Lesezeichen",
+        "description": ""
+    },
+    "please_first_log_into_your_x_account_and": {
+        "message": "1. Bitte melden Sie sich zunächst bei Ihrem X-Konto an und",
+        "description": ""
+    },
+    "open_bookmarks": {
+        "message": "2. Lesezeichen öffnen",
+        "description": ""
+    },
+    "open_your_bookmarks_page": {
+        "message": "Öffnen Sie Ihre Lesezeichenseite:",
+        "description": ""
+    },
+    "switch_back_to_this_page_and_continue": {
+        "message": "2. Wechseln Sie zurück zu dieser Seite und fahren Sie fort.",
+        "description": ""
+    },
+    "open": {
+        "message": "Offen",
+        "description": ""
+    },
+    "continue": {
+        "message": "Weitermachen",
         "description": ""
     }
 }

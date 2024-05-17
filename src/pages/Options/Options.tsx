@@ -153,7 +153,7 @@ const Options: React.FC = () => {
       note: t('only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included')
     },
     {
-      tip: t('enable_search_for_your_X_bookmarks'),
+      tip: t('enable_search_for_your_X_bookmarks')+' X Bookmarks',
     }
   ]
 

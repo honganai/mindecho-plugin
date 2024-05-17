@@ -276,7 +276,7 @@
         "description": ""
     },
     "enable_search_for_your_X_bookmarks": {
-        "message": "Enable Search for Your X Bookmarks.",
+        "message": "Enable Search for Your",
         "description": ""
     },
     "your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you": {
@@ -337,6 +337,34 @@
     },
     "x": {
         "message": "X",
+        "description": ""
+    },
+    "to_login_x": {
+        "message": "Go to X.com and open Bookmarks",
+        "description": ""
+    },
+    "please_first_log_into_your_x_account_and": {
+        "message": "1. Please first log into your X account and",
+        "description": ""
+    },
+    "open_bookmarks": {
+        "message": "2. Open Bookmarks",
+        "description": ""
+    },
+    "open_your_bookmarks_page": {
+        "message": "open your Bookmarks page:",
+        "description": ""
+    },
+    "switch_back_to_this_page_and_continue": {
+        "message": "2. Switch back to this page and continue.",
+        "description": ""
+    },
+    "open": {
+        "message": "Open",
+        "description": ""
+    },
+    "continue": {
+        "message": "Continue",
         "description": ""
     }
 }
