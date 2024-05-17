@@ -32,20 +32,20 @@ export default async function onTwitterAction() {
     console.log('activeTab', activeTab);
 
     chrome.tabs.create({
-      url: 'https://twitter.com/i/bookmarks'
+      url: 'https://x.com/i/bookmarks/all'    //https://twitter.com/i/bookmarks
     }, () => {
       function listenOnHeadersReceived(details: any) {
         if (!/\/graphql\/.+\/Bookmarks/.test(details.url)) {
           return;
         }
-      
+
         try {
           const newData = extractDataFromResponse<BookmarksResponse, Tweet>(
             details.response,
             (json) => json.data.bookmark_timeline_v2.timeline.instructions,
             (entry) => extractTimelineTweet(entry.content.itemContent),
           );
-      
+
           console.log(`Bookmarks: ${newData.length} items received`);
         } catch (err) {
           console.error(details.method, details.url, details.status, details.responseText);

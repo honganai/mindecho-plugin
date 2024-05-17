@@ -67,7 +67,7 @@ export default function TwitterList({ list, isFetching, onLink }: Props) {
     });
 
     chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: data }, (res) => {
-      console.log(res);
+      console.log('tweet upload_user_article',res,data);
 
       onLink(3)
     });

@@ -42,7 +42,7 @@ const Api = {
     }),
   //上传用户资源
   upload_user_url: ({ body, headers = {} }) => http.post('/api/v1/user_url', body, headers),
-  //上传用户打开的文章（history）
+  //上传用户打开的文章（history&xbookmark）
   upload_user_article: ({ body, headers = {} }) => http.post('/api/v1/user_article', body, headers),
   //获取用户资源
   get_user_url: ({ body, headers = {} }) => http.get(`/api/v1/user_url`, body, headers),
