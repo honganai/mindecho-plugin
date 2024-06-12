@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: pesquisa contínua de texto completo em marcadores e coleções",
+        "message": "mindECHO - Pesquisa universal de favoritos",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Pesquise e encontre conteúdo instantaneamente em seus vários favoritos e salvamentos. Obtenha respostas relevantes do seu arquivo pessoal da web.",
+        "message": "Pesquise e encontre informações instantaneamente em todos os seus favoritos e coleções de navegadores, Twitter/X, Pocket e muito mais",
         "description": ""
     },
     "signUpWithGoogle": {

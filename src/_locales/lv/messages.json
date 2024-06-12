@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: nevainojama pilna teksta meklēšana grāmatzīmēs un kolekcijās",
+        "message": "mindECHO — universālā grāmatzīmju meklēšana",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Nekavējoties meklējiet un atrodiet saturu vairākās grāmatzīmēs un saglabājumos. Saņemiet atbilstošas atbildes no sava personīgā tīmekļa arhīva.",
+        "message": "Tūlītēji meklējiet un atrodiet informāciju visās savās grāmatzīmēs un kolekcijās no pārlūkprogrammām, Twitter/X, Pocket u.c.",
         "description": ""
     },
     "signUpWithGoogle": {

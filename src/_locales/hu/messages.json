@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: szöveges keresés a könyvjelzőkben és gyűjteményekben",
+        "message": "mindECHO – Univerzális könyvjelző-keresés",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Azonnal kereshet és találhat tartalmat több könyvjelzője és mentése között. Szerezzen releváns válaszokat személyes webarchívumából.",
+        "message": "Azonnal kereshet és találhat információkat az összes könyvjelzőjében és gyűjteményében a böngészőkből, a Twitter/X-ből, a Pocketből és egyebekből",
         "description": ""
     },
     "signUpWithGoogle": {

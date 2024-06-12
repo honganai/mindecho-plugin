@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Sømløs fuldtekstsøgning i bogmærker og samlinger",
+        "message": "mindECHO - Universal bogmærkesøgning",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Søg og find øjeblikkeligt indhold på tværs af dine flere bogmærker og gemmer. Få relevante svar fra dit personlige webarkiv.",
+        "message": "Søg øjeblikkeligt og find information på tværs af alle dine bogmærker og samlinger fra browsere, Twitter/X, Pocket og mere",
         "description": ""
     },
     "signUpWithGoogle": {

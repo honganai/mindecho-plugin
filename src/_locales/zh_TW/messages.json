@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO：書籤和收藏夾中的無縫全文搜索",
+        "message": "mindECHO - 通用書籤搜尋",
         "description": ""
     },
     "pluginDescription": {
-        "message": "立即搜尋並尋找多個書籤中的內容並儲存。從您的個人網路檔案中取得相關答案。",
+        "message": "透過瀏覽器、Twitter/X、Pocket 等即時搜尋和尋找所有書籤和收藏夾中的信息",
         "description": ""
     },
     "signUpWithGoogle": {

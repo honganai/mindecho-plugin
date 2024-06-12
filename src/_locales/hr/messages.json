@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Besprijekorno pretraživanje cijelog teksta u oznakama i zbirkama",
+        "message": "mindECHO - Univerzalno pretraživanje knjižnih oznaka",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Trenutačno pretražite i pronađite sadržaj u višestrukim oznakama i spremanjima. Dobijte relevantne odgovore iz svoje osobne web arhive.",
+        "message": "Odmah pretražite i pronađite informacije u svim svojim knjižnim oznakama i zbirkama iz preglednika, Twittera/X, Pocketa itd.",
         "description": ""
     },
     "signUpWithGoogle": {

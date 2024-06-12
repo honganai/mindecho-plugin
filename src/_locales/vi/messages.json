@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Tìm kiếm toàn văn liền mạch trong Dấu trang &amp; Bộ sưu tập",
+        "message": "mindECHO - Tìm kiếm dấu trang phổ quát",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Tìm kiếm và tìm thấy nội dung ngay lập tức trên nhiều dấu trang và lưu của bạn. Nhận câu trả lời có liên quan từ kho lưu trữ web cá nhân của bạn.",
+        "message": "Tìm kiếm và tìm thông tin ngay lập tức trên tất cả dấu trang và bộ sưu tập của bạn từ trình duyệt, Twitter/X, Pocket, v.v.",
         "description": ""
     },
     "signUpWithGoogle": {

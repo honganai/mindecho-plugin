@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: brezhibno iskanje po celotnem besedilu v zaznamkih in zbirkah",
+        "message": "mindECHO - Univerzalno iskanje po zaznamkih",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Takoj poiščite in poiščite vsebino med številnimi zaznamki in shranjenimi vsebinami. Pridobite ustrezne odgovore iz svojega osebnega spletnega arhiva.",
+        "message": "Takoj poiščite in poiščite informacije v vseh svojih zaznamkih in zbirkah iz brskalnikov, Twitter/X, Pocket in drugih",
         "description": ""
     },
     "signUpWithGoogle": {

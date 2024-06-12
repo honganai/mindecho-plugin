@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Seamless Full-Text Search sa Bookmarks &amp; Collections",
+        "message": "mindECHO - Pangkalahatang Paghahanap sa Bookmark",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Agad na maghanap at maghanap ng nilalaman sa iyong maramihang mga bookmark at i-save. Kumuha ng mga kaugnay na sagot mula sa iyong personal na web archive.",
+        "message": "Agad na maghanap at maghanap ng impormasyon sa lahat ng iyong mga bookmark at koleksyon mula sa mga browser, Twitter/X, Pocket, at higit pa",
         "description": ""
     },
     "signUpWithGoogle": {

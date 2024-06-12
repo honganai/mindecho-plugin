@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: ブックマークとコレクションでのシームレスな全文検索",
+        "message": "mindECHO - ユニバーサルブックマーク検索",
         "description": ""
     },
     "pluginDescription": {
-        "message": "複数のブックマークや保存したコンテンツを瞬時に検索して見つけます。個人の Web アーカイブから関連する回答を取得します。",
+        "message": "ブラウザ、Twitter/X、Pocket などからすべてのブックマークやコレクションの情報を瞬時に検索して見つけられます",
         "description": ""
     },
     "signUpWithGoogle": {

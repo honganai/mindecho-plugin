@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Bezproblémové fulltextové vyhledávání v záložkách a sbírkách",
+        "message": "mindECHO - Univerzální vyhledávání záložek",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Okamžitě hledejte a najděte obsah ve více záložkách a uloženích. Získejte relevantní odpovědi ze svého osobního webového archivu.",
+        "message": "Okamžitě hledejte a najděte informace ve všech svých záložkách a sbírkách z prohlížečů, Twitter/X, Pocket a dalších",
         "description": ""
     },
     "signUpWithGoogle": {

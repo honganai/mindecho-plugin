@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Sömlös fulltextsökning i bokmärken och samlingar",
+        "message": "mindECHO - Universal bokmärkessökning",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Sök omedelbart och hitta innehåll i dina flera bokmärken och sparar. Få relevanta svar från ditt personliga webbarkiv.",
+        "message": "Sök direkt och hitta information över alla dina bokmärken och samlingar från webbläsare, Twitter/X, Pocket och mer",
         "description": ""
     },
     "signUpWithGoogle": {

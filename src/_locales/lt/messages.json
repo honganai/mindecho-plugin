@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: vientisa viso teksto paieška žymėse ir kolekcijose",
+        "message": "mindECHO – universali žymių paieška",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Akimirksniu ieškokite ir raskite turinį keliose žymėse ir išsaugotuose įrašuose. Gaukite atitinkamus atsakymus iš savo asmeninio žiniatinklio archyvo.",
+        "message": "Akimirksniu ieškokite ir raskite informaciją visose savo žymėse ir kolekcijose iš naršyklių, „Twitter“ / „X“, „Pocket“ ir kt.",
         "description": ""
     },
     "signUpWithGoogle": {

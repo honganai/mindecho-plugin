@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: sujuv täistekstiotsing järjehoidjatest ja kogudest",
+        "message": "mindECHO – universaalne järjehoidjate otsing",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Otsige ja leidke sisu koheselt mitme järjehoidja ja salvestuste hulgast. Hankige asjakohaseid vastuseid oma isiklikust veebiarhiivist.",
+        "message": "Otsige ja leidke kohe teavet kõigist oma järjehoidjatest ja kogudest brauserites, Twitteris/X-is, Pocketis ja mujal",
         "description": ""
     },
     "signUpWithGoogle": {

@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO:text complet a les adreces d&#39;interès i col·leccions",
+        "message": "mindECHO - Cerca universal d&#39;adreces d&#39;interès",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Cerqueu i trobeu contingut a l&#39;instant entre els vostres múltiples marcadors i desats. Obteniu respostes rellevants del vostre arxiu web personal.",
+        "message": "Cerqueu i trobeu informació a l&#39;instant a totes les vostres adreces d&#39;interès i col·leccions des de navegadors, Twitter/X, Pocket i més",
         "description": ""
     },
     "signUpWithGoogle": {

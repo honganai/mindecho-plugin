@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO:Maandishi Kamili bila Mfumo katika Alamisho na Mikusanyiko",
+        "message": "mindECHO - Utaftaji wa Alamisho kwa Wote",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Tafuta na upate maudhui papo hapo kwenye vialamisho na hifadhi zako nyingi. Pata majibu muhimu kutoka kwa kumbukumbu yako ya kibinafsi ya wavuti.",
+        "message": "Tafuta na upate taarifa papo hapo kwenye vialamisho na mikusanyiko yako yote kutoka kwa vivinjari, Twitter/X, Pocket na zaidi.",
         "description": ""
     },
     "signUpWithGoogle": {

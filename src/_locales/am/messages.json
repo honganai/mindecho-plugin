@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO፡ እንከን የለሽ የሙሉ ጽሑፍ ፍለጋ በዕልባቶች እና ስብስቦች",
+        "message": "mindECHO - ሁለንተናዊ የዕልባት ፍለጋ",
         "description": ""
     },
     "pluginDescription": {
-        "message": "በበርካታ ዕልባቶችዎ እና ቁጠባዎችዎ ላይ በፍጥነት ይፈልጉ እና ይዘቶችን ያግኙ። ተዛማጅ መልሶችን ከግል ድር ማህደርዎ ያግኙ።",
+        "message": "ወዲያውኑ ፈልጉ እና በሁሉም ዕልባቶችዎ እና ስብስቦችዎ ከአሳሾች፣ ትዊተር/ኤክስ፣ ኪስ እና ሌሎችም መረጃ ያግኙ።",
         "description": ""
     },
     "signUpWithGoogle": {

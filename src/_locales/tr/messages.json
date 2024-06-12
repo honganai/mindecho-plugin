@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Yer İmleri ve Koleksiyonlarda Sorunsuz Tam Metin Arama",
+        "message": "mindECHO - Evrensel Yer İşareti Arama",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Birden fazla yer işaretiniz ve kayıtlarınız arasında içeriği anında arayın ve bulun. Kişisel web arşivinizden ilgili yanıtları alın.",
+        "message": "Tarayıcılar, Twitter/X, Pocket ve daha fazlasındaki tüm yer işaretleriniz ve koleksiyonlarınız genelinde bilgileri anında arayın ve bulun",
         "description": ""
     },
     "signUpWithGoogle": {

@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Căutare fără întreruperi de text integral în Marcaje și colecții",
+        "message": "mindECHO - Căutare universală de marcaje",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Căutați și găsiți instantaneu conținut în mai multe marcaje și salvări. Obțineți răspunsuri relevante din arhiva dvs. web personală.",
+        "message": "Căutați și găsiți instantaneu informații în toate marcajele și colecțiile dvs. din browsere, Twitter/X, Pocket și multe altele",
         "description": ""
     },
     "signUpWithGoogle": {

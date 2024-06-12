@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO:senza soluzione di continuità nei segnalibri e nelle raccolte",
+        "message": "mindECHO - Ricerca universale dei segnalibri",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Cerca e trova istantaneamente contenuti tra i tuoi molteplici segnalibri e salvataggi. Ottieni risposte pertinenti dal tuo archivio web personale.",
+        "message": "Cerca e trova istantaneamente informazioni in tutti i tuoi segnalibri e raccolte da browser, Twitter/X, Pocket e altro ancora",
         "description": ""
     },
     "signUpWithGoogle": {

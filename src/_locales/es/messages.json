@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: búsqueda fluida de texto completo en marcadores y colecciones",
+        "message": "mindECHO - Búsqueda universal de marcadores",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Busque y encuentre contenido instantáneamente en sus múltiples marcadores y archivos guardados. Obtenga respuestas relevantes de su archivo web personal.",
+        "message": "Busque y encuentre información instantáneamente en todos sus favoritos y colecciones desde navegadores, Twitter/X, Pocket y más",
         "description": ""
     },
     "signUpWithGoogle": {

@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO:Bezproblemowe wyszukiwanie pełnotekstowe w zakładkach i kolekcjach",
+        "message": "mindECHO — uniwersalne wyszukiwanie zakładek",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Natychmiast wyszukuj i znajduj zawartość w wielu zakładkach i zapisach. Uzyskaj odpowiednie odpowiedzi ze swojego osobistego archiwum internetowego.",
+        "message": "Natychmiast wyszukuj i znajduj informacje we wszystkich swoich zakładkach i kolekcjach z przeglądarek, Twittera/X, Pocket i nie tylko",
         "description": ""
     },
     "signUpWithGoogle": {

@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO：书签和收藏中的无缝全文搜索",
+        "message": "mindECHO - 通用书签搜索",
         "description": ""
     },
     "pluginDescription": {
-        "message": "即时搜索并查找您多个书签和保存的内容。从您的个人网络档案中获取相关答案。",
+        "message": "即时搜索并查找来自浏览器、Twitter/X、Pocket 等的所有书签和收藏中的信息",
         "description": ""
     },
     "signUpWithGoogle": {

@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Saumaton koko tekstihaku kirjanmerkeistä ja kokoelmista",
+        "message": "mindECHO - yleinen kirjanmerkkihaku",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Hae ja löydä sisältöä välittömästi useista kirjanmerkeistäsi ja tallennuksistasi. Hanki asiaankuuluvat vastaukset henkilökohtaisesta verkkoarkistostasi.",
+        "message": "Hae ja löydä tietoja välittömästi kaikista kirjanmerkeistäsi ja kokoelmistasi selaimista, Twitter/X, Pocket ja paljon muuta",
         "description": ""
     },
     "signUpWithGoogle": {

@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO :texte intégral dans les signets et les collections",
+        "message": "mindECHO - Recherche universelle de signets",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Recherchez et trouvez instantanément du contenu dans vos multiples favoris et sauvegardes. Obtenez des réponses pertinentes à partir de vos archives Web personnelles.",
+        "message": "Recherchez et trouvez instantanément des informations dans tous vos favoris et collections à partir des navigateurs, Twitter/X, Pocket, etc.",
         "description": ""
     },
     "signUpWithGoogle": {

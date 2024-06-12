@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: Nahtlose Volltextsuche in Lesezeichen und Sammlungen",
+        "message": "mindECHO - Universelle Lesezeichensuche",
         "description": ""
     },
     "pluginDescription": {
-        "message": "Suchen und finden Sie sofort Inhalte in Ihren zahlreichen Lesezeichen und gespeicherten Dateien. Erhalten Sie relevante Antworten aus Ihrem persönlichen Webarchiv.",
+        "message": "Suchen und finden Sie sofort Informationen in allen Ihren Lesezeichen und Sammlungen aus Browsern, Twitter/X, Pocket und mehr",
         "description": ""
     },
     "signUpWithGoogle": {

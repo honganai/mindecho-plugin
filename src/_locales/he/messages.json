@@ -1,10 +1,10 @@
 {
     "pluginName": {
-        "message": "mindECHO: חיפוש חלק ללא טקסט מלא בסימניות ואוספים",
+        "message": "mindECHO - חיפוש סימניות אוניברסלי",
         "description": ""
     },
     "pluginDescription": {
-        "message": "חפש ומצא תוכן באופן מיידי בסימניות מרובות ושמירה. קבל תשובות רלוונטיות מארכיון האינטרנט האישי שלך.",
+        "message": "חפש ומצא מידע מיידי בכל הסימניות והאוספים שלך מדפדפנים, Twitter/X, Pocket ועוד",
         "description": ""
     },
     "signUpWithGoogle": {
