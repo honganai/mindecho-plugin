@@ -86,8 +86,9 @@ async function updatePageInfo(pageInfo) {
     chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: [info] }, (res) => {
       console.log('uploadUserArticle res:', res);
     });
-  } else {
     setPagesInfo(info);
+  } else {
+    setPagesInfo({ ...info, status: -1 });
   }
 }
 

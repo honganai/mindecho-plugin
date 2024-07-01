@@ -17,7 +17,6 @@ import './autoAdd';
 import onTwitterAction from './bookmarks/bookmarks';
 
 import './syncXRequestHeader';
-initPagesInfo();
 
 // chrome.commands.onCommand.addListener((command) => {
 //   console.log(`Command "${command}" triggered`);
@@ -71,6 +70,7 @@ export function openSettings() {
 async function handleActiveClick(tab) {
   // readigList获取示例 @王中港
   // chrome.readingList.query({}).then((res) => {
+  //   console.log('🚀 ~ chrome.readingList.query ~ res:', res);
   // });
 
   chrome.tabs.sendMessage(tab.id, { type: 'showAskModal' }, function (res) {
@@ -108,6 +108,7 @@ async function onLoginAction(message, sendResponse) {
             const loginActionUrls = [baseUrl + '/oauth-authorized/'];
             const filterUrl = _.filter(loginActionUrls, (item) => _.startsWith(details.url, item));
             // if (filterUrl.length > 0) {
+            console.log('🚀 ~ listenOnHeadersReceived ~ details.url:', details.url);
             const domainParts = url.hostname.split('.');
             const topLevelDomain = domainParts.slice(-2).join('.');
             if (details.url === baseUrl + '/') {

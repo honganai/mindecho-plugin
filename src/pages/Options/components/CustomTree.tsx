@@ -1,22 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { Tree } from 'antd';
-import { DataNode } from 'antd/lib/tree';
 import 'antd/dist/antd.css';
 import { Checkbox, CheckboxField } from '@/pages/Options/components/catalyst/checkbox'
 import { Description, Label } from '@/pages/Options/components/catalyst/fieldset'
-
 const { TreeNode } = Tree;
 const { getMessage: t } = chrome.i18n;
+import { TreeNode as TreeNodeWithOutKey } from '@/utils/treeHandler';
 
-export interface TreeDataNode extends DataNode {
-  title: string;
+export interface TreeNodeWithKey extends TreeNodeWithOutKey {
   key: string;
-  url: string;
-  children?: TreeDataNode[];
+  children?: TreeNodeWithKey[]
 }
 
 interface CustomTreeProps {
-  treeData: TreeDataNode[];
+  treeData: TreeNodeWithKey[];
   onCheck: (checkedKeys: string[], halfCheckedKeys: string[]) => void;
   checkedKeys: string[];
 }
@@ -29,16 +26,16 @@ const CustomTree: React.FC<CustomTreeProps> = ({ treeData, onCheck, checkedKeys 
     onCheck(checkedKeys, halfCheckedKeys);
   };
 
-  const renderTreeNodes = (data: TreeDataNode[]) =>
+  const renderTreeNodes = (data: TreeNodeWithKey[]) =>
     data.map((item) => {
       return (
         <TreeNode key={item.key} title={renderTitle(item)}>
-          {item.children ? renderTreeNodes(item.children) : null}
+          {item.children && renderTreeNodes(item.children)}
         </TreeNode>
       );
     });
 
-  const renderTitle = (item: TreeDataNode) => {
+  const renderTitle = (item: TreeNodeWithKey) => {
     return (
       <CheckboxField className='my-1 w-full'>
         <Checkbox
@@ -93,8 +90,8 @@ const CustomTree: React.FC<CustomTreeProps> = ({ treeData, onCheck, checkedKeys 
     return newKeys;
   };
 
-  const findNode = (data: TreeDataNode[], key: string): TreeDataNode | null => {
-    let result: TreeDataNode | null = null;
+  const findNode = (data: TreeNodeWithKey[], key: string): TreeNodeWithKey | null => {
+    let result: TreeNodeWithKey | null = null;
     for (let item of data) {
       if (item.key === key) {
         result = item;
@@ -114,7 +111,7 @@ const CustomTree: React.FC<CustomTreeProps> = ({ treeData, onCheck, checkedKeys 
     const halfCheckedKeySet = new Set<string>();
     console.log("🚀 ~ updateParentCheckState ~ halfCheckedKeySet:", halfCheckedKeySet)
 
-    const checkParent = (node: TreeDataNode) => {
+    const checkParent = (node: TreeNodeWithKey) => {
       if (node?.children?.length) {
 
         let allCount = node.children.length

@@ -48,6 +48,25 @@ export const setPagesInfo = async (info: any) => {
   chrome.storage.local.set({ [PAGES_INFO]: [...pagesInfo, { ...info, id: PAGES_INFO_ID }] });
 };
 
+export const setAllPagesInfo = async (infos: any) => {
+  let pagesInfo = await getPagesInfo();
+  pagesInfo = pagesInfo || [];
+
+  infos.forEach((info: any) => {
+    const existI = pagesInfo.findIndex(({ id = -1 }) => id === info.id);
+    if (existI >= 0) {
+      pagesInfo[existI] = info;
+    } else {
+      pagesInfo.push({
+        ...info,
+        id: pagesInfo.length,
+      });
+    }
+  });
+
+  chrome.storage.local.set({ [PAGES_INFO]: pagesInfo });
+};
+
 export const getIsLogin = () => {
   return chrome.storage.local.get(ISLOGIN).then((res) => {
     return res[ISLOGIN];

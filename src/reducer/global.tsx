@@ -61,7 +61,7 @@ export const NavigationMap: INav[] = [
     title: 'manages_sources',
     action: 'manageSources',
     icon: <Square2StackIcon />,
-    path: '/manageSources'
+    path: '/manage-sources'
   },
 ];
 

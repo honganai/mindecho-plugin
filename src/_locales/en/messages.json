@@ -434,5 +434,13 @@
   "no_name_item": {
     "message": "No Name Item",
     "description": ""
+  },
+  "public_content_from_browser_history": {
+    "message": "Public Content from Browser History",
+    "description": ""
+  },
+  "search_in_your_thousands_of_x_bookmarks": {
+    "message": "Search in your thousands of X bookmarks.",
+    "description": ""
   }
 }
