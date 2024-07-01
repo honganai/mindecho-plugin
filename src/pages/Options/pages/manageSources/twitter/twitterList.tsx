@@ -2,14 +2,13 @@ import React, { useEffect, useState } from "react";
 import { TweetItem } from "./type";
 import { Switch, Button, Checkbox, Spin, Input } from 'antd';
 import { LoadingOutlined, SearchOutlined } from '@ant-design/icons';
-import { setAutoAdd as setStorageAutoAdd, setLastUpateDataTime_pocket } from '@/constants';
-
+import { setAutoAdd as setStorageAutoAdd, setLastUpdateDataTime_pocket } from '@/constants';
+import { useNavigate } from "react-router-dom";
 import clsx from "clsx";
 import styles from './index.module.scss';
 import { X_BOOKMARKS_STORE } from "./twitter";
 
 interface Props {
-  onLink: (page: number) => void
   isFetching: boolean
   list: TweetItem[];
 }
@@ -24,7 +23,8 @@ function formatDate(date: Date) {
   return `${month}-${day}-${year}`;
 }
 
-export default function TwitterList({ list, isFetching, onLink }: Props) {
+export default function TwitterList({ list, isFetching }: Props) {
+  const navigate = useNavigate();
   const IconLoadingOutlined = <LoadingOutlined style={{ fontSize: 14 }} spin />;
   const IconSearchOutlined = <SearchOutlined style={{ fontSize: 14 }} />;
 
@@ -67,9 +67,9 @@ export default function TwitterList({ list, isFetching, onLink }: Props) {
     });
 
     chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: data }, (res) => {
-      console.log('tweet upload_user_article',res,data);
+      console.log('tweet upload_user_article', res, data);
 
-      onLink(3)
+      navigate('building')
     });
   }
 

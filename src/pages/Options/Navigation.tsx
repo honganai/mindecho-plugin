@@ -7,6 +7,23 @@ import { Bookshelf, SettingTwo } from '@icon-park/react';
 import EmailIcon from '@/assets/icons/image 32.png';
 import DiscordIcon from '@/assets/icons/image 31.png';
 
+import { Avatar } from './components/catalyst/avatar'
+import {
+  Dropdown,
+  DropdownButton,
+  DropdownItem,
+  DropdownLabel,
+  DropdownMenu,
+} from './components/catalyst/dropdown'
+import {
+  SidebarItem,
+} from './components/catalyst/sidebar'
+import {
+  ArrowRightStartOnRectangleIcon,
+  ChevronUpIcon,
+} from '@heroicons/react/16/solid'
+
+
 function VisibleSectionHighlight() {
   const { state: globalState } = useContext(GlobalContext);
   const { nav } = globalState;
@@ -51,7 +68,7 @@ function ActivePageMarker() {
 
 export function Navigation() {
   const { state: globalState, dispatch: globalDispatch } = useContext(GlobalContext);
-  const { nav } = globalState;
+  const { nav, userInfo } = globalState;
   const { getMessage: t } = chrome.i18n;
 
   if (!nav) {
@@ -143,5 +160,34 @@ export function Navigation() {
           onClick={() => window.open('https://discord.gg/xhMtr2Ynj4')}
         />
       </div>
+
+      <AnimatePresence>
+        {
+          userInfo && <div className="p-4">
+            <Dropdown>
+              <DropdownButton as={SidebarItem}>
+                <span className="flex min-w-0 items-center gap-3">
+                  <Avatar src="https://picsum.photos/200" className="size-10" square alt="" />
+                  <span className="min-w-0">
+                    <span className="block truncate text-sm/5 font-medium text-zinc-950 dark:text-white">
+                      {userInfo.username || ''}
+                    </span>
+                    <span className="block truncate text-xs/5 font-normal text-zinc-500 dark:text-zinc-400">
+                      {userInfo.email || ''}
+                    </span>
+                  </span>
+                </span>
+                <ChevronUpIcon />
+              </DropdownButton>
+              <DropdownMenu className="min-w-56" anchor="top start">
+                <DropdownItem href="/logout">
+                  <ArrowRightStartOnRectangleIcon />
+                  <DropdownLabel>Sign out</DropdownLabel>
+                </DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
+          </div>
+        }
+      </AnimatePresence>
     </div>)
 }

@@ -1,14 +1,17 @@
 import React, { useEffect, useContext, useState } from 'react';
 import dayjs from 'dayjs';
-import { Button, Input, Checkbox, Tree, Spin, message, Switch, TreeDataNode, TreeProps } from 'antd';
-import { ArrowLeftOutlined, SearchOutlined } from '@ant-design/icons';
+import { Button, Input, Checkbox, Tree, Spin, message, Switch, TreeDataNode } from 'antd';
+import { ArrowLeftOutlined, SearchOutlined, LockOutlined } from '@ant-design/icons';
+import cs from 'classnames';
 import styles from './index.module.scss';
 import _ from "lodash";
-import GlobalContext from '@/reducer/global';
-import { setHistoryAutoAdd as setStorageAutoAdd, getPagesInfo, initPagesInfo } from '@/constants';
-import DataList from '../datalist/datalist';
+import posthog from "posthog-js";
+import GlobalContext, { ActionType, IUpdateData, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
+import { setAutoAdd as setStorageAutoAdd, setLastUpdateDataTime_pocket } from '@/constants';
+import DataList from '../../../components/datalist/datalist';
+import { MAX_SIZE } from '@/utils/common.util';
 import clsx from 'clsx';
-
+import { useNavigate } from 'react-router-dom';
 export enum SubType {
   Free = 'free',
   Premium = 'premium',
@@ -25,16 +28,16 @@ interface IMergeData {
   node_index: string;
   parentId: string;
   user_used_time: string;
-  origin_info: any;
+  origin_info: IBookmarks | IHistory | IReadingList;
   status?: 1 | 0;
   selected?: boolean;
 }
 interface Props {
   userinfo?: any;
-  onLink: Function;
 }
 
-const HistoryData: React.FC<Props> = ({ onLink }) => {
+const Pocket: React.FC<Props> = () => {
+  const navigate = useNavigate();
   const { getMessage: t } = chrome.i18n;
   const { state: { titleMap: keyList }, dispatch: globalDispatch } = useContext(GlobalContext);
 
@@ -53,45 +56,27 @@ const HistoryData: React.FC<Props> = ({ onLink }) => {
   const [autoAdd, setAutoAdd] = useState<boolean>(true);
 
   const onExpand = (expandedKeysValue: React.Key[]) => {
+    // if not set autoExpandParent to false, if children expanded, parent can not collapse.
+    // or, you can remove all expanded children keys.
     setExpandedKeys(expandedKeysValue);
     setAutoExpandParent(false);
   };
 
   const onCheck = (checkedKeysValue: React.Key[], event: any) => {
     console.log('onCheck', checkedKeysValue, event);
-    const keylist = checkedKeysValue.filter((item: any) => !item.startsWith('parent-'));
-    setCheckedKeys(keylist);
-    selectChange(keylist);
+    setCheckedKeys(checkedKeysValue);
+    selectChange(checkedKeysValue);
   };
 
   const selectChange = (checkedKeysValue: React.Key[]) => {
     const allSelect = allUserUrl;
     userUrl.forEach((item) => {
-      const ischecked = checkedKeysValue.some((itemKeys: any) => itemKeys.split('-')[1] == item.id)
+      const ischecked = checkedKeysValue.some(itemKeys => itemKeys.split('-')[1] == item.id)
       allSelect[allSelect.findIndex(allSelectItem => allSelectItem.id === item.id)].selected = ischecked ? true : false;
     });
     setAllUserUrl(allSelect);
     setCheckedCount(allSelect.filter(item => item.selected).length)
   }
-
-  const onSelect: TreeProps['onSelect'] = (selectedKeysValue, info) => {
-    const { node } = info;
-    if (node.children) { return false; }
-    if (node.checked) {
-      setCheckedKeys((pre) => {
-        const newKeys = [...pre];
-        newKeys.splice(newKeys.findIndex(item => item === node.key), 1);
-        selectChange(newKeys);
-        return newKeys;
-      })
-    } else {
-      setCheckedKeys((pre) => {
-        const newKeys = [...pre, node.key];
-        selectChange(newKeys);
-        return newKeys;
-      })
-    }
-  };
 
   useEffect(() => {
     //初始默认勾选自动更新
@@ -102,21 +87,30 @@ const HistoryData: React.FC<Props> = ({ onLink }) => {
     getUserUrl()
   }, [searchWord]);
 
-  const getUserUrl = async () => {
-    let pagesInfo = await getPagesInfo();
-    if (searchWord.trim()) {
-      pagesInfo = _.filter(pagesInfo, (item) => item.title.includes(searchWord));
-    }
+  const getUserUrl = () => {
     setLoading(true);
-    parsingData(pagesInfo || []);
+    chrome.runtime.sendMessage({ type: 'request', api: 'get_user_url', body: { page: 1, page_size: MAX_SIZE, title: searchWord, type: 'pocket' } }, (res) => {
+      console.log('🚀 ~ pocket -获取用户上传数据- line:240: ', res);
+      parsingData(res?.result || [])
+      // if (res?.result?.length > 0) {
+      //   parsingData(res?.result)
+      // } else {
+      //   message.error(noDataFoundI18N);
+      //   setLoading(false);
+      // }
+    });
   }
 
   const parsingData = (data: any) => {
+    // const pockets = data.filter((item: any) => item.type === 'pocket');
+    const pockets = data;
     const reusltData: Array<TreeDataNode> = [];
     let reusltDataMap = {} as any;
+
     const currentCheckeds: string[] = [];
-    const hasSelected = data.some((item: any) => item.status > 0);
-    data.forEach((item: any) => {
+    const hasSelected = pockets.some((item: any) => item.status > 0);
+
+    pockets?.forEach((item: any) => {
       item.selected = false;
       initialData(item.type, reusltData, reusltDataMap);
 
@@ -134,10 +128,11 @@ const HistoryData: React.FC<Props> = ({ onLink }) => {
     onExpand([reusltData[0]?.key])
 
     if (initial) {
-      setAllUserUrl(data);
+      setAllUserUrl(pockets);
       setCheckedCount(currentCheckeds.length);
+      setInitial(false);
     }
-    setUserUrl(data);
+    setUserUrl(pockets);
     setCheckedKeys(currentCheckeds);
 
     setLoading(false);
@@ -156,18 +151,18 @@ const HistoryData: React.FC<Props> = ({ onLink }) => {
   }
 
   const onImport = () => {
-    const data = allUserUrl.filter((item) => {
-      return item.selected;
+    const data = allUserUrl.map((item) => {
+      return {
+        url: item.url,
+        status: item.selected ? 1 : 0,
+      }
     })
-    uploadUserArticle(data);
-    onLink(3)
-  }
-
-  const uploadUserArticle = (data: Array<IMergeData>) => {
-    chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: data }, (res) => {
-      console.log('uploadUserArticle res:', res);
-      initPagesInfo();
+    globalDispatch({
+      type: ActionType.SetUpdateData,
+      payload: data as Array<IUpdateData> || [],
     });
+    setLastUpdateDataTime_pocket(new Date().getTime());
+    navigate('building')
   }
 
   const isChecked = (key: string | number) => {
@@ -179,42 +174,70 @@ const HistoryData: React.FC<Props> = ({ onLink }) => {
     const searchText = e.target.value;
     if (searchText.trim() !== searchWord) {
       setSearchWord(e.target.value)
-      setInitial(false)
     }
   }
+
+  const titleRender = (nodeData: any) => {
+    if (nodeData.url) {
+      return (
+        <div className={styles.items}>
+          <p className={styles['title']}>{nodeData.title}</p>
+          <p className={styles['url']}>{nodeData.url}</p>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <span style={{ marginLeft: 8 }}>{nodeData.title}</span>
+        </div>
+      );
+    }
+  };
 
   return (
     <div className={clsx(
       styles.container,
-      `flex-1 w-0`
+      'flex-1 w-0 h-full overflow-auto'
     )}>
       <div className={styles['content']}>
         <div className={styles['left']}>
-          <div className={styles['back']} onClick={() => onLink(2)}>
+          <div className={styles['back']} onClick={() => navigate('/')}>
             <ArrowLeftOutlined />
           </div>
         </div>
         <div className={styles['center']}>
           <div className={styles['header']}>
-            <p>{t('public_knowledge_pages_from_browsing_history')}</p>
+            <p><span style={{ color: '#e94554' }}>Pocket</span> {t('saves')}</p>
           </div>
           <div className={styles['control-box']}>
             <Input className={styles['search']} placeholder={t('find_items_by_keywords')} prefix={<SearchOutlined />} onPressEnter={searchKeyWord} />
             <Checkbox className={styles['select']} onChange={onChange}>{t('select_deselect_all_shown')}</Checkbox>
           </div>
           <Spin spinning={loading} tip={t('loading')} style={{ background: '#fff' }}>
+            {/* <div className={styles['list-box']}>
+              <Tree
+                className={styles.treeList}
+                checkable
+                onExpand={onExpand}
+                expandedKeys={expandedKeys}
+                autoExpandParent={autoExpandParent}
+                onCheck={onCheck}
+                checkedKeys={checkedKeys}
+                treeData={treeData}
+                titleRender={titleRender}
+              />
+            </div> */}
             <DataList
               checkable
               onExpand={onExpand}
               expandedKeys={expandedKeys}
               autoExpandParent={autoExpandParent}
               onCheck={onCheck}
-              onSelect={onSelect}
               checkedKeys={checkedKeys}
               treeData={treeData} />
           </Spin>
 
-          <p>* {t('current_URL_list_is_local_only_until_you_authorize_data_collection')}</p>
+          <p style={{ textAlign: 'right' }}><LockOutlined /> {t('secure_connection')}</p>
         </div>
         <div className={styles['right']}>
           <Button className={styles['import-btn']} size="middle" type="primary" block onClick={onImport}>
@@ -225,11 +248,10 @@ const HistoryData: React.FC<Props> = ({ onLink }) => {
             <Switch checked={autoAdd} onChange={onChange} />
             <span>{t('auto_add_new_items')}</span>
           </p>
-          <p onClick={() => onLink(3, true)} className={styles['exclude-tip']}>{t('skip_this_step')}</p>
         </div>
       </div>
     </div>
   );
 };
 
-export default HistoryData;
+export default Pocket;

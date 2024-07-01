@@ -36,8 +36,6 @@ interface IContent {
 }
 
 const MarkdownContent: React.FC<IProps> = ({ markdownStream = '', refresh }) => {
-  console.log('🚀  ~ markdownStream:', markdownStream);
-
   const [data, setData] = useState<IContent[]>([]);
   const [copyStatus, setCopyStatus] = useState(false);
   const { getMessage: t } = chrome.i18n;
@@ -48,7 +46,6 @@ const MarkdownContent: React.FC<IProps> = ({ markdownStream = '', refresh }) => 
   const parseMd = (mdStr: string) => {
     const container = document.createElement('div');
     container.innerHTML = md.render(mdStr); // 先把md转成html
-    console.log('🚀 ~ parseMd ~ container.innerHTML:', container.innerHTML);
 
     const contents: IContent[] = []; // 段落数组
 

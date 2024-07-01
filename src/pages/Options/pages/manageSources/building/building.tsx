@@ -12,18 +12,18 @@ import cs from 'classnames';
 import clsx from 'clsx';
 
 interface IProp {
-  type:
+  type?:
   'xbookmark' |
   'browser' |
   'pocket' |
   ''
-  status: boolean;
+  status?: boolean;
 }
 
 const Building: React.FC<IProp> = ({ type = 'browser', status = false }) => {
 
   const { getMessage: t } = chrome.i18n;
-  const { state: { upateData, }, dispatch: globalDispatch } = useContext(GlobalContext);
+  const { state: { updateData, }, dispatch: globalDispatch } = useContext(GlobalContext);
   const [done, setDone] = useState(false);
   const [waitTime, setWaitTime] = useState(null as any);
   const MIN_TIMEOUT = 5; //最小等待时间
@@ -35,10 +35,10 @@ const Building: React.FC<IProp> = ({ type = 'browser', status = false }) => {
   }
 
   useEffect(() => {
-    if (_.isArray(upateData) && upateData.length > 0) {
+    if (_.isArray(updateData) && updateData.length > 0) {
       upateUserUrl();
     }
-  }, [upateData]);
+  }, [updateData]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -48,7 +48,7 @@ const Building: React.FC<IProp> = ({ type = 'browser', status = false }) => {
   }, [waitTime]);
 
   const upateUserUrl = () => {
-    chrome.runtime.sendMessage({ type: 'request', api: 'update_user_url', body: upateData }, (res) => {
+    chrome.runtime.sendMessage({ type: 'request', api: 'update_user_url', body: updateData }, (res) => {
       console.log('upateUserUrl res:', res);
       setWaitTime(0);
     });

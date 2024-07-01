@@ -1,5 +1,13 @@
 import React from 'react';
 import { UserInfo } from '@/types';
+import {
+  Cog6ToothIcon,
+  HomeIcon,
+  QuestionMarkCircleIcon,
+  SparklesIcon,
+  Square2StackIcon,
+  TicketIcon,
+} from '@heroicons/react/20/solid'
 
 export const ContentTypeMap: { [key: string]: string } = {
   bookmark: 'bookmarks',
@@ -34,33 +42,30 @@ export enum enumSubscribeModalType {
   Premium,
   Elite,
 }
-// export interface IPageInfo {
-//   title: String;
-//   url: String;
-//   type: "history";
-//   user_create_time: String;
-//   node_id: 0;
-//   node_index: 0;
-//   parentId: 0;
-//   user_used_time: String;
-//   origin_info: any;
-//   author: String;
-//   content: String;
-//   status: 3;
-// }
 
 export interface INav {
   title: string;
   action: string;
-  icon: string
+  icon: JSX.Element;
+  path: string
 }
 
 export const NavigationMap: INav[] = [
-  { title: 'collection', action: 'collection', icon: 'collection' },
-  { title: 'manages_sources', action: 'manageSources', icon: '' },
+  {
+    title: 'collection',
+    action: 'collection',
+    icon: <HomeIcon />,
+    path: '/collection'
+  },
+  {
+    title: 'manages_sources',
+    action: 'manageSources',
+    icon: <Square2StackIcon />,
+    path: '/manageSources'
+  },
 ];
 
-export interface IUpateData {
+export interface IUpdateData {
   url: string;
   status: 1 | 0;
 }
@@ -100,7 +105,7 @@ export interface ITitleMap {
 export interface IState {
   titleMap: ITitleMap;
   /** 等待更新的数据 */
-  upateData?: Array<IUpateData>;
+  updateData?: Array<IUpdateData>;
   /** 历史记录 */
   history?: Array<IHistory>;
   /** 标签列表 */
@@ -131,7 +136,7 @@ export interface IState {
   // historyPage?: Array<IPageInfo> | [];
   // historyId: number;
   // nav
-  nav: string;
+  nav?: string;
 }
 
 export enum ActionType {
@@ -139,7 +144,7 @@ export enum ActionType {
   /** 设置upateData */
   SetTitleMap = 'SET_TITLEMAP',
   /** 设置upateData */
-  SetUpateData = 'SET_UPATEDATA',
+  SetUpdateData = 'SET_UPATEDATA',
   /** 设置history */
   SetHistory = 'SET_HISTORY',
   /** 设置bookmarks */
@@ -163,7 +168,7 @@ export enum ActionType {
 }
 
 export type IAction =
-  ISetUpateData
+  ISetUpdateData
   | ISetHistory
   | ISetBookMarks
   | ISetReadingList
@@ -206,9 +211,9 @@ export interface ISetIsLogin {
   payload: boolean;
 }
 
-export interface ISetUpateData {
-  type: ActionType.SetUpateData;
-  payload: Array<IUpateData>;
+export interface ISetUpdateData {
+  type: ActionType.SetUpdateData;
+  payload: Array<IUpdateData>;
 }
 export interface ISetHistory {
   type: ActionType.SetHistory;
@@ -287,10 +292,10 @@ export function reducer(state: IState, action: IAction): IState {
         isLogin: action.payload,
       };
 
-    case ActionType.SetUpateData:
+    case ActionType.SetUpdateData:
       return {
         ...state,
-        upateData: action.payload,
+        updateData: action.payload,
       };
 
     case ActionType.SetHistory:

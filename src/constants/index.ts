@@ -28,59 +28,61 @@ export const LAST_UPATE_DATA_TIME_POCKET = 'last_upate_data_time_pocket';
 export const ISLOGIN = 'isLogin';
 /** 暂存当前打开的页面info */
 export const PAGES_INFO = 'pages_info';
+/** 暂存当前打开的页面info */
+export const IS_NOT_FIRST_TIME_USE = 'is__not_first_time_use';
 
 export const initPagesInfo = () => {
   return chrome.storage.local.set({ [PAGES_INFO]: [] });
-}
+};
 
 export const getPagesInfo = () => {
   return chrome.storage.local.get(PAGES_INFO).then((res) => {
     return res[PAGES_INFO];
   });
-}
+};
 
 export const setPagesInfo = async (info: any) => {
   let pagesInfo = await getPagesInfo();
   pagesInfo = pagesInfo || [];
   const PAGES_INFO_ID = pagesInfo.length;
-  chrome.storage.local.set({ [PAGES_INFO]: [...pagesInfo, {...info, id: PAGES_INFO_ID}] });
+  chrome.storage.local.set({ [PAGES_INFO]: [...pagesInfo, { ...info, id: PAGES_INFO_ID }] });
 };
 
 export const getIsLogin = () => {
   return chrome.storage.local.get(ISLOGIN).then((res) => {
     return res[ISLOGIN];
   });
-}
+};
 
 export const setIsLogin = (status: boolean) => {
   return chrome.storage.local.set({ [ISLOGIN]: status });
-}
+};
 
 export const getUserInfo = () => {
   return chrome.storage.local.get(USERINFO).then((res) => {
     return res[USERINFO];
   });
-}
+};
 
 export const setUserInfo = (info: any) => {
   return chrome.storage.local.set({ [USERINFO]: info });
-}
+};
 
-export const setLastUpateDataTime = (time: number) => {
+export const setLastUpdateDataTime = (time: number) => {
   chrome.storage.local.set({ [LAST_UPATE_DATA_TIME]: time });
 };
 
-export const getLastUpateDataTime = () => {
+export const getLastUpdateDataTime = () => {
   return chrome.storage.local.get(LAST_UPATE_DATA_TIME).then((res) => {
     return res[LAST_UPATE_DATA_TIME];
   });
 };
 
-export const setLastUpateDataTime_pocket = (time: number) => {
+export const setLastUpdateDataTime_pocket = (time: number) => {
   chrome.storage.local.set({ [LAST_UPATE_DATA_TIME_POCKET]: time });
 };
 
-export const getLastUpateDataTime_pocket = () => {
+export const getLastUpdateDataTime_pocket = () => {
   return chrome.storage.local.get(LAST_UPATE_DATA_TIME_POCKET).then((res) => {
     return res[LAST_UPATE_DATA_TIME];
   });
@@ -145,7 +147,6 @@ export const setDragPosition = (pos: { x: number; y: number }) => {
 /** 禁用某个url */
 export const setDisablePage = (url: string) => {
   chrome.storage.local.get(DISABLE_PAGES_KEY).then((res) => {
-    console.log('🚀 ~ file: index.ts:11 ~ chrome.storage.local.get ~ res:', res);
     const urls = res[DISABLE_PAGES_KEY]?.urls || [];
     if (urls.indexOf(url) < 0) {
       urls.push(url);
@@ -157,7 +158,6 @@ export const setDisablePage = (url: string) => {
 /** 禁用某个域名 */
 export const setDisableSite = (site: string) => {
   chrome.storage.local.get(DISABLE_SITES_KEY).then((res) => {
-    console.log('🚀 ~ file: index.ts:11 ~ chrome.storage.local.get ~ res:', res);
     const sites = res[DISABLE_SITES_KEY]?.sites || [];
     if (sites.indexOf(site) < 0) {
       sites.push(site);
@@ -175,17 +175,14 @@ export const setDisableAll = () => {
 export const isDisable = async () => {
   // 这里用Promise.reject会弹出报错，用return false，然后再.then里判断true/false
   const disableAll = await chrome.storage.local.get(DISABLE_ALL_KEY);
-  console.log('🚀 ~ file: index.ts:40 ~ isDisable ~ disableAll:', disableAll);
   if (disableAll[DISABLE_ALL_KEY]?.disable === true) {
     return false;
   }
   const disableSites = await chrome.storage.local.get(DISABLE_SITES_KEY);
-  console.log('🚀 ~ file: index.ts:45 ~ isDisable ~ disableSites:', disableSites);
   if ((disableSites[DISABLE_SITES_KEY]?.sites || []).includes(window.location.host)) {
     return false;
   }
   const disableUrls = await chrome.storage.local.get(DISABLE_PAGES_KEY);
-  console.log('🚀 ~ file: index.ts:50 ~ isDisable ~ disableUrls:', disableUrls);
   if ((disableUrls[DISABLE_PAGES_KEY]?.urls || []).includes(window.location.href)) {
     return false;
   }

@@ -2,18 +2,18 @@
 import dayjs from 'dayjs';
 import Api from './api';
 import { MAX_SIZE } from '@/utils/common.util';
-import { getUserInfo, getLastUpateDataTime, setLastUpateDataTime, getLastUpateDataTime_pocket, setLastUpateDataTime_pocket } from '@/constants';
+import { getUserInfo, getLastUpdateDataTime, setLastUpdateDataTime, getLastUpdateDataTime_pocket, setLastUpdateDataTime_pocket } from '@/constants';
 
 const startAutoAdd = async () => {
     //如果没有登录，不执行
     const userInfo = await getUserInfo();
     if (!userInfo) return false;
-    const promise1 = getLastUpateDataTime();
-    const promise2 = getLastUpateDataTime_pocket();
-    const lastUpateDataTime = await promise1;
-    const lastUpateDataTime_pocket = await promise2;
+    const promise1 = getLastUpdateDataTime();
+    const promise2 = getLastUpdateDataTime_pocket();
+    const lastUpdateDataTime = await promise1;
+    const lastUpdateDataTime_pocket = await promise2;
     //@koman 暂时隐藏掉history
-    //const history = await getHistory(lastUpateDataTime);
+    //const history = await getHistory(lastUpdateDataTime);
     const bookmarks = await getBookmarks();
     const readinglist = await getReadingList();
     const pocket = await getPocket();
@@ -21,7 +21,7 @@ const startAutoAdd = async () => {
     const data = [];
     //@koman 暂时隐藏掉history
     // history?.forEach((item) => {
-    //     if (item.lastVisitTime > lastUpateDataTime) {
+    //     if (item.lastVisitTime > lastUpdateDataTime) {
     //         data.push({
     //             title: item.title,
     //             url: item.url,
@@ -37,7 +37,7 @@ const startAutoAdd = async () => {
     //     }
     // });
     readinglist?.forEach((item) => {
-        if (item.creationTime > lastUpateDataTime) {
+        if (item.creationTime > lastUpdateDataTime) {
             data.push({
                 title: item.title,
                 url: item.url,
@@ -54,7 +54,7 @@ const startAutoAdd = async () => {
     });
 
     bookmarks?.forEach((item) => {
-        if (item.dateAdded > lastUpateDataTime) {
+        if (item.dateAdded > lastUpdateDataTime) {
             data.push({
                 title: item.title,
                 url: item.url,
@@ -71,7 +71,7 @@ const startAutoAdd = async () => {
     });
 
     pocket?.forEach((item) => {
-        if (item.user_create_time > lastUpateDataTime_pocket) {
+        if (item.user_create_time > lastUpdateDataTime_pocket) {
             data.push({
                 title: item.title,
                 url: item.url,
@@ -86,8 +86,8 @@ const startAutoAdd = async () => {
             });
         }
     });
-    setLastUpateDataTime(new Date().getTime());
-    setLastUpateDataTime_pocket(new Date().getTime());
+    setLastUpdateDataTime(new Date().getTime());
+    setLastUpdateDataTime_pocket(new Date().getTime());
 
     (data.length > 0 || pocket.length > 0) && uploadUserUrl([...data, ...pocket]);
 }

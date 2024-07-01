@@ -9,9 +9,8 @@ import { TweetResultsResult, TweetItem, TwitterResult, XBookmarkHeaders } from '
 import { ArrowLeftOutlined } from '@ant-design/icons';
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 import { getLocalStorage, setLocalStorage } from './storage';
-
+import { useNavigate } from 'react-router-dom';
 interface Props {
-  onLink: (page: number) => void;
 }
 
 const TWEET_TYPES = [
@@ -23,7 +22,8 @@ const SEPARATOR = " https://t.co/";
 export const X_BOOKMARKS_STORE = `XBookmarkStore`;
 const X_BOOKMARKS_HEADERS = `XBookmarkHeaders`;
 
-const Twitter: React.FC<Props> = ({ onLink }: Props) => {
+const Twitter: React.FC<Props> = ({ }: Props) => {
+  const navigate = useNavigate();
   const { getMessage: t } = chrome.i18n;
   const [isLoginTwitter, setIsLoginTwitter] = useState(false);
   const [isConfirm, setIsConfirm] = useState(false);
@@ -169,7 +169,7 @@ const Twitter: React.FC<Props> = ({ onLink }: Props) => {
   return (
     <div className={clsx(styles.container, 'flex-1 w-0 flex')}>
       <div className='flex items-center justify-center w-6 h-full'>
-        <ArrowLeftOutlined className='cursor-pointer' onClick={() => onLink(1)} />
+        <ArrowLeftOutlined className='cursor-pointer' onClick={() => navigate('/')} />
       </div>
 
       <div className='flex-1 w-0'>
@@ -216,7 +216,7 @@ const Twitter: React.FC<Props> = ({ onLink }: Props) => {
             )}
           </div>
         ) : (
-          <TwitterList onLink={onLink} isFetching={isFetching} list={tweetList} />
+          <TwitterList isFetching={isFetching} list={tweetList} />
         )}
       </div>
     </div >

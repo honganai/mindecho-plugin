@@ -11,7 +11,6 @@ import './content.styles.css';
 // 如果content已加载，不再重复加载
 if (!window.contentLoaded) {
   window.contentLoaded = true;
-  console.log('🚀 indexFlat.js -[mindecho-sidebar-flat] init- line:11');
 
   init();
 }

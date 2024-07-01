@@ -1,13 +1,12 @@
 import React, { useState, useContext, Component } from "react";
 import clsx from 'clsx';
 import { motion, AnimatePresence } from "framer-motion";
-import { FullScreenLoading } from "../FullScreenLoading";
+import { FullScreenLoading } from "../../components/user/FullScreenLoading";
 import { Pagination, Tooltip } from "antd";
 import { CheckCircleOutlined, EllipsisOutlined, ExclamationOutlined } from '@ant-design/icons';
 const { getMessage: t } = chrome.i18n;
 import GlobalContext, { ActionType as GlobalActionType } from "@/reducer/global";
-
-import { CollectionsHeaderTabSwitcher } from '@/pages/Options/components/user/collections/headerTabSwitcher';
+import { CollectionsHeaderTabSwitcher } from '@/pages/Options/pages/collections/headerTabSwitcher';
 function formatDateObject(date: Date) {
   const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
   const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -93,7 +92,6 @@ export function Collections() {
   }
 
   return <div className={clsx(`h-full relative flex flex-col px-4`)}>
-
     <CollectionsHeaderTabSwitcher
       currentContentType={currentContentType}
       onTypeChange={setCurrentContentType}

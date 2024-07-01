@@ -5,9 +5,9 @@ import _ from "lodash";
 import GlobalContext, { ActionType, IBookmarks, IHistory, IReadingList, NavigationMap } from '@/reducer/global';
 import { motion, AnimatePresence } from "framer-motion";
 import { FullScreenLoading } from './FullScreenLoading';
-import { ManagesSources } from './managesSources';
-import { Collections } from './collections';
-
+import ManagesSources from '../../pages/manageSources';
+import { Collections } from '../../pages/collections';
+import { useNavigate } from 'react-router-dom';
 export enum SubType {
   Free = 'free',
   Premium = 'premium',
@@ -25,11 +25,9 @@ interface IMergeData {
   user_used_time: string;
   origin_info: IBookmarks | IHistory | IReadingList;
 }
-interface Props {
-  onLink: Function;
-}
 
-const User: React.FC<Props> = ({ onLink }: Props) => {
+const User: React.FC = () => {
+  const navigate = useNavigate();
   const { getMessage: t } = chrome.i18n;
   const [spinning, setSpinning] = React.useState<boolean>(true);
   const { state: { history, bookmarks, readinglist, isLogin, nav }, dispatch: globalDispatch } = useContext(GlobalContext);
@@ -156,19 +154,14 @@ const User: React.FC<Props> = ({ onLink }: Props) => {
 
   const components = {
     [NavigationMap[0].action]: <Collections />,
-    [NavigationMap[1].action]: <ManagesSources onLink={onLink} />,
+    [NavigationMap[1].action]: <ManagesSources />,
   };
 
-  const Component = components[nav];
+  const Component = components[nav || NavigationMap[0].action]; // Use a default value if `nav` is undefined
 
-  return (
-    <div className='flex-1 w-0 h-full overflow-auto'>
-      {spinning
-        ? <FullScreenLoading />
-        : <>{Component}</>
-      }
-    </div>
-  );
+  return spinning
+    ? <FullScreenLoading />
+    : Component
 };
 
 export default User;

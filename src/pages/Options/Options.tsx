@@ -1,13 +1,7 @@
 import React, { useEffect, useReducer, useState } from 'react';
 import './Options.css';
 import { ConfigProvider, message, Spin } from 'antd';
-import User, { SubType } from './components/user/User';
 import Login from './components/login/Login';
-import BrowserData from './components/browserData/browserData';
-import HistoryData from './components/historyData/historyData';
-import Building from './components/building/building';
-import Pocket from './components/pocketData/pocket';
-import Twitter from './components/twitter/twitter';
 import { UserInfo, UserType } from '@/types';
 import GlobalContext, {
   reducer as GlobalReducer,
@@ -16,19 +10,27 @@ import GlobalContext, {
 } from '../../reducer/global';
 import _ from 'lodash';
 // import styles from './Options.module.scss';
-import { getIsLogin } from '@/constants';
 import ModalContent from '../Content/App';
 import { handleLogin } from '@/utils/common.util';
 import clsx from 'clsx';
 import { FullScreenLoading } from './components/user/FullScreenLoading';
+import ManagesSources from '@/pages/Options/pages/manageSources';
 import { motion, AnimatePresence } from "framer-motion";
-import Header from './components/header/header';
-import { Navigation } from './Navigation';
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+  Navigate
+} from 'react-router-dom';
+import { ApplicationLayout } from './Layout';
+import { Collections } from './pages/collections';
 
-interface ILinkProps {
-  page: number;
-  status?: false
-}
+import BrowserData from '@/pages/Options/pages/manageSources/browserData/browserData';
+import HistoryData from '@/pages/Options/pages/manageSources/historyData/historyData';
+import Building from '@/pages/Options/pages/manageSources/building/building';
+import Pocket from '@/pages/Options/pages/manageSources/pocketData/pocket';
+import Twitter from '@/pages/Options/pages/manageSources/twitter/twitter';
+
 
 const Options: React.FC = () => {
   const [buildStatus, setBuildStatus] = useState(false);
@@ -36,7 +38,7 @@ const Options: React.FC = () => {
   const [stepPage, setStepPage] = useState(1);
   const [userinfo, setUserinfo] = useState<UserInfo>();
   const [isLogin, setIsLogin] = useState<boolean>(false);
-  const [gloablState, globalDispatch] = useReducer(GlobalReducer, {
+  const [globalState, globalDispatch] = useReducer(GlobalReducer, {
     titleMap: {
       bookmark: 'Bookmarks',
       readinglist: 'Reading List',
@@ -108,6 +110,8 @@ const Options: React.FC = () => {
   }
 
   useEffect(() => {
+    localStorage.theme = 'light'
+
     setLoading(true);
     handleLogin(
       (res: any) => {
@@ -140,76 +144,55 @@ const Options: React.FC = () => {
     );
   }, [userinfo?.id]);
 
-  const headerNoticeMap = [
-
-    {
-      tip: t('how_about_we_begin_by_choosing_the_treasure_trove_of_information_you_d_like_to_explore_again')
-    },
-    {
-      tip: t('select_content_to_be_made_searchable'),
-    },
-    {
-      tip: t('enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization'),
-    },
-    {
-      tip: t('connect_to_pocket_to_revive_your_dusty_stash'),
-    },
-    {
-      tip: t('enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization'),
-      note: t('only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included')
-    },
-    {
-      tip: t('enable_search_for_your_X_bookmarks') + ' X Bookmarks',
-    }
-  ]
-
-
-  const { nav } = gloablState;
+  const { nav } = globalState;
   useEffect(() => { nav === 'collection' && setStepPage(1) }, [nav])
 
   return (
-    <GlobalContext.Provider
-      value={{
-        state: gloablState,
-        dispatch: globalDispatch,
-      }}>
-      <div className={clsx(`bg-white`)}>
-        <ConfigProvider>
+    <Router>
+      <GlobalContext.Provider
+        value={{
+          state: globalState,
+          dispatch: globalDispatch,
+        }}>
+        <div className={clsx(`bg-white`)}>
+          <ConfigProvider>
+            <AnimatePresence>
+              {loading ? <FullScreenLoading />
+                : !isLogin ? (
+                  <>
+                    <Login onLogin={toLogin} />
+                  </>
+                ) : (
 
-          <AnimatePresence>
-            <div className='w-full h-screen flex flex-col'>
-              {
-                isLogin &&
-                <div className='p-4' >
-                  <Header tip={(headerNoticeMap[stepPage - 1].tip || '')} note={headerNoticeMap[stepPage - 1].note || ''} />
-                </div>
-              }
+                  <ApplicationLayout>
+                    <Routes>
+                      <Route path='' element={<Navigate to="/collection" />} />
+                      <Route path='/collection' element={<Collections />} />
+                      <Route path='/manage-sources'>
+                        <Route path='' element={<ManagesSources />}></Route>
+                        <Route path='browser-data' element={<BrowserData />} />
+                        <Route path='history-data' element={<HistoryData />} />
+                        <Route path='building' element={<Building />} />
+                        <Route path='pocket' element={<Pocket />} />
+                        <Route path='twitter' element={<Twitter />} />
+                      </Route>
+                    </Routes>
 
-              <div className='flex-1 h-0 flex'>
-                {loading ? <FullScreenLoading />
-                  : !isLogin ? (
-                    <>
-                      <Login onLogin={toLogin} />
-                    </>
-                  ) : (
-                    <>
-                      <Navigation />
+                    {/* {stepPage === 1 ? <User onLink={(page: number) => { setStepPage(page) }} /> :
+                          stepPage === 2 ? <BrowserData onLink={(page: number, status = false) => { setStepPage(page); setBuildType('browser'); setBuildStatus(status) }} /> :
+                            stepPage === 5 ? <HistoryData onLink={(page: number, status = false) => { setStepPage(page); setBuildType('browser'); setBuildStatus(status) }} /> :
+                              stepPage === 3 ? <Building type={buildType} status={buildStatus} /> :
+                                stepPage === 4 ? <Pocket onLink={(page: number) => { setStepPage(page); setBuildType('pocket') }} /> :
+                                  stepPage === 6 ? <Twitter onLink={(page: number) => { setStepPage(page), setBuildType('xbookmark') }} /> : null} */}
 
-                      {stepPage === 1 ? <User onLink={(page: number) => { setStepPage(page) }} /> :
-                        stepPage === 2 ? <BrowserData onLink={(page: number, status = false) => { setStepPage(page); setBuildType('browser'); setBuildStatus(status) }} /> :
-                          stepPage === 5 ? <HistoryData onLink={(page: number, status = false) => { setStepPage(page); setBuildType('browser'); setBuildStatus(status) }} /> :
-                            stepPage === 3 ? <Building type={buildType} status={buildStatus} /> :
-                              stepPage === 4 ? <Pocket onLink={(page: number) => { setStepPage(page); setBuildType('pocket') }} /> :
-                                stepPage === 6 ? <Twitter onLink={(page: number) => { setStepPage(page), setBuildType('xbookmark') }} /> : null}
-                      <ModalContent type="options" />
-                    </>
-                  )}
-              </div>
-            </div>
-          </AnimatePresence>
-        </ConfigProvider>
-      </div>
-    </GlobalContext.Provider >
+                    <ModalContent type="options" />
+                  </ApplicationLayout>
+                )}
+            </AnimatePresence>
+          </ConfigProvider>
+        </div>
+      </GlobalContext.Provider >
+    </Router >
   )
 };
 
