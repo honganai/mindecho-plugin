@@ -16,6 +16,7 @@ import { Checkbox, CheckboxField } from '@/pages/Options/components/catalyst/che
 import { Label } from '@/pages/Options/components/catalyst/fieldset'
 import { Button } from '@/pages/Options/components/catalyst/button'
 import { Input } from '@/pages/Options/components/catalyst/input'
+import Header from '@/pages/Options/components/header/header';
 
 interface Props {
 }
@@ -177,7 +178,10 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
 
         chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: data }, (res) => {
           console.log("🚀 ~ chrome.runtime.sendMessage ~ res:", res)
-          setStep(Step.Done);
+
+          setTimeout(() => {
+            setStep(Step.Done)
+          }, 1000 * 60)
         });
 
         chrome.storage.local.set({
@@ -218,9 +222,7 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
     <div className={clsx(
       'flex flex-col h-full',
     )}>
-      <div className="font-bold text-lg text-black">X {t('bookmarks')}</div>
-      <div className="mt-2">{t('search_in_your_thousands_of_x_bookmarks')}</div>
-
+      <Header />
       <div className=''>
         {
           step === Step.Confirm && <ConfirmStatus

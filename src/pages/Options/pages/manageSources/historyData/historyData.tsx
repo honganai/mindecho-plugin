@@ -1,7 +1,7 @@
 import React, { useEffect, useContext, useState } from 'react';
-import _, { isEqual } from "lodash";
+import _, { isEqual, isNull } from "lodash";
 import GlobalContext, { ActionType, IUpdateData, IBookmarks } from '@/reducer/global';
-import { setAutoAdd as setStorageAutoAdd, initPagesInfo, getPagesInfo, setPagesInfo, setAllPagesInfo } from '@/constants';
+import { setAutoAdd as setStorageAutoAdd, getAutoAdd as getStorageAutoAdd, getPagesInfo, setPagesInfo, setAllPagesInfo } from '@/constants';
 import { MAX_SIZE } from '@/utils/common.util';
 import clsx from 'clsx';
 import { useNavigate } from 'react-router-dom';
@@ -15,6 +15,7 @@ import CustomTree, { TreeNodeWithKey } from '@/pages/Options/components/CustomTr
 import { TreeNode as BaseTreeNode } from '@/utils/treeHandler';
 import DoneStatus from '@/pages/Options/components/DoneStatus';
 import FetchingStatus from '@/pages/Options/components/FetchingStatus';
+import Header from '@/pages/Options/components/header/header';
 
 enum Step {
   Checking,
@@ -48,29 +49,29 @@ const BrowserData: React.FC<{
   const [treeData, setTreeData] = useState<BaseTreeNode[]>([]);
   const [checkedKeys, setCheckedKeys] = useState<string[]>([]);
   const [searchKeyword, setSearchKeyword] = useState<string>('');
-  const [autoAdd, setAutoAdd] = useState<boolean>(true);
+  const [autoAdd, setAutoAdd] = useState<boolean | null>(null);
   const [fetchingTree, setFetchingTree] = useState<boolean>(true);
   const [step, setStep] = useState<Step>(Step.Checking);
 
-  useEffect(() => {
-    setStorageAutoAdd(autoAdd);
-  }, [autoAdd])
+  useEffect(() => { !isNull(autoAdd) && setStorageAutoAdd(autoAdd) }, [autoAdd])
 
   useEffect(() => {
-    if (treeData.length === 0) return;
-    if (searchKeyword.trim() === '') return
+    getStorageAutoAdd().then((res) => setAutoAdd(res))
+  }, [])
 
-    setFlattenData(flattenData.filter(item => item.title && item.title.includes(searchKeyword)))
-  }, [searchKeyword]);
-
-  useEffect(() => {
-    setTreeData([{
-      key: 'root',
-      title: 'root',
-      id: '0',
-      children: flattenData
-    }])
-  }, [flattenData])
+  useEffect(() => setTreeData([{
+    key: 'root',
+    title: 'root',
+    id: '0',
+    children:
+      searchKeyword.trim() === ''
+        ? flattenData
+        : flattenData.filter(
+          item =>
+            (item.title && item.title.includes(searchKeyword))
+            || item.url && item.url.includes(searchKeyword)
+        )
+  }]), [flattenData, searchKeyword])
 
   useEffect(() => {
     switch (step) {
@@ -84,8 +85,6 @@ const BrowserData: React.FC<{
           setFlattenData(uniqueHistory)
         }).finally(() => setFetchingTree(false));
 
-        // initPagesInfo()
-        setStorageAutoAdd(autoAdd);
         break;
       case Step.Uploading:
 
@@ -128,8 +127,12 @@ const BrowserData: React.FC<{
               status: 3,
             }))
           }, async (res) => {
+            console.log("🚀 ~ getPagesInfo ~ res:", res)
             await setAllPagesInfo(payloadBody.map(item => ({ ...item, status: 3 })))
-            setStep(Step.Done)
+
+            setTimeout(() => {
+              setStep(Step.Done)
+            }, 1000 * 60)
           });
         })
 
@@ -146,11 +149,7 @@ const BrowserData: React.FC<{
   return (<div className={clsx(
     'flex flex-col h-full',
   )}>
-    <div className="font-bold text-lg text-black">{t('public_content_from_browser_history')}</div>
-    <div className="mt-2">{t('enable_full_text_search_in_browsing_history_to_eliminate_the_need_for_memorization')}</div>
-    <div className="text-gray-700">
-      <span className="font-bold text-gray-950">{t('Note')}</span>
-      {t('only_URLs_of_public_articles_blogs_and_essay_PDFs_can_be_included_personal_and_work_related_history_are_NOT_included')}</div>
+    <Header />
 
     {
       step === Step.Checking
@@ -201,7 +200,7 @@ const BrowserData: React.FC<{
           <CheckboxField className=''>
             <Checkbox
               onChange={(e) => setAutoAdd(e)}
-              checked={autoAdd}
+              checked={!!autoAdd}
             />
             <Label>
               {t('automatically_import_new_items_in_bookmarks_and_reading_list')}

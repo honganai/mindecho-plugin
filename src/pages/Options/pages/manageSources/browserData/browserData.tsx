@@ -1,7 +1,7 @@
 import React, { useEffect, useContext, useState } from 'react';
-import _, { isEqual } from "lodash";
+import _, { isEqual, isNull } from "lodash";
 import GlobalContext, { ActionType, IUpdateData, IBookmarks } from '@/reducer/global';
-import { setAutoAdd as setStorageAutoAdd, setLastUpdateDataTime } from '@/constants';
+import { setAutoAdd as setStorageAutoAdd, getAutoAdd as getStorageAutoAdd, setLastUpdateDataTime } from '@/constants';
 import { MAX_SIZE } from '@/utils/common.util';
 import clsx from 'clsx';
 import { useNavigate } from 'react-router-dom';
@@ -15,6 +15,7 @@ import CustomTree, { TreeNodeWithKey } from '@/pages/Options/components/CustomTr
 import { TreeNode as BaseTreeNode } from '@/utils/treeHandler';
 import DoneStatus from '@/pages/Options/components/DoneStatus';
 import FetchingStatus from '@/pages/Options/components/FetchingStatus';
+import Header from '@/pages/Options/components/header/header';
 
 const dayjs = require('dayjs');
 const { getMessage: t } = chrome.i18n;
@@ -60,24 +61,25 @@ const BrowserData: React.FC<{
   const [treeData, setTreeData] = useState<BaseTreeNode[]>([]);
   const [checkedKeys, setCheckedKeys] = useState<string[]>([]);
   const [searchKeyword, setSearchKeyword] = useState<string>('');
-  const [autoAdd, setAutoAdd] = useState<boolean>(true);
+  const [autoAdd, setAutoAdd] = useState<boolean | null>(null);
   const [fetchingTree, setFetchingTree] = useState<boolean>(true);
-  const [step, setStep] = useState<Step>(Step.Checking);
+  const [step, setStep] = useState<Step>(Step.Done);
 
   useEffect(() => {
-    setStorageAutoAdd(autoAdd);
-  }, [autoAdd])
+    getStorageAutoAdd().then((res) => setAutoAdd(res))
+  }, [])
 
-  useEffect(() => setStep(Step.Checking), [])
+  useEffect(() => { !isNull(autoAdd) && setStorageAutoAdd(autoAdd) }, [autoAdd])
 
-  useEffect(() => {
-    if (treeData.length === 0) return;
-    if (searchKeyword.trim() === '') return
-
-    setFlattenData(flattenData.filter(item => item.title && item.title.includes(searchKeyword)))
-  }, [searchKeyword]);
-
-  useEffect(() => setTreeData(buildTree(flattenData)), [flattenData])
+  useEffect(() => setTreeData(searchKeyword.trim() === ''
+    ? buildTree(flattenData)[0]?.children || []
+    : flattenData
+      .filter(
+        item =>
+          (item.title && item.title.includes(searchKeyword))
+          || item.url && item.url.includes(searchKeyword)
+      )
+  ), [flattenData, searchKeyword])
 
   useEffect(() => {
     switch (step) {
@@ -96,19 +98,8 @@ const BrowserData: React.FC<{
               .filter(({ key = '' }) => key)
               .map(({ key = '' }) => key) || [])
           }).finally(() => setFetchingTree(false));
-
-
-        setStorageAutoAdd(autoAdd);
         break;
       case Step.Uploading:
-        const data = checkedKeys.map((item) => {
-          const checkOne = flattenData.find(({ key }) => key === item)
-          return {
-            status: 1,
-            url: checkOne?.url,
-          }
-        })
-
         const payloadBody = flattenData
           .filter(({ url }) => url)
           .map((item) => {
@@ -131,7 +122,9 @@ const BrowserData: React.FC<{
           body: payloadBody
         }).then((res) => {
           setLastUpdateDataTime(new Date().getTime());
-          setStep(Step.Done)
+          setTimeout(() => {
+            setStep(Step.Done)
+          }, 1000 * 60)
         });
 
         break;
@@ -147,8 +140,8 @@ const BrowserData: React.FC<{
   return (<div className={clsx(
     'flex flex-col h-full',
   )}>
-    <div className="font-bold text-lg text-black">{t('bookMarks_reading_lists')}</div>
-    <div className="mt-2">{t('automatically_public_articles_news_blogs_and_essays_from_current_open_tabs')}</div>
+    {step !== Step.Done && <Header />}
+
     {
       step === Step.Checking
       && <>
@@ -184,11 +177,11 @@ const BrowserData: React.FC<{
           {
             fetchingTree
               ? <div className="text-center">{t('loading')}</div>
-              : (treeData?.[0]?.children ?? []).length ?
+              : treeData.length ?
                 <CustomTree
                   checkedKeys={checkedKeys}
                   onCheck={(newCheckedKeys) => !isEqual(newCheckedKeys, checkedKeys) && setCheckedKeys(newCheckedKeys)}
-                  treeData={(treeData[0].children || []) as TreeNodeWithKey[]}
+                  treeData={(treeData || []) as TreeNodeWithKey[]}
                 />
                 : <div className="text-center">{t('no_data_available')}</div>
           }
@@ -198,7 +191,7 @@ const BrowserData: React.FC<{
           <CheckboxField className=''>
             <Checkbox
               onChange={(e) => setAutoAdd(e)}
-              checked={autoAdd}
+              checked={!!autoAdd}
             />
             <Label>{t('automatically_import_new_items_in_bookmarks_and_reading_list')}</Label>
           </CheckboxField>

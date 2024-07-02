@@ -1,7 +1,8 @@
 import clsx from "clsx"
 import React from "react"
-import { Button } from 'antd';
+import { Button } from '@/pages/Options/components/catalyst/button'
 import XGuidePNG from '@/assets/icons/CleanShot 2024-05-17 at 13.45 1.png';
+import { useNavigate } from 'react-router-dom';
 
 const goTwitter = () => {
   chrome.runtime.sendMessage({ type: 'twitter' }, (res) => {
@@ -13,41 +14,51 @@ const { getMessage: t } = chrome.i18n;
 const Component = ({ isLoginTwitter, nextStep }: {
   isLoginTwitter: boolean, nextStep: () => void
 }) => {
+  const navigate = useNavigate();
+
   return <div>
     <div className={clsx(
-      'mt-4',
-    )}>X Bookmarks</div>
-
-    <p className={clsx(
-      'flex flex-col items-center justify-center',
-      'text-xl text-slate-700'
+      `grid grid-cols-1 gap-x-6 gap-y-10 pt-10 lg:grid-cols-3`
     )}>
-      <p className='w-full'>
-        <span className='pl-10'>{t('please_first_log_into_your_x_account_and')}</span>
-        <span className='text-bold'>{t('open_your_bookmarks_page')} </span>
+
+      <div className="text-2xl font-semibold leading-9 tracking-tight text-slate-900">
+        {t('open_x_bookmarks_page')}
+      </div>
+
+      <div className=" text-lg leading-8 col-span-2">
+        <p className='text-bold'>{t('please_first_log_into_x_com_and_open_your_bookmarks_page')} </p>
         <p className={clsx(
-          'text-center'
+          'cursor-pointer text-violet-500 '
         )} onClick={goTwitter}>https://x.com/i/bookmarks/all</p>
-      </p>
+        <img className='mt-8' src={XGuidePNG} alt="" />
+      </div>
+    </div>
 
-      <img className='mt-8' src={XGuidePNG} alt="" />
+    <div className={clsx(
+      `grid grid-cols-1 gap-x-6 gap-y-10 pt-10 lg:grid-cols-3`
+    )}>
 
-      <p className='w-full pl-10 my-4'>{t('switch_back_to_this_page_and_continue')}</p>
-    </p>
+      <div className="text-2xl font-semibold leading-9 tracking-tight text-slate-900">
+        <div>{t('switch_back_to_this_page_and_continue')}</div>
 
-    {isLoginTwitter ? (
-      <Button className={clsx(
-        'min-w-96',
-      )} onClick={nextStep}>
-        {t('continue')} {`>`}
-      </Button>
-    ) : (
-      <Button className={clsx(
-        'min-w-96',
-      )} onClick={goTwitter}>
-        {t('to_login_x')}
-      </Button>
-    )}
+        <div className="mt-4 leading-8">
+          <Button className="mr-4" outline onClick={() => navigate('/manage-sources')}>
+            {t('cancel')}
+          </Button>
+
+          {isLoginTwitter ? (
+            <Button onClick={nextStep}>
+              {t('continue')} {`>`}
+            </Button>
+          ) : (
+            <Button onClick={goTwitter}>
+              {t('to_login_x')}
+            </Button>
+          )}
+        </div>
+      </div>
+    </div>
+
   </div>
 }
 

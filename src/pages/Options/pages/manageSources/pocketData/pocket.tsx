@@ -7,7 +7,7 @@ import styles from './index.module.scss';
 import _ from "lodash";
 import posthog from "posthog-js";
 import GlobalContext, { ActionType, IUpdateData, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
-import { setAutoAdd as setStorageAutoAdd, setLastUpdateDataTime_pocket } from '@/constants';
+import { setAutoAdd as setStorageAutoAdd, getAutoAdd as getStorageAutoAdd, setLastUpdateDataTime_pocket } from '@/constants';
 import DataList from '../../../components/datalist/datalist';
 import { MAX_SIZE } from '@/utils/common.util';
 import clsx from 'clsx';

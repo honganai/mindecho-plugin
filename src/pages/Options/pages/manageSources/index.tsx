@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import clsx from 'clsx';
 import pocketSourceIcon from '@/assets/icons/pocket_source_icon.png';
 import XIcon from '@/assets/icons/image 28.png';
@@ -10,11 +10,14 @@ import logo from '@/assets/icons/logo.png';
 import { IS_NOT_FIRST_TIME_USE } from '@/constants';
 import { Badge } from '@/pages/Options/components/catalyst/badge'
 import { useNavigate } from "react-router-dom";
+import GlobalContext from '@/reducer/global';
 
 const Page = () => {
   const navigate = useNavigate();
   const { getMessage: t } = chrome.i18n;
-  const [isOpenFirstTimeModal, setIsOpenFirstTimeModal] = useState(true)
+  const [isOpenFirstTimeModal, setIsOpenFirstTimeModal] = useState(false)
+  const { state: globalState } = useContext(GlobalContext);
+  const { userInfo } = globalState;
 
   useEffect(() => {
     chrome.storage.local.get(IS_NOT_FIRST_TIME_USE).then((res) => {
@@ -32,33 +35,42 @@ const Page = () => {
     handleClick: (() => void) | null,
     isSynching: boolean
   }): JSX.Element => {
-    return <li className="mb-4">
-      <div className="flex items-center justify-between gap-4">
-        <div className="flex gap-6 py-3 w-0 flex-1">
-          <div className="flex items-center justify-center w-32 h-32 shrink-0 size-10/12 rounded-lg shadow">
-            {img}
-          </div>
-          <div className="space-y-1.5">
-            <div className="text-base/6 font-semibold">
-              {title}
+    return <div className="py-2 last:border-0 border-b border-gray-100">
+      <div
+        className=" transition-all px-3 hover hover:bg-gray-50 hover:shadow-sm rounded-md cursor-pointer"
+        onClick={() => isFunction(handleClick) && handleClick()}
+      >
+        <div className="flex items-center justify-between gap-4">
+          <div className="flex gap-6 py-3 w-0 flex-1">
+            <div className="flex items-center justify-center w-32 h-32 shrink-0 size-10/12 rounded-lg shadow">
+              {img}
             </div>
-            <div className="text-xs/6 text-zinc-500">
-              {subTitle}
+            <div className="space-y-1.5">
+              <div className="text-base/6 font-semibold">
+                {title}
+              </div>
+              <div className="text-xs/6 text-zinc-500">
+                {subTitle}
+              </div>
             </div>
           </div>
-        </div>
-        <div className="flex items-center gap-4">
-          <Badge onClick={() => isFunction(handleClick) && handleClick()} className="!text-base !font-medium" color={isSynching ? 'lime' : 'zinc'}>
-            {isSynching ? t('synching') : t('not_imported')}
-          </Badge>
+          <div className="flex items-center gap-4">
+            <Badge className="!text-base !font-medium" color={isSynching ? 'lime' : 'zinc'}>
+              {isSynching ? t('synching') : t('not_imported')}
+            </Badge>
+          </div>
         </div>
       </div>
-    </li>
+    </div>
   }
 
   return (
-    <div className={clsx(`relative flex flex-col px-4 pl-4`)}>
-      <ul>
+    <div className={clsx(`relative flex flex-col`)}>
+      <div className="font-bold text-xl text-gray-600 mb-4 mt-2">{
+        `${t('Hello')}, ${userInfo?.username}`
+      }</div>
+
+      <div className='flex flex-col'>
         {[
           {
             img: <img className="h-10" src={GoogleIcon} alt="google" />,
@@ -112,7 +124,7 @@ const Page = () => {
             isSynching={card.isSynching}
           />
         ))}
-      </ul>
+      </div>
 
       <Dialog size='xl' open={isOpenFirstTimeModal} onClose={setIsOpenFirstTimeModal}>
         <div className="flex items-center justify-center flex-col">

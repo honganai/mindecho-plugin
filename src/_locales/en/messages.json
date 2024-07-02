@@ -442,5 +442,49 @@
   "search_in_your_thousands_of_x_bookmarks": {
     "message": "Search in your thousands of X bookmarks.",
     "description": ""
+  },
+  "open_x_bookmarks_page": {
+    "message": "Open X Bookmarks page",
+    "description": ""
+  },
+  "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+    "message": "Please first log into x.com and open your Bookmarks page ",
+    "description": ""
+  },
+  "fetching_urls": {
+    "message": "Fetching URLs",
+    "description": ""
+  },
+  "source_management": {
+    "message": "Source Management",
+    "description": ""
+  },
+  "how_to_search": {
+    "message": "How to Search",
+    "description": ""
+  },
+  "data_indexing_may_still_take_a_while": {
+    "message": "Data Indexing may still take a while.",
+    "description": ""
+  },
+  "you_can_call_up_the_mindecho_search_box_any_time": {
+    "message": "You can call up the mindECHO Search Box any time",
+    "description": ""
+  },
+  "on_any_tab_other_than_the_new_tab_tab": {
+    "message": "on any tab (other than the “new tab” tab)",
+    "description": ""
+  },
+  "try_now": {
+    "message": "Try Now",
+    "description": ""
+  },
+  "use_keyboard_shortcut": {
+    "message": "Use Keyboard Shortcut",
+    "description": ""
+  },
+  "pin_browser_extension_icon_above":{
+    "message": "Pin Browser Extension Icon above",
+    "description": ""
   }
 }
