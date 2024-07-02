@@ -149,7 +149,7 @@ const BrowserData: React.FC<{
   return (<div className={clsx(
     'flex flex-col h-full',
   )}>
-    <Header />
+    {step !== Step.Done && <Header />}
 
     {
       step === Step.Checking

@@ -63,7 +63,7 @@ const BrowserData: React.FC<{
   const [searchKeyword, setSearchKeyword] = useState<string>('');
   const [autoAdd, setAutoAdd] = useState<boolean | null>(null);
   const [fetchingTree, setFetchingTree] = useState<boolean>(true);
-  const [step, setStep] = useState<Step>(Step.Done);
+  const [step, setStep] = useState<Step>(Step.Checking);
 
   useEffect(() => {
     getStorageAutoAdd().then((res) => setAutoAdd(res))

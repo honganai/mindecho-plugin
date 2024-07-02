@@ -222,7 +222,8 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
     <div className={clsx(
       'flex flex-col h-full',
     )}>
-      <Header />
+      {step !== Step.Done && <Header />}
+
       <div className=''>
         {
           step === Step.Confirm && <ConfirmStatus
