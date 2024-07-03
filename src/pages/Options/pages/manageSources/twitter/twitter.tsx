@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import _, { isEqual } from "lodash";
+import _, { isEqual, isNull } from "lodash";
 import clsx from 'clsx';
 import { useNavigate } from 'react-router-dom';
 import { TweetResultsResult, TweetItem, TwitterResult, XBookmarkHeaders } from './type';
@@ -8,7 +8,7 @@ import { getLocalStorage, setLocalStorage } from './storage';
 import ConfirmStatus from './ConfirmStatus';
 import { TreeNode as BaseTreeNode, convertXBookmarkToTree, generateKey } from '@/utils/treeHandler';
 import CustomTree, { TreeNodeWithKey } from '@/pages/Options/components/CustomTree';
-
+import { setTwitterAutoAdd as setStorageAutoAdd, getTwitterAutoAdd as getStorageAutoAdd } from '@/constants';
 import DoneStatus from '@/pages/Options/components/DoneStatus';
 import FetchingStatus from '@/pages/Options/components/FetchingStatus';
 
@@ -53,11 +53,18 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
   const [timer, setTimer] = useState<NodeJS.Timeout>();
   const [step, setStep] = useState<Step>(Step.Confirm);
   const [searchKeyword, setSearchKeyword] = useState<string>('');
+  const [autoAdd, setAutoAdd] = useState<boolean | null>(null);
 
   const [flattenData, setFlattenData] = useState<BaseTreeNode[]>([]);
   const [treeData, setTreeData] = useState<BaseTreeNode[]>([]);
   const [checkedKeys, setCheckedKeys] = useState<string[]>([]);
   const [fetchingTree, setFetchingTree] = useState<boolean>(true);
+
+  useEffect(() => { !isNull(autoAdd) && setStorageAutoAdd(autoAdd) }, [autoAdd])
+
+  useEffect(() => {
+    getStorageAutoAdd().then((res) => setAutoAdd(res))
+  }, [])
 
   useEffect(() => {
     switch (step) {
@@ -100,39 +107,32 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
               });
 
               const newTweets =
-                convertXBookmarkToTree(filteredEntries.map((item) => {
-                  if (item
-                    && item.content
-                    && item.content.itemContent
-                    && item.content.itemContent.tweet_results.result
-                  ) {
-                    const result = item.content.itemContent.tweet_results.result?.tweet
-                      || item.content.itemContent.tweet_results.result;
+                convertXBookmarkToTree(filteredEntries.filter(item =>
+                  item?.content?.itemContent?.tweet_results?.result?.tweet
+                  || item?.content?.itemContent?.tweet_results?.result
+                ).map((item) => {
+                  const result = (
+                    item?.content?.itemContent?.tweet_results?.result?.tweet
+                    ||
+                    item?.content?.itemContent?.tweet_results?.result
+                  ) as TweetResultsResult;
 
-                    try {
-                      return {
-                        id: item.entryId,
-                        title: result.legacy.full_text.split(SEPARATOR)[0],
-                        url: `https://twitter.com/x/status/${result.rest_id}`,
-                        type: "xbookmark",
-                        user_create_time: result.legacy.created_at || '',
-                        node_id: "0",
-                        node_index: "0",
-                        parentId: "0",
-                        user_used_time: result.legacy.created_at || "",
-                        origin_info: "",
-                        author: result.core.user_results.result.legacy.name || '',
-                        content: result.legacy.full_text || '',
-                        status: "1",
-                      };
-                    } catch (error) {
-                      console.log(error);
-                    }
-
-                    return null
-                  }
-                  return null;
-                }) as TweetItem[])
+                  return {
+                    id: item.entryId,
+                    title: result.legacy.full_text.split(SEPARATOR)[0],
+                    url: `https://twitter.com/x/status/${result.rest_id}`,
+                    type: "xbookmark",
+                    user_create_time: new Date(result.legacy.created_at),
+                    user_used_time: new Date(result.legacy.created_at),
+                    node_id: "0",
+                    node_index: "0",
+                    parentId: "0",
+                    origin_info: "",
+                    author: result.core.user_results.result.legacy.name || '',
+                    content: result.legacy.full_text || '',
+                    status: "1",
+                  };
+                }))
 
               setCheckedKeys((prev) => {
                 return [...prev, ...newTweets.map(({ key = '' }) => key)]
@@ -177,8 +177,6 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
         const data = flattenData.filter(({ key = '', isUpdate = false }) => checkedKeys.includes(key) && !isUpdate)
 
         chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: data }, (res) => {
-          console.log("🚀 ~ chrome.runtime.sendMessage ~ res:", res)
-
           setTimeout(() => {
             setStep(Step.Done)
           }, 1000 * 60)
@@ -275,7 +273,18 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
               }
             </div>
 
-            <div className="flex items-center justify-end mt-4">
+            <div className="flex items-center justify-between mt-4">
+
+              <CheckboxField className=''>
+                <Checkbox
+                  onChange={(e) => setAutoAdd(e)}
+                  checked={!!autoAdd}
+                />
+                <Label>
+                  {t('automatically_import_new_items_in_bookmarks_and_reading_list')}
+                </Label>
+              </CheckboxField>
+
               <div className='flex'>
                 <Button outline onClick={() => navigate('/manage-sources')}>
                   {t('cancel')}

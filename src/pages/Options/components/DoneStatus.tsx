@@ -52,7 +52,6 @@ const Component = () => {
           <img width={358} height={265} src={IllustrationImage} alt="" />
         </div>
       </div>
-
     </div>
   </div>
 }

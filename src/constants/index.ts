@@ -18,6 +18,8 @@ export const EXTENSION_UPDATED = 'mindecho-extension-updated';
 export const AUTO_ADD = 'mindecho-auto-add';
 /** 是否勾选了history自动更新 */
 export const HISTORY_AUTO_ADD = 'mindecho-history-auto-add';
+/** 是否勾选了history自动更新 */
+export const TWITTER_AUTO_ADD = 'mindecho-twitter-auto-add';
 /** 储存userInfo */
 export const USERINFO = 'userInfo';
 /** 记录bookmark、readinglist、history上一次更新数据日期 */
@@ -133,6 +135,16 @@ export const setHistoryAutoAdd = (status: boolean = true) => {
 
 export const getHistoryAutoAdd = () => {
   return chrome.storage.local.get(HISTORY_AUTO_ADD).then((res) => {
+    return res[HISTORY_AUTO_ADD];
+  });
+};
+
+export const setTwitterAutoAdd = (status: boolean = true) => {
+  chrome.storage.local.set({ [TWITTER_AUTO_ADD]: status });
+};
+
+export const getTwitterAutoAdd = () => {
+  return chrome.storage.local.get(TWITTER_AUTO_ADD).then((res) => {
     return res[HISTORY_AUTO_ADD];
   });
 };

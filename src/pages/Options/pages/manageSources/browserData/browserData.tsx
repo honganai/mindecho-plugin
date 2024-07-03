@@ -59,6 +59,7 @@ const BrowserData: React.FC<{
   const navigate = useNavigate();
   const [flattenData, setFlattenData] = useState<BaseTreeNode[]>([]);
   const [treeData, setTreeData] = useState<BaseTreeNode[]>([]);
+  const [disabledKeys, setDisabledKeys] = useState<string[]>([]);
   const [checkedKeys, setCheckedKeys] = useState<string[]>([]);
   const [searchKeyword, setSearchKeyword] = useState<string>('');
   const [autoAdd, setAutoAdd] = useState<boolean | null>(null);
@@ -88,15 +89,22 @@ const BrowserData: React.FC<{
           .then(([chromeBookMark, userBookMark]) => {
             const convertedChromeBookmarks = convertChromeBookmarkToTree(chromeBookMark)
             const flattenChromeBookmarks = flattenTree(convertedChromeBookmarks)
-            const mergeBookmarks = _.unionBy(
-              generateKey(flattenChromeBookmarks),
-              generateKey(userBookMark),
+
+            const chromeBookmarksWithKey = generateKey(flattenChromeBookmarks)
+            const userBookMarkWithKey = generateKey(userBookMark) as { key: string }[] & IBookmarks[]
+
+            setFlattenData(_.unionBy(
+              chromeBookmarksWithKey,
+              userBookMarkWithKey,
               'key'
-            );
-            setFlattenData(mergeBookmarks)
-            setCheckedKeys(mergeBookmarks
+            ))
+
+            const uploadedKeys = userBookMarkWithKey
               .filter(({ key = '' }) => key)
-              .map(({ key = '' }) => key) || [])
+              .map(({ key = '' }) => key) || []
+
+            setCheckedKeys([...uploadedKeys, ...autoAdd ? userBookMarkWithKey.map(({ key }) => key) : []])
+            setDisabledKeys(uploadedKeys)
           }).finally(() => setFetchingTree(false));
         break;
       case Step.Uploading:
@@ -136,6 +144,15 @@ const BrowserData: React.FC<{
     }
   }, [step])
 
+  const [importCount, setImportCount] = useState(0)
+  useEffect(() => {
+    setImportCount(checkedKeys
+      .filter(key =>
+        !disabledKeys.includes(key)
+        &&
+        flattenData.find(({ key: k }) => k === key)?.url
+      ).length)
+  }, [checkedKeys, disabledKeys, flattenData])
 
   return (<div className={clsx(
     'flex flex-col h-full',
@@ -179,6 +196,7 @@ const BrowserData: React.FC<{
               ? <div className="text-center">{t('loading')}</div>
               : treeData.length ?
                 <CustomTree
+                  disabledKeys={disabledKeys}
                   checkedKeys={checkedKeys}
                   onCheck={(newCheckedKeys) => !isEqual(newCheckedKeys, checkedKeys) && setCheckedKeys(newCheckedKeys)}
                   treeData={(treeData || []) as TreeNodeWithKey[]}
@@ -201,11 +219,11 @@ const BrowserData: React.FC<{
               {t('cancel')}
             </Button>
             <Button
-              disabled={!checkedKeys.length}
+              disabled={!importCount}
               className='ml-4'
-              onClick={() => checkedKeys.length && setStep(Step.Uploading)}
+              onClick={() => importCount && setStep(Step.Uploading)}
             >
-              {`${t('import')} ${checkedKeys.length} ${t('selected_urls')}`}
+              {`${t('import')} ${importCount} ${t('selected_urls')}`}
             </Button>
           </div>
         </div>

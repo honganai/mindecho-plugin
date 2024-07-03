@@ -11,14 +11,14 @@ export interface TreeNodeWithKey extends TreeNodeWithOutKey {
   key: string;
   children?: TreeNodeWithKey[]
 }
-
 interface CustomTreeProps {
   treeData: TreeNodeWithKey[];
   onCheck: (checkedKeys: string[], halfCheckedKeys: string[]) => void;
   checkedKeys: string[];
+  disabledKeys?: string[];
 }
 
-const CustomTree: React.FC<CustomTreeProps> = ({ treeData, onCheck, checkedKeys }) => {
+const CustomTree: React.FC<CustomTreeProps> = ({ treeData, onCheck, checkedKeys, disabledKeys = [] }) => {
   const [halfCheckedKeys, setHalfCheckedKeys] = useState<string[]>([]);
 
   const handleCheck = (checkedKeys: string[], halfCheckedKeys: string[]) => {
@@ -39,7 +39,12 @@ const CustomTree: React.FC<CustomTreeProps> = ({ treeData, onCheck, checkedKeys 
     return (
       <CheckboxField className='my-1 w-full'>
         <Checkbox
-          checked={checkedKeys.includes(item.key) || halfCheckedKeys.includes(item.key)}
+          disabled={disabledKeys.includes(item.key)}
+          checked={
+            disabledKeys.includes(item.key)
+            || checkedKeys.includes(item.key)
+            || halfCheckedKeys.includes(item.key)
+          }
           indeterminate={halfCheckedKeys.includes(item.key)}
           onChange={(checked: Boolean) => onCheckBoxChange(checked, item.key)}
         />
@@ -107,9 +112,7 @@ const CustomTree: React.FC<CustomTreeProps> = ({ treeData, onCheck, checkedKeys 
 
   const updateParentCheckState = (checkedKeys: string[]) => {
     const checkedKeySet = new Set(checkedKeys);
-    console.log("🚀 ~ updateParentCheckState ~ checkedKeys:", checkedKeys)
     const halfCheckedKeySet = new Set<string>();
-    console.log("🚀 ~ updateParentCheckState ~ halfCheckedKeySet:", halfCheckedKeySet)
 
     const checkParent = (node: TreeNodeWithKey) => {
       if (node?.children?.length) {

@@ -47,6 +47,7 @@ export interface TweetResults {
 }
 
 export interface TweetResultsResult {
+  tweet?: TweetResultsResult;
   __typename: string;
   rest_id: string;
   core: PurpleCore;

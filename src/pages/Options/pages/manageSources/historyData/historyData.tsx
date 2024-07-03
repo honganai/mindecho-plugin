@@ -1,7 +1,7 @@
 import React, { useEffect, useContext, useState } from 'react';
 import _, { isEqual, isNull } from "lodash";
 import GlobalContext, { ActionType, IUpdateData, IBookmarks } from '@/reducer/global';
-import { setAutoAdd as setStorageAutoAdd, getAutoAdd as getStorageAutoAdd, getPagesInfo, setPagesInfo, setAllPagesInfo } from '@/constants';
+import { setHistoryAutoAdd as setStorageAutoAdd, getHistoryAutoAdd as getStorageAutoAdd, getPagesInfo, setPagesInfo, setAllPagesInfo } from '@/constants';
 import { MAX_SIZE } from '@/utils/common.util';
 import clsx from 'clsx';
 import { useNavigate } from 'react-router-dom';
@@ -47,6 +47,7 @@ const BrowserData: React.FC<{
   const navigate = useNavigate();
   const [flattenData, setFlattenData] = useState<BaseTreeNode[]>([]);
   const [treeData, setTreeData] = useState<BaseTreeNode[]>([]);
+  const [disabledKeys, setDisabledKeys] = useState<string[]>([]);
   const [checkedKeys, setCheckedKeys] = useState<string[]>([]);
   const [searchKeyword, setSearchKeyword] = useState<string>('');
   const [autoAdd, setAutoAdd] = useState<boolean | null>(null);
@@ -77,17 +78,22 @@ const BrowserData: React.FC<{
     switch (step) {
       case Step.Checking:
         getPagesInfo().then(async (pagesInfo: HistoryData[]) => {
-
+          const uploadedKeys = generateKey(
+            convertHistoryToTree(pagesInfo.filter(
+              ({ status }) => status === 3
+            ))
+          ).map(({ key }) => key) as string[]
           const historyData = convertHistoryToTree(pagesInfo)
-          const historyWithKey = generateKey(historyData)
+          const historyWithKey = generateKey(historyData) as { key: string }[] & TreeNode[]
           const uniqueHistory = _.uniqBy(historyWithKey, 'key')
+
+          setDisabledKeys(uploadedKeys)
           setCheckedKeys(uniqueHistory.map(({ key = '' }) => key).filter(item => item))
           setFlattenData(uniqueHistory)
         }).finally(() => setFetchingTree(false));
 
         break;
       case Step.Uploading:
-
         getPagesInfo().then(async (pagesInfo: HistoryData[]) => {
           const payloadBody = generateKey(
             pagesInfo.map(item => ({
@@ -127,7 +133,6 @@ const BrowserData: React.FC<{
               status: 3,
             }))
           }, async (res) => {
-            console.log("🚀 ~ getPagesInfo ~ res:", res)
             await setAllPagesInfo(payloadBody.map(item => ({ ...item, status: 3 })))
 
             setTimeout(() => {
@@ -145,6 +150,15 @@ const BrowserData: React.FC<{
     }
   }, [step])
 
+  const [importCount, setImportCount] = useState(0)
+  useEffect(() => {
+    setImportCount(checkedKeys
+      .filter(key =>
+        !disabledKeys.includes(key)
+        &&
+        flattenData.find(({ key: k }) => k === key)?.url
+      ).length)
+  }, [checkedKeys, disabledKeys, flattenData])
 
   return (<div className={clsx(
     'flex flex-col h-full',
@@ -152,8 +166,7 @@ const BrowserData: React.FC<{
     {step !== Step.Done && <Header />}
 
     {
-      step === Step.Checking
-      && <>
+      step === Step.Checking && <>
         <div className="shrink mt-4 min-w-[300px] items-start justify-center border-y border-zinc-200 bg-white sm:max-w-full sm:rounded-lg sm:border dark:border-white/10 dark:bg-zinc-900 p-4 max-h-[75vh] overflow-auto">
           <div className="mb-4 flex items-center justify-between">
             <Input
@@ -188,6 +201,7 @@ const BrowserData: React.FC<{
               ? <div className="text-center">{t('loading')}</div>
               : (treeData?.[0]?.children ?? []).length ?
                 <CustomTree
+                  disabledKeys={disabledKeys}
                   checkedKeys={checkedKeys}
                   onCheck={(newCheckedKeys) => !isEqual(newCheckedKeys, checkedKeys) && setCheckedKeys(newCheckedKeys)}
                   treeData={(treeData[0].children || []) as TreeNodeWithKey[]}
@@ -212,11 +226,11 @@ const BrowserData: React.FC<{
               {t('cancel')}
             </Button>
             <Button
-              disabled={!checkedKeys.length}
+              disabled={!importCount}
               className='ml-4'
-              onClick={() => checkedKeys.length && setStep(Step.Uploading)}
+              onClick={() => importCount && setStep(Step.Uploading)}
             >
-              {`${t('import')} ${checkedKeys.length} ${t('selected_urls')}`}
+              {`${t('import')} ${importCount} ${t('selected_urls')}`}
             </Button>
           </div>
         </div>
