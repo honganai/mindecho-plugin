@@ -13,14 +13,22 @@ import {
   initPagesInfo,
   setUserInfo,
 } from '@/constants';
-import './autoAdd';
+import { startAutoAdd } from './autoAdd';
 import onTwitterAction from './bookmarks/bookmarks';
 
 import './syncXRequestHeader';
+initPagesInfo();
 
-// chrome.commands.onCommand.addListener((command) => {
-//   console.log(`Command "${command}" triggered`);
-// });
+chrome.runtime.onInstalled.addListener(() => {
+  // 创建一个定时器，每隔6小时触发一次
+  // const periodInMinutes = 6 * 60;
+  const periodInMinutes = 0.5;
+  chrome.alarms.create('autoAddAlarm', { periodInMinutes });
+});
+
+chrome.alarms.onAlarm.addListener((alarm) => {
+  alarm.name === 'autoAddAlarm' && startAutoAdd();
+});
 
 chrome.runtime.onMessage.addListener(handleMessages);
 chrome.action.onClicked.addListener(handleActiveClick);

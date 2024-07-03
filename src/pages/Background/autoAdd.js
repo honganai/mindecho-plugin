@@ -1,168 +1,189 @@
 /* eslint-disable no-undef */
 import dayjs from 'dayjs';
 import Api from './api';
+import _ from 'lodash';
+import axios from 'axios';
 import { MAX_SIZE } from '@/utils/common.util';
-import { getUserInfo, getLastUpdateDataTime, setLastUpdateDataTime, getLastUpdateDataTime_pocket, setLastUpdateDataTime_pocket } from '@/constants';
+import {
+  setLocalURLs,
+  getUserInfo,
+  getLastUpdateDataTime,
+  setLastUpdateDataTime,
+  getLastUpdateDataTime_pocket,
+  setLastUpdateDataTime_pocket,
+} from '@/constants';
+
+const SEPARATOR = ' https://t.co/';
+const X_BOOKMARKS_HEADERS = `XBookmarkHeaders`;
+const TWEET_TYPES = ['Tweet', 'TweetWithVisibilityResults', 'TimelineTimelineItem'];
+
+const formatDataItem = (item, type) => ({
+  title: item.title,
+  url: item.url,
+  type,
+  user_create_time: dayjs(item.creationTime || item.dateAdded || item.user_create_time).format('YYYY-MM-DD HH:mm:ss'),
+  user_used_time: dayjs(item.lastUpdateTime || item.dateAdded || item.user_used_time).format('YYYY-MM-DD HH:mm:ss'),
+  node_id: item.id || '',
+  node_index: item.index?.toString() || '',
+  parentId: item.parentId || '',
+  origin_info: item,
+  status: 1,
+});
+
+const collectData = async (lastUpdateTime, lastUpdateTimePocket) => {
+  const [bookmarks, readingList, pocket, xBookmark] = await Promise.all([
+    getBookmarks(),
+    getReadingList(),
+    getPocket(),
+    getXBookmark(),
+  ]);
+
+  console.log('🚀 ~ collectData ~ xBookmark:', xBookmark);
+  const data = [];
+
+  readingList?.forEach((item) => {
+    if (item.creationTime > lastUpdateTime) {
+      data.push(formatDataItem(item, 'readinglist', lastUpdateTime));
+    }
+  });
+
+  bookmarks?.forEach((item) => {
+    if (item.dateAdded > lastUpdateTime) {
+      data.push(formatDataItem(item, 'bookmark', lastUpdateTime));
+    }
+  });
+
+  pocket?.forEach((item) => {
+    if (item.user_create_time > lastUpdateTimePocket) {
+      data.push(formatDataItem(item, 'readinglist', lastUpdateTimePocket));
+    }
+  });
+
+  xBookmark?.forEach((item) => {
+    if (
+      (item.user_create_time > lastUpdateTime && item?.content?.itemContent?.tweet_results?.result?.tweet) ||
+      item?.content?.itemContent?.tweet_results?.result
+    ) {
+      const result =
+        item?.content?.itemContent?.tweet_results?.result?.tweet || item?.content?.itemContent?.tweet_results?.result;
+
+      data.push({
+        id: item.entryId,
+        title: result.legacy.full_text.split(SEPARATOR)[0],
+        url: `https://twitter.com/x/status/${result.rest_id}`,
+        type: 'xbookmark',
+        user_create_time: new Date(result.legacy.created_at),
+        user_used_time: new Date(result.legacy.created_at),
+        node_id: '0',
+        node_index: '0',
+        parentId: '0',
+        origin_info: '',
+        author: result.core.user_results.result.legacy.name || '',
+        content: result.legacy.full_text || '',
+        status: 3,
+      });
+    }
+  });
+
+  return data;
+};
 
 const startAutoAdd = async () => {
-    //如果没有登录，不执行
-    const userInfo = await getUserInfo();
-    if (!userInfo) return false;
-    const promise1 = getLastUpdateDataTime();
-    const promise2 = getLastUpdateDataTime_pocket();
-    const lastUpdateDataTime = await promise1;
-    const lastUpdateDataTime_pocket = await promise2;
-    //@koman 暂时隐藏掉history
-    //const history = await getHistory(lastUpdateDataTime);
-    const bookmarks = await getBookmarks();
-    const readinglist = await getReadingList();
-    const pocket = await getPocket();
+  const userInfo = await getUserInfo();
+  if (!userInfo) return false;
 
-    const data = [];
-    //@koman 暂时隐藏掉history
-    // history?.forEach((item) => {
-    //     if (item.lastVisitTime > lastUpdateDataTime) {
-    //         data.push({
-    //             title: item.title,
-    //             url: item.url,
-    //             type: 'history',
-    //             user_create_time: dayjs(item.lastVisitTime).format('YYYY-MM-DD HH:mm:ss'),
-    //             user_used_time: dayjs(item.lastVisitTime).format('YYYY-MM-DD HH:mm:ss'),
-    //             node_id: item.id,
-    //             node_index: '',
-    //             parentId: '',
-    //             origin_info: item,
-    //             status: 1,
-    //         });
-    //     }
-    // });
-    readinglist?.forEach((item) => {
-        if (item.creationTime > lastUpdateDataTime) {
-            data.push({
-                title: item.title,
-                url: item.url,
-                type: 'readinglist',
-                user_create_time: dayjs(item.creationTime).format('YYYY-MM-DD HH:mm:ss'),
-                user_used_time: dayjs(item.lastUpdateTime).format('YYYY-MM-DD HH:mm:ss'),
-                node_id: '',
-                node_index: '',
-                parentId: '',
-                origin_info: item,
-                status: 1,
-            });
-        }
-    });
+  const [lastUpdateTime, lastUpdateTimePocket] = await Promise.all([
+    getLastUpdateDataTime(),
+    getLastUpdateDataTime_pocket(),
+  ]);
 
-    bookmarks?.forEach((item) => {
-        if (item.dateAdded > lastUpdateDataTime) {
-            data.push({
-                title: item.title,
-                url: item.url,
-                type: 'bookmark',
-                user_create_time: dayjs(item.dateAdded).format('YYYY-MM-DD HH:mm:ss'),
-                user_used_time: dayjs(item.dateAdded).format('YYYY-MM-DD HH:mm:ss'),
-                node_id: item.id,
-                node_index: item.index?.toString() || '',
-                parentId: item.parentId || '',
-                origin_info: item,
-                status: 1,
-            });
-        }
-    });
+  const data = await collectData(lastUpdateTime, lastUpdateTimePocket);
 
-    pocket?.forEach((item) => {
-        if (item.user_create_time > lastUpdateDataTime_pocket) {
-            data.push({
-                title: item.title,
-                url: item.url,
-                type: 'readinglist',
-                user_create_time: dayjs(item.user_create_time).format('YYYY-MM-DD HH:mm:ss'),
-                user_used_time: dayjs(item.user_used_time).format('YYYY-MM-DD HH:mm:ss'),
-                node_id: '',
-                node_index: '',
-                parentId: '',
-                origin_info: item,
-                status: 1,
-            });
-        }
-    });
+  if (data.length > 0) {
+    await uploadUserUrl(data);
+    setLocalURLs(data);
     setLastUpdateDataTime(new Date().getTime());
     setLastUpdateDataTime_pocket(new Date().getTime());
-
-    (data.length > 0 || pocket.length > 0) && uploadUserUrl([...data, ...pocket]);
-}
-
-const getHistory = (startTime) => {
-    // 获取最近4小时的记录
-    // let microsecondsPerWeek = 1000 * 60 * 60 * 4;
-    // let oneWeekAgo = new Date().getTime() - microsecondsPerWeek;
-    return chrome.history.search(
-        { text: '', startTime }
-    ).then(res => {
-        console.log('history res:', res);
-        return res || [];
-    })
-}
+  }
+};
 
 const getBookmarks = () => {
-    return chrome.bookmarks.getRecent(100).then(tree => {
-        console.log('bookmarks res:', tree);
-        return tree || {}
-    });
-}
+  return chrome.bookmarks.getRecent(100).then((tree) => {
+    console.log('bookmarks res:', tree);
+    return tree || {};
+  });
+};
 
-const getReadingList = async () => {
-    return chrome.readingList.query({}).then(res => {
-        console.log('readingList res:', res);
-        return res || [];
-    });
-}
+const getReadingList = () => {
+  return chrome.readingList.query({}).then((res) => {
+    console.log('readingList res:', res);
+    return res || [];
+  });
+};
 
 const getPocket = () => {
-    return Api['get_user_url']({ body: { page: 1, page_size: MAX_SIZE, title: '', type: 'pocket' } })
-        .then((res) => {
-            return res.json()?.result || [];
-        })
-  }
+  return Api['get_user_url']({ body: { page: 1, page_size: MAX_SIZE, title: '', type: 'pocket' } }).then((res) => {
+    return res.json()?.result || [];
+  });
+};
 
-// const concatBookmarks = (bookmarkItem, result = []) => {
-//     for (const item of bookmarkItem?.children || []) {
-//         // If the node is a bookmark, create a list item and append it to the parent node
-//         if (item.url) {
-//             result.push({
-//                 title: item.title,
-//                 url: item.url,
-//                 type: 'bookmark',
-//                 user_create_time: dayjs(item.dateAdded).format('YYYY-MM-DD HH:mm:ss'),
-//                 user_used_time: dayjs(item.dateAdded).format('YYYY-MM-DD HH:mm:ss'),
-//                 node_id: item.id,
-//                 node_index: item.index?.toString() || '',
-//                 parentId: item.parentId || '',
-//                 origin_info: item,
-//                 status: 1,
-//             });
-//         }
+const getXBookmark = async () => {
+  const filteredEntries = [];
+  const fetchBookmarks = async () => {
+    const bookmarkHeaders = ((await chrome.storage.local.get(X_BOOKMARKS_HEADERS)) || {})[X_BOOKMARKS_HEADERS];
+    if (_.isNull(bookmarkHeaders)) return;
+    const { url, method, headers } = bookmarkHeaders;
 
-//         // If the node has children, recursively display them
-//         if (item.children) {
-//             concatBookmarks(item, result);
-//         }
-//     }
+    const fetchTweets = async (requestUrl) => {
+      try {
+        const config = {
+          method,
+          url: requestUrl,
+          headers: headers.reduce((acc, { name, value }) => ({ ...acc, [name]: value }), {}),
+        };
 
-//     return result;
-// }
+        const response = await axios(config);
+        const result = response.data;
+        const entries = result.data.bookmark_timeline_v2.timeline.instructions[0].entries;
+
+        filteredEntries.push(
+          ...entries.filter((item) => {
+            if (TWEET_TYPES.includes(item.content.entryType) && item?.content?.itemContent?.tweet_results.result) {
+              const storedIndex = filteredEntries.findIndex(({ id }) => id === item.entryId);
+              return storedIndex === -1;
+            }
+            return false;
+          }),
+        );
+
+        if (entries.length > 2) {
+          const cursor = entries[entries.length - 1].content.value;
+          const params = new URLSearchParams(requestUrl.split('?')[1]);
+          params.set('variables', JSON.stringify({ ...JSON.parse(params.get('variables')), cursor }));
+          const nextUrl = `${requestUrl.split('?')[0]}?${params.toString()}`;
+
+          await fetchTweets(nextUrl);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    const params = new URLSearchParams(url.split('?')[1]);
+    params.set('variables', JSON.stringify({ ...JSON.parse(params.get('variables')), cursor: undefined }));
+    const nextUrl = `${url.split('?')[0]}?${params.toString()}`;
+
+    await fetchTweets(nextUrl);
+  };
+
+  await fetchBookmarks();
+  return filteredEntries;
+};
 
 const uploadUserUrl = (data) => {
-    // 在js中无法直接发起runtime消息
-    // chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_url', body: data }, (res) => {
-    //     console.log('auto add res:', res);
-    // });
-    Api['upload_user_url']({ body: data })
-        .then((res) => {
-            console.log('auto add res:', res);
-        })
-}
+  Api['upload_user_url']({ body: data }).then((res) => {
+    console.log('auto add res:', res);
+  });
+};
 
-setInterval(() => {
-    startAutoAdd();
-}, 6 * 60 * 60 * 1000);
+export { startAutoAdd };

@@ -8,7 +8,11 @@ import { getLocalStorage, setLocalStorage } from './storage';
 import ConfirmStatus from './ConfirmStatus';
 import { TreeNode as BaseTreeNode, convertXBookmarkToTree, generateKey } from '@/utils/treeHandler';
 import CustomTree, { TreeNodeWithKey } from '@/pages/Options/components/CustomTree';
-import { setTwitterAutoAdd as setStorageAutoAdd, getTwitterAutoAdd as getStorageAutoAdd } from '@/constants';
+import {
+  setTwitterAutoAdd as setStorageAutoAdd,
+  getTwitterAutoAdd as getStorageAutoAdd,
+  getLocalURLs,
+} from '@/constants';
 import DoneStatus from '@/pages/Options/components/DoneStatus';
 import FetchingStatus from '@/pages/Options/components/FetchingStatus';
 
@@ -31,7 +35,6 @@ const SEPARATOR = " https://t.co/";
 export const X_BOOKMARKS_STORE = `XBookmarkStore`;
 const X_BOOKMARKS_HEADERS = `XBookmarkHeaders`;
 
-
 enum Step {
   Confirm,
   Checking,
@@ -39,13 +42,7 @@ enum Step {
   Done,
 }
 const { getMessage: t } = chrome.i18n;
-
-let localBookmarkIdData: (string | number)[] = [];
-getLocalStorage(X_BOOKMARKS_STORE).then((data) => {
-  localBookmarkIdData = (data as TweetItem[])
-    .filter(({ isUpdate }) => isUpdate)
-    .map(({ id = '' }) => id);
-})
+let bookmarkHeaders: XBookmarkHeaders | null = null;
 
 const Twitter: React.FC<Props> = ({ }: Props) => {
   const navigate = useNavigate();
@@ -54,6 +51,7 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
   const [step, setStep] = useState<Step>(Step.Confirm);
   const [searchKeyword, setSearchKeyword] = useState<string>('');
   const [autoAdd, setAutoAdd] = useState<boolean | null>(null);
+  const [disabledKeys, setDisabledKeys] = useState<string[]>([]);
 
   const [flattenData, setFlattenData] = useState<BaseTreeNode[]>([]);
   const [treeData, setTreeData] = useState<BaseTreeNode[]>([]);
@@ -63,28 +61,26 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
   useEffect(() => { !isNull(autoAdd) && setStorageAutoAdd(autoAdd) }, [autoAdd])
 
   useEffect(() => {
-    getStorageAutoAdd().then((res) => setAutoAdd(res))
+    getStorageAutoAdd().then((res) => setAutoAdd(!!res))
   }, [])
 
   useEffect(() => {
-    switch (step) {
-      case Step.Confirm:
-        const intervalId = setInterval(async () => {
-          const bookmarkHeaders = await getLocalStorage<XBookmarkHeaders>(X_BOOKMARKS_HEADERS);
+    const handleSteps = async () => {
+      switch (step) {
+        case Step.Confirm:
+          const intervalId = setInterval(async () => {
+            bookmarkHeaders = await getLocalStorage<XBookmarkHeaders>(X_BOOKMARKS_HEADERS);
 
-          if (bookmarkHeaders) setIsLoginTwitter(true);
-        }, 2000);
-        setTimer(intervalId);
-        break;
-      case Step.Checking:
-        clearInterval(timer);
-        const fetchBookmarks = async () => {
-          const bookmarkHeaders = await getLocalStorage<XBookmarkHeaders>(X_BOOKMARKS_HEADERS);
-          if (!bookmarkHeaders) return;
-
-          const { url, method, headers } = bookmarkHeaders;
+            if (bookmarkHeaders) setIsLoginTwitter(true);
+          }, 2000);
+          setTimer(intervalId);
+          break;
+        case Step.Checking:
+          clearInterval(timer);
+          if (isNull(bookmarkHeaders)) return
+          const { url, method, headers } = bookmarkHeaders
           setFetchingTree(true);
-
+          const localUrls = await getLocalURLs();
           const fetchTweets = async (requestUrl: string) => {
             try {
               const config: AxiosRequestConfig = {
@@ -134,16 +130,18 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
                   };
                 }))
 
-              setCheckedKeys((prev) => {
-                return [...prev, ...newTweets.map(({ key = '' }) => key)]
-              });
+              const checkedPart = generateKey(
+                localUrls
+                  .filter(({ type = '' }) => type === 'xbookmark')
+                  .filter(
+                    ({ url = '' }) => newTweets.find(({ url: tweetUrl }) => tweetUrl === url)
+                  )
+              ).map(({ key }) => key).filter(item => item) as string[];
 
+              setDisabledKeys((prev) => [...prev, ...checkedPart]);
               setFlattenData((prevList) => [
                 ...prevList,
-                ...newTweets.map((item) => ({
-                  ...item,
-                  isUpdate: localBookmarkIdData.includes(item.id),
-                })),
+                ...generateKey(newTweets),
               ]);
 
               await setLocalStorage(X_BOOKMARKS_STORE, flattenData);
@@ -169,31 +167,48 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
           const nextUrl = `${url.split('?')[0]}?${params.toString()}`;
 
           await fetchTweets(nextUrl);
-        };
 
-        fetchBookmarks();
-        break;
-      case Step.Uploading:
-        const data = flattenData.filter(({ key = '', isUpdate = false }) => checkedKeys.includes(key) && !isUpdate)
+          break;
+        case Step.Uploading:
+          const data = flattenData.filter(({ key = '', isUpdate = false }) => checkedKeys.includes(key) && !isUpdate).map(item => {
+            return {
+              "title": "Shadow of uncertainty",
+              "url": "https://medium.com/@samikshyat/shadow-of-uncertainty-f664a823a0ea",
+              "type": "bookmark",
+              "user_create_time": "2024-01-11 08:46:44",
+              "node_id": "0",
+              "node_index": "0",
+              "parentId": "0",
+              "user_used_time": "2024-03-11 08:46:44",
+              "origin_info": "",
+              "author": "作者",
+              "content": "内容1",
+              "status": "3"
+            }
+          })
 
-        chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: data }, (res) => {
-          setTimeout(() => {
-            setStep(Step.Done)
-          }, 1000 * 60)
-        });
+          console.log("🚀 ~ data ~ flattenData:", flattenData)
 
-        chrome.storage.local.set({
-          [X_BOOKMARKS_STORE]: flattenData.map(item => ({
-            ...item,
-            isUpdate: true
-          }))
-        });
-        break;
-      case Step.Done:
-        break;
-      default:
-        break;
+          // chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: data }, (res) => {
+          //   setTimeout(() => {
+          //     setStep(Step.Done)
+          //   }, 1000 * 60)
+          // });
+
+          // chrome.storage.local.set({
+          //   [X_BOOKMARKS_STORE]: flattenData.map(item => ({
+          //     ...item,
+          //     isUpdate: true
+          //   }))
+          // });
+          break;
+        case Step.Done:
+          break;
+        default:
+          break;
+      }
     }
+    handleSteps();
 
     return () => {
       clearInterval(timer);
@@ -215,6 +230,16 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
       children: flattenData
     }])
   }, [flattenData])
+
+  const [importCount, setImportCount] = useState(0)
+  useEffect(() => {
+    setImportCount(checkedKeys
+      .filter(key =>
+        !disabledKeys.includes(key)
+        &&
+        flattenData.find(({ key: k }) => k === key)?.url
+      ).length)
+  }, [checkedKeys, disabledKeys, flattenData])
 
   return (
     <div className={clsx(
@@ -265,6 +290,7 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
                   ? <div className="text-center">{t('loading')}</div>
                   : (treeData?.[0]?.children ?? []).length ?
                     <CustomTree
+                      disabledKeys={disabledKeys}
                       checkedKeys={checkedKeys}
                       onCheck={(newCheckedKeys) => !isEqual(newCheckedKeys, checkedKeys) && setCheckedKeys(newCheckedKeys)}
                       treeData={(treeData[0].children || []) as TreeNodeWithKey[]}
@@ -290,11 +316,11 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
                   {t('cancel')}
                 </Button>
                 <Button
-                  disabled={!checkedKeys.length}
+                  disabled={!importCount}
                   className='ml-4'
-                  onClick={() => checkedKeys.length && setStep(Step.Uploading)}
+                  onClick={() => importCount && setStep(Step.Uploading)}
                 >
-                  {`${t('import')} ${checkedKeys.length} ${t('selected_urls')}`}
+                  {`${t('import')} ${importCount} ${t('selected_urls')}`}
                 </Button>
               </div>
             </div>

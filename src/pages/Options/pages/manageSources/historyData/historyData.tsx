@@ -57,7 +57,7 @@ const BrowserData: React.FC<{
   useEffect(() => { !isNull(autoAdd) && setStorageAutoAdd(autoAdd) }, [autoAdd])
 
   useEffect(() => {
-    getStorageAutoAdd().then((res) => setAutoAdd(res))
+    getStorageAutoAdd().then((res) => setAutoAdd(!!res))
   }, [])
 
   useEffect(() => setTreeData([{

@@ -163,7 +163,6 @@ const Options: React.FC = () => {
                     <Login onLogin={toLogin} />
                   </>
                 ) : (
-
                   <ApplicationLayout>
                     <Routes>
                       <Route path='' element={<Navigate to="/manage-sources" />} />
@@ -177,13 +176,6 @@ const Options: React.FC = () => {
                         <Route path='twitter' element={<Twitter />} />
                       </Route>
                     </Routes>
-
-                    {/* {stepPage === 1 ? <User onLink={(page: number) => { setStepPage(page) }} /> :
-                          stepPage === 2 ? <BrowserData onLink={(page: number, status = false) => { setStepPage(page); setBuildType('browser'); setBuildStatus(status) }} /> :
-                            stepPage === 5 ? <HistoryData onLink={(page: number, status = false) => { setStepPage(page); setBuildType('browser'); setBuildStatus(status) }} /> :
-                              stepPage === 3 ? <Building type={buildType} status={buildStatus} /> :
-                                stepPage === 4 ? <Pocket onLink={(page: number) => { setStepPage(page); setBuildType('pocket') }} /> :
-                                  stepPage === 6 ? <Twitter onLink={(page: number) => { setStepPage(page), setBuildType('xbookmark') }} /> : null} */}
 
                     <ModalContent type="options" />
                   </ApplicationLayout>

@@ -32,6 +32,8 @@ export const ISLOGIN = 'isLogin';
 export const PAGES_INFO = 'pages_info';
 /** 暂存当前打开的页面info */
 export const IS_NOT_FIRST_TIME_USE = 'is__not_first_time_use';
+/** 所有采集到的url */
+export const LOCAL_URLS = 'local_urls';
 
 export const initPagesInfo = () => {
   return chrome.storage.local.set({ [PAGES_INFO]: [] });
@@ -126,6 +128,16 @@ export const setAutoAdd = (status: boolean = true) => {
 export const getAutoAdd = () => {
   return chrome.storage.local.get(AUTO_ADD).then((res) => {
     return res[AUTO_ADD];
+  });
+};
+
+export const setLocalURLs = (urls: string[]) => {
+  chrome.storage.local.set({ [LOCAL_URLS]: urls });
+};
+
+export const getLocalURLs = () => {
+  return chrome.storage.local.get(LOCAL_URLS).then((res) => {
+    return res[LOCAL_URLS] || [];
   });
 };
 

@@ -1,257 +1,233 @@
 import React, { useEffect, useContext, useState } from 'react';
-import dayjs from 'dayjs';
-import { Button, Input, Checkbox, Tree, Spin, message, Switch, TreeDataNode } from 'antd';
-import { ArrowLeftOutlined, SearchOutlined, LockOutlined } from '@ant-design/icons';
-import cs from 'classnames';
-import styles from './index.module.scss';
-import _ from "lodash";
-import posthog from "posthog-js";
-import GlobalContext, { ActionType, IUpdateData, IBookmarks, IHistory, IReadingList } from '@/reducer/global';
-import { setAutoAdd as setStorageAutoAdd, getAutoAdd as getStorageAutoAdd, setLastUpdateDataTime_pocket } from '@/constants';
-import DataList from '../../../components/datalist/datalist';
+import _, { isEqual, isNull } from "lodash";
+import GlobalContext, { ActionType, IUpdateData, IBookmarks } from '@/reducer/global';
+import { setAutoAdd as setStorageAutoAdd, getAutoAdd as getStorageAutoAdd, setLastUpdateDataTime } from '@/constants';
 import { MAX_SIZE } from '@/utils/common.util';
 import clsx from 'clsx';
 import { useNavigate } from 'react-router-dom';
-export enum SubType {
-  Free = 'free',
-  Premium = 'premium',
-  Elite = 'elite',
-}
+import { Checkbox, CheckboxField } from '@/pages/Options/components/catalyst/checkbox'
+import { Label } from '@/pages/Options/components/catalyst/fieldset'
+import { Button } from '@/pages/Options/components/catalyst/button'
 
-interface IMergeData {
-  id: number;
-  title: string;
-  url: string;
-  type: 'history' | 'bookmark' | 'readinglist';
-  user_create_time: string;
-  node_id: string;
-  node_index: string;
-  parentId: string;
-  user_used_time: string;
-  origin_info: IBookmarks | IHistory | IReadingList;
-  status?: 1 | 0;
-  selected?: boolean;
-}
-interface Props {
-  userinfo?: any;
-}
+import { Input } from '@/pages/Options/components/catalyst/input'
+import { buildTree, convertChromeBookmarkToTree, flattenTree, generateKey, mergeTrees } from '@/utils/treeHandler';
+import CustomTree, { TreeNodeWithKey } from '@/pages/Options/components/CustomTree';
+import { TreeNode as BaseTreeNode } from '@/utils/treeHandler';
+import DoneStatus from '@/pages/Options/components/DoneStatus';
+import FetchingStatus from '@/pages/Options/components/FetchingStatus';
+import Header from '@/pages/Options/components/header/header';
 
-const Pocket: React.FC<Props> = () => {
-  const navigate = useNavigate();
-  const { getMessage: t } = chrome.i18n;
-  const { state: { titleMap: keyList }, dispatch: globalDispatch } = useContext(GlobalContext);
+const dayjs = require('dayjs');
+const { getMessage: t } = chrome.i18n;
 
-  //选中的所有key集合、和初始数据集合
-  const [initial, setInitial] = useState<boolean>(true);
-  const [allUserUrl, setAllUserUrl] = useState<IMergeData[]>([]);
-  //列表展示数据
-  const [userUrl, setUserUrl] = useState<IMergeData[]>([]);
-  const [treeData, setTreeData] = useState<TreeDataNode[]>([]);
-  const [expandedKeys, setExpandedKeys] = useState<React.Key[]>([]);
-  const [checkedKeys, setCheckedKeys] = useState<React.Key[]>([]);
-  const [autoExpandParent, setAutoExpandParent] = useState<boolean>(true);
-  const [checkedCount, setCheckedCount] = useState<number>(0);
-  const [searchWord, setSearchWord] = useState<string>('');
-  const [loading, setLoading] = useState<boolean>(true);
-  const [autoAdd, setAutoAdd] = useState<boolean>(true);
-
-  const onExpand = (expandedKeysValue: React.Key[]) => {
-    // if not set autoExpandParent to false, if children expanded, parent can not collapse.
-    // or, you can remove all expanded children keys.
-    setExpandedKeys(expandedKeysValue);
-    setAutoExpandParent(false);
-  };
-
-  const onCheck = (checkedKeysValue: React.Key[], event: any) => {
-    console.log('onCheck', checkedKeysValue, event);
-    setCheckedKeys(checkedKeysValue);
-    selectChange(checkedKeysValue);
-  };
-
-  const selectChange = (checkedKeysValue: React.Key[]) => {
-    const allSelect = allUserUrl;
-    userUrl.forEach((item) => {
-      const ischecked = checkedKeysValue.some(itemKeys => itemKeys.split('-')[1] == item.id)
-      allSelect[allSelect.findIndex(allSelectItem => allSelectItem.id === item.id)].selected = ischecked ? true : false;
+const fetchDataFormChrome: () => Promise<chrome.bookmarks.BookmarkTreeNode[]> = async () => {
+  return new Promise((resolve) => {
+    chrome.runtime.sendMessage({ type: 'request', api: 'get_user_url', body: { page: 1, page_size: MAX_SIZE, title: '', type: 'pocket' } }, (res) => {
+      console.log("🚀 ~ chrome.runtime.sendMessage ~ res:", res)
+      resolve(res?.result || [])
     });
-    setAllUserUrl(allSelect);
-    setCheckedCount(allSelect.filter(item => item.selected).length)
-  }
+  })
+}
+
+const fetchDataFromServer: () => Promise<IBookmarks[]> = async () => {
+  return new Promise((resolve) => {
+    chrome.runtime.sendMessage({
+      type: 'request',
+      api: 'get_user_url',
+      body:
+      {
+        page: 1,
+        page_size: MAX_SIZE,
+        title: '',
+        type: 'bookmark'
+      }
+    }, (res) => {
+      console.log('🚀 ~ datalist -获取用户上传数据- line:240: ', res);
+      resolve(res?.result || [])
+    });
+  })
+}
+
+enum Step {
+  Checking,
+  Uploading,
+  Done,
+}
+
+const BrowserData: React.FC<{
+  userinfo?: any;
+}> = ({ }) => {
+  const navigate = useNavigate();
+  const [flattenData, setFlattenData] = useState<BaseTreeNode[]>([]);
+  const [treeData, setTreeData] = useState<BaseTreeNode[]>([]);
+  const [disabledKeys, setDisabledKeys] = useState<string[]>([]);
+  const [checkedKeys, setCheckedKeys] = useState<string[]>([]);
+  const [searchKeyword, setSearchKeyword] = useState<string>('');
+  const [autoAdd, setAutoAdd] = useState<boolean | null>(null);
+  const [fetchingTree, setFetchingTree] = useState<boolean>(true);
+  const [step, setStep] = useState<Step>(Step.Checking);
 
   useEffect(() => {
-    //初始默认勾选自动更新
-    setStorageAutoAdd(autoAdd);
+    getStorageAutoAdd().then((res) => setAutoAdd(!!res))
   }, [])
 
+  useEffect(() => { !isNull(autoAdd) && setStorageAutoAdd(autoAdd) }, [autoAdd])
+
+  useEffect(() => setTreeData(searchKeyword.trim() === ''
+    ? buildTree(flattenData)[0]?.children || []
+    : flattenData
+      .filter(
+        item =>
+          (item.title && item.title.includes(searchKeyword))
+          || item.url && item.url.includes(searchKeyword)
+      )
+  ), [flattenData, searchKeyword])
+
   useEffect(() => {
-    getUserUrl()
-  }, [searchWord]);
+    switch (step) {
+      case Step.Checking:
+        fetchDataFormChrome()
+          .then((res) => {
+            // const convertedChromeBookmarks = convertChromeBookmarkToTree(fetchDataFormChrome())
+            const flattenChromeBookmarks = flattenTree(convertedChromeBookmarks)
 
-  const getUserUrl = () => {
-    setLoading(true);
-    chrome.runtime.sendMessage({ type: 'request', api: 'get_user_url', body: { page: 1, page_size: MAX_SIZE, title: searchWord, type: 'pocket' } }, (res) => {
-      console.log('🚀 ~ pocket -获取用户上传数据- line:240: ', res);
-      parsingData(res?.result || [])
-      // if (res?.result?.length > 0) {
-      //   parsingData(res?.result)
-      // } else {
-      //   message.error(noDataFoundI18N);
-      //   setLoading(false);
-      // }
-    });
-  }
+            const chromeBookmarksWithKey = generateKey(flattenChromeBookmarks)
 
-  const parsingData = (data: any) => {
-    // const pockets = data.filter((item: any) => item.type === 'pocket');
-    const pockets = data;
-    const reusltData: Array<TreeDataNode> = [];
-    let reusltDataMap = {} as any;
 
-    const currentCheckeds: string[] = [];
-    const hasSelected = pockets.some((item: any) => item.status > 0);
+            // const uploadedKeys = userBookMarkWithKey
+            //   .filter(({ key = '' }) => key)
+            // .map(({ key = '' }) => key) || []
 
-    pockets?.forEach((item: any) => {
-      item.selected = false;
-      initialData(item.type, reusltData, reusltDataMap);
+            // setCheckedKeys([...uploadedKeys, ...autoAdd ? userBookMarkWithKey.map(({ key }) => key) : []])
+            setDisabledKeys(uploadedKeys)
+          }).finally(() => setFetchingTree(false));
+        break;
+      case Step.Uploading:
+        const payloadBody = flattenData
+          .filter(({ url }) => url)
+          .map((item) => {
+            return {
+              title: item.title,
+              url: item.url,
+              type: 'bookmark',
+              user_create_time: dayjs(item.dateAdded).format('YYYY-MM-DD HH:mm:ss'),
+              user_used_time: dayjs(Date.now()).format('YYYY-MM-DD HH:mm:ss'),
+              node_id: '',
+              node_index: '',
+              parentId: '',
+              origin_info: item,
+            }
+          })
 
-      reusltDataMap[item.type].children?.push({
-        title: item.title,
-        key: item.type + '-' + item.id,
-        url: item.url
-      });
-      if ((initial && !hasSelected) || (initial && item.status > 0) || (!initial && isChecked(item.id))) {
-        item.selected = true;
-        currentCheckeds.push(item.type + '-' + item.id)
-      }
-    });
-    setTreeData(reusltData)
-    onExpand([reusltData[0]?.key])
+        chrome.runtime.sendMessage({
+          type: 'request',
+          api: 'upload_user_url',
+          body: payloadBody
+        }).then((res) => {
+          setLastUpdateDataTime(new Date().getTime());
+          setTimeout(() => {
+            setStep(Step.Done)
+          }, 1000 * 60)
+        });
 
-    if (initial) {
-      setAllUserUrl(pockets);
-      setCheckedCount(currentCheckeds.length);
-      setInitial(false);
+        break;
+      case Step.Done:
+        console.log("🚀 ~ useEffect ~ Step.Done:", Step.Done)
+        break;
+      default:
+        break;
     }
-    setUserUrl(pockets);
-    setCheckedKeys(currentCheckeds);
+  }, [step])
 
-    setLoading(false);
-  }
+  const [importCount, setImportCount] = useState(0)
+  useEffect(() => {
+    setImportCount(checkedKeys
+      .filter(key =>
+        !disabledKeys.includes(key)
+        &&
+        flattenData.find(({ key: k }) => k === key)?.url
+      ).length)
+  }, [checkedKeys, disabledKeys, flattenData])
 
-  const initialData = (type: string, data: any, mapData: any) => {
-    if (!_.some(data, ['title', keyList[type]])) {
-      const index = data.push({ title: keyList[type], key: `parent-${type}`, children: [] as any[] });
-      mapData[type] = data[index - 1];
-    }
-  }
+  return (<div className={clsx(
+    'flex flex-col h-full',
+  )}>
+    {step !== Step.Done && <Header />}
 
-  const onChange = () => {
-    setAutoAdd(!autoAdd);
-    setStorageAutoAdd(!autoAdd);
-  }
+    {
+      step === Step.Checking
+      && <>
+        <div className="shrink mt-4 min-w-[300px] items-start justify-center border-y border-zinc-200 bg-white sm:max-w-full sm:rounded-lg sm:border dark:border-white/10 dark:bg-zinc-900 p-4 max-h-[75vh] overflow-auto">
+          <div className="mb-4 flex items-center justify-between">
+            <Input
+              className={clsx('!w-96')}
+              name="search"
+              aria-label="Search"
+              placeholder={t('find_items_by_keywords')}
+              onKeyDown={
+                (e) => e.key === 'Enter' && setSearchKeyword((e.target as HTMLInputElement).value)
+              }
+            />
 
-  const onImport = () => {
-    const data = allUserUrl.map((item) => {
-      return {
-        url: item.url,
-        status: item.selected ? 1 : 0,
-      }
-    })
-    globalDispatch({
-      type: ActionType.SetUpdateData,
-      payload: data as Array<IUpdateData> || [],
-    });
-    setLastUpdateDataTime_pocket(new Date().getTime());
-    navigate('building')
-  }
-
-  const isChecked = (key: string | number) => {
-    const result = allUserUrl.filter(item => item.id === key);
-    return result[0]?.selected || false;
-  }
-
-  const searchKeyWord = (e: any) => {
-    const searchText = e.target.value;
-    if (searchText.trim() !== searchWord) {
-      setSearchWord(e.target.value)
-    }
-  }
-
-  const titleRender = (nodeData: any) => {
-    if (nodeData.url) {
-      return (
-        <div className={styles.items}>
-          <p className={styles['title']}>{nodeData.title}</p>
-          <p className={styles['url']}>{nodeData.url}</p>
-        </div>
-      );
-    } else {
-      return (
-        <div>
-          <span style={{ marginLeft: 8 }}>{nodeData.title}</span>
-        </div>
-      );
-    }
-  };
-
-  return (
-    <div className={clsx(
-      styles.container,
-      'flex-1 w-0 h-full overflow-auto'
-    )}>
-      <div className={styles['content']}>
-        <div className={styles['left']}>
-          <div className={styles['back']} onClick={() => navigate('/')}>
-            <ArrowLeftOutlined />
-          </div>
-        </div>
-        <div className={styles['center']}>
-          <div className={styles['header']}>
-            <p><span style={{ color: '#e94554' }}>Pocket</span> {t('saves')}</p>
-          </div>
-          <div className={styles['control-box']}>
-            <Input className={styles['search']} placeholder={t('find_items_by_keywords')} prefix={<SearchOutlined />} onPressEnter={searchKeyWord} />
-            <Checkbox className={styles['select']} onChange={onChange}>{t('select_deselect_all_shown')}</Checkbox>
-          </div>
-          <Spin spinning={loading} tip={t('loading')} style={{ background: '#fff' }}>
-            {/* <div className={styles['list-box']}>
-              <Tree
-                className={styles.treeList}
-                checkable
-                onExpand={onExpand}
-                expandedKeys={expandedKeys}
-                autoExpandParent={autoExpandParent}
-                onCheck={onCheck}
-                checkedKeys={checkedKeys}
-                treeData={treeData}
-                titleRender={titleRender}
+            <CheckboxField className=''>
+              <Checkbox
+                checked={checkedKeys.length === flattenData.length || checkedKeys.length > 0}
+                indeterminate={checkedKeys.length !== flattenData.length}
+                onChange={
+                  (e) => setCheckedKeys(
+                    e
+                      ? flattenData
+                        .filter(({ key = '' }) => key)
+                        .map(({ key = '' }) => key)
+                      : []
+                  )
+                }
               />
-            </div> */}
-            <DataList
-              checkable
-              onExpand={onExpand}
-              expandedKeys={expandedKeys}
-              autoExpandParent={autoExpandParent}
-              onCheck={onCheck}
-              checkedKeys={checkedKeys}
-              treeData={treeData} />
-          </Spin>
+              <Label>{t('select_deselect_all_shown')}</Label>
+            </CheckboxField>
+          </div>
+          {
+            fetchingTree
+              ? <div className="text-center">{t('loading')}</div>
+              : treeData.length ?
+                <CustomTree
+                  disabledKeys={disabledKeys}
+                  checkedKeys={checkedKeys}
+                  onCheck={(newCheckedKeys) => !isEqual(newCheckedKeys, checkedKeys) && setCheckedKeys(newCheckedKeys)}
+                  treeData={(treeData || []) as TreeNodeWithKey[]}
+                />
+                : <div className="text-center">{t('no_data_available')}</div>
+          }
+        </div>
 
-          <p style={{ textAlign: 'right' }}><LockOutlined /> {t('secure_connection')}</p>
+        <div className="flex items-center justify-between mt-4">
+          <CheckboxField className=''>
+            <Checkbox
+              onChange={(e) => setAutoAdd(e)}
+              checked={!!autoAdd}
+            />
+            <Label>{t('automatically_import_new_items_in_bookmarks_and_reading_list')}</Label>
+          </CheckboxField>
+
+          <div className='flex'>
+            <Button outline onClick={() => navigate('/manage-sources')}>
+              {t('cancel')}
+            </Button>
+            <Button
+              disabled={!importCount}
+              className='ml-4'
+              onClick={() => importCount && setStep(Step.Uploading)}
+            >
+              {`${t('import')} ${importCount} ${t('selected_urls')}`}
+            </Button>
+          </div>
         </div>
-        <div className={styles['right']}>
-          <Button className={styles['import-btn']} size="middle" type="primary" block onClick={onImport}>
-            <span>{checkedCount} {t('items')}</span><br></br>
-            <span>{t('fetch')} </span>
-          </Button>
-          <p className={styles['auto-add']}>
-            <Switch checked={autoAdd} onChange={onChange} />
-            <span>{t('auto_add_new_items')}</span>
-          </p>
-        </div>
-      </div>
-    </div>
-  );
+      </>
+    }
+    {step === Step.Uploading && <FetchingStatus />}
+    {step === Step.Done && <DoneStatus />}
+
+  </div>)
 };
 
-export default Pocket;
+export default BrowserData;

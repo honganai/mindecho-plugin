@@ -67,7 +67,7 @@ const BrowserData: React.FC<{
   const [step, setStep] = useState<Step>(Step.Checking);
 
   useEffect(() => {
-    getStorageAutoAdd().then((res) => setAutoAdd(res))
+    getStorageAutoAdd().then((res) => setAutoAdd(!!res))
   }, [])
 
   useEffect(() => { !isNull(autoAdd) && setStorageAutoAdd(autoAdd) }, [autoAdd])
@@ -119,6 +119,7 @@ const BrowserData: React.FC<{
               user_used_time: dayjs(Date.now()).format('YYYY-MM-DD HH:mm:ss'),
               node_id: '',
               node_index: '',
+              status: 1,
               parentId: '',
               origin_info: item,
             }
