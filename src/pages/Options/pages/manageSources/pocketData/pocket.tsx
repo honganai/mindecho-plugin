@@ -29,6 +29,45 @@ const fetchDataFormChrome: () => Promise<chrome.bookmarks.BookmarkTreeNode[]> = 
   })
 }
 
+
+const Bind = () => {
+  const types = 'pocket'
+  return new Promise(resolve => {
+    chrome.runtime.sendMessage({ type: 'request', api: 'get_bind_status', body: {} }, (res) => {
+      if (res?.data?.pocket) {
+        resolve(res)
+      } else {
+        chrome.runtime.sendMessage({ type: 'request', api: 'get_bind_url', body: { bind_source: types, extensionId: chrome.runtime.id } }, (res) => {
+          console.log('bindPocket res:', res);
+          if (res.data.url !== '') {
+            window.open(res.data.url, '_blank');
+            // 定义计时器变量
+            let timer = 0;
+            const interval = 5000;
+            const maxTime = 10 * 60 * 1000;
+
+            // 定义定时器函数
+            const mainTimer = setInterval(() => {
+              timer += interval;
+              if (timer >= maxTime) {
+                clearInterval(mainTimer); // 超过3分钟后清除主定时器
+              } else {
+                chrome.runtime.sendMessage({ type: 'request', api: 'get_bind_status', body: { code: res.data.code } }, (res) => {
+                  if (res.data[types]) {
+                    resolve(res)
+                    clearInterval(mainTimer); // 成功后清除主定时器
+                  }
+                });
+              }
+            }, interval);
+          }
+        });
+      }
+    })
+  })
+
+}
+
 const fetchDataFromServer: () => Promise<IBookmarks[]> = async () => {
   return new Promise((resolve) => {
     chrome.runtime.sendMessage({
@@ -69,6 +108,9 @@ const BrowserData: React.FC<{
 
   useEffect(() => {
     getStorageAutoAdd().then((res) => setAutoAdd(!!res))
+    Bind().then((res) => {
+      console.log("🚀 ~ Bind ~ res:", res)
+    })
   }, [])
 
   useEffect(() => { !isNull(autoAdd) && setStorageAutoAdd(autoAdd) }, [autoAdd])
