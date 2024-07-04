@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import {
   Dropdown,
   DropdownButton,
-  DropdownDivider,
   DropdownItem,
   DropdownLabel,
   DropdownMenu,
@@ -23,22 +22,10 @@ import {
   ChevronUpIcon,
 } from '@heroicons/react/16/solid'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { handleLogin } from '@/utils/common.util';
 import logo from '@/assets/icons/logo.png';
 import GlobalContext, { ActionType, NavigationMap } from '@/reducer/global'
 import Avatar from 'react-avatar';
 import clsx from 'clsx';
-
-function AccountDropdownMenu({ anchor }: { anchor: 'top start' | 'bottom end' }) {
-  return (
-    <DropdownMenu className="min-w-64" anchor={anchor}>
-      <DropdownItem href="#">
-        <ArrowRightStartOnRectangleIcon />
-        <DropdownLabel>Sign out</DropdownLabel>
-      </DropdownItem>
-    </DropdownMenu>
-  )
-}
 
 const { getMessage: t } = chrome.i18n;
 
@@ -47,19 +34,11 @@ export function ApplicationLayout({
 }: {
   children: React.ReactNode
 }) {
-  const { state: globalState, dispatch: globalDispatch } = useContext(GlobalContext);
-  const { nav, userInfo } = globalState;
+  const { state: globalState } = useContext(GlobalContext);
+  const { userInfo } = globalState;
   const navigate = useNavigate()
   const { pathname } = useLocation()
-  handleLogin(
-    (res: any) => {
-      console.log("🚀 ~ res:", res)
 
-    },
-    //如果没有登录，则等用户点击登陆按钮
-    () => {
-    }
-  );
   return (
     <SidebarLayout
       navbar={<></>}
@@ -141,7 +120,26 @@ export function ApplicationLayout({
                   </span>
                   <ChevronUpIcon />
                 </DropdownButton>
-                <AccountDropdownMenu anchor="top start" />
+
+                <DropdownMenu className="min-w-64" anchor='top start'>
+                  <DropdownItem
+                    onClick={() => {
+                      chrome.runtime.sendMessage({
+                        type: 'request',
+                        api: 'sign_out',
+                      }, () => {
+                        chrome.runtime.sendMessage(
+                          { type: 'request', api: 'user_url_status' },
+                          () => {
+                            setTimeout(() => window.location.reload(), 1000)
+                          })
+                      })
+                    }}
+                  >
+                    <ArrowRightStartOnRectangleIcon />
+                    <DropdownLabel>{t('sign_out')}</DropdownLabel>
+                  </DropdownItem>
+                </DropdownMenu>
               </Dropdown>
             }
           </SidebarFooter>

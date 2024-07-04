@@ -379,6 +379,10 @@
     "message": "Go!",
     "description": ""
   },
+  "imported": {
+    "message": "Imported",
+    "description": ""
+  },
   "not_imported": {
     "message": "Not Imported",
     "description": ""
@@ -483,8 +487,12 @@
     "message": "Use Keyboard Shortcut",
     "description": ""
   },
-  "pin_browser_extension_icon_above":{
+  "pin_browser_extension_icon_above": {
     "message": "Pin Browser Extension Icon above",
+    "description": ""
+  },
+  "sign_out": {
+    "message": "Sign out",
     "description": ""
   }
 }

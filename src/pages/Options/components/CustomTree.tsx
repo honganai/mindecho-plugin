@@ -37,7 +37,7 @@ const CustomTree: React.FC<CustomTreeProps> = ({ treeData, onCheck, checkedKeys,
 
   const renderTitle = (item: TreeNodeWithKey) => {
     return (
-      <CheckboxField className='my-1 w-full'>
+      <CheckboxField className='my-1 w-full cursor-pointer'>
         <Checkbox
           disabled={disabledKeys.includes(item.key)}
           checked={
@@ -48,8 +48,10 @@ const CustomTree: React.FC<CustomTreeProps> = ({ treeData, onCheck, checkedKeys,
           indeterminate={halfCheckedKeys.includes(item.key)}
           onChange={(checked: Boolean) => onCheckBoxChange(checked, item.key)}
         />
-        <Label className=' line-clamp-1'>{item.title || t('no_name_item')}</Label>
-        <Description className=' line-clamp-2'>{item.url}</Description>
+        <Label className='w-full'>
+          <div className=' line-clamp-1 break-all	'>{item.title || t('no_name_item')}</div>
+          <Description className=' line-clamp-1 break-all	'>{item.url}</Description>
+        </Label>
       </CheckboxField>
     );
   };

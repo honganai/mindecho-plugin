@@ -30,16 +30,22 @@ const Api = {
   userinfo: () =>
     http.get(`/api/v1/user/info`).then((res) => {
       // 额外保存用户信息
-      res.clone().json().then(res => {
-        chrome.storage.local.set({
-          userInfo: res.result || null,
-        })
-        .then(() => {
-          console.log('set userInfo is ok');
+      res
+        .clone()
+        .json()
+        .then((res) => {
+          chrome.storage.local
+            .set({
+              userInfo: res.result || null,
+            })
+            .then(() => {
+              console.log('set userInfo is ok');
+            });
         });
-      })
       return res;
     }),
+  //logout
+  sign_out: ({ body, headers = {} }) => http.get('/logout', body, headers),
   //上传用户资源
   upload_user_url: ({ body, headers = {} }) => http.post('/api/v1/user_url', body, headers),
   //上传用户打开的文章（history&xbookmark）
@@ -75,11 +81,11 @@ const Api = {
       headers,
     ),
   /** 获取 Thinking 文章列表 ID */
-  goalArticleList: ({ body, headers = {} }) =>
-    http.post('/api/v1/user-goal-rel-article/articles', body, headers),
+  goalArticleList: ({ body, headers = {} }) => http.post('/api/v1/user-goal-rel-article/articles', body, headers),
   createGussGoal: ({ body, headers = {} }) => http.post('/api/v1/llm/guess_goal', body, headers),
   postAnswerGoal: ({ body, headers = {} }) => http.post('/api/v1/llm/answer_mutil_goal', body, headers),
-  postUserGoalRelArticle: ({ body, headers = {} }) => http.post('/api/v1/user-goal-rel-article/saveorupdate_article_user_goal', body, headers),
+  postUserGoalRelArticle: ({ body, headers = {} }) =>
+    http.post('/api/v1/user-goal-rel-article/saveorupdate_article_user_goal', body, headers),
   // 阻塞一次性请求distill结果 实时使用 ws_distill_request
   distillBlocking: ({ body, headers = {} }) => http.post('/api/v1/llm/distill', body, headers),
   // 获取高亮度相似文本
@@ -91,7 +97,8 @@ const Api = {
   //点击时保存question
   quesiton_merge_by_content: ({ body, headers = {} }) =>
     http.post('/api/v1/user-question/merge_by_content/', body, headers),
-  getUnsortGroup: ({ headers = {}, params = {} }) => http.get('/api/v1/user-goal-rel-article/unsort-group', params, headers),
+  getUnsortGroup: ({ headers = {}, params = {} }) =>
+    http.get('/api/v1/user-goal-rel-article/unsort-group', params, headers),
   /** 更新用户默认语言 */
   updateUserLanguage: ({ body, headers = {} }) => http.post('/api/v1/user_lang_info', body, headers),
 
