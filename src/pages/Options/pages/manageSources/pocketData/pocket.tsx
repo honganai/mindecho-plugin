@@ -1,7 +1,6 @@
 import React, { useEffect, useContext, useState } from 'react';
 import _, { isEqual, isNull } from "lodash";
-import GlobalContext, { ActionType, IUpdateData, IBookmarks } from '@/reducer/global';
-import { setAutoAdd as setStorageAutoAdd, getAutoAdd as getStorageAutoAdd, setLastUpdateDataTime } from '@/constants';
+import { setAutoAdd as setStorageAutoAdd, getAutoAdd as getStorageAutoAdd } from '@/constants';
 import { MAX_SIZE } from '@/utils/common.util';
 import clsx from 'clsx';
 import { useNavigate } from 'react-router-dom';
@@ -10,20 +9,16 @@ import { Label } from '@/pages/Options/components/catalyst/fieldset'
 import { Button } from '@/pages/Options/components/catalyst/button'
 
 import { Input } from '@/pages/Options/components/catalyst/input'
-import { buildTree, convertChromeBookmarkToTree, flattenTree, generateKey, mergeTrees } from '@/utils/treeHandler';
+import { convertPocketToTree } from '@/utils/treeHandler';
 import CustomTree, { TreeNodeWithKey } from '@/pages/Options/components/CustomTree';
 import { TreeNode as BaseTreeNode } from '@/utils/treeHandler';
-import DoneStatus from '@/pages/Options/components/DoneStatus';
-import FetchingStatus from '@/pages/Options/components/FetchingStatus';
 import Header from '@/pages/Options/components/header/header';
 
-const dayjs = require('dayjs');
 const { getMessage: t } = chrome.i18n;
 
-const fetchDataFormChrome: () => Promise<chrome.bookmarks.BookmarkTreeNode[]> = async () => {
+const fetchDataFormChrome: () => Promise<IPocketURL[]> = async () => {
   return new Promise((resolve) => {
     chrome.runtime.sendMessage({ type: 'request', api: 'get_user_url', body: { page: 1, page_size: MAX_SIZE, title: '', type: 'pocket' } }, (res) => {
-      console.log("🚀 ~ chrome.runtime.sendMessage ~ res:", res)
       resolve(res?.result || [])
     });
   })
@@ -65,33 +60,34 @@ const Bind = () => {
       }
     })
   })
-
-}
-
-const fetchDataFromServer: () => Promise<IBookmarks[]> = async () => {
-  return new Promise((resolve) => {
-    chrome.runtime.sendMessage({
-      type: 'request',
-      api: 'get_user_url',
-      body:
-      {
-        page: 1,
-        page_size: MAX_SIZE,
-        title: '',
-        type: 'bookmark'
-      }
-    }, (res) => {
-      console.log('🚀 ~ datalist -获取用户上传数据- line:240: ', res);
-      resolve(res?.result || [])
-    });
-  })
 }
 
 enum Step {
+  Authorisation,
   Checking,
-  Uploading,
-  Done,
 }
+
+export interface IPocketURL {
+  id: number;
+  user_id: number;
+  title: string;
+  url: string;
+  type: string;
+  status: number;
+  user_create_time: Date;
+  node_id: null;
+  node_index: null;
+  parentId: null;
+  user_used_time: Date;
+  properties: null;
+  origin_info: null;
+  url_hash_id: string;
+  error_message: null;
+  created_on: Date;
+  changed_on: Date;
+  article_content: string;
+}
+
 
 const BrowserData: React.FC<{
   userinfo?: any;
@@ -104,19 +100,16 @@ const BrowserData: React.FC<{
   const [searchKeyword, setSearchKeyword] = useState<string>('');
   const [autoAdd, setAutoAdd] = useState<boolean | null>(null);
   const [fetchingTree, setFetchingTree] = useState<boolean>(true);
-  const [step, setStep] = useState<Step>(Step.Checking);
+  const [step, setStep] = useState<Step>(Step.Authorisation);
 
   useEffect(() => {
     getStorageAutoAdd().then((res) => setAutoAdd(!!res))
-    Bind().then((res) => {
-      console.log("🚀 ~ Bind ~ res:", res)
-    })
   }, [])
 
   useEffect(() => { !isNull(autoAdd) && setStorageAutoAdd(autoAdd) }, [autoAdd])
 
   useEffect(() => setTreeData(searchKeyword.trim() === ''
-    ? buildTree(flattenData)[0]?.children || []
+    ? flattenData
     : flattenData
       .filter(
         item =>
@@ -127,78 +120,40 @@ const BrowserData: React.FC<{
 
   useEffect(() => {
     switch (step) {
+      case Step.Authorisation:
+        Bind().then((res) => {
+          setStep(Step.Checking)
+        })
+        break;
       case Step.Checking:
         fetchDataFormChrome()
           .then((res) => {
-            console.log("🚀 ~ .then ~ res:", res)
-            // const flattenChromeBookmarks = flattenTree(convertedChromeBookmarks)
+            const pocketTree = convertPocketToTree(res)
+            const keyOfPocketTree = pocketTree.map(({ key }) => key)
 
-            // const chromeBookmarksWithKey = generateKey(flattenChromeBookmarks)
-
-
-            // const uploadedKeys = userBookMarkWithKey
-            //   .filter(({ key = '' }) => key)
-            // .map(({ key = '' }) => key) || []
-
-            // setCheckedKeys([...uploadedKeys, ...autoAdd ? userBookMarkWithKey.map(({ key }) => key) : []])
-            // setDisabledKeys(uploadedKeys)
+            setFlattenData(pocketTree)
+            setCheckedKeys(keyOfPocketTree)
+            setDisabledKeys(keyOfPocketTree)
           }).finally(() => setFetchingTree(false));
-        break;
-      case Step.Uploading:
-        const payloadBody = flattenData
-          .filter(({ url }) => url)
-          .map((item) => {
-            return {
-              title: item.title,
-              url: item.url,
-              type: 'bookmark',
-              user_create_time: dayjs(item.dateAdded).format('YYYY-MM-DD HH:mm:ss'),
-              user_used_time: dayjs(Date.now()).format('YYYY-MM-DD HH:mm:ss'),
-              node_id: '',
-              node_index: '',
-              parentId: '',
-              origin_info: item,
-            }
-          })
-
-        chrome.runtime.sendMessage({
-          type: 'request',
-          api: 'upload_user_url',
-          body: payloadBody
-        }).then((res) => {
-          setLastUpdateDataTime(new Date().getTime());
-          setTimeout(() => {
-            setStep(Step.Done)
-          }, 1000 * 60)
-        });
-
-        break;
-      case Step.Done:
-        console.log("🚀 ~ useEffect ~ Step.Done:", Step.Done)
         break;
       default:
         break;
     }
   }, [step])
 
-  const [importCount, setImportCount] = useState(0)
-  useEffect(() => {
-    setImportCount(checkedKeys
-      .filter(key =>
-        !disabledKeys.includes(key)
-        &&
-        flattenData.find(({ key: k }) => k === key)?.url
-      ).length)
-  }, [checkedKeys, disabledKeys, flattenData])
-
   return (<div className={clsx(
     'flex flex-col h-full',
   )}>
-    {step !== Step.Done && <Header />}
+    <Header />
 
+    {step === Step.Authorisation && <div className="shrink mt-4 min-w-[300px] items-start justify-center border-y border-zinc-200 bg-white sm:max-w-full sm:rounded-lg sm:border dark:border-white/10 dark:bg-zinc-900 p-4 max-h-[75vh] overflow-auto">
+      <div className="text-center">
+        Please authorise the extension to access your Pocket data
+      </div>
+    </div>
+    }
     {
-      step === Step.Checking
-      && <>
+      step === Step.Checking && <>
         <div className="shrink mt-4 min-w-[300px] items-start justify-center border-y border-zinc-200 bg-white sm:max-w-full sm:rounded-lg sm:border dark:border-white/10 dark:bg-zinc-900 p-4 max-h-[75vh] overflow-auto">
           <div className="mb-4 flex items-center justify-between">
             <Input
@@ -242,33 +197,15 @@ const BrowserData: React.FC<{
           }
         </div>
 
-        <div className="flex items-center justify-between mt-4">
-          <CheckboxField className=''>
-            <Checkbox
-              onChange={(e) => setAutoAdd(e)}
-              checked={!!autoAdd}
-            />
-            <Label>{t('automatically_import_new_items_in_bookmarks_and_reading_list')}</Label>
-          </CheckboxField>
-
+        <div className="flex items-center justify-end mt-4">
           <div className='flex'>
             <Button outline onClick={() => navigate('/manage-sources')}>
               {t('cancel')}
-            </Button>
-            <Button
-              disabled={!importCount}
-              className='ml-4'
-              onClick={() => importCount && setStep(Step.Uploading)}
-            >
-              {`${t('import')} ${importCount} ${t('selected_urls')}`}
             </Button>
           </div>
         </div>
       </>
     }
-    {step === Step.Uploading && <FetchingStatus />}
-    {step === Step.Done && <DoneStatus />}
-
   </div>)
 };
 

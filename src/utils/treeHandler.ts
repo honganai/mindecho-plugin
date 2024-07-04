@@ -1,4 +1,5 @@
 import { HistoryData } from '@/pages/Options/pages/manageSources/historyData/historyData';
+import { IPocketURL } from '@/pages/Options/pages/manageSources/pocketData/pocket';
 import { TweetItem } from '@/pages/Options/pages/manageSources/twitter/type';
 import _ from 'lodash';
 
@@ -146,3 +147,17 @@ export function convertXBookmarkToTree(tree: TweetItem[]): TreeNode[] {
     };
   });
 }
+
+export const convertPocketToTree = (tree: IPocketURL[]) => {
+  return tree.map((item) => {
+    const { id, title, url, parentId, user_create_time } = item;
+    return {
+      id,
+      key: String(id),
+      title,
+      url,
+      parentId: parentId || '0',
+      dateAdded: new Date(user_create_time).getTime(),
+    };
+  });
+};
