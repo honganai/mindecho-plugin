@@ -162,10 +162,11 @@ export function convertHistoryToTree(history: HistoryData[]): TreeNode[] {
  * @param tree
  * @returns
  */
-export function convertXBookmarkToTree(tree: TweetItem[]): TreeNode[] {
+export function convertXBookmarkToTree(tree: TweetItem[]): (TweetItem & TreeNode)[] {
   return tree.map((item) => {
     const { id, title, url, parentId, user_create_time, isUpdate } = item;
     return {
+      ...item,
       id,
       title,
       url,

@@ -35,27 +35,27 @@ const Component = ({ isLoginTwitter, nextStep }: {
     </div>
 
     <div className={clsx(
-      `grid grid-cols-1 gap-x-6 gap-y-10 pt-10 lg:grid-cols-3`
+      `gap-x-6 gap-y-10 pt-10`,
+      `flex items-center justify-between`
     )}>
-
       <div className="text-2xl font-semibold leading-9 tracking-tight text-slate-900">
         <div>{t('switch_back_to_this_page_and_continue')}</div>
+      </div>
 
-        <div className="mt-4 leading-8">
-          <Button className="mr-4" outline onClick={() => navigate('/manage-sources')}>
-            {t('cancel')}
+      <div className="leading-8">
+        <Button className="mr-4" outline onClick={() => navigate('/manage-sources')}>
+          {t('cancel')}
+        </Button>
+
+        {isLoginTwitter ? (
+          <Button onClick={nextStep}>
+            {t('continue')} {`>`}
           </Button>
-
-          {isLoginTwitter ? (
-            <Button onClick={nextStep}>
-              {t('continue')} {`>`}
-            </Button>
-          ) : (
-            <Button onClick={goTwitter}>
-              {t('to_login_x')}
-            </Button>
-          )}
-        </div>
+        ) : (
+          <Button onClick={goTwitter}>
+            {t('to_login_x')}
+          </Button>
+        )}
       </div>
     </div>
 

@@ -12,6 +12,7 @@ import {
   setTwitterAutoAdd as setStorageAutoAdd,
   getTwitterAutoAdd as getStorageAutoAdd,
   getLocalURLs,
+  setLocalURLs,
 } from '@/constants';
 import DoneStatus from '@/pages/Options/components/DoneStatus';
 import FetchingStatus from '@/pages/Options/components/FetchingStatus';
@@ -53,7 +54,7 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
   const [autoAdd, setAutoAdd] = useState<boolean | null>(null);
   const [disabledKeys, setDisabledKeys] = useState<string[]>([]);
 
-  const [flattenData, setFlattenData] = useState<BaseTreeNode[]>([]);
+  const [flattenData, setFlattenData] = useState<(BaseTreeNode & TweetItem)[]>([]);
   const [treeData, setTreeData] = useState<BaseTreeNode[]>([]);
   const [checkedKeys, setCheckedKeys] = useState<string[]>([]);
   const [fetchingTree, setFetchingTree] = useState<boolean>(true);
@@ -170,37 +171,26 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
 
           break;
         case Step.Uploading:
-          const data = flattenData.filter(({ key = '', isUpdate = false }) => checkedKeys.includes(key) && !isUpdate).map(item => {
-            return {
-              "title": "Shadow of uncertainty",
-              "url": "https://medium.com/@samikshyat/shadow-of-uncertainty-f664a823a0ea",
-              "type": "bookmark",
-              "user_create_time": "2024-01-11 08:46:44",
-              "node_id": "0",
-              "node_index": "0",
-              "parentId": "0",
-              "user_used_time": "2024-03-11 08:46:44",
-              "origin_info": "",
-              "author": "作者",
-              "content": "内容1",
-              "status": "3"
-            }
-          })
+          const data = flattenData.filter(({ key = '', isUpdate = false }) => checkedKeys.includes(key) && !isUpdate);
+          console.log("🚀 ~ handleSteps ~ data:", data)
 
-          console.log("🚀 ~ data ~ flattenData:", flattenData)
+          chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: data }, (res) => {
+            console.log("🚀 ~ chrome.runtime.sendMessage ~ res:", res)
+            setTimeout(() => {
+              setStep(Step.Done)
+            }, 1000 * 60)
+          });
 
-          // chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: data }, (res) => {
-          //   setTimeout(() => {
-          //     setStep(Step.Done)
-          //   }, 1000 * 60)
-          // });
+          setLocalURLs([
+            ...await getLocalURLs(),
+            ...data
+          ]);
 
-          // chrome.storage.local.set({
-          //   [X_BOOKMARKS_STORE]: flattenData.map(item => ({
-          //     ...item,
-          //     isUpdate: true
-          //   }))
-          // });
+          chrome.storage.local.set({
+            [X_BOOKMARKS_STORE]: flattenData.map(item => ({
+              ...item,
+            }))
+          });
           break;
         case Step.Done:
           break;

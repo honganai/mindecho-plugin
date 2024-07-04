@@ -21,8 +21,8 @@ initPagesInfo();
 
 chrome.runtime.onInstalled.addListener(() => {
   // 创建一个定时器，每隔6小时触发一次
-  // const periodInMinutes = 6 * 60;
-  const periodInMinutes = 3;
+  const periodInMinutes = 6 * 60;
+  // const periodInMinutes = 3;
   chrome.alarms.create('autoAddAlarm', { periodInMinutes });
 });
 
