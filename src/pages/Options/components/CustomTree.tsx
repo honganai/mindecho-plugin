@@ -75,7 +75,9 @@ const CustomTree: React.FC<CustomTreeProps> = ({ treeData, onCheck, checkedKeys,
       const node = findNode(treeData, nodeKey);
       if (node?.children) {
         node.children.forEach((child) => {
-          newKeys = addKeyAndChildren(newKeys, child.key);
+          if (!disabledKeys.includes(child.key)) {
+            newKeys = addKeyAndChildren(newKeys, child.key);
+          }
         });
       }
     };
@@ -122,8 +124,11 @@ const CustomTree: React.FC<CustomTreeProps> = ({ treeData, onCheck, checkedKeys,
         let allCount = node.children.length
         let checkedCount = 0
         node.children.forEach((child) => {
-
           checkParent(child);
+
+          if (disabledKeys.includes(child.key)) {
+            allCount--
+          }
 
           if (checkedKeySet.has(child.key)) {
             checkedCount++
@@ -134,7 +139,7 @@ const CustomTree: React.FC<CustomTreeProps> = ({ treeData, onCheck, checkedKeys,
           }
         });
 
-        if (checkedCount === allCount) {
+        if (checkedCount === allCount && allCount > 0) {
           checkedKeySet.add(node.key);
         } else if (checkedCount > 0) {
           halfCheckedKeySet.add(node.key);

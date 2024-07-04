@@ -164,7 +164,7 @@ const BrowserData: React.FC<{
         break;
       case Step.Uploading:
         const payloadBody = flattenData
-          .filter(({ url }) => url)
+          .filter(({ url, key = '' }) => (url && !disabledKeys.includes(key)))
           .map((item) => {
             return {
               title: item.title,
@@ -229,16 +229,16 @@ const BrowserData: React.FC<{
                 (e) => e.key === 'Enter' && setSearchKeyword((e.target as HTMLInputElement).value)
               }
             />
-
+            <p>checkedKeys.length{checkedKeys.length}</p>
             <CheckboxField className=''>
               <Checkbox
-                checked={checkedKeys.length === flattenData.length || checkedKeys.length > 0}
-                indeterminate={checkedKeys.length !== flattenData.length}
+                checked={importCount > 0}
+                indeterminate={flattenData.filter(({ key = '' }) => !([...checkedKeys, ...disabledKeys].includes(key) || key.includes('noUrl'))).length !== 0}
                 onChange={
                   (e) => setCheckedKeys(
                     e
                       ? flattenData
-                        .filter(({ key = '' }) => key)
+                        .filter(({ key = '' }) => !disabledKeys.includes(key))
                         .map(({ key = '' }) => key)
                       : []
                   )
