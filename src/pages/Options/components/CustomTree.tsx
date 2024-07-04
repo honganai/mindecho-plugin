@@ -150,6 +150,10 @@ const CustomTree: React.FC<CustomTreeProps> = ({ treeData, onCheck, checkedKeys,
 
   useEffect(() => {
     const { checkedKeys: finalCheckedKeys, halfCheckedKeys: finalHalfCheckedKeys } = updateParentCheckState(checkedKeys);
+    console.log("🚀 ~ useEffect ~ checkedKeys:", checkedKeys)
+    console.log("🚀 ~ useEffect ~ finalHalfCheckedKeys:", finalHalfCheckedKeys)
+    console.log("🚀 ~ useEffect ~ finalCheckedKeys:", finalCheckedKeys)
+
     handleCheck(finalCheckedKeys, finalHalfCheckedKeys);
   }, [checkedKeys])
 

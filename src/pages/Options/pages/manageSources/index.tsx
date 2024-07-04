@@ -18,6 +18,12 @@ export interface IProcessStatus {
   type: string;
 }
 
+enum CardStatus {
+  Synching,
+  Imported,
+  NotImported
+}
+
 const fetchProgress: () => Promise<IProcessStatus[]> = async () => {
   return new Promise((resolve) => {
     chrome.runtime.sendMessage({ type: 'request', api: 'user_url_status' }, (res) => {
@@ -36,7 +42,7 @@ const Page = () => {
       title: t(`browser_bookmarks_reading_list`),
       subTitle: t(`choose_from_bookmarks_reading_list_history`),
       handleClick: () => navigate('/manage-sources/browser-data'),
-      isSynching: false
+      status: CardStatus.NotImported
     },
     {
       id: 'history',
@@ -44,7 +50,7 @@ const Page = () => {
       title: t(`browsing_history`),
       subTitle: t(`automatically_public_articles_news_blogs_and_essays_from_current_open_tabs`),
       handleClick: () => navigate('history-data'),
-      isSynching: false
+      status: CardStatus.NotImported
     },
     {
       id: "xbookmark",
@@ -52,7 +58,7 @@ const Page = () => {
       title: t('browser_bookmarks_reading_list'),
       subTitle: t('your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you'),
       handleClick: () => navigate('twitter'),
-      isSynching: false
+      status: CardStatus.NotImported
     },
     // {
     //   id: "pocket",
@@ -91,20 +97,23 @@ const Page = () => {
     })
     fetchProgress().then((res) =>
       res.forEach(({ count, status, type }) => {
-        console.log("🚀 ~ res.forEach ~ count, status, type:", count, status, type)
+        // not imported===  对应的status==0  没有>0的 
+        // imported    ===   没有status为1和2的 全部为>=3
+        // Synching === status存在1和2的
         const card = cardList.find(card => card.id === type)
-        if (isUndefined(card)) return
-        card.isSynching = status === 1
-        setCardList([...cardList])
+        if (card) {
+          card.status = status === 0 ? CardStatus.NotImported : status >= 3 ? CardStatus.Imported : CardStatus.Synching
+          setCardList([...cardList])
+        }
       }))
   }, [])
 
-  const CardComponentMaker = ({ img, title, subTitle, handleClick, isSynching }: {
+  const CardComponentMaker = ({ img, title, subTitle, handleClick, status }: {
     img: React.ReactElement | string;
     title: React.ReactElement | string;
     subTitle: React.ReactElement | string;
     handleClick: (() => void) | null,
-    isSynching: boolean
+    status: CardStatus
   }): JSX.Element => {
     return <div className="py-2 last:border-0 border-b border-gray-100">
       <div
@@ -126,9 +135,9 @@ const Page = () => {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <Badge className="!text-base !font-medium" color={isSynching ? 'lime' : 'zinc'}>
-              {isSynching ? t('synching') : t('not_imported')}
-            </Badge>
+            {status === CardStatus.Synching && <Badge className="!text-base !font-medium" color='lime'>{t('synching')}</Badge>}
+            {status === CardStatus.Imported && <Badge className="!text-base !font-medium" color='lime'>{t('imported')}</Badge>}
+            {status === CardStatus.NotImported && <Badge className="!text-base !font-medium" color='zinc'>{t('not_imported')}</Badge>}
           </div>
         </div>
       </div>
@@ -149,7 +158,7 @@ const Page = () => {
             title={card.title}
             subTitle={card.subTitle}
             handleClick={card.handleClick}
-            isSynching={card.isSynching}
+            status={card.status}
           />
         ))}
       </div>

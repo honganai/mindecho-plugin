@@ -31,11 +31,10 @@ import Building from '@/pages/Options/pages/manageSources/building/building';
 import Pocket from '@/pages/Options/pages/manageSources/pocketData/pocket';
 import Twitter from '@/pages/Options/pages/manageSources/twitter/twitter';
 
+const { getMessage: t } = chrome.i18n;
 
 const Options: React.FC = () => {
-  const [buildStatus, setBuildStatus] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [stepPage, setStepPage] = useState(1);
   const [userinfo, setUserinfo] = useState<UserInfo>();
   const [isLogin, setIsLogin] = useState<boolean>(false);
   const [globalState, globalDispatch] = useReducer(GlobalReducer, {
@@ -54,13 +53,6 @@ const Options: React.FC = () => {
     requestEnd: false,
     isLogin: false,
   });
-  const [buildType, setBuildType] = useState<
-    'xbookmark' |
-    'browser' |
-    'pocket' |
-    ''
-  >('');
-  const { getMessage: t } = chrome.i18n;
 
   const toLogin = () => {
     chrome.runtime.sendMessage({ type: 'login', data: {} }, (res) => {
@@ -81,7 +73,7 @@ const Options: React.FC = () => {
 
   const onLoginBack = (request: any, sender: any, sendResponse: any) => {
     if (request === 'http-error') {
-      message.error(chrome.i18n.getMessage('errorDefault'));
+      // message.error(chrome.i18n.getMessage('errorDefault'));
     }
     if (request.type === 'setLogin') {
       console.log('content msg:', request, sender);
@@ -96,6 +88,7 @@ const Options: React.FC = () => {
 
   //判断已经设置过用户信息、登录状态的缓存时，直接使用
   const successFn = (res: any) => {
+    console.log("🚀 ~ successFn ~ res:", res)
     const { isLogin, userInfo } = res;
     setIsLogin(isLogin)
     setUserinfo(userInfo);
@@ -143,9 +136,6 @@ const Options: React.FC = () => {
       },
     );
   }, [userinfo?.id]);
-
-  const { nav } = globalState;
-  useEffect(() => { nav === 'collection' && setStepPage(1) }, [nav])
 
   return (
     <Router>

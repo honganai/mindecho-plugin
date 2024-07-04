@@ -1,3 +1,4 @@
+import { IBookmarksItemFormServer } from '@/pages/Options/pages/manageSources/browserData/browserData';
 import { HistoryData } from '@/pages/Options/pages/manageSources/historyData/historyData';
 import { IPocketURL } from '@/pages/Options/pages/manageSources/pocketData/pocket';
 import { TweetItem } from '@/pages/Options/pages/manageSources/twitter/type';
@@ -66,10 +67,10 @@ export function buildTree<T extends TreeNode>(items: Tree<T>, parentId: string |
  * @param arr {Tree<T>} - 树结构数组
  * @returns {Tree<TreeNodeWithKey>} - 生成 key 属性后的树结构数组
  */
-export const generateKey: <T extends TreeNode>(arr: Tree<T>) => Tree<T> = (arr) => {
+export const generateKey: <T extends TreeNode>(arr: Tree<T>) => Tree<T & { key: string }> = (arr) => {
   return arr.map((item) => ({
     ...item,
-    key: item.url || 'noUrl' + item.title || 'noTitle',
+    key: `${item.url || 'noUrl'}${item.title || 'noTitle'}`,
   }));
 };
 
@@ -105,6 +106,19 @@ export function convertChromeBookmarkToTree(bookmarks: chrome.bookmarks.Bookmark
       parentId,
       dateAdded,
       children: children ? convertChromeBookmarkToTree(children) : [],
+    };
+  });
+}
+
+export function convertServerBookmarkToTree(bookmarks: IBookmarksItemFormServer[]): TreeNode[] {
+  return bookmarks.map((bookmark) => {
+    const { id, title, url, parentId, user_create_time } = bookmark;
+    return {
+      id,
+      title,
+      url,
+      parentId,
+      dateAdded: new Date(user_create_time).getTime(),
     };
   });
 }

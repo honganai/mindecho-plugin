@@ -28,7 +28,28 @@ const fetchDataFormChrome: () => Promise<chrome.bookmarks.BookmarkTreeNode[]> = 
   })
 }
 
-const fetchDataFromServer: () => Promise<IBookmarks[]> = async () => {
+export interface IBookmarksItemFormServer {
+  id: number;
+  user_id: number;
+  title: string;
+  url: string;
+  type: string;
+  status: number;
+  user_create_time: Date;
+  node_id: string;
+  node_index: number;
+  parentId: string;
+  user_used_time: Date;
+  properties: null;
+  origin_info: string;
+  url_hash_id: string;
+  error_message: null;
+  created_on: Date;
+  changed_on: Date;
+  article_content: string;
+}
+
+const fetchDataFromServer: () => Promise<IBookmarksItemFormServer[]> = async () => {
   return new Promise((resolve) => {
     chrome.runtime.sendMessage({
       type: 'request',
@@ -41,7 +62,6 @@ const fetchDataFromServer: () => Promise<IBookmarks[]> = async () => {
         type: 'bookmark'
       }
     }, (res) => {
-      console.log('🚀 ~ datalist -获取用户上传数据- line:240: ', res);
       resolve(res?.result || [])
     });
   })
@@ -91,20 +111,25 @@ const BrowserData: React.FC<{
             const flattenChromeBookmarks = flattenTree(convertedChromeBookmarks)
 
             const chromeBookmarksWithKey = generateKey(flattenChromeBookmarks)
-            const userBookMarkWithKey = generateKey(userBookMark) as { key: string }[] & IBookmarks[]
+            const userBookMarkWithKey = generateKey(userBookMark)
+
+            const chromeBookmarksKeys = chromeBookmarksWithKey.map(({ key }) => key)
+            const uploadedAndCheckKeys = userBookMarkWithKey
+              .filter(({ status }) => status > 0)
+              .map(({ key }) => key)
+
+            const uploadedButUnCheckedKeys = userBookMarkWithKey
+              .filter(({ status }) => status === 0)
+              .map(({ key }) => key)
+
+            setCheckedKeys(chromeBookmarksKeys.filter(key => !(uploadedButUnCheckedKeys.includes(key) || key.includes('noUrl'))))
+            setDisabledKeys(uploadedAndCheckKeys)
 
             setFlattenData(_.unionBy(
               chromeBookmarksWithKey,
               userBookMarkWithKey,
               'key'
             ))
-
-            const uploadedKeys = userBookMarkWithKey
-              .filter(({ key = '' }) => key)
-              .map(({ key = '' }) => key) || []
-
-            setCheckedKeys([...uploadedKeys, ...userBookMarkWithKey.map(({ key }) => key)])
-            setDisabledKeys(uploadedKeys)
           }).finally(() => setFetchingTree(false));
         break;
       case Step.Uploading:
