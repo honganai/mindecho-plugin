@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import pocketSourceIcon from '@/assets/icons/pocket_source_icon.png';
 import XIcon from '@/assets/icons/image 28.png';
 import GoogleIcon from '@/assets/icons/chrome-logo 1.png';
-import _, { isFunction, isUndefined } from 'lodash'
+import _, { isFunction, isUndefined, set } from 'lodash'
 import { Dialog } from '@/pages/Options/components/catalyst/dialog'
 import { Button } from '@/pages/Options/components/catalyst/button'
 import logo from '@/assets/icons/logo.png';
@@ -12,9 +12,72 @@ import { Badge } from '@/pages/Options/components/catalyst/badge'
 import { useNavigate } from "react-router-dom";
 import GlobalContext from '@/reducer/global';
 
+export interface IProcessStatus {
+  count: number;
+  status: number;
+  type: string;
+}
+
+const fetchProgress: () => Promise<IProcessStatus[]> = async () => {
+  return new Promise((resolve) => {
+    chrome.runtime.sendMessage({ type: 'request', api: 'user_url_status' }, (res) => {
+      resolve(res)
+    })
+  })
+};
+
+const { getMessage: t } = chrome.i18n;
+
 const Page = () => {
+  const [cardList, setCardList] = useState([
+    {
+      id: 'bookmark',
+      img: <img className="h-10" src={GoogleIcon} alt="google" />,
+      title: t(`browser_bookmarks_reading_list`),
+      subTitle: t(`choose_from_bookmarks_reading_list_history`),
+      handleClick: () => navigate('/manage-sources/browser-data'),
+      isSynching: false
+    },
+    {
+      id: 'history',
+      img: <img className="h-10" src={GoogleIcon} alt="google" />,
+      title: t(`browsing_history`),
+      subTitle: t(`automatically_public_articles_news_blogs_and_essays_from_current_open_tabs`),
+      handleClick: () => navigate('history-data'),
+      isSynching: false
+    },
+    {
+      id: "xbookmark",
+      img: <img className="h-10" src={XIcon} alt="XIcon" />,
+      title: t('browser_bookmarks_reading_list'),
+      subTitle: t('your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you'),
+      handleClick: () => navigate('twitter'),
+      isSynching: false
+    },
+    // {
+    //   id: "pocket",
+    //   img: <img className="h-10" src={pocketSourceIcon} alt="pocketSourceIcon" />,
+    //   title: t('pocket_saves'),
+    //   subTitle: t('your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you'),
+    //   handleClick: () => navigate('pocket'),
+    //   isSynching: false
+    // },
+    // {
+    //   img: <img className="h-10" src={raindropIcon} alt="raindropIcon" />,
+    //   title: t('browser_bookmarks_reading_list'),
+    //   subTitle: t('more_sources_will_be_supported'),
+    //   handleClick: null,
+    //   isSynching: true
+    // },
+    // {
+    //   img: <img className="h-10" src={RIcon} alt="RIcon" />,
+    //   title: t('more_sources_will_be_supported'),
+    //   subTitle: t('more_sources_will_be_supported'),
+    //   handleClick: null,
+    //   isSynching: true
+    // }
+  ])
   const navigate = useNavigate();
-  const { getMessage: t } = chrome.i18n;
   const [isOpenFirstTimeModal, setIsOpenFirstTimeModal] = useState(false)
   const { state: globalState } = useContext(GlobalContext);
   const { userInfo } = globalState;
@@ -26,6 +89,14 @@ const Page = () => {
         chrome.storage.local.set({ [IS_NOT_FIRST_TIME_USE]: false })
       }
     })
+    fetchProgress().then((res) =>
+      res.forEach(({ count, status, type }) => {
+        console.log("🚀 ~ res.forEach ~ count, status, type:", count, status, type)
+        const card = cardList.find(card => card.id === type)
+        if (isUndefined(card)) return
+        card.isSynching = status === 1
+        setCardList([...cardList])
+      }))
   }, [])
 
   const CardComponentMaker = ({ img, title, subTitle, handleClick, isSynching }: {
@@ -71,50 +142,7 @@ const Page = () => {
       }</div>
 
       <div className='flex flex-col'>
-        {[
-          {
-            img: <img className="h-10" src={GoogleIcon} alt="google" />,
-            title: t(`browser_bookmarks_reading_list`),
-            subTitle: t(`choose_from_bookmarks_reading_list_history`),
-            handleClick: () => navigate('/manage-sources/browser-data'),
-            isSynching: false
-          },
-          {
-            img: <img className="h-10" src={GoogleIcon} alt="google" />,
-            title: t(`browsing_history`),
-            subTitle: t(`automatically_public_articles_news_blogs_and_essays_from_current_open_tabs`),
-            handleClick: () => navigate('history-data'),
-            isSynching: false
-          },
-          {
-            img: <img className="h-10" src={XIcon} alt="XIcon" />,
-            title: t('browser_bookmarks_reading_list'),
-            subTitle: t('your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you'),
-            handleClick: () => navigate('twitter'),
-            isSynching: true
-          },
-          {
-            img: <img className="h-10" src={pocketSourceIcon} alt="pocketSourceIcon" />,
-            title: t('pocket_saves'),
-            subTitle: t('your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you'),
-            handleClick: () => navigate('pocket'),
-            isSynching: true
-          },
-          // {
-          //   img: <img className="h-10" src={raindropIcon} alt="raindropIcon" />,
-          //   title: t('browser_bookmarks_reading_list'),
-          //   subTitle: t('more_sources_will_be_supported'),
-          //   handleClick: null,
-          //   isSynching: true
-          // },
-          // {
-          //   img: <img className="h-10" src={RIcon} alt="RIcon" />,
-          //   title: t('more_sources_will_be_supported'),
-          //   subTitle: t('more_sources_will_be_supported'),
-          //   handleClick: null,
-          //   isSynching: true
-          // }
-        ].map((card, index) => (
+        {cardList.map((card, index) => (
           <CardComponentMaker
             key={index}
             img={card.img}
