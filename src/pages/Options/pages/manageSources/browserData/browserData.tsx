@@ -103,7 +103,7 @@ const BrowserData: React.FC<{
               .filter(({ key = '' }) => key)
               .map(({ key = '' }) => key) || []
 
-            setCheckedKeys([...uploadedKeys, ...autoAdd ? userBookMarkWithKey.map(({ key }) => key) : []])
+            setCheckedKeys([...uploadedKeys, ...userBookMarkWithKey.map(({ key }) => key)])
             setDisabledKeys(uploadedKeys)
           }).finally(() => setFetchingTree(false));
         break;
