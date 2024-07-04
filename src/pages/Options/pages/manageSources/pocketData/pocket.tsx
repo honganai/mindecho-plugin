@@ -88,10 +88,10 @@ const BrowserData: React.FC<{
       case Step.Checking:
         fetchDataFormChrome()
           .then((res) => {
-            // const convertedChromeBookmarks = convertChromeBookmarkToTree(fetchDataFormChrome())
-            const flattenChromeBookmarks = flattenTree(convertedChromeBookmarks)
+            console.log("🚀 ~ .then ~ res:", res)
+            // const flattenChromeBookmarks = flattenTree(convertedChromeBookmarks)
 
-            const chromeBookmarksWithKey = generateKey(flattenChromeBookmarks)
+            // const chromeBookmarksWithKey = generateKey(flattenChromeBookmarks)
 
 
             // const uploadedKeys = userBookMarkWithKey
@@ -99,7 +99,7 @@ const BrowserData: React.FC<{
             // .map(({ key = '' }) => key) || []
 
             // setCheckedKeys([...uploadedKeys, ...autoAdd ? userBookMarkWithKey.map(({ key }) => key) : []])
-            setDisabledKeys(uploadedKeys)
+            // setDisabledKeys(uploadedKeys)
           }).finally(() => setFetchingTree(false));
         break;
       case Step.Uploading:
