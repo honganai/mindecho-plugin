@@ -1,4 +1,7 @@
-import { IBookmarksItemFormServer } from '@/pages/Options/pages/manageSources/browserData/browserData';
+import {
+  IBookmarksItemFormServer,
+  IReadingListItemFormChrome,
+} from '@/pages/Options/pages/manageSources/browserData/browserData';
 import { HistoryData } from '@/pages/Options/pages/manageSources/historyData/historyData';
 import { IPocketURL } from '@/pages/Options/pages/manageSources/pocketData/pocket';
 import { TweetItem } from '@/pages/Options/pages/manageSources/twitter/type';
@@ -106,6 +109,19 @@ export function convertChromeBookmarkToTree(bookmarks: chrome.bookmarks.Bookmark
       parentId,
       dateAdded,
       children: children ? convertChromeBookmarkToTree(children) : [],
+    };
+  });
+}
+
+export function convertReadingListToTree(readingList: IReadingListItemFormChrome[]): TreeNode[] {
+  return readingList.map((item) => {
+    const { title, url, lastUpdateTime } = item;
+    return {
+      id: url,
+      title,
+      url,
+      parentId: 'readingList',
+      dateAdded: new Date(lastUpdateTime).getTime(),
     };
   });
 }

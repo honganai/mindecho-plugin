@@ -10,7 +10,7 @@ import { Label } from '@/pages/Options/components/catalyst/fieldset'
 import { Button } from '@/pages/Options/components/catalyst/button'
 
 import { Input } from '@/pages/Options/components/catalyst/input'
-import { buildTree, convertChromeBookmarkToTree, flattenTree, generateKey, mergeTrees } from '@/utils/treeHandler';
+import { buildTree, convertChromeBookmarkToTree, convertReadingListToTree, flattenTree, generateKey, mergeTrees } from '@/utils/treeHandler';
 import CustomTree, { TreeNodeWithKey } from '@/pages/Options/components/CustomTree';
 import { TreeNode as BaseTreeNode } from '@/utils/treeHandler';
 import DoneStatus from '@/pages/Options/components/DoneStatus';
@@ -20,11 +20,18 @@ import Header from '@/pages/Options/components/header/header';
 const dayjs = require('dayjs');
 const { getMessage: t } = chrome.i18n;
 
-const fetchDataFormChrome: () => Promise<chrome.bookmarks.BookmarkTreeNode[]> = async () => {
+const fetchBookmarkFormChrome: () => Promise<chrome.bookmarks.BookmarkTreeNode[]> = async () => {
   return new Promise((resolve) => {
     chrome.bookmarks.getTree((tree: chrome.bookmarks.BookmarkTreeNode[]) => {
       resolve(tree)
     });
+  })
+}
+
+const fetchReadingListFormChrome: () => Promise<IReadingListItemFormChrome[]> = async () => {
+  return new Promise((resolve) => {
+    // @ts-ignore
+    chrome.readingList.query({}, (res) => resolve(res))
   })
 }
 
@@ -49,6 +56,14 @@ export interface IBookmarksItemFormServer {
   article_content: string;
 }
 
+export interface IReadingListItemFormChrome {
+  creationTime: number;
+  hasBeenRead: boolean;
+  lastUpdateTime: number;
+  title: string;
+  url: string;
+}
+
 const fetchDataFromServer: () => Promise<IBookmarksItemFormServer[]> = async () => {
   return new Promise((resolve) => {
     chrome.runtime.sendMessage({
@@ -59,7 +74,7 @@ const fetchDataFromServer: () => Promise<IBookmarksItemFormServer[]> = async () 
         page: 1,
         page_size: MAX_SIZE,
         title: '',
-        type: 'bookmark'
+        type: 'bookmark,readinglist',
       }
     }, (res) => {
       resolve(res?.result || [])
@@ -92,44 +107,59 @@ const BrowserData: React.FC<{
 
   useEffect(() => { !isNull(autoAdd) && setStorageAutoAdd(autoAdd) }, [autoAdd])
 
-  useEffect(() => setTreeData(searchKeyword.trim() === ''
-    ? buildTree(flattenData)[0]?.children || []
-    : flattenData
-      .filter(
-        item =>
-          (item.title && item.title.includes(searchKeyword))
-          || item.url && item.url.includes(searchKeyword)
-      )
-  ), [flattenData, searchKeyword])
+  useEffect(() => {
+    setTreeData(searchKeyword.trim() === ''
+      ? buildTree(flattenData)[0]?.children || []
+      : flattenData
+        .filter(
+          item =>
+            (item.title && item.title.includes(searchKeyword))
+            || item.url && item.url.includes(searchKeyword)
+        )
+    )
+    console.log("🚀 ~ useEffect ~ buildTree(flattenData):", buildTree(flattenData))
+
+  }, [flattenData, searchKeyword])
 
   useEffect(() => {
     switch (step) {
       case Step.Checking:
-        Promise.all([fetchDataFormChrome(), fetchDataFromServer()])
-          .then(([chromeBookMark, userBookMark]) => {
+        Promise.all([fetchBookmarkFormChrome(), fetchDataFromServer(), fetchReadingListFormChrome()])
+          .then(([chromeBookMark, userBookMark, readingList]) => {
             const convertedChromeBookmarks = convertChromeBookmarkToTree(chromeBookMark)
             const flattenChromeBookmarks = flattenTree(convertedChromeBookmarks)
+            const convertedReadingList = convertReadingListToTree(readingList)
 
             const chromeBookmarksWithKey = generateKey(flattenChromeBookmarks)
             const userBookMarkWithKey = generateKey(userBookMark)
+            const readingListWithKey = generateKey(convertedReadingList)
 
             const chromeBookmarksKeys = chromeBookmarksWithKey.map(({ key }) => key)
+            const readingListKey = readingListWithKey.map(({ key }) => key)
             const uploadedAndCheckKeys = userBookMarkWithKey
               .filter(({ status }) => status > 0)
               .map(({ key }) => key)
-
             const uploadedButUnCheckedKeys = userBookMarkWithKey
               .filter(({ status }) => status === 0)
               .map(({ key }) => key)
 
-            setCheckedKeys(chromeBookmarksKeys.filter(key => !(uploadedButUnCheckedKeys.includes(key) || key.includes('noUrl'))))
+            setCheckedKeys([...chromeBookmarksKeys, ...readingListKey].filter(key => !(uploadedButUnCheckedKeys.includes(key) || key.includes('noUrl'))))
             setDisabledKeys(uploadedAndCheckKeys)
 
-            setFlattenData(_.unionBy(
-              chromeBookmarksWithKey,
-              userBookMarkWithKey,
-              'key'
-            ))
+            setFlattenData(_.unionBy([
+              ...readingListWithKey,
+              ...chromeBookmarksWithKey,
+              ...userBookMarkWithKey,
+              {
+                id: 'readingList',
+                key: 'noUrlReadingList',
+                title: t('reading_list'),
+                parentId: '0',
+                url: undefined,
+                children: readingListWithKey,
+              }
+            ], 'key'))
+
           }).finally(() => setFetchingTree(false));
         break;
       case Step.Uploading:
