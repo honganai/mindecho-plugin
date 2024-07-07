@@ -35,12 +35,12 @@ const Component = () => {
 
           <div className="">
             {t('press')}
-            <span className="text-violet-500">Command + E</span>
+            <span className="text-violet-500">&nbsp; Command + E &nbsp;</span>
             {t('on_mac')}
           </div>
           <div className="">
             {t('press')}
-            <span className="text-violet-500">Ctrl + E</span>
+            <span className="text-violet-500">&nbsp; Ctrl + E &nbsp;</span>
             {t('on_pc')}
           </div>
         </div>

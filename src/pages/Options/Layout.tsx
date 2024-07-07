@@ -36,6 +36,7 @@ export function ApplicationLayout({
 }) {
   const { state: globalState } = useContext(GlobalContext);
   const { userInfo } = globalState;
+  console.log("🚀 ~ userInfo:", userInfo)
   const navigate = useNavigate()
   const { pathname } = useLocation()
 
