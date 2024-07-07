@@ -283,8 +283,8 @@
     "message": "No data found",
     "description": ""
   },
-  "collection": {
-    "message": "Collection",
+  "collections": {
+    "message": "Collections",
     "description": ""
   },
   "manages_sources": {
@@ -360,7 +360,7 @@
     "description": ""
   },
   "switch_back_to_this_page_and_continue": {
-    "message": "2. Switch back to this page and continue.",
+    "message": "Switch back to this page and continue.",
     "description": ""
   },
   "open": {
@@ -493,6 +493,18 @@
   },
   "sign_out": {
     "message": "Sign out",
+    "description": ""
+  },
+  "auto_sync": {
+    "message": "Auto Sync",
+    "description": ""
+  },
+  "automatically_import_new_browsing_history_items_that_are_public_articles": {
+    "message": "Automatically import new browsing history items that are public articles.",
+    "description": ""
+  },
+  "automatically_import_new_items_in_x_bookmarks": {
+    "message": "Automatically import new items in X bookmarks.",
     "description": ""
   }
 }

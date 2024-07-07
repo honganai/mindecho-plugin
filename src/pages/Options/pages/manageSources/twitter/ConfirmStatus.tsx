@@ -21,7 +21,8 @@ const Component = ({ isLoginTwitter, nextStep }: {
       `grid grid-cols-1 gap-x-6 gap-y-10 pt-10 lg:grid-cols-3`
     )}>
 
-      <div className="text-2xl font-semibold leading-9 tracking-tight text-slate-900">
+      <div className="flex text-2xl font-semibold leading-8 tracking-tight text-slate-900">
+        <span className="mr-2 shrink-0 w-8 h-8 bg-black text-white flex items-center justify-center font-base rounded-full">1</span>
         {t('open_x_bookmarks_page')}
       </div>
 
@@ -38,7 +39,9 @@ const Component = ({ isLoginTwitter, nextStep }: {
       `gap-x-6 gap-y-10 pt-10`,
       `flex items-center justify-between`
     )}>
-      <div className="text-2xl font-semibold leading-9 tracking-tight text-slate-900">
+      <div className="flex text-2xl font-semibold leading-8 tracking-tight text-slate-900">
+        <span className="mr-2 shrink-0 w-8 h-8 bg-black text-white flex items-center justify-center font-base rounded-full">2</span>
+
         <div>{t('switch_back_to_this_page_and_continue')}</div>
       </div>
 

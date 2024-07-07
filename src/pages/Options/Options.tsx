@@ -156,7 +156,7 @@ const Options: React.FC = () => {
                   <ApplicationLayout>
                     <Routes>
                       <Route path='' element={<Navigate to="/manage-sources" />} />
-                      <Route path='/collection' element={<Collections />} />
+                      <Route path='/collections' element={<Collections />} />
                       <Route path='/manage-sources'>
                         <Route path='' element={<ManagesSources />}></Route>
                         <Route path='browser-data' element={<BrowserData />} />

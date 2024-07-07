@@ -2,11 +2,7 @@ import React from 'react';
 import { UserInfo } from '@/types';
 import {
   Cog6ToothIcon,
-  HomeIcon,
-  QuestionMarkCircleIcon,
-  SparklesIcon,
   Square2StackIcon,
-  TicketIcon,
 } from '@heroicons/react/20/solid'
 
 export const ContentTypeMap: { [key: string]: string } = {
@@ -52,15 +48,15 @@ export interface INav {
 
 export const NavigationMap: INav[] = [
   {
-    title: 'collection',
-    action: 'collection',
-    icon: <HomeIcon />,
-    path: '/collection'
+    title: 'collections',
+    action: 'collections',
+    icon: <Square2StackIcon />,
+    path: '/collections'
   },
   {
     title: 'manages_sources',
     action: 'manageSources',
-    icon: <Square2StackIcon />,
+    icon: <Cog6ToothIcon />,
     path: '/manage-sources'
   },
 ];

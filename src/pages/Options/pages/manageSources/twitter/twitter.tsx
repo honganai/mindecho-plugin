@@ -296,23 +296,25 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
                   onChange={(e) => setAutoAdd(e)}
                   checked={!!autoAdd}
                 />
+
                 <Label>
-                  {t('automatically_import_new_items_in_bookmarks_and_reading_list')}
+                  <span className='font-bold mr-2'>{t('auto_sync')}</span>
+                  <span className='text-gray-500'>{t('automatically_import_new_items_in_x_bookmarks')}</span>
                 </Label>
               </CheckboxField>
+            </div>
 
-              <div className='flex'>
-                <Button outline onClick={() => navigate('/manage-sources')}>
-                  {t('cancel')}
-                </Button>
-                <Button
-                  disabled={!importCount}
-                  className='ml-4'
-                  onClick={() => importCount && setStep(Step.Uploading)}
-                >
-                  {`${t('import')} ${importCount} ${t('selected_urls')}`}
-                </Button>
-              </div>
+            <div className='flex justify-end items-center mt-2'>
+              <Button outline onClick={() => navigate('/manage-sources')}>
+                {t('cancel')}
+              </Button>
+              <Button
+                disabled={!importCount}
+                className='ml-4'
+                onClick={() => importCount && setStep(Step.Uploading)}
+              >
+                {`${t('import')} ${importCount} ${t('selected_urls')}`}
+              </Button>
             </div>
           </>
         }

@@ -12,7 +12,7 @@ const Header: React.FC = () => {
     {
       path: '/manage-sources/browser-data',
       title: t('bookMarks_reading_lists'),
-      tip: t('automatically_public_articles_news_blogs_and_essays_from_current_open_tabs'),
+      tip: t('select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l'),
     },
     {
       path: '/building',
@@ -45,7 +45,7 @@ const Header: React.FC = () => {
       {doc?.title && <div className="font-bold text-lg text-black">{doc.title}</div>}
       {doc?.tip && <div className="mt-2">{doc.tip}</div>}
       {doc?.note && <div className="text-gray-700">
-        <span className="font-bold text-gray-950">{t('Note')}</span>
+        <span className="font-bold text-gray-950">{t('Note')}&nbsp;</span>
         {doc.note}
       </div>
       }

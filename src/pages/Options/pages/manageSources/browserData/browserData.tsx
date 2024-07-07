@@ -229,7 +229,7 @@ const BrowserData: React.FC<{
                 (e) => e.key === 'Enter' && setSearchKeyword((e.target as HTMLInputElement).value)
               }
             />
-            <p>checkedKeys.length{checkedKeys.length}</p>
+
             <CheckboxField className=''>
               <Checkbox
                 checked={importCount > 0}
@@ -261,27 +261,31 @@ const BrowserData: React.FC<{
           }
         </div>
 
-        <div className="flex items-center justify-between mt-4">
+        <div className="flex items-center mt-4">
           <CheckboxField className=''>
             <Checkbox
               onChange={(e) => setAutoAdd(e)}
               checked={!!autoAdd}
             />
-            <Label>{t('automatically_import_new_items_in_bookmarks_and_reading_list')}</Label>
-          </CheckboxField>
 
-          <div className='flex'>
-            <Button outline onClick={() => navigate('/manage-sources')}>
-              {t('cancel')}
-            </Button>
-            <Button
-              disabled={!importCount}
-              className='ml-4'
-              onClick={() => importCount && setStep(Step.Uploading)}
-            >
-              {`${t('import')} ${importCount} ${t('selected_urls')}`}
-            </Button>
-          </div>
+            <Label>
+              <span className='font-bold mr-2'>{t('auto_sync')}</span>
+              <span className='text-gray-500'>{t('automatically_import_new_items_in_bookmarks_and_reading_list')}</span>
+            </Label>
+          </CheckboxField>
+        </div>
+
+        <div className='flex justify-end items-center mt-2'>
+          <Button outline onClick={() => navigate('/manage-sources')}>
+            {t('cancel')}
+          </Button>
+          <Button
+            disabled={!importCount}
+            className='ml-4'
+            onClick={() => importCount && setStep(Step.Uploading)}
+          >
+            {`${t('import')} ${importCount} ${t('selected_urls')}`}
+          </Button>
         </div>
       </>
     }
