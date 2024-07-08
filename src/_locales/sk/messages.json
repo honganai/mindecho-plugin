@@ -366,5 +366,141 @@
     "continue": {
         "message": "ďalej",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Importujte aspoň jeden zdroj záložiek na vyhľadávanie",
+        "description": ""
+    },
+    "go": {
+        "message": "Choď!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Importované",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Neimportované",
+        "description": ""
+    },
+    "synching": {
+        "message": "Synchronizácia",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Záložky a zoznam na čítanie v prehliadači",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Prehladavat historiu",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Pocket Saves",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Automaticky verejné články, správy, blogy a eseje z aktuálne otvorených kariet a budúceho prehliadania · Súkromné stránky nie sú podporované",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Univerzálne vyhľadávanie záložiek",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Vyberte záložky a položky zoznamu na čítanie, aby sa dali vyhľadávať. Aktuálny zoznam adries URL je lokálny, kým nepovolíte zhromažďovanie údajov.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Vyhľadajte názvy položiek a adresy URL",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "vybraté adresy URL",
+        "description": ""
+    },
+    "import": {
+        "message": "Importovať",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Zrušiť",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Automaticky importovať nové položky do záložiek a zoznamu na čítanie",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Položka bez názvu",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Verejný obsah z histórie prehliadača",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Hľadajte v tisíckach X záložiek.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Otvorte stránku so záložkami X",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Najprv sa prihláste na x.com a otvorte si stránku so záložkami ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Načítavajú sa adresy URL",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Správa zdrojov",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Ako hľadať",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Indexovanie údajov môže ešte chvíľu trvať.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Vyhľadávacie pole mindECHO môžete kedykoľvek vyvolať",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "na ľubovoľnej karte (okrem karty „nová karta“)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Vyskúšať",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Použite klávesovú skratku",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Pripnúť ikonu rozšírenia prehliadača vyššie",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Odhlásiť Sa",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Auto synchronizácia",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Automaticky importovať nové položky histórie prehliadania, ktoré sú verejnými článkami.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Automaticky importovať nové položky do X záložiek.",
+        "description": ""
     }
 }

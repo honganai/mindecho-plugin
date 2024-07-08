@@ -366,5 +366,141 @@
     "continue": {
         "message": "Folytatni",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Importáljon legalább egy könyvjelzőforrást a kereséshez",
+        "description": ""
+    },
+    "go": {
+        "message": "Megy!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Importált",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Nem importált",
+        "description": ""
+    },
+    "synching": {
+        "message": "Szinkronizálás",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Böngésző könyvjelzői és olvasási listája",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Böngészési előzmények",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Pocket Saves",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Automatikusan nyilvános cikkek, hírek, blogok és esszék a jelenlegi nyitott lapokról és a jövőbeni böngészésről · A privát oldalak nem támogatottak",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Univerzális könyvjelző-keresés",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Válassza ki a kereshetővé tenni kívánt könyvjelzőket és olvasási listaelemeket. A jelenlegi URL-lista csak helyi, amíg nem engedélyezi az adatgyűjtést.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Keressen elemnevekre és URL-ekre",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "kiválasztott URL-ek",
+        "description": ""
+    },
+    "import": {
+        "message": "Importálás",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Megszünteti",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Automatikusan importálja az új elemeket a Könyvjelzőkbe és az Olvasólistába",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Nincs név elem",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Nyilvános tartalom a böngésző előzményeiből",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Keressen több ezer X könyvjelzőjében.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Nyissa meg az X Könyvjelzők oldalt",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Kérjük, először jelentkezzen be az x.com webhelyre, és nyissa meg a Könyvjelzők oldalát ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "URL-ek lekérése",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Forráskezelés",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Hogyan keressünk",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Az adatok indexelése még eltarthat egy ideig.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "A mindECHO keresőmezőt bármikor előhívhatja",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "bármely lapon (az „új lapon” kívül)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Próbálja ki most",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Használja a Billentyűparancsot",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Pin Böngészőbővítmény ikon fent",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Kijelentkezés",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Automatikus szinkronizáció",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Automatikusan importálja az új böngészési előzményeket, amelyek nyilvános cikkek.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Új elemek automatikus importálása X könyvjelzőbe.",
+        "description": ""
     }
 }

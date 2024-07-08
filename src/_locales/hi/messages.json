@@ -366,5 +366,141 @@
     "continue": {
         "message": "जारी रखना",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "खोज में कम से कम एक बुकमार्क स्रोत आयात करें",
+        "description": ""
+    },
+    "go": {
+        "message": "जाना!",
+        "description": ""
+    },
+    "imported": {
+        "message": "आयातित",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "आयातित नहीं",
+        "description": ""
+    },
+    "synching": {
+        "message": "सिंक",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "ब्राउज़र बुकमार्क और पठन सूची",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "इतिहास खंगालना",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "पॉकेट सेव्स",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "वर्तमान खुले टैब और भविष्य के ब्राउज़िंग से स्वचालित रूप से सार्वजनिक लेख, समाचार, ब्लॉग और निबंध · निजी पृष्ठ समर्थित नहीं हैं",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "यूनिवर्सल बुकमार्क खोज",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "खोज योग्य बनाने के लिए बुकमार्क और पठन सूची आइटम चुनें। वर्तमान URL सूची केवल तब तक स्थानीय है जब तक आप डेटा संग्रह को अधिकृत नहीं करते।",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "आइटम नाम और URL खोजें",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "चयनित यूआरएल",
+        "description": ""
+    },
+    "import": {
+        "message": "आयात",
+        "description": ""
+    },
+    "cancel": {
+        "message": "रद्द करना",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "बुकमार्क और पठन सूची में नए आइटम स्वचालित रूप से आयात करें",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "कोई नाम आइटम नहीं",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "ब्राउज़र इतिहास से सार्वजनिक सामग्री",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "अपने हजारों एक्स बुकमार्क्स में खोजें।",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "X बुकमार्क पृष्ठ खोलें",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "कृपया पहले x.com पर लॉग इन करें और अपना बुकमार्क पेज खोलें ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "URL प्राप्त करना",
+        "description": ""
+    },
+    "source_management": {
+        "message": "स्रोत प्रबंधन",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "कैसे खोजें",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "डेटा अनुक्रमण में अभी भी कुछ समय लग सकता है.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "आप किसी भी समय mindECHO सर्च बॉक्स को कॉल कर सकते हैं",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "किसी भी टैब पर (“नया टैब” टैब के अलावा)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "अब कोशिश करो",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "कीबोर्ड शॉर्टकट का उपयोग करें",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "ब्राउज़र एक्सटेंशन आइकन को ऊपर पिन करें",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "साइन आउट",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "स्वतः सिंक",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "नए ब्राउज़िंग इतिहास आइटम जो सार्वजनिक लेख हैं, उन्हें स्वचालित रूप से आयात करें.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "X बुकमार्क्स में नए आइटम स्वचालित रूप से आयात करें.",
+        "description": ""
     }
 }

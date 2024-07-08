@@ -87,7 +87,7 @@ export function ApplicationLayout({
                 </span>
                 <SidebarLabel>{t('questions')}</SidebarLabel>
               </SidebarItem>
-              <SidebarItem href="mailto:Echo@linnk.ai">
+              <SidebarItem href="https://discord.gg/xhMtr2Ynj4">
                 <span className="[&>svg]:h-6 [&>svg]:w-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

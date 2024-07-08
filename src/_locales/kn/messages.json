@@ -366,5 +366,141 @@
     "continue": {
         "message": "ಮುಂದುವರಿಸಿ",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "ಹುಡುಕಲು ಕನಿಷ್ಠ ಒಂದು ಬುಕ್‌ಮಾರ್ಕ್ ಮೂಲವನ್ನು ಆಮದು ಮಾಡಿಕೊಳ್ಳಿ",
+        "description": ""
+    },
+    "go": {
+        "message": "ಹೋಗು!",
+        "description": ""
+    },
+    "imported": {
+        "message": "ಆಮದು ಮಾಡಿಕೊಳ್ಳಲಾಗಿದೆ",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "ಆಮದು ಮಾಡಲಾಗಿಲ್ಲ",
+        "description": ""
+    },
+    "synching": {
+        "message": "ಸಿಂಕ್ ಮಾಡಲಾಗುತ್ತಿದೆ",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "ಬ್ರೌಸರ್ ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು ಮತ್ತು ಓದುವಿಕೆ ಪಟ್ಟಿ",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "ಬ್ರೌಸಿಂಗ್ ಇತಿಹಾಸ",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "ಪಾಕೆಟ್ ಉಳಿತಾಯ",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "ಪ್ರಸ್ತುತ ತೆರೆದ ಟ್ಯಾಬ್‌ಗಳು ಮತ್ತು ಭವಿಷ್ಯದ ಬ್ರೌಸಿಂಗ್‌ನಿಂದ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸಾರ್ವಜನಿಕ ಲೇಖನಗಳು, ಸುದ್ದಿಗಳು, ಬ್ಲಾಗ್‌ಗಳು ಮತ್ತು ಪ್ರಬಂಧಗಳು · ಖಾಸಗಿ ಪುಟಗಳು ಬೆಂಬಲಿತವಾಗಿಲ್ಲ",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "ಯುನಿವರ್ಸಲ್ ಬುಕ್ಮಾರ್ಕ್ ಹುಡುಕಾಟ",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು ಮತ್ತು ರೀಡಿಂಗ್ ಲಿಸ್ಟ್ ಐಟಂಗಳನ್ನು ಹುಡುಕಲು ಆಯ್ಕೆ ಮಾಡಿ. ನೀವು ಡೇಟಾ ಸಂಗ್ರಹಣೆಯನ್ನು ದೃಢೀಕರಿಸುವವರೆಗೆ ಮಾತ್ರ ಪ್ರಸ್ತುತ URL ಪಟ್ಟಿಯು ಸ್ಥಳೀಯವಾಗಿರುತ್ತದೆ.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "ಐಟಂ ಹೆಸರುಗಳು ಮತ್ತು URL ಗಳಿಗಾಗಿ ಹುಡುಕಿ",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "ಆಯ್ಕೆಮಾಡಿದ URL ಗಳು",
+        "description": ""
+    },
+    "import": {
+        "message": "ಆಮದು",
+        "description": ""
+    },
+    "cancel": {
+        "message": "ರದ್ದುಮಾಡಿ",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳು ಮತ್ತು ಓದುವ ಪಟ್ಟಿಯಲ್ಲಿ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಹೊಸ ಐಟಂಗಳನ್ನು ಆಮದು ಮಾಡಿ",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "ಯಾವುದೇ ಹೆಸರಿನ ಐಟಂ ಇಲ್ಲ",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "ಬ್ರೌಸರ್ ಇತಿಹಾಸದಿಂದ ಸಾರ್ವಜನಿಕ ವಿಷಯ",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "ನಿಮ್ಮ ಸಾವಿರಾರು X ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳಲ್ಲಿ ಹುಡುಕಿ.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "ಎಕ್ಸ್ ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳ ಪುಟವನ್ನು ತೆರೆಯಿರಿ",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "ದಯವಿಟ್ಟು ಮೊದಲು x.com ಗೆ ಲಾಗ್ ಇನ್ ಮಾಡಿ ಮತ್ತು ನಿಮ್ಮ ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳ ಪುಟವನ್ನು ತೆರೆಯಿರಿ ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "URL ಗಳನ್ನು ಪಡೆಯಲಾಗುತ್ತಿದೆ",
+        "description": ""
+    },
+    "source_management": {
+        "message": "ಮೂಲ ನಿರ್ವಹಣೆ",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "ಹುಡುಕುವುದು ಹೇಗೆ",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "ಡೇಟಾ ಇಂಡೆಕ್ಸಿಂಗ್ ಇನ್ನೂ ಸ್ವಲ್ಪ ಸಮಯ ತೆಗೆದುಕೊಳ್ಳಬಹುದು.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "ನೀವು ಯಾವುದೇ ಸಮಯದಲ್ಲಿ mindECHO ಹುಡುಕಾಟ ಬಾಕ್ಸ್‌ಗೆ ಕರೆ ಮಾಡಬಹುದು",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "ಯಾವುದೇ ಟ್ಯಾಬ್‌ನಲ್ಲಿ (&quot;ಹೊಸ ಟ್ಯಾಬ್&quot; ಟ್ಯಾಬ್ ಹೊರತುಪಡಿಸಿ)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "ಈಗ ಪ್ರಯತ್ನಿಸಿ",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್ ಬಳಸಿ",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "ಮೇಲಿನ ಬ್ರೌಸರ್ ವಿಸ್ತರಣೆ ಐಕಾನ್ ಅನ್ನು ಪಿನ್ ಮಾಡಿ",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "ಸೈನ್ ಔಟ್ ಮಾಡಿ",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "ಸ್ವಯಂ ಸಿಂಕ್",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "ಸಾರ್ವಜನಿಕ ಲೇಖನಗಳಾಗಿರುವ ಹೊಸ ಬ್ರೌಸಿಂಗ್ ಇತಿಹಾಸದ ಐಟಂಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಆಮದು ಮಾಡಿ.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "X ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳಲ್ಲಿ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಹೊಸ ಐಟಂಗಳನ್ನು ಆಮದು ಮಾಡಿ.",
+        "description": ""
     }
 }

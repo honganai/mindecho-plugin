@@ -366,5 +366,141 @@
     "continue": {
         "message": "চালিয়ে যান",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "অনুসন্ধান করতে কমপক্ষে একটি বুকমার্ক উত্স আমদানি করুন৷",
+        "description": ""
+    },
+    "go": {
+        "message": "যাওয়া!",
+        "description": ""
+    },
+    "imported": {
+        "message": "আমদানিকৃত",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "আমদানি করা হয়নি",
+        "description": ""
+    },
+    "synching": {
+        "message": "সিঙ্কিং",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "ব্রাউজার বুকমার্ক এবং পড়ার তালিকা",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "ব্রাউজিং ইতিহাস",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "পকেট সেভ করে",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "বর্তমান খোলা ট্যাব এবং ভবিষ্যতের ব্রাউজিং থেকে স্বয়ংক্রিয়ভাবে সর্বজনীন নিবন্ধ, সংবাদ, ব্লগ এবং রচনাগুলি · ব্যক্তিগত পৃষ্ঠাগুলি সমর্থিত নয়",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "ইউনিভার্সাল বুকমার্ক অনুসন্ধান",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "অনুসন্ধানযোগ্য করার জন্য বুকমার্ক এবং পড়ার তালিকা আইটেম নির্বাচন করুন। আপনি ডেটা সংগ্রহের অনুমোদন না দেওয়া পর্যন্ত বর্তমান URL তালিকা শুধুমাত্র স্থানীয়।",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "আইটেমের নাম এবং URL অনুসন্ধান করুন",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "নির্বাচিত ইউআরএল",
+        "description": ""
+    },
+    "import": {
+        "message": "আমদানি",
+        "description": ""
+    },
+    "cancel": {
+        "message": "বাতিল করুন",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "বুকমার্ক এবং পড়ার তালিকায় স্বয়ংক্রিয়ভাবে নতুন আইটেম আমদানি করুন",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "কোন নাম আইটেম",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "ব্রাউজার ইতিহাস থেকে সর্বজনীন বিষয়বস্তু",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "আপনার হাজার হাজার এক্স বুকমার্কে অনুসন্ধান করুন।",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "এক্স বুকমার্ক পৃষ্ঠা খুলুন",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "অনুগ্রহ করে প্রথমে x.com এ লগ ইন করুন এবং আপনার বুকমার্ক পৃষ্ঠা খুলুন৷ ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "ইউআরএল আনা হচ্ছে",
+        "description": ""
+    },
+    "source_management": {
+        "message": "উৎস ব্যবস্থাপনা",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "কিভাবে সার্চ করবেন",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "ডেটা ইন্ডেক্সিং এখনও কিছু সময় নিতে পারে।",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "আপনি যে কোনো সময় মাইন্ডইকো সার্চ বক্সে কল করতে পারেন",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "যেকোনো ট্যাবে (&quot;নতুন ট্যাব&quot; ট্যাব ছাড়া)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "এখন চেষ্টা কর",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "কীবোর্ড শর্টকাট ব্যবহার করুন",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "উপরে পিন ব্রাউজার এক্সটেনশন আইকন",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "সাইন আউট",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "স্বয়ংক্রিয় সিঙ্ক",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "স্বয়ংক্রিয়ভাবে নতুন ব্রাউজিং ইতিহাসের আইটেমগুলি আমদানি করুন যা সর্বজনীন নিবন্ধ।",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "X বুকমার্কে স্বয়ংক্রিয়ভাবে নতুন আইটেম আমদানি করুন।",
+        "description": ""
     }
 }

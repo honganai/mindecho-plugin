@@ -366,5 +366,141 @@
     "continue": {
         "message": "繼續",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "匯入至少一個書籤來源以進行搜尋",
+        "description": ""
+    },
+    "go": {
+        "message": "去！",
+        "description": ""
+    },
+    "imported": {
+        "message": "進口",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "未進口",
+        "description": ""
+    },
+    "synching": {
+        "message": "同步",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "瀏覽器書籤和閱讀列表",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "瀏覽紀錄",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "口袋儲蓄",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "自動公開目前開啟的標籤和將來瀏覽的文章、新聞、部落格和論文 · 不支援私人頁面",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "通用書籤搜尋",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "選擇要搜尋的書籤和閱讀清單項目。在您授權資料收集之前，目前 URL 清單僅是本機的。",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "搜尋項目名稱和 URL",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "選定的網址",
+        "description": ""
+    },
+    "import": {
+        "message": "進口",
+        "description": ""
+    },
+    "cancel": {
+        "message": "取消",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "自動匯入書籤和閱讀清單中的新項目",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "無名稱項目",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "瀏覽器歷史記錄中的公開內容",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "在您的數千個 X 書籤中搜尋。",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "開啟 X 書籤頁面",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "請先登入 x.com 並開啟您的書籤頁面 ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "取得網址",
+        "description": ""
+    },
+    "source_management": {
+        "message": "源頭管理",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "如何搜尋",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "數據索引可能仍需要一段時間。",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "您可以隨時呼叫mindECHO搜尋框",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "在任何選項卡上（“新選項卡”選項卡除外）",
+        "description": ""
+    },
+    "try_now": {
+        "message": "現在試試",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "使用鍵盤快速鍵",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "固定上面的瀏覽器擴充圖標",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "登出",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "自動同步",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "自動匯入屬於公共文章的新瀏覽歷史記錄項目。",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "自動匯入 X 個書籤中的新項目。",
+        "description": ""
     }
 }

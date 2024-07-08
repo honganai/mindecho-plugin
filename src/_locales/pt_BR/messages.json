@@ -366,5 +366,141 @@
     "continue": {
         "message": "Continuar",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Importe pelo menos uma fonte de favoritos para pesquisar",
+        "description": ""
+    },
+    "go": {
+        "message": "Ir!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Importado",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Não importado",
+        "description": ""
+    },
+    "synching": {
+        "message": "Sincronizando",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Favoritos do navegador e lista de leitura",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Histórico de navegação",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Bolso salva",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Publicar automaticamente artigos, notícias, blogs e ensaios das guias abertas atuais e da navegação futura · Páginas privadas não são suportadas",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Pesquisa universal de favoritos",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Selecione os marcadores e os itens da lista de leitura que serão pesquisáveis. A lista de URLs atual é local apenas até você autorizar a coleta de dados.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Pesquise nomes de itens e URLs",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "URLs selecionados",
+        "description": ""
+    },
+    "import": {
+        "message": "Importar",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Cancelar",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Importe automaticamente novos itens nos favoritos e na lista de leitura",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Nenhum item de nome",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Conteúdo público do histórico do navegador",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Pesquise em seus milhares de marcadores X.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Abra a página de favoritos do X",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Primeiro faça login em x.com e abra sua página de favoritos ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Buscando URLs",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Gerenciamento de Fonte",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Como pesquisar",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "A indexação de dados ainda pode demorar um pouco.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Você pode acessar a caixa de pesquisa mindECHO a qualquer momento",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "em qualquer guia (exceto a guia “nova guia”)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Tente agora",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Usar atalho de teclado",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Fixar ícone de extensão do navegador acima",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "sair",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Sincronização automática",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Importe automaticamente novos itens do histórico de navegação que sejam artigos públicos.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Importe automaticamente novos itens nos favoritos X.",
+        "description": ""
     }
 }

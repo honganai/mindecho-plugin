@@ -366,5 +366,141 @@
     "continue": {
         "message": "ادامه هید",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "حداقل یک منبع نشانک را برای جستجو وارد کنید",
+        "description": ""
+    },
+    "go": {
+        "message": "برو!",
+        "description": ""
+    },
+    "imported": {
+        "message": "وارداتی",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "وارداتی نیست",
+        "description": ""
+    },
+    "synching": {
+        "message": "همگام سازی",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "نشانک‌ها و فهرست خواندن مرورگر",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "تاریخچه مرور",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "پس انداز جیبی",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "مقالات، اخبار، وبلاگ ها و مقالات به صورت خودکار عمومی از برگه های باز فعلی و مرورهای آینده · صفحات خصوصی پشتیبانی نمی شوند",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "جستجوی جهانی نشانک",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "نشانک‌ها و موارد فهرست خواندن را برای جستجو انتخاب کنید. لیست URL فعلی فقط محلی است تا زمانی که اجازه جمع آوری داده ها را بدهید.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "نام آیتم ها و URL ها را جستجو کنید",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "URL های انتخاب شده",
+        "description": ""
+    },
+    "import": {
+        "message": "وارد كردن",
+        "description": ""
+    },
+    "cancel": {
+        "message": "لغو کنید",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "موارد جدید را به صورت خودکار در نشانک‌ها و فهرست خواندن وارد کنید",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "بدون نام مورد",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "محتوای عمومی از تاریخچه مرورگر",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "در هزاران نشانک X خود جستجو کنید.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "صفحه X Bookmarks را باز کنید",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "لطفا ابتدا وارد x.com شوید و صفحه نشانک‌های خود را باز کنید ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "واکشی URL ها",
+        "description": ""
+    },
+    "source_management": {
+        "message": "مدیریت منبع",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "چگونه جستجو کنیم",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "نمایه سازی داده ها ممکن است هنوز کمی طول بکشد.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "می‌توانید هر زمان خواستید با کادر جستجوی mindECHO تماس بگیرید",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "در هر برگه (به غیر از برگه جدید)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "حالا امتحان کن",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "از میانبر صفحه کلید استفاده کنید",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "نماد افزونه مرورگر را در بالا پین کنید",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "خروج از سیستم",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "همگام سازی خودکار",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "موارد جدید سابقه مرور را که مقالات عمومی هستند به صورت خودکار وارد کنید.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "موارد جدید را به صورت خودکار در نشانک های X وارد کنید.",
+        "description": ""
     }
 }

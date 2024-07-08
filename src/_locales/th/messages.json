@@ -366,5 +366,141 @@
     "continue": {
         "message": "ดำเนินการต่อ",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "นำเข้าแหล่งที่มาของบุ๊กมาร์กอย่างน้อยหนึ่งรายการเพื่อค้นหา",
+        "description": ""
+    },
+    "go": {
+        "message": "ไป!",
+        "description": ""
+    },
+    "imported": {
+        "message": "นำเข้า",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "ไม่ได้นำเข้า",
+        "description": ""
+    },
+    "synching": {
+        "message": "กำลังซิงค์",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "บุ๊กมาร์กของเบราว์เซอร์และรายการเรื่องรออ่าน",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "ประวัติการค้นหา",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "พ็อกเก็ตบันทึก",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "บทความสาธารณะ ข่าวสาร บล็อก และเรียงความโดยอัตโนมัติจากแท็บที่เปิดอยู่ในปัจจุบันและการเรียกดูในอนาคต · ไม่รองรับเพจส่วนตัว",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "ค้นหาบุ๊คมาร์คสากล",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "เลือกบุ๊กมาร์กและรายการเรื่องรออ่านที่จะค้นหาได้ รายการ URL ปัจจุบันจะอยู่ในเครื่องเท่านั้น จนกว่าคุณจะอนุญาตการรวบรวมข้อมูล",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "ค้นหาชื่อรายการและ URL",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "URL ที่เลือก",
+        "description": ""
+    },
+    "import": {
+        "message": "นำเข้า",
+        "description": ""
+    },
+    "cancel": {
+        "message": "ยกเลิก",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "นำเข้ารายการใหม่โดยอัตโนมัติในบุ๊กมาร์กและรายการเรื่องรออ่าน",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "ไม่มีชื่อรายการ",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "เนื้อหาสาธารณะจากประวัติเบราว์เซอร์",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "ค้นหาในบุ๊กมาร์ก X นับพันของคุณ",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "เปิดหน้า X บุ๊กมาร์ก",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "ก่อนอื่นกรุณาเข้าสู่ระบบ x.com และเปิดหน้าบุ๊กมาร์กของคุณ ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "กำลังดึง URL",
+        "description": ""
+    },
+    "source_management": {
+        "message": "การจัดการแหล่งที่มา",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "วิธีค้นหา",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "การทำดัชนีข้อมูลอาจใช้เวลาสักครู่",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "คุณสามารถเรียกใช้ช่องค้นหา mindECHO ได้ตลอดเวลา",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "บนแท็บใดก็ได้ (นอกเหนือจากแท็บ &quot;แท็บใหม่&quot;)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "ลองตอนนี้",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "ใช้แป้นพิมพ์ลัด",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "ปักหมุดไอคอนส่วนขยายเบราว์เซอร์ด้านบน",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "ออกจากระบบ",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "ซิงค์อัตโนมัติ",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "นำเข้ารายการประวัติการเข้าชมใหม่ที่เป็นบทความสาธารณะโดยอัตโนมัติ",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "นำเข้ารายการใหม่ในบุ๊กมาร์ก X โดยอัตโนมัติ",
+        "description": ""
     }
 }

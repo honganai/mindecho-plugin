@@ -366,5 +366,141 @@
     "continue": {
         "message": "Fortsätta",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Importera minst en bokmärkeskälla att söka i",
+        "description": ""
+    },
+    "go": {
+        "message": "Gå!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Importerad",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Ej importerad",
+        "description": ""
+    },
+    "synching": {
+        "message": "Synkroniseras",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Webbläsares bokmärken och läslista",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Sökhistorik",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Pocket Saves",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Automatiskt offentliga artiklar, nyheter, bloggar och uppsatser från nuvarande öppna flikar och framtida surfning · Privata sidor stöds inte",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Universal bokmärkessökning",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Välj de bokmärken och läslistor som ska göras sökbara. Aktuell URL-lista är endast lokal tills du godkänner datainsamling.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Sök efter objektnamn och webbadresser",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "valda webbadresser",
+        "description": ""
+    },
+    "import": {
+        "message": "Importera",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Annullera",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Importera automatiskt nya objekt i bokmärken och läslista",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Inget namnobjekt",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Offentligt innehåll från webbläsarhistorik",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Sök i dina tusentals X-bokmärken.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Öppna sidan X Bokmärken",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Logga först in på x.com och öppna din bokmärkessida ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Hämtar webbadresser",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Källhantering",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Hur man söker",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Dataindexering kan fortfarande ta ett tag.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Du kan ringa upp mindECHO-sökrutan när som helst",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "på valfri flik (förutom fliken &quot;ny flik&quot;)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Försök nu",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Använd kortkommandon",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Fäst webbläsartilläggsikonen ovan",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Logga ut",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Automatisk synkronisering",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Importera automatiskt nya webbhistorikobjekt som är offentliga artiklar.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Importera automatiskt nya objekt i X-bokmärken.",
+        "description": ""
     }
 }

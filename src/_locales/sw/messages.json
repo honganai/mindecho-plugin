@@ -366,5 +366,141 @@
     "continue": {
         "message": "Endelea",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Ingiza angalau Chanzo cha Alamisho Moja ili Utafute ndani",
+        "description": ""
+    },
+    "go": {
+        "message": "Nenda!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Imeingizwa",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Haijaingizwa",
+        "description": ""
+    },
+    "synching": {
+        "message": "Inasawazisha",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Alamisho za Kivinjari na Orodha ya Kusoma",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Historia ya Kuvinjari",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Akiba mfukoni",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Nakala za Umma kiotomatiki, habari, blogu, na Insha kutoka kwa vichupo vya sasa vilivyo wazi na kuvinjari kwa siku zijazo · Kurasa za Kibinafsi hazitumiki.",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Utafutaji wa Alamisho kwa Wote",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Chagua alamisho na vipengee vya orodha ya kusoma ili kutafutwa. Orodha ya sasa ya URL ni ya ndani pekee hadi uidhinishe ukusanyaji wa data.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Tafuta majina ya bidhaa na URL",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "URL zilizochaguliwa",
+        "description": ""
+    },
+    "import": {
+        "message": "Ingiza",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Ghairi",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Ingiza vipengee vipya kiotomatiki katika Alamisho na Orodha ya Kusoma",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Hakuna Kipengee cha Jina",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Maudhui ya Umma kutoka kwa Historia ya Kivinjari",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Tafuta katika maelfu ya alamisho zako za X.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Fungua ukurasa wa Alamisho za X",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Tafadhali ingia kwanza kwenye x.com na ufungue ukurasa wako wa Alamisho ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Inaleta URL",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Usimamizi wa Chanzo",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Jinsi ya Kutafuta",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Uwekaji data katika faharasa bado unaweza kuchukua muda.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Unaweza kupiga simu kwenye Kisanduku cha Kutafuta cha mindECHO wakati wowote",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "kwenye kichupo chochote (isipokuwa kichupo cha &quot;kichupo kipya&quot;)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Jaribu Sasa",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Tumia Njia ya Mkato ya Kibodi",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Bandika Aikoni ya Kiendelezi cha Kivinjari hapo juu",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Toka",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Usawazishaji Kiotomatiki",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Ingiza kiotomatiki vipengee vipya vya historia ya kuvinjari ambavyo ni makala ya umma.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Ingiza bidhaa mpya kiotomatiki katika alamisho za X.",
+        "description": ""
     }
 }

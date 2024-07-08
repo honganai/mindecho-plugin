@@ -366,5 +366,141 @@
     "continue": {
         "message": "Pokračovat",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Importujte alespoň jeden zdroj záložek do vyhledávání",
+        "description": ""
+    },
+    "go": {
+        "message": "Jít!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Importováno",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Neimportováno",
+        "description": ""
+    },
+    "synching": {
+        "message": "Synchronizace",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Záložky a seznam četby prohlížeče",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Historie procházení",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Pocket Saves",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Automaticky veřejné články, zprávy, blogy a eseje z aktuálně otevřených karet a budoucího procházení · Soukromé stránky nejsou podporovány",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Univerzální vyhledávání záložek",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Vyberte záložky a položky seznamu četby, které chcete prohledávat. Aktuální seznam adres URL je pouze místní, dokud nepovolíte shromažďování dat.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Hledejte názvy položek a adresy URL",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "vybrané adresy URL",
+        "description": ""
+    },
+    "import": {
+        "message": "Import",
+        "description": ""
+    },
+    "cancel": {
+        "message": "zrušení",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Automaticky importovat nové položky do záložek a seznamu četby",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Bez názvu položky",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Veřejný obsah z historie prohlížeče",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Hledejte v tisících X záložek.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Otevřete stránku záložek X",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Nejprve se prosím přihlaste na x.com a otevřete svou stránku Záložky ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Načítání adres URL",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Správa zdrojů",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Jak hledat",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Indexování dat může ještě chvíli trvat.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Kdykoli můžete vyvolat vyhledávací pole mindECHO",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "na jakékoli kartě (kromě karty „nová karta“)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Vyzkoušet",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Použijte klávesovou zkratku",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Připněte ikonu rozšíření prohlížeče výše",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Odhlásit se",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Automatická synchronizace",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Automaticky importovat nové položky historie procházení, které jsou veřejnými články.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Automaticky importovat nové položky do X záložek.",
+        "description": ""
     }
 }

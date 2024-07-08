@@ -55,7 +55,7 @@ const Page = () => {
     {
       id: "xbookmark",
       img: <img className="h-10" src={XIcon} alt="XIcon" />,
-      title: t('browser_bookmarks_reading_list'),
+      title: 'X(Twitter) Bookmarks',
       subTitle: t('your_bookmarks_in_X_will_be_imported_with_your_authorization_Full_text_in_the_bookmarked_content_will_be_fetched_and_made_searchable_to_you'),
       handleClick: () => navigate('twitter'),
       status: CardStatus.NotImported
@@ -83,7 +83,7 @@ const Page = () => {
     })
     fetchProgress().then((res) =>
       res.forEach(({ count, status, type }) => {
-        // not imported===  对应的status==0  没有>0的 
+        // not imported===  对应的status==0  没有>0的
         // imported    ===   没有status为1和2的 全部为>=3
         // Synching === status存在1和2的
         const card = cardList.find(card => card.id === type)

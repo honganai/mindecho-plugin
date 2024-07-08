@@ -366,5 +366,141 @@
     "continue": {
         "message": "ቀጥል",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "ለመፈለግ ቢያንስ አንድ የዕልባት ምንጭ አስመጣ",
+        "description": ""
+    },
+    "go": {
+        "message": "ሂድ!",
+        "description": ""
+    },
+    "imported": {
+        "message": "ከውጭ ገብቷል።",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "አልመጣም።",
+        "description": ""
+    },
+    "synching": {
+        "message": "በማመሳሰል ላይ",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "የአሳሽ ዕልባቶች እና የንባብ ዝርዝር",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "የአሰሳ ታሪክ",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "ኪስ ያድናል",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "ከአሁኑ ክፍት ትሮች እና የወደፊት አሰሳ በራስ-ሰር ይፋዊ ጽሑፎች፣ ዜናዎች፣ ብሎጎች እና ድርሰቶች · የግል ገጾች አይደገፉም",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "ሁለንተናዊ የዕልባት ፍለጋ",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "መፈለግ የሚችሉ እንዲሆኑ ዕልባቶችን እና የንባብ ዝርዝር ንጥሎችን ይምረጡ። የአሁኑ የዩአርኤል ዝርዝር መረጃ መሰብሰብን እስክትፈቅድ ድረስ ብቻ አካባቢያዊ ነው።",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "የንጥል ስሞችን እና ዩአርኤሎችን ይፈልጉ",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "የተመረጡ URLs",
+        "description": ""
+    },
+    "import": {
+        "message": "አስመጣ",
+        "description": ""
+    },
+    "cancel": {
+        "message": "ሰርዝ",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "በዕልባቶች እና በንባብ ዝርዝር ውስጥ አዲስ እቃዎችን በራስ-ሰር ያስመጡ",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "ምንም የስም ነገር የለም።",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "የወል ይዘት ከአሳሽ ታሪክ",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "በሺዎች በሚቆጠሩ የ X ዕልባቶችዎ ውስጥ ይፈልጉ።",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "የ X ዕልባቶች ገጽን ይክፈቱ",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "እባክዎ መጀመሪያ ወደ x.com ይግቡ እና የዕልባቶች ገጽዎን ይክፈቱ ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "ዩአርኤሎችን በማምጣት ላይ",
+        "description": ""
+    },
+    "source_management": {
+        "message": "ምንጭ አስተዳደር",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "እንዴት መፈለግ እንደሚቻል",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "የውሂብ ኢንዴክስ አሁንም ትንሽ ጊዜ ሊወስድ ይችላል።",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "በማንኛውም ጊዜ የ mindECHO ፍለጋ ሳጥን መደወል ይችላሉ።",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "በማንኛውም ትር ላይ (ከ &quot;አዲስ ትር&quot; ትር በስተቀር)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "አሁን ይሞክሩ",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "የቁልፍ ሰሌዳ አቋራጭ ይጠቀሙ",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "የአሳሽ ቅጥያ አዶን ከላይ ይሰኩ።",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "ዛግተ ውጣ",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "ራስ-ሰር ማመሳሰል",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "ይፋዊ ጽሑፎች የሆኑ አዲስ የአሰሳ ታሪክ ዕቃዎችን በራስ-ሰር ያስመጡ።",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "በX ዕልባቶች ውስጥ አዲስ እቃዎችን በራስ-ሰር ያስመጡ።",
+        "description": ""
     }
 }

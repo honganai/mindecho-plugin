@@ -366,5 +366,141 @@
     "continue": {
         "message": "Nastaviti",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Uvezite barem jedan izvor knjižne oznake za pretraživanje",
+        "description": ""
+    },
+    "go": {
+        "message": "Ići!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Uvozni",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Nije uvezeno",
+        "description": ""
+    },
+    "synching": {
+        "message": "Sinkronizacija",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Oznake preglednika i popis za čitanje",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Povijest pretraživanja",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Pocket Saves",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Automatski javni članci, vijesti, blogovi i eseji iz trenutno otvorenih kartica i budućeg pregledavanja · Privatne stranice nisu podržane",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Univerzalno pretraživanje knjižnih oznaka",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Odaberite oznake i stavke popisa za čitanje koje želite pretraživati. Trenutačni popis URL-ova lokalni je samo dok ne odobrite prikupljanje podataka.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Potražite nazive stavki i URL-ove",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "odabrane URL-ove",
+        "description": ""
+    },
+    "import": {
+        "message": "Uvoz",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Otkazati",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Automatski uvoz novih stavki u oznake i popis za čitanje",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Stavka bez naziva",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Javni sadržaj iz povijesti preglednika",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Pretražite svoje tisuće X oznaka.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Otvorite stranicu X Bookmarks",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Prvo se prijavite na x.com i otvorite svoju stranicu Oznake ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Dohvaćanje URL-ova",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Upravljanje izvorima",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Kako pretraživati",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Indeksiranje podataka još može potrajati.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Možete pozvati mindECHO okvir za pretraživanje bilo kada",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "na bilo kojoj kartici (osim kartice &quot;nova kartica&quot;)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Pokušajte sada",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Koristite tipkovni prečac",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Prikvačite gornju ikonu proširenja preglednika",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Odjavi se",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Automatska sinkronizacija",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Automatski uvezi nove stavke povijesti pregledavanja koje su javni članci.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Automatski uvezi nove stavke u X knjižne oznake.",
+        "description": ""
     }
 }

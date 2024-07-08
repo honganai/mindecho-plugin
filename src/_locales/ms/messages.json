@@ -366,5 +366,141 @@
     "continue": {
         "message": "Teruskan",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Import sekurang-kurangnya Satu Sumber Penanda Halaman untuk Dicari",
+        "description": ""
+    },
+    "go": {
+        "message": "Pergi!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Diimport",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Tidak Diimport",
+        "description": ""
+    },
+    "synching": {
+        "message": "Menyegerak",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Penanda Halaman &amp; Senarai Bacaan Pelayar",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Sejarah Pelayaran",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Poket Jimat",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Artikel Umum, berita, blog dan Esei secara automatik daripada tab terbuka semasa dan penyemakan imbas akan datang · Halaman Peribadi tidak disokong",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Carian Penanda Halaman Universal",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Pilih penanda halaman dan item senarai bacaan untuk dijadikan boleh dicari. Senarai URL semasa adalah setempat sahaja sehingga anda membenarkan pengumpulan data.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Cari nama item dan URL",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "URL yang dipilih",
+        "description": ""
+    },
+    "import": {
+        "message": "Import",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Batal",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Import item baharu secara automatik dalam Penanda Halaman dan Senarai Bacaan",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Tiada Nama Item",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Kandungan Awam daripada Sejarah Penyemak Imbas",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Cari dalam beribu-ribu penanda halaman X anda.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Buka halaman X Penanda Halaman",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Sila log masuk ke x.com dahulu dan buka halaman Penanda Halaman anda ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Mengambil URL",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Pengurusan Sumber",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Cara Mencari",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Pengindeksan Data mungkin masih mengambil sedikit masa.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Anda boleh menghubungi Kotak Carian mindECHO pada bila-bila masa",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "pada mana-mana tab (selain tab &quot;tab baharu&quot;)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Cuba sekarang",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Gunakan Pintasan Papan Kekunci",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Pin Ikon Sambungan Penyemak Imbas di atas",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Log keluar",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Auto Segerak",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Import item sejarah penyemakan imbas baharu secara automatik yang merupakan artikel awam.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Import item baharu secara automatik dalam penanda halaman X.",
+        "description": ""
     }
 }

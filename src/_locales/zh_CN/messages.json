@@ -366,5 +366,141 @@
     "continue": {
         "message": "继续",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "导入至少一个书签源进行搜索",
+        "description": ""
+    },
+    "go": {
+        "message": "去！",
+        "description": ""
+    },
+    "imported": {
+        "message": "进口",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "未导入",
+        "description": ""
+    },
+    "synching": {
+        "message": "同步",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "浏览器书签和阅读列表",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "浏览记录",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "口袋保存",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "自动公开当前打开的标签页和未来浏览的文章、新闻、博客和论文 · 不支持私人页面",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "通用书签搜索",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "选择要搜索的书签和阅读列表项。当前 URL 列表仅在本地，直到您授权数据收集。",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "搜索项目名称和 URL",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "选定的 URL",
+        "description": ""
+    },
+    "import": {
+        "message": "进口",
+        "description": ""
+    },
+    "cancel": {
+        "message": "取消",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "自动导入书签和阅读列表中的新项目",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "无名称项目",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "浏览器历史记录中的公开内容",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "在数千个 X 书签中进行搜索。",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "打开 X 书签页面",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "请先登录 x.com 并打开您的书签页面 ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "获取 URL",
+        "description": ""
+    },
+    "source_management": {
+        "message": "源管理",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "如何搜索",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "数据索引可能仍需要一段时间。",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "您可以随时调出 mindECHO 搜索框",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "在任何选项卡上（“新选项卡”选项卡除外）",
+        "description": ""
+    },
+    "try_now": {
+        "message": "现在试试",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "使用键盘快捷键",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "固定浏览器扩展程序图标至上方",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "登出",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "自动同步",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "自动导入新的公开文章浏览历史记录项目。",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "自动导入 X 书签中的新项目。",
+        "description": ""
     }
 }

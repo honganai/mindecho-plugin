@@ -366,5 +366,141 @@
     "continue": {
         "message": "Continuer",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Importez au moins une source de signets dans laquelle rechercher",
+        "description": ""
+    },
+    "go": {
+        "message": "Aller!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Importé",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Non importé",
+        "description": ""
+    },
+    "synching": {
+        "message": "Synchronisation",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Signets du navigateur et liste de lecture",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Historique de navigation",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Sauvegardes de poche",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Articles, actualités, blogs et essais automatiquement publics à partir des onglets ouverts actuels et de la navigation future · Les pages privées ne sont pas prises en charge",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Recherche universelle de signets",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Sélectionnez les signets et les éléments de la liste de lecture à rendre consultables. La liste d&#39;URL actuelle est locale uniquement jusqu&#39;à ce que vous autorisiez la collecte de données.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Rechercher des noms d&#39;éléments et des URL",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "URL sélectionnées",
+        "description": ""
+    },
+    "import": {
+        "message": "Importer",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Annuler",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Importer automatiquement de nouveaux éléments dans les signets et la liste de lecture",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Aucun élément de nom",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Contenu public de l&#39;historique du navigateur",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Recherchez parmi vos milliers de signets X.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Ouvrir la page des signets X",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Veuillez d&#39;abord vous connecter à x.com et ouvrir votre page de favoris. ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Récupération d&#39;URL",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Gestion des sources",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Comment rechercher",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "L&#39;indexation des données peut encore prendre un certain temps.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Vous pouvez appeler la zone de recherche mindECHO à tout moment",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "sur n’importe quel onglet (autre que l’onglet « nouvel onglet »)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Essayez maintenant",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Utiliser le raccourci clavier",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Épingler l’icône d’extension du navigateur ci-dessus",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "se déconnecter",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Synchronisation automatique",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Importez automatiquement les nouveaux éléments de l&#39;historique de navigation qui sont des articles publics.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Importez automatiquement de nouveaux éléments dans les signets X.",
+        "description": ""
     }
 }

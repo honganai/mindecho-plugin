@@ -366,5 +366,141 @@
     "continue": {
         "message": "തുടരുക",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "തിരയാൻ കുറഞ്ഞത് ഒരു ബുക്ക്‌മാർക്ക് ഉറവിടമെങ്കിലും ഇറക്കുമതി ചെയ്യുക",
+        "description": ""
+    },
+    "go": {
+        "message": "പോകൂ!",
+        "description": ""
+    },
+    "imported": {
+        "message": "ഇറക്കുമതി ചെയ്തത്",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "ഇറക്കുമതി ചെയ്തിട്ടില്ല",
+        "description": ""
+    },
+    "synching": {
+        "message": "സമന്വയിപ്പിക്കുന്നു",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "ബ്രൗസർ ബുക്ക്‌മാർക്കുകളും വായനാ പട്ടികയും",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "ബ്രൗസിംഗ് ചരിത്രം",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "പോക്കറ്റ് സേവ്സ്",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "നിലവിലുള്ള തുറന്ന ടാബുകളിൽ നിന്നും ഭാവി ബ്രൗസിംഗിൽ നിന്നുമുള്ള പൊതു ലേഖനങ്ങൾ, വാർത്തകൾ, ബ്ലോഗുകൾ, ഉപന്യാസങ്ങൾ എന്നിവ സ്വയമേവ · സ്വകാര്യ പേജുകൾ പിന്തുണയ്ക്കുന്നില്ല",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "യൂണിവേഴ്സൽ ബുക്ക്മാർക്ക് തിരയൽ",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "തിരയാനാകുന്ന ബുക്ക്മാർക്കുകളും റീഡിംഗ് ലിസ്റ്റ് ഇനങ്ങളും തിരഞ്ഞെടുക്കുക. നിങ്ങൾ ഡാറ്റ ശേഖരണത്തിന് അംഗീകാരം നൽകുന്നത് വരെ നിലവിലെ URL ലിസ്റ്റ് ലോക്കൽ മാത്രമായിരിക്കും.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "ഇനങ്ങളുടെ പേരുകളും URL-കളും തിരയുക",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "തിരഞ്ഞെടുത്ത URL-കൾ",
+        "description": ""
+    },
+    "import": {
+        "message": "ഇറക്കുമതി ചെയ്യുക",
+        "description": ""
+    },
+    "cancel": {
+        "message": "റദ്ദാക്കുക",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "ബുക്ക്‌മാർക്കുകളിലും റീഡിംഗ് ലിസ്റ്റിലും പുതിയ ഇനങ്ങൾ സ്വയമേവ ഇറക്കുമതി ചെയ്യുക",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "പേര് ഇനമില്ല",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "ബ്രൗസർ ചരിത്രത്തിൽ നിന്നുള്ള പൊതു ഉള്ളടക്കം",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "നിങ്ങളുടെ ആയിരക്കണക്കിന് X ബുക്ക്‌മാർക്കുകളിൽ തിരയുക.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "X Bookmarks പേജ് തുറക്കുക",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "ദയവായി ആദ്യം x.com-ൽ ലോഗിൻ ചെയ്‌ത് നിങ്ങളുടെ ബുക്ക്‌മാർക്ക് പേജ് തുറക്കുക ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "URL-കൾ ലഭ്യമാക്കുന്നു",
+        "description": ""
+    },
+    "source_management": {
+        "message": "ഉറവിട മാനേജ്മെൻ്റ്",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "എങ്ങനെ തിരയാം",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "ഡാറ്റ ഇൻഡക്‌സിംഗ് ഇനിയും സമയമെടുത്തേക്കാം.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "നിങ്ങൾക്ക് എപ്പോൾ വേണമെങ്കിലും മൈൻഡ് ഇക്കോ സെർച്ച് ബോക്സിലേക്ക് വിളിക്കാം",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "ഏതെങ്കിലും ടാബിൽ (&quot;പുതിയ ടാബ്&quot; ടാബ് ഒഴികെ)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "ഇപ്പോൾ ശ്രമിക്കുക",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "കീബോർഡ് കുറുക്കുവഴി ഉപയോഗിക്കുക",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "മുകളിലുള്ള ബ്രൗസർ വിപുലീകരണ ഐക്കൺ പിൻ ചെയ്യുക",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "സൈൻ ഔട്ട്",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "യാന്ത്രിക സമന്വയം",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "പൊതു ലേഖനങ്ങളായ പുതിയ ബ്രൗസിംഗ് ചരിത്ര ഇനങ്ങൾ സ്വയമേവ ഇറക്കുമതി ചെയ്യുക.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "X ബുക്ക്‌മാർക്കുകളിൽ പുതിയ ഇനങ്ങൾ സ്വയമേവ ഇറക്കുമതി ചെയ്യുക.",
+        "description": ""
     }
 }

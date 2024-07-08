@@ -366,5 +366,141 @@
     "continue": {
         "message": "Настави",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Увезите најмање један извор обележивача за претрагу",
+        "description": ""
+    },
+    "go": {
+        "message": "Иди!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Увезено",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Није увезено",
+        "description": ""
+    },
+    "synching": {
+        "message": "Синхронизација",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Обележивачи и листа за читање",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Историја прегледања",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Поцкет Савес",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Аутоматски јавни чланци, вести, блогови и есеји са тренутно отворених картица и будућег прегледања · Приватне странице нису подржане",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Универзална претрага обележивача",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Изаберите обележиваче и ставке листе за читање које желите да претражите. Тренутна листа УРЛ адреса је само локална док не одобрите прикупљање података.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Потражите називе ставки и УРЛ адресе",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "изабране УРЛ адресе",
+        "description": ""
+    },
+    "import": {
+        "message": "Увоз",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Поништити, отказати",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Аутоматски увозите нове ставке у обележиваче и листу за читање",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Но Наме Итем",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Јавни садржај из историје претраживача",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Претражујте у својим хиљадама Кс обележивача.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Отворите страницу Кс обележивача",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Прво се пријавите на к.цом и отворите своју страницу обележивача ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Преузимање УРЛ адреса",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Управљање изворима",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Како претраживати",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Индексирање података може још потрајати.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Можете позвати миндЕЦХО поље за претрагу у било ком тренутку",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "на било којој картици (осим картице „нова картица“)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Покушај сада",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Користите пречицу на тастатури",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Закачите икону проширења претраживача изнад",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Одјава",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Аутоматска синхронизација",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Аутоматски увозите нове ставке историје прегледања које су јавни чланци.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Аутоматски увозите нове ставке у Кс обележиваче.",
+        "description": ""
     }
 }

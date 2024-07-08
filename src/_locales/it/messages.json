@@ -366,5 +366,141 @@
     "continue": {
         "message": "Continua",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Importa almeno una sorgente di segnalibri in cui effettuare la ricerca",
+        "description": ""
+    },
+    "go": {
+        "message": "Andare!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Importato",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Non importato",
+        "description": ""
+    },
+    "synching": {
+        "message": "Sincronizzazione",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Segnalibri del browser ed elenco di lettura",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Cronologia di navigazione",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Salvataggi tascabili",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Articoli, notizie, blog e saggi pubblici automaticamente dalle schede attualmente aperte e dalla navigazione futura · Le pagine private non sono supportate",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Ricerca universale dei segnalibri",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Selezionare i segnalibri e gli elementi dell&#39;elenco di lettura da rendere ricercabili. L&#39;elenco degli URL correnti è solo locale finché non autorizzi la raccolta dei dati.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Cerca nomi di elementi e URL",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "URL selezionati",
+        "description": ""
+    },
+    "import": {
+        "message": "Importare",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Annulla",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Importa automaticamente nuovi elementi nei segnalibri e nell&#39;elenco di lettura",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Nessun elemento con nome",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Contenuti pubblici dalla cronologia del browser",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Cerca tra le tue migliaia di X segnalibri.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Apri la pagina X Segnalibri",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Per prima cosa accedi a x.com e apri la pagina dei segnalibri ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Recupero degli URL",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Gestione delle fonti",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Come cercare",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "L&#39;indicizzazione dei dati potrebbe richiedere ancora del tempo.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Puoi richiamare la casella di ricerca mindECHO in qualsiasi momento",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "in qualsiasi scheda (diversa dalla scheda &quot;nuova scheda&quot;)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Prova ora",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Usa la scorciatoia da tastiera",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Aggiungi l&#39;icona dell&#39;estensione del browser sopra",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "disconnessione",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Sincronizzazione automatica",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Importa automaticamente nuovi elementi della cronologia di navigazione che sono articoli pubblici.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Importa automaticamente nuovi elementi nei segnalibri X.",
+        "description": ""
     }
 }

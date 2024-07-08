@@ -366,5 +366,141 @@
     "continue": {
         "message": "Kontynuować",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Zaimportuj co najmniej jedno źródło zakładek, w którym chcesz przeszukiwać",
+        "description": ""
+    },
+    "go": {
+        "message": "Iść!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Importowany",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Nie importowane",
+        "description": ""
+    },
+    "synching": {
+        "message": "Synchronizowanie",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Zakładki przeglądarki i lista czytelnicza",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Historia przeglądania",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Kieszonkowe oszczędzanie",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Automatycznie publiczne artykuły, wiadomości, blogi i eseje z aktualnie otwartych kart i przyszłego przeglądania · Strony prywatne nie są obsługiwane",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Uniwersalne wyszukiwanie zakładek",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Wybierz zakładki i elementy listy czytelniczej, które mają być przeszukiwane. Bieżąca lista adresów URL ma charakter lokalny, dopóki nie zezwolisz na gromadzenie danych.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Wyszukaj nazwy elementów i adresy URL",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "wybrane adresy URL",
+        "description": ""
+    },
+    "import": {
+        "message": "Import",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Anulować",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Automatycznie importuj nowe pozycje w zakładkach i liście czytelniczej",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Brak nazwy elementu",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Treść publiczna z historii przeglądarki",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Szukaj w tysiącach X zakładek.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Otwórz stronę zakładek X",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Najpierw zaloguj się do x.com i otwórz stronę Zakładki ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Pobieranie adresów URL",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Zarządzanie źródłami",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Jak szukać",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Indeksowanie danych może jeszcze trochę potrwać.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Możesz w każdej chwili wywołać pole wyszukiwania mindECHO",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "na dowolnej karcie (innej niż „nowa karta”)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Spróbuj teraz",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Użyj skrótu klawiaturowego",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Przypnij ikonę rozszerzenia przeglądarki powyżej",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Wyloguj się",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Automatyczna synchronizacja",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Automatycznie importuj nowe elementy historii przeglądania, które są artykułami publicznymi.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Automatycznie importuj nowe elementy w zakładkach X.",
+        "description": ""
     }
 }

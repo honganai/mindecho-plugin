@@ -366,5 +366,141 @@
     "continue": {
         "message": "계속하다",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "검색할 북마크 소스를 하나 이상 가져옵니다.",
+        "description": ""
+    },
+    "go": {
+        "message": "가다!",
+        "description": ""
+    },
+    "imported": {
+        "message": "수입됨",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "가져오지 않음",
+        "description": ""
+    },
+    "synching": {
+        "message": "동기화 중",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "브라우저 북마크 및 읽기 목록",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "검색 기록",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "포켓 저장",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "현재 열려 있는 탭과 향후 검색에서 자동으로 기사, 뉴스, 블로그 및 에세이를 공개합니다. · 비공개 페이지는 지원되지 않습니다.",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "범용 북마크 검색",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "검색 가능하게 만들 북마크와 읽기 목록 항목을 선택하세요. 현재 URL 목록은 데이터 수집을 승인할 때까지만 로컬입니다.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "항목 이름 및 URL 검색",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "선택한 URL",
+        "description": ""
+    },
+    "import": {
+        "message": "수입",
+        "description": ""
+    },
+    "cancel": {
+        "message": "취소",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "책갈피 및 읽기 목록의 새 항목을 자동으로 가져옵니다.",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "이름 항목 없음",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "브라우저 기록의 공개 콘텐츠",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "수천 개의 X 북마크를 검색하세요.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "X 북마크 페이지 열기",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "먼저 x.com에 로그인하고 북마크 페이지를 여세요. ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "URL 가져오기",
+        "description": ""
+    },
+    "source_management": {
+        "message": "소스 관리",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "검색 방법",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "데이터 인덱싱에는 여전히 시간이 걸릴 수 있습니다.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "언제든지 mindECHO 검색창을 불러올 수 있습니다",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "모든 탭에서(&#39;새 탭&#39; 탭 제외)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "지금 사용해 보세요",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "키보드 단축키 사용",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "위의 브라우저 확장 아이콘 고정",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "로그아웃",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "자동 동기화",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "공개 기사인 새로운 검색 기록 항목을 자동으로 가져옵니다.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "X 북마크의 새 항목을 자동으로 가져옵니다.",
+        "description": ""
     }
 }

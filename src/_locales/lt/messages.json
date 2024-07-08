@@ -366,5 +366,141 @@
     "continue": {
         "message": "Tęsti",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Importuokite bent vieną žymių šaltinį, kad galėtumėte ieškoti",
+        "description": ""
+    },
+    "go": {
+        "message": "Pirmyn!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Importuota",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Neimportuotas",
+        "description": ""
+    },
+    "synching": {
+        "message": "Sinchronizavimas",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Naršyklės žymės ir skaitymo sąrašas",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Naršymo istorija",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Kišenėje taupo",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Automatiškai vieši straipsniai, naujienos, tinklaraščiai ir esė iš dabartinių atidarytų skirtukų ir būsimo naršymo · Privatūs puslapiai nepalaikomi",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Universali žymių paieška",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Pasirinkite žymes ir skaitymo sąrašo elementus, kurių reikia ieškoti. Dabartinis URL sąrašas yra tik vietinis, kol suteikiate teisę rinkti duomenis.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Ieškokite elementų pavadinimų ir URL",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "pasirinktus URL",
+        "description": ""
+    },
+    "import": {
+        "message": "Importuoti",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Atšaukti",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Automatiškai importuoti naujus elementus į žymes ir skaitymo sąrašą",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Be pavadinimo elemento",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Viešas turinys iš naršyklės istorijos",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Ieškokite tūkstančiuose X žymių.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Atidarykite X žymių puslapį",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Pirmiausia prisijunkite prie x.com ir atidarykite žymių puslapį ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Gaunamas URL",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Šaltinio valdymas",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Kaip ieškoti",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Duomenų indeksavimas vis tiek gali užtrukti.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Galite bet kada iškviesti mindECHO paieškos laukelį",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "bet kuriame skirtuke (išskyrus „naujo skirtuko“ skirtuką)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Pabandykite dabar",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Naudokite spartųjį klavišą",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Viršuje pritvirtinkite naršyklės plėtinio piktogramą",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Atsijungti",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Automatinis sinchronizavimas",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Automatiškai importuokite naujus naršymo istorijos elementus, kurie yra vieši straipsniai.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Automatiškai importuoti naujus elementus į X žymes.",
+        "description": ""
     }
 }

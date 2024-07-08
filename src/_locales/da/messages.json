@@ -366,5 +366,141 @@
     "continue": {
         "message": "Blive ved",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Importer mindst én bogmærkekilde at søge i",
+        "description": ""
+    },
+    "go": {
+        "message": "Gå!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Importeret",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Ikke importeret",
+        "description": ""
+    },
+    "synching": {
+        "message": "Synkronisering",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Browserbogmærker og læseliste",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Browserhistorik",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Pocket Saves",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Automatisk offentlige artikler, nyheder, blogs og essays fra nuværende åbne faner og fremtidig browsing · Private sider understøttes ikke",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Universal bogmærkesøgning",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Vælg de bogmærker og læselisteelementer, der skal gøres søgbare. Den aktuelle URL-liste er kun lokal, indtil du godkender dataindsamling.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Søg efter varenavne og URL&#39;er",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "udvalgte URL&#39;er",
+        "description": ""
+    },
+    "import": {
+        "message": "Importere",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Afbestille",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Importer automatisk nye elementer i bogmærker og læseliste",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Intet navneelement",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Offentligt indhold fra browserhistorik",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Søg i dine tusindvis af X-bogmærker.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Åbn X Bogmærker-siden",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Log først ind på x.com og åbn din bogmærkeside ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Henter URL&#39;er",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Kildestyring",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Sådan søger du",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Dataindeksering kan stadig tage et stykke tid.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Du kan til enhver tid kalde mindECHO-søgefeltet frem",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "på en hvilken som helst fane (bortset fra fanen &quot;ny fane&quot;)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Prøv nu",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Brug tastaturgenvej",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Fastgør browserudvidelsesikonet ovenfor",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Log ud",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Automatisk synkronisering",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Importer automatisk nye elementer i browserhistorikken, der er offentlige artikler.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Importer automatisk nye elementer i X-bogmærker.",
+        "description": ""
     }
 }

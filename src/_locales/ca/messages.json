@@ -366,5 +366,141 @@
     "continue": {
         "message": "Continua",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Importeu almenys una font d&#39;adreces d&#39;interès per cercar",
+        "description": ""
+    },
+    "go": {
+        "message": "Va!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Importat",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "No importat",
+        "description": ""
+    },
+    "synching": {
+        "message": "Sincronització",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Adreces d&#39;interès del navegador i llista de lectura",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Historial de navegació",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Estalvis de butxaca",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Articles, notícies, blocs i assaigs públics automàticament des de les pestanyes obertes actuals i de la navegació futura · Les pàgines privades no s&#39;admeten",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Cerca universal d&#39;adreces d&#39;interès",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Seleccioneu les adreces d&#39;interès i els elements de la llista de lectura per fer cercar. La llista d&#39;URL actual només és local fins que autoritzeu la recollida de dades.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Cerca noms d&#39;elements i URL",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "URL seleccionats",
+        "description": ""
+    },
+    "import": {
+        "message": "Importar",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Cancel · lar",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Importa automàticament nous elements a les adreces d&#39;interès i a la llista de lectura",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Cap element de nom",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Contingut públic de l&#39;historial del navegador",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Cerca als teus milers de X adreces d&#39;interès.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Obriu la pàgina X Bookmarks",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Inicieu sessió primer a x.com i obriu la vostra pàgina d&#39;adreces d&#39;interès ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "S&#39;estan obtenint URL",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Gestió de fonts",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Com cercar",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "La indexació de dades encara pot trigar una estona.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Podeu trucar al quadre de cerca mindECHO en qualsevol moment",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "a qualsevol pestanya (que no sigui la pestanya &quot;nova pestanya&quot;)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Prova-ho ara",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Utilitza la drecera del teclat",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Fixeu la icona d&#39;extensió del navegador a dalt",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Tanca sessió",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Sincronització automàtica",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Importa automàticament nous elements de l&#39;historial de navegació que siguin articles públics.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Importa automàticament nous elements a X adreces d&#39;interès.",
+        "description": ""
     }
 }

@@ -366,5 +366,141 @@
     "continue": {
         "message": "Doorgaan",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Importeer ten minste één bladwijzerbron waarin u wilt zoeken",
+        "description": ""
+    },
+    "go": {
+        "message": "Gaan!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Geïmporteerd",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Niet geïmporteerd",
+        "description": ""
+    },
+    "synching": {
+        "message": "Synchroniseren",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Browserbladwijzers en leeslijst",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Browsegeschiedenis",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Zakbesparingen",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Automatisch openbare artikelen, nieuws, blogs en essays van huidige geopende tabbladen en toekomstig browsen · Privépagina&#39;s worden niet ondersteund",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Universeel zoeken naar bladwijzers",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Selecteer de bladwijzers en leeslijstitems die doorzoekbaar moeten worden gemaakt. De huidige URL-lijst is alleen lokaal totdat u toestemming geeft voor het verzamelen van gegevens.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Zoek naar itemnamen en URL&#39;s",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "geselecteerde URL&#39;s",
+        "description": ""
+    },
+    "import": {
+        "message": "Importeren",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Annuleren",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Importeer automatisch nieuwe items in Bladwijzers en Leeslijst",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Geen naamitem",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Openbare inhoud uit browsergeschiedenis",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Zoek in uw duizenden X-bladwijzers.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Open de pagina X-bladwijzers",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Meld u eerst aan bij x.com en open uw bladwijzerpagina ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "URL&#39;s ophalen",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Bronbeheer",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Hoe te zoeken",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Het indexeren van gegevens kan nog enige tijd duren.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "U kunt op elk gewenst moment de mindECHO-zoekbox oproepen",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "op elk tabblad (behalve het tabblad &#39;nieuw tabblad&#39;)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Probeer nu",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Gebruik een sneltoets",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Pin het browserextensiepictogram hierboven vast",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Afmelden",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Automatisch synchroniseren",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Importeer automatisch nieuwe browsegeschiedenisitems die openbare artikelen zijn.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Importeer automatisch nieuwe items in X-bladwijzers.",
+        "description": ""
     }
 }

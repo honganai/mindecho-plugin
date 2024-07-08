@@ -366,5 +366,141 @@
     "continue": {
         "message": "Продовжити",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Імпортуйте принаймні одне джерело закладок для пошуку",
+        "description": ""
+    },
+    "go": {
+        "message": "Іди!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Імпортні",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Не імпортований",
+        "description": ""
+    },
+    "synching": {
+        "message": "Синхронізація",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Закладки браузера та список для читання",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Історія перегляду",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Кишенькові збереження",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Автоматично публікувати статті, новини, блоги та есе з поточних відкритих вкладок і майбутнього перегляду · Приватні сторінки не підтримуються",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Універсальний пошук закладок",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Виберіть закладки та елементи списку читання, які потрібно зробити доступними для пошуку. Поточний список URL-адрес є локальним лише до тих пір, поки ви не дозволите збір даних.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Шукайте назви елементів і URL-адреси",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "вибрані URL-адреси",
+        "description": ""
+    },
+    "import": {
+        "message": "Імпорт",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Скасувати",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Автоматично імпортувати нові елементи в закладки та список читання",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Елемент без назви",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Загальнодоступний вміст з історії веб-переглядача",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Шукайте в своїх тисячах X закладок.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Відкрийте сторінку X Bookmarks",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Спочатку увійдіть на x.com і відкрийте сторінку закладок ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Отримання URL-адрес",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Керування джерелом",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Як шукати",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Індексація даних ще може зайняти деякий час.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Ви можете будь-коли викликати вікно пошуку mindECHO",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "на будь-якій вкладці (окрім вкладки «нова вкладка»)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Спробуємо зараз",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Використовуйте комбінацію клавіш",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Закріпити піктограму розширення браузера вище",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Вийти з аккаунта",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Автоматична синхронізація",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Автоматично імпортувати нові елементи історії веб-перегляду, які є загальнодоступними статтями.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Автоматично імпортувати нові елементи в X закладок.",
+        "description": ""
     }
 }

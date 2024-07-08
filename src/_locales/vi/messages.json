@@ -366,5 +366,141 @@
     "continue": {
         "message": "Tiếp tục",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Nhập ít nhất một nguồn dấu trang để tìm kiếm",
+        "description": ""
+    },
+    "go": {
+        "message": "Đi!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Đã nhập",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Không được nhập",
+        "description": ""
+    },
+    "synching": {
+        "message": "Đồng bộ hóa",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Dấu trang trình duyệt &amp; Danh sách đọc",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Lịch sử duyệt web",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Tiết kiệm bỏ túi",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Tự động công khai các bài viết, tin tức, blog và bài luận từ các tab đang mở và duyệt trong tương lai · Trang riêng tư không được hỗ trợ",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Tìm kiếm dấu trang chung",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Chọn các dấu trang và mục danh sách đọc để có thể tìm kiếm được. Danh sách URL hiện tại chỉ mang tính cục bộ cho đến khi bạn cho phép thu thập dữ liệu.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Tìm kiếm tên mục và URL",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "URL đã chọn",
+        "description": ""
+    },
+    "import": {
+        "message": "Nhập khẩu",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Hủy bỏ",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Tự động nhập mục mới vào Dấu trang và Danh sách đọc",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Không Tên Mục",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Nội dung công khai từ lịch sử trình duyệt",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Tìm kiếm trong hàng nghìn dấu trang X của bạn.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Mở trang Dấu trang X",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Trước tiên hãy đăng nhập vào x.com và mở trang Dấu trang của bạn ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Đang tìm nạp URL",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Quản lý nguồn",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Cách tìm kiếm",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Lập chỉ mục dữ liệu có thể vẫn mất một lúc.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Bạn có thể gọi Hộp Tìm kiếm mindECHO bất kỳ lúc nào",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "trên bất kỳ tab nào (trừ tab “tab mới”)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Thử ngay bây giờ",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Sử dụng phím tắt",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Ghim biểu tượng tiện ích mở rộng trình duyệt ở trên",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Đăng xuất",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Tự động đồng bộ hóa",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Tự động nhập các mục lịch sử duyệt web mới là các bài viết công khai.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Tự động nhập các mục mới vào dấu trang X.",
+        "description": ""
     }
 }

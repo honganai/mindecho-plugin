@@ -366,5 +366,141 @@
     "continue": {
         "message": "ચાલુ રાખો",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "શોધવા માટે ઓછામાં ઓછો એક બુકમાર્ક સ્ત્રોત આયાત કરો",
+        "description": ""
+    },
+    "go": {
+        "message": "જાઓ!",
+        "description": ""
+    },
+    "imported": {
+        "message": "આયાત કરેલ",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "આયાત કરેલ નથી",
+        "description": ""
+    },
+    "synching": {
+        "message": "સમન્વય",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "બ્રાઉઝર બુકમાર્ક્સ અને વાંચન સૂચિ",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "બ્રાઉઝિંગ ઇતિહાસ",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "પોકેટ બચત કરે છે",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "વર્તમાન ઓપન ટેબ્સ અને ભાવિ બ્રાઉઝિંગમાંથી આપમેળે જાહેર લેખો, સમાચાર, બ્લોગ્સ અને નિબંધો · ખાનગી પૃષ્ઠો સમર્થિત નથી",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "યુનિવર્સલ બુકમાર્ક શોધ",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "શોધવા યોગ્ય બનાવવા માટે બુકમાર્ક્સ અને વાંચન સૂચિ આઇટમ્સ પસંદ કરો. જ્યાં સુધી તમે ડેટા સંગ્રહને અધિકૃત ન કરો ત્યાં સુધી વર્તમાન URL સૂચિ સ્થાનિક છે.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "આઇટમના નામ અને URL શોધો",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "પસંદ કરેલ URL",
+        "description": ""
+    },
+    "import": {
+        "message": "આયાત કરો",
+        "description": ""
+    },
+    "cancel": {
+        "message": "રદ કરો",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "બુકમાર્ક્સ અને વાંચન સૂચિમાં આપમેળે નવી આઇટમ્સ આયાત કરો",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "કોઈ નામની વસ્તુ નથી",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "બ્રાઉઝર ઇતિહાસમાંથી જાહેર સામગ્રી",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "તમારા હજારો X બુકમાર્ક્સમાં શોધો.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "X બુકમાર્ક્સ પૃષ્ઠ ખોલો",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "કૃપા કરીને પહેલા x.com માં લોગ ઇન કરો અને તમારું બુકમાર્ક્સ પેજ ખોલો ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "URL લાવી રહ્યાં છીએ",
+        "description": ""
+    },
+    "source_management": {
+        "message": "સ્ત્રોત વ્યવસ્થાપન",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "કેવી રીતે શોધવું",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "ડેટા ઈન્ડેક્સીંગમાં હજુ થોડો સમય લાગી શકે છે.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "તમે કોઈપણ સમયે mindECHO સર્ચ બોક્સ પર કૉલ કરી શકો છો",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "કોઈપણ ટેબ પર (&quot;નવી ટેબ&quot; ટેબ સિવાય)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "અત્યારેજ પ્રયત્ન કરો",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "કીબોર્ડ શોર્ટકટનો ઉપયોગ કરો",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "ઉપર પિન બ્રાઉઝર એક્સ્ટેંશન આયકન",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "સાઇન આઉટ કરો",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "સ્વતઃ સમન્વયન",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "આપમેળે નવી બ્રાઉઝિંગ ઇતિહાસ આઇટમ્સ આયાત કરો જે સાર્વજનિક લેખો છે.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "X બુકમાર્ક્સમાં આપમેળે નવી આઇટમ્સ આયાત કરો.",
+        "description": ""
     }
 }

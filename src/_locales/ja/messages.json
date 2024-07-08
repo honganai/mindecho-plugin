@@ -366,5 +366,141 @@
     "continue": {
         "message": "続く",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "検索するブックマークソースを少なくとも1つインポートする",
+        "description": ""
+    },
+    "go": {
+        "message": "行く！",
+        "description": ""
+    },
+    "imported": {
+        "message": "輸入",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "輸入されていません",
+        "description": ""
+    },
+    "synching": {
+        "message": "同期",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "ブラウザのブックマークと読書リスト",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "閲覧履歴",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "ポケットセーブ",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "現在開いているタブと今後の閲覧から自動的に公開される記事、ニュース、ブログ、エッセイ · プライベートページはサポートされていません",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "ユニバーサルブックマーク検索",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "検索可能にするブックマークとリーディング リスト項目を選択します。現在の URL リストは、データ収集を承認するまでローカルのみです。",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "アイテム名とURLを検索する",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "選択されたURL",
+        "description": ""
+    },
+    "import": {
+        "message": "輸入",
+        "description": ""
+    },
+    "cancel": {
+        "message": "キャンセル",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "ブックマークとリーディングリストに新しいアイテムを自動的にインポートする",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "名前なしアイテム",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "ブラウザ履歴からの公開コンテンツ",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "何千もの X ブックマークを検索します。",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Xブックマークページを開く",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "まずx.comにログインしてブックマークページを開いてください ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "URLの取得",
+        "description": ""
+    },
+    "source_management": {
+        "message": "ソース管理",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "検索方法",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "データのインデックス作成にはまだ時間がかかる場合があります。",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "mindECHO検索ボックスはいつでも呼び出すことができます",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "任意のタブ（「新しいタブ」タブ以外）",
+        "description": ""
+    },
+    "try_now": {
+        "message": "今すぐやってみて下さい",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "キーボードショートカットを使用する",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "ブラウザ拡張機能アイコンを上にピン留めする",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "サインアウト",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "自動同期",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "公開記事である新しい閲覧履歴項目を自動的にインポートします。",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "X ブックマークに新しいアイテムを自動的にインポートします。",
+        "description": ""
     }
 }

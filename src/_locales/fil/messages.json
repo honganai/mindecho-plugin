@@ -366,5 +366,141 @@
     "continue": {
         "message": "Magpatuloy",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Mag-import ng hindi bababa sa Isang Bookmark Source para Maghanap",
+        "description": ""
+    },
+    "go": {
+        "message": "Go!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Na-import",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Hindi na-import",
+        "description": ""
+    },
+    "synching": {
+        "message": "Nagsi-sync",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Mga Bookmark ng Browser at Listahan ng Babasahin",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Kasaysayan ng Pagba-browse",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Pocket Saves",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Mga Awtomatikong Pampublikong Artikulo, balita, blog, at Sanaysay mula sa mga kasalukuyang bukas na tab at pag-browse sa hinaharap · Hindi suportado ang Mga Pribadong Pahina",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Pangkalahatang Paghahanap sa Bookmark",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Piliin ang mga bookmark at mga item sa listahan ng babasahin na gagawing mahahanap. Ang kasalukuyang listahan ng URL ay lokal lamang hanggang sa pahintulutan mo ang pangongolekta ng data.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Maghanap ng mga pangalan ng item at URL",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "mga napiling URL",
+        "description": ""
+    },
+    "import": {
+        "message": "Angkat",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Kanselahin",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Awtomatikong mag-import ng mga bagong item sa Mga Bookmark at Listahan ng Babasahin",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Walang Pangalan ng Item",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Pampublikong Nilalaman mula sa Kasaysayan ng Browser",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Maghanap sa iyong libu-libong X bookmark.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Buksan ang pahina ng X Bookmarks",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Mangyaring mag-log in muna sa x.com at buksan ang iyong pahina ng Mga Bookmark ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Kinukuha ang mga URL",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Pamamahala ng Pinagmulan",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Paano Maghanap",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Maaaring magtagal pa rin ang Pag-index ng Data.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Maaari mong tawagan ang mindECHO Search Box anumang oras",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "sa anumang tab (maliban sa tab na &quot;bagong tab&quot;)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Subukan Ngayon",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Gumamit ng Keyboard Shortcut",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "I-pin ang Icon ng Extension ng Browser sa itaas",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Mag-sign out",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Auto Sync",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Awtomatikong mag-import ng mga bagong item sa kasaysayan ng pagba-browse na mga pampublikong artikulo.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Awtomatikong mag-import ng mga bagong item sa X bookmark.",
+        "description": ""
     }
 }

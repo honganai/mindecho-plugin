@@ -366,5 +366,141 @@
     "continue": {
         "message": "продължи",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Импортирайте поне един източник на отметка за търсене",
+        "description": ""
+    },
+    "go": {
+        "message": "Отивам!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Внесени",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Не е внесен",
+        "description": ""
+    },
+    "synching": {
+        "message": "Синхронизиране",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Отметки на браузъра и списък за четене",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "История на сърфиране",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Джобни спестявания",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Автоматично публични статии, новини, блогове и есета от текущи отворени раздели и бъдещо сърфиране · Частните страници не се поддържат",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Универсално търсене с отметки",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Изберете отметките и елементите от списъка за четене, които да направят достъпни за търсене. Текущият списък с URL адреси е локален само докато не разрешите събирането на данни.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Търсете имена и URL адреси на елементи",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "избрани URL адреси",
+        "description": ""
+    },
+    "import": {
+        "message": "Импортиране",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Отказ",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Автоматично импортиране на нови елементи в отметки и списък за четене",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Елемент без име",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Публично съдържание от хронологията на браузъра",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Търсете във вашите хиляди X отметки.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Отворете страницата X Bookmarks",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Моля, първо влезте в x.com и отворете страницата си с отметки ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Извличане на URL адреси",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Управление на източника",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Как да търсите",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Индексирането на данни все още може да отнеме известно време.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Можете да извикате полето за търсене mindECHO по всяко време",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "във всеки раздел (различен от раздела „нов раздел“)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Опитайте сега",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Използвайте клавишна комбинация",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Закачете иконата на разширението на браузъра по-горе",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Отписване",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Автоматично синхронизиране",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Автоматично импортиране на нови елементи от историята на сърфирането, които са публични статии.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Автоматично импортирайте нови елементи в X отметки.",
+        "description": ""
     }
 }

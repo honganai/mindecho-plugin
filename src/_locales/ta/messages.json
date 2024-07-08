@@ -366,5 +366,141 @@
     "continue": {
         "message": "தொடரவும்",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "தேடுவதற்கு குறைந்தது ஒரு புக்மார்க் மூலத்தையாவது இறக்குமதி செய்யவும்",
+        "description": ""
+    },
+    "go": {
+        "message": "போ!",
+        "description": ""
+    },
+    "imported": {
+        "message": "இறக்குமதி செய்யப்பட்டது",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "இறக்குமதி செய்யப்படவில்லை",
+        "description": ""
+    },
+    "synching": {
+        "message": "ஒத்திசைவு",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "உலாவி புக்மார்க்குகள் &amp; வாசிப்பு பட்டியல்",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "இணைய வரலாறு",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "பாக்கெட் சேமிப்பு",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "தானாக பொதுக் கட்டுரைகள், செய்திகள், வலைப்பதிவுகள் மற்றும் தற்போதைய திறந்த தாவல்கள் மற்றும் எதிர்கால உலாவலில் இருந்து கட்டுரைகள் · தனிப்பட்ட பக்கங்கள் ஆதரிக்கப்படாது",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "உலகளாவிய புக்மார்க் தேடல்",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "புக்மார்க்குகள் மற்றும் வாசிப்புப் பட்டியல் உருப்படிகளைத் தேர்ந்தெடுக்கவும். நீங்கள் தரவு சேகரிப்பை அங்கீகரிக்கும் வரை, தற்போதைய URL பட்டியல் உள்ளூரில் இருக்கும்.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "உருப்படியின் பெயர்கள் மற்றும் URLகளைத் தேடவும்",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "தேர்ந்தெடுக்கப்பட்ட URLகள்",
+        "description": ""
+    },
+    "import": {
+        "message": "இறக்குமதி",
+        "description": ""
+    },
+    "cancel": {
+        "message": "ரத்து செய்",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "புக்மார்க்குகள் மற்றும் வாசிப்புப் பட்டியலில் புதிய உருப்படிகளைத் தானாக இறக்குமதி செய்யவும்",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "பெயர் உருப்படி இல்லை",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "உலாவி வரலாற்றிலிருந்து பொது உள்ளடக்கம்",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "உங்கள் ஆயிரக்கணக்கான X புக்மார்க்குகளில் தேடுங்கள்.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "X புக்மார்க்ஸ் பக்கத்தைத் திறக்கவும்",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "முதலில் x.com இல் உள்நுழைந்து உங்கள் புக்மார்க்ஸ் பக்கத்தைத் திறக்கவும் ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "URLகளைப் பெறுகிறது",
+        "description": ""
+    },
+    "source_management": {
+        "message": "மூல மேலாண்மை",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "எப்படி தேடுவது",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "தரவு அட்டவணைப்படுத்தலுக்கு இன்னும் சிறிது நேரம் ஆகலாம்.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "நீங்கள் எப்போது வேண்டுமானாலும் mindECHO தேடல் பெட்டியை அழைக்கலாம்",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "ஏதேனும் தாவலில் (&quot;புதிய தாவல்&quot; தாவல் தவிர)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "இப்போது முயற்சி",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "விசைப்பலகை குறுக்குவழியைப் பயன்படுத்தவும்",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "மேலே உலாவி நீட்டிப்பு ஐகானைப் பின் செய்யவும்",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "வெளியேறு",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "தானியங்கு ஒத்திசைவு",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "பொதுக் கட்டுரைகளான புதிய உலாவல் வரலாற்று உருப்படிகளைத் தானாக இறக்குமதி செய்யவும்.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "X புக்மார்க்குகளில் புதிய உருப்படிகளைத் தானாக இறக்குமதி செய்யவும்.",
+        "description": ""
     }
 }

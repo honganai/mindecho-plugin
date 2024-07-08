@@ -366,5 +366,141 @@
     "continue": {
         "message": "కొనసాగించు",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "శోధించడానికి కనీసం ఒక బుక్‌మార్క్ మూలాన్ని దిగుమతి చేయండి",
+        "description": ""
+    },
+    "go": {
+        "message": "వెళ్ళండి!",
+        "description": ""
+    },
+    "imported": {
+        "message": "దిగుమతి చేయబడింది",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "దిగుమతి చేసుకోలేదు",
+        "description": ""
+    },
+    "synching": {
+        "message": "సమకాలీకరించడం",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "బ్రౌజర్ బుక్‌మార్క్‌లు &amp; పఠన జాబితా",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "బ్రౌజింగ్ చరిత్ర",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "పాకెట్ ఆదా",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "ప్రస్తుత ఓపెన్ ట్యాబ్‌లు మరియు భవిష్యత్ బ్రౌజింగ్ నుండి స్వయంచాలకంగా పబ్లిక్ కథనాలు, వార్తలు, బ్లాగులు మరియు వ్యాసాలు · ప్రైవేట్ పేజీలకు మద్దతు లేదు",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "యూనివర్సల్ బుక్‌మార్క్ శోధన",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "వెతకడానికి బుక్‌మార్క్‌లు మరియు రీడింగ్ లిస్ట్ ఐటెమ్‌లను ఎంచుకోండి. మీరు డేటా సేకరణను ప్రామాణీకరించే వరకు మాత్రమే ప్రస్తుత URL జాబితా స్థానికంగా ఉంటుంది.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "అంశం పేర్లు మరియు URLల కోసం శోధించండి",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "ఎంచుకున్న URLలు",
+        "description": ""
+    },
+    "import": {
+        "message": "దిగుమతి",
+        "description": ""
+    },
+    "cancel": {
+        "message": "రద్దు చేయండి",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "బుక్‌మార్క్‌లు మరియు పఠన జాబితాలో స్వయంచాలకంగా కొత్త అంశాలను దిగుమతి చేయండి",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "పేరు అంశం లేదు",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "బ్రౌజర్ చరిత్ర నుండి పబ్లిక్ కంటెంట్",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "మీ వేల X బుక్‌మార్క్‌లలో శోధించండి.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "X బుక్‌మార్క్‌ల పేజీని తెరవండి",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "దయచేసి ముందుగా x.comకి లాగిన్ చేసి, మీ బుక్‌మార్క్‌ల పేజీని తెరవండి ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "URLలను పొందుతోంది",
+        "description": ""
+    },
+    "source_management": {
+        "message": "మూల నిర్వహణ",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "ఎలా శోధించాలి",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "డేటా ఇండెక్సింగ్‌కు ఇంకా కొంత సమయం పట్టవచ్చు.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "మీరు ఎప్పుడైనా mindECHO సెర్చ్ బాక్స్‌కి కాల్ చేయవచ్చు",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "ఏదైనా ట్యాబ్‌లో (&quot;కొత్త ట్యాబ్&quot; ట్యాబ్ కాకుండా)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "ఇప్పుడు ప్రయత్నించండి",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "కీబోర్డ్ సత్వరమార్గాన్ని ఉపయోగించండి",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "ఎగువ బ్రౌజర్ పొడిగింపు చిహ్నాన్ని పిన్ చేయండి",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "సైన్ అవుట్ చేయండి",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "స్వీయ సమకాలీకరణ",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "పబ్లిక్ కథనాలు అయిన కొత్త బ్రౌజింగ్ చరిత్ర అంశాలను స్వయంచాలకంగా దిగుమతి చేయండి.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "X బుక్‌మార్క్‌లలో కొత్త అంశాలను స్వయంచాలకంగా దిగుమతి చేయండి.",
+        "description": ""
     }
 }

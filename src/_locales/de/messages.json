@@ -366,5 +366,141 @@
     "continue": {
         "message": "Weitermachen",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Importieren Sie mindestens eine Lesezeichenquelle zum Suchen",
+        "description": ""
+    },
+    "go": {
+        "message": "Gehen!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Importiert",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Nicht importiert",
+        "description": ""
+    },
+    "synching": {
+        "message": "Synchronisierung",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Browser-Lesezeichen und Leseliste",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Browser-Verlauf",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Taschensparen",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Automatisch öffentliche Artikel, Nachrichten, Blogs und Essays aus aktuell geöffneten Tabs und zukünftigen Browsern · Private Seiten werden nicht unterstützt",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Universelle Lesezeichensuche",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Wählen Sie die Lesezeichen und Leselistenelemente aus, die durchsuchbar gemacht werden sollen. Die aktuelle URL-Liste ist nur lokal, bis Sie die Datenerfassung autorisieren.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Suche nach Artikelnamen und URLs",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "ausgewählte URLs",
+        "description": ""
+    },
+    "import": {
+        "message": "Importieren",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Stornieren",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Neue Einträge automatisch in Lesezeichen und Leseliste importieren",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Kein Name-Artikel",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Öffentliche Inhalte aus dem Browserverlauf",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Durchsuchen Sie Ihre Tausenden von X-Lesezeichen.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "X-Lesezeichen-Seite öffnen",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Bitte melden Sie sich zunächst bei x.com an und öffnen Sie Ihre Lesezeichenseite ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Abrufen von URLs",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Quellenverwaltung",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "So suchen Sie",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Die Datenindizierung kann noch eine Weile dauern.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Sie können die mindECHO Suchbox jederzeit aufrufen",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "auf jedem Tab (außer dem Tab „Neuer Tab“)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Versuch&#39;s jetzt",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Tastaturkürzel verwenden",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Symbol für Browsererweiterung oben anheften",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Abmelden",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Automatische Synchronisation",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Neue Browserverlaufselemente, bei denen es sich um öffentliche Artikel handelt, werden automatisch importiert.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Neue Elemente automatisch in X-Lesezeichen importieren.",
+        "description": ""
     }
 }

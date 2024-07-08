@@ -366,5 +366,141 @@
     "continue": {
         "message": "Devam etmek",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Aramak için En az Bir Yer İşareti Kaynağını İçe Aktarın",
+        "description": ""
+    },
+    "go": {
+        "message": "Gitmek!",
+        "description": ""
+    },
+    "imported": {
+        "message": "İthal",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "İthal Edilmedi",
+        "description": ""
+    },
+    "synching": {
+        "message": "Senkronizasyon",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Tarayıcı Yer İmleri ve Okuma Listesi",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Arama geçmişi",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Cep Tasarrufları",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Mevcut açık sekmelerdeki ve gelecekteki göz atmalardaki otomatik olarak Herkese Açık Makaleler, haberler, bloglar ve Denemeler · Özel Sayfalar desteklenmez",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Evrensel Yer İmi Arama",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Aranabilir hale getirilecek yer imlerini ve okuma listesi öğelerini seçin. Geçerli URL listesi yalnızca siz veri toplanmasına izin verene kadar yereldir.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Öğe adlarını ve URL&#39;leri arayın",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "seçilen URL&#39;ler",
+        "description": ""
+    },
+    "import": {
+        "message": "İçe aktarmak",
+        "description": ""
+    },
+    "cancel": {
+        "message": "İptal etmek",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Yer İmleri ve Okuma Listesindeki yeni öğeleri otomatik olarak içe aktarın",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "İsim Öğesi Yok",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Tarayıcı Geçmişinden Herkese Açık İçerik",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Binlerce X yer iminizde arama yapın.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "X Yer İmleri sayfasını aç",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Lütfen önce x.com&#39;da oturum açın ve Yer İmleri sayfanızı açın ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "URL&#39;ler getiriliyor",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Kaynak Yönetimi",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Nasıl Arama Yapılır?",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Veri Dizine Ekleme işlemi hâlâ biraz zaman alabilir.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "mindECHO Arama Kutusunu istediğiniz zaman çağırabilirsiniz.",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "herhangi bir sekmede (“yeni sekme” sekmesi dışında)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Şimdi dene",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Klavye Kısayolunu Kullan",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Tarayıcı Uzantısı Simgesini yukarıya sabitle",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "oturumu Kapat",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Otomatik Senkronizasyon",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Herkese açık makaleler olan yeni göz atma geçmişi öğelerini otomatik olarak içe aktarın.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "X yer imlerindeki yeni öğeleri otomatik olarak içe aktarın.",
+        "description": ""
     }
 }

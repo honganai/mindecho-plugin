@@ -366,5 +366,141 @@
     "continue": {
         "message": "Melanjutkan",
         "description": ""
+    },
+    "import_at_least_one_bookmark_source_to_search_in": {
+        "message": "Impor setidaknya Satu Sumber Bookmark untuk Dicari",
+        "description": ""
+    },
+    "go": {
+        "message": "Pergi!",
+        "description": ""
+    },
+    "imported": {
+        "message": "Impor",
+        "description": ""
+    },
+    "not_imported": {
+        "message": "Tidak Diimpor",
+        "description": ""
+    },
+    "synching": {
+        "message": "Sinkronisasi",
+        "description": ""
+    },
+    "browser_bookmarks_reading_list": {
+        "message": "Penanda Browser &amp; Daftar Bacaan",
+        "description": ""
+    },
+    "browsing_history": {
+        "message": "Riwayat Penjelajahan",
+        "description": ""
+    },
+    "pocket_saves": {
+        "message": "Simpanan Saku",
+        "description": ""
+    },
+    "automatically_public_articles_news_blogs_and_essays_from_current_open_tabs": {
+        "message": "Secara otomatis Publikkan Artikel, berita, blog, dan Esai dari tab terbuka saat ini dan penelusuran di masa mendatang · Halaman Pribadi tidak didukung",
+        "description": ""
+    },
+    "universal_bookmark_search": {
+        "message": "Pencarian Bookmark Universal",
+        "description": ""
+    },
+    "select_the_bookmarks_and_reading_list_items_to_be_made_searchable_current_url_l": {
+        "message": "Pilih penanda dan item daftar bacaan agar dapat dicari. Daftar URL saat ini hanya bersifat lokal sampai Anda mengizinkan pengumpulan data.",
+        "description": ""
+    },
+    "search_for_item_names_and_urls": {
+        "message": "Cari nama item dan URL",
+        "description": ""
+    },
+    "selected_urls": {
+        "message": "URL yang dipilih",
+        "description": ""
+    },
+    "import": {
+        "message": "Impor",
+        "description": ""
+    },
+    "cancel": {
+        "message": "Membatalkan",
+        "description": ""
+    },
+    "automatically_import_new_items_in_bookmarks_and_reading_list": {
+        "message": "Impor item baru secara otomatis ke Bookmark dan Daftar Bacaan",
+        "description": ""
+    },
+    "no_name_item": {
+        "message": "Tidak Ada Nama Barang",
+        "description": ""
+    },
+    "public_content_from_browser_history": {
+        "message": "Konten Publik dari Riwayat Peramban",
+        "description": ""
+    },
+    "search_in_your_thousands_of_x_bookmarks": {
+        "message": "Cari di ribuan X bookmark Anda.",
+        "description": ""
+    },
+    "open_x_bookmarks_page": {
+        "message": "Buka halaman X Bookmark",
+        "description": ""
+    },
+    "please_first_log_into_x_com_and_open_your_bookmarks_page": {
+        "message": "Silakan login terlebih dahulu ke x.com dan buka halaman Bookmark Anda ",
+        "description": ""
+    },
+    "fetching_urls": {
+        "message": "Mengambil URL",
+        "description": ""
+    },
+    "source_management": {
+        "message": "Manajemen Sumber",
+        "description": ""
+    },
+    "how_to_search": {
+        "message": "Cara Mencari",
+        "description": ""
+    },
+    "data_indexing_may_still_take_a_while": {
+        "message": "Pengindeksan Data mungkin masih memerlukan waktu beberapa saat.",
+        "description": ""
+    },
+    "you_can_call_up_the_mindecho_search_box_any_time": {
+        "message": "Anda dapat memanggil Kotak Pencarian mindECHO kapan saja",
+        "description": ""
+    },
+    "on_any_tab_other_than_the_new_tab_tab": {
+        "message": "di tab mana pun (selain tab “tab baru”)",
+        "description": ""
+    },
+    "try_now": {
+        "message": "Coba sekarang",
+        "description": ""
+    },
+    "use_keyboard_shortcut": {
+        "message": "Gunakan Pintasan Keyboard",
+        "description": ""
+    },
+    "pin_browser_extension_icon_above": {
+        "message": "Sematkan Ikon Ekstensi Browser di atas",
+        "description": ""
+    },
+    "sign_out": {
+        "message": "Keluar",
+        "description": ""
+    },
+    "auto_sync": {
+        "message": "Sinkronisasi Otomatis",
+        "description": ""
+    },
+    "automatically_import_new_browsing_history_items_that_are_public_articles": {
+        "message": "Secara otomatis mengimpor item riwayat penelusuran baru yang merupakan artikel publik.",
+        "description": ""
+    },
+    "automatically_import_new_items_in_x_bookmarks": {
+        "message": "Impor item baru secara otomatis ke bookmark X.",
+        "description": ""
     }
 }
