@@ -60,28 +60,14 @@ const Page = () => {
       handleClick: () => navigate('twitter'),
       status: CardStatus.NotImported
     },
-    // {
-    //   id: "pocket",
-    //   img: <img className="h-10" src={pocketSourceIcon} alt="pocketSourceIcon" />,
-    //   title: t('pocket_saves'),
-    //   subTitle: t('your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you'),
-    //   handleClick: () => navigate('pocket'),
-    //   isSynching: false
-    // },
-    // {
-    //   img: <img className="h-10" src={raindropIcon} alt="raindropIcon" />,
-    //   title: t('browser_bookmarks_reading_list'),
-    //   subTitle: t('more_sources_will_be_supported'),
-    //   handleClick: null,
-    //   isSynching: true
-    // },
-    // {
-    //   img: <img className="h-10" src={RIcon} alt="RIcon" />,
-    //   title: t('more_sources_will_be_supported'),
-    //   subTitle: t('more_sources_will_be_supported'),
-    //   handleClick: null,
-    //   isSynching: true
-    // }
+    {
+      id: "pocket",
+      img: <img className="h-10" src={pocketSourceIcon} alt="pocketSourceIcon" />,
+      title: t('pocket_saves'),
+      subTitle: t('your_pocket_saves_list_will_be_imported_with_secure_authorization_Full_text_of_the_saves_will_be_fetched_and_made_searchable_to_you'),
+      handleClick: () => navigate('pocket'),
+      status: CardStatus.NotImported
+    },
   ])
   const navigate = useNavigate();
   const [isOpenFirstTimeModal, setIsOpenFirstTimeModal] = useState(false)

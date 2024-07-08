@@ -181,9 +181,25 @@ const getXBookmark = async () => {
 };
 
 const uploadUserUrl = (data) => {
-  Api['upload_user_url']({ body: data }).then((res) => {
-    console.log('auto add res:', res);
+  const urls = [];
+  const articles = [];
+  data.forEach((item) => {
+    if (item.content) {
+      articles.push(item);
+    } else {
+      urls.push(item.url);
+    }
   });
+
+  urls.length &&
+    Api['upload_user_url']({ body: urls }).then((res) => {
+      console.log('auto add res:', res);
+    });
+
+  articles.length &&
+    Api['upload_user_article']({ body: articles }).then((res) => {
+      console.log('auto add res:', res);
+    });
 };
 
 export { startAutoAdd };
