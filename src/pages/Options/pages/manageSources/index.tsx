@@ -68,20 +68,6 @@ const Page = () => {
       handleClick: () => navigate('pocket'),
       status: CardStatus.NotImported
     },
-    // {
-    //   img: <img className="h-10" src={raindropIcon} alt="raindropIcon" />,
-    //   title: t('browser_bookmarks_reading_list'),
-    //   subTitle: t('more_sources_will_be_supported'),
-    //   handleClick: null,
-    //   isSynching: true
-    // },
-    // {
-    //   img: <img className="h-10" src={RIcon} alt="RIcon" />,
-    //   title: t('more_sources_will_be_supported'),
-    //   subTitle: t('more_sources_will_be_supported'),
-    //   handleClick: null,
-    //   isSynching: true
-    // }
   ])
   const navigate = useNavigate();
   const [isOpenFirstTimeModal, setIsOpenFirstTimeModal] = useState(false)
