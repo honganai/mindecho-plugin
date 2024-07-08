@@ -100,8 +100,6 @@ const startAutoAdd = async () => {
   const data = await collectData(lastUpdateTime, lastUpdateTimePocket);
 
   if (data.length > 0) {
-    console.log('🚀 ~ startAutoAdd ~ data:', data);
-
     await uploadUserUrl(data);
     setLocalURLs(data);
     setLastUpdateDataTime(new Date().getTime());
