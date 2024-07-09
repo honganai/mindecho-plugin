@@ -37,7 +37,7 @@
       background-color: #3d6ff6;
     }
   }
-  
+
   .copy {
     position: absolute;
     top: 10px;
@@ -46,7 +46,8 @@
     visibility: hidden;
   }
 
-  .title, h3 {
+  .title,
+  h3 {
     margin-bottom: 10px;
     font-size: var(--tip-font-size);
     font-weight: bold;
@@ -71,5 +72,12 @@
 
   .gray {
     color: var(--color-text-second);
+  }
+
+  .limit-container {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    margin-top: -20px;
   }
 }

@@ -1,5 +1,6 @@
 import React, { useReducer } from 'react';
 import GlobalContext, { reducer as GlobalReducer } from '../../reducer/global';
+import '@/assets/style/global.styles.css';
 import App from './App';
 
 const Root: React.FC = () => {

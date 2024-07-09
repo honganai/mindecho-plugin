@@ -1,9 +1,13 @@
-import React, { useEffect, useState, memo } from 'react';
+import React, { useEffect, useState, memo, useContext } from 'react';
 import markdownit from 'markdown-it';
 import styles from './index.module.scss';
 import parse, { HTMLReactParserOptions, domToReact } from 'html-react-parser';
 import { ReloadOutlined, CopyOutlined, FileDoneOutlined } from '@ant-design/icons';
 import { message } from 'antd';
+import clsx from 'clsx';
+import PaymentForm, { PayReason, UserLevel } from './PaymentForm';
+import GlobalContext, { ActionType as GlobalActionType } from '@/reducer/global';
+import { IProcessStatus } from '@/pages/Options/pages/manageSources';
 
 interface IProps {
   markdownStream?: string;
@@ -35,14 +39,32 @@ interface IContent {
   html: string;
 }
 
+export const ASK_COUNT_LOCAL = 'askCountFormLocal';
+export const MAX_ASK_COUNT = 3;
+export const MAX_URL_COUNT = 0;
+
+const fetchProgress: () => Promise<IProcessStatus[]> = async () => {
+  return new Promise((resolve) => {
+    chrome.runtime.sendMessage({ type: 'request', api: 'user_url_status' }, (res) => {
+      resolve(res)
+    })
+  })
+};
+
 const MarkdownContent: React.FC<IProps> = ({ markdownStream = '', refresh }) => {
+  const { state: globalState, dispatch: globalDispatch } = useContext(GlobalContext);
+  const { userInfo } = globalState;
+
   const [data, setData] = useState<IContent[]>([]);
   const [copyStatus, setCopyStatus] = useState(false);
   const { getMessage: t } = chrome.i18n;
   const copyFailedI18N = t('copyFailed');
   const copySuccessI18N = t('copySuccess');
   const copyNotSupportedI18N = t('copyNotSupported');
-
+  const [askCount, setAskCount] = useState(0);
+  const [isAskLimit, setIsAskLimit] = useState(true);
+  const [urlCount, setUrlCount] = useState(0);
+  const [isUrlCountLimit, setIsUrlCountLimit] = useState(false);
   const parseMd = (mdStr: string) => {
     const container = document.createElement('div');
     container.innerHTML = md.render(mdStr); // 先把md转成html
@@ -78,16 +100,24 @@ const MarkdownContent: React.FC<IProps> = ({ markdownStream = '', refresh }) => 
   };
 
   useEffect(() => {
+    chrome.runtime.sendMessage(
+      { type: 'request', api: 'userinfo' }
+    );
+
+    chrome.storage.sync.get([ASK_COUNT_LOCAL], (res) => {
+      console.log("🚀 ~ chrome.storage.sync.get ~ res:", res)
+      setAskCount(res[ASK_COUNT_LOCAL] || 0);
+    })
+
+    fetchProgress().then((res) => {
+      const count = res.reduce((acc, curr) => acc + curr.count, 0);
+      setUrlCount(count);
+    })
+  }, [])
+
+  useEffect(() => {
     setData(parseMd(markdownStream));
   }, [markdownStream]);
-
-  // const parsePptions: HTMLReactParserOptions = {
-  //   replace(domNode: any) {
-  //     if (domNode.name === 'p' && domNode.children.length === 1 && domNode.children[0].data === 'Bookmarks') {
-  //       return <p className={styles.quote}>{domToReact(domNode.children, parsePptions)}</p>
-  //     }
-  //   }
-  // };
 
   const copyText = () => {
     if (navigator?.clipboard) {
@@ -102,22 +132,73 @@ const MarkdownContent: React.FC<IProps> = ({ markdownStream = '', refresh }) => 
     }
   }
 
+  const closeModal = () => {
+    globalDispatch({
+      type: GlobalActionType.SetShowAnswerModal,
+      payload: false,
+    });
+    globalDispatch({
+      type: GlobalActionType.SetShowAskModal,
+      payload: false,
+    });
+  }
+
+  useEffect(() => {
+    console.log("🚀 ~ userInfo?.subscription.mem_type:", userInfo?.subscription.mem_type)
+    setIsAskLimit(askCount >= MAX_ASK_COUNT && userInfo?.subscription.mem_type === UserLevel.Free);
+    setIsUrlCountLimit(urlCount >= MAX_URL_COUNT && userInfo?.subscription.mem_type === UserLevel.Free);
+  }, [askCount, urlCount, userInfo?.subscription.mem_type,])
+
   return (
-    <div>
+    <>
       {data.map((item, index) => {
         return (
-          <div key={index} className={styles.content}>
+          <div key={index} className={clsx(
+            styles.content,
+          )}>
             <div className={styles.controls}>
               <ReloadOutlined onClick={() => refresh()} />
               {
                 copyStatus ? <FileDoneOutlined /> : <CopyOutlined onClick={copyText} />
               }
             </div>
-            <div className={styles['text-p']}>{parse(item.html)}</div>
+
+            <div className={
+              clsx(
+                styles['text-p'],
+                isAskLimit ? `max-h-28 min-h-24 overflow-hidden relative` : '',
+              )
+            }>
+              {isAskLimit && <div className="h-full w-full absolute top-0 left-0 overflow-hidden bg-gradient-to-t from-white z-10" />}
+              {parse(item.html)}
+            </div>
+
+            {
+              isAskLimit &&
+              <div className={clsx(
+                styles['limit-container'],
+                'px-4'
+              )}>
+                <PaymentForm payReason={PayReason.OverAsk} />
+              </div>
+            }
           </div>
         );
       })}
-    </div>
+
+      {
+        isUrlCountLimit &&
+        <div
+          style={{ backgroundColor: 'rgba(0, 0, 0, 0.45)' }}
+          className=" flex items-center justify-center w-full f-full fixed top-0 left-0 right-0 bottom-0 z-50"
+          onClick={e => e.target === e.currentTarget && closeModal()}
+        >
+          <div className="max-w-[860px]">
+            <PaymentForm payReason={PayReason.OverUrl} />
+          </div>
+        </div>
+      }
+    </>
   );
 };
 

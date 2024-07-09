@@ -6,6 +6,9 @@ process.env.ASSET_PATH = '/';
 process.env.API_URL = 'https://api.mindecho.app'
 process.env.POSTHOG_KEY = 'phc_PSM3JZG2Ti7DlJmhIuHMHWFsLtdZmWUOb2SEhCXnnPc';
 
+process.env.STRIPE_MONTHLY_PRODUCT_ID = '2';
+process.env.STRIPE_ANNUALLY_PRODUCT_ID = '3';
+
 var webpack = require('webpack'),
   path = require('path'),
   fs = require('fs'),

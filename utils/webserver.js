@@ -7,7 +7,8 @@ process.env.ASSET_PATH = '/';
 // process.env.API_URL = 'https://pr.hongan.live';
 process.env.API_URL = 'https://me.hongan.live';
 process.env.POSTHOG_KEY = 'phc_hUcXh8vBONcqDx2Z2SyLpa76IpVhnFnpUOhXBfdPaeP';
-
+process.env.STRIPE_MONTHLY_PRODUCT_ID = '2';
+process.env.STRIPE_ANNUALLY_PRODUCT_ID = '3';
 const fs = require('fs');
 
 var WebpackDevServer = require('webpack-dev-server'),

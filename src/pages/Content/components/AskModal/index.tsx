@@ -9,6 +9,7 @@ import styles from './index.module.scss';
 import MyProgress from '../Myprogress';
 import { getAutoAdd, setAutoAdd as setStorageAutoAdd } from '@/constants';
 import clsx from 'clsx';
+import isSingleWordOrShortText from '@/lib/isSingleWordOrShortText';
 
 
 interface IExample {
@@ -118,18 +119,11 @@ const AskModal: React.FC<IProps> = ({ type }) => {
             console.log(e.currentTarget.value);
             const value = e.currentTarget.value;
             if (value?.trim()) {
-              // chrome.runtime.sendMessage(
-              //   {
-              //     type: 'ws_chat_request',
-              //     data: {
-              //       message: value?.trim(),
-              //       action: 'message',
-              //     },
-              //   },
-              //   (res) => {
-              //     console.log('ws_chat_request res: ', res);
-              //   },
-              // );
+              const isValidQuestion = !isSingleWordOrShortText(value);
+              globalDispatch({
+                type: GlobalActionType.SetIsValidQuestion,
+                payload: isValidQuestion,
+              });
               globalDispatch({
                 type: GlobalActionType.SetMarkdownStream,
                 payload: '',
@@ -140,7 +134,7 @@ const AskModal: React.FC<IProps> = ({ type }) => {
               });
               globalDispatch({
                 type: GlobalActionType.SetRequestEnd,
-                payload: false,
+                payload: isValidQuestion ? false : true,
               });
               globalDispatch({
                 type: GlobalActionType.SetQuestion,

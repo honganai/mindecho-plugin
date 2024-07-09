@@ -3,10 +3,12 @@ import { Modal, Input, Button, Skeleton, Result } from 'antd';
 import { getDocument, truncateTitle } from '@/utils/common.util';
 import GlobalContext, { ActionType as GlobalActionType } from '@/reducer/global';
 import _ from 'lodash';
-import MarkdownContent from './MarkdownContent';
+import MarkdownContent, { ASK_COUNT_LOCAL } from './MarkdownContent';
 import styles from './index.module.scss';
+import contentStyles from './MarkdownContent/index.module.scss';
 import MyProgress from '../Myprogress';
 import cs from 'classnames';
+import isSingleWordOrShortText from '@/lib/isSingleWordOrShortText';
 
 interface IReferences {
   title: string;
@@ -19,7 +21,7 @@ interface IReferences {
 const AnswerModal: React.FC = () => {
   const { getMessage: t } = chrome.i18n;
   const { state: globalState, dispatch: globalDispatch } = useContext(GlobalContext);
-  const { progress, showAskModal, showAnswerModal, isRequesting, requestEnd, markdownStream } = globalState;
+  const { isValidQuestion, progress, showAskModal, showAnswerModal, isRequesting, requestEnd, markdownStream } = globalState;
   const markdownStreamRef = useRef('');
   const [question, setQuestion] = useState('');
   const [References, setReferences] = useState<IReferences[]>([]);
@@ -43,10 +45,13 @@ const AnswerModal: React.FC = () => {
           type: GlobalActionType.SetRequestEnd,
           payload: true,
         });
+        chrome.storage.sync.get([ASK_COUNT_LOCAL], (result) => {
+          const askCount = result[ASK_COUNT_LOCAL] || 0;
+          chrome.storage.sync.set({ [ASK_COUNT_LOCAL]: askCount + 1 });
+        })
         return;
       }
       markdownStreamRef.current += request.data.answer;
-      // setMarkdownStream(markdownStreamRef.current);
       globalDispatch({
         type: GlobalActionType.SetMarkdownStream,
         payload: markdownStreamRef.current,
@@ -109,7 +114,7 @@ const AnswerModal: React.FC = () => {
       chrome.runtime.sendMessage({ type: 'request', api: 'get_dataset_document', body: { query: globalState.question } }, (res) => {
         setReferences(res || []);
 
-        chrome.runtime.sendMessage(
+        isValidQuestion && chrome.runtime.sendMessage(
           {
             type: 'ws_chat_request',
             data: {
@@ -142,6 +147,12 @@ const AnswerModal: React.FC = () => {
 
   const sendQuestion = useCallback(() => {
     if (question?.trim()) {
+      const isValidQuestion = !isSingleWordOrShortText(question);
+
+      globalDispatch({
+        type: GlobalActionType.SetIsValidQuestion,
+        payload: isValidQuestion,
+      });
       globalDispatch({
         type: GlobalActionType.SetQuestion,
         payload: question?.trim(),
@@ -160,7 +171,7 @@ const AnswerModal: React.FC = () => {
       });
       globalDispatch({
         type: GlobalActionType.SetRequestEnd,
-        payload: false,
+        payload: isValidQuestion ? false : true,
       });
     }
   }, [question]);
@@ -254,7 +265,17 @@ const AnswerModal: React.FC = () => {
               </div>
             )}
           </div>
-          <MarkdownContent markdownStream={markdownStream} refresh={sendQuestion}></MarkdownContent>
+          {
+            isValidQuestion ?
+              <MarkdownContent markdownStream={markdownStream} refresh={sendQuestion}></MarkdownContent>
+              :
+              <div className={contentStyles['content']}>
+                <div className={contentStyles['text-p']}>
+                  <h3>{t('answer')}</h3>
+                  <p>{t('ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti')}</p>
+                </div>
+              </div>
+          }
           {requestEnd && (
             <div className={styles.btns}>
               <div className={styles['new-query']}>

@@ -506,5 +506,77 @@
   "automatically_import_new_items_in_x_bookmarks": {
     "message": "Automatically import new items in X bookmarks.",
     "description": ""
+  },
+  "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+    "message": "Ask ECHO a question and get precise answers instantly from your curated collections.",
+    "description": ""
+  },
+  "unlock_unlimited_al_answers_from_your_content": {
+    "message": "Unlock Unlimited Al Answers from Your Content",
+    "description": ""
+  },
+  "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+    "message": "mindECHO uses Al to instantly find tailored answers from your trusted content, saving you time and effort. Upgrade to Pro for unlimited access to your personal knowledge base.",
+    "description": ""
+  },
+  "unlock_now": {
+    "message": "Unlock Now",
+    "description": ""
+  },
+  "dismiss": {
+    "message": "Dismiss",
+    "description": ""
+  },
+  "billed_monthly": {
+    "message": "Billed Monthly",
+    "description": ""
+  },
+  "billed_annually": {
+    "message": "Billed Annually",
+    "description": ""
+  },
+  "you_ve_reached_2000_indexed_items": {
+    "message": "You’ve reached 2000+ indexed items",
+    "description": ""
+  },
+  "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+    "message": "Upgrade to Pro Plan for unlimited collections and AI answers. Enjoy a $1 trial for a 14-day trial with full access before deciding.",
+    "description": ""
+  },
+  "unlock_unlimited_ai_answers_from_your_collections": {
+    "message": "Unlock Unlimited AI Answers from Your Collections",
+    "description": ""
+  },
+  "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+    "message": "With the mindECHO Pro Plan, AI searches all your collections to deliver the most relevant answers instantly.",
+    "description": ""
+  },
+  "then": {
+    "message": "then",
+    "description": ""
+  },
+  "per_month_billed_annually": {
+    "message": "per month, billed annually",
+    "description": ""
+  },
+  "for_a": {
+    "message": "for a",
+    "description": ""
+  },
+  "day_trial_of_pro_plan": {
+    "message": "-day trial of Pro Plan",
+    "description": ""
+  },
+  "start_trial": {
+    "message": "Start Trial",
+    "description": ""
+  },
+  "cancel_anytime": {
+    "message": "Cancel Anytime",
+    "description": ""
+  },
+  "answer": {
+    "message": "Answer",
+    "description": ""
   }
 }

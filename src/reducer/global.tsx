@@ -122,6 +122,8 @@ export interface IState {
   requestEnd: boolean;
   /** 回答 */
   markdownStream?: string;
+  /** 是否有效问题 */
+  isValidQuestion: boolean;
   /** 是否需要登录 */
   isLogin: boolean;
   /** 用户信息 */
@@ -157,6 +159,7 @@ export enum ActionType {
   SetIsRequesting = 'SetIsRequesting',
   SetRequestEnd = 'SetRequestEnd',
   SetMarkdownStream = 'SetMarkdownStream',
+  SetIsValidQuestion = 'SetIsValidQuestion',
   SetIsLogin = 'SetIsLogin',
   SetUserInfo = 'SetUserInfo',
   SetProgress = 'SetProgress',
@@ -177,6 +180,7 @@ export type IAction =
   | ISetIsRequesting
   | ISetRequestEnd
   | ISetMarkdownStream
+  | ISetIsValidQuestion
   | ISetIsLogin
   | ISetProgress
   | ISetTitleMap
@@ -226,6 +230,11 @@ export interface ISetReadingList {
 export interface ISetMarkdownStream {
   type: ActionType.SetMarkdownStream;
   payload: string;
+}
+
+export interface ISetIsValidQuestion {
+  type: ActionType.SetIsValidQuestion;
+  payload: boolean;
 }
 export interface ISetIsRequesting {
   type: ActionType.SetIsRequesting;
@@ -316,6 +325,12 @@ export function reducer(state: IState, action: IAction): IState {
       return {
         ...state,
         markdownStream: action.payload,
+      };
+
+    case ActionType.SetIsValidQuestion:
+      return {
+        ...state,
+        isValidQuestion: action.payload,
       };
 
     case ActionType.SetShowAskModal:
