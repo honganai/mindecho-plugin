@@ -181,12 +181,13 @@ export function convertXBookmarkToTree(tree: TweetItem[]): (TweetItem & TreeNode
 
 export const convertPocketToTree = (tree: IPocketURL[]) => {
   return tree.map((item) => {
-    const { id, title, url, parentId, user_create_time } = item;
+    const { id, title, url, parentId, user_create_time, status } = item;
     return {
       id,
       key: String(id),
       title,
       url,
+      status,
       parentId: parentId || '0',
       dateAdded: new Date(user_create_time).getTime(),
     };

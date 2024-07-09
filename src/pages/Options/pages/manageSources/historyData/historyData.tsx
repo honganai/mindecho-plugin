@@ -101,7 +101,7 @@ const BrowserData: React.FC<{
               parentId: item.parentId.toString()
             }))
           ).filter(
-            ({ title = '', url = '', status }) => status === -1 && checkedKeys.includes(url || 'noUrl' + title || 'noTitle')
+            ({ key }) => checkedKeys.includes(key) && !disabledKeys.includes(key)
           )
 
           chrome.runtime.sendMessage({

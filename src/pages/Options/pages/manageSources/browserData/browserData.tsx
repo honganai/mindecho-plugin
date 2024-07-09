@@ -164,7 +164,11 @@ const BrowserData: React.FC<{
         break;
       case Step.Uploading:
         const payloadBody = flattenData
-          .filter(({ url, key = '' }) => (url && !disabledKeys.includes(key)))
+          .filter(({ url, key = '' }) => (
+            checkedKeys.includes(key)
+            && url &&
+            !disabledKeys.includes(key)
+          ))
           .map((item) => {
             return {
               title: item.title,

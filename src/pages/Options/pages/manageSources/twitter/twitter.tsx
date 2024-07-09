@@ -171,11 +171,9 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
 
           break;
         case Step.Uploading:
-          const data = flattenData.filter(({ key = '', isUpdate = false }) => checkedKeys.includes(key) && !isUpdate);
-          console.log("🚀 ~ handleSteps ~ data:", data)
+          const data = flattenData.filter(({ key = '' }) => checkedKeys.includes(key) && !disabledKeys.includes(key));
 
           chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: data }, (res) => {
-            console.log("🚀 ~ chrome.runtime.sendMessage ~ res:", res)
             setTimeout(() => {
               setStep(Step.Done)
             }, 1000 * 60)
