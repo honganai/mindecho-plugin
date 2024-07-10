@@ -41,7 +41,7 @@ interface IContent {
 
 export const ASK_COUNT_LOCAL = 'askCountFormLocal';
 export const MAX_ASK_COUNT = 3;
-export const MAX_URL_COUNT = 2000;
+export const MAX_URL_COUNT = 0;
 
 const fetchProgress: () => Promise<IProcessStatus[]> = async () => {
   return new Promise((resolve) => {
@@ -64,7 +64,7 @@ const MarkdownContent: React.FC<IProps> = ({ markdownStream = '', refresh }) => 
   const [askCount, setAskCount] = useState(0);
   const [isAskLimit, setIsAskLimit] = useState(true);
   const [urlCount, setUrlCount] = useState(0);
-  const [isUrlCountLimit, setIsUrlCountLimit] = useState(false);
+  const [isUrlCountLimit, setIsUrlCountLimit] = useState(true);
   const parseMd = (mdStr: string) => {
     const container = document.createElement('div');
     container.innerHTML = md.render(mdStr); // 先把md转成html
