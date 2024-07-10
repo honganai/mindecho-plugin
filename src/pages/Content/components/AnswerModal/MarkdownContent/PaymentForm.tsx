@@ -19,9 +19,9 @@ enum PayPlan {
 }
 
 
-// const host = process.env.API_URL
-// const STRIPE_MONTHLY_PRODUCT_ID = process.env.STRIPE_MONTHLY_PRODUCT_ID
-// const STRIPE_ANNUALLY_PRODUCT_ID = process.env.STRIPE_ANNUALLY_PRODUCT_ID
+const host = process.env.API_URL
+const STRIPE_MONTHLY_PRODUCT_ID = process.env.STRIPE_MONTHLY_PRODUCT_ID
+const STRIPE_ANNUALLY_PRODUCT_ID = process.env.STRIPE_ANNUALLY_PRODUCT_ID
 
 export interface IUserInfoResult {
   result: Result;
@@ -62,9 +62,7 @@ export interface Subscription {
   total_monthly_quota: string;
 }
 
-const host = `https://me.hongan.live`
-const STRIPE_MONTHLY_PRODUCT_ID = `2`
-const STRIPE_ANNUALLY_PRODUCT_ID = `3`
+
 
 const PayPlanMap = [
   {

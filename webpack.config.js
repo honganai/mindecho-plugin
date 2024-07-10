@@ -211,7 +211,13 @@ var options = {
     new CleanWebpackPlugin({ verbose: false }),
     new webpack.ProgressPlugin(),
     // expose and write the allowed env vars on the compiled bundle
-    new webpack.EnvironmentPlugin(['NODE_ENV', 'API_URL', 'POSTHOG_KEY']),
+    new webpack.EnvironmentPlugin([
+      'NODE_ENV',
+      'API_URL',
+      'POSTHOG_KEY',
+      'STRIPE_ANNUALLY_PRODUCT_ID',
+      'STRIPE_MONTHLY_PRODUCT_ID',
+    ]),
     GenerateJsonPlugin,
     // new CopyWebpackPlugin({
     //   patterns: [
