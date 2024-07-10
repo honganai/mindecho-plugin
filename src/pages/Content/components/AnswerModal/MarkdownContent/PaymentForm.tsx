@@ -17,9 +17,12 @@ enum PayPlan {
   Monthly = 0,
   Annually = 1
 }
+
+
 // const host = process.env.API_URL
 // const STRIPE_MONTHLY_PRODUCT_ID = process.env.STRIPE_MONTHLY_PRODUCT_ID
 // const STRIPE_ANNUALLY_PRODUCT_ID = process.env.STRIPE_ANNUALLY_PRODUCT_ID
+
 export interface IUserInfoResult {
   result: Result;
 }
