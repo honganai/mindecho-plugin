@@ -41,7 +41,7 @@ interface IContent {
 
 export const ASK_COUNT_LOCAL = 'askCountFormLocal';
 export const MAX_ASK_COUNT = 3;
-export const MAX_URL_COUNT = 0;
+export const MAX_URL_COUNT = 2000;
 
 const fetchProgress: () => Promise<IProcessStatus[]> = async () => {
   return new Promise((resolve) => {
@@ -174,7 +174,7 @@ const MarkdownContent: React.FC<IProps> = ({ markdownStream = '', refresh }) => 
             </div>
 
             {
-              isAskLimit &&
+              !isUrlCountLimit && isAskLimit &&
               <div className={clsx(
                 styles['limit-container'],
                 'px-4'
