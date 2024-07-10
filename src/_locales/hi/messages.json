@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "X बुकमार्क्स में नए आइटम स्वचालित रूप से आयात करें.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "ECHO से प्रश्न पूछें और अपने संग्रहित संग्रह से तुरंत सटीक उत्तर प्राप्त करें।",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "अपनी सामग्री से असीमित Al उत्तर अनलॉक करें",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO आपके विश्वसनीय कंटेंट से तुरंत अनुकूलित उत्तर खोजने के लिए AI का उपयोग करता है, जिससे आपका समय और प्रयास बचता है। अपने व्यक्तिगत ज्ञानकोष तक असीमित पहुँच के लिए Pro में अपग्रेड करें।",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "अभी खोलें",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "नकार देना",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "मासिक बिल",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "सालाना बिल किया",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "आप 2000+ अनुक्रमित आइटम तक पहुँच चुके हैं",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "असीमित संग्रह और AI उत्तरों के लिए प्रो प्लान में अपग्रेड करें। निर्णय लेने से पहले पूर्ण पहुँच के साथ 14-दिन के परीक्षण के लिए $1 का आनंद लें।",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "अपने संग्रह से असीमित AI उत्तर अनलॉक करें",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "माइंडइको प्रो प्लान के साथ, एआई आपके सभी संग्रहों को खोजता है और तुरंत सबसे प्रासंगिक उत्तर प्रदान करता है।",
+        "description": ""
+    },
+    "then": {
+        "message": "तब",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "प्रति माह, वार्षिक बिल",
+        "description": ""
+    },
+    "for_a": {
+        "message": "एक के लिए",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "प्रो प्लान का -दिन का परीक्षण",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "शुरू परीक्षण",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "किसी भी समय रद्द करें",
+        "description": ""
+    },
+    "answer": {
+        "message": "उत्तर",
+        "description": ""
     }
 }

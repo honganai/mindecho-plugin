@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Importez automatiquement de nouveaux éléments dans les signets X.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Posez une question à ECHO et obtenez instantanément des réponses précises à partir de vos collections organisées.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Débloquez des réponses Al illimitées à partir de votre contenu",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO utilise Al pour trouver instantanément des réponses personnalisées à partir de votre contenu de confiance, vous faisant ainsi gagner du temps et des efforts. Passez à Pro pour un accès illimité à votre base de connaissances personnelle.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Débloquer maintenant",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Rejeter",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Facturé mensuellement",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Facturé annuellement",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Vous avez atteint plus de 2 000 éléments indexés",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Passez au plan Pro pour des collections illimitées et des réponses IA. Profitez d&#39;un essai de 1 $ pour un essai de 14 jours avec accès complet avant de vous décider.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Débloquez des réponses IA illimitées à partir de vos collections",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "Avec le plan mindECHO Pro, l&#39;IA recherche dans toutes vos collections pour fournir instantanément les réponses les plus pertinentes.",
+        "description": ""
+    },
+    "then": {
+        "message": "alors",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "par mois, facturé annuellement",
+        "description": ""
+    },
+    "for_a": {
+        "message": "pour un",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "Essai d&#39;une journée du plan Pro",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Commencer procès",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Annuler à tout moment",
+        "description": ""
+    },
+    "answer": {
+        "message": "Répondre",
+        "description": ""
     }
 }

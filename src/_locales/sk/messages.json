@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Automaticky importovať nové položky do X záložiek.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Položte ECHO otázku a okamžite získajte presné odpovede zo svojich spravovaných zbierok.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Odomknite neobmedzené Al odpovede z vášho obsahu",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO používa Al na okamžité nájdenie prispôsobených odpovedí z vášho dôveryhodného obsahu, čím vám ušetrí čas a námahu. Inovujte na Pro a získajte neobmedzený prístup k svojej osobnej znalostnej báze.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Odomknúť teraz",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Odmietnuť",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Fakturované mesačne",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Fakturované ročne",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Dosiahli ste viac ako 2000 indexovaných položiek",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Inovujte na Pro Plan pre neobmedzené zbierky a odpovede AI. Vychutnajte si skúšobnú verziu 1 $ na 14-dňovú skúšobnú verziu s plným prístupom, než sa rozhodnete.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Odomknite neobmedzené odpovede AI zo svojich zbierok",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "S plánom mindECHO Pro Plan AI prehľadá všetky vaše zbierky, aby okamžite poskytla tie najrelevantnejšie odpovede.",
+        "description": ""
+    },
+    "then": {
+        "message": "potom",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "za mesiac, účtované ročne",
+        "description": ""
+    },
+    "for_a": {
+        "message": "pre",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-denná skúšobná verzia Pro Plan",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Spustiť skúšku",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Zrušiť kedykoľvek",
+        "description": ""
+    },
+    "answer": {
+        "message": "Odpoveď",
+        "description": ""
     }
 }

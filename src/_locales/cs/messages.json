@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Automaticky importovat nové položky do X záložek.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Položte ECHO otázku a okamžitě získejte přesné odpovědi ze svých spravovaných sbírek.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Odemkněte neomezené odpovědi Al z vašeho obsahu",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO používá Al k okamžitému nalezení přizpůsobených odpovědí z vašeho důvěryhodného obsahu, což vám ušetří čas a námahu. Upgradujte na Pro a získejte neomezený přístup ke své osobní znalostní bázi.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Odemkni ted",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Zavrhnout",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Účtováno měsíčně",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Účtováno ročně",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Dosáhli jste více než 2000 indexovaných položek",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Upgradujte na Pro Plan pro neomezené sbírky a odpovědi AI. Než se rozhodnete, využijte zkušební verzi 1 $ na 14denní zkušební verzi s plným přístupem.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Odemkněte neomezené odpovědi AI ze svých sbírek",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "S plánem mindECHO Pro Plan AI prohledá všechny vaše sbírky, aby okamžitě poskytla ty nejrelevantnější odpovědi.",
+        "description": ""
+    },
+    "then": {
+        "message": "pak",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "měsíčně, účtováno ročně",
+        "description": ""
+    },
+    "for_a": {
+        "message": "pro",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-denní zkušební verze Pro Plan",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Spustit zkušební verzi",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Zrušit kdykoli",
+        "description": ""
+    },
+    "answer": {
+        "message": "Odpovědět",
+        "description": ""
     }
 }

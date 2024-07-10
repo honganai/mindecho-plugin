@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Tuo uudet kohteet automaattisesti X-kirjanmerkkeihin.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Esitä ECHO:lle kysymys ja saat välittömästi tarkat vastaukset kuratoimista kokoelmistasi.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Avaa rajattomasti Al-vastauksia sisällöstäsi",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO käyttää Al:a löytääkseen välittömästi räätälöityjä vastauksia luotetusta sisällöstäsi, mikä säästää aikaa ja vaivaa. Päivitä Pro-versioon saadaksesi rajoittamattoman pääsyn henkilökohtaiseen tietokantaasi.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Avaa lukitus nyt",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Hylkää",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Laskutetaan kuukausittain",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Laskutetaan vuosittain",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Olet saavuttanut yli 2000 indeksoitua kohdetta",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Päivitä Pro Planiin, niin saat rajattomat kokoelmat ja tekoälyvastaukset. Nauti 1 dollarin kokeilujaksosta 14 päivän kokeilujaksolla täydellä käyttöoikeudella ennen päätöksen tekemistä.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Avaa rajattomasti AI-vastauksia kokoelmistasi",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "MindECHO Pro Plan -suunnitelman avulla tekoäly hakee kaikista kokoelmistasi toimittaakseen osuvimmat vastaukset välittömästi.",
+        "description": ""
+    },
+    "then": {
+        "message": "sitten",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "kuukaudessa, laskutetaan vuosittain",
+        "description": ""
+    },
+    "for_a": {
+        "message": "varten a",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-Pro Planin päivän kokeilu",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Aloita kokeilujakso",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Peruuta milloin tahansa",
+        "description": ""
+    },
+    "answer": {
+        "message": "Vastaus",
+        "description": ""
     }
 }

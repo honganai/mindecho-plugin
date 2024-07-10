@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Tự động nhập các mục mới vào dấu trang X.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Hãy hỏi ECHO một câu hỏi và nhận ngay câu trả lời chính xác từ bộ sưu tập được tuyển chọn của bạn.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Mở khóa câu trả lời Al không giới hạn từ nội dung của bạn",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO sử dụng Al để tìm ngay câu trả lời phù hợp từ nội dung đáng tin cậy của bạn, giúp bạn tiết kiệm thời gian và công sức. Nâng cấp lên Pro để truy cập không giới hạn vào kho kiến thức cá nhân của bạn.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Mở khóa ngay",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Miễn nhiệm",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Thanh toán hàng tháng",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Thanh toán hàng năm",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Bạn đã đạt hơn 2000 mục được lập chỉ mục",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Nâng cấp lên Gói Pro để có bộ sưu tập không giới hạn và câu trả lời AI. Tận hưởng bản dùng thử $1 cho bản dùng thử 14 ngày với toàn quyền truy cập trước khi quyết định.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Mở khóa các câu trả lời AI không giới hạn từ Bộ sưu tập của bạn",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "Với mindECHO Pro Plan, AI tìm kiếm tất cả các bộ sưu tập của bạn để đưa ra câu trả lời phù hợp nhất ngay lập tức.",
+        "description": ""
+    },
+    "then": {
+        "message": "sau đó",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "mỗi tháng, thanh toán hàng năm",
+        "description": ""
+    },
+    "for_a": {
+        "message": "cho một",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-ngày dùng thử Pro Plan",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Bắt đầu thử nghiệm",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Hủy bất cứ lúc nào",
+        "description": ""
+    },
+    "answer": {
+        "message": "Trả lời",
+        "description": ""
     }
 }

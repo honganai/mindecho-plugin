@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Import item baharu secara automatik dalam penanda halaman X.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Tanya ECHO soalan dan dapatkan jawapan tepat serta-merta daripada koleksi pilihan susun anda.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Buka Kunci Jawapan Al Tanpa Had daripada Kandungan Anda",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO menggunakan Al untuk mencari jawapan yang disesuaikan dengan serta-merta daripada kandungan anda yang dipercayai, menjimatkan masa dan usaha anda. Naik taraf kepada Pro untuk akses tanpa had kepada pangkalan pengetahuan peribadi anda.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Kunci sekarang",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Tolak",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Dibilkan Bulanan",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Dibilkan Setiap Tahun",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Anda telah mencapai 2000+ item diindeks",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Naik taraf kepada Pelan Pro untuk koleksi tanpa had dan jawapan AI. Nikmati percubaan $1 untuk percubaan 14 hari dengan akses penuh sebelum membuat keputusan.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Buka Kunci Jawapan AI Tanpa Had daripada Koleksi Anda",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "Dengan Pelan Pro mindECHO, AI mencari semua koleksi anda untuk menyampaikan jawapan yang paling relevan serta-merta.",
+        "description": ""
+    },
+    "then": {
+        "message": "kemudian",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "sebulan, dibilkan setiap tahun",
+        "description": ""
+    },
+    "for_a": {
+        "message": "Untuk",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-percubaan hari Pro Plan",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Mulakan Percubaan",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Batal bila-bila masa",
+        "description": ""
+    },
+    "answer": {
+        "message": "Jawab",
+        "description": ""
     }
 }

@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "एक्स बुकमार्क्समध्ये नवीन आयटम स्वयंचलितपणे आयात करा.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "ECHO ला एक प्रश्न विचारा आणि तुमच्या क्युरेट केलेल्या संग्रहांमधून त्वरित अचूक उत्तरे मिळवा.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "तुमच्या सामग्रीमधून अमर्यादित उत्तरे अनलॉक करा",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO तुमचा वेळ आणि मेहनत वाचवून, तुमच्या विश्वसनीय सामग्रीमधून तयार केलेली उत्तरे झटपट शोधण्यासाठी Al वापरते. तुमच्या वैयक्तिक ज्ञान बेसमध्ये अमर्यादित प्रवेशासाठी Pro वर श्रेणीसुधारित करा.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "आता अनलॉक करा",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "काढून टाकणे",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "मासिक बिल केले",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "वार्षिक बिल केले",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "तुम्ही 2000+ अनुक्रमित आयटमवर पोहोचला आहात",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "अमर्यादित संकलन आणि AI उत्तरांसाठी प्रो प्लॅन वर श्रेणीसुधारित करा. निर्णय घेण्यापूर्वी पूर्ण प्रवेशासह 14-दिवसांच्या चाचणीसाठी $1 चाचणीचा आनंद घ्या.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "तुमच्या संग्रहांमधून अमर्यादित AI उत्तरे अनलॉक करा",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "MinECHO Pro प्लॅनसह, AI तुमचे सर्व संग्रह शोधते आणि सर्वात संबंधित उत्तरे त्वरित वितरीत करते.",
+        "description": ""
+    },
+    "then": {
+        "message": "नंतर",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "दरमहा, वार्षिक बिल",
+        "description": ""
+    },
+    "for_a": {
+        "message": "च्यासाठी",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "प्रो प्लॅनची -दिवसीय चाचणी",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "चाचणी सुरू करा",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "कधीही रद्द करा",
+        "description": ""
+    },
+    "answer": {
+        "message": "उत्तर द्या",
+        "description": ""
     }
 }

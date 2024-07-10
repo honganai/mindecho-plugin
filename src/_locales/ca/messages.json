@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Importa automàticament nous elements a X adreces d&#39;interès.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Feu una pregunta a ECHO i obteniu respostes precises a l&#39;instant de les vostres col·leccions seleccionades.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Desbloqueja les respostes Al il·limitades del teu contingut",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO utilitza Al per trobar instantàniament respostes personalitzades del vostre contingut de confiança, estalviant-vos temps i esforç. Actualitzeu a Pro per obtenir accés il·limitat a la vostra base de coneixement personal.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Desbloqueja ara",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Descartar",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Facturat mensualment",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Facturat anualment",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Heu arribat a més de 2000 elements indexats",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Actualitzeu al pla Pro per obtenir col·leccions il·limitades i respostes d&#39;IA. Gaudeix d&#39;una prova d&#39;1 $ per a una prova de 14 dies amb accés complet abans de decidir-te.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Desbloqueja respostes d&#39;IA il·limitades de les teves col·leccions",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "Amb el pla mindECHO Pro, l&#39;IA cerca totes les teves col·leccions per oferir les respostes més rellevants a l&#39;instant.",
+        "description": ""
+    },
+    "then": {
+        "message": "aleshores",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "al mes, facturat anualment",
+        "description": ""
+    },
+    "for_a": {
+        "message": "per a",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-dia de prova del pla Pro",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Inicia la prova",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Cancel·la en qualsevol moment",
+        "description": ""
+    },
+    "answer": {
+        "message": "Respon",
+        "description": ""
     }
 }

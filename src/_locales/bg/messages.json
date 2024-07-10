@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Автоматично импортирайте нови елементи в X отметки.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Задайте въпрос на ECHO и незабавно получете точни отговори от вашите подбрани колекции.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Отключете неограничени Al отговори от вашето съдържание",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO използва Al за незабавно намиране на персонализирани отговори от вашето надеждно съдържание, спестявайки ви време и усилия. Надстройте до Pro за неограничен достъп до вашата лична база знания.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Отключи веднага",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Отхвърляне",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Таксува се месечно",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Таксува се годишно",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Достигнахте 2000+ индексирани елемента",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Надстройте до Pro Plan за неограничени колекции и AI отговори. Насладете се на пробен период от $1 за 14-дневен пробен период с пълен достъп, преди да вземете решение.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Отключете неограничен брой AI отговори от колекциите си",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "С плана mindECHO Pro, AI търси във всички ваши колекции, за да предостави незабавно най-подходящите отговори.",
+        "description": ""
+    },
+    "then": {
+        "message": "тогава",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "на месец, таксувани годишно",
+        "description": ""
+    },
+    "for_a": {
+        "message": "за",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-дневна пробна версия на Pro Plan",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Започне съдебен процес",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Отказ по всяко време",
+        "description": ""
+    },
+    "answer": {
+        "message": "Отговор",
+        "description": ""
     }
 }

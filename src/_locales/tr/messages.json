@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "X yer imlerindeki yeni öğeleri otomatik olarak içe aktarın.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "ECHO&#39;ya bir soru sorun ve seçilmiş koleksiyonlarınızdan anında kesin yanıtlar alın.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "İçeriğinizden Sınırsız Al Yanıtının Kilidini Açın",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO, güvenilir içeriğinizden özel yanıtları anında bulmak için Al&#39;ı kullanarak zamandan ve emekten tasarruf etmenizi sağlar. Kişisel bilgi tabanınıza sınırsız erişim için Pro&#39;ya yükseltin.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Şimdi aç",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Azletmek",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Aylık Faturalandırılır",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Yıllık Faturalandırılır",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "2000&#39;den fazla dizine eklenen öğeye ulaştınız",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Sınırsız koleksiyon ve yapay zeka yanıtları için Pro Plan&#39;a yükseltin. Karar vermeden önce, tam erişime sahip 14 günlük deneme için 1 ABD Doları değerindeki deneme sürümünün keyfini çıkarın.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Koleksiyonlarınızdan Sınırsız Yapay Zeka Yanıtının Kilidini Açın",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "MindECHO Pro Planı ile yapay zeka, en alakalı yanıtları anında sunmak için tüm koleksiyonlarınızı arar.",
+        "description": ""
+    },
+    "then": {
+        "message": "Daha sonra",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "aylık, yıllık olarak faturalandırılır",
+        "description": ""
+    },
+    "for_a": {
+        "message": "bir için",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "Pro Plan&#39;ın günlük deneme sürümü",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Deneme sürümünü başlat",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "İstediğiniz Zaman İptal Edin",
+        "description": ""
+    },
+    "answer": {
+        "message": "Cevap",
+        "description": ""
     }
 }

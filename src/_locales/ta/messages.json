@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "X புக்மார்க்குகளில் புதிய உருப்படிகளைத் தானாக இறக்குமதி செய்யவும்.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "ECHO விடம் ஒரு கேள்வியைக் கேளுங்கள் மற்றும் உங்கள் க்யூரேட்டட் சேகரிப்பில் இருந்து உடனடியாக துல்லியமான பதில்களைப் பெறுங்கள்.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "உங்கள் உள்ளடக்கத்திலிருந்து வரம்பற்ற அல் பதில்களைத் திறக்கவும்",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "உங்கள் நம்பகமான உள்ளடக்கத்தில் இருந்து சரியான பதில்களை உடனடியாகக் கண்டறிய, உங்கள் நேரத்தையும் முயற்சியையும் மிச்சப்படுத்த mindECHO Al ஐப் பயன்படுத்துகிறது. உங்கள் தனிப்பட்ட அறிவுத் தளத்திற்கு வரம்பற்ற அணுகலுக்காக Pro க்கு மேம்படுத்தவும்.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "இப்போது திறக்கவும்",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "நிராகரி",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "மாதாந்திர கட்டணம்",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "ஆண்டுதோறும் கட்டணம் வசூலிக்கப்படுகிறது",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "2000+ அட்டவணைப்படுத்தப்பட்ட உருப்படிகளை அடைந்துவிட்டீர்கள்",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "வரம்பற்ற சேகரிப்புகள் மற்றும் AI பதில்களுக்கு Pro Planக்கு மேம்படுத்தவும். முடிவெடுப்பதற்கு முன் முழு அணுகலுடன் 14 நாள் சோதனைக்கு $1 சோதனையை அனுபவிக்கவும்.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "உங்கள் சேகரிப்பில் இருந்து வரம்பற்ற AI பதில்களைத் திறக்கவும்",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "mindECHO Pro திட்டத்துடன், AI உங்கள் எல்லா சேகரிப்புகளையும் மிகத் தொடர்புடைய பதில்களை உடனடியாக வழங்குவதற்காகத் தேடுகிறது.",
+        "description": ""
+    },
+    "then": {
+        "message": "பிறகு",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "மாதத்திற்கு, ஆண்டுதோறும் பில்",
+        "description": ""
+    },
+    "for_a": {
+        "message": "ஒரு",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "புரோ திட்டத்தின் நாள் சோதனை",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "சோதனையைத் தொடங்கு",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "எப்போது வேண்டுமானாலும் ரத்துசெய்",
+        "description": ""
+    },
+    "answer": {
+        "message": "பதில்",
+        "description": ""
     }
 }

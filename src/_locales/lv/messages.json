@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Automātiski importēt jaunus vienumus X grāmatzīmēs.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Uzdodiet ECHO jautājumu un uzreiz saņemiet precīzas atbildes no savām atlasītajām kolekcijām.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Atbloķējiet neierobežotu skaitu atbildes no sava satura",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO izmanto Al, lai uzreiz atrastu pielāgotas atbildes no jūsu uzticamā satura, ietaupot jūsu laiku un pūles. Jauniniet uz Pro, lai iegūtu neierobežotu piekļuvi savai personīgajai zināšanu bāzei.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Atbloķējiet tūlīt",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Atlaist",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Rēķins katru mēnesi",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Rēķina katru gadu",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Jūs esat sasniedzis 2000+ indeksēto vienumu",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Jauniniet uz Pro plānu, lai iegūtu neierobežotas kolekcijas un AI atbildes. Pirms lēmuma pieņemšanas izbaudiet 1 ASV dolāra izmēģinājuma versiju 14 dienu izmēģinājumam ar pilnu piekļuvi.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Atbloķējiet neierobežotu AI atbilžu skaitu no savām kolekcijām",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "Izmantojot mindECHO Pro plānu, mākslīgais intelekts meklē visas jūsu kolekcijas, lai nekavējoties sniegtu visatbilstošākās atbildes.",
+        "description": ""
+    },
+    "then": {
+        "message": "tad",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "mēnesī, rēķins katru gadu",
+        "description": ""
+    },
+    "for_a": {
+        "message": "priekš",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-Pro plāna dienas izmēģinājuma versija",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Sāciet izmēģinājumu",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Atcelt jebkurā laikā",
+        "description": ""
+    },
+    "answer": {
+        "message": "Atbilde",
+        "description": ""
     }
 }

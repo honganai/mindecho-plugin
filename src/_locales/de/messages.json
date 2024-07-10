@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Neue Elemente automatisch in X-Lesezeichen importieren.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Stellen Sie ECHO eine Frage und erhalten Sie sofort präzise Antworten aus Ihren kuratierten Sammlungen.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Erhalten Sie unbegrenzte KI-Antworten aus Ihren Inhalten",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO verwendet KI, um aus Ihren vertrauenswürdigen Inhalten sofort maßgeschneiderte Antworten zu finden. So sparen Sie Zeit und Mühe. Upgraden Sie auf Pro für unbegrenzten Zugriff auf Ihre persönliche Wissensdatenbank.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Jetzt entsperren",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Zurückweisen",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Monatliche Abrechnung",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Jährlich abgerechnet",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Sie haben über 2000 indexierte Elemente erreicht",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Upgraden Sie auf den Pro-Plan für unbegrenzte Sammlungen und KI-Antworten. Genießen Sie eine 1-Dollar-Testversion für 14 Tage mit vollem Zugriff, bevor Sie sich entscheiden.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Erhalten Sie unbegrenzte KI-Antworten aus Ihren Sammlungen",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "Mit dem mindECHO Pro-Plan durchsucht die KI alle Ihre Sammlungen, um sofort die relevantesten Antworten zu liefern.",
+        "description": ""
+    },
+    "then": {
+        "message": "Dann",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "pro Monat, jährliche Abrechnung",
+        "description": ""
+    },
+    "for_a": {
+        "message": "Für ein",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "3-tägige Testversion des Pro-Plans",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Testversion starten",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Jederzeit kündbar",
+        "description": ""
+    },
+    "answer": {
+        "message": "Antwort",
+        "description": ""
     }
 }

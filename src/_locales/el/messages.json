@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Αυτόματη εισαγωγή νέων στοιχείων σε σελιδοδείκτες X.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Κάντε μια ερώτηση στην ECHO και λάβετε ακριβείς απαντήσεις άμεσα από τις επιμελημένες συλλογές σας.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Ξεκλειδώστε απεριόριστες απαντήσεις από το περιεχόμενό σας",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "Το mindECHO χρησιμοποιεί το Al για να βρίσκει άμεσα προσαρμοσμένες απαντήσεις από το αξιόπιστο περιεχόμενό σας, εξοικονομώντας χρόνο και προσπάθεια. Κάντε αναβάθμιση σε Pro για απεριόριστη πρόσβαση στην προσωπική σας βάση γνώσεων.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Ξεκλείδωσε τώρα",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Απολύω",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Τιμολογείται Μηνιαία",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Τιμολογείται ετησίως",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Έχετε φτάσει τα 2000+ ευρετηριασμένα στοιχεία",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Αναβαθμίστε στο Pro Plan για απεριόριστες συλλογές και απαντήσεις AI. Απολαύστε μια δοκιμή $1 για μια δοκιμή 14 ημερών με πλήρη πρόσβαση πριν αποφασίσετε.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Ξεκλειδώστε απεριόριστες απαντήσεις AI από τις Συλλογές σας",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "Με το mindECHO Pro Plan, η τεχνητή νοημοσύνη αναζητά όλες τις συλλογές σας για να παρέχει τις πιο σχετικές απαντήσεις άμεσα.",
+        "description": ""
+    },
+    "then": {
+        "message": "έπειτα",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "μηνιαίως, χρεώνεται ετησίως",
+        "description": ""
+    },
+    "for_a": {
+        "message": "για ένα",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-ημερήσια δοκιμή του Pro Plan",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Έναρξη δοκιμής",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Ακύρωση ανά πάσα στιγμή",
+        "description": ""
+    },
+    "answer": {
+        "message": "Απάντηση",
+        "description": ""
     }
 }

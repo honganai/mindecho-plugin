@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Автоматически импортировать новые элементы в закладки X.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Задайте ECHO вопрос и мгновенно получите точные ответы из своих тщательно подобранных коллекций.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Разблокируйте неограниченное количество ответов из вашего контента",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "MindECHO использует Al для мгновенного поиска индивидуальных ответов в проверенном контенте, экономя ваше время и усилия. Обновите версию до версии Pro, чтобы получить неограниченный доступ к вашей личной базе знаний.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Открой сейчас",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Увольнять",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Оплата ежемесячно",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Счет ежегодно",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Вы достигли более 2000 проиндексированных элементов.",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Перейдите на план Pro, чтобы получить неограниченное количество коллекций и ответов ИИ. Прежде чем принять решение, воспользуйтесь пробной версией за 1 доллар в течение 14 дней с полным доступом.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Разблокируйте неограниченное количество ответов ИИ из ваших коллекций",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "С помощью плана MinECHO Pro ИИ выполняет поиск по всем вашим коллекциям, чтобы мгновенно предоставить наиболее релевантные ответы.",
+        "description": ""
+    },
+    "then": {
+        "message": "затем",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "в месяц, оплата ежегодно",
+        "description": ""
+    },
+    "for_a": {
+        "message": "для",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-дневная пробная версия Pro Plan",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Начать пробный период",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Отменить в любое время",
+        "description": ""
+    },
+    "answer": {
+        "message": "Отвечать",
+        "description": ""
     }
 }

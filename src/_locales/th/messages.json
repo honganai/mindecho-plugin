@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "นำเข้ารายการใหม่ในบุ๊กมาร์ก X โดยอัตโนมัติ",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "ถามคำถาม ECHO และรับคำตอบที่แม่นยำทันทีจากคอลเลกชันที่รวบรวมไว้ของคุณ",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "ปลดล็อกคำตอบ Al แบบไม่จำกัดจากเนื้อหาของคุณ",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO ใช้ Al เพื่อค้นหาคำตอบที่เหมาะกับคุณทันทีจากเนื้อหาที่เชื่อถือได้ของคุณ ซึ่งช่วยประหยัดเวลาและความพยายาม อัปเกรดเป็น Pro เพื่อเข้าถึงฐานความรู้ส่วนตัวของคุณได้อย่างไม่จำกัด",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "ปลดล๊อคเดี๋ยวนี้",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "อนุญาตให้ออกไป",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "เรียกเก็บเงินรายเดือน",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "เรียกเก็บเงินเป็นรายปี",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "คุณมีรายการที่จัดทำดัชนีถึง 2,000+ รายการ",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "อัปเกรดเป็น Pro Plan เพื่อคอลเลกชันไม่จำกัดและคำตอบ AI เพลิดเพลินกับการทดลองใช้ $1 สำหรับการทดลองใช้ 14 วันพร้อมสิทธิ์เข้าถึงเต็มรูปแบบก่อนตัดสินใจ",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "ปลดล็อกคำตอบ AI ไม่จำกัดจากคอลเลกชันของคุณ",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "ด้วย mindECHO Pro Plan AI จะค้นหาคอลเลกชันทั้งหมดของคุณเพื่อมอบคำตอบที่เกี่ยวข้องมากที่สุดในทันที",
+        "description": ""
+    },
+    "then": {
+        "message": "แล้ว",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "ต่อเดือน เรียกเก็บเงินเป็นรายปี",
+        "description": ""
+    },
+    "for_a": {
+        "message": "สำหรับ",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "ทดลองใช้ Pro Plan เป็นเวลาหนึ่งวัน",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "เริ่มทดลองใช้",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "ยกเลิกได้ตลอดเวลา",
+        "description": ""
+    },
+    "answer": {
+        "message": "คำตอบ",
+        "description": ""
     }
 }

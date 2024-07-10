@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "በX ዕልባቶች ውስጥ አዲስ እቃዎችን በራስ-ሰር ያስመጡ።",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "ለECHO ጥያቄ ይጠይቁ እና ከተመረጡት ስብስቦችዎ ትክክለኛ መልሶችን ያግኙ።",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "ያልተገደበ የአል መልሶችን ከይዘትዎ ይክፈቱ",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO ከታመነ ይዘትዎ የተበጁ መልሶችን በፍጥነት ለማግኘት Alን ይጠቀማል፣ ይህም ጊዜ እና ጥረት ይቆጥብልዎታል። የእርስዎን የግል የእውቀት መሰረት ላልተገደበ መዳረሻ ወደ Pro ያሻሽሉ።",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "አሁን ይክፈቱ",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "አሰናብት",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "በየወሩ የሚከፈል",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "በየአመቱ የሚከፈል",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "2000+ የተጠቆሙ ንጥሎች ላይ ደርሰዋል",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "ላልተገደቡ ስብስቦች እና AI መልሶች ወደ Pro እቅድ ያሻሽሉ። ከመወሰንዎ በፊት ሙሉ መዳረሻ ባለው የ14-ቀን ሙከራ በ$1 ይደሰቱ።",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "ያልተገደበ AI መልሶችን ከስብስብህ ክፈት",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "በ mindECHO Pro እቅድ፣ በጣም ተገቢ የሆኑ መልሶችን በቅጽበት ለማቅረብ AI ሁሉንም ስብስቦችዎን ይፈልጋል።",
+        "description": ""
+    },
+    "then": {
+        "message": "ከዚያም",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "በወር፣ በየአመቱ የሚከፈል",
+        "description": ""
+    },
+    "for_a": {
+        "message": "ለ",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "የፕሮ ፕላን የቀን ሙከራ",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "ሙከራ ጀምር",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "በማንኛውም ጊዜ ሰርዝ",
+        "description": ""
+    },
+    "answer": {
+        "message": "መልስ",
+        "description": ""
     }
 }

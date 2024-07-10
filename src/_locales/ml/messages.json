@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "X ബുക്ക്‌മാർക്കുകളിൽ പുതിയ ഇനങ്ങൾ സ്വയമേവ ഇറക്കുമതി ചെയ്യുക.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "ECHO യോട് ഒരു ചോദ്യം ചോദിക്കുകയും നിങ്ങളുടെ ക്യൂറേറ്റ് ചെയ്ത ശേഖരങ്ങളിൽ നിന്ന് കൃത്യമായ ഉത്തരങ്ങൾ തൽക്ഷണം നേടുകയും ചെയ്യുക.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "നിങ്ങളുടെ ഉള്ളടക്കത്തിൽ നിന്ന് അൺലിമിറ്റഡ് അൽ ഉത്തരങ്ങൾ അൺലോക്ക് ചെയ്യുക",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "നിങ്ങളുടെ സമയവും പ്രയത്നവും ലാഭിച്ച്, നിങ്ങളുടെ വിശ്വസനീയമായ ഉള്ളടക്കത്തിൽ നിന്ന് അനുയോജ്യമായ ഉത്തരങ്ങൾ തൽക്ഷണം കണ്ടെത്തുന്നതിന് mindECHO Al ഉപയോഗിക്കുന്നു. നിങ്ങളുടെ വ്യക്തിഗത വിജ്ഞാന അടിത്തറയിലേക്കുള്ള പരിധിയില്ലാത്ത ആക്‌സസിന് പ്രോയിലേക്ക് അപ്‌ഗ്രേഡുചെയ്യുക.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "ഇപ്പോൾ അൺലോക്ക് ചെയ്യുക",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "പിരിച്ചുവിടുക",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "പ്രതിമാസ ബിൽ",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "വാർഷിക ബിൽ",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "നിങ്ങൾ 2000+ ഇൻഡക്‌സ് ചെയ്‌ത ഇനങ്ങളിൽ എത്തിയിരിക്കുന്നു",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "പരിധിയില്ലാത്ത ശേഖരങ്ങൾക്കും AI ഉത്തരങ്ങൾക്കും പ്രോ പ്ലാനിലേക്ക് അപ്‌ഗ്രേഡ് ചെയ്യുക. തീരുമാനിക്കുന്നതിന് മുമ്പ് പൂർണ്ണ ആക്‌സസ് ഉള്ള 14 ദിവസത്തെ ട്രയലിന് $1 ട്രയൽ ആസ്വദിക്കൂ.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "നിങ്ങളുടെ ശേഖരങ്ങളിൽ നിന്ന് അൺലിമിറ്റഡ് AI ഉത്തരങ്ങൾ അൺലോക്ക് ചെയ്യുക",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "മൈൻഡ്ഇക്കോ പ്രോ പ്ലാൻ ഉപയോഗിച്ച്, ഏറ്റവും പ്രസക്തമായ ഉത്തരങ്ങൾ തൽക്ഷണം നൽകുന്നതിന് നിങ്ങളുടെ എല്ലാ ശേഖരങ്ങളും AI തിരയുന്നു.",
+        "description": ""
+    },
+    "then": {
+        "message": "പിന്നെ",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "പ്രതിമാസം, വാർഷിക ബിൽ",
+        "description": ""
+    },
+    "for_a": {
+        "message": "എ",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-പ്രോ പ്ലാനിൻ്റെ ഒരു ദിവസത്തെ ട്രയൽ",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "ട്രയൽ ആരംഭിക്കുക",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "എപ്പോൾ വേണമെങ്കിലും റദ്ദാക്കുക",
+        "description": ""
+    },
+    "answer": {
+        "message": "ഉത്തരം",
+        "description": ""
     }
 }

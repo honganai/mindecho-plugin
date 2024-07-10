@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Аутоматски увозите нове ставке у Кс обележиваче.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Поставите питање ЕЦХО-у и одмах добијте прецизне одговоре из својих колекција које сте одабрали.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Откључајте неограничене Ал одговоре из свог садржаја",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "миндЕЦХО користи Ал да тренутно пронађе прилагођене одговоре из вашег поузданог садржаја, штедећи вам време и труд. Надоградите на Про за неограничен приступ вашој личној бази знања.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Откључај сада",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Одбаци",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Наплаћује се месечно",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Наплаћује се годишње",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Достигли сте 2000+ индексираних ставки",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Надоградите на Про план за неограничене колекције и АИ одговоре. Уживајте у пробном периоду од 1 УСД за 14-дневну пробну верзију са пуним приступом пре него што одлучите.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Откључајте неограничене АИ одговоре из својих колекција",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "Уз миндЕЦХО Про план, АИ претражује све ваше колекције да би одмах пружила најрелевантније одговоре.",
+        "description": ""
+    },
+    "then": {
+        "message": "онда",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "месечно, обрачунава се годишње",
+        "description": ""
+    },
+    "for_a": {
+        "message": "За",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-дневна проба Про Плана",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Старт суђења",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Откажи било када",
+        "description": ""
+    },
+    "answer": {
+        "message": "Одговор",
+        "description": ""
     }
 }

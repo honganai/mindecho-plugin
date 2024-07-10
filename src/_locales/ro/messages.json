@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Importați automat elemente noi în X marcaje.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Puneți o întrebare ECHO și obțineți instantaneu răspunsuri precise din colecțiile dvs. organizate.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Deblocați răspunsuri Al nelimitate din conținutul dvs",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO folosește Al pentru a găsi instantaneu răspunsuri personalizate din conținutul tău de încredere, economisind timp și efort. Faceți upgrade la Pro pentru acces nelimitat la baza dvs. de cunoștințe personale.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Debloca acum",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Respingeți",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Facturat lunar",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Facturat anual",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Ați ajuns la peste 2000 de articole indexate",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Faceți upgrade la Pro Plan pentru colecții nelimitate și răspunsuri AI. Bucurați-vă de o perioadă de încercare de 1 USD pentru o perioadă de încercare de 14 zile cu acces complet înainte de a vă decide.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Deblocați răspunsuri AI nelimitate din colecțiile dvs",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "Cu planul mindECHO Pro, AI caută în toate colecțiile tale pentru a oferi cele mai relevante răspunsuri instantaneu.",
+        "description": ""
+    },
+    "then": {
+        "message": "apoi",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "pe lună, facturat anual",
+        "description": ""
+    },
+    "for_a": {
+        "message": "Pentru o",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-probă de o zi a planului Pro",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Începeți procesul",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Anulează oricând",
+        "description": ""
+    },
+    "answer": {
+        "message": "Răspuns",
+        "description": ""
     }
 }

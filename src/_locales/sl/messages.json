@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Samodejno uvozite nove elemente v zaznamke X.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Zastavite ECHO vprašanje in v trenutku pridobite natančne odgovore iz svojih izbranih zbirk.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Odklenite neomejene Al odgovore iz svoje vsebine",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO uporablja Al za takojšnje iskanje prilagojenih odgovorov iz vaše zaupanja vredne vsebine, kar vam prihrani čas in trud. Nadgradite na Pro za neomejen dostop do vaše osebne baze znanja.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Odkleni zdaj",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Odpusti",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Zaračunava se mesečno",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Zaračunano letno",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Dosegli ste 2000+ indeksiranih elementov",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Nadgradite na načrt Pro za neomejene zbirke in odgovore z umetno inteligenco. Uživajte v preskusnem obdobju v vrednosti 1 USD za 14-dnevno preskusno obdobje s polnim dostopom, preden se odločite.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Odklenite neomejene odgovore AI iz svojih zbirk",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "Z načrtom mindECHO Pro načrt AI išče po vseh vaših zbirkah, da takoj zagotovi najbolj ustrezne odgovore.",
+        "description": ""
+    },
+    "then": {
+        "message": "potem",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "na mesec, zaračunano letno",
+        "description": ""
+    },
+    "for_a": {
+        "message": "za",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-dnevni preizkus Pro Plana",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Začni preizkus",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Prekliči kadar koli",
+        "description": ""
+    },
+    "answer": {
+        "message": "Odgovori",
+        "description": ""
     }
 }

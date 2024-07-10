@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Automatiškai importuoti naujus elementus į X žymes.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Užduokite ECHO klausimą ir iškart gaukite tikslius atsakymus iš savo kuruojamų kolekcijų.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Iš savo turinio atrakinkite neribotą skaičių visų atsakymų",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO naudoja Al, kad iš jūsų patikimo turinio akimirksniu rastų pritaikytus atsakymus, taupydama laiką ir pastangas. Naujovinkite į Pro, kad gautumėte neribotą prieigą prie savo asmeninės žinių bazės.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Atrakinkite dabar",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Atsisakyti",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Atsiskaitoma kas mėnesį",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Atsiskaitoma kasmet",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Pasiekėte daugiau nei 2000 indeksuotų elementų",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Naujovinkite į Pro planą, kad gautumėte neribotas kolekcijas ir AI atsakymus. Prieš nuspręsdami, mėgaukitės 1 USD bandomuoju 14 dienų bandomuoju laikotarpiu su visa prieiga.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Atrakinkite neribotus AI atsakymus iš savo kolekcijų",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "Naudodamasis „mindECHO Pro Plan“ AI ieško visose jūsų kolekcijose, kad iš karto pateiktų aktualiausius atsakymus.",
+        "description": ""
+    },
+    "then": {
+        "message": "tada",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "per mėnesį, atsiskaitoma kasmet",
+        "description": ""
+    },
+    "for_a": {
+        "message": "dėl",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "- dienos „Pro Plan“ bandymas",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Pradėti bandymą",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Atšaukti bet kada",
+        "description": ""
+    },
+    "answer": {
+        "message": "Atsakymas",
+        "description": ""
     }
 }

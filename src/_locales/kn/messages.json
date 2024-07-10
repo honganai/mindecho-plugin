@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "X ಬುಕ್‌ಮಾರ್ಕ್‌ಗಳಲ್ಲಿ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಹೊಸ ಐಟಂಗಳನ್ನು ಆಮದು ಮಾಡಿ.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "ECHO ಗೆ ಪ್ರಶ್ನೆಯನ್ನು ಕೇಳಿ ಮತ್ತು ನಿಮ್ಮ ಕ್ಯುರೇಟೆಡ್ ಸಂಗ್ರಹಗಳಿಂದ ನಿಖರವಾದ ಉತ್ತರಗಳನ್ನು ತಕ್ಷಣವೇ ಪಡೆಯಿರಿ.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "ನಿಮ್ಮ ವಿಷಯದಿಂದ ಅನ್‌ಲಿಮಿಟೆಡ್ ಅಲ್ ಉತ್ತರಗಳನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಿ",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO ನಿಮ್ಮ ವಿಶ್ವಾಸಾರ್ಹ ವಿಷಯದಿಂದ ಸೂಕ್ತವಾದ ಉತ್ತರಗಳನ್ನು ತ್ವರಿತವಾಗಿ ಹುಡುಕಲು Al ಅನ್ನು ಬಳಸುತ್ತದೆ, ನಿಮ್ಮ ಸಮಯ ಮತ್ತು ಶ್ರಮವನ್ನು ಉಳಿಸುತ್ತದೆ. ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಜ್ಞಾನದ ಬೇಸ್‌ಗೆ ಅನಿಯಮಿತ ಪ್ರವೇಶಕ್ಕಾಗಿ ಪ್ರೊಗೆ ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಿ.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "ಈಗ ಅನ್ಲಾಕ್ ಮಾಡಿ",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "ವಜಾಗೊಳಿಸಿ",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "ಮಾಸಿಕ ಬಿಲ್ ಮಾಡಲಾಗಿದೆ",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "ವಾರ್ಷಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "ನೀವು 2000+ ಇಂಡೆಕ್ಸ್ ಮಾಡಿದ ಐಟಂಗಳನ್ನು ತಲುಪಿರುವಿರಿ",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "ಅನಿಯಮಿತ ಸಂಗ್ರಹಣೆಗಳು ಮತ್ತು AI ಉತ್ತರಗಳಿಗಾಗಿ ಪ್ರೊ ಯೋಜನೆಗೆ ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಿ. ನಿರ್ಧರಿಸುವ ಮೊದಲು ಪೂರ್ಣ ಪ್ರವೇಶದೊಂದಿಗೆ 14-ದಿನದ ಪ್ರಯೋಗಕ್ಕಾಗಿ $1 ಪ್ರಯೋಗವನ್ನು ಆನಂದಿಸಿ.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "ನಿಮ್ಮ ಸಂಗ್ರಹಣೆಗಳಿಂದ ಅನಿಯಮಿತ AI ಉತ್ತರಗಳನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಿ",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "mindECHO ಪ್ರೊ ಯೋಜನೆಯೊಂದಿಗೆ, AI ನಿಮ್ಮ ಎಲ್ಲಾ ಸಂಗ್ರಹಣೆಗಳನ್ನು ತ್ವರಿತವಾಗಿ ಅತ್ಯಂತ ಸೂಕ್ತವಾದ ಉತ್ತರಗಳನ್ನು ನೀಡಲು ಹುಡುಕುತ್ತದೆ.",
+        "description": ""
+    },
+    "then": {
+        "message": "ನಂತರ",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "ತಿಂಗಳಿಗೆ, ವಾರ್ಷಿಕವಾಗಿ ಬಿಲ್ ಮಾಡಲಾಗುತ್ತದೆ",
+        "description": ""
+    },
+    "for_a": {
+        "message": "ಅದಕ್ಕಾಗಿ",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "ಪ್ರೊ ಯೋಜನೆಯ ದಿನದ ಪ್ರಯೋಗ",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "ಪ್ರಯೋಗವನ್ನು ಪ್ರಾರಂಭಿಸಿ",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "ಯಾವಾಗ ಬೇಕಾದರೂ ರದ್ದುಮಾಡಿ",
+        "description": ""
+    },
+    "answer": {
+        "message": "ಉತ್ತರ",
+        "description": ""
     }
 }

@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Importeer automatisch nieuwe items in X-bladwijzers.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Stel ECHO een vraag en krijg direct nauwkeurige antwoorden uit uw samengestelde collecties.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Ontgrendel onbeperkt alle antwoorden uit uw inhoud",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO gebruikt Al om direct op maat gemaakte antwoorden te vinden op basis van uw vertrouwde inhoud, waardoor u tijd en moeite bespaart. Upgrade naar Pro voor onbeperkte toegang tot uw persoonlijke kennisbank.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Ontgrendel nu",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Afwijzen",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Maandelijks gefactureerd",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Jaarlijks gefactureerd",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "U heeft meer dan 2000 geïndexeerde items bereikt",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Upgrade naar Pro Plan voor onbeperkte verzamelingen en AI-antwoorden. Geniet van een proefperiode van $ 1 voor een proefperiode van 14 dagen met volledige toegang voordat u beslist.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Ontgrendel onbeperkte AI-antwoorden uit uw collecties",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "Met het mindECHO Pro Plan doorzoekt AI al uw collecties om direct de meest relevante antwoorden te leveren.",
+        "description": ""
+    },
+    "then": {
+        "message": "Dan",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "per maand, jaarlijks gefactureerd",
+        "description": ""
+    },
+    "for_a": {
+        "message": "voor een",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-dag proefversie van Pro Plan",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Proefperiode starten",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Annuleer op elk gewenst moment",
+        "description": ""
+    },
+    "answer": {
+        "message": "Antwoord",
+        "description": ""
     }
 }

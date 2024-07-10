@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "ייבא פריטים חדשים באופן אוטומטי בסימניות X.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "שאל את ECHO שאלה וקבל תשובות מדויקות באופן מיידי מהאוספים שנאספו.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "פתח תשובות אל בלתי מוגבלות מהתוכן שלך",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO משתמש ב-Al כדי למצוא באופן מיידי תשובות מותאמות מהתוכן המהימן שלך, וחוסך לך זמן ומאמץ. שדרג ל-Pro לקבלת גישה בלתי מוגבלת למאגר הידע האישי שלך.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "בטל את הנעילה עכשיו",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "לשחרר",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "מחויב חודשי",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "מחויב מדי שנה",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "הגעת ל-2000+ פריטים שנוספו לאינדקס",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "שדרג ל-Pro Plan לקבלת אוספים בלתי מוגבלים ותשובות בינה מלאכותית. תהנה מניסיון של $1 לניסיון של 14 יום עם גישה מלאה לפני שתחליט.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "פתח תשובות AI ללא הגבלה מהאוספים שלך",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "עם תוכנית mindECHO Pro, AI מחפש את כל האוספים שלך כדי לספק את התשובות הרלוונטיות ביותר באופן מיידי.",
+        "description": ""
+    },
+    "then": {
+        "message": "לאחר מכן",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "לחודש, מחויב מדי שנה",
+        "description": ""
+    },
+    "for_a": {
+        "message": "למשך",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "ניסיון ליום של Pro Plan",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "התחל ניסיון",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "בטל בכל עת",
+        "description": ""
+    },
+    "answer": {
+        "message": "תשובה",
+        "description": ""
     }
 }

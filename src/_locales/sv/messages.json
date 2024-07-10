@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Importera automatiskt nya objekt i X-bokmärken.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Ställ en fråga till ECHO och få exakta svar direkt från dina kurerade samlingar.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Lås upp obegränsat antal svar från ditt innehåll",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO använder Al för att omedelbart hitta skräddarsydda svar från ditt pålitliga innehåll, vilket sparar tid och ansträngning. Uppgradera till Pro för obegränsad tillgång till din personliga kunskapsbas.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Lås upp nu",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Avfärda",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Faktureras månadsvis",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Faktureras årligen",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Du har nått 2000+ indexerade objekt",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Uppgradera till Pro Plan för obegränsade samlingar och AI-svar. Njut av en provperiod på $1 för en 14-dagars provperiod med full tillgång innan du bestämmer dig.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Lås upp obegränsade AI-svar från dina samlingar",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "Med mindECHO Pro Plan söker AI igenom alla dina samlingar för att ge de mest relevanta svaren direkt.",
+        "description": ""
+    },
+    "then": {
+        "message": "sedan",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "per månad, faktureras årligen",
+        "description": ""
+    },
+    "for_a": {
+        "message": "för en",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-dagars provversion av Pro Plan",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Starta testperiod",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Avbryt när som helst",
+        "description": ""
+    },
+    "answer": {
+        "message": "Svar",
+        "description": ""
     }
 }

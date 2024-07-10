@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Impordi uued üksused automaatselt X järjehoidjasse.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Esitage ECHO-le küsimus ja saate oma kureeritud kogudest kohe täpsed vastused.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Avage oma sisust piiramatu arv vastuseid",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO kasutab Al-i, et leida teie usaldusväärsest sisust koheselt kohandatud vastused, säästes teie aega ja vaeva. Minge üle Pro versioonile, et saada piiramatu juurdepääs oma isiklikule teadmistebaasile.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Avage kohe",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Vabaks laskma",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Arveldatakse igakuiselt",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Arveldatakse igal aastal",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Olete jõudnud 2000+ indekseeritud üksuseni",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Minge üle Pro Planile, et saada piiramatuid kogusid ja tehisintellekti vastuseid. Enne otsuse tegemist nautige 14-päevase prooviperioodi 1-dollarise ja täieliku juurdepääsuga prooviversiooni.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Avage oma kogudest piiramatud AI vastused",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "MindECHO Pro plaani abil otsib tehisintellekt kõigist teie kogudest, et pakkuda koheselt kõige asjakohasemaid vastuseid.",
+        "description": ""
+    },
+    "then": {
+        "message": "siis",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "kuus, arveldatakse igal aastal",
+        "description": ""
+    },
+    "for_a": {
+        "message": "jaoks",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-Pro Plani päevane prooviversioon",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Alusta prooviversiooni",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Tühista igal ajal",
+        "description": ""
+    },
+    "answer": {
+        "message": "Vastus",
+        "description": ""
     }
 }

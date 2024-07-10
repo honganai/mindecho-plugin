@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Importe automaticamente novos itens nos favoritos X.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Faça uma pergunta ao ECHO e obtenha respostas precisas instantaneamente de suas coleções selecionadas.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Desbloqueie respostas ilimitadas do seu conteúdo",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO usa Al para encontrar instantaneamente respostas personalizadas em seu conteúdo confiável, economizando tempo e esforço. Atualize para o Pro para acesso ilimitado à sua base de conhecimento pessoal.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Desbloquear agora",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Liberar",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Faturado Mensalmente",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Cobrado anualmente",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Você alcançou mais de 2.000 itens indexados",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Atualize para o Plano Pro para coleções ilimitadas e respostas de IA. Aproveite uma avaliação de US$ 1 por 14 dias com acesso total antes de decidir.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Desbloqueie respostas ilimitadas de IA de suas coleções",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "Com o mindECHO Pro Plan, a IA pesquisa todas as suas coleções para fornecer as respostas mais relevantes instantaneamente.",
+        "description": ""
+    },
+    "then": {
+        "message": "então",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "por mês, cobrado anualmente",
+        "description": ""
+    },
+    "for_a": {
+        "message": "para",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "Avaliação de um dia do Pro Plan",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Iniciar teste",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Cancelar a qualquer momento",
+        "description": ""
+    },
+    "answer": {
+        "message": "Responder",
+        "description": ""
     }
 }

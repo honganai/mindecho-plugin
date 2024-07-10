@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Awtomatikong mag-import ng mga bagong item sa X bookmark.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Magtanong sa ECHO at makakuha ng mga tumpak na sagot kaagad mula sa iyong mga na-curate na koleksyon.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "I-unlock ang Walang limitasyong Mga Sagot sa Al mula sa Iyong Nilalaman",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "Ginagamit ng mindECHO ang Al upang agad na makahanap ng mga iniangkop na sagot mula sa iyong pinagkakatiwalaang nilalaman, na nakakatipid sa iyong oras at pagsisikap. Mag-upgrade sa Pro para sa walang limitasyong access sa iyong personal na base ng kaalaman.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "I-unlock Ngayon",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "I-dismiss",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Sinisingil Buwan-buwan",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Sinisingil Taun-taon",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Naabot mo na ang 2000+ na na-index na mga item",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Mag-upgrade sa Pro Plan para sa walang limitasyong mga koleksyon at mga sagot sa AI. Mag-enjoy ng $1 na pagsubok para sa isang 14 na araw na pagsubok na may ganap na access bago magpasya.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "I-unlock ang Walang limitasyong Mga Sagot sa AI mula sa Iyong Mga Koleksyon",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "Gamit ang mindECHO Pro Plan, hinahanap ng AI ang lahat ng iyong mga koleksyon upang maihatid kaagad ang mga pinakanauugnay na sagot.",
+        "description": ""
+    },
+    "then": {
+        "message": "pagkatapos",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "bawat buwan, sinisingil taun-taon",
+        "description": ""
+    },
+    "for_a": {
+        "message": "para sa",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-araw na pagsubok ng Pro Plan",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Simulan ang Pagsubok",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Kanselahin Anumang oras",
+        "description": ""
+    },
+    "answer": {
+        "message": "Sagot",
+        "description": ""
     }
 }

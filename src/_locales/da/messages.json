@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Importer automatisk nye elementer i X-bogmærker.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Stil ECHO et spørgsmål, og få præcise svar med det samme fra dine kuraterede samlinger.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Lås op for ubegrænset al-svar fra dit indhold",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO bruger Al til øjeblikkeligt at finde skræddersyede svar fra dit pålidelige indhold, hvilket sparer dig tid og kræfter. Opgrader til Pro for ubegrænset adgang til din personlige vidensbase.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Lås op nu",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Afskedige",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Faktureres månedligt",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Faktureres årligt",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Du har nået 2000+ indekserede varer",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Opgrader til Pro Plan for ubegrænsede samlinger og AI-svar. Nyd en prøveperiode på $1 for en 14-dages prøveperiode med fuld adgang, før du beslutter dig.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Lås op for ubegrænsede AI-svar fra dine samlinger",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "Med mindECHO Pro Plan søger AI alle dine samlinger for at levere de mest relevante svar med det samme.",
+        "description": ""
+    },
+    "then": {
+        "message": "derefter",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "om måneden, faktureres årligt",
+        "description": ""
+    },
+    "for_a": {
+        "message": "for en",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-dages prøveversion af Pro Plan",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Start prøveversion",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Annuller når som helst",
+        "description": ""
+    },
+    "answer": {
+        "message": "Svar",
+        "description": ""
     }
 }

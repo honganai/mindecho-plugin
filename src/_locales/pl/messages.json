@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Automatycznie importuj nowe elementy w zakładkach X.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Zadaj pytanie ECHO i natychmiast uzyskaj dokładne odpowiedzi z wybranych kolekcji.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Odblokuj nieograniczoną liczbę odpowiedzi Al ze swoich treści",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO wykorzystuje Al, aby natychmiast znajdować dostosowane odpowiedzi w zaufanych treściach, oszczędzając czas i wysiłek. Przejdź na wersję Pro, aby uzyskać nieograniczony dostęp do swojej osobistej bazy wiedzy.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Odblokuj teraz",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Odrzucać",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Rozliczane miesięcznie",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Rozliczane rocznie",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Osiągnąłeś ponad 2000 zaindeksowanych elementów",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Przejdź na Pro Plan, aby uzyskać nieograniczoną liczbę kolekcji i odpowiedzi AI. Zanim podejmiesz decyzję, skorzystaj z 14-dniowego okresu próbnego za 1 USD z pełnym dostępem.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Odblokuj nieograniczone odpowiedzi AI ze swoich kolekcji",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "Dzięki planowi mindECHO Pro sztuczna inteligencja przeszukuje wszystkie Twoje kolekcje, aby natychmiast dostarczyć najbardziej trafne odpowiedzi.",
+        "description": ""
+    },
+    "then": {
+        "message": "Następnie",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "miesięcznie, rozliczane rocznie",
+        "description": ""
+    },
+    "for_a": {
+        "message": "dla",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-dniowa wersja próbna Pro Planu",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Rozpocząć proces",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Anuluj w dowolnym momencie",
+        "description": ""
+    },
+    "answer": {
+        "message": "Odpowiedź",
+        "description": ""
     }
 }

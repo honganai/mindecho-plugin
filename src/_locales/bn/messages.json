@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "X বুকমার্কে স্বয়ংক্রিয়ভাবে নতুন আইটেম আমদানি করুন।",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "ECHO-কে একটি প্রশ্ন জিজ্ঞাসা করুন এবং আপনার কিউরেট করা সংগ্রহগুলি থেকে অবিলম্বে সুনির্দিষ্ট উত্তর পান।",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "আপনার কন্টেন্ট থেকে আনলিমিটেড আল উত্তর আনলক করুন",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "MinECHO আপনার বিশ্বস্ত বিষয়বস্তু থেকে অবিলম্বে উপযুক্ত উত্তর খুঁজে পেতে Al ব্যবহার করে, আপনার সময় এবং শ্রম সাশ্রয় করে। আপনার ব্যক্তিগত জ্ঞান বেসে সীমাহীন অ্যাক্সেসের জন্য Pro-তে আপগ্রেড করুন।",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "এখন আনলক",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "খারিজ",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "মাসিক বিল",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "বার্ষিক বিল",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "আপনি 2000+ সূচীকৃত আইটেমে পৌঁছেছেন",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "সীমাহীন সংগ্রহ এবং AI উত্তরের জন্য প্রো প্ল্যানে আপগ্রেড করুন। সিদ্ধান্ত নেওয়ার আগে সম্পূর্ণ অ্যাক্সেস সহ 14 দিনের ট্রায়ালের জন্য $1 ট্রায়াল উপভোগ করুন।",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "আপনার সংগ্রহ থেকে আনলিমিটেড এআই উত্তর আনলক করুন",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "MinECHO Pro প্ল্যানের সাথে, AI তাৎক্ষণিকভাবে সবচেয়ে প্রাসঙ্গিক উত্তর দিতে আপনার সমস্ত সংগ্রহ অনুসন্ধান করে।",
+        "description": ""
+    },
+    "then": {
+        "message": "তারপর",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "প্রতি মাসে, বার্ষিক বিল",
+        "description": ""
+    },
+    "for_a": {
+        "message": "একটি জন্য",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "প্রো প্ল্যানের -দিনের ট্রায়াল",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "বিচার শুরু",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "যেকোনো সময় বাতিল করুন",
+        "description": ""
+    },
+    "answer": {
+        "message": "উত্তর",
+        "description": ""
     }
 }

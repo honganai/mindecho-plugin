@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "X బుక్‌మార్క్‌లలో కొత్త అంశాలను స్వయంచాలకంగా దిగుమతి చేయండి.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "ECHOని ఒక ప్రశ్న అడగండి మరియు మీ క్యూరేటెడ్ సేకరణల నుండి తక్షణమే ఖచ్చితమైన సమాధానాలను పొందండి.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "మీ కంటెంట్ నుండి అపరిమిత అల్ సమాధానాలను అన్‌లాక్ చేయండి",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO మీ విశ్వసనీయ కంటెంట్ నుండి తగిన సమాధానాలను తక్షణమే కనుగొనడానికి Alని ఉపయోగిస్తుంది, మీ సమయం మరియు కృషిని ఆదా చేస్తుంది. మీ వ్యక్తిగత నాలెడ్జ్ బేస్‌కి అపరిమిత యాక్సెస్ కోసం ప్రోకి అప్‌గ్రేడ్ చేయండి.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "ఇప్పుడే అన్‌లాక్ చేయండి",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "రద్దుచేసే",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "నెలవారీ బిల్ చేయబడింది",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "వార్షికంగా బిల్ చేయబడుతుంది",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "మీరు 2000+ సూచిక ఐటెమ్‌లను చేరుకున్నారు",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "అపరిమిత సేకరణలు మరియు AI సమాధానాల కోసం ప్రో ప్లాన్‌కి అప్‌గ్రేడ్ చేయండి. నిర్ణయించే ముందు పూర్తి యాక్సెస్‌తో 14 రోజుల ట్రయల్ కోసం $1 ట్రయల్‌ని ఆస్వాదించండి.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "మీ సేకరణల నుండి అపరిమిత AI సమాధానాలను అన్‌లాక్ చేయండి",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "mindECHO ప్రో ప్లాన్‌తో, అత్యంత సంబంధిత సమాధానాలను తక్షణమే అందించడానికి AI మీ అన్ని సేకరణలను శోధిస్తుంది.",
+        "description": ""
+    },
+    "then": {
+        "message": "అప్పుడు",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "నెలకు, వార్షికంగా బిల్ చేయబడుతుంది",
+        "description": ""
+    },
+    "for_a": {
+        "message": "ఒక కోసం",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-ప్రో ప్లాన్ యొక్క రోజు ట్రయల్",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "ట్రయల్ ప్రారంభించండి",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "ఎప్పుడైనా రద్దు చేయండి",
+        "description": ""
+    },
+    "answer": {
+        "message": "సమాధానం",
+        "description": ""
     }
 }

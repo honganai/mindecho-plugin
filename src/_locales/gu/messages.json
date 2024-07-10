@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "X બુકમાર્ક્સમાં આપમેળે નવી આઇટમ્સ આયાત કરો.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "ECHO ને એક પ્રશ્ન પૂછો અને તમારા ક્યુરેટ કરેલ સંગ્રહમાંથી તરત જ ચોક્કસ જવાબો મેળવો.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "તમારી સામગ્રીમાંથી અનલિમિટેડ અલ જવાબો અનલૉક કરો",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "તમારા સમય અને પ્રયત્નોની બચત કરીને, તમારી વિશ્વસનીય સામગ્રીમાંથી તરત જ અનુરૂપ જવાબો શોધવા માટે mindECHO Al નો ઉપયોગ કરે છે. તમારા વ્યક્તિગત જ્ઞાન આધારની અમર્યાદિત ઍક્સેસ માટે Pro પર અપગ્રેડ કરો.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "હવે અનલોક કરો",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "કાઢી નાખો",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "માસિક બિલ",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "વાર્ષિક બિલ",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "તમે 2000+ અનુક્રમિત વસ્તુઓ પર પહોંચી ગયા છો",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "અમર્યાદિત સંગ્રહ અને AI જવાબો માટે પ્રો પ્લાન પર અપગ્રેડ કરો. નિર્ણય લેતા પહેલા સંપૂર્ણ ઍક્સેસ સાથે 14-દિવસની અજમાયશ માટે $1 ટ્રાયલનો આનંદ લો.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "તમારા સંગ્રહમાંથી અનલિમિટેડ AI જવાબો અનલૉક કરો",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "MinECHO Pro પ્લાન સાથે, AI તમારા બધા સંગ્રહોને સૌથી વધુ સુસંગત જવાબો તરત જ પહોંચાડવા માટે શોધે છે.",
+        "description": ""
+    },
+    "then": {
+        "message": "પછી",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "દર મહિને, વાર્ષિક બિલ",
+        "description": ""
+    },
+    "for_a": {
+        "message": "એક માટે",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "- પ્રો પ્લાનની દિવસીય અજમાયશ",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "ટ્રાયલ શરૂ કરો",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "કોઈપણ સમયે રદ કરો",
+        "description": ""
+    },
+    "answer": {
+        "message": "જવાબ આપો",
+        "description": ""
     }
 }

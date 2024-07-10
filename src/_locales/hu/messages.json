@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Új elemek automatikus importálása X könyvjelzőbe.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Tegyen fel egy kérdést az ECHO-nak, és azonnal pontos válaszokat kapjon válogatott gyűjteményeiből.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Nyisson ki korlátlan számú választ a tartalmaiból",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "A mindECHO az Al segítségével azonnal személyre szabott válaszokat talál megbízható tartalmai közül, így időt és erőfeszítést takarít meg. Frissítsen Pro-ra, hogy korlátlanul hozzáférhessen személyes tudásbázisához.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Kioldás most",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Elvetés",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Havi számlázás",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Évente számlázva",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Elérte a 2000+ indexelt elemet",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Frissítsen Pro Plan csomagra a korlátlan számú gyűjteményért és AI-válaszokért. Élvezze az 1 dolláros próbaverziót a 14 napos próbaverzióért teljes hozzáféréssel, mielőtt dönt.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Korlátlan mennyiségű mesterséges intelligencia válasza gyűjteményeiből",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "A mindECHO Pro tervvel a mesterséges intelligencia az összes gyűjteményben megkeresi, hogy azonnal megkapja a legrelevánsabb válaszokat.",
+        "description": ""
+    },
+    "then": {
+        "message": "akkor",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "havonta, évente számlázva",
+        "description": ""
+    },
+    "for_a": {
+        "message": "a",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "- a Pro Plan napos próbaverziója",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Indítsa el a próbaverziót",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Bármikor lemondhatja",
+        "description": ""
+    },
+    "answer": {
+        "message": "Válasz",
+        "description": ""
     }
 }

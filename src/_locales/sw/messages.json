@@ -502,5 +502,77 @@
     "automatically_import_new_items_in_x_bookmarks": {
         "message": "Ingiza bidhaa mpya kiotomatiki katika alamisho za X.",
         "description": ""
+    },
+    "ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti": {
+        "message": "Uliza ECHO swali na upate majibu sahihi papo hapo kutoka kwa mikusanyiko yako iliyoratibiwa.",
+        "description": ""
+    },
+    "unlock_unlimited_al_answers_from_your_content": {
+        "message": "Fungua Majibu ya Al bila kikomo kutoka kwa Maudhui Yako",
+        "description": ""
+    },
+    "mindecho_uses_al_to_instantly_find_tailored_answers_from_your_trusted_content_s": {
+        "message": "mindECHO hutumia Al kupata majibu yanayokufaa papo hapo kutoka kwa maudhui yako yanayoaminika, hivyo kuokoa muda na juhudi. Pata toleo jipya la Pro ili upate ufikiaji usio na kikomo kwa msingi wako wa maarifa ya kibinafsi.",
+        "description": ""
+    },
+    "unlock_now": {
+        "message": "Fungua Sasa",
+        "description": ""
+    },
+    "dismiss": {
+        "message": "Ondoa",
+        "description": ""
+    },
+    "billed_monthly": {
+        "message": "Hutozwa Kila Mwezi",
+        "description": ""
+    },
+    "billed_annually": {
+        "message": "Hutozwa Kila Mwaka",
+        "description": ""
+    },
+    "you_ve_reached_2000_indexed_items": {
+        "message": "Umefikia vipengee 2000+ vilivyoorodheshwa",
+        "description": ""
+    },
+    "upgrade_to_pro_plan_for_unlimited_collections_and_ai_answers_enjoy_a_1_trial_f": {
+        "message": "Pata toleo jipya la Mpango wa Pro kwa mikusanyiko isiyo na kikomo na majibu ya AI. Furahia jaribio la $1 kwa jaribio la siku 14 na ufikiaji kamili kabla ya kuamua.",
+        "description": ""
+    },
+    "unlock_unlimited_ai_answers_from_your_collections": {
+        "message": "Fungua Majibu ya AI yasiyo na kikomo kutoka kwa Mikusanyiko Yako",
+        "description": ""
+    },
+    "with_the_mindecho_pro_plan_ai_searches_all_your_collections_to_deliver_the_most": {
+        "message": "Kwa mindECHO Pro Plan, AI hutafuta mikusanyiko yako yote ili kutoa majibu muhimu zaidi papo hapo.",
+        "description": ""
+    },
+    "then": {
+        "message": "basi",
+        "description": ""
+    },
+    "per_month_billed_annually": {
+        "message": "kwa mwezi, hutozwa kila mwaka",
+        "description": ""
+    },
+    "for_a": {
+        "message": "kwa",
+        "description": ""
+    },
+    "day_trial_of_pro_plan": {
+        "message": "-Jaribio la siku la Mpango wa Pro",
+        "description": ""
+    },
+    "start_trial": {
+        "message": "Anza Jaribio",
+        "description": ""
+    },
+    "cancel_anytime": {
+        "message": "Ghairi Wakati Wowote",
+        "description": ""
+    },
+    "answer": {
+        "message": "Jibu",
+        "description": ""
     }
 }
