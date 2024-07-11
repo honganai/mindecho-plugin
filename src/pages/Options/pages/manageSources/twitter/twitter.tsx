@@ -173,11 +173,7 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
         case Step.Uploading:
           const data = flattenData.filter(({ key = '' }) => checkedKeys.includes(key) && !disabledKeys.includes(key));
 
-          chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: data }, (res) => {
-            setTimeout(() => {
-              setStep(Step.Done)
-            }, 1000 * 60)
-          });
+          chrome.runtime.sendMessage({ type: 'request', api: 'upload_user_article', body: data });
 
           setLocalURLs([
             ...await getLocalURLs(),
@@ -316,7 +312,10 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
             </div>
           </>
         }
-        {step === Step.Uploading && <FetchingStatus />}
+        {step === Step.Uploading && <FetchingStatus
+          countdown={importCount >= 2000 ? 60 * 60 : importCount}
+          onOver={() => setStep(Step.Done)}
+        />}
         {step === Step.Done && <DoneStatus />}
       </div>
     </div >

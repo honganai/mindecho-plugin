@@ -190,9 +190,6 @@ const BrowserData: React.FC<{
           body: payloadBody
         }).then((res) => {
           setLastUpdateDataTime(new Date().getTime());
-          setTimeout(() => {
-            setStep(Step.Done)
-          }, 1000 * 60)
         });
 
         break;
@@ -293,7 +290,10 @@ const BrowserData: React.FC<{
         </div>
       </>
     }
-    {step === Step.Uploading && <FetchingStatus />}
+    {step === Step.Uploading && <FetchingStatus
+      countdown={importCount >= 2000 ? 60 * 60 : importCount}
+      onOver={() => setStep(Step.Done)}
+    />}
     {step === Step.Done && <DoneStatus />}
 
   </div>)

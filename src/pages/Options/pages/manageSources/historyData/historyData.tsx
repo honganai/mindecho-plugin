@@ -132,13 +132,9 @@ const BrowserData: React.FC<{
               content,
               status: 3,
             }))
-          }, async (res) => {
-            await setAllPagesInfo(payloadBody.map(item => ({ ...item, status: 3 })))
-
-            setTimeout(() => {
-              setStep(Step.Done)
-            }, 1000 * 60)
-          });
+          },
+            () => setAllPagesInfo(payloadBody.map(item => ({ ...item, status: 3 })))
+          );
         })
 
         break;
@@ -237,7 +233,10 @@ const BrowserData: React.FC<{
         </div>
       </>
     }
-    {step === Step.Uploading && <FetchingStatus />}
+    {step === Step.Uploading && <FetchingStatus
+      countdown={importCount >= 2000 ? 60 * 60 : importCount}
+      onOver={() => setStep(Step.Done)}
+    />}
     {step === Step.Done && <DoneStatus />}
   </div>)
 };

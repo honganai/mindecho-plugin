@@ -173,7 +173,7 @@ const PaymentForm = ({ payReason = PayReason.OverAsk }: {
                 {`${t('for_a')} ${currentPlan?.trialDays}${t('day_trial_of_pro_plan')}`}
               </div>
               <div className="">
-                {`${t('then')} $${currentPlan?.price} ${t('per_month_billed_annually')}`}
+                {`${t('then')} $${currentPlan?.price} ${t('per_month')}`}
               </div>
             </div>
           </div>

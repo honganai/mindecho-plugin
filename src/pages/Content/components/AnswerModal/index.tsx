@@ -238,7 +238,7 @@ const AnswerModal: React.FC = () => {
               <div className={styles.content}>
                 <div className={styles.header}>
                   <h3>{t('sources')}: {References.length}</h3>
-                  <MyProgress moreCount={4} />
+                  <MyProgress moreCount={6} />
                 </div>
                 {References.length > 0 ? (
                   <>

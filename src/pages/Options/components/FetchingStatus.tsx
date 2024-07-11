@@ -1,11 +1,58 @@
 
-import React from "react"
+import { isNumber, isUndefined } from "lodash";
+import React, { useEffect, useState } from "react"
 
 const { getMessage: t } = chrome.i18n;
 
-const Component = ({ countdown }: { countdown?: number }) => {
+export function formatDuration(milliseconds: number): string {
+  // 将毫秒数转换为秒数
+  const totalSeconds = Math.floor(milliseconds / 1000);
+
+  // 计算小时、分钟和秒
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  // 格式化分钟和秒为两位数
+  const formattedMinutes = String(minutes).padStart(2, '0');
+  const formattedSeconds = String(seconds).padStart(2, '0');
+
+  if (hours > 0) {
+    // 如果小时数大于0，返回HH:MM:SS格式
+    const formattedHours = String(hours).padStart(2, '0');
+    return `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+  } else {
+    // 否则返回MM:SS格式
+    return `${formattedMinutes}:${formattedSeconds}`;
+  }
+}
+
+const Component = ({ countdown, onOver }: { countdown?: number, onOver?: () => void }) => {
+  const [endTime] = useState<number>(countdown ? (Date.now() + countdown * 1000) + 500 : 0)
+  const [timer, setTimer] = useState<NodeJS.Timeout>();
+  const [restTime, setRestTime] = useState<number>(countdown ? countdown * 1000 + 500 : 0)
+  useEffect(() => {
+    if (endTime && !timer) {
+      const timer = setInterval(() => {
+        const newRestTime = endTime - Date.now()
+        setRestTime(newRestTime)
+
+        if (newRestTime < 0) {
+          onOver?.()
+          clearInterval(timer)
+        }
+      }, 1000)
+
+      setTimer(timer)
+    }
+    return () => timer && clearInterval(timer)
+  }, [])
+
+
   return <div className="h-[600px] w-full text-4xl font-bold flex flex-col items-center justify-center">
     <p className="mb-8">{t('fetching_urls')}</p>
+
+    {restTime && <p className="text-2xl">{formatDuration(restTime)}</p>}
 
     <div role="status">
       <svg aria-hidden="true" className="inline w-16 h-16 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
