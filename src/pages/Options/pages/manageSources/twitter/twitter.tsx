@@ -313,7 +313,7 @@ const Twitter: React.FC<Props> = ({ }: Props) => {
           </>
         }
         {step === Step.Uploading && <FetchingStatus
-          countdown={importCount >= 2000 ? 60 * 60 : importCount}
+          countdown={importCount >= 2000 ? 60 * 60 : importCount < 60 ? 60 : importCount}
           onOver={() => setStep(Step.Done)}
         />}
         {step === Step.Done && <DoneStatus />}
