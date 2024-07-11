@@ -63,10 +63,15 @@
     line-height: 24px;
     color: var(--color-text);
     background-color: var(--color-background);
+    padding: 0 10px;
 
     p {
       font-size: var(--tip-font-size);
       margin-bottom: 8px;
+    }
+
+    a {
+      color: #2388FF;
     }
   }
 
