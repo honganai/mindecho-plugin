@@ -9,6 +9,7 @@ import contentStyles from './MarkdownContent/index.module.scss';
 import MyProgress from '../Myprogress';
 import cs from 'classnames';
 import isSingleWordOrShortText from '@/lib/isSingleWordOrShortText';
+import clsx from 'clsx';
 
 interface IReferences {
   title: string;
@@ -219,8 +220,11 @@ const AnswerModal: React.FC = () => {
           // backgroundColor: 'rgba(255, 255, 255, 0.6)',
         }
       }
-      getContainer={() => getDocument().getElementById('mindecho-sidebar-flat') || document.body}>
-      <h1 className={styles.title}>{globalState.question}</h1>
+      getContainer={() => getDocument().getElementById('mindecho-sidebar-flat') || document.body}
+    >
+      <h1 className={clsx(
+        `font-bold m-0 text-2xl text-white pt-[11px]`,
+      )}>{globalState.question}</h1>
       {
         (isRequesting && !requestEnd && isValidQuestion)
           ||
@@ -276,7 +280,7 @@ const AnswerModal: React.FC = () => {
                   <div className={contentStyles['content']}>
                     <div className={contentStyles['text-p']}>
                       <h3>{t('answer')}</h3>
-                      <p>{t('ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti')}</p>
+                      <p className=' rounded-md bg-[#f4f4fe] text-[#623ac1] px-2 py-1'>{t('ask_echo_a_question_and_get_precise_answers_instantly_from_your_curated_collecti')}</p>
                     </div>
                   </div>
               }

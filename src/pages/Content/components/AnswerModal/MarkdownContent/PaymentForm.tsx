@@ -1,7 +1,5 @@
 import React, { useState, useContext } from "react"
 import GlobalContext, { ActionType as GlobalActionType } from '@/reducer/global';
-import { LoadingOutlined } from '@ant-design/icons';
-import { Spin } from 'antd';
 import clsx from "clsx"
 import usePolling from "@/utils/usePolling";
 import { UserInfo } from "@/types";
@@ -111,9 +109,9 @@ const fetchingPaymentStatus:
 const PaymentForm = ({ payReason = PayReason.OverAsk }: {
   payReason?: PayReason
 }) => {
-  const [payPlan, setPayPlan] = useState<PayPlan>(PayPlan.Monthly);
-  const { dispatch: globalDispatch } = useContext(GlobalContext);
-  const [isLoading, setIsLoading] = useState(false);
+  const [payPlan, setPayPlan] = useState<PayPlan>(PayPlan.Annually);
+  const { state: globalState, dispatch: globalDispatch } = useContext(GlobalContext);
+  const { userInfo } = globalState
 
   const currentPlan = PayPlanMap.find(
     item => item.id === payPlan
@@ -126,11 +124,16 @@ const PaymentForm = ({ payReason = PayReason.OverAsk }: {
     fetchingPaymentStatus().then((result) => {
       if (result?.result.subscription.mem_type !== UserLevel.Free) {
         stopPolling()
-        setIsLoading(false)
       }
-      result?.result && globalDispatch({
+      userInfo && result?.result && globalDispatch({
         type: GlobalActionType.SetUserInfo,
-        payload: result?.result as unknown as UserInfo,
+        payload: {
+          ...userInfo,
+          subscription: {
+            ...userInfo.subscription,
+            mem_type: result.result.subscription.mem_type
+          }
+        },
       })
     })
   }, 2000)
@@ -199,7 +202,6 @@ const PaymentForm = ({ payReason = PayReason.OverAsk }: {
             () => {
               if (currentPlan?.productID) {
                 window.open(`${host}/api/v1/order/create?product_id=${currentPlan.productID}&redirect=true`)
-                setIsLoading(true)
                 startPolling()
               }
             }
@@ -208,17 +210,6 @@ const PaymentForm = ({ payReason = PayReason.OverAsk }: {
         </div>
       </div>
     </div>
-
-    {isLoading &&
-      <div className={
-        clsx(
-          'fixed inset-0 z-50 flex items-center justify-center bg-white bg-opacity-80',
-          'dark:bg-gray-800 dark:bg-opacity-80'
-        )
-      }>
-        <Spin indicator={<LoadingOutlined style={{ fontSize: 48 }} spin />} />
-      </div>
-    }
   </>
 }
 

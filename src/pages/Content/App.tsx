@@ -4,6 +4,7 @@ import { createPortal } from 'react-dom';
 import AskModal from './components/AskModal';
 import AnswerModal from './components/AnswerModal';
 import GlobalContext, { ActionType as GlobalActionType, IState } from '../../reducer/global';
+import { IUserInfoResult } from './components/AnswerModal/MarkdownContent/PaymentForm';
 
 interface IProps {
   type?: 'options' | 'webPage'
@@ -38,7 +39,20 @@ const App: React.FC<IProps> = ({ type = 'webPage' }) => {
 
     handleLogin(
       (res: any) => {
-        successFn(res);
+        chrome.runtime.sendMessage(
+          { type: 'request', api: 'userinfo' },
+          (result: IUserInfoResult) => successFn({
+            ...res,
+            userInfo: {
+              ...res.userInfo,
+              subscription: {
+                ...res.userInfo.subscription,
+                mem_type: result.result.subscription.mem_type
+              }
+            }
+
+          })
+        );
       },
       //如果没有登录，调登陆接口
       () => {
